@@ -29,7 +29,7 @@ export const HelmetForHome = () => (
         "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
         "@id": "https://naprawaprzemysl.pl",
         "url": "https://naprawaprzemysl.pl",
-        "telephone": "+48790258612",
+        "telephone": "+48 790 258 612",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Generała Józefa Sowińskiego 2",
@@ -63,8 +63,8 @@ export const HelmetForHome = () => (
         ],
         "logo": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp", "width": 512, "height": 512 },
+        "priceRange": "$$$",
         "description": "Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa.",
-        "priceRange":"$$$",
         "offers": [
           {
             "@type": "Offer",

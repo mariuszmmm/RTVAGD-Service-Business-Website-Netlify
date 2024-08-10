@@ -60,6 +60,8 @@ export const HelmetForContact = () => (
           "https://www.facebook.com/profile.php?id=100063811592941"
         ],
         "logo": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp",
+        "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp", "width": 512, "height": 512 },
+        "priceRange": "$$$",
         "description": "Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa.",
         "offers": [
           {
