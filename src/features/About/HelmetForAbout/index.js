@@ -167,14 +167,18 @@ export const HelmetForAbout = () => {
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Strona Główna",
-              "item": "https://naprawaprzemysl.pl"
+              "item": {
+                "@id": "https://naprawaprzemysl.pl/",
+                "name": "Home"
+              }
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "O mnie",
-              "item": "https://naprawaprzemysl.pl/o-mnie"
+              "item": {
+                "@id": "https://naprawaprzemysl.pl/o-mnie",
+                "name": "About"
+              }
             }
           ]
         })}

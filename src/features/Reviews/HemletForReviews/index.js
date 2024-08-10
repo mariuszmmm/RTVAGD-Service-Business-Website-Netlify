@@ -165,14 +165,18 @@ export const HemletForReviews = () => (
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Strona Główna",
-            "item": "https://naprawaprzemysl.pl"
+            "item": {
+              "@id": "https://naprawaprzemysl.pl/",
+              "name": "Home"
+            }
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Opinie",
-            "item": "https://naprawaprzemysl.pl/opinie"
+            "item": {
+              "@id": "https://naprawaprzemysl.pl/opinie",
+              "name": "Reviews"
+            }
           }
         ]
       })}

@@ -165,8 +165,10 @@ export const HelmetForHome = () => (
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Strona Główna",
-            "item": "https://naprawaprzemysl.pl"
+            "item": {
+              "@id": "https://naprawaprzemysl.pl/",
+              "name": "Home"
+            }
           }
         ]
       })}
