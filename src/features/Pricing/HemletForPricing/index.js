@@ -165,18 +165,14 @@ export const HemletForPricing = () => (
           {
             "@type": "ListItem",
             "position": 1,
-            "item": {
-              "@id": "https://naprawaprzemysl.pl/",
-              "name": "Home"
-            }
+            "name": "Strona Główna",
+            "item": "https://naprawaprzemysl.pl"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "item": {
-              "@id": "https://naprawaprzemysl.pl/cennik",
-              "name": "Pricing"
-            }
+            "name": "Cennik",
+            "item": "https://naprawaprzemysl.pl/cennik"
           }
         ]
       })}

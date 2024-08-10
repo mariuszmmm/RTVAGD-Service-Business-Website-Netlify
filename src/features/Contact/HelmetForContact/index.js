@@ -165,18 +165,14 @@ export const HelmetForContact = () => (
           {
             "@type": "ListItem",
             "position": 1,
-            "item": {
-              "@id": "https://naprawaprzemysl.pl/",
-              "name": "Home"
-            }
+            "name": "Strona Główna",
+            "item": "https://naprawaprzemysl.pl"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "item": {
-              "@id": "https://naprawaprzemysl.pl/kontakt",
-              "name": "Contact"
-            }
+            "name": "Kontakt",
+            "item": "https://naprawaprzemysl.pl/kontakt"
           }
         ]
       })}
