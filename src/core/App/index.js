@@ -14,21 +14,24 @@ import { Contact } from "../../features/Contact";
 import { Footer } from "./Footer";
 import { Background } from "./Background";
 import ScrollToTop from "./ScrollToTop";
+import { HelmetProvider } from "react-helmet-async";
 
 const App = () => (
   <Router>
     <ScrollToTop />
     <Background />
     <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/o-mnie" element={<About />} />
-      <Route path="/uslugi" element={<Services />} />
-      <Route path="/cennik" element={<Pricing />} />
-      <Route path="/opinie" element={<Reviews />} />
-      <Route path="/kontakt" element={<Contact />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <HelmetProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/o-mnie" element={<About />} />
+        <Route path="/uslugi" element={<Services />} />
+        <Route path="/cennik" element={<Pricing />} />
+        <Route path="/opinie" element={<Reviews />} />
+        <Route path="/kontakt" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </HelmetProvider>
     <Footer />
   </Router>
 );

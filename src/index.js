@@ -6,17 +6,14 @@ import App from "./core/App";
 import { Normalize } from "styled-normalize";
 import GlobalStyle from "./core/GlobalStyle";
 import reportWebVitals from "./reportWebVitals";
-import { HelmetProvider } from "react-helmet-async";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <HelmetProvider>
-        <Normalize />
-        <GlobalStyle />
-        <App />
-      </HelmetProvider>
+      <Normalize />
+      <GlobalStyle />
+      <App />
     </ThemeProvider>
   </React.StrictMode>
 );
