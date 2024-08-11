@@ -12,7 +12,7 @@ export const About = () => {
 
   return (
     <AboutSection $show={show}>
-      <HelmetForAbout />
+      {/* <HelmetForAbout /> */}
       <AboutContainer>
         <AboutTitle>Kim jestem</AboutTitle>
         <main>
