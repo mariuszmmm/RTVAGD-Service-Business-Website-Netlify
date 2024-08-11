@@ -49,7 +49,7 @@ export const Contact = () => {
           </ContactText>
           <ImageContainer>
             <Suspense fallback={<div>Ładowanie...</div>}>
-              <Iframe />
+              {/* <Iframe /> */}
             </Suspense>
           </ImageContainer>
         </ContactInfo>
