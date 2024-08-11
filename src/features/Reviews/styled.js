@@ -5,7 +5,7 @@ export const ReviewsSection = styled.section`
   text-align: center;
   opacity: 0;
   min-height: 100vh; 
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`

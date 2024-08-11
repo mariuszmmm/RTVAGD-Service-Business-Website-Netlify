@@ -7,7 +7,7 @@ export const Hero = styled.section`
   position: relative;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`

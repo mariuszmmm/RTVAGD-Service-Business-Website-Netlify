@@ -11,7 +11,7 @@ export const SendInfoWrapper = styled.div`
   opacity: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   z-index: -1;
   user-select: none;
 

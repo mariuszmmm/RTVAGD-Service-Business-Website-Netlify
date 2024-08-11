@@ -30,7 +30,7 @@ export const Rotating = styled.div`
   width: 100%;
   height: 100%;
   animation: rotateBg 30s linear infinite;
-  opacity: 0.5;
+  opacity: 0.3;
   background-color: transparent;
 `;
 

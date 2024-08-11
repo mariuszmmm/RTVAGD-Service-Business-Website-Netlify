@@ -5,7 +5,7 @@ export const DishwasherWrapper = styled.div`
   top: 240px;
   left: 50%;
   transform: translateX(300px) translateY(50px);
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   opacity: ${({ $show }) => ($show ? 1 : 0)};
   ${({ $noDisplay }) =>
     $noDisplay &&

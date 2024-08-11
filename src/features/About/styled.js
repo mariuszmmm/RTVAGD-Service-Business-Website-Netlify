@@ -5,7 +5,7 @@ export const AboutSection = styled.section`
   text-align: center;
   min-height: 100vh;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`
