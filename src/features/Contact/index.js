@@ -16,23 +16,14 @@ import React, { Suspense } from "react";
 const Iframe = React.lazy(() => import("./Iframe"));
 
 export const Contact = () => {
-  // const [show, setShow] = useState(false);
-  // useEffect(() => {
-  //   setShow(true);
-  // }, []);
-  const [isLoaded, setIsLoaded] = useState(false);
-
+  const [show, setShow] = useState(false);
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsLoaded(true);
-    }, 5000); // Opóźnienie o 5 sekund
-
-    return () => clearTimeout(timeout);
+    setShow(true);
   }, []);
 
   return (
-    <ContactSection $show={true}>
-      {/* <HelmetForContact /> */}
+    <ContactSection $show={show}>
+      <HelmetForContact />
       <ContactContainer>
         <ContactTitle>Kontakt</ContactTitle>
         <ContactForm />
@@ -57,13 +48,9 @@ export const Contact = () => {
             w godzinach <span>9.30-17.00</span>
           </ContactText>
           <ImageContainer>
-            {/* <Suspense fallback={<div>Ładowanie...</div>}> */}
-            {isLoaded ? (
+            <Suspense fallback={<div>Ładowanie...</div>}>
               <Iframe />
-            ) : (
-              <div>Ładowanie mapy...</div>
-            )}
-            {/* </Suspense> */}
+            </Suspense>
           </ImageContainer>
         </ContactInfo>
       </ContactContainer>
