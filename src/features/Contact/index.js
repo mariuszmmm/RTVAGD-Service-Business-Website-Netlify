@@ -20,6 +20,15 @@ export const Contact = () => {
   // useEffect(() => {
   //   setShow(true);
   // }, []);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoaded(true);
+    }, 5000); // Opóźnienie o 5 sekund
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <ContactSection $show={true}>
@@ -48,9 +57,13 @@ export const Contact = () => {
             w godzinach <span>9.30-17.00</span>
           </ContactText>
           <ImageContainer>
-            <Suspense fallback={<div>Ładowanie...</div>}>
+            {/* <Suspense fallback={<div>Ładowanie...</div>}> */}
+            {isLoaded ? (
               <Iframe />
-            </Suspense>
+            ) : (
+              <div>Ładowanie mapy...</div>
+            )}
+            {/* </Suspense> */}
           </ImageContainer>
         </ContactInfo>
       </ContactContainer>
