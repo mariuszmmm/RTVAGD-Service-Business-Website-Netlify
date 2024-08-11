@@ -15,7 +15,7 @@ export const HelmetForAbout = () => {
       <link rel="canonical" href="https://naprawaprzemysl.pl/o-mnie" />
       <meta
         property="og:title"
-        content="O mnie | Serwis RTV AGD w Przemyślu"
+        content="O mnie | ✔️ Serwis RTV AGD w Przemyślu"
       />
       <meta
         property="og:description"

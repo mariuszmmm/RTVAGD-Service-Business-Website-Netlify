@@ -14,7 +14,7 @@ export const HemletForReviews = () => (
     <link rel="canonical" href="https://naprawaprzemysl.pl/opinie" />
     <meta
       property="og:title"
-      content="Opinie klientów | Serwis RTV AGD w Przemyślu"
+      content="Opinie klientów | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"

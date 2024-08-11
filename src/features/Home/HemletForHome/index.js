@@ -14,7 +14,7 @@ export const HelmetForHome = () => (
     <link rel="canonical" href="https://naprawaprzemysl.pl/" />
     <meta
       property="og:title"
-      content="Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy"
+      content="✔️ Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy"
     />
     <meta
       property="og:description"

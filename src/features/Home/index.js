@@ -16,63 +16,63 @@ import { HelmetForHome } from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
 
 export const Home = () => {
-  // const [isPortrait, setIsPortrait] = useState(
-  //   window.innerHeight > window.innerWidth
-  // );
-  // const [activeScene, setActiveScene] = useState({
-  //   reset: false,
-  //   number: 0,
-  //   content: isPortrait ? mobileScene[0] : scene[0],
-  // });
-  // const [show, setShow] = useState(false);
-  // const [hold, setHold] = useState(false);
+  const [isPortrait, setIsPortrait] = useState(
+    window.innerHeight > window.innerWidth
+  );
+  const [activeScene, setActiveScene] = useState({
+    reset: false,
+    number: 0,
+    content: isPortrait ? mobileScene[0] : scene[0],
+  });
+  const [show, setShow] = useState(false);
+  const [hold, setHold] = useState(false);
 
-  // const handleResize = () => {
-  //   const actualState = window.innerHeight > window.innerWidth;
-  //   if (isPortrait === actualState) return;
-  //   setIsPortrait(actualState);
-  //   setActiveScene({
-  //     ...activeScene,
-  //     reset: true,
-  //     number: 0,
-  //   });
-  // };
+  const handleResize = () => {
+    const actualState = window.innerHeight > window.innerWidth;
+    if (isPortrait === actualState) return;
+    setIsPortrait(actualState);
+    setActiveScene({
+      ...activeScene,
+      reset: true,
+      number: 0,
+    });
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
 
-  //   // eslint-disable-next-line
-  // }, [window.innerHeight, window.innerWidth]);
+    // eslint-disable-next-line
+  }, [window.innerHeight, window.innerWidth]);
 
-  // useEffect(() => {
-  //   if (hold) return;
-  //   let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
-  //   let isTransition = sceneNumber % 2 === 0 ? true : false;
-  //   const interval = setInterval(
-  //     () => {
-  //       setActiveScene({
-  //         reset: false,
-  //         number: sceneNumber,
-  //         content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
-  //       });
-  //     },
-  //     isTransition ? 3000 : 800
-  //   );
+  useEffect(() => {
+    if (hold) return;
+    let sceneNumber = activeScene.number >= 8 ? 1 : activeScene.number + 1;
+    let isTransition = sceneNumber % 2 === 0 ? true : false;
+    const interval = setInterval(
+      () => {
+        setActiveScene({
+          reset: false,
+          number: sceneNumber,
+          content: isPortrait ? mobileScene[sceneNumber] : scene[sceneNumber],
+        });
+      },
+      isTransition ? 3000 : 800
+    );
 
-  //   return () => clearInterval(interval);
-  //   // eslint-disable-next-line
-  // }, [activeScene, hold]);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line
+  }, [activeScene, hold]);
 
-  // useEffect(() => {
-  //   setShow(true);
-  // }, []);
+  useEffect(() => {
+    setShow(true);
+  }, []);
 
   return (
-    <Hero $show={true}>
+    <Hero $show={show}>
       <HelmetForHome />
       <HeroContainer>
         <HeroTitle>
@@ -84,9 +84,7 @@ export const Home = () => {
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
         <StyledLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledLink>
-        <HeroSubText 
-        // $notShow={isPortrait}
-        >
+        <HeroSubText $notShow={isPortrait}>
           {" "}
           <br />
           Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
@@ -95,7 +93,7 @@ export const Home = () => {
           dla naszych klientów.
         </HeroSubText>
       </HeroContainer>
-      {/* <WashingMachine
+      <WashingMachine
         show={activeScene.content[0]}
         center={isPortrait}
         reset={activeScene.reset}
@@ -118,7 +116,7 @@ export const Home = () => {
         center={isPortrait}
         reset={activeScene.reset}
         setHold={setHold}
-      /> */}
+      />
       {/* <WashingMachine show={true} center={isPortrait} />
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />

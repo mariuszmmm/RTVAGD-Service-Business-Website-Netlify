@@ -14,7 +14,7 @@ export const HemletForPricing = () => (
     <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
     <meta
       property="og:title"
-      content="Cennik | Serwis RTV AGD w Przemyślu"
+      content="Cennik | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"

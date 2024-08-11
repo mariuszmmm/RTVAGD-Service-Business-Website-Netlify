@@ -10,13 +10,13 @@ import { serwis } from "../../utils/serwis";
 import { HemletForPricing } from "./HemletForPricing";
 import { useEffect, useState } from "react";
 export const Pricing = () => {
-  // const [show, setShow] = useState(false);
-  // useEffect(() => {
-  //   setShow(true);
-  // }, []);
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
 
   return (
-    <PricingSection $show={true}>
+    <PricingSection $show={show}>
       <HemletForPricing />
       <PricingContainer>
         <PricingTitle>Cennik</PricingTitle>
