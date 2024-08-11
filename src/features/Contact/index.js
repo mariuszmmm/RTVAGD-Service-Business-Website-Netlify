@@ -13,7 +13,8 @@ import { useEffect, useState } from "react";
 import { HelmetForContact } from "./HelmetForContact";
 import { ContactForm } from "./ContactForm";
 import React, { Suspense } from "react";
-const Iframe = React.lazy(() => import("./Iframe"));
+import Iframe from "./Iframe";
+// const Iframe = React.lazy(() => import("./Iframe"));
 
 export const Contact = () => {
   const [show, setShow] = useState(false);
@@ -48,9 +49,9 @@ export const Contact = () => {
             w godzinach <span>9.30-17.00</span>
           </ContactText>
           <ImageContainer>
-            <Suspense fallback={<div>Ładowanie...</div>}>
+            {/* <Suspense fallback={<div>Ładowanie...</div>}> */}
               <Iframe />
-            </Suspense>
+            {/* </Suspense> */}
           </ImageContainer>
         </ContactInfo>
       </ContactContainer>
