@@ -16,14 +16,14 @@ import React, { Suspense } from "react";
 const Iframe = React.lazy(() => import("./Iframe"));
 
 export const Contact = () => {
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    setShow(true);
-  }, []);
+  // const [show, setShow] = useState(false);
+  // useEffect(() => {
+  //   setShow(true);
+  // }, []);
 
   return (
-    <ContactSection $show={show}>
-      <HelmetForContact />
+    <ContactSection $show={true}>
+      {/* <HelmetForContact /> */}
       <ContactContainer>
         <ContactTitle>Kontakt</ContactTitle>
         <ContactForm />

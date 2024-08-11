@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 import { HelmetForAbout } from "./HelmetForAbout";
 
 export const About = () => {
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    setShow(true);
-  }, []);
+  // const [show, setShow] = useState(false);
+  // useEffect(() => {
+  //   setShow(true);
+  // }, []);
 
   return (
-    <AboutSection $show={show}>
+    <AboutSection $show={true}>
       {/* <HelmetForAbout /> */}
       <AboutContainer>
         <AboutTitle>Kim jestem</AboutTitle>

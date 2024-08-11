@@ -16,27 +16,27 @@ import { HelmetForHome } from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
 
 export const Home = () => {
-  const [isPortrait, setIsPortrait] = useState(
-    window.innerHeight > window.innerWidth
-  );
-  const [activeScene, setActiveScene] = useState({
-    reset: false,
-    number: 0,
-    content: isPortrait ? mobileScene[0] : scene[0],
-  });
-  const [show, setShow] = useState(false);
-  const [hold, setHold] = useState(false);
+  // const [isPortrait, setIsPortrait] = useState(
+  //   window.innerHeight > window.innerWidth
+  // );
+  // const [activeScene, setActiveScene] = useState({
+  //   reset: false,
+  //   number: 0,
+  //   content: isPortrait ? mobileScene[0] : scene[0],
+  // });
+  // const [show, setShow] = useState(false);
+  // const [hold, setHold] = useState(false);
 
-  const handleResize = () => {
-    const actualState = window.innerHeight > window.innerWidth;
-    if (isPortrait === actualState) return;
-    setIsPortrait(actualState);
-    setActiveScene({
-      ...activeScene,
-      reset: true,
-      number: 0,
-    });
-  };
+  // const handleResize = () => {
+  //   const actualState = window.innerHeight > window.innerWidth;
+  //   if (isPortrait === actualState) return;
+  //   setIsPortrait(actualState);
+  //   setActiveScene({
+  //     ...activeScene,
+  //     reset: true,
+  //     number: 0,
+  //   });
+  // };
 
   // useEffect(() => {
   //   window.addEventListener("resize", handleResize);
@@ -67,12 +67,12 @@ export const Home = () => {
   //   // eslint-disable-next-line
   // }, [activeScene, hold]);
 
-  useEffect(() => {
-    setShow(true);
-  }, []);
+  // useEffect(() => {
+  //   setShow(true);
+  // }, []);
 
   return (
-    <Hero $show={show}>
+    <Hero $show={true}>
       <HelmetForHome />
       <HeroContainer>
         <HeroTitle>
@@ -84,7 +84,9 @@ export const Home = () => {
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
         <StyledLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledLink>
-        <HeroSubText $notShow={isPortrait}>
+        <HeroSubText 
+        // $notShow={isPortrait}
+        >
           {" "}
           <br />
           Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
