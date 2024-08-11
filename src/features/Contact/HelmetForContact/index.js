@@ -14,7 +14,7 @@ export const HelmetForContact = () => (
     <link rel="canonical" href="https://naprawaprzemysl.pl/kontakt" />
     <meta
       property="og:title"
-      content="Kontakt | Serwis RTV AGD w Przemyślu"
+      content="Kontakt | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"

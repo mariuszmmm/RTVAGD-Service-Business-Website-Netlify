@@ -57,7 +57,6 @@ export const ImageContainer = styled.div`
   width: 100%;
   max-width: 90vw;
   aspect-ratio: 600/450;
-  border: none;
   margin: 80px 0;
 `;
 
