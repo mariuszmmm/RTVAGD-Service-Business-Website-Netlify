@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 export const HelmetForHome = () => (
   <Helmet>
-    <title>✔️ Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</title>
+    <title>Naprawa ✔️ telewizorów, pralek, zmywarek, ekspresów do kawy</title>
     <meta
       name="description"
       content="Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa."
@@ -14,7 +14,7 @@ export const HelmetForHome = () => (
     <link rel="canonical" href="https://naprawaprzemysl.pl/" />
     <meta
       property="og:title"
-      content="✔️ Naprawa telewizorów, pralek, zmywarek i ekspresów do kawy"
+      content="Naprawa ✔️ telewizorów, pralek, zmywarek, ekspresów do kawy"
     />
     <meta
       property="og:description"
