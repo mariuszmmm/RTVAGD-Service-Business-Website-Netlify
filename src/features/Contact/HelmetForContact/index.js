@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 export const HelmetForContact = () => (
   <Helmet>
-    <title>Kontakt | Serwis RTV AGD w Przemyślu</title>
+    <title>Kontakt | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
       content="Skontaktuj się z nami pod numerem telefonu +48 790 258 612 lub odwiedź nas w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
