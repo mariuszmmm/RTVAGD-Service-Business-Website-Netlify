@@ -26,7 +26,7 @@ export const HelmetForAbout = () => {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Service",
+          "@type": "ProfessionalService",
           "name": "Serwis RTV i AGD",
           "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
           "@id": "https://naprawaprzemysl.pl",
