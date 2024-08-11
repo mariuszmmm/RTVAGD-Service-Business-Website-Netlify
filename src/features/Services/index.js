@@ -17,13 +17,13 @@ import telewizor from "../../assets/images/serwis-telewizorow.webp";
 import emoticon from "../../assets/images/emoticon.png"
 
 export const Services = () => {
-  // const [show, setShow] = useState(false);
-  // useEffect(() => {
-  //   setShow(true);
-  // }, []);
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
 
   return (
-    <ServicesSection $show={true}>
+    <ServicesSection $show={show}>
       <HemletForServices />
       <ServicesContainer>
         <ServicesTitle>Zakres usług</ServicesTitle>

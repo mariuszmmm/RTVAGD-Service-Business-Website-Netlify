@@ -8,7 +8,7 @@ export const ContactSection = styled.section`
   text-align: left;
   min-height: calc(100vh - 5vh);
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   ${({ $show }) =>
     $show &&
     css`
