@@ -23,7 +23,7 @@ export const Contact = () => {
 
   return (
     <ContactSection $show={true}>
-      <HelmetForContact />
+      {/* <HelmetForContact /> */}
       <ContactContainer>
         <ContactTitle>Kontakt</ContactTitle>
         <ContactForm />
