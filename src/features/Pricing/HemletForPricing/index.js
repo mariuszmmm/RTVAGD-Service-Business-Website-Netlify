@@ -5,11 +5,11 @@ export const HemletForPricing = () => (
     <title>Cennik | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
-      content="Sprawdź mój cennik usług naprawy pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+      content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
     />
     <meta
       name="keywords"
-      content="cennik, usługi, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+      content="cennik, usługi, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
     />
     <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
     <meta

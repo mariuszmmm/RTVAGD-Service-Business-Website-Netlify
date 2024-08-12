@@ -5,11 +5,11 @@ export const HemletForReviews = () => (
     <title>Opinie klientów | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
-      content="Przeczytaj opinie moich zadowolonych klientów o moim serwisie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+      content="Przeczytaj opinie zadowolonych klientów o serwisie telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu."
     />
     <meta
       name="keywords"
-      content="opinie, recenzje, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+      content="opinie, recenzje, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
     />
     <link rel="canonical" href="https://naprawaprzemysl.pl/opinie" />
     <meta
