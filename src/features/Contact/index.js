@@ -36,11 +36,11 @@ export const Contact = () => {
           <br />
           <ContactText>
             <span>telefon:</span>{" "}
-            <PhoneLink href={`tel:${serwis.phone}`}>{serwis.phone}</PhoneLink>
+            <PhoneLink href={`tel: ${serwis.phone}`} title={(serwis.phone).replace(/-/g, '')}>{serwis.phone}</PhoneLink>
           </ContactText>
           <ContactText>
             <span>e-mail:</span>{" "}
-            <MailLink href={`mailto:${serwis.email}`}>{serwis.email}</MailLink>
+            <MailLink href={`mailto: ${serwis.email}`}>{serwis.email}</MailLink>
           </ContactText>
           <br />
           <ContactText>Zapraszamy od poniedziałku do piątku</ContactText>
