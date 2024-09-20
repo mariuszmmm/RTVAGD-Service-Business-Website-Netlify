@@ -2,8 +2,8 @@ import { format } from "date-fns";
 import { pl } from 'date-fns/locale';
 import { FormattedDate } from "./styled";
 
-export const Time = ({ time, api }) => {
-  const date = new Date(time * (api ? 1 : 1000));
+export const Time = ({ time }) => {
+  const date = new Date(time * (typeof (time) === "number" ? 1000 : 1));
   const formattedDate = format(date, 'd MMMM yyyy', { locale: pl });
 
   return (

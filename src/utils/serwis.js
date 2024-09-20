@@ -23,11 +23,11 @@ export const serwis = {
       "time": 1688112588,
     },
     {
-      "author_name": "Gabriel Gwiazdoń",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVx1I38jBv_78c884QCzGsBUdEKqzUoqJHM_ff78grk8Zck8Lo=s128-c0x00000000-cc-rp-mo",
+      "author_name": "Piotr Wilgucki",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJU1mIRg3Pw30tT3pKe9spQQAxzer6xvc5g5pK2t6r8qEK5Y2g=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
-      "text": "Bardzo rzetelny serwis, polecam! Miałem problem z pralką, Pan znalazł termin w zasadzie od ręki, w dniu naprawy na miejscu znalazł i usunął usterkę, jestem bardzo zadowolony.",
-      "time": 1671176883,
+      "text": "Serwis rzetelny, szybki i cenowo bardzo dobry. Pralka działa bez zarzutów po dziś dzień. Polecam.",
+      "time": 1685355696,
     },
     {
       "author_name": "EL-METR INSTALACJE Zbigniew Banasiewicz",
@@ -37,11 +37,11 @@ export const serwis = {
       "time": 1684091120,
     },
     {
-      "author_name": "Piotr Wilgucki",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJU1mIRg3Pw30tT3pKe9spQQAxzer6xvc5g5pK2t6r8qEK5Y2g=s128-c0x00000000-cc-rp-mo",
+      "author_name": "Gabriel Gwiazdoń",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVx1I38jBv_78c884QCzGsBUdEKqzUoqJHM_ff78grk8Zck8Lo=s128-c0x00000000-cc-rp-mo",
       "rating": 5,
-      "text": "Serwis rzetelny, szybki i cenowo bardzo dobry. Pralka działa bez zarzutów po dziś dzień. Polecam.",
-      "time": 1685355696,
+      "text": "Bardzo rzetelny serwis, polecam! Miałem problem z pralką, Pan znalazł termin w zasadzie od ręki, w dniu naprawy na miejscu znalazł i usunął usterkę, jestem bardzo zadowolony.",
+      "time": 1671176883,
     }
   ],
   pricing: [
