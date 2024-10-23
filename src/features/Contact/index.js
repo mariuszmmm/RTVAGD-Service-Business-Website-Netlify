@@ -5,8 +5,7 @@ import {
   ContactText,
   ContactTitle,
   ImageContainer,
-  MailLink,
-  PhoneLink,
+  StyledLink
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { useEffect, useState } from "react";
@@ -29,23 +28,26 @@ export const Contact = () => {
         <ContactForm />
         <ContactInfo>
           <ContactText>
-            <span>Serwis RTV i AGD</span>
+            <h2>{serwis.name}</h2>
           </ContactText>
-          <ContactText>ul. Generała Józefa Sowińskiego 2</ContactText>
-          <ContactText>37-700 Przemyśl</ContactText>
+          <ContactText>
+            adres:{"  "}
+            <StyledLink href={serwis.url.mapaGoogle} title={serwis.adres}>{serwis.adres}</StyledLink>
+          </ContactText>
+          <ContactText>
+            e-mail:{" "}
+            <StyledLink href={`mailto: ${serwis.email}`} title={serwis.email}>{serwis.email}</StyledLink>
+          </ContactText>
+          <ContactText>
+            telefon:{" "}
+            <StyledLink href={`tel: ${serwis.phone}`} title={(serwis.phone).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}>{serwis.phone}</StyledLink>
+          </ContactText>
           <br />
-          <ContactText>
-            <span>telefon:</span>{" "}
-            <PhoneLink href={`tel: ${serwis.phone}`} title={(serwis.phone).replace(/-/g, '')}>{serwis.phone}</PhoneLink>
-          </ContactText>
-          <ContactText>
-            <span>e-mail:</span>{" "}
-            <MailLink href={`mailto: ${serwis.email}`}>{serwis.email}</MailLink>
-          </ContactText>
+          <ContactText>NIP: 7952257951</ContactText>
           <br />
           <ContactText>Zapraszamy od poniedziałku do piątku</ContactText>
           <ContactText>
-            w godzinach <span>9.30-17.00</span>
+            w godzinach <>9.30-17.00</>
           </ContactText>
           <ImageContainer>
             <Suspense fallback={<div>Ładowanie...</div>}>

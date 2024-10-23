@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const HeaderWrapper = styled.header`
   background-color: ${({ theme }) => theme.color.primary};
@@ -47,6 +47,39 @@ export const Nav = styled.nav`
     }
   }
 `;
+
+export const NavList = styled.ul`
+  background-color: ${({ theme }) => theme.color.primary};
+  position: relative;
+
+  ${({ $subNav }) => $subNav && css`
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-70%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    gap: 2px;
+
+    li:first-child, {
+      padding-top: 10px;
+    }
+
+    li:last-child {
+      padding-bottom: 10px;
+    }
+  `}
+`;
+
+export const ListItem = styled.li`
+  padding: 0;
+  
+  ${({ $subNav }) => $subNav && css`
+    padding: 0 5px;
+  `}
+`;
+
 
 export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.white};

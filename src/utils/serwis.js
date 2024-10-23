@@ -2,11 +2,13 @@ export const serwis = {
   url: {
     facebook: "https://www.facebook.com/100063811592941",
     google: "https://g.co/kgs/XdcEw7o",
-    mapaGoogle: "https://maps.app.goo.gl/SffrLxVf7prQ6Fn46",
-    addTestimonial: "https://g.page/r/Cab4-DhS1Tz8EBM/review",
+    mapaGoogle: "https://www.google.com/maps?cid=18175636745280354470",
+    addTestimonial: "https://search.google.com/local/writereview?placeid=ChIJrWDpGyR_O0cRpvj4OFLVPPw",
   },
+  name: "Naprawa pralek i sprzętu RTV",
   email: "piotrek_serwis@wp.pl",
-  phone: "790-258-612",
+  phone: "790258612",
+  adres: "Generała Józefa Sowińskiego 2, 37-700 Przemyśl",
   reviews: [
     {
       "author_name": "m p",

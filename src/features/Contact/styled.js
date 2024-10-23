@@ -37,18 +37,16 @@ export const ContactInfo = styled.div`
 export const ContactText = styled.p`
   font-size: clamp(0.9rem, 4vw, 1.3rem);
   margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
   span {
     font-weight: 600;
   }
 `;
 
-export const MailLink = styled.a`
-  color: ${({ theme }) => theme.color.button};
-  text-decoration: none;
-`;
-
-export const PhoneLink = styled.a`
+export const StyledLink = styled.a`
   color: ${({ theme }) => theme.color.button};
   text-decoration: none;
 `;
