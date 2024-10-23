@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const ServicesSection = styled.section`
@@ -87,5 +88,15 @@ export const ServiceItem = styled.div`
  
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     margin: 0 0 50px;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  color: ${({ theme }) => theme.color.button};
+  text-decoration: none;
+  transition: filter  0.3s ease;
+  
+  &:hover {
+    filter: brightness(1.2);
   }
 `;

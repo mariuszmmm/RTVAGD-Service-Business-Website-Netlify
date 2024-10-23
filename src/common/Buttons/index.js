@@ -10,13 +10,14 @@ export const Button = styled.button`
   border: 2px solid transparent;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease,
+   outline-color 0.2s ease;
   font-weight: 600;
-  min-width: max-content;
+  min-width: max-content;  
 
   &:hover {
     background-color: ${({ theme }) => theme.color.buttonHover};
-    border: 2px solid ${({ theme }) => theme.color.white};
+    outline: 2px solid ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -46,7 +47,6 @@ export const StyledLink = styled(Button).attrs({ as: "a" })`
       font-size: clamp(0.3rem, 1.6vw, 0.9rem);
       font-weight: 600;
       opacity: 1;
-      transition: opacity 0.1s ease;
 
       ${({ $hidden }) =>
         $hidden &&

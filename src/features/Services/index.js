@@ -8,6 +8,7 @@ import {
   ServicesContainer,
   ServicesSection,
   ServicesTitle,
+  StyledLink
 } from "./styled";
 import { HemletForServices } from "./HemletForServices";
 import pralka from "../../assets/images/naprawa-pralki.webp";
@@ -29,7 +30,12 @@ export const Services = () => {
         <ServicesTitle>Zakres usług</ServicesTitle>
         <main>
           <ServiceItem id="naprawa-pralek">
-            <ServiceTitle><span>✔</span>&nbsp;Naprawa pralek<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle>
+              <span>✔</span>&nbsp;
+              <StyledLink to="/naprawa-pralek">
+                Naprawa pralek
+              </StyledLink><Emoticon src={emoticon} />
+            </ServiceTitle>
             <Photo src={pralka} alt="naprawa pralek" />
             <ServiceText>
               Kompleksowe usługi naprawy pralek automatycznych wszystkich marek.
@@ -44,7 +50,13 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-zmywarek">
-            <ServiceTitle><span>✔</span>&nbsp;Naprawa zmywarek<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle>
+              <span>✔</span>&nbsp;
+              <StyledLink to="/naprawa-zmywarek">
+                Naprawa zmywarek
+              </StyledLink>
+              <Emoticon src={emoticon} />
+            </ServiceTitle>
             <Photo src={zmywarka} alt="naprawa zmywarek" />
             <ServiceText>
               Specjalistyczna naprawa zmywarek różnych marek, gwarantująca ich
@@ -59,7 +71,13 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-ekspresów">
-            <ServiceTitle><span>✔</span>&nbsp;Naprawa ekspresów do kawy<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle>
+              <span>✔</span>&nbsp;
+              <StyledLink to="/naprawa-ekspresow">
+                Naprawa ekspresów do kawy
+              </StyledLink>
+              <Emoticon src={emoticon} />
+            </ServiceTitle>
             <Photo src={ekspres} alt="naprawa ekspresow" />
             <ServiceText>
               Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od marki
@@ -73,7 +91,13 @@ export const Services = () => {
             </ServiceText>
           </ServiceItem>
           <ServiceItem id="naprawa-telewizorów">
-            <ServiceTitle><span>✔</span>&nbsp;Naprawa telewizorów<Emoticon src={emoticon} /></ServiceTitle>
+            <ServiceTitle>
+              <span>✔</span>&nbsp;
+              <StyledLink to="/naprawa-telewizorow">
+                Naprawa telewizorów
+              </StyledLink>
+              <Emoticon src={emoticon} />
+            </ServiceTitle>
             <Photo src={telewizor} alt="naprawa telewizorow" />
             <ServiceText>
               Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek,

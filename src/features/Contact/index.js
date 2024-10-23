@@ -5,8 +5,8 @@ import {
   ContactText,
   ContactTitle,
   ImageContainer,
-  StyledLink,
-  ContactHeader
+  ContactHeader,
+  StyledLink
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { useEffect, useState } from "react";
