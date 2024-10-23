@@ -5,7 +5,8 @@ import {
   ContactText,
   ContactTitle,
   ImageContainer,
-  StyledLink
+  StyledLink,
+  ContactHeader
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { useEffect, useState } from "react";
@@ -27,9 +28,7 @@ export const Contact = () => {
         <ContactTitle>Kontakt</ContactTitle>
         <ContactForm />
         <ContactInfo>
-          <ContactText>
-            <h2>{serwis.name}</h2>
-          </ContactText>
+          <ContactHeader>{serwis.name}</ContactHeader>
           <ContactText>
             adres:{"  "}
             <StyledLink href={serwis.url.mapaGoogle} title={serwis.adres}>{serwis.adres}</StyledLink>

@@ -1,26 +1,26 @@
 import { Helmet } from "react-helmet-async";
 
-export const HelmetForHome = () => (
+export const HemletForTelevisionService = () => (
   <Helmet>
-    <title>Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</title>
+    <title>Naprawa telewizorów | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
-      content="Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa."
+      content="Fachowa naprawa telewizorów wszystkich typów i marek w Przemyślu. Przywróć swoje ulubione programy do życia!"
     />
     <meta
       name="keywords"
-      content="naprawa, serwis, telewizory, pralki, zmywarki, ekspresy do kawy, Przemyśl, RTV, AGD"
+      content="naprawa telewizorów, serwis telewizorów, RTV, Przemyśl, naprawa AGD, smart TV, telewizory"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-telewizorow" />
     <meta
       property="og:title"
-      content="Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy"
+      content="Naprawa telewizorów | Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa."
+      content="Oferujemy fachową naprawę telewizorów w Przemyślu, abyś mógł znów cieszyć się ulubionymi programami bez zakłóceń."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -34,7 +34,6 @@ export const HelmetForHome = () => (
           "@type": "PostalAddress",
           "streetAddress": "Generała Józefa Sowińskiego 2",
           "addressLocality": "Przemyśl",
-          "addressRegion": "Podkarpackie",
           "postalCode": "37-700",
           "addressCountry": "PL"
         },
@@ -43,7 +42,6 @@ export const HelmetForHome = () => (
           "latitude": 49.782778,
           "longitude": 22.776028
         },
-        "hasMap": "https://maps.app.goo.gl/SffrLxVf7prQ6Fn46",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -147,7 +145,9 @@ export const HelmetForHome = () => (
             }
           }
         ],
-        "paymentAccepted": "Cash",
+        "paymentAccepted": [
+          "Cash"
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.6",
@@ -167,6 +167,12 @@ export const HelmetForHome = () => (
             "position": 1,
             "name": "Strona Główna",
             "item": "https://naprawaprzemysl.pl"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Usługi",
+            "item": "https://naprawaprzemysl.pl/naprawa-telewizorow"
           }
         ]
       })}

@@ -34,6 +34,11 @@ export const ContactInfo = styled.div`
   margin-top: 30px;
 `;
 
+export const ContactHeader = styled.h2`
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
+  margin: 0 0 10px;
+`;
+
 export const ContactText = styled.p`
   font-size: clamp(0.9rem, 4vw, 1.3rem);
   margin: 10px 0;

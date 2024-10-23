@@ -22,6 +22,10 @@ export const ServicesContainer = styled.div`
 export const ServicesTitle = styled.h1`
   margin-bottom: 70px;
   font-size: clamp(1.5rem, 3vw, 3rem);
+
+  span{
+    color: ${({ theme }) => theme.color.check};
+  }
 `;
 
 export const Photo = styled.img`

@@ -2,32 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/uslugi</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/cennik</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/opinie</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt</loc>
-    <lastmod>2024-07-15</lastmod>
+    <lastmod>2024-10-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-pralek</loc>
+    <lastmod>2024-10-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-zmywarek</loc>
+    <lastmod>2024-10-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-ekspresow</loc>
+    <lastmod>2024-10-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-telewizorow</loc>
+    <lastmod>2024-10-23</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

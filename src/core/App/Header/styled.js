@@ -60,7 +60,7 @@ export const NavList = styled.ul`
     display: flex;
     flex-direction: column;
     z-index: 1;
-    gap: 2px;
+    gap: 5px;
 
     li:first-child, {
       padding-top: 10px;

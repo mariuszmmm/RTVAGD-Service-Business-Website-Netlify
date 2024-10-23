@@ -27,11 +27,11 @@ export const HelmetForAbout = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "name": "Serwis RTV i AGD",
-          "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
+          "name": "Naprawa pralek i sprzętu RTV",
+          "alternateName": "Serwis RTV i AGD - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
           "@id": "https://naprawaprzemysl.pl",
           "url": "https://naprawaprzemysl.pl",
-          "telephone": "+48 790 258 612",
+          "telephone": "790258612",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Generała Józefa Sowińskiego 2",
@@ -153,7 +153,7 @@ export const HelmetForAbout = () => {
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.6",
-            "reviewCount": "47",
+            "reviewCount": "61",
             "bestRating": "5",
             "worstRating": "1"
           }
