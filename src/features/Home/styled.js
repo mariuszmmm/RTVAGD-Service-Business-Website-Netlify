@@ -94,7 +94,6 @@ export const HeroSubText = styled.p`
 `;
 
 export const HeroSubTitle = styled.h2`
-  padding-top: 40px;
   text-align: left;
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
@@ -107,7 +106,6 @@ export const HeroSubTitle = styled.h2`
     color: ${({ theme }) => theme.color.check};
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    text-align: center;
     padding-top: 0;
   }
 `;

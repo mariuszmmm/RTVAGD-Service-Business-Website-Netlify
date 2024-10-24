@@ -74,14 +74,14 @@ export const Services = () => {
             <ServiceTitle>
               <span>✔</span>&nbsp;
               <StyledLink to="/naprawa-ekspresow">
-                Naprawa ekspresów do kawy
+                Naprawa ekspresów do&nbsp;kawy
               </StyledLink>
               <Emoticon src={emoticon} />
             </ServiceTitle>
             <Photo src={ekspres} alt="naprawa ekspresow" />
             <ServiceText>
               Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od&nbsp;marki
-              i&nbsp;modelu. Czy Twój ekspres do kawy przestał działać, nie
+              i&nbsp;modelu. Czy Twój ekspres do&nbsp;kawy przestał działać, nie
               zaparza kawy jak&nbsp;wcześniej, wyświetla błędy, czy ma inne
               problemy? Jestem tutaj, aby pomóc. Specjalizuję się
               w&nbsp;naprawie zarówno domowych, jak i&nbsp;profesjonalnych
@@ -111,7 +111,7 @@ export const Services = () => {
               abyś mógł cieszyć się ulubionymi programami bez&nbsp;zakłóceń.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem $services>
             <ServiceTitle><span>✔</span>&nbsp;Serwis i&nbsp;konserwacja</ServiceTitle>
             <ServiceText>
               Świadczę kompleksowe usługi serwisowe i&nbsp;konserwacyjne
@@ -122,7 +122,7 @@ export const Services = () => {
               i&nbsp;zapobieganie awariom.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem>
+          <ServiceItem $services>
             <ServiceTitle><span>✔</span>&nbsp;Konsultacje i&nbsp;doradztwo</ServiceTitle>
             <ServiceText>
               Oferuję profesjonalne konsultacje i&nbsp;doradztwo w&nbsp;zakresie

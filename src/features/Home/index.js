@@ -141,6 +141,8 @@ export const Home = () => {
         <Description>
           Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.
         </Description>
+        <br />
+        <br />
         <HeroSubTitle>
           Naprawy realizuję w&nbsp;Przemyślu i&nbsp;okolicach
         </HeroSubTitle>
