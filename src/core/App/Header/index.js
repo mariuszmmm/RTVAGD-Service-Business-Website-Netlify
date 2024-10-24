@@ -18,6 +18,7 @@ export const Header = () => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
         setScrolled(true);
+        setShowSubNav(false);
       } else {
         setScrolled(false);
       }
