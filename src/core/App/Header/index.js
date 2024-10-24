@@ -3,7 +3,6 @@ import {
   HeaderWrapper,
   ListItem,
   Logo,
-  Nav,
   NavList,
   StyledNavLink,
 } from "./styled";

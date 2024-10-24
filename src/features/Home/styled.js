@@ -84,17 +84,17 @@ const textStyled = css`
     margin-bottom: 20px;
   }
 `;
-export const HeroText = styled.h2`
+export const HeroText = styled.p`
   ${textStyled}
 `;
 
-export const HeroSubText = styled.h3`
+export const HeroSubText = styled.p`
   ${textStyled}
   font-size: clamp(0.6rem, 1.8vw, 1.1rem);
 `;
 
-export const ServiceTitle = styled.h2`
-  padding-top: 80px;
+export const HeroSubTitle = styled.h2`
+  padding-top: 40px;
   text-align: left;
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
@@ -108,10 +108,11 @@ export const ServiceTitle = styled.h2`
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     text-align: center;
+    padding-top: 0;
   }
 `;
 
-export const ServiceText = styled.p`
+export const Description = styled.p`
   grid-area: text;
   line-height: 1.8;
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
@@ -122,8 +123,8 @@ export const ServiceText = styled.p`
   }
 `;
 
-export const ServicesContainer = styled.div`
-  max-width: 900px;
+export const Main = styled.div`
+  max-width: 860px;
   margin: 0 auto;
   padding: 20px;
 `;

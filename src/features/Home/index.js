@@ -2,11 +2,11 @@ import {
   Hero,
   HeroContainer,
   HeroSubText,
+  HeroSubTitle,
   HeroText,
   HeroTitle,
-  ServicesContainer,
-  ServiceText,
-  ServiceTitle,
+  Main,
+  Description,
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { CoffeeMachine } from "./CoffeeMachine";
@@ -125,34 +125,36 @@ export const Home = () => {
       <Dishwasher show={true} center={isPortrait} />
       <Television show={true} center={isPortrait} /> */}
 
-      <ServicesContainer>
-        <ServiceTitle>Serwisuję wszystkie marki telewizorów, pralek, ekspresów do kawy i zmywarek
-        </ServiceTitle>
-        <ServiceText>
-          Specjalizuję się w naprawie urządzeń RTV i AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i mniej znanych producentów. Naprawiam urządzenia marek takich jak:
-        </ServiceText>
-        <ServiceText as="ul">
-          <li>Telewizory: Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba</li>
-          <li>Pralki: Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy</li>
-          <li>Ekspresy do kawy: De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips</li>
-          <li>Zmywarki: Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele</li>
-        </ServiceText>
-        <ServiceText>
-          Dzięki doświadczeniu oraz dostępowi do oryginalnych części zamiennych, możesz mieć pewność, że Twoje urządzenie zostanie naprawione szybko i solidnie.
-        </ServiceText>
-      </ServicesContainer>
-      <ServicesContainer>
-        <ServiceTitle>Naprawy realizuję w Przemyślu i okolicach</ServiceTitle>
-        <ServiceText>
-          Działam na terenie Przemyśla i oferuję moje usługi również w pobliskich miejscowościach. Jeśli mieszkasz w jednym z poniższych miast lub okolicznych miejscowościach, chętnie przyjadę do Ciebie i naprawię Twoje urządzenie:
-        </ServiceText>
-        <ServiceText>
-          Krówniki • Przemyśl • Żurawica • Orzechowce • Ostrów • Duńkowiczki • Bolestraszyce • Nehrybka • Wyszatyce • Prałkowce • Pikulice
-        </ServiceText>
-        <ServiceText>
-          Zaufaj profesjonalnemu serwisowi, który codziennie dba o niezawodność Twoich urządzeń RTV i AGD!
-        </ServiceText>
-      </ServicesContainer>
+      <Main>
+        <HeroSubTitle>
+          Serwisuję wszystkie marki telewizorów, pralek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
+        </HeroSubTitle>
+        <Description>
+          Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i&nbsp;mniej znanych producentów. Naprawiam urządzenia marek takich jak:
+        </Description>
+        <Description as="ul">
+          <li><strong>Telewizory:</strong> Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba</li>
+          <li><strong>Pralki:</strong> Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy</li>
+          <li><strong>Ekspresy do kawy:</strong> De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips</li>
+          <li><strong>Zmywarki:</strong> Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele</li>
+        </Description>
+        <Description>
+          Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.
+        </Description>
+        <HeroSubTitle>
+          Naprawy realizuję w&nbsp;Przemyślu i&nbsp;okolicach
+        </HeroSubTitle>
+        <Description>
+          Działam na&nbsp;terenie Przemyśla i&nbsp;oferuję moje usługi również w&nbsp;pobliskich miejscowościach oraz ich&nbsp;okolicach.
+          Jeśli mieszkasz w&nbsp;jednym z&nbsp;poniższych miejsc lub w&nbsp;ich&nbsp;sąsiedztwie, chętnie przyjadę do&nbsp;Ciebie i&nbsp;naprawię Twoje urządzenie:
+        </Description>
+        <Description>
+          Przemyśl&nbsp;• Bolestraszyce&nbsp;• Duńkowiczki&nbsp;• Krówniki&nbsp;• Nehrybka&nbsp;• Orzechowce&nbsp;• Ostrów&nbsp;• Pikulice • Prałkowce&nbsp;• Wyszatyce&nbsp;• Żurawica&nbsp;
+        </Description>
+        <Description>
+          Zaufaj profesjonalnemu serwisowi, który codziennie dba o&nbsp;niezawodność Twoich urządzeń RTV&nbsp;i&nbsp;AGD!
+        </Description>
+      </Main>
     </Hero>
   );
 };

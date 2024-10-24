@@ -29,7 +29,7 @@ export const Services = () => {
       <ServicesContainer>
         <ServicesTitle>Zakres usług</ServicesTitle>
         <main>
-          <ServiceItem id="naprawa-pralek">
+          <ServiceItem $services id="naprawa-pralek">
             <ServiceTitle>
               <span>✔</span>&nbsp;
               <StyledLink to="/naprawa-pralek">
@@ -49,7 +49,7 @@ export const Services = () => {
               w&nbsp;jak najkrótszym czasie.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem id="naprawa-zmywarek">
+          <ServiceItem $services id="naprawa-zmywarek">
             <ServiceTitle>
               <span>✔</span>&nbsp;
               <StyledLink to="/naprawa-zmywarek">
@@ -70,7 +70,7 @@ export const Services = () => {
               napraw.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem id="naprawa-ekspresów">
+          <ServiceItem $services id="naprawa-ekspresów">
             <ServiceTitle>
               <span>✔</span>&nbsp;
               <StyledLink to="/naprawa-ekspresow">
@@ -80,17 +80,17 @@ export const Services = () => {
             </ServiceTitle>
             <Photo src={ekspres} alt="naprawa ekspresow" />
             <ServiceText>
-              Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od marki
+              Profesjonalna naprawa ekspresów do&nbsp;kawy, niezależnie od&nbsp;marki
               i&nbsp;modelu. Czy Twój ekspres do kawy przestał działać, nie
               zaparza kawy jak&nbsp;wcześniej, wyświetla błędy, czy ma inne
               problemy? Jestem tutaj, aby pomóc. Specjalizuję się
               w&nbsp;naprawie zarówno domowych, jak i&nbsp;profesjonalnych
-              ekspresów do kawy, oferując precyzyjną diagnostykę i szybkie
+              ekspresów do kawy, oferując precyzyjną diagnostykę i&nbsp;szybkie
               naprawy. Moim celem jest, abyś mógł cieszyć się swoją ulubioną
               kawą bez żadnych przerw.
             </ServiceText>
           </ServiceItem>
-          <ServiceItem id="naprawa-telewizorów">
+          <ServiceItem $services id="naprawa-telewizorów">
             <ServiceTitle>
               <span>✔</span>&nbsp;
               <StyledLink to="/naprawa-telewizorow">
@@ -101,14 +101,14 @@ export const Services = () => {
             <Photo src={telewizor} alt="naprawa telewizorow" />
             <ServiceText>
               Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek,
-              od&nbsp;tradycyjnych po nowoczesne modele smart. Naprawiam
+              od&nbsp;tradycyjnych po&nbsp;nowoczesne modele smart. Naprawiam
               różnorodne problemy, takie jak brak obrazu, brak dźwięku, problemy
               z&nbsp;zasilaniem, uszkodzone matryce i&nbsp;inne. Dzięki
               dostępowi do oryginalnych części zamiennych oraz nowoczesnemu
               sprzętowi diagnostycznemu, jestem w&nbsp;stanie szybko
               i&nbsp;skutecznie przywrócić pełną funkcjonalność Twojego
               telewizora. Gwarantuję precyzyjną i&nbsp;profesjonalną obsługę,
-              abyś mógł cieszyć się ulubionymi programami bez zakłóceń.
+              abyś mógł cieszyć się ulubionymi programami bez&nbsp;zakłóceń.
             </ServiceText>
           </ServiceItem>
           <ServiceItem>

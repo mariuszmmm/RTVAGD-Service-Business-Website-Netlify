@@ -79,12 +79,20 @@ export const ServiceText = styled.p`
 `;
 
 export const ServiceItem = styled.div`
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "text photo";
-  margin: 0 0 100px;
   scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
+  margin: 0 0 100px;
+  display: grid;
+
+  ${({ $services }) => $services ? `
+    grid-template-areas:
+      "header header"
+      "text photo";
+  ` : `
+    grid-template-areas:
+      "text photo";
+  `}
+    
+
  
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     margin: 0 0 50px;
