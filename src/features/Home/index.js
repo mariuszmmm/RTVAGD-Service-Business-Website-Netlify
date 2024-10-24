@@ -92,8 +92,8 @@ export const Home = () => {
           <br />
           Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
           <br />
-          zapewniamy najwyższą jakość usług <br />
-          dla naszych klientów.
+          zapewniam najwyższą jakość usług <br />
+          dla moich klientów.
         </HeroSubText>
       </HeroContainer>
       <WashingMachine
