@@ -1,8 +1,27 @@
 import { createGlobalStyle } from "styled-components";
+import { rgba } from "polished";
 
 const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
+
+    ::-webkit-scrollbar {
+			width: 0.5vw;
+			min-width: 6px;
+		}
+		
+		::-webkit-scrollbar-track {
+			background-color: ${({ theme }) => rgba(theme.color.primary, 0.1)};
+		}
+		
+		::-webkit-scrollbar-thumb {
+			background-color: ${({ theme }) => rgba(theme.color.primary, 0.5)};
+			border-radius: 5px;
+		}
+		
+		::-webkit-scrollbar-thumb:hover {
+			background-color: ${({ theme }) => rgba(theme.color.primary, 1)};
+		}
   };
 
   *, ::after, ::before {

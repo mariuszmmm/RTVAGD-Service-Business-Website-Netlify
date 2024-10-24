@@ -35,7 +35,7 @@ export const Header = () => {
     <HeaderWrapper>
       <HeaderContainer>
         <Logo to="/">Serwis RTV&nbsp;i&nbsp;AGD</Logo>
-        <Nav>
+        <nav>
           <NavList>
             <ListItem>
               <StyledNavLink to="/">Strona Główna</StyledNavLink>
@@ -48,7 +48,7 @@ export const Header = () => {
               onMouseLeave={() => setShowSubNav(false)}
             >
               <StyledNavLink to="/uslugi">Usługi</StyledNavLink>
-              {showSubNav && <SubNav setShowSubNav={setShowSubNav} />}
+              <SubNav showSubNav={showSubNav} setShowSubNav={setShowSubNav} />
             </ListItem>
             <ListItem>
               <StyledNavLink to="/cennik">Cennik</StyledNavLink>
@@ -60,7 +60,7 @@ export const Header = () => {
               <StyledNavLink to="/kontakt">Kontakt</StyledNavLink>
             </ListItem>
           </NavList>
-        </Nav>
+        </nav>
         <StyledLink href={serwis.url.addTestimonial} $opinia $hidden={scrolled}>
           Wystaw opinię
         </StyledLink>

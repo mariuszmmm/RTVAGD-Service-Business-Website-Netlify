@@ -92,3 +92,38 @@ export const HeroSubText = styled.h3`
   ${textStyled}
   font-size: clamp(0.6rem, 1.8vw, 1.1rem);
 `;
+
+export const ServiceTitle = styled.h2`
+  padding-top: 80px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  grid-area: header;
+  
+  span{
+    color: ${({ theme }) => theme.color.check};
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    text-align: center;
+  }
+`;
+
+export const ServiceText = styled.p`
+  grid-area: text;
+  line-height: 1.8;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  text-align: justify;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    text-align: left;
+  }
+`;
+
+export const ServicesContainer = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+`;

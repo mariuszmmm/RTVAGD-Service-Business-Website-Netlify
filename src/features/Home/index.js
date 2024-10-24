@@ -4,6 +4,9 @@ import {
   HeroSubText,
   HeroText,
   HeroTitle,
+  ServicesContainer,
+  ServiceText,
+  ServiceTitle,
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { CoffeeMachine } from "./CoffeeMachine";
@@ -121,6 +124,35 @@ export const Home = () => {
       <CoffeeMachine show={true} center={isPortrait} />
       <Dishwasher show={true} center={isPortrait} />
       <Television show={true} center={isPortrait} /> */}
+
+      <ServicesContainer>
+        <ServiceTitle>Serwisujemy wszystkie marki telewizorów, pralek, ekspresów do kawy i zmywarek
+        </ServiceTitle>
+        <ServiceText>
+          Specjalizuję się w naprawie urządzeń RTV i AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i mniej znanych producentów. Naprawiam urządzenia marek takich jak:
+        </ServiceText>
+        <ServiceText as="ul">
+          <li>Telewizory: Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba</li>
+          <li>Pralki: Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy</li>
+          <li>Ekspresy do kawy: De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips</li>
+          <li>Zmywarki: Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele</li>
+        </ServiceText>
+        <ServiceText>
+          Dzięki doświadczeniu oraz dostępowi do oryginalnych części zamiennych, możesz mieć pewność, że Twoje urządzenie zostanie naprawione szybko i solidnie.
+        </ServiceText>
+      </ServicesContainer>
+      <ServicesContainer>
+        <ServiceTitle>Naprawy realizuję w Przemyślu i okolicach</ServiceTitle>
+        <ServiceText>
+          Działam na terenie Przemyśla i oferuję moje usługi również w pobliskich miejscowościach. Jeśli mieszkasz w jednym z poniższych miast lub okolicznych miejscowościach, chętnie przyjadę do Ciebie i naprawię Twoje urządzenie:
+        </ServiceText>
+        <ServiceText>
+          Krówniki • Przemyśl • Żurawica • Orzechowce • Ostrów • Duńkowiczki • Bolestraszyce • Nehrybka • Wyszatyce • Prałkowce • Pikulice
+        </ServiceText>
+        <ServiceText>
+          Zaufaj profesjonalnemu serwisowi, który codziennie dba o niezawodność Twoich urządzeń RTV i AGD!
+        </ServiceText>
+      </ServicesContainer>
     </Hero>
   );
 };
