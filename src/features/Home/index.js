@@ -126,7 +126,7 @@ export const Home = () => {
       <Television show={true} center={isPortrait} /> */}
 
       <ServicesContainer>
-        <ServiceTitle>Serwisujemy wszystkie marki telewizorów, pralek, ekspresów do kawy i zmywarek
+        <ServiceTitle>Serwisuję wszystkie marki telewizorów, pralek, ekspresów do kawy i zmywarek
         </ServiceTitle>
         <ServiceText>
           Specjalizuję się w naprawie urządzeń RTV i AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i mniej znanych producentów. Naprawiam urządzenia marek takich jak:
