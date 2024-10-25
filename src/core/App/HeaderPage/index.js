@@ -10,7 +10,7 @@ import { serwis } from "../../../utils/serwis";
 import { StyledLink } from "../../../common/Buttons";
 import { useEffect, useState } from "react";
 import { SubNav } from "./SubNav";
-export const Header = () => {
+export const HeaderPage = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showSubNav, setShowSubNav] = useState(false);
 
@@ -45,6 +45,7 @@ export const Header = () => {
             </ListItem>
             <ListItem
               onMouseEnter={() => setShowSubNav(true)}
+              onTouchStart={() => setShowSubNav(true)}
               onMouseLeave={() => setShowSubNav(false)}
             >
               <StyledNavLink to="/uslugi">Usługi</StyledNavLink>

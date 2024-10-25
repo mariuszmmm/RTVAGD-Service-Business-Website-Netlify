@@ -1,34 +1,40 @@
 import { HemletForWashingMachineService } from "./HemletForWashingMachineService";
-import { Photo, ServiceItem, ServicesContainer, ServicesSection, ServicesTitle, ServiceText, ServiceTitle } from "../styled";
+import { Photo, ServiceItem } from "../styled";
+import { SubTitle } from "../../../common/SubTitle";
+import { Text } from "../../../common/Text";
+import { Container } from "../../../common/Container";
+import { Section } from "../../../common/Section";
+import { Title } from "../../../common/Title";
 import pralka from "../../../assets/images/naprawa-pralki.webp";
 
 export const WashingMachineService = () => (
-  <ServicesSection $show>
+  <Section>
     <HemletForWashingMachineService />
-    <ServicesContainer>
-      <ServicesTitle><span>✔</span> Naprawa pralek</ServicesTitle>
+    <Container>
+      <Title><span>✔</span> Naprawa Pralek -&nbsp;Szybko i&nbsp;Skutecznie</Title>
       <main>
         <ServiceItem id="naprawa-pralek">
           <Photo src={pralka} alt="naprawa pralek" />
-          <ServiceText>
-            Oferuję kompleksowe usługi naprawy pralek automatycznych wszystkich marek.
-            Bez względu na&nbsp;to, czy Twoja pralka nie&nbsp;pobiera wody, wycieka, nie&nbsp;obraca bębna, czy wydaje dziwne dźwięki –&nbsp;jestem w&nbsp;stanie zdiagnozować i&nbsp;naprawić problem.
+          <Text>
+            <strong>Kompleksowe usługi naprawy pralek automatycznych wszystkich marek</strong><br />
+            Zepsuta pralka? Nie martw się! Oferuję fachową diagnostykę i naprawę pralek, które przestały działać.
+            Bez względu na problem — czy to brak poboru wody, wycieki, usterki bębna czy dziwne dźwięki — szybko zidentyfikuję i naprawię usterkę.
             <br />
-            Korzystam z&nbsp;nowoczesnych narzędzi diagnostycznych oraz&nbsp;oryginalnych części zamiennych, co&nbsp;zapewnia trwałość i&nbsp;niezawodność wykonanej naprawy.
-            Dzięki mojemu doświadczeniu i&nbsp;zaawansowanym technikom naprawczym, moim celem jest przywrócenie pełnej funkcjonalności Twojej pralki w&nbsp;jak&nbsp;najkrótszym czasie.
-          </ServiceText>
+            Korzystam z nowoczesnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, co zapewnia trwałość i niezawodność każdej naprawy.
+            Moje doświadczenie oraz zaawansowane techniki naprawcze pozwalają mi przywrócić pełną funkcjonalność Twojej pralki w jak najkrótszym czasie.
+          </Text>
         </ServiceItem>
-        <ServiceTitle>Dlaczego warto skorzystać z&nbsp;moich usług?</ServiceTitle>
-        <ServiceText as="ul">
-          <li><strong>Szybka diagnoza</strong> –&nbsp;Zidentyfikuję problem w&nbsp;krótkim czasie, abyś jak&nbsp;najszybciej mógł wrócić do&nbsp;codziennych obowiązków.</li>
-          <li><strong>Wysoka jakość naprawy</strong> –&nbsp;Używam tylko oryginalnych części, co&nbsp;zapewnia długotrwałą sprawność urządzenia.</li>
-          <li><strong>Zadowolenie klientów</strong> –&nbsp;Klienci cenią sobie moją rzetelność oraz terminowość.</li>
-          <li><strong>Elastyczność</strong> –&nbsp;Oferuję zarówno naprawy w&nbsp;warsztacie, jak i&nbsp;możliwość dojazdu do&nbsp;klienta.</li>
-        </ServiceText>
-        <ServiceText>
-          Nie pozwól, aby&nbsp;zepsuta pralka zakłóciła Twoją rutynę. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;szybko przywrócę jej pełną sprawność!
-        </ServiceText>
+        <SubTitle>Dlaczego warto skorzystać z&nbsp;moich usług?</SubTitle>
+        <Text as="ul">
+          <li><strong>Szybka Diagnoza:</strong> Zgłoś problem, a&nbsp;ja szybko ustalę, co jest przyczyną awarii, abyś mógł wrócić do swoich codziennych obowiązków.</li>
+          <li><strong>Wysoka Jakość Naprawy:</strong> Używam tylko oryginalnych części, co gwarantuje długotrwałą sprawność urządzenia.</li>
+          <li><strong>Zadowolenie Klientów:</strong> Cenię sobie rzetelność i&nbsp;terminowość, co przekłada się na pozytywne opinie moich klientów.</li>
+          <li><strong>Elastyczność:</strong> Oferuję naprawy w warsztacie oraz dojazd do klienta w dogodnych dla Ciebie godzinach.</li>
+        </Text>
+        <Text>
+          Nie pozwól, aby awaria pralki zakłóciła Twoją rutynę. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;szybko przywrócę jej pełną sprawność!
+        </Text>
       </main>
-    </ServicesContainer>
-  </ServicesSection>
+    </Container>
+  </Section>
 );

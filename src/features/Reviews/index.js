@@ -1,9 +1,7 @@
 import { ReviewsItem } from "./ReviewsItem";
-import {
-  ReviewsContainer,
-  ReviewsSection,
-  ReviewsTitle,
-} from "./styled";
+import { ReviewsContainer } from "./styled";
+import { Section } from "../../common/Section";
+import { Title } from "../../common/Title";
 import { serwis } from "../../utils/serwis";
 import { useEffect, useState } from "react";
 import { HemletForReviews } from "./HemletForReviews";
@@ -59,11 +57,11 @@ export const Reviews = () => {
   }, []);
 
   return (
-    <ReviewsSection $show={reviewsApi.status !== "loading"}>
+    <Section>
       <HemletForReviews />
       <ReviewsContainer>
-        <ReviewsTitle>Opinie Klientów</ReviewsTitle>
-        {(reviewsApi.status === "loading" ? [] : reviewsApi.reviews).map((item, index) => (
+        <Title>Opinie Klientów</Title>
+        {(reviewsApi.status === "loading" ? serwis.reviews : reviewsApi.reviews).map((item, index) => (
           <ReviewsItem
             item={item}
             key={index}
@@ -74,6 +72,6 @@ export const Reviews = () => {
       <StyledLink href={serwis.url.addTestimonial}>
         Wystaw opinię
       </StyledLink>
-    </ReviewsSection>
+    </Section>
   );
 };

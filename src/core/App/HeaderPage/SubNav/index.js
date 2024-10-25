@@ -5,7 +5,7 @@ export const SubNav = ({ showSubNav, setShowSubNav }) => {
   return (
     <SubNavWrapper $show={showSubNav}>
       <NavList $subNav onClick={() => setShowSubNav(false)}>
-        <ListItem $subNav>
+        <ListItem >
           <StyledNavLink to="/naprawa-pralek" $subNav>Naprawa pralek</StyledNavLink>
         </ListItem>
         <ListItem >

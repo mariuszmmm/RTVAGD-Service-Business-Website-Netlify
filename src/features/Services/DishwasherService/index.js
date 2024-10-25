@@ -1,34 +1,39 @@
 import { HemletForDishwasherService } from "./HemletForDishwasherService";
-import { Photo, ServiceItem, ServicesContainer, ServicesSection, ServicesTitle, ServiceText, ServiceTitle } from "../styled";
+import { Photo, ServiceItem } from "../styled";
+import { SubTitle } from "../../../common/SubTitle";
+import { Text } from "../../../common/Text";
+import { Container } from "../../../common/Container";
+import { Section } from "../../../common/Section";
+import { Title } from "../../../common/Title";
 import zmywarka from "../../../assets/images/serwis-zmywarek.webp";
 
 export const DishwasherService = () => (
-  <ServicesSection $show>
+  <Section>
     <HemletForDishwasherService />
-    <ServicesContainer>
-      <ServicesTitle><span>✔</span> Naprawa zmywarek</ServicesTitle>
+    <Container>
+      <Title><span>✔</span> Naprawa zmywarek -&nbsp;Szybko i&nbsp;Skutecznie</Title>
       <main>
         <ServiceItem id="naprawa-zmywarek">
           <Photo src={zmywarka} alt="naprawa zmywarek" />
-          <ServiceText>
-            Specjalistyczna naprawa zmywarek różnych marek, gwarantująca ich długotrwałe i&nbsp;efektywne działanie.
-            Problemy takie jak brak podgrzewania wody, wycieki, problemy z&nbsp;pompą czy trudności w&nbsp;suszeniu naczyń to&nbsp;tylko niektóre z&nbsp;usterek, które naprawiam.
-            Oferuję szybkie i&nbsp;skuteczne usługi naprawcze, zapewniając, że&nbsp;Twoja zmywarka będzie działać jak&nbsp;nowa.
-            <br />
-            Dzięki regularnym szkoleniom i&nbsp;aktualizacji wiedzy jestem na&nbsp;bieżąco z&nbsp;najnowszymi technologiami i&nbsp;metodami napraw, co&nbsp;pozwala mi skutecznie rozwiązywać nawet najbardziej skomplikowane problemy.
-          </ServiceText>
+          <Text>
+            <strong>Specjalistyczna naprawa zmywarek różnych marek</strong><br />
+            Zmywarka to jedno z&nbsp;najważniejszych urządzeń w&nbsp;każdej kuchni,
+            a&nbsp;jej awaria może znacząco utrudnić codzienne życie.
+            Oferuję kompleksowe usługi naprawcze, które przywrócą pełną sprawność Twojego sprzętu.
+            Radzę sobie z&nbsp;takimi problemami, jak brak podgrzewania wody, wycieki, usterki pompy czy trudności w&nbsp;suszeniu naczyń.
+          </Text>
         </ServiceItem>
-        <ServiceTitle>Dlaczego warto skorzystać z&nbsp;moich usług?</ServiceTitle>
-        <ServiceText as="ul">
-          <li><strong>Szybka reakcja</strong> –&nbsp;Zgłoś usterkę, a&nbsp;ja szybko zajmę się naprawą.</li>
-          <li><strong>Wysoka jakość</strong> –&nbsp;Używam tylko sprawdzonych części zamiennych i&nbsp;najnowszych technologii.</li>
-          <li><strong>Zadowolenie klientów</strong> –&nbsp;Moje usługi cieszą się zaufaniem i&nbsp;pozytywnymi opiniami klientów.</li>
-          <li><strong>Elastyczność</strong> –&nbsp;Oferuję naprawy w&nbsp;warsztacie oraz dojazd do&nbsp;klienta.</li>
-        </ServiceText>
-        <ServiceText>
-          Nie pozwól, aby zepsuta zmywarka skomplikowała Twoje życie. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;przywrócę jej pełną sprawność!
-        </ServiceText>
+        <SubTitle>Dlaczego warto wybrać moją ofertę?</SubTitle>
+        <Text as="ul">
+          <li><strong>Szybka Reakcja:</strong> Zgłoś usterkę, a&nbsp;ja natychmiast zajmę się jej naprawą. Zrozumienie, jak ważna jest dla Ciebie wygoda, motywuje mnie do działania.</li>
+          <li><strong>Wysoka Jakość Usług:</strong> Używam tylko sprawdzonych części zamiennych oraz nowoczesnych technologii, co gwarantuje długotrwałe efekty napraw</li>
+          <li><strong>Elastyczność:</strong> Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do klienta, co pozwala dostosować usługi do Twoich potrzeb.</li>
+          <li><strong>Zadowolenie Klientów:</strong> Moje usługi cieszą się zaufaniem i&nbsp;pozytywnymi opiniami. Każde zlecenie traktuję indywidualnie, dbając o&nbsp;najwyższą jakość wykonania..</li>
+        </Text>
+        <Text>
+          Nie pozwól, aby awaria zmywarki skomplikowała Twoje życie. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;przywrócę sprawność Twojego urządzenia, zapewniając Ci wygodę i&nbsp;spokój ducha.
+        </Text>
       </main>
-    </ServicesContainer>
-  </ServicesSection>
+    </Container>
+  </Section>
 );

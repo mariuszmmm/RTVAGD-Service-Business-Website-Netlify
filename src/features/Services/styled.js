@@ -1,33 +1,5 @@
 import { Link } from "react-router-dom";
-import styled, { css } from "styled-components";
-
-export const ServicesSection = styled.section`
-  padding: 100px 0;
-  text-align: center;
-  min-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  ${({ $show }) =>
-    $show &&
-    css`
-      opacity: 1;
-    `}
-`;
-
-export const ServicesContainer = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-`;
-
-export const ServicesTitle = styled.h1`
-  margin-bottom: 70px;
-  font-size: clamp(1.5rem, 3vw, 3rem);
-
-  span{
-    color: ${({ theme }) => theme.color.check};
-  }
-`;
+import styled from "styled-components";
 
 export const Photo = styled.img`
   width: 15vw;
@@ -37,23 +9,6 @@ export const Photo = styled.img`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     display: none;
-  }
-`;
-
-export const ServiceTitle = styled.h2`
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  grid-area: header;
-  
-  span{
-    color: ${({ theme }) => theme.color.check};
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    text-align: center;
   }
 `;
 
@@ -67,20 +22,9 @@ export const Emoticon = styled.img`
   }
 `;
 
-export const ServiceText = styled.p`
-  grid-area: text;
-  line-height: 1.8;
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-  text-align: justify;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    text-align: left;
-  }
-`;
-
 export const ServiceItem = styled.div`
   scroll-margin-top: clamp(4rem, 7vw, 5.5rem);
-  margin: 0 0 100px;
+  margin: 0 0 60px;
   display: grid;
 
   ${({ $services }) => $services ? `
@@ -92,10 +36,9 @@ export const ServiceItem = styled.div`
       "text photo";
   `}
     
-
  
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    margin: 0 0 50px;
+    margin: 0 0 20px;
   }
 `;
 

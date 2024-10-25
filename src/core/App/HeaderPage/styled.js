@@ -47,10 +47,6 @@ export const NavList = styled.ul`
     flex-direction: column;
     align-items: stretch;
     padding: 5px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      padding: 2px;
-    }
   `}
 `;
 

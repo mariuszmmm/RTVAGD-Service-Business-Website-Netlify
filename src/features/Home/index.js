@@ -1,13 +1,13 @@
 import {
-  Hero,
   HeroContainer,
+  Hero,
   HeroSubText,
-  HeroSubTitle,
   HeroText,
   HeroTitle,
-  Main,
-  Description,
 } from "./styled";
+import { SubTitle } from "../../common/SubTitle";
+import { Text } from "../../common/Text";
+import { Container } from "../../common/Container";
 import { serwis } from "../../utils/serwis";
 import { CoffeeMachine } from "./CoffeeMachine";
 import { WashingMachine } from "./WashingMachine";
@@ -27,7 +27,6 @@ export const Home = () => {
     number: 0,
     content: isPortrait ? mobileScene[0] : scene[0],
   });
-  const [show, setShow] = useState(false);
   const [hold, setHold] = useState(false);
 
   const handleResize = () => {
@@ -70,12 +69,8 @@ export const Home = () => {
     // eslint-disable-next-line
   }, [activeScene, hold]);
 
-  useEffect(() => {
-    setShow(true);
-  }, []);
-
   return (
-    <Hero $show={show}>
+    <Hero>
       <HelmetForHome />
       <HeroContainer>
         <HeroTitle>
@@ -92,8 +87,7 @@ export const Home = () => {
           <br />
           Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
           <br />
-          zapewniam najwyższą jakość usług <br />
-          dla moich klientów.
+          zapewniam najwyższą jakość usług
         </HeroSubText>
       </HeroContainer>
       <WashingMachine
@@ -120,43 +114,38 @@ export const Home = () => {
         reset={activeScene.reset}
         setHold={setHold}
       />
-      {/* <WashingMachine show={true} center={isPortrait} />
-      <CoffeeMachine show={true} center={isPortrait} />
-      <Dishwasher show={true} center={isPortrait} />
-      <Television show={true} center={isPortrait} /> */}
-
-      <Main>
-        <HeroSubTitle>
+      <Container>
+        <SubTitle>
           Serwisuję wszystkie marki telewizorów, pralek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
-        </HeroSubTitle>
-        <Description>
+        </SubTitle>
+        <Text>
           Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i&nbsp;mniej znanych producentów. Naprawiam urządzenia marek takich jak:
-        </Description>
-        <Description as="ul">
+        </Text>
+        <Text as="ul">
           <li><strong>Telewizory:</strong> Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba</li>
           <li><strong>Pralki:</strong> Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy</li>
           <li><strong>Ekspresy do kawy:</strong> De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips</li>
           <li><strong>Zmywarki:</strong> Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele</li>
-        </Description>
-        <Description>
+        </Text>
+        <Text>
           Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.
-        </Description>
+        </Text>
         <br />
         <br />
-        <HeroSubTitle>
+        <SubTitle>
           Naprawy realizuję w&nbsp;Przemyślu i&nbsp;okolicach
-        </HeroSubTitle>
-        <Description>
+        </SubTitle>
+        <Text>
           Działam na&nbsp;terenie Przemyśla i&nbsp;oferuję moje usługi również w&nbsp;pobliskich miejscowościach oraz ich&nbsp;okolicach.
           Jeśli mieszkasz w&nbsp;jednym z&nbsp;poniższych miejsc lub w&nbsp;ich&nbsp;sąsiedztwie, chętnie przyjadę do&nbsp;Ciebie i&nbsp;naprawię Twoje urządzenie:
-        </Description>
-        <Description>
+        </Text>
+        <Text>
           Przemyśl&nbsp;• Bolestraszyce&nbsp;• Duńkowiczki&nbsp;• Krówniki&nbsp;• Nehrybka&nbsp;• Orzechowce&nbsp;• Ostrów&nbsp;• Pikulice • Prałkowce&nbsp;• Wyszatyce&nbsp;• Żurawica&nbsp;
-        </Description>
-        <Description>
+        </Text>
+        <Text>
           Zaufaj profesjonalnemu serwisowi, który codziennie dba o&nbsp;niezawodność Twoich urządzeń RTV&nbsp;i&nbsp;AGD!
-        </Description>
-      </Main>
+        </Text>
+      </Container>
     </Hero>
   );
 };

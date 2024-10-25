@@ -6,13 +6,6 @@ export const Hero = styled.section`
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  ${({ $show }) =>
-    $show &&
-    css`
-      opacity: 1;
-    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 100px 0 6vh;
@@ -91,38 +84,4 @@ export const HeroText = styled.p`
 export const HeroSubText = styled.p`
   ${textStyled}
   font-size: clamp(0.6rem, 1.8vw, 1.1rem);
-`;
-
-export const HeroSubTitle = styled.h2`
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  grid-area: header;
-  
-  span{
-    color: ${({ theme }) => theme.color.check};
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    padding-top: 0;
-  }
-`;
-
-export const Description = styled.p`
-  grid-area: text;
-  line-height: 1.8;
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-  text-align: justify;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    text-align: left;
-  }
-`;
-
-export const Main = styled.div`
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 20px;
 `;

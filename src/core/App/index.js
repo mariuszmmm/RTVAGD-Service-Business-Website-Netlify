@@ -4,7 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Header } from "./Header";
+import { HeaderPage } from "./HeaderPage";
 import { About } from "../../features/About";
 import { Home } from "../../features/Home";
 import { Services } from "../../features/Services";
@@ -24,7 +24,7 @@ const App = () => (
   <Router>
     <ScrollToTop />
     <Background />
-    <Header />
+    <HeaderPage />
     <HelmetProvider>
       <Routes>
         <Route path="/" element={<Home />} />
