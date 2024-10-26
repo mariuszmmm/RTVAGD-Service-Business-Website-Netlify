@@ -27,6 +27,8 @@ RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [R=301,L]
 
 # Przekierowanie 301 dla konkretnych stron
 RewriteRule ^o-nas$ /o-mnie [R=301,L]
+RewriteRule ^uslugi(/.*)?$ / [R=301,L]
+
 
   # Przekierowanie wszystkich żądań do index.html (SPA)
   RewriteCond %{REQUEST_FILENAME} !-f

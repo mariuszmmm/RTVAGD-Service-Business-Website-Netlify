@@ -4,10 +4,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { HeaderPage } from "./HeaderPage";
+import { Header } from "./Header";
 import { About } from "../../features/About";
 import { Home } from "../../features/Home";
-import { Services } from "../../features/Services";
 import { Pricing } from "../../features/Pricing";
 import { Reviews } from "../../features/Reviews";
 import { Contact } from "../../features/Contact";
@@ -24,12 +23,11 @@ const App = () => (
   <Router>
     <ScrollToTop />
     <Background />
-    <HeaderPage />
+    <Header />
     <HelmetProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/o-mnie" element={<About />} />
-        <Route path="/uslugi" element={<Services />} />
         <Route path="/naprawa-pralek" element={<WashingMachineService />} />
         <Route path="/naprawa-zmywarek" element={<DishwasherService />} />
         <Route path="/naprawa-ekspresow" element={<CoffeeMachineService />} />

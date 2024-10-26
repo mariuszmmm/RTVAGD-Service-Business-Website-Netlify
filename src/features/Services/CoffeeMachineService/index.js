@@ -11,29 +11,28 @@ export const CoffeeMachineService = () => (
   <Section>
     <HemletForCoffeeMachineService />
     <Container>
-      <Title><span>✔</span> Naprawa Ekspresów do Kawy -&nbsp;Szybko i&nbsp;Profesjonalnie</Title>
+      <Title><span>✔ </span>Naprawa Ekspresów do Kawy</Title>
       <main>
-        <ServiceItem id="naprawa-ekspresów">
+        <ServiceItem>
+          <SubTitle>Profesjonalna naprawa ekspresów do&nbsp;kawy,<br />niezależnie od&nbsp;marki i&nbsp;modelu.</SubTitle>
           <Photo src={ekspres} alt="naprawa ekspresow" />
           <Text>
-            <strong>Profesjonalna naprawa ekspresów do kawy niezależnie od marki i&nbsp;modelu</strong><br />
-            Czy Twój ekspres do kawy przestał działać? A&nbsp;może nie zaparza kawy tak, jak dawniej, wyświetla błędy lub ma inne problemy? Jestem tutaj, aby Ci pomóc.
-            Specjalizuję się w naprawie zarówno domowych, jak i&nbsp;profesjonalnych ekspresów do kawy, oferując precyzyjną diagnostykę oraz szybkie i&nbsp;skuteczne naprawy.
+            Czy Twój ekspres do&nbsp;kawy przestał działać? A&nbsp;może nie&nbsp;zaparza kawy tak, jak&nbsp;dawniej, wyświetla błędy lub&nbsp;ma&nbsp;inne&nbsp;problemy? Jestem tutaj, aby&nbsp;Ci&nbsp;pomóc.
+            Specjalizuję się w&nbsp;naprawie zarówno domowych, jak&nbsp;i&nbsp;profesjonalnych ekspresów do&nbsp;kawy, oferując precyzyjną diagnostykę oraz&nbsp;szybkie i&nbsp;skuteczne naprawy.
             <br />
-            Moim celem jest zapewnienie Ci możliwości cieszenia się ulubioną kawą bez przerw.
-            Dzięki wieloletniemu doświadczeniu oraz dostępowi do oryginalnych części zamiennych, oferuję kompleksową obsługę, dbając o&nbsp;każdy detal.
+            Moim celem jest umożliwienie&nbsp;Ci cieszenia&nbsp;się ulubioną kawą bez&nbsp;przerw.
+            Dzięki wieloletniemu doświadczeniu oraz&nbsp;dostępowi do&nbsp;oryginalnych części zamiennych, oferuję kompleksową obsługę, dbając o&nbsp;każdy detal.
           </Text>
         </ServiceItem>
-        <SubTitle>Dlaczego warto skorzystać z&nbsp;mojej usługi?</SubTitle>
+        <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;mojej usługi?</SubTitle>
         <Text as="ul">
-          <li><strong>Szybka Diagnostyka:</strong> Zidentyfikuję problem w&nbsp;krótkim czasie, abyś jak najszybciej mógł wrócić do swoich codziennych rytuałów.</li>
-          <li><strong>Wysoka Jakość Naprawy:</strong> Pracuję na oryginalnych częściach oraz sprawdzonych rozwiązaniach, co zapewnia długotrwałe efekty.</li>
-          <li><strong>Zadowolenie Klientów:</strong> Moje usługi są rekomendowane przez wielu zadowolonych klientów, którzy wracają z kolejnymi zleceniami.
-            Dbam o&nbsp;to, aby każdy klient czuł się traktowany indywidualnie.</li>
-          <li><strong>Elastyczność:</strong> Oferuję naprawy zarówno w warsztacie, jak i&nbsp;możliwość dojazdu do klienta w&nbsp;dogodnych dla Ciebie godzinach.</li>
+          <li><strong>Szybka diagnostyka: </strong>Zidentyfikuję problem w&nbsp;krótkim czasie, abyś mógł jak&nbsp;najszybciej cieszyć&nbsp;się swoją kawą.</li>
+          <li><strong>Wysoka jakość naprawy: </strong>Pracuję na&nbsp;oryginalnych częściach oraz sprawdzonych rozwiązaniach, co&nbsp;zapewnia długotrwałe efekty.</li>
+          <li><strong>Zadowolenie klientów: </strong>Moje usługi są&nbsp;rekomendowane przez wielu zadowolonych klientów, którzy wracają z&nbsp;kolejnymi zleceniami.</li>
+          <li><strong>Elastyczność: </strong>Oferuję naprawy zarówno w warsztacie, jak&nbsp;i&nbsp;dojazd do&nbsp;klienta w&nbsp;dogodnych godzinach.</li>
         </Text>
         <Text>
-          Nie pozwól, aby uszkodzony ekspres zepsuł Twój poranek. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;szybko przywrócę pełną funkcjonalność Twojego ekspresu do kawy!
+          Nie pozwól, aby&nbsp;uszkodzony ekspres zepsuł Twój poranek. Skontaktuj&nbsp;się ze&nbsp;mną już&nbsp;dziś, a&nbsp;szybko przywrócę pełną funkcjonalność Twojego ekspresu do&nbsp;kawy!
         </Text>
       </main>
     </Container>

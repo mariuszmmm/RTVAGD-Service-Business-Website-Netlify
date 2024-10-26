@@ -11,27 +11,27 @@ export const DishwasherService = () => (
   <Section>
     <HemletForDishwasherService />
     <Container>
-      <Title><span>✔</span> Naprawa zmywarek -&nbsp;Szybko i&nbsp;Skutecznie</Title>
+      <Title><span>✔ </span>Naprawa zmywarek</Title>
       <main>
-        <ServiceItem id="naprawa-zmywarek">
+        <ServiceItem >
           <Photo src={zmywarka} alt="naprawa zmywarek" />
+          <SubTitle>Specjalistyczna naprawa zmywarek różnych marek</SubTitle>
           <Text>
-            <strong>Specjalistyczna naprawa zmywarek różnych marek</strong><br />
             Zmywarka to jedno z&nbsp;najważniejszych urządzeń w&nbsp;każdej kuchni,
             a&nbsp;jej awaria może znacząco utrudnić codzienne życie.
             Oferuję kompleksowe usługi naprawcze, które przywrócą pełną sprawność Twojego sprzętu.
-            Radzę sobie z&nbsp;takimi problemami, jak brak podgrzewania wody, wycieki, usterki pompy czy trudności w&nbsp;suszeniu naczyń.
+            Rozwiązuję problemy takie jak&nbsp;brak podgrzewania wody, wycieki, usterki pompy czy&nbsp;trudności w&nbsp;suszeniu naczyń.
           </Text>
         </ServiceItem>
-        <SubTitle>Dlaczego warto wybrać moją ofertę?</SubTitle>
+        <SubTitle as="h3">Dlaczego warto wybrać moją ofertę?</SubTitle>
         <Text as="ul">
-          <li><strong>Szybka Reakcja:</strong> Zgłoś usterkę, a&nbsp;ja natychmiast zajmę się jej naprawą. Zrozumienie, jak ważna jest dla Ciebie wygoda, motywuje mnie do działania.</li>
-          <li><strong>Wysoka Jakość Usług:</strong> Używam tylko sprawdzonych części zamiennych oraz nowoczesnych technologii, co gwarantuje długotrwałe efekty napraw</li>
-          <li><strong>Elastyczność:</strong> Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do klienta, co pozwala dostosować usługi do Twoich potrzeb.</li>
-          <li><strong>Zadowolenie Klientów:</strong> Moje usługi cieszą się zaufaniem i&nbsp;pozytywnymi opiniami. Każde zlecenie traktuję indywidualnie, dbając o&nbsp;najwyższą jakość wykonania..</li>
+          <li><strong>Szybka reakcja: </strong>Zgłoś usterkę, a&nbsp;natychmiast zajmę się jej naprawą, ponieważ rozumiem, jak ważna jest dla Ciebie wygoda.</li>
+          <li><strong>Wysoka jakość usług: </strong>Używam wyłącznie sprawdzonych części zamiennych oraz nowoczesnych technologii, co zapewnia długotrwałe efekty naprawy.</li>
+          <li><strong>Elastyczność: </strong>Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do klienta, co pozwala dostosować usługi do Twoich potrzeb.</li>
+          <li><strong>Zadowolenie klientów: </strong>Moje usługi cieszą się zaufaniem i&nbsp;pozytywnymi opiniami. Każde zlecenie traktuję indywidualnie, dbając o&nbsp;najwyższą jakość.</li>
         </Text>
         <Text>
-          Nie pozwól, aby awaria zmywarki skomplikowała Twoje życie. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;przywrócę sprawność Twojego urządzenia, zapewniając Ci wygodę i&nbsp;spokój ducha.
+          Nie pozwól, aby awaria zmywarki utrudniała Ci codzienne obowiązki. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;przywrócę pełną sprawność Twojego urządzenia.
         </Text>
       </main>
     </Container>

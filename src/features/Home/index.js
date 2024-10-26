@@ -74,19 +74,17 @@ export const Home = () => {
       <HelmetForHome />
       <HeroContainer>
         <HeroTitle>
-          Profesjonalna naprawa
-          <br /> pralek, zmywarek, telewizorów
-          <br /> i&nbsp;ekspresów do&nbsp;kawy
-          <br />
+          Profesjonalna naprawa<br />
+          pralek, zmywarek, telewizorów<br />
+          i&nbsp;ekspresów do&nbsp;kawy<br />
           w&nbsp;Przemyślu
         </HeroTitle>
-        <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
+        <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
         <StyledLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledLink>
         <HeroSubText $notShow={isPortrait}>
-          {" "}
-          <br />
-          Z ponad 20-letnim doświadczeniem <br />w naprawie sprzętu RTV i AGD,
-          <br />
+          {" "}<br />
+          Z&nbsp;ponad 20-letnim doświadczeniem<br />
+          w&nbsp;naprawie sprzętu RTV&nbsp;i&nbsp;AGD,<br />
           zapewniam najwyższą jakość usług
         </HeroSubText>
       </HeroContainer>
@@ -119,13 +117,14 @@ export const Home = () => {
           Serwisuję wszystkie marki telewizorów, pralek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
         </SubTitle>
         <Text>
-          Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i&nbsp;mniej znanych producentów. Naprawiam urządzenia marek takich jak:
+          Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla&nbsp;popularnych, jak&nbsp;i&nbsp;mniej znanych producentów.<br />
+          Naprawiam urządzenia marek takich jak:
         </Text>
         <Text as="ul">
-          <li><strong>Telewizory:</strong> Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba</li>
-          <li><strong>Pralki:</strong> Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy</li>
-          <li><strong>Ekspresy do kawy:</strong> De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips</li>
-          <li><strong>Zmywarki:</strong> Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele</li>
+          <li><strong>Telewizory:</strong> Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba,</li>
+          <li><strong>Pralki:</strong> Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy,</li>
+          <li><strong>Ekspresy do kawy:</strong> De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,</li>
+          <li><strong>Zmywarki:</strong> Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,</li>
         </Text>
         <Text>
           Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.
@@ -136,11 +135,9 @@ export const Home = () => {
           Naprawy realizuję w&nbsp;Przemyślu i&nbsp;okolicach
         </SubTitle>
         <Text>
-          Działam na&nbsp;terenie Przemyśla i&nbsp;oferuję moje usługi również w&nbsp;pobliskich miejscowościach oraz ich&nbsp;okolicach.
+          Działam na&nbsp;terenie Przemyśla i&nbsp;oferuję usługi również w&nbsp;pobliskich miejscowościach.
           Jeśli mieszkasz w&nbsp;jednym z&nbsp;poniższych miejsc lub w&nbsp;ich&nbsp;sąsiedztwie, chętnie przyjadę do&nbsp;Ciebie i&nbsp;naprawię Twoje urządzenie:
-        </Text>
-        <Text>
-          Przemyśl&nbsp;• Bolestraszyce&nbsp;• Duńkowiczki&nbsp;• Krówniki&nbsp;• Nehrybka&nbsp;• Orzechowce&nbsp;• Ostrów&nbsp;• Pikulice • Prałkowce&nbsp;• Wyszatyce&nbsp;• Żurawica&nbsp;
+          Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.
         </Text>
         <Text>
           Zaufaj profesjonalnemu serwisowi, który codziennie dba o&nbsp;niezawodność Twoich urządzeń RTV&nbsp;i&nbsp;AGD!

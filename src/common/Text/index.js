@@ -5,7 +5,7 @@ export const Text = styled.p`
   line-height: 1.8;
   margin-bottom: 20px;
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-  margin: 0;
+  margin: 1rem 0;
   text-align: justify;
   text-justify: inter-word;
 

@@ -89,6 +89,9 @@ export const StyledNavLink = styled(NavLink)`
   &.active,
   &:hover {
     background-color: ${({ theme }) => theme.color.emperor};
+    ${({ disabled }) => disabled && css`
+    background-color: ${({ theme }) => theme.color.primary};
+    `};
   }
 `;
 

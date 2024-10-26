@@ -11,28 +11,28 @@ export const TelevisionService = () => (
   <Section>
     <HemletForTelevisionService />
     <Container>
-      <Title><span>✔</span> Naprawa Telewizorów -&nbsp;Szybko i&nbsp;Skutecznie</Title>
+      <Title><span>✔ </span>Naprawa Telewizorów</Title>
       <main>
-        <ServiceItem id="naprawa-telewizorów">
+        <ServiceItem>
+          <SubTitle>Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek</SubTitle>
           <Photo src={telewizor} alt="naprawa telewizorow" />
           <Text>
-            <strong>Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek</strong><br />
-            Czy Twój telewizor przestał działać? Niezależnie od tego, czy to brak obrazu, brak dźwięku, problemy z&nbsp;zasilaniem czy uszkodzone matryce -&nbsp;jestem tutaj, aby przywrócić Twój telewizor do pełnej sprawności.
-            Specjalizuję się w naprawach zarówno tradycyjnych, jak i&nbsp;nowoczesnych modeli smart, oferując szybką i&nbsp;profesjonalną obsługę.
+            Czy Twój telewizor przestał działać? Niezależnie od&nbsp;tego, czy&nbsp;to&nbsp;brak&nbsp;obrazu, brak&nbsp;dźwięku, problemy z&nbsp;zasilaniem czy&nbsp;uszkodzone matryca -&nbsp;jestem tutaj, aby&nbsp;przywrócić Twój telewizor do&nbsp;pełnej sprawności.
+            Specjalizuję&nbsp;się w&nbsp;naprawach zarówno tradycyjnych, jak i&nbsp;nowoczesnych modeli, oferując szybką i&nbsp;profesjonalną obsługę.
             <br />
-            Dzięki dostępowi do oryginalnych części zamiennych oraz nowoczesnemu sprzętowi diagnostycznemu, potrafię szybko zidentyfikować i&nbsp;skutecznie usunąć usterki.
+            Dzięki dostępowi do&nbsp;oryginalnych części zamiennych oraz&nbsp;nowoczesnemu sprzętowi diagnostycznemu, potrafię szybko zidentyfikować i&nbsp;skutecznie usunąć usterki.
             Moim celem jest, abyś mógł cieszyć się ulubionymi programami bez zakłóceń.
           </Text>
         </ServiceItem>
-        <SubTitle>Dlaczego warto skorzystać z&nbsp;mojej usługi?</SubTitle>
+        <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;mojej usługi?</SubTitle>
         <Text as="ul">
-          <li><strong>Szybka Diagnoza:</strong> Zidentyfikuję problem w&nbsp;krótkim czasie, abyś jak najszybciej mógł wrócić do oglądania ulubionych filmów i&nbsp;programów.</li>
-          <li><strong>Wysoka Jakość Naprawy:</strong> Używam tylko oryginalnych części, co zapewnia długotrwałą sprawność Twojego telewizora.</li>
-          <li><strong>Zadowolenie Klientów:</strong> Klienci doceniają moją rzetelność, terminowość i&nbsp;jakość świadczonych usług, co potwierdzają pozytywne opinie.</li>
-          <li><strong>Elastyczność:</strong> Oferuję naprawy w warsztacie oraz możliwość dojazdu do klienta w dogodnych dla Ciebie godzinach.</li>
+          <li><strong>Szybka diagnoza: </strong>Zidentyfikuję problem w&nbsp;krótkim czasie, abyś jak najszybciej mógł wrócić do oglądania ulubionych filmów i&nbsp;programów.</li>
+          <li><strong>Wysoka jakość naprawy: </strong>Używam tylko oryginalnych części, co zapewnia długotrwałą sprawność Twojego telewizora.</li>
+          <li><strong>Zadowolenie klientów: </strong>Klienci doceniają moją rzetelność, terminowość i&nbsp;jakość świadczonych usług, co potwierdzają pozytywne opinie.</li>
+          <li><strong>Elastyczność: </strong>Oferuję naprawy w warsztacie oraz dojazd do&nbsp;klienta w&nbsp;dogodnych godzinach.</li>
         </Text>
         <Text>
-          Nie pozwól, aby zepsuty telewizor zakłócił Twoją radość z&nbsp;oglądania. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;szybko przywrócę Twój telewizor do życia!
+          Nie pozwól, aby&nbsp;zepsuty telewizor przeszkodził&nbsp;Ci w&nbsp;oglądaniu ulubionych programów. Skontaktuj&nbsp;się ze&nbsp;mną już&nbsp;dziś, a&nbsp;szybko przywrócę Twój telewizor do&nbsp;życia!
         </Text>
       </main>
     </Container>

@@ -15,6 +15,8 @@ export const Reviews = () => {
 
   async function fetchReviews() {
     try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
       /* global google */
       const { Place } = await google.maps.importLibrary("places");
       const place = new Place({
@@ -41,7 +43,6 @@ export const Reviews = () => {
             !reviews.find((review) => review.text === item.text));
           reviews = [...reviews, ...reviewsReserve];
         }
-
         setReviewsApi({ status: "success", reviews: reviews });
       } else {
         throw new Error("Brak opinii");
@@ -61,7 +62,8 @@ export const Reviews = () => {
       <HemletForReviews />
       <ReviewsContainer>
         <Title>Opinie Klientów</Title>
-        {(reviewsApi.status === "loading" ? serwis.reviews : reviewsApi.reviews).map((item, index) => (
+        {reviewsApi.status === "loading" && <p>Ładowanie opinii z Google...</p>}
+        {(reviewsApi.status === "loading" ? [] : reviewsApi.reviews).map((item, index) => (
           <ReviewsItem
             item={item}
             key={index}
@@ -69,9 +71,9 @@ export const Reviews = () => {
           />
         ))}
       </ReviewsContainer>
-      <StyledLink href={serwis.url.addTestimonial}>
+      {reviewsApi.status === "success" && <StyledLink href={serwis.url.addTestimonial}>
         Wystaw opinię
-      </StyledLink>
+      </StyledLink>}
     </Section>
   );
 };
