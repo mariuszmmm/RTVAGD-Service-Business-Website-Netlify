@@ -23,7 +23,7 @@ export const DishwasherService = () => (
             Rozwiązuję problemy takie jak&nbsp;brak podgrzewania wody, wycieki, usterki pompy czy&nbsp;trudności w&nbsp;suszeniu naczyń.
             <br />
             Dzięki nowoczesnym narzędziom diagnostycznym oraz&nbsp;oryginalnym częściom zamiennym zapewniam trwałość i&nbsp;niezawodność każdej naprawy.
-            Moje doświadczenie oraz zaawansowane techniki naprawcze pozwalają&nbsp;mi przywrócić pełną funkcjonalność Twojej pralki w&nbsp;możliwie najkrótszym czasie.
+            Moje doświadczenie oraz zaawansowane techniki naprawcze pozwalają&nbsp;mi przywrócić pełną funkcjonalność Twojej zmywarki w&nbsp;możliwie najkrótszym czasie.
           </Text>
         </ServiceItem>
         <SubTitle as="h3">Dlaczego warto wybrać moją ofertę?</SubTitle>
