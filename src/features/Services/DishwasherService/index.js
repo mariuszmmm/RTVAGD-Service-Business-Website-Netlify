@@ -21,6 +21,9 @@ export const DishwasherService = () => (
             a&nbsp;jej awaria może znacząco utrudnić codzienne życie.
             Oferuję kompleksowe usługi naprawcze, które przywrócą pełną sprawność Twojego sprzętu.
             Rozwiązuję problemy takie jak&nbsp;brak podgrzewania wody, wycieki, usterki pompy czy&nbsp;trudności w&nbsp;suszeniu naczyń.
+            <br />
+            Dzięki nowoczesnym narzędziom diagnostycznym oraz&nbsp;oryginalnym częściom zamiennym zapewniam trwałość i&nbsp;niezawodność każdej naprawy.
+            Moje doświadczenie oraz zaawansowane techniki naprawcze pozwalają&nbsp;mi przywrócić pełną funkcjonalność Twojej pralki w&nbsp;możliwie najkrótszym czasie.
           </Text>
         </ServiceItem>
         <SubTitle as="h3">Dlaczego warto wybrać moją ofertę?</SubTitle>
