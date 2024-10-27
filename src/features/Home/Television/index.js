@@ -9,7 +9,7 @@ export const Television = ({ show, center, reset, setHold }) => (
     onMouseEnter={() => setHold(true)}
     onMouseLeave={() => setHold(false)}
   >
-    <Link to="/uslugi#naprawa-telewizorów">
+    <Link to="/naprawa-telewizorow">
       <Image
         src={telewizor}
         alt="Serwis telewizorów w Przemyślu"

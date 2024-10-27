@@ -7,7 +7,7 @@ import {
   StyledNavLink,
 } from "./styled";
 import { serwis } from "../../../utils/serwis";
-import { StyledLink } from "../../../common/Buttons";
+import { StyledButtonLink } from "../../../common/Buttons";
 import { useEffect, useState } from "react";
 import { SubNav } from "./SubNav";
 export const Header = () => {
@@ -62,9 +62,9 @@ export const Header = () => {
             </ListItem>
           </NavList>
         </nav>
-        <StyledLink href={serwis.url.addTestimonial} $opinia $hidden={scrolled}>
+        <StyledButtonLink href={serwis.url.addTestimonial} $opinia $hidden={scrolled}>
           Wystaw opinię
-        </StyledLink>
+        </StyledButtonLink>
       </HeaderContainer>
     </HeaderWrapper>
   );

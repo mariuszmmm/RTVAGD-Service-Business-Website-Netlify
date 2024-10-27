@@ -5,7 +5,7 @@ import { Title } from "../../common/Title";
 import { serwis } from "../../utils/serwis";
 import { useEffect, useState } from "react";
 import { HemletForReviews } from "./HemletForReviews";
-import { StyledLink } from "../../common/Buttons";
+import { StyledButtonLink } from "../../common/Buttons";
 
 export const Reviews = () => {
   const [reviewsApi, setReviewsApi] = useState({
@@ -71,9 +71,9 @@ export const Reviews = () => {
           />
         ))}
       </ReviewsContainer>
-      {reviewsApi.status === "success" && <StyledLink href={serwis.url.addTestimonial}>
+      {reviewsApi.status !== "loading" && <StyledButtonLink href={serwis.url.addTestimonial}>
         Wystaw opinię
-      </StyledLink>}
+      </StyledButtonLink>}
     </Section>
   );
 };

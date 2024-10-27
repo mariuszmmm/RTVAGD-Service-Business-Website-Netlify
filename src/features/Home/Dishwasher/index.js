@@ -10,7 +10,7 @@ export const Dishwasher = ({ show, center, reset, setHold }) => (
     onMouseLeave={() => setHold(false)}
   >
     {" "}
-    <Link to="/uslugi#naprawa-zmywarek">
+    <Link to="/naprawa-zmywarek">
       <Image
         src={zmywarka}
         alt="Serwis zmywarek w Przemyślu"

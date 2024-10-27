@@ -28,11 +28,11 @@ export const Contact = () => (
         </ContactText>
         <ContactText>
           e-mail:{" "}
-          <StyledLink href={`mailto: ${serwis.email}`} title={serwis.email}>{serwis.email}</StyledLink>
+          <StyledLink href={`mailto:${serwis.email}`} title={serwis.email}>{serwis.email}</StyledLink>
         </ContactText>
         <ContactText>
           telefon:{" "}
-          <StyledLink href={`tel: ${serwis.phone}`} title={(serwis.phone).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}>{serwis.phone}</StyledLink>
+          <StyledLink href={`tel:${serwis.phone}`} title={(serwis.phone).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}>{serwis.phone}</StyledLink>
         </ContactText>
         <br />
         <ContactText>NIP: 7952257951</ContactText>

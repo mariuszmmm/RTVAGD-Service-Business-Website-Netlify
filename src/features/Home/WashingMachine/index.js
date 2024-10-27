@@ -9,7 +9,7 @@ export const WashingMachine = ({ show, center, reset, setHold }) => (
     onMouseEnter={() => setHold(true)}
     onMouseLeave={() => setHold(false)}
   >
-    <Link to="/uslugi#naprawa-pralek">
+    <Link to="/naprawa-pralek">
       <Image
         src={pralka}
         alt="Naprawa pralek w Przemyślu"

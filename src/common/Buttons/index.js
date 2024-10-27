@@ -35,7 +35,7 @@ export const Button = styled.button`
   }
 `;
 
-export const StyledLink = styled(Button).attrs({ as: "a" })`
+export const StyledButtonLink = styled(Button).attrs({ as: "a" })`
   ${({ $opinia }) =>
     $opinia &&
     css`

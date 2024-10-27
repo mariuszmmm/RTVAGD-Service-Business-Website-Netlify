@@ -14,7 +14,8 @@ import { WashingMachine } from "./WashingMachine";
 import { Television } from "./Television";
 import { Dishwasher } from "./Dishwasher";
 import { useEffect, useState } from "react";
-import { StyledLink } from "../../common/Buttons";
+import { StyledButtonLink } from "../../common/Buttons";
+import { StyledLink } from "../../common/StyledLink";
 import { HelmetForHome } from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
 
@@ -80,12 +81,12 @@ export const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
-        <StyledLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledLink>
+        <StyledButtonLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledButtonLink>
         <HeroSubText $notShow={isPortrait}>
           {" "}<br />
-          Z&nbsp;ponad 20-letnim doświadczeniem<br />
+          Z&nbsp;wieloletnim doświadczeniem<br />
           w&nbsp;naprawie sprzętu RTV&nbsp;i&nbsp;AGD,<br />
-          zapewniam najwyższą jakość usług
+          zapewniam usługi najwyższej jakości.
         </HeroSubText>
       </HeroContainer>
       <WashingMachine
@@ -121,10 +122,13 @@ export const Home = () => {
           Naprawiam urządzenia marek takich jak:
         </Text>
         <Text as="ul">
-          <li><strong>Telewizory:</strong> Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba,</li>
-          <li><strong>Pralki:</strong> Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy,</li>
-          <li><strong>Ekspresy do kawy:</strong> De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,</li>
-          <li><strong>Zmywarki:</strong> Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,</li>
+          <li>
+            <StyledLink to="/naprawa-telewizorow"><strong>Telewizory: </strong></StyledLink>
+            Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba,
+          </li>
+          <li><StyledLink to="/naprawa-pralek"><strong>Pralki: </strong></StyledLink>Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy,</li>
+          <li><StyledLink to="/naprawa-ekspresow"><strong>Ekspresy do kawy: </strong></StyledLink>De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,</li>
+          <li><StyledLink to="/naprawa-zmywarek"><strong>Zmywarki: </strong></StyledLink>Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,</li>
         </Text>
         <Text>
           Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.

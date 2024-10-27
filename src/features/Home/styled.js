@@ -84,4 +84,5 @@ export const HeroText = styled.p`
 export const HeroSubText = styled.p`
   ${textStyled}
   font-size: clamp(0.6rem, 1.8vw, 1.1rem);
+  margin-bottom: 100px;
 `;
