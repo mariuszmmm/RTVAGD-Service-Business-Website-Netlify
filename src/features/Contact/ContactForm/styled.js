@@ -33,5 +33,6 @@ export const Textarea = styled.textarea`
   font-size: clamp(0.5rem, 2.5vw, 1rem);
   border-radius: 5px;
   border: 1px solid ${({ theme }) => theme.color.border};
-  height: 150px;
+  min-height: 150px;
+  resize: vertical; 
 `;
