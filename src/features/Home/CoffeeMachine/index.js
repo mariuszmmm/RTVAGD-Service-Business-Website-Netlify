@@ -1,6 +1,7 @@
-import ekspres from "../../../assets/images/naprawa-ekspresow.webp";
 import { CoffeeMachineWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
+import { imageUrls } from "../../../utils/urls";
+
 export const CoffeeMachine = ({ show, center, reset, setHold }) => (
   <CoffeeMachineWrapper
     $show={show}
@@ -11,7 +12,7 @@ export const CoffeeMachine = ({ show, center, reset, setHold }) => (
   >
     <Link to="/naprawa-ekspresow">
       <Image
-        src={ekspres}
+        src={imageUrls.ekspres}
         alt="Naprawa ekspresów do kawy w Przemyślu"
         $center={center}
       />

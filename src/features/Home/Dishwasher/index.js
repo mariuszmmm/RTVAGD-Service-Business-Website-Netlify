@@ -1,6 +1,7 @@
-import zmywarka from "../../../assets/images/serwis-zmywarek.webp";
 import { DishwasherWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
+import { imageUrls } from "../../../utils/urls";
+
 export const Dishwasher = ({ show, center, reset, setHold }) => (
   <DishwasherWrapper
     $show={show}
@@ -12,7 +13,7 @@ export const Dishwasher = ({ show, center, reset, setHold }) => (
     {" "}
     <Link to="/naprawa-zmywarek">
       <Image
-        src={zmywarka}
+        src={imageUrls.zmywarka}
         alt="Serwis zmywarek w Przemyślu"
         $center={center}
       />

@@ -1,6 +1,7 @@
-import pralka from "../../../assets/images/naprawa-pralki.webp";
 import { Image, WashingMachineWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
+import { imageUrls } from "../../../utils/urls";
+
 export const WashingMachine = ({ show, center, reset, setHold }) => (
   <WashingMachineWrapper
     $show={show}
@@ -11,7 +12,7 @@ export const WashingMachine = ({ show, center, reset, setHold }) => (
   >
     <Link to="/naprawa-pralek">
       <Image
-        src={pralka}
+        src={imageUrls.pralka}
         alt="Naprawa pralek w Przemyślu"
         $center={center}
         $show={show}

@@ -5,7 +5,7 @@ import { Text } from "../../../common/Text";
 import { Container } from "../../../common/Container";
 import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
-import ekspres from "../../../assets/images/naprawa-ekspresow.webp";
+import { imageUrls } from "../../../utils/urls";
 
 export const CoffeeMachineService = () => (
   <Section>
@@ -15,7 +15,7 @@ export const CoffeeMachineService = () => (
       <main>
         <ServiceItem>
           <SubTitle>Profesjonalna naprawa ekspresów do&nbsp;kawy,<br />niezależnie od&nbsp;marki i&nbsp;modelu.</SubTitle>
-          <Photo src={ekspres} alt="naprawa ekspresow" />
+          <Photo src={imageUrls.ekspres} alt="naprawa ekspresow" />
           <Text>
             Czy Twój ekspres do&nbsp;kawy przestał działać? A&nbsp;może nie&nbsp;zaparza kawy tak, jak&nbsp;dawniej, wyświetla błędy lub&nbsp;ma&nbsp;inne&nbsp;problemy? Jestem tutaj, aby&nbsp;Ci&nbsp;pomóc.
             Specjalizuję się w&nbsp;naprawie zarówno domowych, jak&nbsp;i&nbsp;profesjonalnych ekspresów do&nbsp;kawy, oferując precyzyjną diagnostykę oraz&nbsp;szybkie i&nbsp;skuteczne naprawy.

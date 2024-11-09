@@ -5,7 +5,7 @@ import { Text } from "../../../common/Text";
 import { Container } from "../../../common/Container";
 import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
-import pralka from "../../../assets/images/naprawa-pralki.webp";
+import { imageUrls } from "../../../utils/urls";
 
 export const WashingMachineService = () => (
   <Section>
@@ -14,7 +14,7 @@ export const WashingMachineService = () => (
       <Title><span>✔ </span>Naprawa Pralek</Title>
       <main>
         <ServiceItem>
-          <Photo src={pralka} alt="naprawa pralek" />
+          <Photo src={imageUrls.pralka} alt="naprawa pralek" />
           <SubTitle>Kompleksowe usługi naprawy pralek wszystkich marek</SubTitle>
           <Text>
             Zepsuta pralka? Nie&nbsp;martw&nbsp;się! Oferuję fachową diagnostykę i&nbsp;naprawę pralek, które przestały działać.

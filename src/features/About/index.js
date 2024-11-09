@@ -3,7 +3,7 @@ import { Container } from "../../common/Container";
 import { Section } from "../../common/Section";
 import { Title } from "../../common/Title";
 import { TeamImage } from "../../common/TeamImage";
-import team from "../../assets/images/serwis.webp";
+import { imageUrls } from "../../utils/urls";
 import { HelmetForAbout } from "./HelmetForAbout";
 
 export const About = () => (
@@ -24,7 +24,7 @@ export const About = () => (
         <Text>
           Skorzystaj z&nbsp;moich usług, a&nbsp;Twoje urządzenia odzyskają swoją sprawność!
         </Text>
-        <TeamImage src={team} alt="serwis" />
+        <TeamImage src={imageUrls.serwis} alt="serwis" />
       </main>
     </Container>
   </Section>

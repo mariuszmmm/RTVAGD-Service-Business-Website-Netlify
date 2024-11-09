@@ -5,7 +5,7 @@ import { Text } from "../../../common/Text";
 import { Container } from "../../../common/Container";
 import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
-import telewizor from "../../../assets/images/serwis-telewizorow.webp";
+import { imageUrls } from "../../../utils/urls";
 
 export const TelevisionService = () => (
   <Section>
@@ -15,7 +15,7 @@ export const TelevisionService = () => (
       <main>
         <ServiceItem>
           <SubTitle>Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek</SubTitle>
-          <Photo src={telewizor} alt="naprawa telewizorow" />
+          <Photo src={imageUrls.telewizor} alt="naprawa telewizorow" />
           <Text>
             Czy Twój telewizor przestał działać? Niezależnie od&nbsp;tego, czy&nbsp;to&nbsp;brak&nbsp;obrazu, brak&nbsp;dźwięku, problemy z&nbsp;zasilaniem czy&nbsp;uszkodzone matryca -&nbsp;jestem tutaj, aby&nbsp;przywrócić Twój telewizor do&nbsp;pełnej sprawności.
             Specjalizuję&nbsp;się w&nbsp;naprawach zarówno tradycyjnych, jak i&nbsp;nowoczesnych modeli, oferując szybką i&nbsp;profesjonalną obsługę.

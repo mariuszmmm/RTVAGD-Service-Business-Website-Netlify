@@ -5,7 +5,7 @@ import { Text } from "../../../common/Text";
 import { Container } from "../../../common/Container";
 import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
-import zmywarka from "../../../assets/images/serwis-zmywarek.webp";
+import { imageUrls } from "../../../utils/urls";
 
 export const DishwasherService = () => (
   <Section>
@@ -14,7 +14,7 @@ export const DishwasherService = () => (
       <Title><span>✔ </span>Naprawa zmywarek</Title>
       <main>
         <ServiceItem >
-          <Photo src={zmywarka} alt="naprawa zmywarek" />
+          <Photo src={imageUrls.zmywarka} alt="naprawa zmywarek" />
           <SubTitle>Specjalistyczna naprawa zmywarek różnych marek</SubTitle>
           <Text>
             Zmywarka to jedno z&nbsp;najważniejszych urządzeń w&nbsp;każdej kuchni,

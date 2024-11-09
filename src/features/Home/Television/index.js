@@ -1,4 +1,5 @@
-import telewizor from "../../../assets/images/serwis-telewizorow.webp";
+// import telewizor from "../../../assets/images/serwis-telewizorow.webp";
+import { imageUrls } from "../../../utils/urls";
 import { Image, TelevisionWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 export const Television = ({ show, center, reset, setHold }) => (
@@ -11,7 +12,7 @@ export const Television = ({ show, center, reset, setHold }) => (
   >
     <Link to="/naprawa-telewizorow">
       <Image
-        src={telewizor}
+        src={imageUrls.telewizor}
         alt="Serwis telewizorów w Przemyślu"
         $center={center}
       />

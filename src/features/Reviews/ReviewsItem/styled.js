@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logoGoogle from "../../../assets/images/logoGoogle.png";
+import { imageUrls } from "../../../utils/urls";
 
 export const ItemWrapper = styled.div`
   margin: 0 0 20px;
@@ -37,11 +37,10 @@ export const Author = styled.h3`
     display: block;
     width: clamp(1.1rem, 2.5vw, 1.5rem);
     height: clamp(1.1rem, 2.5vw, 1.5rem); 
-    background-image: url('${logoGoogle}');
+    background-image: url('${imageUrls.logoGoogle}');
     background-size: cover; 
     position: absolute;
     top: 0;
     right: 0; 
   }
 `;
-
