@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 export const HemletForDishwasherService = () => (
   <Helmet>
-    <title>Naprawa zmywarek | ✔️ Serwis RTV AGD w Przemyślu</title>
+    <title>Naprawa Zmywarek | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
       content="Specjalistyczna naprawa zmywarek wszystkich marek w Przemyślu. Przywróć efektywność swojej zmywarki!"
