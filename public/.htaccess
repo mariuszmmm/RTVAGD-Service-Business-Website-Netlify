@@ -19,6 +19,26 @@
   AddOutputFilterByType DEFLATE application/x-javascript
   AddOutputFilterByType DEFLATE application/json
   AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/font-woff
+  AddOutputFilterByType DEFLATE application/font-woff2
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
+
+  # Kompresja GZIP (jeśli dostępna)
+  <IfModule mod_gzip.c>
+    AddOutputFilterByType GZIP text/html
+    AddOutputFilterByType GZIP text/css
+    AddOutputFilterByType GZIP application/javascript
+    AddOutputFilterByType GZIP application/json
+  </IfModule>
+
+  # Kompresja Brotli (jeśli dostępna)
+  <IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI text/html
+    AddOutputFilterByType BROTLI text/css
+    AddOutputFilterByType BROTLI application/javascript
+    AddOutputFilterByType BROTLI application/json
+  </IfModule>
 
   # Przekierowanie HTTP do HTTPS oraz z www do bez www
   RewriteCond %{HTTPS} off [OR]
@@ -33,4 +53,7 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
+
+  # Obsługa błędu 404 - zapewnia odpowiedni kod statusu 404, ale nadal obsługuje SPA
+  ErrorDocument 404 /index.html
 </IfModule>
