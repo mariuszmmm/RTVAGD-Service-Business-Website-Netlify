@@ -11,6 +11,7 @@ export const Stars = ({ rating }) => {
       <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Service">
         <meta itemProp="name" content="Naprawa pralek" />
         <meta itemProp="description" content="Usługi naprawy pralek, zmywarek, ekspresów do kawy oraz telewizorów" />
+        <meta itemProp="serviceType" content="Naprawa sprzętu AGD" />
       </div>
       <StarsWrapper>
         <Star $active={rating >= 1} />
