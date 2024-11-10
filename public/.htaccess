@@ -19,26 +19,6 @@
   AddOutputFilterByType DEFLATE application/x-javascript
   AddOutputFilterByType DEFLATE application/json
   AddOutputFilterByType DEFLATE image/svg+xml
-  AddOutputFilterByType DEFLATE application/font-woff
-  AddOutputFilterByType DEFLATE application/font-woff2
-  AddOutputFilterByType DEFLATE font/woff
-  AddOutputFilterByType DEFLATE font/woff2
-
-  # Kompresja GZIP (jeśli dostępna)
-  <IfModule mod_gzip.c>
-    AddOutputFilterByType GZIP text/html
-    AddOutputFilterByType GZIP text/css
-    AddOutputFilterByType GZIP application/javascript
-    AddOutputFilterByType GZIP application/json
-  </IfModule>
-
-  # Kompresja Brotli (jeśli dostępna)
-  <IfModule mod_brotli.c>
-    AddOutputFilterByType BROTLI text/html
-    AddOutputFilterByType BROTLI text/css
-    AddOutputFilterByType BROTLI application/javascript
-    AddOutputFilterByType BROTLI application/json
-  </IfModule>
 
   # Przekierowanie HTTP do HTTPS oraz z www do bez www
   RewriteCond %{HTTPS} off [OR]
@@ -53,17 +33,4 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
-
-  # Obsługa błędu 404 - zapewnia odpowiedni kod statusu 404, ale nadal obsługuje SPA
-  ErrorDocument 404 /index.html
-
-  # Nagłówki bezpieczeństwa
-  Header always set X-Content-Type-Options "nosniff"
-  Header always set X-XSS-Protection "1; mode=block"
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://res.cloudinary.com https://cookiebot.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://res.cloudinary.com; connect-src 'self' https://cookiebot.com https://res.cloudinary.com;"
-  
-  # Zasady CORS (Cross-Origin Resource Sharing)
-  Header always set Access-Control-Allow-Origin "https://res.cloudinary.com"
-  Header always set Access-Control-Allow-Origin "https://cookiebot.com"
 </IfModule>
