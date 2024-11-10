@@ -12,6 +12,8 @@ export const Stars = ({ rating }) => {
         <meta itemProp="name" content="Naprawa pralek" />
         <meta itemProp="description" content="Usługi naprawy pralek, zmywarek, ekspresów do kawy oraz telewizorów" />
         <meta itemProp="serviceType" content="Naprawa sprzętu AGD" />
+        <meta itemProp="category" content="Naprawa sprzętu AGD" />
+        <meta itemProp="type" content="LocalBusiness" />
       </div>
       <StarsWrapper>
         <Star $active={rating >= 1} />
