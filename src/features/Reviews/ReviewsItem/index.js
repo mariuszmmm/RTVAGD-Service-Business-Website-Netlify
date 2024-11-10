@@ -22,7 +22,7 @@ export const ReviewsItem = ({ item }) => (
         <Time time={item.time} />
       </Data>
     </Header>
-    <Stars rating={item.rating} />
+    <Stars rating={item.rating || 0} text={item.text || ""} />
     <Text itemProp="reviewBody">{item.text}</Text>
   </ItemWrapper>
 );
