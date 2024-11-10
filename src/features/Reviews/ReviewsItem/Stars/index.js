@@ -8,6 +8,10 @@ export const Stars = ({ rating }) => {
         <meta itemProp="ratingValue" content={rating} />
         <meta itemProp="bestRating" content="5" />
       </div>
+      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Service">
+        <meta itemProp="name" content="Serwis RTV i AGD" />
+        <meta itemProp="description" content="Usługi naprawy pralek, zmywarek, ekspresów do kawy oraz telewizorów" />
+      </div>
       <StarsWrapper>
         <Star $active={rating >= 1} />
         <Star $active={rating >= 2} />
