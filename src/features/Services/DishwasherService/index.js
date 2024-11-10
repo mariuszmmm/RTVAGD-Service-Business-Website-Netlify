@@ -11,7 +11,7 @@ export const DishwasherService = () => (
   <Section>
     <HemletForDishwasherService />
     <Container>
-      <Title><span>✔ </span>Naprawa zmywarek</Title>
+      <Title><span>✔ </span>Naprawa Zmywarek</Title>
       <main>
         <ServiceItem >
           <Photo src={imageUrls.zmywarka} alt="naprawa zmywarek" />

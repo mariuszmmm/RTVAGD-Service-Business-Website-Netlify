@@ -117,7 +117,7 @@ export const Home = () => {
         <SubTitle>
           Serwisuję wszystkie marki telewizorów, pralek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
         </SubTitle>
-        <Text>
+        <Text as="h3">
           Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla&nbsp;popularnych, jak&nbsp;i&nbsp;mniej znanych producentów.<br />
           Naprawiam urządzenia marek takich jak:
         </Text>
@@ -130,7 +130,7 @@ export const Home = () => {
           <li><StyledLink to="/naprawa-ekspresow"><strong>Ekspresy do kawy: </strong></StyledLink>De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,</li>
           <li><StyledLink to="/naprawa-zmywarek"><strong>Zmywarki: </strong></StyledLink>Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,</li>
         </Text>
-        <Text>
+        <Text as="h3">
           Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.
         </Text>
         <br />

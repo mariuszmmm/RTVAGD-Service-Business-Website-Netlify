@@ -35,7 +35,7 @@ export const FooterInfo = styled.div`
   align-content: center;
   width: 100%;
   padding: 0 50px;
-  gap: 10px clamp(10px, 5.9vw, 200px);
+  gap: 5px clamp(10px, 5.9vw, 200px);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-columns: repeat(2, auto);
@@ -45,7 +45,7 @@ export const FooterInfo = styled.div`
 
 export const FooterText = styled.span`
   margin: 0;
-  font-size: clamp(0.3rem, 1.6vw, 0.9rem);
+  font-size: clamp(0.5rem, 2.7vw, 0.9rem);
   font-weight: 200;
   width: max-content;
 `;
@@ -74,6 +74,7 @@ export const StyledLink = styled.a`
   align-items: center;
   justify-self: center;
   gap: clamp(5px, 5.5vw, 10px);
+  padding: 5px;
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   transition: color 0.2s ease;

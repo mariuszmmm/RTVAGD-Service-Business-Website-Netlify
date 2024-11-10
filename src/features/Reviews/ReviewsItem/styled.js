@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { imageUrls } from "../../../utils/urls";
 
-export const ItemWrapper = styled.div`
+export const ItemWrapper = styled.blockquote`
   margin: 0 0 20px;
   background-color: white;
   color: black;

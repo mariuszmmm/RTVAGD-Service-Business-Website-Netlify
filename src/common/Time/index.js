@@ -5,10 +5,14 @@ import { FormattedDate } from "./styled";
 export const Time = ({ time }) => {
   const date = new Date(time * (typeof (time) === "number" ? 1000 : 1));
   const formattedDate = format(date, 'd MMMM yyyy', { locale: pl });
+  const isoDate = date.toISOString().split('T')[0];
 
   return (
-    <FormattedDate>
-      {time ? formattedDate : ""}
-    </FormattedDate>
+    <>
+      <meta itemProp="datePublished" content={isoDate} />
+      <FormattedDate>
+        {time ? formattedDate : ""}
+      </FormattedDate>
+    </>
   );
 }

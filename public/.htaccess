@@ -2,36 +2,67 @@
   RewriteEngine On
   RewriteBase /
 
- # Cache po stronie przeglądarki
-<FilesMatch "\.(jpg|jpeg|png|gif|svg|css|js)$">
+  # Cache po stronie przeglądarki
+  <FilesMatch "\.(jpg|jpeg|png|gif|svg|css|js)$">
     Header set Cache-Control "max-age=2592000"
-</FilesMatch>
+  </FilesMatch>
 
-# Kompresja
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE application/xml
-AddOutputFilterByType DEFLATE application/xhtml+xml
-AddOutputFilterByType DEFLATE application/rss+xml
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE application/x-javascript
-AddOutputFilterByType DEFLATE application/json
-AddOutputFilterByType DEFLATE image/svg+xml
+  # Kompresja
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/font-woff
+  AddOutputFilterByType DEFLATE application/font-woff2
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
 
-# Przekierowanie HTTP do HTTPS oraz z www do bez www
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\.naprawaprzemysl\.pl$ [NC]
-RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [R=301,L]
+  # Kompresja GZIP (jeśli dostępna)
+  <IfModule mod_gzip.c>
+    AddOutputFilterByType GZIP text/html
+    AddOutputFilterByType GZIP text/css
+    AddOutputFilterByType GZIP application/javascript
+    AddOutputFilterByType GZIP application/json
+  </IfModule>
 
-# Przekierowanie 301 dla konkretnych stron
-RewriteRule ^o-nas$ /o-mnie [R=301,L]
-RewriteRule ^uslugi(/.*)?$ / [R=301,L]
+  # Kompresja Brotli (jeśli dostępna)
+  <IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI text/html
+    AddOutputFilterByType BROTLI text/css
+    AddOutputFilterByType BROTLI application/javascript
+    AddOutputFilterByType BROTLI application/json
+  </IfModule>
 
+  # Przekierowanie HTTP do HTTPS oraz z www do bez www
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\.naprawaprzemysl\.pl$ [NC]
+  RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [R=301,L]
+
+  # Przekierowanie 301 dla konkretnych stron
+  RewriteRule ^o-nas$ /o-mnie [R=301,L]
+  RewriteRule ^uslugi(/.*)?$ / [R=301,L]
 
   # Przekierowanie wszystkich żądań do index.html (SPA)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
+
+  # Obsługa błędu 404 - zapewnia odpowiedni kod statusu 404, ale nadal obsługuje SPA
+  ErrorDocument 404 /index.html
+
+  # Nagłówki bezpieczeństwa
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+  
+  # Zasady CORS (Cross-Origin Resource Sharing)
+  Header always set Access-Control-Allow-Origin "*"  
 </IfModule>
