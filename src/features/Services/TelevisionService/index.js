@@ -24,12 +24,12 @@ export const TelevisionService = () => (
             Moim celem jest, abyś mógł cieszyć się ulubionymi programami bez zakłóceń.
           </Text>
         </ServiceItem>
-        <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;mojej usługi?</SubTitle>
+        <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;moich usług?</SubTitle>
         <Text as="ul">
-          <li><strong>Szybka diagnoza: </strong>Zidentyfikuję problem w&nbsp;krótkim czasie, abyś jak najszybciej mógł wrócić do oglądania ulubionych filmów i&nbsp;programów.</li>
-          <li><strong>Wysoka jakość naprawy: </strong>Używam tylko oryginalnych części, co zapewnia długotrwałą sprawność Twojego telewizora.</li>
-          <li><strong>Zadowolenie klientów: </strong>Klienci doceniają moją rzetelność, terminowość i&nbsp;jakość świadczonych usług, co potwierdzają pozytywne opinie.</li>
-          <li><strong>Elastyczność: </strong>Oferuję naprawy w warsztacie oraz dojazd do&nbsp;klienta w&nbsp;dogodnych godzinach.</li>
+          <li><h3>Szybka diagnoza: </h3>Zidentyfikuję problem w&nbsp;krótkim czasie, abyś jak najszybciej mógł wrócić do oglądania ulubionych filmów i&nbsp;programów.</li>
+          <li><h3>Wysoka jakość naprawy: </h3>Używam tylko oryginalnych części, co zapewnia długotrwałą sprawność Twojego telewizora.</li>
+          <li><h3>Zadowolenie klientów: </h3>Klienci doceniają moją rzetelność, terminowość i&nbsp;jakość świadczonych usług, co potwierdzają pozytywne opinie.</li>
+          <li><h3>Elastyczność: </h3>Oferuję naprawy w warsztacie oraz dojazd do&nbsp;klienta w&nbsp;dogodnych godzinach.</li>
         </Text>
         <Text>
           Nie pozwól, aby&nbsp;zepsuty telewizor przeszkodził&nbsp;Ci w&nbsp;oglądaniu ulubionych programów. Skontaktuj&nbsp;się ze&nbsp;mną już&nbsp;dziś, a&nbsp;szybko przywrócę Twój telewizor do&nbsp;życia!

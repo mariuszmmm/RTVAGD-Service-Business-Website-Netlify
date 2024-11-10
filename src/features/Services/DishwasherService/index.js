@@ -26,12 +26,12 @@ export const DishwasherService = () => (
             Moje doświadczenie oraz zaawansowane techniki naprawcze pozwalają&nbsp;mi przywrócić pełną funkcjonalność Twojej zmywarki w&nbsp;możliwie najkrótszym czasie.
           </Text>
         </ServiceItem>
-        <SubTitle as="h3">Dlaczego warto wybrać moją ofertę?</SubTitle>
+        <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;moich usług?</SubTitle>
         <Text as="ul">
-          <li><strong>Szybka reakcja: </strong>Zgłoś usterkę, a&nbsp;natychmiast zajmę się jej naprawą, ponieważ rozumiem, jak ważna jest dla Ciebie wygoda.</li>
-          <li><strong>Wysoka jakość usług: </strong>Używam wyłącznie sprawdzonych części zamiennych oraz nowoczesnych technologii, co zapewnia długotrwałe efekty naprawy.</li>
-          <li><strong>Elastyczność: </strong>Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do klienta, co pozwala dostosować usługi do Twoich potrzeb.</li>
-          <li><strong>Zadowolenie klientów: </strong>Moje usługi cieszą się zaufaniem i&nbsp;pozytywnymi opiniami. Każde zlecenie traktuję indywidualnie, dbając o&nbsp;najwyższą jakość.</li>
+          <li><h3>Szybka reakcja: </h3>Zgłoś usterkę, a&nbsp;natychmiast zajmę się jej naprawą, ponieważ rozumiem, jak ważna jest dla Ciebie wygoda.</li>
+          <li><h3>Wysoka jakość usług: </h3>Używam wyłącznie sprawdzonych części zamiennych oraz nowoczesnych technologii, co zapewnia długotrwałe efekty naprawy.</li>
+          <li><h3>Elastyczność: </h3>Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do klienta, co pozwala dostosować usługi do Twoich potrzeb.</li>
+          <li><h3>Zadowolenie klientów: </h3>Moje usługi cieszą się zaufaniem i&nbsp;pozytywnymi opiniami. Każde zlecenie traktuję indywidualnie, dbając o&nbsp;najwyższą jakość.</li>
         </Text>
         <Text>
           Nie pozwól, aby awaria zmywarki utrudniała Ci codzienne obowiązki. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;przywrócę pełną sprawność Twojego urządzenia.

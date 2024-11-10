@@ -27,6 +27,7 @@ export const ContactText = styled.p`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 4px 0;
 
   span {
     font-weight: 600;

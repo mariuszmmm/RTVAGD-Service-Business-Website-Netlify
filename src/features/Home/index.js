@@ -117,20 +117,20 @@ export const Home = () => {
         <SubTitle>
           Serwisuję wszystkie marki telewizorów, pralek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
         </SubTitle>
-        <Text as="h3">
+        <Text>
           Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla&nbsp;popularnych, jak&nbsp;i&nbsp;mniej znanych producentów.<br />
           Naprawiam urządzenia marek takich jak:
         </Text>
         <Text as="ul">
           <li>
-            <StyledLink to="/naprawa-telewizorow"><strong>Telewizory: </strong></StyledLink>
+            <StyledLink to="/naprawa-telewizorow"><h3>Telewizory: </h3></StyledLink>
             Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba,
           </li>
-          <li><StyledLink to="/naprawa-pralek"><strong>Pralki: </strong></StyledLink>Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy,</li>
-          <li><StyledLink to="/naprawa-ekspresow"><strong>Ekspresy do kawy: </strong></StyledLink>De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,</li>
-          <li><StyledLink to="/naprawa-zmywarek"><strong>Zmywarki: </strong></StyledLink>Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,</li>
+          <li><StyledLink to="/naprawa-pralek"><h3>Pralki: </h3></StyledLink>Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy,</li>
+          <li><StyledLink to="/naprawa-ekspresow"><h3>Ekspresy do kawy: </h3></StyledLink>De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,</li>
+          <li><StyledLink to="/naprawa-zmywarek"><h3>Zmywarki: </h3></StyledLink>Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,</li>
         </Text>
-        <Text as="h3">
+        <Text>
           Dzięki doświadczeniu oraz dostępowi do&nbsp;oryginalnych części zamiennych, możesz mieć pewność, że&nbsp;Twoje urządzenie zostanie naprawione szybko i&nbsp;solidnie.
         </Text>
         <br />

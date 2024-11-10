@@ -26,10 +26,10 @@ export const WashingMachineService = () => (
         </ServiceItem>
         <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;moich usług?</SubTitle>
         <Text as="ul">
-          <li><strong>Szybka diagnoza: </strong>Zgłoś problem, a&nbsp;natychmiast zidentyfikuję przyczynę awarii, abyś mógł szybko wrócić do&nbsp;swoich codziennych obowiązków.</li>
-          <li><strong>Wysoka jakość naprawy: </strong>Używam tylko oryginalnych części, co&nbsp;zapewnia długotrwałą sprawność i&nbsp;niezawodność Twojego urządzenia.</li>
-          <li><strong>Zadowolenie klientów: </strong> Rzetelność i&nbsp;terminowość to&nbsp;moje priorytety, co&nbsp;przekłada&nbsp;się na&nbsp;pozytywne opinie oraz&nbsp;zaufanie moich klientów.</li>
-          <li><strong>Elastyczność: </strong>Oferuję zarówno naprawy w&nbsp;warsztacie, jak&nbsp;i&nbsp;dojazd do&nbsp;klienta w&nbsp;dogodnych godzinach.</li>
+          <li><h3>Szybka diagnoza: </h3>Zgłoś problem, a&nbsp;natychmiast zidentyfikuję przyczynę awarii, abyś mógł szybko wrócić do&nbsp;swoich codziennych obowiązków.</li>
+          <li><h3>Wysoka jakość naprawy: </h3>Używam tylko oryginalnych części, co&nbsp;zapewnia długotrwałą sprawność i&nbsp;niezawodność Twojego urządzenia.</li>
+          <li><h3>Zadowolenie klientów: </h3> Rzetelność i&nbsp;terminowość to&nbsp;moje priorytety, co&nbsp;przekłada&nbsp;się na&nbsp;pozytywne opinie oraz&nbsp;zaufanie moich klientów.</li>
+          <li><h3>Elastyczność: </h3>Oferuję zarówno naprawy w&nbsp;warsztacie, jak&nbsp;i&nbsp;dojazd do&nbsp;klienta w&nbsp;dogodnych godzinach.</li>
         </Text>
         <Text>
           Nie pozwól, aby&nbsp;awaria pralki zakłóciła Twój dzień. Skontaktuj się ze&nbsp;mną już&nbsp;dziś, a&nbsp;szybko przywrócę pełną sprawność Twojego urządzenia!

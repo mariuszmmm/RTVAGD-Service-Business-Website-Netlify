@@ -9,4 +9,8 @@ export const StyledLink = styled(Link)`
   &:hover {
     filter: brightness(1.2);
   }
+
+  h3 {
+    margin-bottom: 0;
+  }
 `;
