@@ -64,5 +64,6 @@
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
   
   # Zasady CORS (Cross-Origin Resource Sharing)
-  Header always set Access-Control-Allow-Origin "*"  
+  Header always set Access-Control-Allow-Origin "https://res.cloudinary.com"
+  Header always set Access-Control-Allow-Origin "https://cookiebot.com"
 </IfModule>
