@@ -9,17 +9,17 @@ import { SubTitle } from "../../common/SubTitle";
 import { Text } from "../../common/Text";
 import { Container } from "../../common/Container";
 import { serwis } from "../../utils/serwis";
-import { CoffeeMachine } from "./CoffeeMachine";
-import { WashingMachine } from "./WashingMachine";
-import { Television } from "./Television";
-import { Dishwasher } from "./Dishwasher";
+import CoffeeMachine from "./CoffeeMachine";
+import WashingMachine from "./WashingMachine";
+import Television from "./Television";
+import Dishwasher from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { StyledButtonLink } from "../../common/Buttons";
 import { StyledLink } from "../../common/StyledLink";
-import { HelmetForHome } from "./HemletForHome";
+import HelmetForHome from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
 
-export const Home = () => {
+const Home = () => {
   const [isPortrait, setIsPortrait] = useState(
     window.innerHeight > window.innerWidth
   );
@@ -150,3 +150,5 @@ export const Home = () => {
     </Hero>
   );
 };
+
+export default Home;

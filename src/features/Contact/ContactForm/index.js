@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Form, Label, Input, Textarea } from "./styled";
 import emailjs from "@emailjs/browser";
-import { SendInfo } from "./SendInfo";
+import SendInfo from "./SendInfo";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../emailjs";
 import { Button } from "../../../common/Buttons";
 
-export const ContactForm = () => {
+const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -83,3 +83,5 @@ export const ContactForm = () => {
     </Form>
   );
 };
+
+export default ContactForm;

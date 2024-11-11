@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-export const HemletForCoffeeMachineService = () => (
+const HemletForCoffeeMachineService = () => (
   <Helmet>
     <title>Naprawa ekspresów do kawy | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
@@ -179,3 +179,5 @@ export const HemletForCoffeeMachineService = () => (
     </script>
   </Helmet>
 );
+
+export default HemletForCoffeeMachineService;

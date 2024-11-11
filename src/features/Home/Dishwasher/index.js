@@ -2,7 +2,7 @@ import { DishwasherWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 import { imageUrls } from "../../../utils/urls";
 
-export const Dishwasher = ({ show, center, reset, setHold }) => (
+const Dishwasher = ({ show, center, reset, setHold }) => (
   <DishwasherWrapper
     $show={show}
     $center={center}
@@ -20,3 +20,5 @@ export const Dishwasher = ({ show, center, reset, setHold }) => (
     </Link>
   </DishwasherWrapper>
 );
+
+export default Dishwasher;

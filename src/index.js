@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./config/theme";
+import theme from "./config/theme";
 import App from "./core/App";
 import { Normalize } from "styled-normalize";
 import GlobalStyle from "./core/GlobalStyle";

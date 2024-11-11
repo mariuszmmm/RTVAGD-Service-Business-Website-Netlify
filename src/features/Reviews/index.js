@@ -1,13 +1,13 @@
-import { ReviewsItem } from "./ReviewsItem";
+import ReviewsItem from "./ReviewsItem";
 import { ReviewsContainer } from "./styled";
 import { Section } from "../../common/Section";
 import { Title } from "../../common/Title";
 import { serwis } from "../../utils/serwis";
 import { useEffect, useState } from "react";
-import { HemletForReviews } from "./HemletForReviews";
+import HemletForReviews from "./HemletForReviews";
 import { StyledButtonLink } from "../../common/Buttons";
 
-export const Reviews = () => {
+const Reviews = () => {
   const [reviewsApi, setReviewsApi] = useState({
     status: "loading",
     reviews: [],
@@ -77,3 +77,5 @@ export const Reviews = () => {
     </Section>
   );
 };
+
+export default Reviews;

@@ -1,4 +1,4 @@
-import { HemletForCoffeeMachineService } from "./HemletForCoffeeMachineService";
+import HemletForCoffeeMachineService from "./HemletForCoffeeMachineService";
 import { Photo, ServiceItem } from "../styled";
 import { SubTitle } from "../../../common/SubTitle";
 import { Text } from "../../../common/Text";
@@ -7,7 +7,7 @@ import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
 import { imageUrls } from "../../../utils/urls";
 
-export const CoffeeMachineService = () => (
+const CoffeeMachineService = () => (
   <Section>
     <HemletForCoffeeMachineService />
     <Container>
@@ -38,3 +38,5 @@ export const CoffeeMachineService = () => (
     </Container>
   </Section>
 );
+
+export default CoffeeMachineService;

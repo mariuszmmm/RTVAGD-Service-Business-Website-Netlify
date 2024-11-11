@@ -2,10 +2,11 @@ import { PricingTable, PricingTh } from "./styled";
 import { Container } from "../../common/Container";
 import { Section } from "../../common/Section";
 import { Title } from "../../common/Title";
-import { PricingRow } from "./PricingRow";
+import PricingRow from "./PricingRow";
 import { serwis } from "../../utils/serwis";
-import { HemletForPricing } from "./HemletForPricing";
-export const Pricing = () => (
+import HemletForPricing from "./HemletForPricing";
+
+const Pricing = () => (
   <Section >
     <HemletForPricing />
     <Container>
@@ -26,3 +27,5 @@ export const Pricing = () => (
     </Container>
   </Section>
 );
+
+export default Pricing;

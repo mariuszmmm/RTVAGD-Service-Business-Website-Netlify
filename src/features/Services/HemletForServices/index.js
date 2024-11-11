@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-export const HemletForServices = () => (
+const HemletForServices = () => (
   <Helmet>
     <title>Nasze usługi | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
@@ -179,3 +179,5 @@ export const HemletForServices = () => (
     </script>
   </Helmet>
 );
+
+export default HemletForServices;

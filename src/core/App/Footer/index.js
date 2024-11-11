@@ -12,7 +12,7 @@ import {
 } from "./styled";
 import { serwis } from "../../../utils/serwis";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
@@ -41,3 +41,5 @@ export const Footer = () => {
     </FooterWrapper>
   );
 };
+
+export default Footer;

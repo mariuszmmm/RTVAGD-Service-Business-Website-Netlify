@@ -9,12 +9,12 @@ import {
 import { SubTitle } from "../../common/SubTitle";
 import { Title } from "../../common/Title";
 import { serwis } from "../../utils/serwis";
-import { HelmetForContact } from "./HelmetForContact";
-import { ContactForm } from "./ContactForm";
+import HelmetForContact from "./HelmetForContact";
+import ContactForm from "./ContactForm";
 import React, { Suspense } from "react";
 const Iframe = React.lazy(() => import("./Iframe"));
 
-export const Contact = () => (
+const Contact = () => (
   <ContactSection>
     <HelmetForContact />
     <ContactContainer>
@@ -50,3 +50,5 @@ export const Contact = () => (
     </ContactContainer>
   </ContactSection>
 );
+
+export default Contact;

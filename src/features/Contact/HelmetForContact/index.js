@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-export const HelmetForContact = () => (
+const HelmetForContact = () => (
   <Helmet>
     <title>Kontakt | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
@@ -179,3 +179,5 @@ export const HelmetForContact = () => (
     </script>
   </Helmet>
 );
+
+export default HelmetForContact;

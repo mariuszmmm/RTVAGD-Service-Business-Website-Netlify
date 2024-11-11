@@ -4,9 +4,9 @@ import { Section } from "../../common/Section";
 import { Title } from "../../common/Title";
 import { TeamImage } from "../../common/TeamImage";
 import { imageUrls } from "../../utils/urls";
-import { HelmetForAbout } from "./HelmetForAbout";
+import HelmetForAbout from "./HelmetForAbout";
 
-export const About = () => (
+const About = () => (
   <Section >
     <HelmetForAbout />
     <Container>
@@ -29,3 +29,5 @@ export const About = () => (
     </Container>
   </Section>
 );
+
+export default About;

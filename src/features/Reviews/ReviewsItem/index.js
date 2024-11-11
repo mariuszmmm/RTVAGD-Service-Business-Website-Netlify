@@ -1,5 +1,5 @@
-import { Time } from "../../../common/Time";
-import { Stars } from "./Stars";
+import Time from "../../../common/Time";
+import Stars from "./Stars";
 import {
   ItemWrapper,
   Header,
@@ -10,7 +10,7 @@ import {
 import { Text } from "../../../common/Text";
 import { getContentForReview } from "./getContentForReview";
 
-export const ReviewsItem = ({ item }) => (
+const ReviewsItem = ({ item }) => (
   <ItemWrapper itemScope itemType="https://schema.org/Review">
     <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
       <meta itemProp="ratingValue" content={item.rating} />
@@ -39,3 +39,5 @@ export const ReviewsItem = ({ item }) => (
     <Text itemProp="reviewBody">{item.text}</Text>
   </ItemWrapper>
 );
+
+export default ReviewsItem;

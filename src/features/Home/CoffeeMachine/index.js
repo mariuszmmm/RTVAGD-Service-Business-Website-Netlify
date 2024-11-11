@@ -2,7 +2,7 @@ import { CoffeeMachineWrapper, Image } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 import { imageUrls } from "../../../utils/urls";
 
-export const CoffeeMachine = ({ show, center, reset, setHold }) => (
+const CoffeeMachine = ({ show, center, reset, setHold }) => (
   <CoffeeMachineWrapper
     $show={show}
     $center={center}
@@ -19,3 +19,5 @@ export const CoffeeMachine = ({ show, center, reset, setHold }) => (
     </Link>
   </CoffeeMachineWrapper>
 );
+
+export default CoffeeMachine;

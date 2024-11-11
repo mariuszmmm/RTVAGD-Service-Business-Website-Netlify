@@ -2,7 +2,8 @@
 import { imageUrls } from "../../../utils/urls";
 import { Image, TelevisionWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
-export const Television = ({ show, center, reset, setHold }) => (
+
+const Television = ({ show, center, reset, setHold }) => (
   <TelevisionWrapper
     $show={show}
     $center={center}
@@ -19,3 +20,5 @@ export const Television = ({ show, center, reset, setHold }) => (
     </Link>
   </TelevisionWrapper>
 );
+
+export default Television;

@@ -2,7 +2,7 @@ import { Image, WashingMachineWrapper } from "./styled";
 import { HashLink as Link } from "react-router-hash-link";
 import { imageUrls } from "../../../utils/urls";
 
-export const WashingMachine = ({ show, center, reset, setHold }) => (
+const WashingMachine = ({ show, center, reset, setHold }) => (
   <WashingMachineWrapper
     $show={show}
     $center={center}
@@ -20,3 +20,5 @@ export const WashingMachine = ({ show, center, reset, setHold }) => (
     </Link>
   </WashingMachineWrapper>
 );
+
+export default WashingMachine

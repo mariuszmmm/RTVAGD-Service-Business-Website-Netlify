@@ -1,6 +1,6 @@
 import { Star, StarsWrapper } from "./styled";
 
-export const Stars = ({ rating, text }) => (
+const Stars = ({ rating, text }) => (
   rating &&
   <StarsWrapper>
     <Star $active={rating >= 1} />
@@ -10,3 +10,5 @@ export const Stars = ({ rating, text }) => (
     <Star $active={rating >= 5} />
   </StarsWrapper>
 );
+
+export default Stars;

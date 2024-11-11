@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-export const HelmetForAbout = () => {
+const HelmetForAbout = () => {
   return (
     <Helmet>
       <title>O mnie | ✔️ Serwis RTV AGD w Przemyślu</title>
@@ -182,3 +182,5 @@ export const HelmetForAbout = () => {
     </Helmet>
   );
 };
+
+export default HelmetForAbout;

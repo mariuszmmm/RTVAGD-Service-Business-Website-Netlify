@@ -4,20 +4,20 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { Header } from "./Header";
-import { About } from "../../features/About";
-import { Home } from "../../features/Home";
-import { Pricing } from "../../features/Pricing";
-import { Reviews } from "../../features/Reviews";
-import { Contact } from "../../features/Contact";
-import { Footer } from "./Footer";
-import { Background } from "./Background";
+import Header from "./Header";
+import Footer from "./Footer";
+import Background from "./Background";
 import ScrollToTop from "./ScrollToTop";
 import { HelmetProvider } from "react-helmet-async";
-import { WashingMachineService } from "../../features/Services/WashingMachineService";
-import { DishwasherService } from "../../features/Services/DishwasherService";
-import { CoffeeMachineService } from "../../features/Services/CoffeeMachineService";
-import { TelevisionService } from "../../features/Services/TelevisionService";
+import Home from "../../features/Home";
+import Pricing from "../../features/Pricing";
+import Reviews from "../../features/Reviews";
+import Contact from "../../features/Contact";
+import About from "../../features/About";
+import WashingMachineService from "../../features/Services/WashingMachineService";
+import DishwasherService from "../../features/Services/DishwasherService";
+import CoffeeMachineService from "../../features/Services/CoffeeMachineService";
+import TelevisionService from "../../features/Services/TelevisionService";
 
 const App = () => (
   <Router>

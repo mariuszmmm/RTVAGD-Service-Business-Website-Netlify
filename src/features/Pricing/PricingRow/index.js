@@ -1,6 +1,6 @@
 import { PricingTd } from "./styled";
 
-export const PricingRow = ({ item }) => {
+const PricingRow = ({ item }) => {
   const { name, price } = item;
 
   return (
@@ -10,3 +10,5 @@ export const PricingRow = ({ item }) => {
     </tr>
   );
 };
+
+export default PricingRow;

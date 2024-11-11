@@ -1,7 +1,7 @@
 import { BackgroundWrapper, Circle, Image, Rotating } from "./styled.js";
 import { imageUrls } from "../../../utils/urls";
 
-export const Background = () => {
+const Background = () => {
   return (
     <BackgroundWrapper>
       <Image src={imageUrls.serwis} alt="Background image" />
@@ -13,3 +13,5 @@ export const Background = () => {
     </BackgroundWrapper>
   );
 };
+
+export default Background;

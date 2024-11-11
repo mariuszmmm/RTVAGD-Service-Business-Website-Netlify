@@ -1,4 +1,4 @@
-import { HemletForTelevisionService } from "./HemletForTelevisionService";
+import HemletForTelevisionService from "./HemletForTelevisionService";
 import { Photo, ServiceItem } from "../styled";
 import { SubTitle } from "../../../common/SubTitle";
 import { Text } from "../../../common/Text";
@@ -7,7 +7,7 @@ import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
 import { imageUrls } from "../../../utils/urls";
 
-export const TelevisionService = () => (
+const TelevisionService = () => (
   <Section>
     <HemletForTelevisionService />
     <Container>
@@ -38,3 +38,5 @@ export const TelevisionService = () => (
     </Container>
   </Section>
 );
+
+export default TelevisionService;

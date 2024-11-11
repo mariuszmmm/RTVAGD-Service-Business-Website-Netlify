@@ -1,4 +1,4 @@
-export const theme = {
+const theme = {
   breakpoint: {
     small: "480px",
     medium: "768px",
@@ -24,3 +24,5 @@ export const theme = {
     check: "#00ff00",
   },
 };
+
+export default theme;

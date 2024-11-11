@@ -1,4 +1,4 @@
-import { HemletForDishwasherService } from "./HemletForDishwasherService";
+import HemletForDishwasherService from "./HemletForDishwasherService";
 import { Photo, ServiceItem } from "../styled";
 import { SubTitle } from "../../../common/SubTitle";
 import { Text } from "../../../common/Text";
@@ -7,7 +7,7 @@ import { Section } from "../../../common/Section";
 import { Title } from "../../../common/Title";
 import { imageUrls } from "../../../utils/urls";
 
-export const DishwasherService = () => (
+const DishwasherService = () => (
   <Section>
     <HemletForDishwasherService />
     <Container>
@@ -40,3 +40,5 @@ export const DishwasherService = () => (
     </Container>
   </Section>
 );
+
+export default DishwasherService;

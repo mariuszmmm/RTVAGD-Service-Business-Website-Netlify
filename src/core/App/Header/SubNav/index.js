@@ -1,7 +1,7 @@
 import { ListItem, NavList, StyledNavLink } from "../styled";
 import { SubNavWrapper } from "./styled";
 
-export const SubNav = ({ showSubNav, setShowSubNav }) => {
+const SubNav = ({ showSubNav, setShowSubNav }) => {
   return (
     <SubNavWrapper $show={showSubNav}>
       <NavList $subNav onClick={() => setShowSubNav(false)}>
@@ -21,3 +21,5 @@ export const SubNav = ({ showSubNav, setShowSubNav }) => {
     </SubNavWrapper>
   );
 };
+
+export default SubNav;

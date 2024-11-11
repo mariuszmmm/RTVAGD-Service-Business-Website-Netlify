@@ -9,8 +9,8 @@ import {
 import { serwis } from "../../../utils/serwis";
 import { StyledButtonLink } from "../../../common/Buttons";
 import { useEffect, useState } from "react";
-import { SubNav } from "./SubNav";
-export const Header = () => {
+import SubNav from "./SubNav";
+const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showSubNav, setShowSubNav] = useState(false);
 
@@ -69,3 +69,5 @@ export const Header = () => {
     </HeaderWrapper>
   );
 };
+
+export default Header;
