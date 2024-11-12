@@ -26,7 +26,8 @@
   },
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
-    "build": "env-cmd -f .env react-scripts build && react-snap",
+    "build": "react-scripts build && react-snap",
+    "build_env": "env-cmd -f .env react-scripts build && react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
