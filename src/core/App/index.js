@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   Navigate,
@@ -20,7 +20,7 @@ import CoffeeMachineService from "../../features/Services/CoffeeMachineService";
 import TelevisionService from "../../features/Services/TelevisionService";
 
 const App = () => (
-  <Router>
+  <BrowserRouter>
     <ScrollToTop />
     <Background />
     <Header />
@@ -39,7 +39,7 @@ const App = () => (
       </Routes>
     </HelmetProvider>
     <Footer />
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;

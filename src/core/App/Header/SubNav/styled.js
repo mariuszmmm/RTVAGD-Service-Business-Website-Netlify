@@ -8,11 +8,14 @@ export const SubNavWrapper = styled.div`
     max-height: 0;
     visibility: hidden;
     overflow-x: hidden;
-    transition: max-height 0.3s ease-in-out;
     z-index: 1;
+    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition-delay: 0.1s;
 
     ${({ $show }) => $show && css`
-     visibility: visible;
+      transition: max-height 0s; 
+      
+      visibility: visible;
       max-height: 170px;  
     `}; 
 `;
