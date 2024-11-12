@@ -35,8 +35,8 @@ jobs:
 
       - name: Rename directory on FTP server
         run: |
-          curl --ftp-ssl -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" -X "MKD /public_html/serwis_auto-${{ env.CURRENT_DATE }}"
-          curl --ftp-ssl -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" -X "RMD /public_html/serwis_auto"
+          curl --ftp-ssl -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
+               ftp://${{ secrets.FTP_HOST }}/public_html/serwis_auto-${{ env.CURRENT_DATE }}
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
