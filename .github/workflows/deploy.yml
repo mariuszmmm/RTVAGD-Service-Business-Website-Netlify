@@ -45,11 +45,11 @@ jobs:
           # Pobierz dzisiejszą datę i godzinę w formacie YYYY-MM-DD_HH-MM
           DATE=$(date +'%Y-%m-%d_%H-%M')
           # Użyj lftp, aby zmienić nazwę katalogu na serwerze
-          lftp -e "
+          lftp -c "
           open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
-          if [ -d public_html/serwis_auto ]; then
-            mv public_html/serwis_auto public_html/serwis_auto_$DATE;
-          fi
+          # Pobierz dzisiejszą datę i godzinę w formacie YYYY-MM-DD
+          set s:ftp:ignore-size yes;
+          mv -u public_html/serwis_auto public_html/serwis_auto_$DATE || echo 'Katalog serwis_auto nie istnieje, pomijam...';
           bye"
 
       - name: Deploy to FTP
