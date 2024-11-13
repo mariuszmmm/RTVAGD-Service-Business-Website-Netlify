@@ -37,7 +37,7 @@ jobs:
         run: sudo apt-get install -y lftp
 
       - name: Generate dynamic folder name based on date
-        run: echo "FOLDER_NAME=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+        run: echo "FOLDER_NAME=serwis_auto_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Deploy to FTP with dynamic folder
         run: |
@@ -49,4 +49,3 @@ jobs:
           mirror -R ./ /public_html/${FOLDER_NAME}
           quit
           "
-        # test
