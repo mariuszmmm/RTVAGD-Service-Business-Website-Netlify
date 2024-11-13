@@ -44,7 +44,7 @@ jobs:
           # Połączenie FTP i stworzenie katalogu
           lftp -f "
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
-          mkdir /public_html/serwis_auto/${FOLDER_NAME}
+          mkdir /public_html/serwis_auto
           lcd ./build
           mirror -R ./ /public_html/${FOLDER_NAME}
           quit
