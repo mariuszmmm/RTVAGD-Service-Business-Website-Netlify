@@ -37,5 +37,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/
           server-dir: /public_html/serwis_auto/
-
+          timeout: 600 # Zwiększa timeout do 10 minut
           # test 29
