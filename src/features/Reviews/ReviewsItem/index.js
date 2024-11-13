@@ -28,7 +28,6 @@ const ReviewsItem = ({ item }) => (
       <Photo
         itemProp="image"
         src={item.profile_photo_url || ""}
-        loading="lazy"
       />
       <Data >
         <Author itemProp="name">{item.author_name}</Author>

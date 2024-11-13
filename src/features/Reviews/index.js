@@ -68,6 +68,7 @@ const Reviews = () => {
             item={item}
             key={index}
             api={reviewsApi.status === "success"}
+            loading="lazy"
           />
         ))}
       </ReviewsContainer>
