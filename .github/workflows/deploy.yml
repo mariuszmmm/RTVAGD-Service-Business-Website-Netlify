@@ -51,8 +51,7 @@ jobs:
 
           # Sprawdź, czy katalog serwis_auto istnieje
           mv public_html/serwis_auto public_html/serwis_auto_$DATE
-
-          bye"
+          "
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
