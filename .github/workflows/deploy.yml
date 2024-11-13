@@ -63,4 +63,4 @@ jobs:
           local-dir: ./build/
           server-dir: /public_html/serwis_auto/
 
-          # test 24
+          # test 25
