@@ -36,16 +36,17 @@ jobs:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: sudo apt-get install -y lftp
 
-      - name: Generate dynamic folder name based on date
-        run: echo "FOLDER_NAME=serwis_auto_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+      - name: Define appName and generate dynamic folder name based on date
+        run: |
+          echo "APP_NAME=serwis_auto" >> $GITHUB_ENV
+          echo "FOLDER_NAME=${APP_NAME}_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Deploy to FTP with dynamic folder
         run: |
-          # Połączenie FTP i stworzenie katalogu
           lftp -f "
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
           lcd ./build
-          mirror -R ./ /public_html/serwis_auto
+          mirror -R ./ /public_html/${APP_NAME}
           mirror -R ./ /public_html/${FOLDER_NAME}
           quit
           "
