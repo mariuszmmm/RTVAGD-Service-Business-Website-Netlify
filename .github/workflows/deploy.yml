@@ -29,6 +29,22 @@ jobs:
           REACT_APP_GOOGLE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_API_KEY }}
         run: npm run build
 
+      - name: Install lftp
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: sudo apt-get install -y lftp
+
+      - name: Rename existing directory on server
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          # Pobierz dzisiejszą datę i godzinę w formacie YYYY-MM-DD_HH-MM
+          DATE=$(date +'%Y-%m-%d_%H-%M')
+
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
@@ -37,5 +53,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./build/
           server-dir: /public_html/serwis_auto/
-          timeout: 600 # Zwiększa timeout do 10 minut
-          # test 29
+
+          # test 27
