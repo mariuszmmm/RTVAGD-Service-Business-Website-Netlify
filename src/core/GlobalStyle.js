@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   };
 
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
