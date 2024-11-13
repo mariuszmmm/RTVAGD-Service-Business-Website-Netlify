@@ -29,19 +29,13 @@ jobs:
           REACT_APP_GOOGLE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_API_KEY }}
         run: npm run build
 
-      - name: Rename existing directory on server
+      - name: Rename directory on server via SSH
         env:
-          FTP_HOST: ${{ secrets.FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
         run: |
-          # Pobierz dzisiejszą datę w formacie YYYY-MM-DD
-          DATE=$(date +'%Y-%m-%d')
-          # Użyj lftp, aby zmienić nazwę katalogu na serwerze
-          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_HOST" -e "
-            mv /public_html/serwis_auto /public_html/serwis_auto_$DATE;
-            bye
-          "
+          sshpass -p "$SSH_PASSWORD" ssh "$SSH_USERNAME@$SSH_HOST" "mv /path/to/serwis_auto /path/to/serwis_auto_$(date +'%Y-%m-%d')"
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
