@@ -49,3 +49,4 @@ jobs:
           mirror -R ./ /public_html/${FOLDER_NAME}
           quit
           "
+        # test
