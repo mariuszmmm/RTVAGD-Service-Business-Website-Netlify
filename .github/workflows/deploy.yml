@@ -49,8 +49,8 @@ jobs:
           lftp -c "
           open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
 
-          # Sprawdź, czy katalog serwis_auto istnieje, a jeśli tak, to zmień jego nazwę
-          ls public_html/serwis_auto >/dev/null 2>&1 && mv public_html/serwis_auto public_html/serwis_auto_$DATE || echo 'Katalog serwis_auto nie istnieje, pomijam...';
+          # Sprawdź, czy katalog serwis_auto istnieje
+          ls public_html/serwis_auto && mv public_html/serwis_auto public_html/serwis_auto_$DATE || echo 'Katalog serwis_auto nie istnieje, pomijam...';
 
           bye"
 
