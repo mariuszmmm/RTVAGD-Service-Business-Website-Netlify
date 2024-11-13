@@ -59,6 +59,13 @@ jobs:
           # Zamknięcie połączenia FTP, aby upewnić się, że jest świeże połączenie dla kolejnej operacji
           exit
 
+      - name: Open new FTP session for deploy
+        run: |
+          # Otwarcie nowej sesji FTP przed deployem
+          lftp -c "
+          open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
+          bye"
+
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
