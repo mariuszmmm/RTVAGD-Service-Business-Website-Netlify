@@ -7,6 +7,11 @@ export const ItemWrapper = styled.blockquote`
   color: black;
   border-radius: 15px;
   padding: 20px;
+  opacity: 0;
+
+  ${({ $show }) => $show && `
+    opacity: 1;
+  `}
 `;
 
 export const Header = styled.div`

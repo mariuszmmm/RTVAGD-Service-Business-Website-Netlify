@@ -12,6 +12,7 @@ const Reviews = () => {
     status: "loading",
     reviews: [],
   });
+  const [isLoaded, setIsLoaded] = useState(false);
 
   async function fetchReviews() {
     try {
@@ -65,9 +66,11 @@ const Reviews = () => {
         {reviewsApi.status === "loading" && <p>Ładowanie opinii z Google...</p>}
         {(reviewsApi.status === "loading" ? [] : reviewsApi.reviews).map((item, index) => (
           <ReviewsItem
+            setIsLoaded={setIsLoaded}
             item={item}
             key={index}
             api={reviewsApi.status === "success"}
+            isLoaded={isLoaded}
           />
         ))}
       </ReviewsContainer>

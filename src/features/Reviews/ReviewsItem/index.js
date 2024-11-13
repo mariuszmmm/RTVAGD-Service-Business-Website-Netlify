@@ -10,8 +10,12 @@ import {
 import { Text } from "../../../common/Text";
 import { getContentForReview } from "./getContentForReview";
 
-const ReviewsItem = ({ item }) => (
-  <ItemWrapper itemScope itemType="https://schema.org/Review">
+const ReviewsItem = ({ item, isLoaded, setIsLoaded }) => (
+  <ItemWrapper
+    itemScope
+    itemType="https://schema.org/Review"
+    $show={isLoaded}
+  >
     <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
       <meta itemProp="ratingValue" content={item.rating} />
       <meta itemProp="bestRating" content="5" />
@@ -28,6 +32,7 @@ const ReviewsItem = ({ item }) => (
       <Photo
         itemProp="image"
         src={item.profile_photo_url || ""}
+        onLoad={() => setIsLoaded(true)}
       />
       <Data >
         <Author itemProp="name">{item.author_name}</Author>
