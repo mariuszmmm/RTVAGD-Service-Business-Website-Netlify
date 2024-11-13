@@ -30,12 +30,13 @@ jobs:
         run: npm run build
 
       - name: Rename directory on server via SSH
-        env:
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
-        run: |
-          sshpass -p "$SSH_PASSWORD" ssh "$SSH_USERNAME@$SSH_HOST" "mv /path/to/serwis_auto /path/to/serwis_auto_$(date +'%Y-%m-%d')"
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            mv /path/to/serwis_auto /path/to/serwis_auto_$(date +'%Y-%m-%d')
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
