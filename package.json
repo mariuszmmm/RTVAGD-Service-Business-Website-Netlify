@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snap",
     "build_env": "env-cmd -f .env react-scripts build && react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
