@@ -50,20 +50,8 @@ jobs:
           open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
 
           # Sprawdź, czy katalog serwis_auto istnieje
-          mv public_html/serwis_auto public_html/serwis_auto_$DATE || echo 'Katalog serwis_auto nie istnieje, pomijam...';
+          mv public_html/serwis_auto public_html/serwis_auto_$DATE
 
-          bye"
-
-      - name: Close FTP connection (optional)
-        run: |
-          # Zamknięcie połączenia FTP, aby upewnić się, że jest świeże połączenie dla kolejnej operacji
-          exit
-
-      - name: Open new FTP session for deploy
-        run: |
-          # Otwarcie nowej sesji FTP przed deployem
-          lftp -c "
-          open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
           bye"
 
       - name: Deploy to FTP
