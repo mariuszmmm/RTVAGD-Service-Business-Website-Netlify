@@ -1,9 +1,0 @@
-{
-  "short_name": "Serwis RTV i AGD",
-  "name": "Naprawa pralek i sprzętu RTV",
-  "icons": [],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}

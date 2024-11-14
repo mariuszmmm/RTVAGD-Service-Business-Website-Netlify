@@ -40,7 +40,7 @@ const ReviewsItem = ({ item, isLoaded, setIsLoaded }) => (
       </Data>
     </Header>
     <Stars rating={item.rating || 0} text={item.text || ""} />
-    <Text itemProp="reviewBody">{item.text}</Text>
+    <Text itemProp="reviewBody" $forReviews>{item.text}</Text>
   </ItemWrapper>
 );
 

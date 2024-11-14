@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Text = styled.p`
   grid-area: text;
@@ -8,6 +8,10 @@ export const Text = styled.p`
   margin: 1rem 0;
   text-align: justify;
   text-justify: inter-word;
+
+  ${({ $forReviews }) => $forReviews && css`
+    font-style: italic;
+  `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     text-align: left; 
