@@ -16,7 +16,7 @@ import Dishwasher from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { StyledButtonLink } from "../../common/Buttons";
 import { StyledLink } from "../../common/StyledLink";
-import HelmetForHome from "./HemletForHome";
+// import HelmetForHome from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
 import { Helmet } from "react-helmet";
 
