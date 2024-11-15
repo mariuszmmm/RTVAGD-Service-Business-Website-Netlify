@@ -16,9 +16,8 @@ import Dishwasher from "./Dishwasher";
 import { useEffect, useState } from "react";
 import { StyledButtonLink } from "../../common/Buttons";
 import { StyledLink } from "../../common/StyledLink";
-// import HelmetForHome from "./HemletForHome";
+import HelmetForHome from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
-import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [isPortrait, setIsPortrait] = useState(
@@ -73,17 +72,7 @@ const Home = () => {
 
   return (
     <Hero>
-      {/* <HelmetForHome /> */}
-      <Helmet>
-        <title>Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</title>
-
-        <meta
-          property="og:title"
-          content="Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy"
-        />
-        <meta property="og:locale" content="pl_PL" />
-      </Helmet>
-
+      <HelmetForHome />
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />
