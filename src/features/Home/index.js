@@ -18,6 +18,7 @@ import { StyledButtonLink } from "../../common/Buttons";
 import { StyledLink } from "../../common/StyledLink";
 import HelmetForHome from "./HemletForHome";
 import { mobileScene, sceneB as scene } from "./scenes";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [isPortrait, setIsPortrait] = useState(
@@ -72,7 +73,14 @@ const Home = () => {
 
   return (
     <Hero>
-      <HelmetForHome />
+      {/* <HelmetForHome /> */}
+      <Helmet>
+        <meta
+          property="og:title"
+          content="Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy"
+        />
+      </Helmet>
+
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />
