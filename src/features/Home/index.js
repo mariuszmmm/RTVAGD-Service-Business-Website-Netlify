@@ -75,10 +75,13 @@ const Home = () => {
     <Hero>
       {/* <HelmetForHome /> */}
       <Helmet>
+        <title>Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</title>
+
         <meta
           property="og:title"
           content="Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy"
         />
+        <meta property="og:locale" content="pl_PL" />
       </Helmet>
 
       <HeroContainer>
