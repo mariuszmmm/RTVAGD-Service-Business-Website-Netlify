@@ -11,7 +11,7 @@ const TelevisionService = () => (
   <Section>
     <HemletForTelevisionService />
     <Container>
-      <Title><span>✔ </span>Naprawa Telewizorów</Title>
+      <Title><span>✔ </span>Naprawa telewizorów</Title>
       <main>
         <ServiceItem>
           <SubTitle>Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek</SubTitle>

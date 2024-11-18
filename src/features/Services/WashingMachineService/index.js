@@ -11,7 +11,7 @@ const WashingMachineService = () => (
   <Section>
     <HemletForWashingMachineService />
     <Container>
-      <Title><span>✔ </span>Naprawa Pralek</Title>
+      <Title><span>✔ </span>Naprawa pralek</Title>
       <main>
         <ServiceItem>
           <Photo src={imageUrls.pralka} alt="naprawa pralek" />

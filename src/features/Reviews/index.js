@@ -63,7 +63,7 @@ const Reviews = () => {
       <HemletForReviews />
       <ReviewsContainer>
         <Title>Opinie Klientów</Title>
-        {reviewsApi.status === "loading" && <p>Ładowanie opinii z Google...</p>}
+        {reviewsApi.status === "loading" && <p>Ładowanie opinii z google...</p>}
         {(reviewsApi.status === "loading" ? [] : reviewsApi.reviews).map((item, index) => (
           <ReviewsItem
             setIsLoaded={setIsLoaded}

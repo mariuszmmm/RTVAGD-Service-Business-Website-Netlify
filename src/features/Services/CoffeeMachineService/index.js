@@ -11,7 +11,7 @@ const CoffeeMachineService = () => (
   <Section>
     <HemletForCoffeeMachineService />
     <Container>
-      <Title><span>✔ </span>Naprawa Ekspresów do Kawy</Title>
+      <Title><span>✔ </span>Naprawa ekspresów do kawy</Title>
       <main>
         <ServiceItem>
           <SubTitle>Profesjonalna naprawa ekspresów do&nbsp;kawy,<br />niezależnie od&nbsp;marki i&nbsp;modelu.</SubTitle>
