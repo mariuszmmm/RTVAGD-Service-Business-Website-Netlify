@@ -40,8 +40,8 @@ jobs:
 
       - name: Define appName and generate dynamic folder name based on date
         run: |
-          echo "APP_NAME=serwis_test" >> $GITHUB_ENV
-          echo "FOLDER_NAME=serwis_test$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+          echo "APP_NAME=test" >> $GITHUB_ENV
+          echo "FOLDER_NAME=test$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Deploy to FTP with dynamic folder
         run: |
