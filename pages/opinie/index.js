@@ -66,13 +66,11 @@ export async function getStaticProps() {
       };
     }
 
-
     return {
       props: {
         status: 'success',
         reviews: newReviews,
       },
-      revalidate: 3600 * 24,
     };
   } catch (error) {
     console.error('Error fetching reviews:', error);
@@ -81,7 +79,6 @@ export async function getStaticProps() {
         status: 'error',
         reviews: [],
       },
-      revalidate: 3600,
     };
   }
 }
