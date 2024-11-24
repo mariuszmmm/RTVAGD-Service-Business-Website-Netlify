@@ -72,6 +72,7 @@ export async function getStaticProps() {
         status: 'success',
         reviews: newReviews,
       },
+      revalidate: 3600 * 24,
     };
   } catch (error) {
     console.error('Error fetching reviews:', error);
@@ -80,7 +81,7 @@ export async function getStaticProps() {
         status: 'error',
         reviews: [],
       },
-      revalidate: 3600 * 24,
+      revalidate: 3600,
     };
   }
 }
