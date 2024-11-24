@@ -23,10 +23,12 @@ jobs:
 
       - name: Build the application
         env:
-          REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
-          REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}
-          REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
-          REACT_APP_GOOGLE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_API_KEY }}
+          NEXT_PUBLIC_SERVICE_ID: ${{ secrets.SERVICE_ID }}
+          NEXT_PUBLIC_TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
+          NEXT_PUBLIC_PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
+          NEXT_PUBLIC_GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          NEXT_PUBLIC_PLACE_ID: ${{ secrets.PLACE_ID }}
         run: npm run build
 
       - name: Install lftp
@@ -43,7 +45,7 @@ jobs:
 
       - name: Deploy to FTP with dynamic folder
         run: |
-          lftp -f "
+          lftp -f "  
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
           lcd ./out
           mirror -R ./ /public_html/${APP_NAME}
