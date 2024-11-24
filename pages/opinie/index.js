@@ -36,6 +36,13 @@ export async function getStaticProps() {
 
   try {
     const response = await axios.get(url);
+
+    if (!response) {
+      return {
+        notFound: true,
+      };
+    }
+
     const reviews = response.data.result.reviews || [];
 
     if (!Array.isArray(reviews)) {
@@ -61,6 +68,7 @@ export async function getStaticProps() {
         reserveReviewsIndex++;
       };
     }
+
 
     return {
       props: {
