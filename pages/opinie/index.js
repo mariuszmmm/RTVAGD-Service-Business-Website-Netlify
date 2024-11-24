@@ -80,7 +80,7 @@ export async function getStaticProps() {
         status: 'error',
         reviews: [],
       },
-      // revalidate: 3600 * 24,
+      revalidate: 3600 * 24,
     };
   }
 }
