@@ -31,9 +31,6 @@ jobs:
           NEXT_PUBLIC_PLACE_ID: ${{ secrets.PLACE_ID }}
         run: npm run build
 
-      - name: Check if 'out' directory exists
-        run: ls -la ./out
-
       - name: Install lftp
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
@@ -41,15 +38,11 @@ jobs:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: sudo apt-get install -y lftp
 
-      - name: Define appName and generate dynamic folder name based on date
-        run: |
-          echo "APP_NAME=ttt" >> $GITHUB_ENV
-
       - name: Deploy to FTP with dynamic folder
         run: |
           lftp -f "
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
           lcd ./out
-          mirror -R ./ /public_html/${APP_NAME}
+          mirror -R ./ /public_html/test
           quit
           "
