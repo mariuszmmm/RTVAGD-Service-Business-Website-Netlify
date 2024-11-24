@@ -44,7 +44,6 @@ jobs:
       - name: Define appName and generate dynamic folder name based on date
         run: |
           echo "APP_NAME=ttt" >> $GITHUB_ENV
-          echo "FOLDER_NAME=ttt$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
       - name: Deploy to FTP with dynamic folder
         run: |
@@ -52,6 +51,5 @@ jobs:
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
           lcd ./out
           mirror -R . /public_html/${APP_NAME}
-          mirror -R . /public_html/${FOLDER_NAME}
           quit
           "
