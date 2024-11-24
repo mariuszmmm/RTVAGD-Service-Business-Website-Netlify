@@ -6,7 +6,6 @@ import { serwis } from "../../utils/serwis";
 import { StyledButtonLink } from "../../components/common/Buttons";
 import HelmetForReviews from "./HelmetForReviews";
 import axios from 'axios';
-import { isAbsoluteUrl } from "next/dist/shared/lib/utils";
 
 const Reviews = ({ reviews, status }) => (
   <Section>
@@ -37,10 +36,8 @@ export async function getStaticProps() {
   try {
     const response = await axios.get(url);
 
-    if (!response) {
-      return {
-        notFound: true,
-      };
+    if (!response || !response.data || !response.data.result) {
+      throw new Error('No data from Google Places API');
     }
 
     const reviews = response.data.result.reviews || [];
@@ -78,6 +75,7 @@ export async function getStaticProps() {
     };
   } catch (error) {
     console.error('Error fetching reviews:', error);
+
     return {
       props: {
         status: 'error',
