@@ -31,6 +31,9 @@ jobs:
           NEXT_PUBLIC_PLACE_ID: ${{ secrets.PLACE_ID }}
         run: npm run build
 
+      - name: Check if 'out' directory exists
+        run: ls -la ./out
+
       - name: Install lftp
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
