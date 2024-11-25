@@ -47,7 +47,8 @@ jobs:
         run: |
           lftp -f "
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
-          lcd ./out
-          mirror -R ./ /public_html/serwis_
+          lcd ./build
+          mirror -R ./ /public_html/${APP_NAME}
+          mirror -R ./ /public_html/${FOLDER_NAME}
           quit
           "
