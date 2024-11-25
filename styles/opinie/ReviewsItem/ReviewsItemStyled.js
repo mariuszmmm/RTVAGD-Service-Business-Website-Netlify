@@ -14,6 +14,7 @@ export const Header = styled.div`
 `;
 
 export const Photo = styled.img`
+  width: clamp(2.5rem, 6vw, 4rem);;
   height: clamp(2.5rem, 6vw, 4rem);
   margin-right: 15px;
 `;
