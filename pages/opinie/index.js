@@ -17,7 +17,6 @@ const Reviews = ({ reviews, status }) => {
           <ReviewsItem
             item={item}
             key={index}
-            api={status === "success"}
           />
         ))}
         {status === "error" && <p>Wystąpił błąd podczas ładowania opinii</p>}
@@ -31,11 +30,13 @@ const Reviews = ({ reviews, status }) => {
 };
 
 export async function getStaticProps() {
-  const url = 'https://naprawaprzemysl.pl/api/update_reviews.php';
+  const url = 'https://naprawaprzemysl.pl/api/reviews.json';
 
   try {
     const response = await axios(url)
     const reviews = response.data?.reviews || [];
+
+    console.log(response.data);
 
     if (!Array.isArray(reviews)) {
       throw new Error('Invalid response from Google Places API');

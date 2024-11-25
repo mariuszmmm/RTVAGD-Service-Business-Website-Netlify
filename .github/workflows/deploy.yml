@@ -38,17 +38,26 @@ jobs:
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: sudo apt-get install -y lftp
 
-      - name: Define appName and generate dynamic folder name based on date
-        run: |
-          echo "APP_NAME=serwis_" >> $GITHUB_ENV
-          echo "FOLDER_NAME=serwis_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+      - name: Define dynamic folder name
+        run: echo "COPY_FOLDER_NAME=serwis_$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
-      - name: Deploy to FTP with dynamic folder
+      - name: Deploy to FTP
         run: |
           lftp -f "
           open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
-          lcd ./build
-          mirror -R ./ /public_html/${APP_NAME}
-          mirror -R ./ /public_html/${FOLDER_NAME}
+          lcd ./out
+          mirror -R . /public_html/serwis
+          mirror -R . /public_html/${{ env.COPY_FOLDER_NAME }}
+          quit
+          "
+
+      - name: Copy .htaccess
+        run: |
+          lftp -f "
+          open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
+          cd /public_html/env/serwis
+          get .htaccess -o .htaccess
+          put .htaccess -o /public_html/serwis/api/.htaccess
+          put .htaccess -o /public_html/${{ env.COPY_FOLDER_NAME }}/api/.htaccess
           quit
           "

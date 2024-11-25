@@ -9,6 +9,7 @@ import {
 } from "../../../styles/opinie/ReviewsItem/ReviewsItemStyled";
 import { Text } from "../../../components/common/Text";
 import getContentForReview from "./getContentForReview";
+import Image from 'next/image'
 
 const ReviewsItem = ({ item }) => {
   if (!item) {
@@ -17,7 +18,7 @@ const ReviewsItem = ({ item }) => {
   }
 
   const contentForReview = item?.text.toString() || "";
-
+  console.log(item.profile_photo_url)
   return (
     <ItemWrapper
       itemScope
@@ -38,7 +39,8 @@ const ReviewsItem = ({ item }) => {
       <Header itemProp="author" itemScope itemType="https://schema.org/Person">
         <Photo
           itemProp="image"
-          src={item.profile_photo_url || ""}
+          src={item.profile_photo_url}
+          alt="Foto"
           loading="lazy"
         />
         <Data >
