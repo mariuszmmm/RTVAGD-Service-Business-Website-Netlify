@@ -36,8 +36,6 @@ export async function getStaticProps() {
     const response = await axios(url)
     const reviews = response.data?.reviews || [];
 
-    console.log(response.data);
-
     if (!Array.isArray(reviews)) {
       throw new Error('Invalid response from Google Places API');
     };
