@@ -20,7 +20,7 @@ const DishwasherServiceMetaTags = () => (
       property="og:description"
       content="Oferujemy specjalistyczną naprawę zmywarek w Przemyślu, aby Twoje urządzenie działało sprawnie i niezawodnie."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-telewizorow" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,7 +171,7 @@ const DishwasherServiceMetaTags = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Usługi",
+            "name": "Naprawa zmywarek",
             "item": "https://naprawaprzemysl.pl/naprawa-zmywarek"
           }
         ]

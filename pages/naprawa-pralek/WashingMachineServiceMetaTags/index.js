@@ -20,7 +20,7 @@ const WashingMachineServiceMetaTags = () => (
       property="og:description"
       content="Zaufaj ekspertowi! Oferujemy profesjonalną naprawę pralek automatycznych w Przemyślu, abyś mógł cieszyć się ich pełną sprawnością."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-pralek" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,7 +171,7 @@ const WashingMachineServiceMetaTags = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Usługi",
+            "name": "Naprawa pralek",
             "item": "https://naprawaprzemysl.pl/naprawa-pralek"
           }
         ]

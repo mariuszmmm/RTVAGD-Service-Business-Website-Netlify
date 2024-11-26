@@ -20,7 +20,7 @@ const CoffeeMachineServiceMetaTags = () => (
       property="og:description"
       content="Oferujemy profesjonalną naprawę ekspresów do kawy w Przemyślu, abyś mógł cieszyć się ulubionym napojem bez zakłóceń."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-ekspresow" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,7 +171,7 @@ const CoffeeMachineServiceMetaTags = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Usługi",
+            "name": "Naprawa ekspresów do kawy",
             "item": "https://naprawaprzemysl.pl/naprawa-ekspresow"
           }
         ]

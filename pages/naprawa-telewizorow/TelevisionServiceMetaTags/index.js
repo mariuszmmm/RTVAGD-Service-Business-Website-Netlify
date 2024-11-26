@@ -20,7 +20,7 @@ const TelevisionServiceMetaTags = () => (
       property="og:description"
       content="Oferujemy fachową naprawę telewizorów w Przemyślu, abyś mógł znów cieszyć się ulubionymi programami bez zakłóceń."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-telewizorow" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,7 +171,7 @@ const TelevisionServiceMetaTags = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Usługi",
+            "name": "Naprawa telewizorów",
             "item": "https://naprawaprzemysl.pl/naprawa-telewizorow"
           }
         ]

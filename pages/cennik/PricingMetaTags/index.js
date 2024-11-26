@@ -9,7 +9,7 @@ const PricingMetaTags = () => (
     />
     <meta
       name="keywords"
-      content="cennik, usługi, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
+      content="cennik, usługi, naprawa, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
     />
     <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
     <meta
