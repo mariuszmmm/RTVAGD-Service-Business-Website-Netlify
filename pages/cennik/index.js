@@ -4,12 +4,12 @@ import { Title } from '../../components/common/Title';
 import { serwis } from '../../utils/serwis';
 import { PricingTable, PricingTh } from '../../styles/cennik/PricingStyled';
 import PricingRow from './PricingRow';
-import HelmetForPricing from './HelmetForPricing';
+import PricingMetaTags from './PricingMetaTags';
 
 const Pricing = () => {
   return (
     <Section >
-      <HelmetForPricing />
+      <PricingMetaTags />
       <Container>
         <Title>Cennik</Title>
         <PricingTable>

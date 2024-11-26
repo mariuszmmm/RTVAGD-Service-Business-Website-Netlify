@@ -11,9 +11,9 @@ import Dishwasher from './Dishwasher';
 import { StyledLink } from '../../components/common/StyledLink';
 import { useState, useEffect, useRef } from 'react';
 import { mobileScene, sceneB as scene } from "../../utils/scenes";
-import HelmetForHome from './HelmetForHome';
+import HomeMetaTags from './HomeMetaTags';
 
-const Home = ({ phone }) => {
+const Home = () => {
   const [isPortrait, setIsPortrait] = useState(
     typeof window !== 'undefined' ? window.innerHeight > window.innerWidth : true
   );
@@ -77,7 +77,7 @@ const Home = ({ phone }) => {
 
   return (
     <Hero>
-      <HelmetForHome />
+      <HomeMetaTags />
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />

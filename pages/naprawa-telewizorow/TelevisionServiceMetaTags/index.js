@@ -1,24 +1,24 @@
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 
-const HelmetForWashingMachineService = () => (
-  <Helmet>
-    <title>Naprawa pralek | 📞 790258612 Serwis w Przemyślu</title>
+const TelevisionServiceMetaTags = () => (
+  <Head>
+    <title>Naprawa telewizorów 📞 790258612 | Serwis w Przemyślu</title>
     <meta
       name="description"
-      content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze."
+      content="Fachowa naprawa telewizorów wszystkich typów i marek w Przemyślu. Przywróć swoje ulubione programy do życia!"
     />
     <meta
       name="keywords"
-      content="naprawa pralek, serwis pralek, AGD, Przemyśl, pralki automatyczne, naprawa AGD"
+      content="naprawa telewizorów, serwis telewizorów, RTV, Przemyśl, naprawa AGD, smart TV, telewizory"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-pralek" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-telewizorow" />
     <meta
       property="og:title"
-      content="Naprawa pralek | 📞 790258612 Serwis w Przemyślu"
+      content="Naprawa telewizorów 📞 790258612 | Serwis w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Zaufaj ekspertowi! Oferujemy profesjonalną naprawę pralek automatycznych w Przemyślu, abyś mógł cieszyć się ich pełną sprawnością."
+      content="Oferujemy fachową naprawę telewizorów w Przemyślu, abyś mógł znów cieszyć się ulubionymi programami bez zakłóceń."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
     <script type="application/ld+json">
@@ -172,12 +172,12 @@ const HelmetForWashingMachineService = () => (
             "@type": "ListItem",
             "position": 2,
             "name": "Usługi",
-            "item": "https://naprawaprzemysl.pl/naprawa-pralek"
+            "item": "https://naprawaprzemysl.pl/naprawa-telewizorow"
           }
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForWashingMachineService;
+export default TelevisionServiceMetaTags;

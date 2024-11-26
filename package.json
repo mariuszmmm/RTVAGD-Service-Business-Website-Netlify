@@ -4,33 +4,20 @@
   "private": true,
   "homepage": "https://naprawaprzemysl.pl",
   "dependencies": {
-    "@cloudinary/react": "^1.13.1",
-    "@cloudinary/url-gen": "^1.21.0",
     "@emailjs/browser": "^4.4.1",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.0.1",
-    "@testing-library/user-event": "^14.5.2",
-    "axios": "^1.7.7",
+    "axios": "^1.7.8",
     "date-fns": "^4.1.0",
-    "env-cmd": "^10.1.0",
-    "gh-pages": "^6.2.0",
+    "eslint-config-react-app": "^7.0.1",
     "next": "^15.0.3",
     "polished": "^4.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-helmet-async": "^2.0.5",
-    "react-lazyload": "^3.2.1",
-    "react-router-dom": "^6.28.0",
-    "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^5.0.1",
-    "react-snap": "^1.13.1",
     "styled-components": "^6.1.13",
     "styled-normalize": "^8.1.1"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "serve": "npx serve@latest out"
   },
   "eslintConfig": {
@@ -52,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@svgr/webpack": "^8.1.0",
     "babel-plugin-styled-components": "^2.1.4",
     "eslint-config-next": "^15.0.3"

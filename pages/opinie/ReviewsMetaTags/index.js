@@ -1,26 +1,26 @@
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 
-const HelmetForPricing = () => (
-  <Helmet>
-    <title>Cennik | ✔️ Serwis RTV AGD w Przemyślu</title>
+const ReviewsMetaTags = () => (
+  <Head>
+    <title>Poznaj opinie klientów | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
-      content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
+      content="Przeczytaj opinie zadowolonych klientów o serwisie telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu."
     />
     <meta
       name="keywords"
-      content="cennik, usługi, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
+      content="opinie, recenzje, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/opinie" />
     <meta
       property="og:title"
-      content="Cennik | ✔️ Serwis RTV AGD w Przemyślu"
+      content="Poznaj opinie klientów | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Sprawdź nasz cennik usług serwisu RTV i AGD w Przemyślu."
+      content="Sprawdź opinie naszych klientów na temat serwisu RTV i AGD w Przemyślu."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/cennik" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/opinie" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,13 +171,13 @@ const HelmetForPricing = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Cennik",
-            "item": "https://naprawaprzemysl.pl/cennik"
+            "name": "Opinie",
+            "item": "https://naprawaprzemysl.pl/opinie"
           }
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForPricing;
+export default ReviewsMetaTags;

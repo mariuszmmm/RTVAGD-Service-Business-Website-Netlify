@@ -1,24 +1,24 @@
-import { Helmet } from "react-helmet-async";
+import Head from 'next/head';
 
-const HelmetForTelevisionService = () => (
-  <Helmet>
-    <title>Naprawa telewizorów | 📞 790258612 Serwis w Przemyślu</title>
+const DishwasherServiceMetaTags = () => (
+  <Head>
+    <title>Naprawa zmywarek 📞 790258612 | Serwis w Przemyślu</title>
     <meta
       name="description"
-      content="Fachowa naprawa telewizorów wszystkich typów i marek w Przemyślu. Przywróć swoje ulubione programy do życia!"
+      content="Specjalistyczna naprawa zmywarek wszystkich marek w Przemyślu. Przywróć efektywność swojej zmywarki!"
     />
     <meta
       name="keywords"
-      content="naprawa telewizorów, serwis telewizorów, RTV, Przemyśl, naprawa AGD, smart TV, telewizory"
+      content="naprawa zmywarek, serwis zmywarek, AGD, Przemyśl, naprawa AGD, zmywarki"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-telewizorow" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-zmywarek" />
     <meta
       property="og:title"
-      content="Naprawa telewizorów | 📞 790258612 Serwis w Przemyślu"
+      content="Naprawa zmywarek 📞 790258612 | Serwis w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Oferujemy fachową naprawę telewizorów w Przemyślu, abyś mógł znów cieszyć się ulubionymi programami bez zakłóceń."
+      content="Oferujemy specjalistyczną naprawę zmywarek w Przemyślu, aby Twoje urządzenie działało sprawnie i niezawodnie."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
     <script type="application/ld+json">
@@ -172,12 +172,12 @@ const HelmetForTelevisionService = () => (
             "@type": "ListItem",
             "position": 2,
             "name": "Usługi",
-            "item": "https://naprawaprzemysl.pl/naprawa-telewizorow"
+            "item": "https://naprawaprzemysl.pl/naprawa-zmywarek"
           }
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForTelevisionService;
+export default DishwasherServiceMetaTags;

@@ -4,36 +4,38 @@ import { ReviewsContainer } from "../../styles/opinie/OpinieStyled";
 import ReviewsItem from "./ReviewsItem";
 import { serwis } from "../../utils/serwis";
 import { StyledButtonLink } from "../../components/common/Buttons";
-import HelmetForReviews from "./HelmetForReviews";
+import ReviewsMetaTags from "./ReviewsMetaTags";
 import axios from 'axios';
+import { reviewUrl } from "../../utils/urls";
 
-const Reviews = ({ reviews, status }) => {
-  return (
-    <Section>
-      <HelmetForReviews />
-      <ReviewsContainer>
-        <Title>Opinie Klientów</Title>
-        {status === "success" && reviews.map((item, index) => (
-          <ReviewsItem
-            item={item}
-            key={index}
-          />
-        ))}
-        {status === "error" && <p>Wystąpił błąd podczas ładowania opinii</p>}
-        {status !== "success" && status !== "error" && <p>Ładowanie opinii z google...</p>}
-      </ReviewsContainer>
-      {status === "success" && <StyledButtonLink href={serwis.url.addTestimonial}>
-        Wystaw opinię
-      </StyledButtonLink>}
-    </Section>
-  );
-};
+const Reviews = ({ reviews, status }) => (
+  <Section>
+    <ReviewsMetaTags />
+    <ReviewsContainer>
+      <Title>Opinie Klientów</Title>
+      {status === "success" && reviews.map((item, index) => (
+        <ReviewsItem
+          item={item}
+          key={index}
+        />
+      ))}
+      {status === "error" &&
+        <>
+          <p>Wystąpił błąd podczas ładowania opinii.</p>
+          <p> Proszę spróbować ponownie później.</p>
+        </>
+      }
+      {status !== "success" && status !== "error" && <p>Ładowanie opinii z google...</p>}
+    </ReviewsContainer>
+    {status === "success" && <StyledButtonLink href={serwis.url.addTestimonial}>
+      Wystaw opinię
+    </StyledButtonLink>}
+  </Section>
+);
 
 export async function getStaticProps() {
-  const url = 'https://naprawaprzemysl.pl/api/reviews.json';
-
   try {
-    const response = await axios(url)
+    const response = await axios(reviewUrl)
     const reviews = response.data?.reviews || [];
 
     if (!Array.isArray(reviews)) {

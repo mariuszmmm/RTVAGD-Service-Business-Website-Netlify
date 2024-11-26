@@ -1,30 +1,30 @@
-import { Helmet } from "react-helmet-async";
+import Head from 'next/head';
 
-const HelmetForCoffeeMachineService = () => (
-  <Helmet>
-    <title>Naprawa ekspresów do kawy | 📞 790258612 Serwis w Przemyślu</title>
+const PricingMetaTags = () => (
+  <Head>
+    <title>Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
-      content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Ciesz się ulubioną kawą bez przerw!"
+      content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
     />
     <meta
       name="keywords"
-      content="naprawa ekspresów do kawy, serwis ekspresów, AGD, Przemyśl, ekspresy, naprawa AGD"
+      content="cennik, usługi, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-ekspresow" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
     <meta
       property="og:title"
-      content="Naprawa ekspresów do kawy | 📞 790258612 Serwis w Przemyślu"
+      content="Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Oferujemy profesjonalną naprawę ekspresów do kawy w Przemyślu, abyś mógł cieszyć się ulubionym napojem bez zakłóceń."
+      content="Sprawdź nasz cennik usług serwisu RTV i AGD w Przemyślu."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/cennik" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
+        "@type": "LocalBusiness",
         "name": "Naprawa pralek i sprzętu RTV",
         "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
         "@id": "https://naprawaprzemysl.pl",
@@ -151,33 +151,13 @@ const HelmetForCoffeeMachineService = () => (
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.6",
-          "reviewCount": "61",
+          "reviewCount": "62",
           "bestRating": "5",
           "worstRating": "1"
         }
       })}
     </script>
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Strona Główna",
-            "item": "https://naprawaprzemysl.pl"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Usługi",
-            "item": "https://naprawaprzemysl.pl/naprawa-ekspresow"
-          }
-        ]
-      })}
-    </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForCoffeeMachineService;
+export default PricingMetaTags;

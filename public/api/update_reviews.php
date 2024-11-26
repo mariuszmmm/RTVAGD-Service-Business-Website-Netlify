@@ -39,13 +39,11 @@ $newReviews = array_filter(array_map(function($item) {
 
 $data = [
   'reviews' => array_values($newReviews),
-  'current_time' => date('Y-m-d H:i:s')
+  'update_time' => date('Y-m-d H:i:s')
 ];
 file_put_contents('reviews.json', json_encode($data));
 
 echo json_encode([
   'message' => 'Reviews updated successfully',
-  'data' => $data,
-  'current_time' => date('Y-m-d H:i:s')
   ]);
 ?>

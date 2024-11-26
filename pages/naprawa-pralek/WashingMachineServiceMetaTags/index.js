@@ -1,26 +1,26 @@
-import { Helmet } from "react-helmet-async";
+import Head from 'next/head';
 
-const HelmetForReviews = () => (
-  <Helmet>
-    <title>Opinie klientów | ✔️ Serwis RTV AGD w Przemyślu</title>
+const WashingMachineServiceMetaTags = () => (
+  <Head>
+    <title>Naprawa pralek 📞 790258612 | Serwis w Przemyślu</title>
     <meta
       name="description"
-      content="Przeczytaj opinie zadowolonych klientów o serwisie telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu."
+      content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze."
     />
     <meta
       name="keywords"
-      content="opinie, recenzje, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
+      content="naprawa pralek, serwis pralek, AGD, Przemyśl, pralki automatyczne, naprawa AGD"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/opinie" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-pralek" />
     <meta
       property="og:title"
-      content="Opinie klientów | ✔️ Serwis RTV AGD w Przemyślu"
+      content="Naprawa pralek 📞 790258612 | Serwis w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Sprawdź opinie naszych klientów na temat serwisu RTV i AGD w Przemyślu."
+      content="Zaufaj ekspertowi! Oferujemy profesjonalną naprawę pralek automatycznych w Przemyślu, abyś mógł cieszyć się ich pełną sprawnością."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/opinie" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,13 +171,13 @@ const HelmetForReviews = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Opinie",
-            "item": "https://naprawaprzemysl.pl/opinie"
+            "name": "Usługi",
+            "item": "https://naprawaprzemysl.pl/naprawa-pralek"
           }
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForReviews;
+export default WashingMachineServiceMetaTags;

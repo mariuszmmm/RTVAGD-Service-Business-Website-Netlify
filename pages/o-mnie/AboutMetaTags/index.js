@@ -1,9 +1,9 @@
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 
-const HelmetForAbout = () => {
+const AboutMetaTags = () => {
   return (
-    <Helmet>
-      <title>O serwisie | ✔️ Serwis RTV AGD w Przemyślu</title>
+    <Head>
+      <title>Informacje o serwisie | ✔️ Serwis RTV AGD w Przemyślu</title>
       <meta
         name="description"
         content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
@@ -15,7 +15,7 @@ const HelmetForAbout = () => {
       <link rel="canonical" href="https://naprawaprzemysl.pl/o-mnie" />
       <meta
         property="og:title"
-        content="O serwisie | ✔️ Serwis RTV AGD w Przemyślu"
+        content="Informacje o serwisie | ✔️ Serwis RTV AGD w Przemyślu"
       />
       <meta
         property="og:description"
@@ -179,8 +179,8 @@ const HelmetForAbout = () => {
           ]
         })}
       </script>
-    </Helmet>
+    </Head>
   );
 };
 
-export default HelmetForAbout;
+export default AboutMetaTags;

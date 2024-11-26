@@ -1,26 +1,26 @@
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 
-const HelmetForContact = () => (
-  <Helmet>
-    <title>Kontakt | ✔️ Serwis RTV AGD w Przemyślu</title>
+const CoffeeMachineServiceMetaTags = () => (
+  <Head>
+    <title>Naprawa ekspresów do kawy 📞 790258612 | Serwis w Przemyślu</title>
     <meta
       name="description"
-      content="Skontaktuj się z nami pod numerem telefonu +48 790 258 612 lub odwiedź nas w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
+      content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Ciesz się ulubioną kawą bez przerw!"
     />
     <meta
       name="keywords"
-      content="kontakt, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
+      content="naprawa ekspresów do kawy, serwis ekspresów, AGD, Przemyśl, ekspresy, naprawa AGD"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/kontakt" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-ekspresow" />
     <meta
       property="og:title"
-      content="Kontakt | ✔️ Serwis RTV AGD w Przemyślu"
+      content="Naprawa ekspresów do kawy 📞 790258612 | Serwis w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Skontaktuj się z nami. Serwis RTV i AGD w Przemyślu. Profesjonalna pomoc i szybka naprawa."
+      content="Oferujemy profesjonalną naprawę ekspresów do kawy w Przemyślu, abyś mógł cieszyć się ulubionym napojem bez zakłóceń."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/kontakt" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,13 +171,13 @@ const HelmetForContact = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Kontakt",
-            "item": "https://naprawaprzemysl.pl/kontakt"
+            "name": "Usługi",
+            "item": "https://naprawaprzemysl.pl/naprawa-ekspresow"
           }
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForContact;
+export default CoffeeMachineServiceMetaTags;

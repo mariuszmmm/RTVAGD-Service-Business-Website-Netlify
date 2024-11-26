@@ -1,7 +1,7 @@
-import { Helmet } from "react-helmet-async";
+import Head from 'next/head';
 
-const HelmetForHome = () => (
-  <Helmet>
+const HomeMetaTags = () => (
+  <Head>
     <title>Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</title>
     <meta
       name="description"
@@ -171,7 +171,7 @@ const HelmetForHome = () => (
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForHome;
+export default HomeMetaTags;

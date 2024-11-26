@@ -1,26 +1,26 @@
-import { Helmet } from "react-helmet-async";
+import Head from 'next/head';
 
-const HelmetForDishwasherService = () => (
-  <Helmet>
-    <title>Naprawa zmywarek | 📞 790258612 Serwis w Przemyślu</title>
+const ConatctMetaTags = () => (
+  <Head>
+    <title>Kontakt | ✔️ Serwis RTV AGD w Przemyślu</title>
     <meta
       name="description"
-      content="Specjalistyczna naprawa zmywarek wszystkich marek w Przemyślu. Przywróć efektywność swojej zmywarki!"
+      content="Skontaktuj się z nami pod numerem telefonu +48 790 258 612 lub odwiedź nas w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
     />
     <meta
       name="keywords"
-      content="naprawa zmywarek, serwis zmywarek, AGD, Przemyśl, naprawa AGD, zmywarki"
+      content="kontakt, serwis, RTV, AGD, Przemyśl, pralki, zmywarki, ekspresy do kawy, telewizory"
     />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-zmywarek" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/kontakt" />
     <meta
       property="og:title"
-      content="Naprawa zmywarek | 📞 790258612 Serwis w Przemyślu"
+      content="Kontakt | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Oferujemy specjalistyczną naprawę zmywarek w Przemyślu, aby Twoje urządzenie działało sprawnie i niezawodnie."
+      content="Skontaktuj się z nami. Serwis RTV i AGD w Przemyślu. Profesjonalna pomoc i szybka naprawa."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/uslugi" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/kontakt" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
@@ -171,13 +171,13 @@ const HelmetForDishwasherService = () => (
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Usługi",
-            "item": "https://naprawaprzemysl.pl/naprawa-zmywarek"
+            "name": "Kontakt",
+            "item": "https://naprawaprzemysl.pl/kontakt"
           }
         ]
       })}
     </script>
-  </Helmet>
+  </Head>
 );
 
-export default HelmetForDishwasherService;
+export default ConatctMetaTags;
