@@ -3,28 +3,45 @@ import Head from 'next/head';
 const PricingMetaTags = () => (
   <Head>
     <title>Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu</title>
+
+    <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
+
     <meta
       name="description"
       content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
     />
-    <meta
-      name="keywords"
-      content="cennik, usługi, naprawa, serwis, RTV, AGD, Przemyśl, telewizory, pralki, zmywarki, ekspresy do kawy"
-    />
-    <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
+
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:title"
       content="Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu"
     />
     <meta
       property="og:description"
-      content="Sprawdź nasz cennik usług serwisu RTV i AGD w Przemyślu."
+      content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/cennik" />
+    <meta property="og:site_name" content="Serwis RTV i AGD - cennik" />
+    <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
+    <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
+    <meta property="og:image:secure_url" content="https://naprawaprzemysl.pl/share.png" />
+    <meta property="og:image:width" content="931" />
+    <meta property="og:image:height" content="497" />
+    <meta property="og:image:alt" content="Serwis RTV i AGD" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu" />
+    <meta name="twitter:description" content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu." />
+    <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
+
+    <meta name="keywords" content="cennik naprawa AGD, ceny naprawy pralek, cennik naprawy RTV, naprawa ekspresów ceny, cennik serwis sprzętu AGD, ceny serwis RTV, naprawa zmywarek cennik, cennik naprawy telewizorów" />
+
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "ProfessionalService",
         "name": "Naprawa pralek i sprzętu RTV",
         "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
         "@id": "https://naprawaprzemysl.pl",
@@ -59,10 +76,10 @@ const PricingMetaTags = () => (
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100063811592941"
         ],
-        "logo": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp",
-        "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/static/media/serwis.1b7b2504558771c986cc.webp", "width": 512, "height": 512 },
+        "logo": "https://naprawaprzemysl.pl/share.png",
+        "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Profesjonalna naprawa i serwis telewizorów, pralek, zmywarek oraz ekspresów do kawy w Przemyślu. Szybka pomoc i fachowa obsługa.",
+        "description": "Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu.",
         "offers": [
           {
             "@type": "Offer",
@@ -145,9 +162,7 @@ const PricingMetaTags = () => (
             }
           }
         ],
-        "paymentAccepted": [
-          "Cash"
-        ],
+        "paymentAccepted": "Cash",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.6",
@@ -155,6 +170,26 @@ const PricingMetaTags = () => (
           "bestRating": "5",
           "worstRating": "1"
         }
+      })}
+    </script>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona Główna",
+            "item": "https://naprawaprzemysl.pl"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cennik",
+            "item": "https://naprawaprzemysl.pl/cennik"
+          }
+        ]
       })}
     </script>
   </Head>

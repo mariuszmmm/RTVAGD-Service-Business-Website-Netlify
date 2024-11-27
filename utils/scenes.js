@@ -1,5 +1,6 @@
+// ["washingMachine", "coffeeMachine","dishwasher"," "television"],
+
 export const sceneA = {
-  // ["washingMachine", "coffeeMachine","dishwasher"," "television"],
   0: [0, 0, 0, 0],
   1: [1, 0, 1, 0],
   2: [0, 0, 0, 0],
@@ -12,7 +13,6 @@ export const sceneA = {
 };
 
 export const sceneB = {
-  // ["washingMachine", "coffeeMachine","dishwasher"," "television"],
   0: [0, 0, 0, 0],
   1: [1, 0, 1, 0],
   2: [1, 0, 0, 0],
@@ -25,7 +25,6 @@ export const sceneB = {
 };
 
 export const mobileScene = {
-  // ["washingMachine", "coffeeMachine","dishwasher"," "television"],
   0: [0, 0, 0, 0],
   1: [1, 0, 0, 0],
   2: [0, 0, 0, 0],
