@@ -16,7 +16,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showSubNav, setShowSubNav] = useState(false);
   const pathname = usePathname()
-  console.log(pathname)
+  const servicesPath = pathname.includes("naprawa-");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,7 +56,11 @@ const Header = () => {
               onTouchStart={() => setShowSubNav(true)}
               onMouseLeave={() => setShowSubNav(false)}
             >
-              <StyledLink as="div" disabled>Usługi</StyledLink>
+              <StyledLink as="div"
+                $active={servicesPath}
+                disabled
+              >Usługi
+              </StyledLink>
               <SubNav showSubNav={showSubNav} setShowSubNav={setShowSubNav} />
             </ListItem>
             <ListItem>

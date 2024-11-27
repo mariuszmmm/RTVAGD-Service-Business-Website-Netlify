@@ -87,9 +87,6 @@ export const StyledLink = styled(Link)`
 
   ${({ $active }) => $active && css`
     background-color: ${({ theme }) => theme.color.emperor};
-    ${({ disabled }) => disabled && css`
-      background-color: ${({ theme }) => theme.color.primary};
-    `};
   `};
 
   &:hover {
