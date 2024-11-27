@@ -2,6 +2,8 @@ import Head from 'next/head';
 
 const PricingMetaTags = () => (
   <Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
     <title>Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />

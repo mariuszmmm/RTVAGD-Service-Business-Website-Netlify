@@ -2,6 +2,8 @@ import Head from 'next/head';
 
 const HomeMetaTags = () => (
   <Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+
     <title>Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/" />
