@@ -16,6 +16,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showSubNav, setShowSubNav] = useState(false);
   const pathname = usePathname()
+  console.log(pathname)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +47,7 @@ const Header = () => {
               </StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink href="/o-mnie" $active={pathname === "/o-mnie"}              >
+              <StyledLink href="/o-mnie" $active={pathname === "/o-mnie/"}              >
                 O mnie
               </StyledLink>
             </ListItem>
@@ -59,13 +60,13 @@ const Header = () => {
               <SubNav showSubNav={showSubNav} setShowSubNav={setShowSubNav} />
             </ListItem>
             <ListItem>
-              <StyledLink href="/cennik" $active={pathname === "/cennik"}>Cennik</StyledLink>
+              <StyledLink href="/cennik" $active={pathname === "/cennik/"}>Cennik</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink href="/opinie" $active={pathname === "/opinie"}>Opinie</StyledLink>
+              <StyledLink href="/opinie" $active={pathname === "/opinie/"}>Opinie</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink href="/kontakt" $active={pathname === "/kontakt"}>Kontakt</StyledLink>
+              <StyledLink href="/kontakt" $active={pathname === "/kontakt/"}>Kontakt</StyledLink>
             </ListItem>
           </NavList>
         </nav>

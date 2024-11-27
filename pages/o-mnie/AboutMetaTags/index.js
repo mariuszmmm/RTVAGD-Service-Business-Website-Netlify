@@ -10,7 +10,7 @@ const AboutMetaTags = () => {
 
       <meta
         name="description"
-        content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+        content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD."
       />
 
       <meta property="og:locale" content="pl_PL" />
@@ -21,7 +21,7 @@ const AboutMetaTags = () => {
       />
       <meta
         property="og:description"
-        content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu."
+        content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD."
       />
       <meta property="og:url" content="https://naprawaprzemysl.pl/o-mnie" />
       <meta property="og:site_name" content="Serwis RTV i AGD - o mnie" />
@@ -35,7 +35,7 @@ const AboutMetaTags = () => {
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Informacje o serwisie | ✔️ Serwis RTV AGD w Przemyślu" />
-      <meta name="twitter:description" content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu." />
+      <meta name="twitter:description" content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD." />
       <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
       <meta name="keywords" content="naprawa AGD Przemyśl, serwis sprzętu RTV, doświadczenie w naprawie AGD, profesjonalna naprawa pralek, naprawa urządzeń domowych, naprawa sprzętu RTV, serwis pralek Przemyśl, naprawa telewizorów Przemyśl, serwis ekspresów do kawy" />
@@ -49,6 +49,7 @@ const AboutMetaTags = () => {
           "@id": "https://naprawaprzemysl.pl",
           "url": "https://naprawaprzemysl.pl",
           "telephone": "790258612",
+          "email": "piotrek_serwis@wp.pl",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Generała Józefa Sowińskiego 2",
@@ -81,7 +82,7 @@ const AboutMetaTags = () => {
           "logo": "https://naprawaprzemysl.pl/share.png",
           "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
           "priceRange": "$$$",
-          "description": "Dowiedz się więcej o mnie i moim doświadczeniu w naprawie pralek, zmywarek, ekspresów do kawy oraz telewizorów w Przemyślu.",
+          "description": "Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD.",
           "offers": [
             {
               "@type": "Offer",

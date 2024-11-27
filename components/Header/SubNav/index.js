@@ -9,22 +9,22 @@ const SubNav = ({ showSubNav, setShowSubNav }) => {
     <SubNavWrapper $show={showSubNav}>
       <NavList $subNav onClick={() => setShowSubNav(false)}>
         <ListItem >
-          <StyledLink href="/naprawa-pralek" $active={pathname === "/naprawa-pralek"} $subNav>
+          <StyledLink href="/naprawa-pralek" $active={pathname === "/naprawa-pralek/"} $subNav>
             Naprawa pralek
           </StyledLink>
         </ListItem>
         <ListItem >
-          <StyledLink href="/naprawa-zmywarek" $active={pathname === "/naprawa-zmywarek"} $subNav>
+          <StyledLink href="/naprawa-zmywarek" $active={pathname === "/naprawa-zmywarek/"} $subNav>
             Naprawa zmywarek
           </StyledLink>
         </ListItem>
         <ListItem >
-          <StyledLink href="/naprawa-ekspresow" $active={pathname === "/naprawa-ekspresow"} $subNav>
+          <StyledLink href="/naprawa-ekspresow" $active={pathname === "/naprawa-ekspresow/"} $subNav>
             Naprawa ekspresów
           </StyledLink>
         </ListItem>
         <ListItem >
-          <StyledLink href="/naprawa-telewizorow" $active={pathname === "/naprawa-telewizorow"} $subNav>
+          <StyledLink href="/naprawa-telewizorow" $active={pathname === "/naprawa-telewizorow/"} $subNav>
             Naprawa telewizorów
           </StyledLink>
         </ListItem>

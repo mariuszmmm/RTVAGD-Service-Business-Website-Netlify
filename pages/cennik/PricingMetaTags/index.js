@@ -10,7 +10,7 @@ const PricingMetaTags = () => (
 
     <meta
       name="description"
-      content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
+      content="Sprawdź cennik usług w serwisie RTV i AGD w Przemyślu."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -21,7 +21,7 @@ const PricingMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu."
+      content="Sprawdź cennik usług w serwisie RTV i AGD w Przemyślu."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/cennik" />
     <meta property="og:site_name" content="Serwis RTV i AGD - cennik" />
@@ -35,7 +35,7 @@ const PricingMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu" />
-    <meta name="twitter:description" content="Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu." />
+    <meta name="twitter:description" content="Sprawdź cennik usług w serwisie RTV i AGD w Przemyślu." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="cennik naprawa AGD, ceny naprawy pralek, cennik naprawy RTV, naprawa ekspresów ceny, cennik serwis sprzętu AGD, ceny serwis RTV, naprawa zmywarek cennik, cennik naprawy telewizorów" />
@@ -49,6 +49,7 @@ const PricingMetaTags = () => (
         "@id": "https://naprawaprzemysl.pl",
         "url": "https://naprawaprzemysl.pl",
         "telephone": "790258612",
+        "email": "piotrek_serwis@wp.pl",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Generała Józefa Sowińskiego 2",
@@ -81,7 +82,7 @@ const PricingMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Sprawdź cennik usług naprawy telewizorów, pralek, zmywarek, ekspresów do kawy w Przemyślu.",
+        "description": "Sprawdź cennik usług w serwisie RTV i AGD w Przemyślu.",
         "offers": [
           {
             "@type": "Offer",

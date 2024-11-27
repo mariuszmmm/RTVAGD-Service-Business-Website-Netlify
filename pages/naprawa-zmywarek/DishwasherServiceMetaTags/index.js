@@ -9,7 +9,7 @@ const DishwasherServiceMetaTags = () => (
 
     <meta
       name="description"
-      content="Profesjonalna naprawa i serwis zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa."
+      content="Profesjonalna naprawa zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -20,7 +20,7 @@ const DishwasherServiceMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Profesjonalna naprawa i serwis zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa."
+      content="Profesjonalna naprawa zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-zmywarek" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa zmywarek" />
@@ -34,7 +34,7 @@ const DishwasherServiceMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Naprawa zmywarek 📞 790258612 | Serwis w Przemyślu" />
-    <meta name="twitter:description" content="Profesjonalna naprawa i serwis zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa." />
+    <meta name="twitter:description" content="Profesjonalna naprawa zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarek AGD, naprawa zmywarki Przemyśl, naprawa sprzętu AGD, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki" />
@@ -48,6 +48,7 @@ const DishwasherServiceMetaTags = () => (
         "@id": "https://naprawaprzemysl.pl",
         "url": "https://naprawaprzemysl.pl",
         "telephone": "790258612",
+        "email": "piotrek_serwis@wp.pl",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Generała Józefa Sowińskiego 2",
@@ -80,7 +81,7 @@ const DishwasherServiceMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Profesjonalna naprawa i serwis zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa.",
+        "description": "Profesjonalna naprawa zmywarek w Przemyślu. Szybka pomoc i fachowa obsługa.",
         "offers": [
           {
             "@type": "Offer",

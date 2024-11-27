@@ -9,7 +9,7 @@ const ReviewsMetaTags = () => (
 
     <meta
       name="description"
-      content="Sprawdź opinie naszych klientów na temat serwisu RTV i AGD w Przemyślu."
+      content="Sprawdź opinie klientów, którzy skorzyli z naprawy sprzętu w serwisie RTV i AGD w Przemyślu."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -20,7 +20,7 @@ const ReviewsMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Sprawdź opinie naszych klientów na temat serwisu RTV i AGD w Przemyślu."
+      content="Sprawdź opinie klientów, którzy skorzyli z naprawy sprzętu w serwisie RTV i AGD w Przemyślu."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/opinie" />
     <meta property="og:site_name" content="Serwis RTV i AGD - opinie" />
@@ -34,7 +34,7 @@ const ReviewsMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Poznaj opinie klientów | ✔️ Serwis RTV AGD w Przemyślu" />
-    <meta name="twitter:description" content="Sprawdź opinie naszych klientów na temat serwisu RTV i AGD w Przemyślu." />
+    <meta name="twitter:description" content="Sprawdź opinie klientów, którzy skorzyli z naprawy sprzętu w serwisie RTV i AGD w Przemyślu." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="opinie naprawa AGD, opinie serwis RTV, recenzje naprawy pralek, opinie naprawa zmywarek, opinie naprawa ekspresów, doświadczenia z naprawą AGD, opinie naprawa telewizorów" />
@@ -48,6 +48,7 @@ const ReviewsMetaTags = () => (
         "@id": "https://naprawaprzemysl.pl",
         "url": "https://naprawaprzemysl.pl",
         "telephone": "790258612",
+        "email": "piotrek_serwis@wp.pl",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Generała Józefa Sowińskiego 2",
@@ -80,7 +81,7 @@ const ReviewsMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Sprawdź opinie naszych klientów na temat serwisu RTV i AGD w Przemyślu.",
+        "description": "Sprawdź opinie klientów, którzy skorzyli z naprawy sprzętu w serwisie RTV i AGD w Przemyślu.",
         "offers": [
           {
             "@type": "Offer",

@@ -48,6 +48,7 @@ const WashingMachineServiceMetaTags = () => (
         "@id": "https://naprawaprzemysl.pl",
         "url": "https://naprawaprzemysl.pl",
         "telephone": "790258612",
+        "email": "piotrek_serwis@wp.pl",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Generała Józefa Sowińskiego 2",
