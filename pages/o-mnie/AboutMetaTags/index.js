@@ -10,7 +10,7 @@ const AboutMetaTags = () => {
 
       <meta
         name="description"
-        content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD."
+        content="Dowiedz się więcej o moim wieloletnim doświadczeniu w naprawie sprzętu RTV i AGD oraz o moim zaangażowaniu w dostarczanie najwyższej jakości usług serwisowych w Przemyślu."
       />
 
       <meta property="og:locale" content="pl_PL" />
@@ -21,7 +21,7 @@ const AboutMetaTags = () => {
       />
       <meta
         property="og:description"
-        content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD."
+        content="Dowiedz się więcej o moim wieloletnim doświadczeniu w naprawie sprzętu RTV i AGD oraz o moim zaangażowaniu w dostarczanie najwyższej jakości usług serwisowych w Przemyślu."
       />
       <meta property="og:url" content="https://naprawaprzemysl.pl/o-mnie/" />
       <meta property="og:site_name" content="Serwis RTV i AGD - o mnie" />
@@ -35,7 +35,7 @@ const AboutMetaTags = () => {
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Informacje o serwisie | ✔️ Serwis RTV AGD w Przemyślu" />
-      <meta name="twitter:description" content="Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD." />
+      <meta name="twitter:description" content="Dowiedz się więcej o moim wieloletnim doświadczeniu w naprawie sprzętu RTV i AGD oraz o moim zaangażowaniu w dostarczanie najwyższej jakości usług serwisowych w Przemyślu." />
       <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
       <meta name="keywords" content="naprawa AGD Przemyśl, serwis sprzętu RTV, doświadczenie w naprawie AGD, profesjonalna naprawa pralek, naprawa urządzeń domowych, naprawa sprzętu RTV, serwis pralek Przemyśl, naprawa telewizorów Przemyśl, serwis ekspresów do kawy" />
@@ -82,7 +82,7 @@ const AboutMetaTags = () => {
           "logo": "https://naprawaprzemysl.pl/share.png",
           "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
           "priceRange": "$$$",
-          "description": "Dowiedz się więcej o mnie i moim doświadczeniu w naprawie sprzętu RTV i AGD.",
+          "description": "Dowiedz się więcej o moim wieloletnim doświadczeniu w naprawie sprzętu RTV i AGD oraz o moim zaangażowaniu w dostarczanie najwyższej jakości usług serwisowych w Przemyślu.",
           "offers": [
             {
               "@type": "Offer",

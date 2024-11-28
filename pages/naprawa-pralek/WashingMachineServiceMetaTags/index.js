@@ -9,7 +9,7 @@ const WashingMachineServiceMetaTags = () => (
 
     <meta
       name="description"
-      content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze."
+      content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Gwarantuję szybką diagnozę i wysokiej jakości usługi naprawcze. Używam nowoczesnych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojej pralki.."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -20,7 +20,7 @@ const WashingMachineServiceMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze."
+      content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Gwarantuję szybką diagnozę i wysokiej jakości usługi naprawcze. Używam nowoczesnych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojej pralki.."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-pralek/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa pralek" />
@@ -34,7 +34,7 @@ const WashingMachineServiceMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Naprawa pralek 📞 790258612 | Serwis w Przemyślu" />
-    <meta name="twitter:description" content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze." />
+    <meta name="twitter:description" content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Gwarantuję szybką diagnozę i wysokiej jakości usługi naprawcze. Używam nowoczesnych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojej pralki.." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="naprawa pralek, serwis pralek Przemyśl, naprawa pralek AGD, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki, naprawa sprzętu AGD" />
@@ -81,7 +81,7 @@ const WashingMachineServiceMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze.",
+        "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Gwarantuję szybką diagnozę i wysokiej jakości usługi naprawcze. Używam nowoczesnych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojej pralki..",
         "offers": [
           {
             "@type": "Offer",

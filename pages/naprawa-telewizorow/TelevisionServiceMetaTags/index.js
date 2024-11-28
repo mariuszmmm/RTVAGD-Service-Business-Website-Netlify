@@ -9,7 +9,7 @@ const TelevisionServiceMetaTags = () => (
 
     <meta
       name="description"
-      content="Profesjonalna naprawa i serwis telewizorów w Przemyślu. Szybka pomoc i fachowa obsługa."
+      content="Profesjonalna naprawa i serwis telewizorów w Przemyślu oferuje najwyższej jakości usługi. Zapewniam szybką i fachową pomoc, niezależnie od problemu z Twoim telewizorem. Używam najnowszych technologii i oryginalnych części zamiennych, aby zagwarantować długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego telewizora przez długie lata."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -20,7 +20,7 @@ const TelevisionServiceMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Profesjonalna naprawa i serwis telewizorów w Przemyślu. Szybka pomoc i fachowa obsługa."
+      content="Profesjonalna naprawa i serwis telewizorów w Przemyślu oferuje najwyższej jakości usługi. Zapewniam szybką i fachową pomoc, niezależnie od problemu z Twoim telewizorem. Używam najnowszych technologii i oryginalnych części zamiennych, aby zagwarantować długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego telewizora przez długie lata."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-telewizorow/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa telewizorów" />
@@ -34,7 +34,7 @@ const TelevisionServiceMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Naprawa telewizorów 📞 790258612 | Serwis w Przemyślu" />
-    <meta name="twitter:description" content="Profesjonalna naprawa i serwis telewizorów w Przemyślu. Szybka pomoc i fachowa obsługa." />
+    <meta name="twitter:description" content="Profesjonalna naprawa i serwis telewizorów w Przemyślu oferuje najwyższej jakości usługi. Zapewniam szybką i fachową pomoc, niezależnie od problemu z Twoim telewizorem. Używam najnowszych technologii i oryginalnych części zamiennych, aby zagwarantować długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego telewizora przez długie lata." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="naprawa telewizorów, serwis telewizorów Przemyśl, naprawa telewizora AGD, naprawa telewizora w Przemyślu, naprawa telewizorów LCD, naprawa telewizorów LED, serwis telewizora Przemyśl" />
@@ -81,7 +81,7 @@ const TelevisionServiceMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Profesjonalna naprawa i serwis telewizorów w Przemyślu. Szybka pomoc i fachowa obsługa.",
+        "description": "Profesjonalna naprawa i serwis telewizorów w Przemyślu oferuje najwyższej jakości usługi. Zapewniam szybką i fachową pomoc, niezależnie od problemu z Twoim telewizorem. Używam najnowszych technologii i oryginalnych części zamiennych, aby zagwarantować długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego telewizora przez długie lata.",
         "offers": [
           {
             "@type": "Offer",

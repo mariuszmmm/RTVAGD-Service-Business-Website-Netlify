@@ -9,7 +9,7 @@ const CoffeeMachineServiceMetaTags = () => (
 
     <meta
       name="description"
-      content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Ciesz się ulubioną kawą bez przerw!"
+      content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Gwarantuję szybką i fachową pomoc, dzięki której znów będziesz mógł cieszyć się swoją ulubioną kawą bez przerw. Używam najnowszych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego ekspresu do kawy."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -20,7 +20,7 @@ const CoffeeMachineServiceMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Ciesz się ulubioną kawą bez przerw!"
+      content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Gwarantuję szybką i fachową pomoc, dzięki której znów będziesz mógł cieszyć się swoją ulubioną kawą bez przerw. Używam najnowszych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego ekspresu do kawy."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-ekspresow/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa ekspresów" />
@@ -34,7 +34,7 @@ const CoffeeMachineServiceMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Naprawa ekspresów do kawy 📞 790258612 | Serwis w Przemyślu" />
-    <meta name="twitter:description" content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Ciesz się ulubioną kawą bez przerw!" />
+    <meta name="twitter:description" content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Gwarantuję szybką i fachową pomoc, dzięki której znów będziesz mógł cieszyć się swoją ulubioną kawą bez przerw. Używam najnowszych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego ekspresu do kawy." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="naprawa ekspresów do kawy, serwis ekspresów Przemyśl, naprawa ekspresów AGD, naprawa ekspresu do kawy Przemyśl, naprawa ekspresów w Przemyślu, naprawa ekspresu Przemyśl, awaria ekspresu do kawy" />
@@ -81,7 +81,7 @@ const CoffeeMachineServiceMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Ciesz się ulubioną kawą bez przerw!",
+        "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Gwarantuję szybką i fachową pomoc, dzięki której znów będziesz mógł cieszyć się swoją ulubioną kawą bez przerw. Używam najnowszych technologii i oryginalnych części zamiennych, aby zapewnić długotrwałe i niezawodne naprawy. Skontaktuj się ze mną już dziś, aby skorzystać z moich usług i cieszyć się bezproblemowym działaniem swojego ekspresu do kawy.",
         "offers": [
           {
             "@type": "Offer",

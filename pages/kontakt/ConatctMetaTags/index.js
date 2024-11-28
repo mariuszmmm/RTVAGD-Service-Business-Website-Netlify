@@ -10,7 +10,7 @@ const ConatctMetaTags = () => (
 
     <meta
       name="description"
-      content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
+      content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2. Oferuję szybkie i fachowe usługi naprawy sprzętu RTV i AGD."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -21,7 +21,7 @@ const ConatctMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
+      content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2. Oferuję szybkie i fachowe usługi naprawy sprzętu RTV i AGD."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/kontakt/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - kontakt" />
@@ -35,7 +35,7 @@ const ConatctMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu" />
-    <meta name="twitter:description" content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2." />
+    <meta name="twitter:description" content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2. Oferuję szybkie i fachowe usługi naprawy sprzętu RTV i AGD." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="kontakt naprawa AGD, kontakt serwis Przemyśl, naprawa sprzętu AGD kontakt, naprawa pralek kontakt, naprawa RTV kontakt, naprawa ekspresów kontakt, kontakt serwis RTV AGD" />
@@ -82,7 +82,7 @@ const ConatctMetaTags = () => (
         "logo": "https://naprawaprzemysl.pl/share.png",
         "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
         "priceRange": "$$$",
-        "description": "Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2.",
+        "description": "Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2. Oferuję szybkie i fachowe usługi naprawy sprzętu RTV i AGD.",
         "offers": [
           {
             "@type": "Offer",
