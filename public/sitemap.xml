@@ -11,7 +11,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/o-mnie</loc>
+    <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>0.8</priority>
     <image:image>
@@ -20,12 +20,12 @@
     </image:image>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/cennik</loc>
+    <loc>https://naprawaprzemysl.pl/cennik/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/opinie</loc>
+    <loc>https://naprawaprzemysl.pl/opinie/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>0.8</priority>
     <image:image>
@@ -34,7 +34,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/kontakt</loc>
+    <loc>https://naprawaprzemysl.pl/kontakt/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>0.8</priority>
     <image:image>
@@ -43,7 +43,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/naprawa-pralek</loc>
+    <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>1.0</priority>
     <image:image>
@@ -52,7 +52,7 @@
     </image:image>
   </url>
     <url>
-    <loc>https://naprawaprzemysl.pl/naprawa-zmywarek</loc>
+    <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>1.0</priority>
     <image:image>
@@ -61,7 +61,7 @@
     </image:image>    
   </url>
     <url>
-    <loc>https://naprawaprzemysl.pl/naprawa-ekspresow</loc>
+    <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>1.0</priority>
     <image:image>
@@ -70,7 +70,7 @@
     </image:image>  
   </url>
     <url>
-    <loc>https://naprawaprzemysl.pl/naprawa-telewizorow</loc>
+    <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
     <lastmod>2024-11-28</lastmod>
     <priority>1.0</priority>
     <image:image>
