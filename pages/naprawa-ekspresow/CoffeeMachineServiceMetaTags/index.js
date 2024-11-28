@@ -5,7 +5,7 @@ const CoffeeMachineServiceMetaTags = () => (
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <title>Naprawa ekspresów do kawy 📞 790258612 | Serwis w Przemyślu</title>
 
-    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-ekspresow" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-ekspresow/" />
 
     <meta
       name="description"

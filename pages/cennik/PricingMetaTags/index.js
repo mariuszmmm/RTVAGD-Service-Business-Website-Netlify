@@ -6,7 +6,7 @@ const PricingMetaTags = () => (
 
     <title>Ceny napraw | ✔️ Serwis RTV AGD w Przemyślu</title>
 
-    <link rel="canonical" href="https://naprawaprzemysl.pl/cennik" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/cennik/" />
 
     <meta
       name="description"

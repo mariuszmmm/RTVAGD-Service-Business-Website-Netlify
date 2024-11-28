@@ -6,7 +6,7 @@ const ConatctMetaTags = () => (
 
     <title>Kontakt | ✔️ Serwis RTV AGD w Przemyślu</title>
 
-    <link rel="canonical" href="https://naprawaprzemysl.pl/kontakt" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/kontakt/" />
 
     <meta
       name="description"

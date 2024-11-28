@@ -5,7 +5,7 @@ const TelevisionServiceMetaTags = () => (
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <title>Naprawa telewizorów 📞 790258612 | Serwis w Przemyślu</title>
 
-    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-telewizorow" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-telewizorow/" />
 
     <meta
       name="description"
