@@ -1,6 +1,7 @@
 import { ListItem, NavList, StyledLink } from "../styled";
 import { SubNavWrapper } from "./styled";
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const SubNav = ({ showSubNav, setShowSubNav }) => {
   const pathname = usePathname()
@@ -9,22 +10,42 @@ const SubNav = ({ showSubNav, setShowSubNav }) => {
     <SubNavWrapper $show={showSubNav}>
       <NavList $subNav onClick={() => setShowSubNav(false)}>
         <ListItem >
-          <StyledLink href="/naprawa-pralek" $active={pathname === "/naprawa-pralek/"} $subNav>
+          <StyledLink
+            href="/naprawa-pralek"
+            $active={pathname === "/naprawa-pralek/"}
+            $subNav
+            onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'naprawa-pralek' })}
+          >
             Naprawa pralek
           </StyledLink>
         </ListItem>
         <ListItem >
-          <StyledLink href="/naprawa-zmywarek" $active={pathname === "/naprawa-zmywarek/"} $subNav>
+          <StyledLink
+            href="/naprawa-zmywarek"
+            $active={pathname === "/naprawa-zmywarek/"}
+            $subNav
+            onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'naprawa-zmywarek' })}
+          >
             Naprawa zmywarek
           </StyledLink>
         </ListItem>
         <ListItem >
-          <StyledLink href="/naprawa-ekspresow" $active={pathname === "/naprawa-ekspresow/"} $subNav>
+          <StyledLink
+            href="/naprawa-ekspresow"
+            $active={pathname === "/naprawa-ekspresow/"}
+            $subNav
+            onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'naprawa-ekspresow' })}
+          >
             Naprawa ekspresów
           </StyledLink>
         </ListItem>
         <ListItem >
-          <StyledLink href="/naprawa-telewizorow" $active={pathname === "/naprawa-telewizorow/"} $subNav>
+          <StyledLink
+            href="/naprawa-telewizorow"
+            $active={pathname === "/naprawa-telewizorow/"}
+            $subNav
+            onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'naprawa-telewizorow' })}
+          >
             Naprawa telewizorów
           </StyledLink>
         </ListItem>

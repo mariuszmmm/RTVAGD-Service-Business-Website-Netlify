@@ -6,6 +6,7 @@ import React from 'react';
 import Background from '../components/Background';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 function App({ Component, pageProps }) {
   return (
@@ -20,6 +21,7 @@ function App({ Component, pageProps }) {
           <Footer />
         </ThemeProvider>
       </React.StrictMode>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID} />
     </>
   );
 }

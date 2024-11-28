@@ -12,6 +12,7 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { useState, useEffect, useRef } from 'react';
 import { mobileScene, sceneB as scene } from "../../utils/scenes";
 import HomeMetaTags from './HomeMetaTags';
+import { sendGTMEvent } from '@next/third-parties/google'
 
 const Home = () => {
   const [isPortrait, setIsPortrait] = useState(
@@ -86,7 +87,12 @@ const Home = () => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
-        <StyledButtonLink href={`tel:${serwis.phone}`}>Zadzwoń teraz</StyledButtonLink>
+        <StyledButtonLink
+          href={`tel:${serwis.phone}`}
+          onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'callNow' })}
+        >
+          Zadzwoń teraz
+        </StyledButtonLink>
       </HeroContainer>
       {<WashingMachine
         show={activeScene.content[0]}

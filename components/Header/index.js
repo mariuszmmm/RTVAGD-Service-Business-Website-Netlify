@@ -10,7 +10,8 @@ import { serwis } from "../../utils/serwis";
 import { StyledButtonLink } from "../common/Buttons";
 import { useEffect, useState } from "react";
 import SubNav from "./SubNav";
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -70,7 +71,13 @@ const Header = () => {
               <StyledLink href="/opinie" $active={pathname === "/opinie/"}>Opinie</StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink href="/kontakt" $active={pathname === "/kontakt/"}>Kontakt</StyledLink>
+              <StyledLink
+                href="/kontakt"
+                $active={pathname === "/kontakt/"}
+                onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'contact' })}
+              >
+                Kontakt
+              </StyledLink>
             </ListItem>
           </NavList>
         </nav>
