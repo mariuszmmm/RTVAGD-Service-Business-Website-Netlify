@@ -23,7 +23,7 @@ const ConatctMetaTags = () => (
       property="og:description"
       content="Skontaktuj się ze mną pod numerem telefonu 790-258-612 lub odwiedź serwis RTV i AGD w Przemyślu przy ulicy Generała Józefa Sowińskiego 2."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/kontakt" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/kontakt/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - kontakt" />
     <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
     <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
@@ -47,7 +47,7 @@ const ConatctMetaTags = () => (
         "name": "Naprawa pralek i sprzętu RTV",
         "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
         "@id": "https://naprawaprzemysl.pl",
-        "url": "https://naprawaprzemysl.pl",
+        "url": "https://naprawaprzemysl.pl/",
         "telephone": "790258612",
         "email": "piotrek_serwis@wp.pl",
         "address": {
@@ -184,13 +184,13 @@ const ConatctMetaTags = () => (
             "@type": "ListItem",
             "position": 1,
             "name": "Strona Główna",
-            "item": "https://naprawaprzemysl.pl"
+            "item": "https://naprawaprzemysl.pl/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Kontakt",
-            "item": "https://naprawaprzemysl.pl/kontakt"
+            "item": "https://naprawaprzemysl.pl/kontakt/"
           }
         ]
       })}

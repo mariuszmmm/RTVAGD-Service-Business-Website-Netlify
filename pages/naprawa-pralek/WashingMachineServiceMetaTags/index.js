@@ -22,7 +22,7 @@ const WashingMachineServiceMetaTags = () => (
       property="og:description"
       content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza i wysokiej jakości usługi naprawcze."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-pralek" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-pralek/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa pralek" />
     <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
     <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
@@ -46,7 +46,7 @@ const WashingMachineServiceMetaTags = () => (
         "name": "Naprawa pralek i sprzętu RTV",
         "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
         "@id": "https://naprawaprzemysl.pl",
-        "url": "https://naprawaprzemysl.pl",
+        "url": "https://naprawaprzemysl.pl/",
         "telephone": "790258612",
         "email": "piotrek_serwis@wp.pl",
         "address": {
@@ -183,13 +183,13 @@ const WashingMachineServiceMetaTags = () => (
             "@type": "ListItem",
             "position": 1,
             "name": "Strona Główna",
-            "item": "https://naprawaprzemysl.pl"
+            "item": "https://naprawaprzemysl.pl/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Naprawa pralek",
-            "item": "https://naprawaprzemysl.pl/naprawa-pralek"
+            "item": "https://naprawaprzemysl.pl/naprawa-pralek/"
           }
         ]
       })}
