@@ -58,7 +58,7 @@ const Header = () => {
               onMouseLeave={() => setShowSubNav(false)}
             >
               <StyledLink as="div"
-                $active={servicesPath}
+                $active={servicesPath && !showSubNav}
                 disabled
               >Usługi
               </StyledLink>

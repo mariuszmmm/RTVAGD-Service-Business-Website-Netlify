@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://naprawaprzemysl.pl/sitemap.xml
+Sitemap: https://naprawaprzemysl.pl/sitemap.xml

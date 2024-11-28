@@ -18,6 +18,7 @@ export const HeaderContainer = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
+  user-select: none; 
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     padding: 0 10px;
@@ -70,6 +71,11 @@ export const StyledLink = styled(Link)`
   transition: background-color 0.3s ease;
   display: flex;
   border-radius: 5px;
+
+ 
+  ${({ disabled }) => disabled && css`
+    cursor: auto;
+  `}
 
   ${({ $subNav }) => $subNav && css`
     margin: 2px 0;

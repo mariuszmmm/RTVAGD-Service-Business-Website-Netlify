@@ -1,10 +1,10 @@
-import { Section } from '.././../components/common/Section';
-import { Container } from '.././../components/common/Container';
-import { Title } from '.././../components/common/Title';
+import { Section } from '../../components/common/Section';
+import { Container } from '../../components/common/Container';
+import { Title } from '../../components/common/Title';
 import { ServiceItem, Photo } from '../../styles/naprawa-zmywarek/NaprawaZmywarekStyled';
-import { SubTitle } from '.././../components/common/SubTitle';
-import { Text } from '.././../components/common/Text';
-import { imageUrls } from '.././../utils/urls';
+import { SubTitle } from '../../components/common/SubTitle';
+import { Text } from '../../components/common/Text';
+import { imageUrls } from '../../utils/urls';
 import DishwasherServiceMetaTags from './DishwasherServiceMetaTags';
 
 const DishwasherService = () => (

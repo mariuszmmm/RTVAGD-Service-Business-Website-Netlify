@@ -11,12 +11,11 @@
     AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript application/json
   </ifModule>
 
-  RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\.naprawaprzemysl\.pl$ [NC]
   RewriteRule ^(.*)$ https://naprawaprzemysl.pl/$1 [R=301,L]
 
-  RewriteRule ^o-nas$ /o-mnie [R=301,L]
-  RewriteRule ^uslugi(/.*)?$ / [R=301,L]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
   ErrorDocument 404 /404.html
 </IfModule>

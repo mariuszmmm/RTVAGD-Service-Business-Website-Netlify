@@ -1,15 +1,13 @@
 import {
   ContactSection, ContactContainer, ContactInfo,
-  ContactText, StyledLink, ImageContainer, Image
+  ContactText, StyledLink, ImageContainer
 } from "../../styles/kontakt/KontaktStyled";
 import { SubTitle } from "../../components/common/SubTitle";
 import { Title } from "../../components/common/Title";
 import { serwis } from "../../utils/serwis";
 import ContactForm from "./ContactForm";
 import ConatctMetaTags from "./ConatctMetaTags"
-import React, { Suspense } from "react";
-import { imageUrls } from "../../utils/urls";
-const Iframe = React.lazy(() => import("./Iframe"));
+import Iframe from "./Iframe";
 
 const Contact = () => (
   <ContactSection>
@@ -39,11 +37,7 @@ const Contact = () => (
           w godzinach <>9.30-17.00</>
         </ContactText>
         <ImageContainer>
-          <Suspense fallback={
-            <Image src={imageUrls.mapa} alt={serwis.name} />
-          }>
-            <Iframe />
-          </Suspense>
+          <Iframe />
         </ImageContainer>
       </ContactInfo>
     </ContactContainer>

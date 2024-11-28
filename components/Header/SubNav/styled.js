@@ -9,8 +9,7 @@ export const SubNavWrapper = styled.div`
     visibility: hidden;
     overflow-x: hidden;
     z-index: 1;
-    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    transition-delay: 0.1s;
+    transition: max-height 0.4s ease-in-out, visibility 0.4s ease-in-out;
 
     ${({ $show }) => $show && css`
       transition: max-height 0s; 

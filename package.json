@@ -2,7 +2,7 @@
   "name": "serwis",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://naprawaprzemysl.pl",
+  "homepage": "https://naprawaprzemysl.pl/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@next/third-parties": "^15.0.3",
