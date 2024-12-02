@@ -1,8 +1,8 @@
-import { Star, StarsWrapper } from "../../../../styles/opinie/ReviewsItem/Stars/StarsStyled";
+import { Star, StarsWrapper } from "../../../styles/opinie/ReviewsItem/Stars/StarsStyled";
 
-const Stars = ({ rating }) => (
+export const Stars = ({ rating, center }) => (
   rating &&
-  <StarsWrapper>
+  <StarsWrapper $center={center}>
     <Star $active={rating >= 1} />
     <Star $active={rating >= 2} />
     <Star $active={rating >= 3} />
@@ -10,5 +10,3 @@ const Stars = ({ rating }) => (
     <Star $active={rating >= 5} />
   </StarsWrapper>
 );
-
-export default Stars;

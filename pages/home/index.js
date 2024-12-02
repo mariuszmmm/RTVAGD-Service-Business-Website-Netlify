@@ -15,8 +15,9 @@ import { useState, useEffect, useRef } from 'react';
 import { mobileScene, scene } from "../../utils/scenes";
 import HomeMetaTags from './HomeMetaTags';
 import { sendGTMEvent } from '@next/third-parties/google'
+import { GoogleRating } from '../../components/GoogleRating';
 
-const Home = () => {
+const Home = ({ rating }) => {
   const [isPortrait, setIsPortrait] = useState(
     typeof window !== 'undefined' ? window.innerHeight > window.innerWidth : true
   );
@@ -26,6 +27,7 @@ const Home = () => {
     content: mobileScene[0],
   });
   const [hold, setHold] = useState(false);
+  console.log(rating)
 
   useEffect(() => {
     const initialIsPortrait = window.innerHeight > window.innerWidth;
@@ -81,6 +83,7 @@ const Home = () => {
   return (
     <Hero>
       <HomeMetaTags />
+      <GoogleRating rating={rating} />
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />

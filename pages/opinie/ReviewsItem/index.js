@@ -1,5 +1,5 @@
 import Time from "../../../components/common/Time";
-import Stars from "./Stars";
+import { Stars } from "../../../components/common/Stars";
 import {
   ItemWrapper,
   Header,
