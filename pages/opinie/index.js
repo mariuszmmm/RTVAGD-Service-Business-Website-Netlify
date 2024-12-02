@@ -8,11 +8,12 @@ import ReviewsMetaTags from "./ReviewsMetaTags";
 import axios from 'axios';
 import { reviewUrl } from "../../utils/urls";
 
-const Reviews = ({ reviews, status }) => (
+const Reviews = ({ status, reviews }) => (
   <Section>
     <ReviewsMetaTags />
     <ReviewsContainer>
       <Title>Opinie Klientów</Title>
+      {status === "loading" && <p>Ładowanie opinii z google...</p>}
       {status === "success" && reviews.map((item, index) => (
         <ReviewsItem
           item={item}
@@ -25,7 +26,6 @@ const Reviews = ({ reviews, status }) => (
           <p> Proszę spróbować ponownie później.</p>
         </>
       }
-      {status !== "success" && status !== "error" && <p>Ładowanie opinii z google...</p>}
     </ReviewsContainer>
     {status === "success" && <StyledButtonLink href={serwis.url.addTestimonial}>
       Wystaw opinię

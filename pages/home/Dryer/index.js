@@ -3,7 +3,7 @@ import { imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
 import { Image } from "../../../components/common/Image";
 
-const WashingMachine = ({ show, left, setHold }) => {
+const Dryer = ({ show, left, setHold }) => {
   return (
     <ImageWrapper
       $show={show}
@@ -11,14 +11,15 @@ const WashingMachine = ({ show, left, setHold }) => {
       onMouseLeave={() => setHold(false)}
       $left={left}
     >
-      <Link href="/naprawa-pralek">
+      <Link href="/naprawa-suszarek">
         <Image
-          src={imageUrls.pralka}
-          alt="Naprawa pralek w Przemyślu"
+          src={imageUrls.suszarka}
+          alt="Naprawa suszarek w Przemyślu"
           loading="lazy"
         />
       </Link>
     </ImageWrapper>
   );
 };
-export default WashingMachine
+
+export default Dryer;

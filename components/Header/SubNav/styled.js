@@ -15,6 +15,6 @@ export const SubNavWrapper = styled.div`
       transition: max-height 0s; 
       
       visibility: visible;
-      max-height: 170px;  
+      max-height: 215px;  
     `}; 
 `;

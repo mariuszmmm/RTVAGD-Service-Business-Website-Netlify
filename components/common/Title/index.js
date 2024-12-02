@@ -7,5 +7,6 @@ export const Title = styled.h1`
 
   span{
     color: ${({ theme }) => theme.color.check};
+    margin-right: 15px;
   }
 `;

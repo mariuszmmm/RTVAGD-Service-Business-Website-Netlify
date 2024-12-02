@@ -1,23 +1,22 @@
 import Link from "next/link";
 import { imageUrls } from "../../../utils/urls";
-import { Image } from "../../../components/common/Image";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
+import { Image } from "../../../components/common/Image";
 
-const Dishwasher = ({ show, setHold }) => (
+const CoffeeMachine_2 = ({ show, setHold }) => (
   <ImageWrapper
     $show={show}
     onMouseEnter={() => setHold(true)}
     onMouseLeave={() => setHold(false)}
   >
-    {" "}
-    <Link href="/naprawa-zmywarek">
+    <Link href="/naprawa-ekspresow">
       <Image
-        src={imageUrls.zmywarka}
-        alt="Serwis zmywarek w Przemyślu"
+        src={imageUrls.ekspres_2}
+        alt="Naprawa ekspresów do kawy w Przemyślu"
         loading="lazy"
       />
     </Link>
   </ImageWrapper>
 );
 
-export default Dishwasher;
+export default CoffeeMachine_2;

@@ -11,7 +11,7 @@ import { Text } from "../../../components/common/Text";
 import getContentForReview from "./getContentForReview";
 
 const ReviewsItem = ({ item }) => {
-  if (!item) {
+  if (typeof item !== 'object') {
     console.error('Expected an object but got:', typeof item);
     return null;
   }

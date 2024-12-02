@@ -1,23 +1,23 @@
-import { Image, TelevisionWrapper } from "../../../styles/home/Television/TelevisionStyled";
 import Link from "next/link";
 import { imageUrls } from "../../../utils/urls";
+import { ImageWrapper } from "../../../components/common/ImageWrapper";
+import { Image } from "../../../components/common/Image";
 
-const Television = ({ show, center, setHold }) => (
-  <TelevisionWrapper
+const Television = ({ show, left, setHold }) => (
+  <ImageWrapper
     $show={show}
-    $center={center}
     onMouseEnter={() => setHold(true)}
     onMouseLeave={() => setHold(false)}
+    $left={left}
   >
     <Link href="/naprawa-telewizorow">
       <Image
         src={imageUrls.telewizor}
         alt="Serwis telewizorów w Przemyślu"
-        $center={center}
         loading="lazy"
       />
     </Link>
-  </TelevisionWrapper>
+  </ImageWrapper>
 );
 
 export default Television;

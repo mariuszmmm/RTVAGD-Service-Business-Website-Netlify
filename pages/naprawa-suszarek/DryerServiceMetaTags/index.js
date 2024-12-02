@@ -1,29 +1,28 @@
 import Head from 'next/head';
 
-const HomeMetaTags = () => (
+const DryerServiceMetaTags = () => (
   <Head>
+    <title>Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612</title>
 
-    <title>Naprawa telewizorów, pralek, suszarek, zmywarek, ekspresów</title>
-
-    <link rel="canonical" href="https://naprawaprzemysl.pl/" />
+    <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-suszarek/" />
 
     <meta
       name="description"
-      content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy."
+      content="Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś."
     />
 
     <meta property="og:locale" content="pl_PL" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa telewizorów, pralek, suszarek, zmywarek, ekspresów"
+      content="Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612"
     />
     <meta
       property="og:description"
-      content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy."
+      content="Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś."
     />
-    <meta property="og:url" content="https://naprawaprzemysl.pl/" />
-    <meta property="og:site_name" content="Serwis RTV i AGD" />
+    <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-suszarek/" />
+    <meta property="og:site_name" content="Serwis RTV i AGD - naprawa suszarek" />
     <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
     <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
     <meta property="og:image:secure_url" content="https://naprawaprzemysl.pl/share.png" />
@@ -33,13 +32,11 @@ const HomeMetaTags = () => (
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa telewizorów, pralek, suszarek, zmywarek, ekspresów" />
-    <meta name="twitter:description" content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy." />
+    <meta name="twitter:title" content="Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612" />
+    <meta name="twitter:description" content="Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
-    <meta name="keywords" content="naprawa AGD, serwis sprzętu RTV, naprawa pralek, serwis zmywarek, naprawa telewizorów, naprawa ekspresów do kawy, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD" />
-
-    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD" />
+    <meta name="keywords" content="naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek AGD, naprawa suszarek w Przemyślu, naprawa pralki Przemyśl, naprawa suszarek Przemyśl, awaria pralki, naprawa sprzętu AGD" />
 
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -56,7 +53,6 @@ const HomeMetaTags = () => (
             "@type": "PostalAddress",
             "streetAddress": "Generała Józefa Sowińskiego 2",
             "addressLocality": "Przemyśl",
-            "addressRegion": "Podkarpackie",
             "postalCode": "37-700",
             "addressCountry": "PL"
           },
@@ -65,7 +61,6 @@ const HomeMetaTags = () => (
             "latitude": 49.782778,
             "longitude": 22.776028
           },
-          "hasMap": "https://maps.app.goo.gl/SffrLxVf7prQ6Fn46",
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
@@ -86,7 +81,7 @@ const HomeMetaTags = () => (
           "logo": "https://naprawaprzemysl.pl/share.png",
           "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
           "priceRange": "$$$",
-          "description": "Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy.",
+          "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
           "paymentAccepted": "Cash",
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -109,6 +104,12 @@ const HomeMetaTags = () => (
               "position": 1,
               "name": "Strona Główna",
               "item": "https://naprawaprzemysl.pl/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Naprawa suszarek",
+              "item": "https://naprawaprzemysl.pl/naprawa-suszarek/"
             }
           ]
         })
@@ -117,4 +118,4 @@ const HomeMetaTags = () => (
   </Head>
 );
 
-export default HomeMetaTags;
+export default DryerServiceMetaTags;

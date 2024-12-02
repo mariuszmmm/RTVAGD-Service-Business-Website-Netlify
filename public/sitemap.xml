@@ -7,7 +7,7 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis</image:loc>
-      <image:caption>Naprawa telewizorów, pralek, zmywarek, ekspresów do kawy</image:caption>
+      <image:caption>Naprawa telewizorów, pralek, suszarek, zmywarek, ekspresów</image:caption>
     </image:image>
   </url>
   <url>
@@ -52,6 +52,15 @@
     </image:image>
   </url>
     <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
+    <lastmod>2024-12-02</lastmod>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/naprawa-suszarki</image:loc>
+      <image:caption>Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
     <lastmod>2024-12-02</lastmod>
     <priority>1.0</priority>

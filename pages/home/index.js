@@ -8,9 +8,11 @@ import WashingMachine from './WashingMachine';
 import CoffeeMachine from './CoffeeMachine';
 import Television from './Television';
 import Dishwasher from './Dishwasher';
+import Dryer from './Dryer';
+import CoffeeMachine_2 from './CoffeeMachine_2';
 import { StyledLink } from '../../components/common/StyledLink';
 import { useState, useEffect, useRef } from 'react';
-import { mobileScene, sceneB as scene } from "../../utils/scenes";
+import { mobileScene, scene } from "../../utils/scenes";
 import HomeMetaTags from './HomeMetaTags';
 import { sendGTMEvent } from '@next/third-parties/google'
 
@@ -58,7 +60,7 @@ const Home = () => {
     if (hold) return;
 
     const updateScene = () => {
-      let sceneNumber = sceneNumberRef.current >= 8 ? 1 : sceneNumberRef.current + 1;
+      let sceneNumber = sceneNumberRef.current >= 12 ? 1 : sceneNumberRef.current + 1;
       setActiveScene({
         reset: false,
         number: sceneNumber,
@@ -82,7 +84,7 @@ const Home = () => {
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />
-          pralek, zmywarek, telewizorów<br />
+          pralek, suszarek, zmywarek, telewizorów<br />
           i&nbsp;ekspresów do&nbsp;kawy<br />
           w&nbsp;Przemyślu
         </HeroTitle>
@@ -94,24 +96,31 @@ const Home = () => {
           Zadzwoń teraz
         </StyledButtonLink>
       </HeroContainer>
-      {<WashingMachine
+      {!activeScene.reset && <WashingMachine
         show={activeScene.content[0]}
-        center={isPortrait}
         setHold={setHold}
+        left
+      />}
+      {!activeScene.reset && <Television
+        show={activeScene.content[1]}
+        setHold={setHold}
+        left
+      />}
+      {!activeScene.reset && <Dryer
+        show={activeScene.content[2]}
+        setHold={setHold}
+        left
       />}
       {!activeScene.reset && <CoffeeMachine
-        show={activeScene.content[1]}
-        center={isPortrait}
+        show={activeScene.content[3]}
         setHold={setHold}
       />}
       {!activeScene.reset && <Dishwasher
-        show={activeScene.content[2]}
-        center={isPortrait}
+        show={activeScene.content[4]}
         setHold={setHold}
       />}
-      {!activeScene.reset && <Television
-        show={activeScene.content[3]}
-        center={isPortrait}
+      {!activeScene.reset && <CoffeeMachine_2
+        show={activeScene.content[5]}
         setHold={setHold}
       />}
       <Container>

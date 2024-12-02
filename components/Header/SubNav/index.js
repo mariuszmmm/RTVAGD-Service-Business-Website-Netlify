@@ -21,6 +21,16 @@ const SubNav = ({ showSubNav, setShowSubNav }) => {
         </ListItem>
         <ListItem >
           <StyledLink
+            href="/naprawa-suszarek"
+            $active={pathname === "/naprawa-suszarek/"}
+            $subNav
+            onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'naprawa-suszarek' })}
+          >
+            Naprawa suszarek
+          </StyledLink>
+        </ListItem>
+        <ListItem >
+          <StyledLink
             href="/naprawa-zmywarek"
             $active={pathname === "/naprawa-zmywarek/"}
             $subNav

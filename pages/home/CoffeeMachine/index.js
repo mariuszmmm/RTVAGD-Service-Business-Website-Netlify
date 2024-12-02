@@ -1,11 +1,11 @@
-import { CoffeeMachineWrapper, Image } from "../../../styles/home/CoffeeMachine/CoffeeMachineStyled";
 import Link from "next/link";
 import { imageUrls } from "../../../utils/urls";
+import { ImageWrapper } from "../../../components/common/ImageWrapper";
+import { Image } from "../../../components/common/Image";
 
-const CoffeeMachine = ({ show, center, setHold }) => (
-  <CoffeeMachineWrapper
+const CoffeeMachine = ({ show, setHold }) => (
+  <ImageWrapper
     $show={show}
-    $center={center}
     onMouseEnter={() => setHold(true)}
     onMouseLeave={() => setHold(false)}
   >
@@ -13,11 +13,10 @@ const CoffeeMachine = ({ show, center, setHold }) => (
       <Image
         src={imageUrls.ekspres}
         alt="Naprawa ekspresów do kawy w Przemyślu"
-        $center={center}
         loading="lazy"
       />
     </Link>
-  </CoffeeMachineWrapper>
+  </ImageWrapper>
 );
 
 export default CoffeeMachine;

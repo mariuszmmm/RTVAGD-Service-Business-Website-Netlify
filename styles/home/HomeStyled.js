@@ -18,33 +18,14 @@ export const HeroContainer = styled.header`
   margin: 0 auto 100px;
   padding: 20px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
-    min-height: 500px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
-    min-height: 450px;
-  }
+  min-height: clamp(500px, 50vw, 800px);  
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    min-height: 350px;
     padding: 10px;
   }
 
   @media (orientation: portrait) {
-    min-height: 1100px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.large}) {
-      min-height: 850px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      min-height: 730px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-      min-height: 630px;
-    }
+    min-height: clamp(400px, 105vw, 1100px);  
   }
 `;
 
