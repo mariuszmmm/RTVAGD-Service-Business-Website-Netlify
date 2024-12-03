@@ -27,7 +27,6 @@ const Home = ({ rating }) => {
     content: mobileScene[0],
   });
   const [hold, setHold] = useState(false);
-  console.log(rating)
 
   useEffect(() => {
     const initialIsPortrait = window.innerHeight > window.innerWidth;
@@ -87,8 +86,8 @@ const Home = ({ rating }) => {
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />
-          pralek, suszarek, zmywarek, telewizorów<br />
-          i&nbsp;ekspresów do&nbsp;kawy<br />
+          pralek, suszarek, zmywarek,<br />
+          telewizorów i&nbsp;ekspresów do&nbsp;kawy<br />
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
@@ -136,27 +135,33 @@ const Home = ({ rating }) => {
         </Text>
         <Text as="ul">
           <li>
-            <StyledLink href="/naprawa-telewizorow">
-              <h3>Telewizory: </h3>
-            </StyledLink>
-            Samsung, LG, Sony, Philips, Panasonic, Sharp, Toshiba,
-          </li>
-          <li>
             <StyledLink href="/naprawa-pralek">
               <h3>Pralki: </h3>
             </StyledLink>
-            Bosch, Siemens, Whirlpool, Electrolux, Beko, Amica, Candy,
+            Bosch, Siemens, LG, Samsung, Whirlpool, Electrolux, Miele, Beko, AEG, Candy
           </li>
           <li>
-            <StyledLink href="/naprawa-ekspresow">
-              <h3>Ekspresy do kawy: </h3>
-            </StyledLink>De’Longhi, Saeco, Jura, Krups, Nivona, Siemens, Philips,
+            <StyledLink href="/naprawa-suszarek">
+              <h3>Suszarki: </h3>
+            </StyledLink>
+            Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, AEG, Candy, Amica
           </li>
           <li>
             <StyledLink href="/naprawa-zmywarek">
               <h3>Zmywarki: </h3>
             </StyledLink>
-            Bosch, Siemens, Whirlpool, Beko, Electrolux, Amica, Miele,
+            Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, AEG, Candy, Amica
+          </li>
+          <li>
+            <StyledLink href="/naprawa-telewizorow">
+              <h3>Telewizory: </h3>
+            </StyledLink>
+            LG, Samsung, Sony, Philips, Panasonic, TCL, Sharp, Hisense, Grundig, JVC
+          </li>
+          <li>
+            <StyledLink href="/naprawa-ekspresow">
+              <h3>Ekspresy do kawy: </h3>
+            </StyledLink>De’Longhi, Jura, Siemens, Bosch, Philips, Nivona, Krups, Melitta, Smeg, Miele
           </li>
         </Text>
         <Text>

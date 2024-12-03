@@ -47,6 +47,7 @@ export const StyledButtonLink = styled(Button).attrs({ as: "a" })`
       font-size: clamp(0.3rem, 1.6vw, 0.9rem);
       font-weight: 600;
       opacity: 1;
+   
 
       ${({ $hidden }) =>
         $hidden &&

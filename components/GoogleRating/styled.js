@@ -30,7 +30,7 @@ export const RatingWrapper = styled.div`
     min-width: 60px;
     min-height: 22px;
     border-radius: 2px;
-    top: 55px;
+    top: 56px;
   }
 `;
 
@@ -49,7 +49,7 @@ export const Text = styled.p`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    font-size:0.33rem; 
+    font-size:0.36rem; 
     margin: 2px 0 0;
   }
 `;
@@ -58,13 +58,13 @@ export const ImageWrapper = styled.div`
   grid-area: logo;
   padding: 3px;
   display: flex;
-  max-width:34px;
+  max-width:36px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    max-width:25px;
+    max-width:28px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    max-width:20px;
+    max-width:22px;
   }
 `;

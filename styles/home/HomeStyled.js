@@ -43,21 +43,18 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-const textStyled = css`
+export const HeroText = styled.p`
   opacity: ${({ $notShow }) => ($notShow ? 0 : 1)};
-  margin-bottom: 50px;
+  margin-bottom: 36px;
   font-size: clamp(0.8rem, 2.3vw, 1.3rem);
   line-height: 1.5;
   font-weight: 400;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
-`;
-export const HeroText = styled.p`
-  ${textStyled}
 `;

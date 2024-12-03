@@ -59,7 +59,6 @@ export async function getStaticProps() {
       };
     }
 
-
     return {
       ...sharedProps,
       props: {

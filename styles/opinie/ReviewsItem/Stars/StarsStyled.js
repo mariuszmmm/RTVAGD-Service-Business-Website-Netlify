@@ -10,12 +10,13 @@ export const StarsWrapper = styled.div`
     margin: 0 0 2px;  
 
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      width: 65px;
-    
+      width: 66px;
+      height: 12px;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-      width: 52px;    
+      width: 52px;  
+      height: 8px;  
     }
   `} 
 `;
