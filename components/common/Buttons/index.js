@@ -41,7 +41,7 @@ export const StyledButtonLink = styled(Button).attrs({ as: "a" })`
     css`
       position: absolute;
       bottom: 0;
-      right: 31px;
+      right: 20px;
       padding: 8px 15px;
       transform: translate(0, calc(100% + 50px));
       font-size: clamp(0.3rem, 1.6vw, 0.9rem);
@@ -56,7 +56,6 @@ export const StyledButtonLink = styled(Button).attrs({ as: "a" })`
         `}
 
       @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-        right: 13px;
         margin: 0;
         padding: 5px 10px;
         transform: translate(0, calc(100% + 30px));

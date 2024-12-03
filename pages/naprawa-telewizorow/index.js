@@ -6,10 +6,13 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import TelevisionServiceMetaTags from "./TelevisionServiceMetaTags"
+import { GoogleRating } from '../../components/GoogleRating';
+import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const TelevisionService = () => (
+const TelevisionService = ({ rating }) => (
   <Section>
     <TelevisionServiceMetaTags />
+    <GoogleRating rating={rating} />
     <Container>
       <Title><span>✔ </span>Naprawa telewizorów</Title>
       <main>
@@ -38,5 +41,7 @@ const TelevisionService = () => (
     </Container>
   </Section>
 );
+
+export const getStaticProps = getSharedStaticProps;
 
 export default TelevisionService;

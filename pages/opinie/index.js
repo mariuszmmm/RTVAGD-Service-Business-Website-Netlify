@@ -7,10 +7,13 @@ import { StyledButtonLink } from "../../components/common/Buttons";
 import ReviewsMetaTags from "./ReviewsMetaTags";
 import axios from 'axios';
 import { reviewUrl } from "../../utils/urls";
+import { getSharedStaticProps } from "../../utils/getSharedStaticProps";
+import { GoogleRating } from "../../components/GoogleRating";
 
-const Reviews = ({ status, reviews }) => (
+const Reviews = ({ status, reviews, rating }) => (
   <Section>
     <ReviewsMetaTags />
+    <GoogleRating rating={rating} />
     <ReviewsContainer>
       <Title>Opinie Klientów</Title>
       {status === "loading" && <p>Ładowanie opinii z google...</p>}
@@ -34,6 +37,8 @@ const Reviews = ({ status, reviews }) => (
 );
 
 export async function getStaticProps() {
+  const sharedProps = await getSharedStaticProps();
+
   try {
     const response = await axios(reviewUrl)
     const reviews = response.data?.reviews || [];
@@ -56,7 +61,9 @@ export async function getStaticProps() {
 
 
     return {
+      ...sharedProps,
       props: {
+        ...sharedProps.props,
         status: 'success',
         reviews: newReviews,
       },
@@ -64,7 +71,9 @@ export async function getStaticProps() {
   } catch (error) {
     console.error('Error fetching reviews:', error);
     return {
+      ...sharedProps,
       props: {
+        ...sharedProps.props,
         status: 'error',
         reviews: [],
       },

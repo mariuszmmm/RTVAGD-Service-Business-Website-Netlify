@@ -1,46 +1,70 @@
 import styled from "styled-components";
 
 export const RatingWrapper = styled.div`
-  min-width: 160px;
+  min-width: 132px;
+  min-height: 36px;
   background-color: white;
   position: absolute;
   top: 80px;
-  left: 30px;
+  left: 20px;
   color: black;
-  border-radius: 7px;
+  border-radius: 6px;
   display: grid ;
   grid-template-areas: 
    "logo text"
    "logo stars";
   align-items: center;
-  padding: 0 10px 0;
+  justify-items: center;
   transition: opacity ease-out 0.2s;
-  column-gap: 5px;
+  padding-right: 4px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    min-width: 60px;
-    top: 58px;
+    min-width: 100px;
+    min-height: 28px;
+    top: 60px;
     left: 20px;
-    
+    border-radius: 4px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    min-width: 60px;
+    min-height: 22px;
+    border-radius: 2px;
+    top: 55px;
   }
 `;
 
 export const Text = styled.p`
   grid-area: text;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: black;
   width: 100%;
-  margin: 10px 0 0;
+  margin: 2px 0 0;
+  text-align: center;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    font-size:0.6rem;
+    font-size:0.46rem;
     margin: 4px 0 0;
+  }
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    font-size:0.33rem; 
+    margin: 2px 0 0;
   }
 `;
 
 export const ImageWrapper = styled.div`
   grid-area: logo;
   padding: 3px;
+  display: flex;
+  max-width:34px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+    max-width:25px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    max-width:20px;
+  }
 `;

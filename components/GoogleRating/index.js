@@ -7,10 +7,13 @@ export const GoogleRating = ({ rating }) => {
     <>
       <RatingWrapper>
         <ImageWrapper>
-          <Image src="/images/logoGoogle.png"
+          <Image
+            src="/images/logoGoogle.png"
             width={25}
             height={25}
-            alt="google" />
+            alt="google"
+            layout="responsive"
+          />
         </ImageWrapper>
         <Text>Google Rating {rating}</Text >
         <Stars rating={5} center />

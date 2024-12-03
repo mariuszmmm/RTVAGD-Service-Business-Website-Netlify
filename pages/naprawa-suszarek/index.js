@@ -6,10 +6,13 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import DryerServiceMetaTags from "./DryerServiceMetaTags"
+import { GoogleRating } from '../../components/GoogleRating';
+import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const DryerService = () => (
+const DryerService = ({ rating }) => (
   <Section>
     <DryerServiceMetaTags />
+    <GoogleRating rating={rating} />
     <Container>
       <Title><span>✔ </span>Naprawa suszarek</Title>
       <main>
@@ -39,5 +42,7 @@ const DryerService = () => (
     </Container>
   </Section>
 );
+
+export const getStaticProps = getSharedStaticProps;
 
 export default DryerService;

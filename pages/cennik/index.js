@@ -5,11 +5,14 @@ import { serwis } from '../../utils/serwis';
 import { PricingTable, PricingTh } from '../../styles/cennik/PricingStyled';
 import PricingRow from './PricingRow';
 import PricingMetaTags from './PricingMetaTags';
+import { GoogleRating } from '../../components/GoogleRating';
+import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const Pricing = () => {
+const Pricing = ({ rating }) => {
   return (
     <Section >
       <PricingMetaTags />
+      <GoogleRating rating={rating} />
       <Container>
         <Title>Cennik</Title>
         <PricingTable>
@@ -28,6 +31,8 @@ const Pricing = () => {
       </Container>
     </Section>
   );
-}
+};
+
+export const getStaticProps = getSharedStaticProps;
 
 export default Pricing;
