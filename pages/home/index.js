@@ -16,6 +16,7 @@ import { mobileScene, scene } from "../../utils/scenes";
 import HomeMetaTags from './HomeMetaTags';
 import { sendGTMEvent } from '@next/third-parties/google'
 import { GoogleRating } from '../../components/GoogleRating';
+import Link from 'next/link';
 
 const Home = ({ rating }) => {
   const [isPortrait, setIsPortrait] = useState(
@@ -127,7 +128,7 @@ const Home = ({ rating }) => {
       />}
       <Container>
         <SubTitle>
-          Serwisuję wszystkie marki telewizorów, pralek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
+          Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
         </SubTitle>
         <Text>
           Specjalizuję się w&nbsp;naprawie urządzeń RTV&nbsp;i&nbsp;AGD różnych marek, oferując profesjonalną obsługę zarówno dla&nbsp;popularnych, jak&nbsp;i&nbsp;mniej znanych producentów.<br />

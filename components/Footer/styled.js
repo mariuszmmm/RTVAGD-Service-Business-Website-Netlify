@@ -3,6 +3,7 @@ import Facebook from "../../public/icons/facebook.svg";
 import Envelope from "../../public/icons/envelope.svg";
 import Phone from "../../public/icons/phone.svg";
 import Google from "../../public/icons/address-card.svg";
+import Link from "../../public/icons/link.svg";
 
 export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.color.primary};
@@ -31,11 +32,10 @@ export const FooterContainer = styled.div`
 
 export const FooterInfo = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   align-content: center;
   width: 100%;
-  padding: 0 50px;
-  gap: 5px clamp(10px, 5.9vw, 200px);
+  gap: 5px clamp(10px, 0.9vw, 200px);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-columns: repeat(2, auto);
@@ -79,6 +79,10 @@ export const GoogleIcon = styled(Google)`
   ${styledIcon}
 `;
 
+export const LinkIcon = styled(Link)`
+  ${styledIcon}
+`;
+
 export const StyledLink = styled.a`
   display: flex;
   align-items: center;
@@ -88,6 +92,19 @@ export const StyledLink = styled.a`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
   transition: color 0.2s ease;
+
+  ${({ $link }) => $link && css`
+        order: 1;
+    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+      order: 0;
+    }
+  `};
+
+  ${({ $first }) => $first && css`
+    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+      grid-column-end: span 2;
+    }
+  `};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     justify-self: left;

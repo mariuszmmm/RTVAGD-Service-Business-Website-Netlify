@@ -8,7 +8,7 @@ export const serwis = {
   name: "Naprawa pralek i sprzętu RTV",
   subName: "Serwis RTV i AGD",
   email: "piotrek_serwis@wp.pl",
-  phone: "790258612",
+  phone: "790-258-612",
   adres: "Generała Józefa Sowińskiego 2, 37-700 Przemyśl",
   reviews: [
     {
