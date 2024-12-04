@@ -3,7 +3,7 @@ import Head from 'next/head';
 const HomeMetaTags = () => (
   <Head>
 
-    <title>Naprawa telewizorów, pralek i innego sprzętu AGD w Przemyślu</title>
+    <title>Naprawa telewizorów, pralek, szuszarek, zmywarek i ekspresów</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/" />
 
@@ -16,7 +16,7 @@ const HomeMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa telewizorów, pralek i innego sprzętu AGD w Przemyślu"
+      content="Naprawa telewizorów, pralek, szuszarek, zmywarek i ekspresów"
     />
     <meta
       property="og:description"
@@ -33,7 +33,7 @@ const HomeMetaTags = () => (
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa telewizorów, pralek i innego sprzętu AGD w Przemyślu" />
+    <meta name="twitter:title" content="Naprawa telewizorów, pralek, szuszarek, zmywarek i ekspresów" />
     <meta name="twitter:description" content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
