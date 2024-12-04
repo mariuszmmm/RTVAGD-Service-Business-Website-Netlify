@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const DryerServiceMetaTags = () => (
   <Head>
-    <title>Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612</title>
+    <title>Naprawa suszarek ✔️ Serwis PRZEMYŚL 📞 790-258-612</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-suszarek/" />
 
@@ -15,7 +15,7 @@ const DryerServiceMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612"
+      content="Naprawa suszarek ✔️ Serwis PRZEMYŚL 📞 790-258-612"
     />
     <meta
       property="og:description"
@@ -32,7 +32,7 @@ const DryerServiceMetaTags = () => (
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa suszarek ✔️ Serwis Przemyśl → 📞 790-258-612" />
+    <meta name="twitter:title" content="Naprawa suszarek ✔️ Serwis PRZEMYŚL 📞 790-258-612" />
     <meta name="twitter:description" content="Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 

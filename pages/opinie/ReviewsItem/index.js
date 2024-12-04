@@ -50,7 +50,7 @@ const ReviewsItem = ({ item }) => {
           <Time time={item.time} />
         </Data>
       </Header>
-      <Stars rating={item.rating || 0} text={item.text || ""} />
+      <Stars rating={item.rating || 0} />
       <Text itemProp="reviewBody" $forReviews>{item.text}</Text>
     </ItemWrapper>
   );
