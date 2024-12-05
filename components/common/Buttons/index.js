@@ -36,30 +36,29 @@ export const Button = styled.button`
 `;
 
 export const StyledButtonLink = styled(Button).attrs({ as: "a" })`
-  ${({ $opinia }) =>
-    $opinia &&
-    css`
-      position: absolute;
-      bottom: 0;
-      right: 20px;
-      padding: 8px 15px;
-      transform: translate(0, calc(100% + 50px));
-      font-size: clamp(0.3rem, 1.6vw, 0.9rem);
-      font-weight: 600;
-      opacity: 1;
-   
+  ${({ $opinia }) => $opinia && css`
+    position: absolute;
+    top: 67px;
+    right: 20px;
+    padding: 8px 15px;
+    font-size: clamp(0.3rem, 1.6vw, 0.9rem);
+    font-weight: 600;
+    opacity: 1;
+    transition:  opacity 0.2s ease;
+  
+    ${({ $hidden }) => $hidden && css`
+        opacity: 0;
+        pointer-events: none;
+    `}; 
 
-      ${({ $hidden }) =>
-        $hidden &&
-        css`
-          opacity: 0;
-          pointer-events: none;
-        `}
-
-      @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-        margin: 0;
-        padding: 5px 10px;
-        transform: translate(0, calc(100% + 30px));
-      }
-    `}
+    @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+      margin: 0;
+      padding: 5px 10px;
+      top: 60px;
+    };
+    
+    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+      top: 56px;
+    }
+  `}
 `;

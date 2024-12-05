@@ -100,11 +100,11 @@ export const StyledLink = styled.a`
     }
   `};
 
-  ${({ $first }) => $first && css`
+  &:first-child {
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
       grid-column-end: span 2;
     }
-  `};
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     justify-self: left;

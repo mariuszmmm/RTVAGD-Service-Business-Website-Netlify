@@ -5,13 +5,11 @@ import { Text } from '../../components/common/Text';
 import { TeamImage } from '../../components/common/TeamImage';
 import { imageUrls } from '../../utils/urls';
 import AboutMetaTags from "./AboutMetaTags"
-import { GoogleRating } from '../../components/GoogleRating';
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const About = ({ rating }) => (
+const About = () => (
   <Section >
     <AboutMetaTags />
-    <GoogleRating rating={rating} />
     <Container>
       <Title>Kim jestem</Title>
       <main>

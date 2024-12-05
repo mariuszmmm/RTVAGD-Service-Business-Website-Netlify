@@ -28,10 +28,9 @@ export default class MyDocument extends Document {
     }
   }
 
-
   render() {
     return (
-      <Html lang='pl-PL'>
+      <Html lang='pl'>
         <Head>
           <link rel="preconnect" href="https://www.googletagmanager.com" />
           <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

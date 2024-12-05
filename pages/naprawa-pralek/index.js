@@ -6,13 +6,11 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import WashingMachineServiceMetaTags from "./WashingMachineServiceMetaTags"
-import { GoogleRating } from '../../components/GoogleRating';
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const WashingMachineService = ({ rating }) => (
+const WashingMachineService = () => (
   <Section>
     <WashingMachineServiceMetaTags />
-    <GoogleRating rating={rating} />
     <Container>
       <Title><span>✔ </span>Naprawa pralek</Title>
       <main>

@@ -17,7 +17,7 @@ const Footer = () => (
   <FooterWrapper>
     <FooterContainer>
       <FooterInfo>
-        <StyledLink href={`tel:${serwis.phone}`} $first >
+        <StyledLink href={`tel:${serwis.phone}`} >
           <PhoneIcon />
           <FooterText>{serwis.phone} </FooterText>
         </StyledLink>

@@ -6,13 +6,11 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import TelevisionServiceMetaTags from "./TelevisionServiceMetaTags"
-import { GoogleRating } from '../../components/GoogleRating';
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const TelevisionService = ({ rating }) => (
+const TelevisionService = () => (
   <Section>
     <TelevisionServiceMetaTags />
-    <GoogleRating rating={rating} />
     <Container>
       <Title><span>✔ </span>Naprawa telewizorów</Title>
       <main>

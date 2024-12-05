@@ -8,13 +8,11 @@ import { serwis } from "../../utils/serwis";
 import ContactForm from "./ContactForm";
 import ConatctMetaTags from "./ConatctMetaTags"
 import Iframe from "./Iframe";
-import { GoogleRating } from "../../components/GoogleRating";
 import { getSharedStaticProps } from "../../utils/getSharedStaticProps";
 
-const Contact = ({ rating }) => (
-  <ContactSection>
+const Contact = () => (
+  < ContactSection >
     <ConatctMetaTags />
-    <GoogleRating rating={rating} />
     <ContactContainer>
       <Title>Kontakt</Title>
       <ContactForm />
@@ -44,7 +42,7 @@ const Contact = ({ rating }) => (
         </ImageContainer>
       </ContactInfo>
     </ContactContainer>
-  </ContactSection>
+  </ContactSection >
 );
 
 export const getStaticProps = getSharedStaticProps;

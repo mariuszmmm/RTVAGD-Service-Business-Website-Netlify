@@ -16,7 +16,7 @@ function App({ Component, pageProps }) {
           <Normalize />
           <GlobalStyle />
           <Background />
-          <Header />
+          <Header {...pageProps} />
           <Component {...pageProps} />
           <GoogleTagManager gtmId="GTM-P52JLLB7" />
           <Footer />

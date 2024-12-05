@@ -15,8 +15,6 @@ import { useState, useEffect, useRef } from 'react';
 import { mobileScene, scene } from "../../utils/scenes";
 import HomeMetaTags from './HomeMetaTags';
 import { sendGTMEvent } from '@next/third-parties/google'
-import { GoogleRating } from '../../components/GoogleRating';
-import Link from 'next/link';
 
 const Home = ({ rating }) => {
   const [isPortrait, setIsPortrait] = useState(
@@ -83,7 +81,6 @@ const Home = ({ rating }) => {
   return (
     <Hero>
       <HomeMetaTags />
-      <GoogleRating rating={rating} />
       <HeroContainer>
         <HeroTitle>
           Profesjonalna naprawa<br />
@@ -92,10 +89,7 @@ const Home = ({ rating }) => {
           w&nbsp;Przemyślu
         </HeroTitle>
         <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
-        <StyledButtonLink
-          href={`tel:${serwis.phone}`}
-          onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'callNow' })}
-        >
+        <StyledButtonLink href={`tel:${serwis.phone}`}        >
           Zadzwoń teraz
         </StyledButtonLink>
       </HeroContainer>

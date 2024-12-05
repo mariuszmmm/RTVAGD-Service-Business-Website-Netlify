@@ -1,11 +1,10 @@
-import Link from "next/link";
 import { Stars } from "../../components/common/Stars";
-import { ImageWrapper, RatingWrapper, Text } from "./styled";
+import { ImageWrapper, StyledLink, Text, Wrpper } from "./styled";
 import Image from "next/image";
 
-export const GoogleRating = ({ rating }) => (
-  <Link href="/opinie/">
-    <RatingWrapper>
+export const GoogleRating = ({ rating, hidden }) => (
+  <Wrpper $hidden={hidden}>
+    <StyledLink href="/opinie/">
       <ImageWrapper>
         <Image
           src="/images/logoGoogle.png"
@@ -17,6 +16,6 @@ export const GoogleRating = ({ rating }) => (
       </ImageWrapper>
       <Text>Google Rating {rating}</Text >
       <Stars rating={5} center />
-    </RatingWrapper>
-  </Link>
+    </StyledLink>
+  </Wrpper>
 );

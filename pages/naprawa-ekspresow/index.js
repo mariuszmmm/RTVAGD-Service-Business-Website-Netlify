@@ -6,13 +6,11 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import CoffeeMachineServiceMetaTags from "./CoffeeMachineServiceMetaTags"
-import { GoogleRating } from '../../components/GoogleRating';
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
 
-const CoffeeMachineService = ({ rating }) => (
+const CoffeeMachineService = () => (
   <Section>
     <CoffeeMachineServiceMetaTags />
-    <GoogleRating rating={rating} />
     <Container>
       <Title><span>✔ </span>Naprawa ekspresów do kawy</Title>
       <main>

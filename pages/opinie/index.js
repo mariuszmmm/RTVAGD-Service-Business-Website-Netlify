@@ -8,12 +8,10 @@ import ReviewsMetaTags from "./ReviewsMetaTags";
 import axios from 'axios';
 import { reviewUrl } from "../../utils/urls";
 import { getSharedStaticProps } from "../../utils/getSharedStaticProps";
-import { GoogleRating } from "../../components/GoogleRating";
 
-const Reviews = ({ status, reviews, rating }) => (
+const Reviews = ({ status, reviews }) => (
   <Section>
     <ReviewsMetaTags />
-    <GoogleRating rating={rating} />
     <ReviewsContainer>
       <Title>Opinie Klientów</Title>
       {status === "loading" && <p>Ładowanie opinii z google...</p>}

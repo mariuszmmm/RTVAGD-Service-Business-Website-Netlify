@@ -3,7 +3,7 @@ import Head from 'next/head';
 const PricingMetaTags = () => (
   <Head>
 
-    <title>Sprawdź cennik naprawy telewizorów, pralek i innego AGD</title>
+    <title>Koszt napraw RTV i AGD | Cennik usług</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/cennik/" />
 
@@ -16,7 +16,7 @@ const PricingMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Sprawdź cennik naprawy telewizorów, pralek i innego AGD"
+      content="Koszt napraw RTV i AGD | Cennik usług"
     />
     <meta
       property="og:description"
@@ -33,7 +33,7 @@ const PricingMetaTags = () => (
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sprawdź cennik naprawy telewizorów, pralek i innego AGD" />
+    <meta name="twitter:title" content="Koszt napraw RTV i AGD | Cennik usług" />
     <meta name="twitter:description" content="Sprawdź cennik za naprawę sprzętu RTV i AGD w serwisie w Przemyślu. Konkurencyjne ceny na naprawy telewizorów, pralek, zmywarek i ekspresów." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 

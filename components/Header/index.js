@@ -12,8 +12,9 @@ import { useEffect, useState } from "react";
 import SubNav from "./SubNav";
 import { usePathname } from 'next/navigation';
 import { sendGTMEvent } from '@next/third-parties/google';
+import { GoogleRating } from '../GoogleRating';
 
-const Header = () => {
+const Header = ({ rating }) => {
   const [scrolled, setScrolled] = useState(false);
   const [showSubNav, setShowSubNav] = useState(false);
   const pathname = usePathname()
@@ -84,6 +85,7 @@ const Header = () => {
         <StyledButtonLink href={serwis.url.addTestimonial} $opinia $hidden={scrolled}>
           Wystaw opinię
         </StyledButtonLink>
+        {rating && <GoogleRating rating={rating} hidden={scrolled} />}
       </HeaderContainer>
     </HeaderWrapper>
   );
