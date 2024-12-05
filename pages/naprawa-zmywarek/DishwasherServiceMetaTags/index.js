@@ -15,7 +15,7 @@ const DishwasherServiceMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa zmywarek ✔️ Serwis w Przemyślu 📞 790-258-612"
+      content="Serwis ✔️ Naprawa zmywarek Przemyśl 📞790-258-612📞"
     />
     <meta
       property="og:description"
@@ -32,7 +32,7 @@ const DishwasherServiceMetaTags = () => (
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa zmywarek ✔️ Serwis w Przemyślu 📞 790-258-612" />
+    <meta name="twitter:title" content="Serwis ✔️ Naprawa zmywarek Przemyśl 📞790-258-612📞" />
     <meta name="twitter:description" content="Profesjonalna naprawa zmywarek w Przemyślu. Szybka pomoc, nowoczesne technologie, oryginalne części. Skontaktuj się już dziś!" />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 

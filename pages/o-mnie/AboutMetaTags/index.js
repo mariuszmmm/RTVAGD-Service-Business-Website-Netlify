@@ -3,7 +3,7 @@ import Head from "next/head";
 const AboutMetaTags = () => {
   return (
     <Head>
-      <title>Informacje o serwisie RTV i AGD w Przemyślu, ul. Sowińskiego 2.</title>
+      <title>Informacje o serwisie RTV i AGD w Przemyślu, ul.Sowińskiego 2.</title>
 
       <link rel="canonical" href="https://naprawaprzemysl.pl/o-mnie/" />
 
@@ -16,7 +16,7 @@ const AboutMetaTags = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="Informacje o serwisie RTV i AGD w Przemyślu, ul. Sowińskiego 2."
+        content="Informacje o serwisie RTV i AGD w Przemyślu, ul.Sowińskiego 2."
       />
       <meta
         property="og:description"
@@ -33,7 +33,7 @@ const AboutMetaTags = () => {
       <meta property="og:image:type" content="image/png" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Informacje o serwisie RTV i AGD w Przemyślu, ul. Sowińskiego 2." />
+      <meta name="twitter:title" content="Informacje o serwisie RTV i AGD w Przemyślu, ul.Sowińskiego 2." />
       <meta name="twitter:description" content="Dowiedz się o moim doświadczeniu w naprawie sprzętu RTV i AGD oraz zaangażowaniu w najwyższej jakości usługi serwisowe w Przemyślu." />
       <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
