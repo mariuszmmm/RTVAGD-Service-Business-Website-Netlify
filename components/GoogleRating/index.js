@@ -8,10 +8,8 @@ export const GoogleRating = ({ rating, hidden }) => (
       <ImageWrapper>
         <Image
           src="/images/logoGoogle.png"
-          width={25}
-          height={25}
-          alt="google"
-          layout="responsive"
+          alt="google logo"
+          fill
         />
       </ImageWrapper>
       <Text>Google Rating {rating}</Text >

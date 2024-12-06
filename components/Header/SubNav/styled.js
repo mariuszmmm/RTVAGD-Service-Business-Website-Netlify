@@ -2,9 +2,7 @@ import styled, { css } from "styled-components";
 
 export const SubNavWrapper = styled.div`
   position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-70%);
+    transform: translateX(-15%);
     max-height: 0;
     visibility: hidden;
     overflow-x: hidden;

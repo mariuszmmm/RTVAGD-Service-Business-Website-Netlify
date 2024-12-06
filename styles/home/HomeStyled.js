@@ -32,6 +32,8 @@ export const HeroContainer = styled.header`
 export const HeroTitle = styled.h1`
   margin-bottom: 50px;
   font-size: clamp(1.5rem, 3vw, 3rem);
+  line-height: 1.2;
+
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     margin-bottom: 10px;

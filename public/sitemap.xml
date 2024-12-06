@@ -3,7 +3,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis</image:loc>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis</image:loc>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/naprawa-pralki</image:loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/naprawa-suszarki</image:loc>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis-zmywarek</image:loc>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/naprawa-ekspresow</image:loc>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis-telewizorow</image:loc>
@@ -65,13 +65,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/cennik/</loc>
-    <lastmod>2024-12-06</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/logoGoogle</image:loc>
@@ -80,7 +75,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2024-12-06</lastmod>
+    <lastmod>2024-12-07</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/mapa.png</image:loc>

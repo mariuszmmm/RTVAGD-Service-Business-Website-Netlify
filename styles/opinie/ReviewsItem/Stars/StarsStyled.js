@@ -10,7 +10,7 @@ export const StarsWrapper = styled.div`
     margin: 0 0 2px;  
 
     @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-      width: 66px;
+      width: 68px;
       height: 12px;
     }
 

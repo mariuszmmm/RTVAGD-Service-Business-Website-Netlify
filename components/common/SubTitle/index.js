@@ -8,6 +8,7 @@ export const SubTitle = styled.h2`
   display: flex;
   align-items: center;
   gap: 6px;
+  line-height: 1.4;
 
   span{
     color: ${({ theme }) => theme.color.check};

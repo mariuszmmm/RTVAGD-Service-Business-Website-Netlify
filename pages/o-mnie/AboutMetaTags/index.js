@@ -37,7 +37,7 @@ const AboutMetaTags = () => {
       <meta name="twitter:description" content="Dowiedz się o moim doświadczeniu w naprawie sprzętu RTV i AGD oraz zaangażowaniu w najwyższej jakości usługi serwisowe w Przemyślu." />
       <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
-      <meta name="keywords" content="naprawa AGD Przemyśl, serwis sprzętu RTV, doświadczenie w naprawie AGD, profesjonalna naprawa pralek, naprawa urządzeń domowych, naprawa sprzętu RTV, serwis pralek Przemyśl, naprawa telewizorów Przemyśl, serwis ekspresów do kawy" />
+      <meta name="keywords" content="naprawa AGD Przemyśl, serwis sprzętu RTV, doświadczenie w naprawie AGD, profesjonalna naprawa pralek, naprawa suszarek, naprawa urządzeń domowych, naprawa sprzętu RTV, serwis pralek Przemyśl, naprawa telewizorów Przemyśl, serwis ekspresów do kawy" />
 
       <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - o mnie" />
 

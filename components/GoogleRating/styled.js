@@ -63,9 +63,8 @@ export const Text = styled.p`
   text-align: center;
   text-decoration: none;
 
-
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    font-size:0.46rem;
+    font-size:0.48rem;
     margin: 4px 0 0;
   }
 
@@ -76,16 +75,19 @@ export const Text = styled.p`
 `;
 
 export const ImageWrapper = styled.div`
+  position: relative;
+  height: 32px;
+  width: 32px;
   grid-area: logo;
-  padding: 3px;
-  display: flex;
-  max-width:36px;
+  margin: 2px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    max-width:28px;
+    height: 24px;
+    width: 24px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    max-width:22px;
+    height: 18px;
+    width: 18px;
   }
 `;

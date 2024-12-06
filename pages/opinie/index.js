@@ -73,6 +73,7 @@ export async function getStaticProps() {
         ...sharedProps.props,
         status: 'error',
         reviews: [],
+        error: error.message,
       },
     };
   }

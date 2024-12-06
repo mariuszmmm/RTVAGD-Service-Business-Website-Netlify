@@ -9,7 +9,7 @@ const HomeMetaTags = () => (
 
     <meta
       name="description"
-      content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy."
+      content="Kompleksowy serwis telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy."
     />
 
     <meta property="og:locale" content="pl_PL" />
@@ -20,7 +20,7 @@ const HomeMetaTags = () => (
     />
     <meta
       property="og:description"
-      content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy."
+      content="Kompleksowy serwis telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy."
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/" />
     <meta property="og:site_name" content="Serwis RTV i AGD" />
@@ -34,10 +34,10 @@ const HomeMetaTags = () => (
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Naprawa telewizorów, pralek, szuszarek, zmywarek i ekspresów" />
-    <meta name="twitter:description" content="Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy." />
+    <meta name="twitter:description" content="Kompleksowy serwis telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
-    <meta name="keywords" content="naprawa AGD, serwis sprzętu RTV, naprawa pralek, serwis zmywarek, naprawa telewizorów, naprawa ekspresów do kawy, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD" />
+    <meta name="keywords" content="naprawa AGD, serwis sprzętu RTV, naprawa pralek, naprawa suszarek, naprawa zmywarek, naprawa telewizorów, naprawa ekspresów do kawy, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD" />
 
     <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD" />
 
@@ -86,7 +86,7 @@ const HomeMetaTags = () => (
           "logo": "https://naprawaprzemysl.pl/share.png",
           "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
           "priceRange": "$$$",
-          "description": "Kompleksowy serwis telewizorów, pralek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy.",
+          "description": "Kompleksowy serwis telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy w Przemyślu. Szybka pomoc, fachowa obsługa, niezawodne naprawy.",
           "paymentAccepted": "Cash",
           "aggregateRating": {
             "@type": "AggregateRating",

@@ -15,6 +15,7 @@ export const getSharedStaticProps = async () => {
     return {
       props: {
         status: 'error',
+        error: error.message,
         rating: null
       },
     };
