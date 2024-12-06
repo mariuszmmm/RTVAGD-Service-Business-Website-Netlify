@@ -38,6 +38,8 @@ const ReviewsMetaTags = () => (
 
     <meta name="keywords" content="opinie naprawa AGD, opinie serwis RTV, recenzje naprawy pralek, opinie naprawa zmywarek, opinie naprawa ekspresów, doświadczenia z naprawą AGD, opinie naprawa telewizorów" />
 
+    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - opinie" />
+
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({

@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const TelevisionServiceMetaTags = () => (
   <Head>
-    <title>Naprawa telewizorów w Przemyślu ✔️ Serwis 📞 790-258-612</title>
+    <title>Naprawa telewizorów ✔️ Serwis Przemyśl ☎️790-258-612</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-telewizorow/" />
 
@@ -15,7 +15,7 @@ const TelevisionServiceMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa telewizorów w Przemyślu ✔️ Serwis 📞 790-258-612"
+      content="Naprawa telewizorów ✔️ Serwis Przemyśl ☎️790-258-612"
     />
     <meta
       property="og:description"
@@ -23,20 +23,22 @@ const TelevisionServiceMetaTags = () => (
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-telewizorow/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa telewizorów" />
-    <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
-    <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:secure_url" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:width" content="931" />
-    <meta property="og:image:height" content="497" />
-    <meta property="og:image:alt" content="Serwis RTV i AGD" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:updated_time" content="2024-12-06T12:43:00+01:00" />
+    <meta property="og:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168332/Serwis/serwis-telewizorow.webp" />
+    <meta property="og:image:secure_url" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168332/Serwis/serwis-telewizorow.webp" />
+    <meta property="og:image:width" content="918" />
+    <meta property="og:image:height" content="743" />
+    <meta property="og:image:alt" content="naprawa telewizorów" />
+    <meta property="og:image:type" content="image/webp" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa telewizorów w Przemyślu ✔️ Serwis 📞 790-258-612" />
+    <meta name="twitter:title" content="Naprawa telewizorów ✔️ Serwis Przemyśl ☎️790-258-612" />
     <meta name="twitter:description" content="Profesjonalna naprawa telewizorów w Przemyślu. Szybka pomoc, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś!" />
-    <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168332/Serwis/serwis-telewizorow.webp" />
 
     <meta name="keywords" content="naprawa telewizorów, serwis telewizorów Przemyśl, naprawa telewizora AGD, naprawa telewizora w Przemyślu, naprawa telewizorów LCD, naprawa telewizorów LED, serwis telewizora Przemyśl" />
+
+    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - naprawa telewizorów" />
 
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -78,8 +80,8 @@ const TelevisionServiceMetaTags = () => (
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100063811592941"
           ],
-          "logo": "https://naprawaprzemysl.pl/share.png",
-          "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
+          "logo": "https://res.cloudinary.com/difc0i71u/image/upload/v1731168332/Serwis/serwis-telewizorow.webp",
+          "image": { "@type": "ImageObject", "url": "https://res.cloudinary.com/difc0i71u/image/upload/v1731168332/Serwis/serwis-telewizorow.webp", "width": 918, "height": 743 },
           "priceRange": "$$$",
           "description": "Profesjonalna naprawa telewizorów w Przemyślu. Szybka pomoc, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś!",
           "paymentAccepted": "Cash",

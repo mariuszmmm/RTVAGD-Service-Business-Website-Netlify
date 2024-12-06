@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const CoffeeMachineServiceMetaTags = () => (
   <Head>
-    <title>✔️ Naprawa ekspresów - Serwis Przemyśl - ☎️790-258-612📞</title>
+    <title>Naprawa ekspresów ✔️ Serwis Przemyśl ☎️790-258-612</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-ekspresow/" />
 
@@ -15,7 +15,7 @@ const CoffeeMachineServiceMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="✔️ Naprawa ekspresów - Serwis Przemyśl - ☎️790-258-612📞"
+      content="Naprawa ekspresów ✔️ Serwis Przemyśl ☎️790-258-612"
     />
     <meta
       property="og:description"
@@ -23,20 +23,22 @@ const CoffeeMachineServiceMetaTags = () => (
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-ekspresow/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa ekspresów" />
-    <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
-    <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:secure_url" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:width" content="931" />
-    <meta property="og:image:height" content="497" />
-    <meta property="og:image:alt" content="Serwis RTV i AGD" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:updated_time" content="2024-12-06T12:43:00+01:00" />
+    <meta property="og:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-ekspresow.webp" />
+    <meta property="og:image:secure_url" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-ekspresow.webp" />
+    <meta property="og:image:width" content="700" />
+    <meta property="og:image:height" content="700" />
+    <meta property="og:image:alt" content="naprawa ekspresów" />
+    <meta property="og:image:type" content="image/webp" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="✔️ Naprawa ekspresów - Serwis Przemyśl - ☎️790-258-612📞" />
+    <meta name="twitter:title" content="Naprawa ekspresów ✔️ Serwis Przemyśl ☎️790-258-612" />
     <meta name="twitter:description" content="Profesjonalna naprawa ekspresów do kawy w Przemyślu. Szybka pomoc, najnowsze technologie i oryginalne części. Skontaktuj się ze mną już dziś." />
-    <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-ekspresow.webp" />
 
     <meta name="keywords" content="naprawa ekspresów do kawy, serwis ekspresów Przemyśl, naprawa ekspresów AGD, naprawa ekspresu do kawy Przemyśl, naprawa ekspresów w Przemyślu, naprawa ekspresu Przemyśl, awaria ekspresu do kawy" />
+
+    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - naprawa ekspresów" />
 
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -78,8 +80,8 @@ const CoffeeMachineServiceMetaTags = () => (
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100063811592941"
           ],
-          "logo": "https://naprawaprzemysl.pl/share.png",
-          "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
+          "logo": "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-ekspresow.webp",
+          "image": { "@type": "ImageObject", "url": "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-ekspresow.webp", "width": 700, "height": 700 },
           "priceRange": "$$$",
           "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Szybka pomoc, najnowsze technologie i oryginalne części. Skontaktuj się ze mną już dziś.",
           "paymentAccepted": "Cash",

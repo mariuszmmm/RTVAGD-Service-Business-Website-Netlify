@@ -3,7 +3,7 @@ import Head from 'next/head';
 const ConatctMetaTags = () => (
   <Head>
 
-    <title>Kontakt ✔️ Serwis RTV AGD w Przemyślu</title>
+    <title>Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️790-258-612</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/kontakt/" />
 
@@ -16,7 +16,7 @@ const ConatctMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Kontakt ✔️ Serwis RTV AGD w Przemyślu"
+      content="Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️790-258-612"
     />
     <meta
       property="og:description"
@@ -33,11 +33,13 @@ const ConatctMetaTags = () => (
     <meta property="og:image:type" content="image/png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kontakt ✔️ Serwis RTV AGD w Przemyślu" />
+    <meta name="twitter:title" content="Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️790-258-612" />
     <meta name="twitter:description" content="Skontaktuj się pod numerem 790-258-612 lub odwiedź nas w Przemyślu, ul. Generała Sowińskiego 2. Szybkie, fachowe usługi naprawy sprzętu RTV i AGD." />
     <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
 
     <meta name="keywords" content="kontakt naprawa AGD, kontakt serwis Przemyśl, naprawa sprzętu AGD kontakt, naprawa pralek kontakt, naprawa RTV kontakt, naprawa ekspresów kontakt, kontakt serwis RTV AGD" />
+
+    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - kontakt" />
 
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{

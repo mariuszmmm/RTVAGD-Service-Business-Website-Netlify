@@ -39,6 +39,8 @@ const AboutMetaTags = () => {
 
       <meta name="keywords" content="naprawa AGD Przemyśl, serwis sprzętu RTV, doświadczenie w naprawie AGD, profesjonalna naprawa pralek, naprawa urządzeń domowych, naprawa sprzętu RTV, serwis pralek Przemyśl, naprawa telewizorów Przemyśl, serwis ekspresów do kawy" />
 
+      <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - o mnie" />
+
       <script type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({

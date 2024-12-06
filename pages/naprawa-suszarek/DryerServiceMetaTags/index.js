@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const DryerServiceMetaTags = () => (
   <Head>
-    <title>Naprawa suszarek w Przemyślu ✔️ Serwis 📞 790-258-612.</title>
+    <title>Naprawa suszarek ✔️ Serwis Przemyśl ☎️790-258-612</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-suszarek/" />
 
@@ -15,7 +15,7 @@ const DryerServiceMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa suszarek w Przemyślu ✔️ Serwis 📞 790-258-612."
+      content="Naprawa suszarek ✔️ Serwis Przemyśl ☎️790-258-612"
     />
     <meta
       property="og:description"
@@ -23,20 +23,22 @@ const DryerServiceMetaTags = () => (
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-suszarek/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa suszarek" />
-    <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
-    <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:secure_url" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:width" content="931" />
-    <meta property="og:image:height" content="497" />
-    <meta property="og:image:alt" content="Serwis RTV i AGD" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:updated_time" content="2024-12-06T12:43:00+01:00" />
+    <meta property="og:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1733118542/Serwis/naprawa-suszarki.webp" />
+    <meta property="og:image:secure_url" content="https://res.cloudinary.com/difc0i71u/image/upload/v1733118542/Serwis/naprawa-suszarki.webp" />
+    <meta property="og:image:width" content="700" />
+    <meta property="og:image:height" content="865" />
+    <meta property="og:image:alt" content="naprawa suszarek" />
+    <meta property="og:image:type" content="image/webp" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa suszarek w Przemyślu ✔️ Serwis 📞 790-258-612." />
+    <meta name="twitter:title" content="Naprawa suszarek ✔️ Serwis Przemyśl ☎️790-258-612" />
     <meta name="twitter:description" content="Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś." />
-    <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1733118542/Serwis/naprawa-suszarki.webp" />
 
     <meta name="keywords" content="naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek AGD, naprawa suszarek w Przemyślu, naprawa pralki Przemyśl, naprawa suszarek Przemyśl, awaria pralki, naprawa sprzętu AGD" />
+
+    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - naprawa suszarek" />
 
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -78,8 +80,8 @@ const DryerServiceMetaTags = () => (
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100063811592941"
           ],
-          "logo": "https://naprawaprzemysl.pl/share.png",
-          "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
+          "logo": "https://res.cloudinary.com/difc0i71u/image/upload/v1733118542/Serwis/naprawa-suszarki.webp",
+          "image": { "@type": "ImageObject", "url": "https://res.cloudinary.com/difc0i71u/image/upload/v1733118542/Serwis/naprawa-suszarki.webp", "width": 700, "height": 865 },
           "priceRange": "$$$",
           "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
           "paymentAccepted": "Cash",

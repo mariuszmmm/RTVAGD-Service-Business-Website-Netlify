@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const WashingMachineServiceMetaTags = () => (
   <Head>
-    <title>Naprawa pralek ✔️ Serwis Przemyśl 📞tel. 790-258-612</title>
+    <title>Naprawa pralek ✔️ Serwis Przemyśl ☎️790-258-612</title>
 
     <link rel="canonical" href="https://naprawaprzemysl.pl/naprawa-pralek/" />
 
@@ -15,7 +15,7 @@ const WashingMachineServiceMetaTags = () => (
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Naprawa pralek ✔️ Serwis Przemyśl 📞tel. 790-258-612"
+      content="Naprawa pralek ✔️ Serwis Przemyśl ☎️790-258-612"
     />
     <meta
       property="og:description"
@@ -23,20 +23,22 @@ const WashingMachineServiceMetaTags = () => (
     />
     <meta property="og:url" content="https://naprawaprzemysl.pl/naprawa-pralek/" />
     <meta property="og:site_name" content="Serwis RTV i AGD - naprawa pralek" />
-    <meta property="og:updated_time" content="2024-11-27T03:38:11+01:00" />
-    <meta property="og:image" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:secure_url" content="https://naprawaprzemysl.pl/share.png" />
-    <meta property="og:image:width" content="931" />
-    <meta property="og:image:height" content="497" />
-    <meta property="og:image:alt" content="Serwis RTV i AGD" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:updated_time" content="2024-12-06T12:43:00+01:00" />
+    <meta property="og:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-pralki.webp" />
+    <meta property="og:image:secure_url" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-pralki.webp" />
+    <meta property="og:image:width" content="599" />
+    <meta property="og:image:height" content="729" />
+    <meta property="og:image:alt" content="naprawa pralek" />
+    <meta property="og:image:type" content="image/webp" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Naprawa pralek ✔️ Serwis Przemyśl 📞tel. 790-258-612" />
+    <meta name="twitter:title" content="Naprawa pralek ✔️ Serwis Przemyśl ☎️790-258-612" />
     <meta name="twitter:description" content="Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś." />
-    <meta name="twitter:image" content="https://naprawaprzemysl.pl/share.png" />
+    <meta name="twitter:image" content="https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-pralki.webp" />
 
     <meta name="keywords" content="naprawa pralek, serwis pralek Przemyśl, naprawa pralek AGD, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki, naprawa sprzętu AGD" />
+
+    <meta name="apple-mobile-web-app-title" content="Serwis RTV i AGD - naprawa pralek" />
 
     <script type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -78,8 +80,8 @@ const WashingMachineServiceMetaTags = () => (
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100063811592941"
           ],
-          "logo": "https://naprawaprzemysl.pl/share.png",
-          "image": { "@type": "ImageObject", "url": "https://naprawaprzemysl.pl/share.png", "width": 931, "height": 497 },
+          "logo": "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-pralki.webp",
+          "image": { "@type": "ImageObject", "url": "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/naprawa-pralki.webp", "width": 599, "height": 729 },
           "priceRange": "$$$",
           "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
           "paymentAccepted": "Cash",
