@@ -18,4 +18,4 @@
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
   ErrorDocument 404 /404.html
-</IfModule>z
+</IfModule>

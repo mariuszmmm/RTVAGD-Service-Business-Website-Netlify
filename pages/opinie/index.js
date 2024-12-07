@@ -1,7 +1,7 @@
 import { Section } from "../../components/common/Section";
 import { Title } from "../../components/common/Title";
 import { ReviewsContainer } from "../../styles/opinie/OpinieStyled";
-import ReviewsItem from "./ReviewsItem";
+import ReviewsItem from "../../components/ReviewsItem";
 import { serwis } from "../../utils/serwis";
 import { StyledButtonLink } from "../../components/common/Buttons";
 import ReviewsMetaTags from "./ReviewsMetaTags";

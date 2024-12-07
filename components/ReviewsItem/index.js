@@ -1,13 +1,13 @@
-import Time from "../../../components/common/Time";
-import { Stars } from "../../../components/common/Stars";
+import Time from "../common/Time";
+import { Stars } from "../common/Stars";
 import {
   ItemWrapper,
   Header,
   Photo,
   Author,
   Data,
-} from "../../../styles/opinie/ReviewsItem/ReviewsItemStyled";
-import { Text } from "../../../components/common/Text";
+} from "../../styles/opinie/ReviewsItem/ReviewsItemStyled";
+import { Text } from "../common/Text";
 import getContentForReview from "./getContentForReview";
 
 const ReviewsItem = ({ item }) => {

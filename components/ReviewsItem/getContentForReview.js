@@ -6,12 +6,15 @@ const getContentForReview = (text) => {
   };
 
   const forWashtMachine = ['pralka', 'pralki', 'pralkę', 'pralką', 'pralkom', 'pralkach', 'pralkami'];
+  const forDryer = ['suszarka', 'suszarki', 'suszarkę', 'suszarką', 'suszarkom', 'suszarkami', 'suszarkach'];
   const forDishwasher = ['zmywarka', 'zmywarki', 'zmywarkę', 'zmywarką', 'zmywarkom', 'zmywarkami', 'zmywarkach'];
   const forCoffeeMachine = ['ekspres', 'ekspresy', 'ekspresów', 'ekspresie', 'ekspresem', 'ekspresom', 'ekspresami', 'ekspresach'];
   const forTV = ['telewizor', 'telewizory', 'telewizorów', 'telewizorze', 'telewizorem', 'telewizorze', 'telewizorom', 'telewizorami', 'telewizorach'];
 
   if (forWashtMachine.some((keyword) => text.toLowerCase().includes(keyword))) {
     return "Naprawa pralek";
+  } else if (forDryer.some((keyword) => text.toLowerCase().includes(keyword))) {
+    return "Naprawa suszarek";
   } else if (forDishwasher.some((keyword) => text.toLowerCase().includes(keyword))) {
     return "Naprawa zmywarek";
   } else if (forCoffeeMachine.some((keyword) => text.toLowerCase().includes(keyword))) {
