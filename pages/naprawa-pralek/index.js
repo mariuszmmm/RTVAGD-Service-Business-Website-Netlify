@@ -7,16 +7,24 @@ import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import WashingMachineServiceMetaTags from "./WashingMachineServiceMetaTags"
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
+import { Emoticon } from '../../components/common/Emoticon';
 
 const WashingMachineService = () => (
   <Section>
     <WashingMachineServiceMetaTags />
     <Container>
-      <Title><span>✔ </span>Naprawa pralek</Title>
+      <Title>
+        <span>✔ </span>Naprawa pralek
+        <Emoticon
+          src={imageUrls.emoticon}
+          alt="emoticon"
+          loading="lazy"
+        />
+      </Title>
       <main>
         <ServiceItem>
           <Photo src={imageUrls.pralka} alt="naprawa pralek" loading='lazy' />
-          <SubTitle>Kompleksowe usługi naprawy pralek wszystkich marek</SubTitle>
+          <SubTitle>Kompleksowe usługi naprawy pralek wszystkich marek.</SubTitle>
           <Text>
             Zepsuta pralka? Nie&nbsp;martw&nbsp;się! Oferuję fachową diagnostykę i&nbsp;naprawę pralek, które przestały działać.
             Niezależnie od&nbsp;problemu problem - czy to brak poboru wody, wycieki, usterki bębna czy niepokojące dźwięki - szybko zidentyfikuję i&nbsp;naprawię usterkę.

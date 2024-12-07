@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const Emoticon = styled.img`
-  grid-area: photo;
-  width: clamp(1.8rem, 4vw, 2.8rem);
-  height: clamp(1.8rem, 4vw, 2.8rem);
+  width: clamp(2.8rem, 5vw, 4.8rem);
+  height: clamp(2.8rem, 5vw, 4.8rem);
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px ;
+  margin-bottom: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-    display: none;
+    opacity: 0;
   }
 `;

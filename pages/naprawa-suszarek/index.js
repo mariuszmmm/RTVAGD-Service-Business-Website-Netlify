@@ -7,16 +7,24 @@ import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import DryerServiceMetaTags from "./DryerServiceMetaTags"
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
+import { Emoticon } from '../../components/common/Emoticon';
 
 const DryerService = () => (
   <Section>
     <DryerServiceMetaTags />
     <Container>
-      <Title><span>✔ </span>Naprawa suszarek</Title>
+      <Title>
+        <span>✔ </span>Naprawa suszarek
+        <Emoticon
+          src={imageUrls.emoticon}
+          alt="emoticon"
+          loading="lazy"
+        />
+      </Title>
       <main>
         <ServiceItem>
           <Photo src={imageUrls.suszarka} alt="naprawa suszarek" loading='lazy' />
-          <SubTitle>Fachowa naprawa suszarek wszystkich marek i&nbsp;modeli</SubTitle>
+          <SubTitle>Fachowa naprawa suszarek wszystkich marek i&nbsp;modeli.</SubTitle>
           <Text>
             Czy Twoja suszarka do&nbsp;prania przestała działać? A&nbsp;może nie suszy ubrań tak skutecznie jak dawniej, wydaje dziwne dźwięki lub&nbsp;wyświetla błędy?
             Nie musisz kupować nowego urządzenia –&nbsp;jestem tutaj, aby pomóc! Specjalizuję się w&nbsp;naprawie różnego rodzaju suszarek: zarówno tych z&nbsp;pompą ciepła, jak i&nbsp;tradycyjnych modeli kondensacyjnych czy wentylacyjnych.

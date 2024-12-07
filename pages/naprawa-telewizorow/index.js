@@ -7,15 +7,23 @@ import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import TelevisionServiceMetaTags from "./TelevisionServiceMetaTags"
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
+import { Emoticon } from '../../components/common/Emoticon';
 
 const TelevisionService = () => (
   <Section>
     <TelevisionServiceMetaTags />
     <Container>
-      <Title><span>✔ </span>Naprawa telewizorów</Title>
+      <Title>
+        <span>✔ </span>Naprawa telewizorów
+        <Emoticon
+          src={imageUrls.emoticon}
+          alt="emoticon"
+          loading="lazy"
+        />
+      </Title>
       <main>
         <ServiceItem>
-          <SubTitle>Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek</SubTitle>
+          <SubTitle>Fachowa naprawa telewizorów wszystkich typów i&nbsp;marek.</SubTitle>
           <Photo src={imageUrls.telewizor} alt="naprawa telewizorow" loading='lazy' />
           <Text>
             Czy Twój telewizor przestał działać? Niezależnie od&nbsp;tego, czy&nbsp;to&nbsp;brak&nbsp;obrazu, brak&nbsp;dźwięku, problemy z&nbsp;zasilaniem czy&nbsp;uszkodzone matryca -&nbsp;jestem tutaj, aby&nbsp;przywrócić Twój telewizor do&nbsp;pełnej sprawności.

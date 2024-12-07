@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import StarIcon from "../../../../public/images/star.svg";
+import StarIcon from "../../../../public/icons/star.svg";
 
 export const StarsWrapper = styled.div`
   display: flex;

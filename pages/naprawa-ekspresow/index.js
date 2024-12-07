@@ -7,12 +7,20 @@ import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import CoffeeMachineServiceMetaTags from "./CoffeeMachineServiceMetaTags"
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
+import { Emoticon } from '../../components/common/Emoticon';
 
 const CoffeeMachineService = () => (
   <Section>
     <CoffeeMachineServiceMetaTags />
     <Container>
-      <Title><span>✔ </span>Naprawa ekspresów do kawy</Title>
+      <Title>
+        <span>✔ </span>Naprawa ekspresów do kawy
+        <Emoticon
+          src={imageUrls.emoticon}
+          alt="emoticon"
+          loading="lazy"
+        />
+      </Title>
       <main>
         <ServiceItem>
           <SubTitle>Profesjonalna naprawa ekspresów do&nbsp;kawy,<br />niezależnie od&nbsp;marki i&nbsp;modelu.</SubTitle>

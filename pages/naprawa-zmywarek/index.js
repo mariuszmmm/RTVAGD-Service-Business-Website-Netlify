@@ -7,16 +7,24 @@ import { Text } from '../../components/common/Text';
 import { imageUrls } from '../../utils/urls';
 import DishwasherServiceMetaTags from './DishwasherServiceMetaTags';
 import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
+import { Emoticon } from '../../components/common/Emoticon';
 
 const DishwasherService = () => (
   <Section>
     <DishwasherServiceMetaTags />
     <Container>
-      <Title><span>✔ </span>Naprawa zmywarek</Title>
+      <Title>
+        <span>✔ </span>Naprawa zmywarek
+        <Emoticon
+          src={imageUrls.emoticon}
+          alt="emoticon"
+          loading="lazy"
+        />
+      </Title>
       <main>
-        <ServiceItem >
+        <ServiceItem>
           <Photo src={imageUrls.zmywarka} alt="naprawa zmywarek" loading='lazy' />
-          <SubTitle>Specjalistyczna naprawa zmywarek różnych marek</SubTitle>
+          <SubTitle>Specjalistyczna naprawa zmywarek różnych marek.</SubTitle>
           <Text>
             Zmywarka to jedno z&nbsp;najważniejszych urządzeń w&nbsp;każdej kuchni,
             a&nbsp;jej awaria może znacząco utrudnić codzienne życie.

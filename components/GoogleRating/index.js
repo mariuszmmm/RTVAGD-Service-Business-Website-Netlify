@@ -1,4 +1,5 @@
 import { Stars } from "../../components/common/Stars";
+import { imageUrls } from "../../utils/urls";
 import { ImageWrapper, StyledLink, Text, Wrpper } from "./styled";
 import Image from "next/image";
 
@@ -7,8 +8,9 @@ export const GoogleRating = ({ rating, hidden }) => (
     <StyledLink href="/opinie/">
       <ImageWrapper>
         <Image
-          src="/images/logoGoogle.png"
+          src={imageUrls.google}
           alt="google logo"
+          loading="lazy"
           fill
         />
       </ImageWrapper>
