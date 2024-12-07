@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const TeamImage = styled.img`
+export const Team = styled.div`
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   width: 300px;
-  max-width: 75vw;
-  border: 1px solid ${({ theme }) => theme.color.border};
+  aspect-ratio: 255/170;
   border-radius: 10px;
-  margin: 0;
-  margin-top: 30px;
+  margin-top: 80px;
 `;

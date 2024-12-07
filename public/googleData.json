@@ -1,0 +1,49 @@
+{
+  "reviews": [
+    {
+      "author_name": "Aleksandra Czyż",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIDlP_RboKpy9gzWBnSsN5OyiMNNVCKxKF2RLDQuyxWIlkb5Q=s128-c0x00000000-cc-rp-mo",
+      "text": "Mój ekspres do kawy nagle przestał działać, co było dla mnie sporym kłopotem. Na szczęście, po raz kolejny mogłam liczyć na serwis RTV AGD prowadzony przez Pana Piotra. Już wcześniej naprawiał mi pralkę i wtedy również byłam bardzo zadowolona z jego profesjonalizmu i podejścia.\nTym razem Pan Piotr szybko zdiagnozował problem z ekspresem i sprawnie przeprowadził naprawę. Cały proces był błyskawiczny i bezproblemowy. Ekspres działa teraz bez zarzutu, a ja znów mogę cieszyć się ulubioną kawą. Zdecydowanie polecam ten serwis RTV AGD każdemu, kto potrzebuje fachowej i rzetelnej naprawy sprzętu AGD, czy to ekspresu do kawy, czy pralki! Pan Piotr to prawdziwy specjalista, któremu można zaufać.",
+      "rating": 5,
+      "time": 1754754731
+    },
+    {
+      "author_name": "Edward Sobala",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKq06dKHCnT52sR0WocCquSh3odW0oGk1juHiqw93Q_wq_fnw=s128-c0x00000000-cc-rp-mo",
+      "text": "Sprzęt naprawiony szybko i profesjonalnie - działa jak nowy. Polecam z czystym sumieniem!",
+      "rating": 5,
+      "time": 1754064131
+    },
+    {
+      "author_name": "piotrek zych",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLW8bduEpygNEvP8Qnz7uN9d3ogvYJgKlghKiq6OHiVUlBtUA=s128-c0x00000000-cc-rp-mo",
+      "text": "Polecam , gość profesjonalnie podszedł do usterki. Szybko i sprawnie🙂",
+      "rating": 5,
+      "time": 1754055301
+    },
+    {
+      "author_name": "Mariusz Cieśla",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKfwSGWEC62zGRP-GUu_ecDVZB-Yxra6UWt-izLuOx0j2sxLw=s128-c0x00000000-cc-rp-mo-ba4",
+      "text": "Płyta indukcyjna naprawiona w szybkim czasie. Trafna diagnoza i niski koszt. Jeśli coś nam się zepsuje na pewno wrócę.",
+      "rating": 5,
+      "time": 1749651424
+    },
+    {
+      "author_name": "Meggie",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI05VioZGu4QKwnnJyHY0btTNx_xViSAcuBgeQtlW2Rd0JV7g=s128-c0x00000000-cc-rp-mo",
+      "text": "Pan Piotr, solidny i co najwazniesze skuteczny. Szybko zdiagnozowany problem w zmywarce.  W przyszłości skorzystam ponownie, jeśli będzie taka konieczność.",
+      "rating": 5,
+      "time": 1747708972
+    },
+    {
+      "author_name": "Marta M",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKRA0X6LgORfbVanU44l8XjOW-IJJUIFHWTHd7RQiu8Db4dfQ=s128-c0x00000000-cc-rp-mo",
+      "text": "Z czystym sumieniem polecam serwis za profesjonalne czyszczenie mojego ekspresu do kawy! Usługa została wykonana szybko i z najwyższą starannością. Ekspres działa teraz jak nowy, a smak kawy zyskał zupełnie nową jakość. Fachowa obsługa, miły kontakt i konkurencyjne ceny sprawiają, że na pewno wrócę przy kolejnych potrzebach. Serdecznie dziękuję za tak świetną pracę!",
+      "rating": 5,
+      "time": 1726153581
+    }
+  ],
+  "rating": 4.7,
+  "user_ratings_total": 79,
+  "update_time": "2025-10-14 00:01:34"
+}
