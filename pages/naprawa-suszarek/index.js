@@ -1,54 +1,171 @@
-import { Section } from '../../components/common/Section';
 import { Container } from '../../components/common/Container';
+import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
-import { ServiceItem, Photo } from '../../styles/naprawa-suszarek/NaprawaSuszarekStyled';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Text } from '../../components/common/Text';
-import { imageUrls } from '../../utils/urls';
-import DryerServiceMetaTags from "./DryerServiceMetaTags"
-import { getSharedStaticProps } from '../../utils/getSharedStaticProps';
-import { Emoticon } from '../../components/common/Emoticon';
+import { appUrls, imageUrls } from '../../utils/urls';
+import MetaTags from '../../components/common/MetaTags';
+import { getDataForMetaTags } from '../../utils/dataForMetaTags';
+import { ButtonLink } from '../../components/common/ButtonLink';
+import { serwis } from '../../utils/serwis';
+import Image from 'next/image';
+import { StyledPhoto } from '../../components/common/StyledPhoto';
+import { StyledText } from '../../components/common/Text/styled';
+import { HeroText } from '../../components/common/Hero/HeroText';
+import { StyledLink } from '../../components/common/StyledLink';
+import { getGoogleData } from '../../utils/getGoogleData';
+import { Break } from '../../components/Break';
+import { getImageParameters } from '../../utils/getImageParameters';
 
-const DryerService = () => (
-  <Section>
-    <DryerServiceMetaTags />
-    <Container>
-      <Title>
-        <span>✔ </span>Naprawa suszarek
-        <Emoticon
-          src={imageUrls.emoticon}
-          alt="emoticon"
-          loading="lazy"
-        />
-      </Title>
-      <main>
-        <ServiceItem>
-          <Photo src={imageUrls.suszarka} alt="naprawa suszarek" loading='lazy' />
-          <SubTitle>Fachowa naprawa suszarek wszystkich marek i&nbsp;modeli.</SubTitle>
-          <Text>
-            Czy Twoja suszarka do&nbsp;prania przestała działać? A&nbsp;może nie suszy ubrań tak skutecznie jak dawniej, wydaje dziwne dźwięki lub&nbsp;wyświetla błędy?
-            Nie musisz kupować nowego urządzenia –&nbsp;jestem tutaj, aby pomóc! Specjalizuję się w&nbsp;naprawie różnego rodzaju suszarek: zarówno tych z&nbsp;pompą ciepła, jak i&nbsp;tradycyjnych modeli kondensacyjnych czy wentylacyjnych.
-            Oferuję kompleksowe usługi, dzięki którym Twoja suszarka odzyska pełną funkcjonalność w&nbsp;krótkim czasie.
-            <br />
-            Dzięki wieloletniemu doświadczeniu oraz&nbsp;nowoczesnym narzędziom diagnostycznym szybko wykrywam usterki i&nbsp;skutecznie je&nbsp;usuwam.
-            Niezależnie od&nbsp;problemu –&nbsp;czy to awaria grzałki, filtra, układu wentylacji czy elektronicznego sterowania –&nbsp;znajdę rozwiązanie, które pozwoli Ci znów cieszyć się suchymi i&nbsp;pachnącymi ubraniami.
-          </Text>
-        </ServiceItem>
-        <SubTitle as="h3">Dlaczego warto skorzystać z&nbsp;moich usług?</SubTitle>
-        <Text as="ul">
-          <li><h3>Szybka diagnoza: </h3>Błyskawicznie identyfikuję przyczynę awarii, abyś mógł szybko wrócić do&nbsp;codziennych obowiązków.</li>
-          <li><h3>Wysoka jakość naprawy: </h3>Korzystam wyłącznie z&nbsp;oryginalnych części zamiennych, co&nbsp;gwarantuje niezawodność i&nbsp;długotrwałą sprawność Twojej suszarki.</li>
-          <li><h3>Zadowolenie klientów: </h3> Moje usługi są&nbsp;rekomendowane przez wielu zadowolonych klientów, którzy cenią rzetelność, terminowość i&nbsp;indywidualne podejście.</li>
-          <li><h3>Elastyczność: </h3>Oferuję naprawy w warsztacie lub z dojazdem do klienta, w godzinach dostosowanych do Twoich potrzeb.</li>
-        </Text>
-        <Text>
-          Nie pozwól, aby niesprawna suszarka zakłóciła Twoją codzienną rutynę. Skontaktuj się ze&nbsp;mną już dziś, a&nbsp;przywrócę Twoje urządzenie do&nbsp;pełnej sprawności –&nbsp;szybko, skutecznie i&nbsp;profesjonalnie!
-        </Text>
-      </main>
-    </Container>
-  </Section>
-);
+const DryerService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
+  const path = appUrls.naprawa_suszarek;
 
-export const getStaticProps = getSharedStaticProps;
+  // console.log("dataForMetaTags", dataForMetaTags)
+
+  return (
+    <>
+      <MetaTags
+        path={path}
+        page={dataForMetaTags}
+        rating={rating}
+        ratingsTotal={ratingsTotal}
+        reviews={reviews}
+      />
+
+      <Container>
+        <Title>Naprawa Suszarek w&nbsp;Przemyślu</Title>
+
+        <Section>
+          <StyledPhoto
+            $width={dataForMetaTags.metaTags.imageWidth}
+            $height={dataForMetaTags.metaTags.imageHeight}>
+            <Image
+              src={imageUrls.suszarka}
+              title={dataForMetaTags.metaTags.imageTitle}
+              alt={dataForMetaTags.metaTags.imageAlt}
+              priority
+              fill
+              // srcSet={`${imageUrls.suszarka_300} 500w,
+              // ${imageUrls.suszarka} 1000w`}
+
+              // sizes="(max-width: 500px) 500px, 1000px"
+              sizes="(max-width: 768px) 59vw, 30vw"
+
+            />
+          </StyledPhoto>
+        </Section>
+
+        <Section>
+          <SubTitle>Naprawa Suszarek Przemyśl – Pełna Diagnostyka i Serwis</SubTitle>
+          <StyledText>
+            Gdy suszarka do ubrań odmawia posłuszeństwa, a mokre pranie czeka na wysuszenie, domowe obowiązki potrafią się skomplikować. Jeśli właśnie spotkała Cię taka sytuacja, jestem do Twojej dyspozycji. Specjalizuję się w serwisie i naprawie suszarek do prania na terenie Przemyśla i okolic. Niezależnie od tego, czy masz nowoczesny model z pompą ciepła, kondensacyjny, czy tradycyjny – znam je od podszewki. Moja praca to nie tylko szybka diagnoza, ale przede wszystkim skuteczna naprawa suszarek do ubrań, która przywróci Twojemu urządzeniu pełną sprawność. Zaufaj mojemu doświadczeniu – Twoja suszarka szybko wróci do formy!
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>Częste problemy z Suszarkami do Prania – Rozwiązania</SubTitle>
+          <StyledText as="ul" $cross>
+            <li><strong>Bęben nie obraca się</strong> – może wynikać z zerwanego paska napędowego, zużytych łożysk lub uszkodzonego silnika. Dokładna kontrola elementów napędu pozwala zidentyfikować problem.</li>
+            <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> – przyczyną mogą być czujnik wilgotności, przegrzewanie lub moduł sterujący. Sprawdzam układ elektroniczny i termiczne zabezpieczenia.</li>
+            <li><strong>Niewystarczające suszenie</strong> – często efekt niedrożnego filtra kłaczków lub przewodu wentylacyjnego. W suszarkach kondensacyjnych analizuję stan skraplacza oraz pojemnika na wodę.</li>
+            <li><strong>Przecieki wody</strong> – w modelach kondensacyjnych może to być uszkodzony zbiornik lub wąż spustowy; w innych – nieszczelne elementy. Sprawdzam szczelność układów.</li>
+            <li><strong>Kody błędów na wyświetlaczu</strong> – weryfikuję komunikaty, diagnozuję usterki czujników, modułów i ich połączeń.</li>
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>Dlaczego wybrać {serwis.shortName} do Naprawy Suszarki?</SubTitle>
+          <StyledText as="ul" $check>
+            <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
+            <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
+            <li><strong>Obsługa szerokiego zakresu marek</strong>: Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, Amica, AEG, Candy, Hotpoint-Ariston, LG, Indesit, Zanussi i inne – potrafię dostosować naprawę do specyfiki modelu.</li>
+            <li><strong>Sprawdzone części i metody</strong>: stosuję części o parametrach odpowiadających oryginalnym lub równoważnym. Dbam o czystość filtrów i przewodów, by przywrócić maksymalną wydajność.</li>
+            <li><strong>Przejrzystość kosztów</strong>: po diagnostyce na miejscu przedstawiam orientacyjną wycenę, byś znał zakres i koszty naprawy przed podjęciem decyzji.</li>
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>Jak działam – proces Serwisu Suszarek</SubTitle>
+          <StyledText as="ol" >
+            <li><strong>Kontakt i opis usterki</strong>: krótka rozmowa telefoniczna lub wiadomość e-mail z opisem symptomów i modelem urządzenia.</li>
+            <li><strong>Diagnostyka na miejscu</strong>: pełne sprawdzenie suszarki, testy funkcjonalne i analiza ewentualnych kodów błędów.</li>
+            <li><strong>Naprawa lub wymiana części</strong>: wymieniam tylko te podzespoły, które faktycznie są niesprawne, stosując części o potwierdzonej jakości.</li>
+            <li><strong>Test suszenia</strong>: wykonuję krótki cykl testowy, by zweryfikować poprawność działania, szczelność i efektywność odprowadzania wilgoci.</li>
+            <li><strong>Wskazówki eksploatacyjne</strong>: doradzam, jak dbać o suszarkę (czyszczenie filtra, kontrola układu wentylacyjnego/ skraplacza), aby wydłużyć czas bezawaryjnej pracy.</li>
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>FAQ – najczęściej zadawane pytania</SubTitle>
+          <StyledText as="ul" $list>
+            {dataForMetaTags.schema.faqPage.mainEntity.map((item, index) => (
+              <li key={index}>
+                <h3>{item.name}</h3>
+                <StyledText>{item.acceptedAnswer.text}</StyledText>
+              </li>
+            ))}
+          </StyledText >
+        </Section>
+
+        <Section>
+          <HeroText>
+            <strong>Potrzebujesz szybkiej i fachowej Naprawy Suszarki?<Break /> Skontaktuj się, podając objawy usterki – ustalimy optymalny termin wizyty i zakres prac.</strong>
+          </HeroText>
+          <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa suszarek w Przemyślu' >
+            Zadzwoń 📞 {serwis.phone.formatted}
+          </ButtonLink>
+        </Section>
+
+        <Section>
+          <SubTitle>Obsługiwany obszar</SubTitle>
+          <StyledText>
+            Serwis Suszarek w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt w celu ustalenia dogodnej wizyty.
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>Sprawdź też inne usługi</SubTitle>
+          <StyledText as="ul" $list>
+            <li>
+              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
+            </li> */}
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li> */}
+          </StyledText >
+        </Section>
+
+      </Container>
+    </>
+  );
+};
+
+// export const getStaticProps = async () => {
+//   const data = await getGoogleData();
+
+//   return { props: { ...data || null } };
+// };
+
+export const getStaticProps = async () => {
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters(["naprawa_suszarek"]),
+    getDataForMetaTags("naprawa_suszarek")
+  ]);
+
+  return {
+    props: {
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
+      dataForMetaTags: dataForMetaTags || null,
+    },
+  };
+};
 
 export default DryerService;
