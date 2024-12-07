@@ -43,7 +43,8 @@ $data = [
   'rating' => $rating,
   'update_time' => date('Y-m-d H:i:s')
 ];
-file_put_contents('reviews.json', json_encode($data));
+
+file_put_contents('updatedReviews.json', json_encode($data));
 
 echo json_encode([
   'message' => 'Reviews updated successfully',
