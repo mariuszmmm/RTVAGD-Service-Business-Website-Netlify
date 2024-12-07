@@ -47,30 +47,4 @@ export const serwis = {
       "time": 1671176883,
     }
   ],
-  pricing: [
-    {
-      name: "Naprawa pralki",
-      price: 100,
-    },
-    {
-      name: "Naprawa zmywarki",
-      price: 100,
-    },
-    {
-      name: "Naprawa ekspresu do kawy",
-      price: 120,
-    },
-    {
-      name: "Naprawa telewizora",
-      price: 150,
-    },
-    {
-      name: "Serwis i konserwacja",
-      price: 80,
-    },
-    {
-      name: "Konsultacje i doradztwo",
-      price: 50,
-    },
-  ],
 };

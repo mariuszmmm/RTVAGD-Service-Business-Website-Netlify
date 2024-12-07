@@ -65,9 +65,6 @@ const Header = ({ rating }) => {
               </StyledLink>
               <SubNav showSubNav={showSubNav} setShowSubNav={setShowSubNav} />
             </ListItem>
-            {/* <ListItem>
-              <StyledLink href="/cennik" $active={pathname === "/cennik/"}>Cennik</StyledLink>
-            </ListItem> */}
             <ListItem>
               <StyledLink href="/opinie" $active={pathname === "/opinie/"}>Opinie</StyledLink>
             </ListItem>
