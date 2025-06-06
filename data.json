@@ -1,18 +1,18 @@
 {
   "reviews": [
     {
+      "author_name": "Renata Łącka",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWlFURJRSaYjV7dHJlEv7n7buXTIzfl_ZzKcW31HyT0GUh2ljLt=s128-c0x00000000-cc-rp-mo",
+      "text": "Pan bardzo miły. Krótki czas oczekiwania, szybka naprawa. Polecam bardzo",
+      "rating": 5,
+      "time": 1748461401
+    },
+    {
       "author_name": "Meggie",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI05VioZGu4QKwnnJyHY0btTNx_xViSAcuBgeQtlW2Rd0JV7g=s128-c0x00000000-cc-rp-mo",
       "text": "Pan Piotr, solidny i co najwazniesze skuteczny. Szybko zdiagnozowany problem w zmywarce.  W przyszłości skorzystam ponownie, jeśli będzie taka konieczność.",
       "rating": 5,
       "time": 1747708972
-    },
-    {
-      "author_name": "Mirosław “Kolah” Kolczyk",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVNbt9GusKYo6aNlqJDsy-2USqmbYJAKH8RuBvNZp8urXmTsgCY=s128-c0x00000000-cc-rp-mo",
-      "text": "Szybka diagnoza, błyskawiczna naprawa. Odkurzacz znowu działa! Polecam. :)",
-      "rating": 5,
-      "time": 1747320429
     },
     {
       "author_name": "egon920",
@@ -38,5 +38,5 @@
   ],
   "rating": 4.6,
   "user_ratings_total": 68,
-  "update_time": "2025-06-04T05:35:43.690Z"
+  "update_time": "2025-06-06 05:16:09"
 }
