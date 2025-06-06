@@ -1,0 +1,14 @@
+{
+  "reviews": [
+    {
+      "rating": 5,
+      "text": "Pan Piotr, solidny i co najwazniesze skuteczny. Szybko zdiagnozowany problem w zmywarce.  W przysz\u0142o\u015bci skorzystam ponownie, je\u015bli b\u0119dzie taka konieczno\u015b\u0107.",
+      "author_name": "Meggie",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI05VioZGu4QKwnnJyHY0btTNx_xViSAcuBgeQtlW2Rd0JV7g=s128-c0x00000000-cc-rp-mo",
+      "time": 1747708972
+    }
+  ],
+  "rating": 4.6,
+  "user_ratings_total": 66,
+  "update_time": "2025-05-01 12:34:56"
+}
