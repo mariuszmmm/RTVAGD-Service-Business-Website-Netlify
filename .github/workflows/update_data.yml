@@ -2,9 +2,6 @@ name: Aktualizuj opinie z Google
 
 # Uruchamiaj co godzinę (UTC). Jeśli chcesz inny interwał, zmodyfikuj cron.
 on:
-  push:
-    branches:
-      - serwis-for-netlify
   schedule:
     - cron: "0 */12 * * *" # co 12 godzin
       # - cron: "0 */1 * * *"  # co 1 godzin
@@ -62,5 +59,5 @@ jobs:
             echo "Brak zmian w data.json – nic do commitowania."
           else
             git commit -m "Automatyczna aktualizacja danych: $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git push origin serwis-for-netlify
+            git push
           fi
