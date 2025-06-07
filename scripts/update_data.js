@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 
-// Wartość klucza Google API pobieramy z ENV (konfiguracja w GitHub Secrets)
+// Wartość klucza Google API pobieramy z ENV (konfiguracja w GitHub Secrets) // test
 const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 // Przykładowe ID miejsca (place_id) lub inna konfiguracja
 const PLACE_ID = 'ChIJrWDpGyR_O0cRpvj4OFLVPPw';
