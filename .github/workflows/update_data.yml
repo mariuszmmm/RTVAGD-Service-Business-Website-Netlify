@@ -1,19 +1,19 @@
 name: Update data.json
 
-# Uruchamiaj co godzinę (UTC). Jeśli chcesz inny interwał, zmodyfikuj cron.
 on:
   schedule:
+    # - cron: "0 */10 * * *"   # co 10 min
+    # - cron: "0 */1 * * *"    # co 1 godzin
     - cron: "0 */12 * * *" # co 12 godzin
-      # - cron: "0 */1 * * *"  # co 1 godzin
-      # - cron: "0 */10 * * *" # co 10 min
+    # - cron: "0 0 * * *"      # co dziennie o północy
 
-  workflow_dispatch: # umożliwia ręczne uruchomienie
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-opinie:
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # potrzebujemy całej historii, by móc commity pushować
+          fetch-depth: 0
 
       # 2. Ustaw Node.js
       - name: Setup Node.js 20
@@ -34,11 +34,11 @@ jobs:
         run: npm install
 
       # 4. Przekazanie Google API Key jako zmiennej ENV
-      - name: Ustaw zmienną GOOGLE_API_KEY
+      - name: Ustaw zmienną NEXT_PUBLIC_GOOGLE_API_KEY
         run: |
           echo "NEXT_PUBLIC_GOOGLE_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_API_KEY }}" >> $GITHUB_ENV
 
-      # 5. Uruchomienie skryptu Node.js (aktualizacja opinie.json)
+      # 5. Uruchomienie skryptu Node.js (aktualizacja data.json)
       - name: Uruchom update_data.js
         run: npm run update-data
 
@@ -49,23 +49,11 @@ jobs:
           echo "Zawartość data.json:"
           cat data.json || echo "data.json nie istnieje"
 
-      # 6. Commit i push zmian w opinie.json (jeśli zaszły)
+      # 6. Commit i push zmian w data.json (jeśli zaszły)
       - name: Commit i Push zmian w data.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
-
-          # echo "=== 🧾 Obecna wersja data.json z repo ==="
-          # git show HEAD:data.json || echo "Plik nie istnieje w repozytorium."
-
-          # echo "=== 🆕 Nowa wersja data.json (po aktualizacji) ==="
-          # cat data.json || echo "Plik nie został wygenerowany."
-
-          # echo "=== ➕ Dodajemy data.json do stage'a ==="
-          git add data.json
-
-          # echo "=== 🔍 Różnice staged (git diff --cached) ==="
-          # git diff --cached || echo "Brak różnic."
 
           if git diff --cached --quiet; then
             echo "Brak zmian w data.json – nic do commitowania."
