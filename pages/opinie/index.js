@@ -12,6 +12,8 @@ import { getData } from "../../utils/getData";
 const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
   const path = useRouter().asPath;
 
+  console.log("Opinie - reviews:", reviews);
+
   return (
     <>
       <MetaTags
@@ -50,6 +52,8 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
 
 export const getStaticProps = async () => {
   const data = await getData();
+
+  console.log("Pobrano dane z Google API:", data);
 
   return { props: data };
 };
