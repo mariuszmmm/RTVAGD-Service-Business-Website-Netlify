@@ -53,4 +53,4 @@ export const appUrls = {
   naprawa_telewizorow: "https://naprawaprzemysl.pl/naprawa-telewizorow/",
 };
 
-export const reviewUrl = "https://naprawaprzemysl.pl/api/reviews.json";   
+export const dataUrl = "https://naprawaprzemysl.pl/data.json";   

@@ -5,8 +5,6 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { Emoticon } from '../../components/common/Emoticon';
 import { imageUrls } from '../../utils/urls';
-import { getRatingProps } from '../../utils/getRatingProps';
-import { getReviewsProps } from '../../utils/getReviewsProps';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
@@ -17,6 +15,7 @@ import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
+import { getData } from '../../utils/getData';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -37,7 +36,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
           <Emoticon>
             <Image
               src={imageUrls.logo}
-              alt=""
+              alt={serwis.shortName}
               loading="lazy"
               fill
             />
@@ -49,7 +48,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Zmywarka"
               src={imageUrls.zmywarka}
-              alt="Naprawa zmywarek Przemyśl"
+              alt="Zmywarka naprawiona w profesionalnym serwisie w Przemyślu"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.zmywarka_300} 500w,
@@ -59,10 +58,10 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
           </StyledPhoto>
 
           <SubTitle>
-            Szybka i&nbsp;rzetelna naprawa zmywarek wszystkich marek w&nbsp;Przemyślu i&nbsp;okolicach
+            Szybka i profesjonalna naprawa zmywarek w Przemyślu i okolicach
           </SubTitle>
           <StyledText>
-            Awaria zmywarki może całkowicie zaburzyć porządek w&nbsp;kuchni. Dlatego mój <strong>serwis&nbsp;zmywarek</strong> w Przemyślu oferuje szybką diagnostykę oraz fachową naprawę urządzeń wszystkich marek.<br />
+            Awaria zmywarki może całkowicie zaburzyć porządek w kuchni. Dlatego <strong>serwis zmywarek</strong> w Przemyślu oferuje kompleksową diagnostykę oraz profesjonalna naprawę urządzeń wszystkich marek.<br />
             Korzystam z&nbsp;profesjonalnych narzędzi i&nbsp;oryginalnych części zamiennych, aby&nbsp;przywrócić pełną funkcjonalność Twojej zmywarki już podczas pierwszej wizyty. Zapewniam gwarancję na wykonaną naprawę, dzięki czemu masz pewność satysfakcji i&nbsp;bezproblemowego użytkowania sprzętu. Specjalizuję się w&nbsp;serwisie i&nbsp;naprawie zmywarek marek Bosch, Electrolux, Beko oraz wielu innych, zawsze gwarantując najwyższą jakość usług i&nbsp;szybkie terminy realizacji.
           </StyledText>
         </Section>
@@ -153,17 +152,9 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 };
 
 export const getStaticProps = async () => {
-  const [ratingProps, reviewsProps] = await Promise.all([
-    getRatingProps(),
-    getReviewsProps(),
-  ]);
+  const data = await getData();
 
-  return {
-    props: {
-      ...ratingProps.props,
-      ...reviewsProps.props,
-    },
-  };
+  return { props: data };
 };
 
 export default DishwasherService;

@@ -4,11 +4,11 @@ import { Title } from '../../components/common/Title';
 import { Text } from '../../components/common/Text';
 import { Team, TeamImage } from '../../components/common/TeamImage';
 import { imageUrls } from '../../utils/urls';
-import { getRatingProps } from '../../utils/getRatingProps';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import Image from 'next/image';
+import { getData } from '../../utils/getData';
 
 const About = ({ rating, ratingsTotal }) => {
   const path = useRouter().asPath;
@@ -54,6 +54,10 @@ const About = ({ rating, ratingsTotal }) => {
   );
 };
 
-export const getStaticProps = getRatingProps;
+export const getStaticProps = async () => {
+  const data = await getData();
+
+  return { props: data };
+};
 
 export default About;

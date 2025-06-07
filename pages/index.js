@@ -1,19 +1,10 @@
 import Home from './home';
-import { getRatingProps } from '../utils/getRatingProps';
-import { getReviewsProps } from '../utils/getReviewsProps';
+import { getData } from '../utils/getData';
 
 export const getStaticProps = async () => {
-  const [ratingProps, reviewsProps] = await Promise.all([
-    getRatingProps(),
-    getReviewsProps(),
-  ]);
+  const data = await getData();
 
-  return {
-    props: {
-      ...ratingProps.props,
-      ...reviewsProps.props,
-    },
-  };
+  return { props: data };
 };
 
 export default Home;

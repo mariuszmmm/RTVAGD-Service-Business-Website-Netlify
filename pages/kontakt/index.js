@@ -1,18 +1,15 @@
-import {
-  ContactSection, ContactContainer, ContactInfo,
-  ContactText
-} from "../../styles/kontakt/KontaktStyled";
+import { ContactSection, ContactContainer, ContactInfo, ContactText } from "../../styles/kontakt/KontaktStyled";
 import { StyledLink } from "../../components/common/StyledLink";
 import { SubTitle } from "../../components/common/SubTitle";
 import { Title } from "../../components/common/Title";
 import { serwis } from "../../utils/serwis";
 import ContactForm from "./ContactForm";
 import Iframe from "./Iframe";
-import { getRatingProps } from "../../utils/getRatingProps";
 import MetaTags from "../../components/common/MetaTags";
 import { useRouter } from "next/router";
 import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { ImageContainer } from "../../styles/kontakt/KontaktStyled";
+import { getData } from "../../utils/getData";
 
 const Contact = ({ rating, ratingsTotal }) => {
   const path = useRouter().asPath;
@@ -62,6 +59,10 @@ const Contact = ({ rating, ratingsTotal }) => {
   );
 };
 
-export const getStaticProps = getRatingProps;
+export const getStaticProps = async () => {
+  const data = await getData();
+
+  return { props: data };
+};
 
 export default Contact;

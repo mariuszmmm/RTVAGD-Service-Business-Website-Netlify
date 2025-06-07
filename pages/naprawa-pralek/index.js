@@ -2,11 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Text } from '../../components/common/Text';
-import { ServiceOffer } from '../../components/common/ServiceOffer';
 import { imageUrls } from '../../utils/urls';
-import { getRatingProps } from '../../utils/getRatingProps';
-import { getReviewsProps } from '../../utils/getReviewsProps';
 import { Emoticon } from '../../components/common/Emoticon';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
@@ -19,6 +15,7 @@ import { StyledText } from '../../components/common/Text/styled';
 import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
+import { getData } from '../../utils/getData';
 
 const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -38,7 +35,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
           <Emoticon>
             <Image
               src={imageUrls.logo}
-              alt=""
+              alt={serwis.shortName}
               loading="lazy"
               fill
             />
@@ -50,7 +47,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Pralka"
               src={imageUrls.pralka}
-              alt="Naprawa pralek Przemyśl"
+              alt="Pralka naprawiona w serwisie w Przemyślu"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.pralka_300} 500w,
@@ -61,7 +58,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
           <SubTitle>Szybka i rzetelna naprawa pralek w Przemyślu i okolicach</SubTitle>
           <StyledText>
-            Awaria pralki może utrudnić codzienne obowiązki domowe. Dlatego mój <strong>serwis pralek</strong> w Przemyślu oferuje szybką diagnostykę oraz fachową naprawę urządzeń wszystkich marek.<br />
+            Awaria pralki może utrudnić codzienne obowiązki domowe. Dlatego <strong>serwis pralek</strong> w Przemyślu oferuje szybką diagnostykę oraz rzetelną naprawę pralek wszystkich marek.<br />
             Korzystam z profesjonalnych narzędzi i oryginalnych części zamiennych, aby przywrócić pełną funkcjonalność Twojej pralki już podczas pierwszej wizyty. Zapewniam gwarancję na wykonaną naprawę, dzięki czemu masz pewność satysfakcji i bezproblemowego użytkowania sprzętu. Specjalizuję się w serwisie i naprawie pralek marek Bosch, Electrolux, Samsung, Whirlpool oraz wielu innych, zawsze gwarantując najwyższą jakość usług i szybkie terminy realizacji.
           </StyledText>
         </Section>
@@ -154,17 +151,9 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 };
 
 export const getStaticProps = async () => {
-  const [ratingProps, reviewsProps] = await Promise.all([
-    getRatingProps(),
-    getReviewsProps(),
-  ]);
+  const data = await getData();
 
-  return {
-    props: {
-      ...ratingProps.props,
-      ...reviewsProps.props,
-    },
-  };
+  return { props: data };
 };
 
 export default WashingMachineService;

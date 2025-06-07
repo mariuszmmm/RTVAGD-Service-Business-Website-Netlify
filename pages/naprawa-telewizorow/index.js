@@ -5,7 +5,6 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Text } from '../../components/common/Text';
 import { ServiceOffer } from '../../components/common/ServiceOffer';
 import { imageUrls } from '../../utils/urls';
-import { getRatingProps } from '../../utils/getRatingProps';
 import { Emoticon } from '../../components/common/Emoticon';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -14,7 +13,7 @@ import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
 import Image from 'next/image';
 import { StyledPhoto } from '../../components/common/StyledPhoto';
-import { getReviewsProps } from '../../utils/getReviewsProps';
+import { getData } from '../../utils/getData';
 
 const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -101,20 +100,10 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
   );
 };
 
-// export const getStaticProps = getRatingProps;  
-
 export const getStaticProps = async () => {
-  const [ratingProps, reviewsProps] = await Promise.all([
-    getRatingProps(),
-    getReviewsProps(),
-  ]);
+  const data = await getData();
 
-  return {
-    props: {
-      ...ratingProps.props,
-      ...reviewsProps.props,
-    },
-  };
+  return { props: data };
 };
 
 export default TelevisionService;

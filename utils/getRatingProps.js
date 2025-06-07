@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { reviewUrl } from "./urls";
+import { dataUrl } from "./urls";
 export const getRatingProps = async () => {
   try {
-    const response = await axios(reviewUrl)
+    const response = await axios(dataUrl)
     const ratingsTotal = response.data?.user_ratings_total || null;
     const rating = response.data?.rating || null;
     const ratingAceptable = rating >= 4 ? rating : null

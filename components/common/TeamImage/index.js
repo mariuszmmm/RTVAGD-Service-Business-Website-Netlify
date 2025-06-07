@@ -6,7 +6,6 @@ export const Team = styled.div`
   transform: translateX(-50%);
   width: 300px;
   aspect-ratio: 255/170;
-  border: 1px solid ${({ theme }) => theme.color.border};
   border-radius: 10px;
   margin-top: 80px;
 `;

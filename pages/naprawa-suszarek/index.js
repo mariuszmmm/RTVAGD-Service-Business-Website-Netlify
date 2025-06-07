@@ -2,11 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Text } from '../../components/common/Text';
-import { ServiceOffer } from '../../components/common/ServiceOffer';
 import { imageUrls } from '../../utils/urls';
-import { getRatingProps } from '../../utils/getRatingProps';
-import { getReviewsProps } from '../../utils/getReviewsProps';
 import { Emoticon } from '../../components/common/Emoticon';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -18,6 +14,7 @@ import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { StyledText } from '../../components/common/Text/styled';
 import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledLink } from '../../components/common/StyledLink';
+import { getData } from '../../utils/getData';
 
 const DryerService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -38,7 +35,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           <Emoticon>
             <Image
               src={imageUrls.logo}
-              alt=""
+              alt={serwis.shortName}
               loading="lazy"
               fill
             />
@@ -50,7 +47,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Suszarka"
               src={imageUrls.suszarka}
-              alt="Naprawa suszarek Przemyśl"
+              alt="Suszarka naprawiona w serwisie w Przemyślu"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.suszarka_300} 500w,
@@ -60,10 +57,10 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           </StyledPhoto>
 
           <SubTitle>
-            Szybka i skuteczna naprawa suszarek wszystkich marek w Przemyślu i okolicach
+            Szybka i skuteczna naprawa suszarek w Przemyślu i okolicach
           </SubTitle>
           <StyledText>
-            Awaria suszarki może znacząco utrudnić codzienne prace domowe, zwłaszcza gdy zależy nam na szybkim wysuszeniu ubrań w sezonie jesienno-zimowym. Dlatego oferuję <strong>kompleksową diagnostykę</strong> i&nbsp;fachową naprawę suszarek wszystkich typów i&nbsp;marek w Przemyślu oraz pobliskich miejscowościach. Korzystam z&nbsp;profesjonalnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, aby już podczas pierwszej wizyty przywrócić pełną funkcjonalność Twojego sprzętu. Zapewniam gwarancję na wykonaną usługę, co daje pewność satysfakcji i&nbsp;nieprzerwanej eksploatacji urządzenia. Specjalizuję się w naprawie suszarek marek takich jak: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi.
+            Awaria suszarki może znacząco utrudnić codzienne prace domowe, zwłaszcza gdy zależy nam na szybkim wysuszeniu ubrań w sezonie jesienno-zimowym. Dlatego <strong>serwis suszarek</strong> oferuje kompleksową diagnostykę i skuteczna naprawę suszarek wszystkich typów i marek w Przemyślu oraz pobliskich miejscowościach. Korzystam z profesjonalnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, aby już podczas pierwszej wizyty przywrócić pełną funkcjonalność Twojego sprzętu. Zapewniam gwarancję na wykonaną usługę, co daje pewność satysfakcji i nieprzerwanej eksploatacji urządzenia. Specjalizuję się w naprawie suszarek marek takich jak: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi.
             Dzięki ponad 20-letniemu doświadczeniu w serwisowaniu sprzętu AGD, nawet najbardziej skomplikowane usterki nie stanowią dla mnie wyzwania.
           </StyledText>
         </Section>
@@ -152,17 +149,9 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 };
 
 export const getStaticProps = async () => {
-  const [ratingProps, reviewsProps] = await Promise.all([
-    getRatingProps(),
-    getReviewsProps(),
-  ]);
+  const data = await getData();
 
-  return {
-    props: {
-      ...ratingProps.props,
-      ...reviewsProps.props,
-    },
-  };
+  return { props: data };
 };
 
 export default DryerService;

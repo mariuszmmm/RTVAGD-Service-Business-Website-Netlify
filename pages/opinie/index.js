@@ -4,11 +4,10 @@ import { ReviewsContainer } from "../../styles/opinie/OpinieStyled";
 import ReviewsItem from "../../components/ReviewsItem";
 import { serwis } from "../../utils/serwis";
 import { ButtonLink } from "../../components/common/ButtonLink";
-import { getRatingProps } from "../../utils/getRatingProps";
-import { getReviewsProps } from "../../utils/getReviewsProps";
 import MetaTags from "../../components/common/MetaTags";
 import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { useRouter } from "next/router";
+import { getData } from "../../utils/getData";
 
 const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
   const path = useRouter().asPath;
@@ -50,17 +49,9 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
 };
 
 export const getStaticProps = async () => {
-  const [ratingProps, reviewsProps] = await Promise.all([
-    getRatingProps(),
-    getReviewsProps(),
-  ]);
+  const data = await getData();
 
-  return {
-    props: {
-      ...ratingProps.props,
-      ...reviewsProps.props,
-    },
-  };
+  return { props: data };
 };
 
 export default Reviews;

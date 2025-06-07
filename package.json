@@ -48,5 +48,9 @@
     "babel-plugin-styled-components": "^2.1.4",
     "eslint-config-next": "^15.0.3",
     "file-loader": "^6.2.0"
-  }
+  },
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

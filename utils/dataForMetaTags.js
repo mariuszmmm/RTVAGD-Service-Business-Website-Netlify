@@ -456,14 +456,14 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Skuteczna naprawa pralek w Przemyślu" + " | " + serwis.shortName,
+      title: "Naprawa pralek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_pralek,
-      description: "Posiadam bardzo duże doświadczenie w naprawie pralek wszystkich marek. Serwisuję pralki w Przemyślu i okolicach. Szybka diagnoza, oryginalne części, gwarancja jakości.",
+      description: "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
       keywords: "naprawa pralek, serwis pralek Przemyśl, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki",
-      appleMobileWebAppTitle: "Skuteczna naprawa pralek w Przemyślu" + " | " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
     },
     schema: {
       organization: {
@@ -661,7 +661,7 @@ export const dataForMetaTags = {
         "id": appUrls.naprawa_pralek,
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": "Skuteczna naprawa pralek w Przemyślu" + " | " + serwis.shortName,
+        "name": "Rzetelna naprawa pralek w Przemyślu" + " | " + serwis.shortName,
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_pralek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_pralek + "#primaryimage" },
@@ -670,7 +670,7 @@ export const dataForMetaTags = {
 
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Posiadam bardzo duże doświadczenie w naprawie pralek wszystkich marek. Serwisuję pralki w Przemyślu i okolicach. Szybka diagnoza, oryginalne części, gwarancja jakości.",
+        "description": "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach.",
         "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
       },
       breadcrumbList: {
@@ -695,14 +695,14 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Kompleksowa naprawa suszarek w Przemyślu" + " | " + serwis.shortName,
+      title: "Naprawa suszarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_suszarek,
-      description: "Zajmuję się naprawą suszarek. Gwarantuję wysoką skuteczność naprawy przy konkurencyjnej cenie. Realizuję naprawy wszystkich marek.",
+      description: "Naprawa suszarek w Przemyślu i okolicach. Gwarantuję wysoką skuteczność naprawy przy konkurencyjnej cenie.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
       keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
-      appleMobileWebAppTitle: "? Kompleksowa naprawa suszarek w Przemyślu" + " | " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
     },
     schema: {
       organization: {
@@ -744,7 +744,7 @@ export const dataForMetaTags = {
         // "@type": "Product",
         // "@id": appUrls.naprawa_suszarek + "#product",
         "name": "Naprawa suszarek Przemyśl",
-        "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu.",
+        "description": "Skuteczna naprawa suszarek do ubrań w Przemyślu.",
         "image": imageUrls.suszarka,
         // "image": ["https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki.png"],
         // "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
@@ -876,14 +876,14 @@ export const dataForMetaTags = {
         "id": appUrls.naprawa_suszarek + "#webpage",
         "url": appUrls.naprawa_suszarek,
         "inLanguage": "pl-PL",
-        "name": "? Kompleksowa naprawa suszarek w Przemyślu" + " | " + serwis.shortName,
+        "name": "Skuteczna naprawa suszarek w Przemyślu" + " | " + serwis.shortName,
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_suszarek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.suszarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Zajmuję się naprawą suszarek. Gwarantuję wysoką skuteczność naprawy przy konkurencyjnej cenie. Realizuję naprawy wszystkich marek.",
+        "description": "Naprawa suszarek w Przemyślu i okolicach. Gwarantuję wysoką skuteczność naprawy przy konkurencyjnej cenie.",
         "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
       },
       breadcrumbList: {
@@ -914,14 +914,14 @@ export const dataForMetaTags = {
       // type: "article",
       // keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
       // appleMobileWebAppTitle: `${shortName} - naprawa zmywarek`,
-      title: "Naprawa zmywarek Przemyśl" + " | " + serwis.shortName,
+      title: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_zmywarek,
-      description: serwis.shortName + " to profejsonalny serwis zmywarek. Oferuje kompleksową diagnostykę zmywarek dla każdego klienta oraz fachową naprawę zmywarki każdego modelu.",
+      description: "Serwis zmywarek w Przemyślu. Oferuje kompleksową diagnostykę zmywarek oraz profesjonalną naprawę zmywarek w Przemyślu.",
       type: "article",
       image: imageUrls.zmywarka,
       siteName: serwis.shortName,
       keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
-      appleMobileWebAppTitle: "Serwis i naprawa zmywarek Przemyśl" + " | " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
     },
     schema: {
       organization: {
@@ -1094,7 +1094,7 @@ export const dataForMetaTags = {
         "id": appUrls.naprawa_zmywarek + "#webpage",
         "url": appUrls.naprawa_zmywarek,
         "inLanguage": "pl-PL",
-        "name": "Serwis i naprawa zmywarek Przemyśl" + " | " + serwis.shortName,
+        "name": "Serwis i profesjonalna naprawa zmywarek Przemyśl" + " | " + serwis.shortName,
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
@@ -1102,7 +1102,7 @@ export const dataForMetaTags = {
 
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalna naprawa zmywarek w Przemyślu. Szybka pomoc, nowoczesne technologie, oryginalne części. Skontaktuj się już dziś!",
+        "description": "Serwis zmywarek w Przemyślu. Oferuje kompleksową diagnostykę zmywarek oraz profesjonalną naprawę zmywarek w Przemyślu.",
         "breadcrumb": { "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
       },
       breadcrumbList: {
