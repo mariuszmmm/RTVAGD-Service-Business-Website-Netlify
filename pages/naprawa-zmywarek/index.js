@@ -32,7 +32,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa zmywarek Przemyśl
+          Naprawa zmywarek w Przemyślu
           <Emoticon>
             <Image
               src={imageUrls.logo}
