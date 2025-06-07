@@ -56,13 +56,13 @@ jobs:
           git config user.email "actions@github.com"
 
           echo "=== 🧾 Obecna wersja data.json z repo ==="
-          git show HEAD:data.json || echo "Plik nie istnieje w repozytorium."
+          git show HEAD:public/data.json || echo "Plik nie istnieje w repozytorium."
 
           echo "=== 🆕 Nowa wersja data.json (po aktualizacji) ==="
-          cat data.json || echo "Plik nie został wygenerowany."
+          cat public/data.json || echo "Plik nie został wygenerowany."
 
           echo "=== ➕ Dodajemy data.json do stage'a ==="
-          git add data.json
+          git add public/data.json
 
           echo "=== 🔍 Różnice staged (git diff --cached) ==="
           git diff --cached || echo "Brak różnic."
