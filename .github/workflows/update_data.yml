@@ -1,4 +1,4 @@
-name: Aktualizuj opinie z Google
+name: Update data.json
 
 # Uruchamiaj co godzinę (UTC). Jeśli chcesz inny interwał, zmodyfikuj cron.
 on:
