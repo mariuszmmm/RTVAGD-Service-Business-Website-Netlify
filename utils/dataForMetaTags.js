@@ -342,7 +342,7 @@ export const dataForMetaTags = {
   },
   kontakt: {
     metaTags: {
-      title: "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790 258 612 | naprawaprzemysl.pl",
+      title: "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790 258 612",
       canonical: appUrls.kontakt,
       description: "Skontaktuj się pod numerem 790 258 612 lub odwiedź nas w Przemyślu, ul. Generała Sowińskiego 2. Szybkie, fachowe usługi naprawy sprzętu RTV i AGD.",
       type: "article",
@@ -458,7 +458,7 @@ export const dataForMetaTags = {
     metaTags: {
       title: "Naprawa pralek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_pralek,
-      description: "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach.",
+      description: "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
@@ -670,7 +670,7 @@ export const dataForMetaTags = {
 
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach.",
+        "description": "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
         "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
       },
       breadcrumbList: {
