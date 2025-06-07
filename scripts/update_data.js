@@ -1,24 +1,19 @@
 require('dotenv').config();
 
-// skrypty/update_reviews.js
 const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 
-// Wartość klucza Google API pobieramy z ENV (konfiguracja w GitHub Secrets) // 
-const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
-// Przykładowe ID miejsca (place_id) lub inna konfiguracja
+const KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 const PLACE_ID = 'ChIJrWDpGyR_O0cRpvj4OFLVPPw';
 
-if (!GOOGLE_API_KEY) {
-  console.error('Brakuje GOOGLE_API_KEY w zmiennych środowiskowych.');
+if (!KEY) {
+  console.error('Brakuje KEY w zmiennych środowiskowych.');
   process.exit(1);
 }
 
 async function fetchData() {
-  // Przykładowa końcówka Google Places Reviews API
-  // Upewnij się, że masz włączone Places API, Accounts -> Klucz jest poprawnie skonfigurowany
-  const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews,rating,user_ratings_total&language=pl&key=${GOOGLE_API_KEY}`;
+  const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews,rating,user_ratings_total&language=pl&key=${KEY}`;
 
   const res = await fetch(url);
   if (!res.ok) {
@@ -36,8 +31,6 @@ async function fetchData() {
   user_ratings_total = json.result.user_ratings_total || 0;
   const update_time = new Date().toISOString().replace('T', ' ').substring(0, 19);
 
-  // Przerabiamy tablicę recenzji do pożądanego formatu
-  // Google zwraca pole „reviews” z tablicą obiektów
   const newReviews = json.result.reviews.map(item => ({
     author_name: item.author_name || '',
     profile_photo_url: item.profile_photo_url || '',
@@ -47,26 +40,19 @@ async function fetchData() {
   }));
 
   const filteredRewievs = newReviews.filter(review => review.text && review.rating > 4);
-
-  // Sortujemy recenzje malejąco po polu "time"
   const sortedReviews = filteredRewievs.sort((a, b) => b.time - a.time);
 
-  const data = {
+  return {
     reviews: sortedReviews,
     rating: rating,
     user_ratings_total: user_ratings_total,
     update_time: update_time,
   };
-
-  return data;
 }
 
 (async () => {
   try {
     const data = await fetchData();
-    // Pobierz dodatkowe dane z odpowiedzi API
-
-    // Ścieżka do zapisania pliku:
     const filePath = path.join(__dirname, '..', 'data.json');
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
     console.log(`Zapisano dane do ${filePath}`);

@@ -1,9 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-
-  RewriteCond %{HTTP_HOST} !^naprawaprzemysl\.pl$ [NC,OR]
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://naprawaprzemysl.pl%{REQUEST_URI} [L,R=301]
-</IfModule>
-
-ErrorDocument 404 /404.html
