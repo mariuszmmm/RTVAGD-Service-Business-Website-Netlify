@@ -53,7 +53,7 @@ async function fetchData() {
 (async () => {
   try {
     const data = await fetchData();
-    const filePath = path.join(__dirname, '..', 'public', 'data.json');
+    const filePath = path.join(__dirname, '..', 'data.json');
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
     console.log(`Zapisano dane do ${filePath}`);
   } catch (err) {
