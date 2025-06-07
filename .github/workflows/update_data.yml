@@ -54,7 +54,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
+
+          echo "=== 🧾 Obecna wersja data.json z repo ==="
+          git show HEAD:data.json || echo "Plik nie istnieje w repozytorium."
+
+          echo "=== 🆕 Nowa wersja data.json (po aktualizacji) ==="
+          cat data.json || echo "Plik nie został wygenerowany."
+
+          echo "=== ➕ Dodajemy data.json do stage'a ==="
           git add data.json
+
+          echo "=== 🔍 Różnice staged (git diff --cached) ==="
+          git diff --cached || echo "Brak różnic."
+
           if git diff --cached --quiet; then
             echo "Brak zmian w data.json – nic do commitowania."
           else

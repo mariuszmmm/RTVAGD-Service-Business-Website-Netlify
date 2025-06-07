@@ -61,7 +61,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             Szybka i profesjonalna naprawa zmywarek w Przemyślu i okolicach
           </SubTitle>
           <StyledText>
-            Awaria zmywarki może całkowicie zaburzyć porządek w kuchni. Dlatego <strong>serwis zmywarek</strong> w Przemyślu oferuje kompleksową diagnostykę oraz profesjonalna naprawę urządzeń wszystkich marek.<br />
+            Awaria zmywarki może całkowicie zaburzyć porządek w kuchni. Dlatego <strong>serwis zmywarek</strong> w Przemyślu oferuje kompleksową diagnostykę oraz profesjonalną naprawę urządzeń wszystkich marek.<br />
             Korzystam z&nbsp;profesjonalnych narzędzi i&nbsp;oryginalnych części zamiennych, aby&nbsp;przywrócić pełną funkcjonalność Twojej zmywarki już podczas pierwszej wizyty. Zapewniam gwarancję na wykonaną naprawę, dzięki czemu masz pewność satysfakcji i&nbsp;bezproblemowego użytkowania sprzętu. Specjalizuję się w&nbsp;serwisie i&nbsp;naprawie zmywarek marek Bosch, Electrolux, Beko oraz wielu innych, zawsze gwarantując najwyższą jakość usług i&nbsp;szybkie terminy realizacji.
           </StyledText>
         </Section>

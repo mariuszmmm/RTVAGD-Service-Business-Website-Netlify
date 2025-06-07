@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://naprawaprzemysl.netlify.app/*"
-  to = "https://naprawaprzemysl.pl/:splat"
-  status = 301
-  force = true
