@@ -10,7 +10,7 @@ const Background = () => {
       <BackgroundImage>
         <Image
           src={imageUrls.serwis}
-          alt={`Naprawa i serwis w Przemyślu ☎️ 790 258 612 ✔️ ${serwis.shortName}`}
+          alt={`${serwis.shortName} w Przemyślu ☎️ 790 258 612 ✔️`}
           loading="lazy"
           fill
         />
