@@ -32,7 +32,7 @@ export const imageUrls = {
   ekspres_2_300: "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu_300.webp",
   zmywarka: "https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-zmywarki.webp",
   zmywarka_300: "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki_300.webp",
-  pralka: "https://naprawaprzemysl.pl/images/naprawa-pralki-przemysl.webp",
+  pralka: "https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl-serwis-pralki.webp",
   pralka_300: "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki_300.webp",
   suszarka: "https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-suszarki.webp",
   suszarka_300: "https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki_300.webp",

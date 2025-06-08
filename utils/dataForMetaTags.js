@@ -458,7 +458,7 @@ export const dataForMetaTags = {
     metaTags: {
       title: "Naprawa pralek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_pralek,
-      description: "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
+      description: "Serwis pralek w Przemyślu. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
@@ -658,19 +658,17 @@ export const dataForMetaTags = {
       },
       webpage: {
         "@type": "WebPage",
-        "id": appUrls.naprawa_pralek,
+        "id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": "Rzetelna naprawa pralek w Przemyślu" + " | " + serwis.shortName,
+        "name": "Serwis i rzetelna naprawa pralek w Przemyślu" + " | " + serwis.shortName,
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_pralek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_pralek + "#primaryimage" },
-
         "thumbnailUrl": imageUrls.pralka,
-
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Serwis naprawy pralek Przemyśl. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
+        "description": "Serwis pralek w Przemyślu. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
         "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
       },
       breadcrumbList: {
@@ -1099,7 +1097,6 @@ export const dataForMetaTags = {
         "primaryImageOfPage": { "id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.zmywarka,
-
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Serwis zmywarek w Przemyślu. Oferuje kompleksową diagnostykę zmywarek oraz profesjonalną naprawę zmywarek w Przemyślu.",

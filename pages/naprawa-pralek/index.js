@@ -47,7 +47,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Pralka"
               src={imageUrls.pralka}
-              alt="Pralka naprawiona w serwisie w Przemyślu"
+              alt="Pralka naprawiona w profesionalnym serwisie w Przemyślu"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.pralka_300} 500w,
@@ -65,7 +65,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>
-            Najczęstsze usterki pralek – sprawdź, czy też tak masz
+            Najczęstsze usterki pralek
           </SubTitle>
           <StyledText as="ul" $cross>
             <li><b>Pralka nie pobiera wody</b> – może to być spowodowane uszkodzonym elektrozaworem, zatkanym filtrem wody, zgiętym wężem doprowadzającym wodę lub awarią hydrostatu, który odpowiada za kontrolę poziomu wody.</li>
@@ -79,7 +79,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>
-            Proces naprawy pralki - krok po kroku
+            Proces naprawy pralki krok po kroku
           </SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i konsultacja:</strong> Opowiedz o usterce przez telefon, ustalimy dogodne terminy i zakres usługi.</li>
