@@ -17,7 +17,7 @@ const CoffeeMachine = ({ show, setHold }) => (
       <StyledImage>
         <Image
           src={imageUrls.ekspres}
-          alt="Ekspres - serwis w Przemyślu"
+          alt="Ekspres do kawy"
           loading='lazy'
           fill
           // srcSet={`${imageUrls.ekspres_300} 500w,

@@ -57,10 +57,10 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           </StyledPhoto>
 
           <SubTitle>
-            Szybka i profesjonalna naprawa suszarek w Przemyślu i okolicach
+            Szybka i fachowa naprawa suszarek w Przemyślu i okolicach
           </SubTitle>
           <StyledText>
-            Awaria suszarki może znacząco utrudnić codzienne prace domowe, zwłaszcza gdy zależy nam na szybkim wysuszeniu ubrań w sezonie jesienno-zimowym. Dlatego <strong>serwis suszarek</strong> oferuje kompleksową diagnostykę i profesjonalną naprawę suszarek wszystkich typów i marek w Przemyślu oraz pobliskich miejscowościach. Korzystam z profesjonalnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, aby już podczas pierwszej wizyty przywrócić pełną funkcjonalność Twojego sprzętu. Zapewniam gwarancję na wykonaną usługę, co daje pewność satysfakcji i nieprzerwanej eksploatacji urządzenia. Specjalizuję się w naprawie suszarek marek takich jak: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi.
+            Awaria suszarki może znacząco utrudnić codzienne prace domowe, zwłaszcza gdy zależy nam na szybkim wysuszeniu ubrań w sezonie jesienno-zimowym. Dlatego <strong>serwis suszarek</strong> w Przemyślu oferuje kompleksową diagnostykę i fachową naprawę urządzeń wszystkich marek. Korzystam z profesjonalnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, aby już podczas pierwszej wizyty przywrócić pełną funkcjonalność Twojego sprzętu. Zapewniam gwarancję na wykonaną usługę, co daje pewność satysfakcji i nieprzerwanej eksploatacji urządzenia. Specjalizuję się w naprawie suszarek marek takich jak: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi.
             Dzięki ponad 20-letniemu doświadczeniu w serwisowaniu sprzętu AGD, nawet najbardziej skomplikowane usterki nie stanowią dla mnie wyzwania.
           </StyledText>
         </Section>

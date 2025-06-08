@@ -149,14 +149,14 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: "Serwis pralek, suszarek, zmywarek w Przemyślu" + " - " + serwis.shortName,
+      title: "Naprawa sprzętu RTV i AGD w Przemyślu ✔️ " + serwis.shortName,
       canonical: appUrls.home,
-      description: "W serwisie RTV AGD w Przemyślu naprawiamy pralki, zmywarki, suszarki, ekspresy, telewizory. Zapraszamy do profesjonalnego serwisu Rtv i AGD w Przemyślu.",
+      description: "Serwis RTV i AGD w Przemyślu. Profesjonalna naprawa sprzętu rtv i agd. Szybka diagnoza, oryginalne części, gwarancja jakości.",
       type: "website",
       image: imageUrls.serwis,
       siteName: serwis.shortName,
       keywords: "naprawa AGD, serwis sprzętu RTV, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD",
-      appleMobileWebAppTitle: "Serwis pralek, suszarek, zmywarek w Przemyślu" + " - " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa sprzętu RTV i AGD w Przemyślu ✔️ " + serwis.shortName,
     },
     schema: {
       localBusiness,
@@ -294,7 +294,7 @@ export const dataForMetaTags = {
         "id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": "Serwis pralek, suszarek, zmywarek w Przemyślu" + " - " + serwis.shortName,
+        "name": "Naprawa sprzętu RTV i AGD w Przemyślu ✔️ " + serwis.shortName,
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.home + "#primaryimage" },
         "image": { "@id": appUrls.home + "#primaryimage" },
