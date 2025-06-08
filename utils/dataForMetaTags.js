@@ -693,14 +693,14 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa suszarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
+      title: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_suszarek,
       description: "Serwis suszarek w Przemyślu. Oferuje kompleksową diagnostykę suszarek oraz profesjonalną naprawę suszarek w Przemyślu.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
       keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
-      appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
     },
     schema: {
       organization: {
