@@ -1,14 +1,12 @@
 import { imageUrls } from "../../utils/urls.js";
+import { serwis } from "../../utils/serwis.js";
 import { BackgroundImage } from "../common/BackgroundImage/index.js";
-import { BackgroundWrapper, Circle, Rotating, StyledImage } from "./styled.js";
+import { BackgroundWrapper, Circle, Rotating } from "./styled.js";
 import Image from "next/image";
 
 const Background = () => {
   return (
     <BackgroundWrapper>
-      {/* <StyledImage>
-        <Image src={imageUrls.serwis} alt="Serwis RTV i AGD" fill />
-      </StyledImage> */}
       <BackgroundImage>
         <Image
           src={imageUrls.serwis}
