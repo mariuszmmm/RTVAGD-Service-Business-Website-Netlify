@@ -149,7 +149,7 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: "Naprawa sprzętu RTV i AGD w Przemyślu ✔️ " + serwis.shortName,
+      title: "Naprawa i serwis w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
       canonical: appUrls.home,
       description: "Serwis RTV i AGD w Przemyślu. Profesjonalna naprawa sprzętu rtv i agd. Szybka diagnoza, oryginalne części, gwarancja jakości.",
       type: "website",
@@ -912,14 +912,14 @@ export const dataForMetaTags = {
       // type: "article",
       // keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
       // appleMobileWebAppTitle: `${shortName} - naprawa zmywarek`,
-      title: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
+      title: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
       canonical: appUrls.naprawa_zmywarek,
       description: "Serwis zmywarek w Przemyślu. Oferuje kompleksową diagnostykę zmywarek oraz profesjonalną naprawę zmywarek w Przemyślu.",
       type: "article",
       image: imageUrls.zmywarka,
       siteName: serwis.shortName,
       keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
-      appleMobileWebAppTitle: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612" + " | ✔️ " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
     },
     schema: {
       organization: {
