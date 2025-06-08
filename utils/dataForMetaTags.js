@@ -149,14 +149,14 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: "Naprawa i serwis w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+      title: serwis.shortName + " w Przemyślu ☎️ 790 258 612 ✔️",
       canonical: appUrls.home,
       description: "Serwis RTV i AGD w Przemyślu. Profesjonalna naprawa sprzętu rtv i agd. Szybka diagnoza, oryginalne części, gwarancja jakości.",
       type: "website",
       image: imageUrls.serwis,
       siteName: serwis.shortName,
       keywords: "naprawa AGD, serwis sprzętu RTV, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD",
-      appleMobileWebAppTitle: "Naprawa sprzętu RTV i AGD w Przemyślu ✔️ " + serwis.shortName,
+      appleMobileWebAppTitle: serwis.shortName + " w Przemyślu ☎️ 790 258 612 ✔️",
     },
     schema: {
       localBusiness,
@@ -294,7 +294,7 @@ export const dataForMetaTags = {
         "id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": "Naprawa sprzętu RTV i AGD w Przemyślu ✔️ " + serwis.shortName,
+        "name": serwis.shortName + " w Przemyślu ☎️ 790 258 612 ✔️",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.home + "#primaryimage" },
         "image": { "@id": appUrls.home + "#primaryimage" },
