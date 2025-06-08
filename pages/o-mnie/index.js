@@ -2,7 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { Text } from '../../components/common/Text';
-import { Team, TeamImage } from '../../components/common/TeamImage';
+import { Team } from '../../components/common/TeamImage';
 import { imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -14,7 +14,6 @@ const About = ({ rating, ratingsTotal }) => {
   const path = useRouter().asPath;
 
   return (
-
     <>
       <MetaTags
         path={path}
@@ -23,7 +22,6 @@ const About = ({ rating, ratingsTotal }) => {
         ratingsTotal={ratingsTotal}
       />
       <Container >
-
         <Section>
           <Title>Kim jestem</Title>
           <div>
