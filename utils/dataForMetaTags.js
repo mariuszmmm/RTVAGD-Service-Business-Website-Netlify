@@ -455,14 +455,14 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Naprawa pralek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+      title: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
       canonical: appUrls.naprawa_pralek,
-      description: "Serwis pralek w Przemyślu. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
+      description: "Profesjonalna naprawa pralek w Przemyślu. Szybka diagnoza, oryginalne części, gwarancja. Zadzwoń: 790 258 612.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
       keywords: "naprawa pralek, serwis pralek Przemyśl, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki",
-      appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
     },
     schema: {
       organization: {
@@ -660,14 +660,14 @@ export const dataForMetaTags = {
         "id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": "Serwis i rzetelna naprawa pralek w Przemyślu | " + serwis.shortName,
+        "name": "Naprawa pralek w Przemyślu ☎️ 790 258 612 – Serwis RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_pralek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "thumbnailUrl": imageUrls.pralka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Serwis pralek w Przemyślu. Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Profesjonalna obsługa, oryginalne części, gwarancja jakości.",
+        "description": "Profesjonalna naprawa pralek w Przemyślu. Szybka diagnoza, oryginalne części, gwarancja. Zadzwoń: 790 258 612.",
         "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
       },
       breadcrumbList: {
@@ -692,14 +692,14 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+      title: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
       canonical: appUrls.naprawa_suszarek,
-      description: "Serwis suszarek w Przemyślu. Oferuje kompleksową diagnostykę suszarek oraz profesjonalną naprawę suszarek w Przemyślu.",
+      description: "Naprawa suszarek na pranie w Przemyślu – szybka diagnoza, oryginalne części, pisemna gwarancja. Zadzwoń: 790 258 612.",
       type: "article",
       image: imageUrls.pralka,
       siteName: serwis.shortName,
       keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
-      appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+      appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
     },
     schema: {
       organization: {
@@ -865,21 +865,21 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.suszarka,
         "width": 700,
         "height": 700,
-        "caption": "Suszarka do ubrań naprawiona w serwisie w Przemyślu",
+        "caption": "Naprawa suszarek w Przemyślu – suszarka do ubrań po serwisie",
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_suszarek + "#webpage",
         "url": appUrls.naprawa_suszarek,
         "inLanguage": "pl-PL",
-        "name": "Profesjonalna naprawa suszarek w Przemyślu | " + serwis.shortName,
+        "name": "Naprawa suszarek w Przemyślu ☎️ 790 258 612 – Serwis RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_suszarek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.suszarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Serwis suszarek w Przemyślu. Oferuje kompleksową diagnostykę suszarek oraz profesjonalną naprawę suszarek w Przemyślu.",
+        "description": "Naprawa suszarek na pranie w Przemyślu – szybka diagnoza, oryginalne części, pisemna gwarancja. Zadzwoń: 790 258 612.",
         "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
       },
       breadcrumbList: {
