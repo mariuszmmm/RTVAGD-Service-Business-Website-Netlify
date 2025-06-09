@@ -1,3 +1,5 @@
+const imagesUrl = process.env.NEXT_PUBLIC_IMAGES_URL;
+
 export const cloudinaryImageUrls = {
   serwis: "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/serwis.webp",
   serwis_auto: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis",
@@ -22,23 +24,23 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: "https://naprawaprzemysl.pl/images/serwis-rtv-agd-naprawa-przemysl.webp",
-  serwis_1: "https://naprawaprzemysl.pl/images/serwis.jpg",
-  telewizor: "https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora.webp",
-  telewizor_300: "https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora_300.webp",
-  ekspres: "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-naprawa-ekspresu.webp",
-  ekspres_300: "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-naprawa-ekspresu_300.webp",
-  ekspres_2: "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu.webp",
-  ekspres_2_300: "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu_300.webp",
-  zmywarka: "https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-zmywarki.webp",
-  zmywarka_300: "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki_300.webp",
-  pralka: "https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl-serwis-pralki.webp",
-  pralka_300: "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki_300.webp",
-  suszarka: "https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-suszarki.webp",
-  suszarka_300: "https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki_300.webp",
-  logoGoogle: "https://naprawaprzemysl.pl/images/logoGoogle.webp",
-  logo: "https://naprawaprzemysl.pl/images/logo.svg",
-  mapa: "https://naprawaprzemysl.pl/images/mapa.webp",
+  serwis: imagesUrl + "/serwis-rtv-agd-naprawa-przemysl.webp",
+  serwis_1: imagesUrl + "/serwis.jpg",
+  telewizor: imagesUrl + "/serwis-telewizorow-przemysl-naprawa-telewizora.webp",
+  telewizor_300: imagesUrl + "/serwis-telewizorow-przemysl-naprawa-telewizora_300.webp",
+  ekspres: imagesUrl + "/serwis-ekspresow-przemysl-naprawa-ekspresu.webp",
+  ekspres_300: imagesUrl + "/serwis-ekspresow-przemysl-naprawa-ekspresu_300.webp",
+  ekspres_2: imagesUrl + "/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu.webp",
+  ekspres_2_300: imagesUrl + "/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu_300.webp",
+  zmywarka: imagesUrl + "/naprawa-zmywarek-przemysl-serwis-zmywarki.webp",
+  zmywarka_300: imagesUrl + "/serwis-zmywarek-przemysl-naprawa-zmywarki_300.webp",
+  pralka: imagesUrl + "/naprawa-pralek-przemysl-serwis-pralki.webp",
+  pralka_300: imagesUrl + "/serwis-pralek-przemysl-naprawa-pralki_300.webp",
+  suszarka: imagesUrl + "/naprawa-suszarek-przemysl-serwis-suszarki.webp",
+  suszarka_300: imagesUrl + "/serwis-suszarek-przemysl-naprawa-suszarki_300.webp",
+  logoGoogle: imagesUrl + "/logoGoogle.webp",
+  logo: imagesUrl + "/logo.svg",
+  mapa: imagesUrl + "/mapa.webp",
 };
 
 export const appUrls = {

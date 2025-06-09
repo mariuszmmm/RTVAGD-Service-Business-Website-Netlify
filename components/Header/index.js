@@ -46,12 +46,12 @@ const Header = ({ rating }) => {
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
-              alt="logo | naprawaprzemysl.pl"
+              alt="logo"
               loading="lazy"
               fill
             />
           </Emoticon>
-          naprawaprzemysl.pl</Logo>
+          {` ${serwis.shortName}`}</Logo>
         <nav>
           <NavList>
             <ListItem>
