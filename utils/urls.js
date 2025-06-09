@@ -55,4 +55,4 @@ export const appUrls = {
   naprawa_telewizorow: baseUrl + "/naprawa-telewizorow/",
 };
 
-export const dataUrl = baseUrl ? `${baseUrl}/data.json` : "http://localhost:3000/data.json";
+export const dataUrl = baseUrl ? `/data.json` : "http://localhost:3000/data.json";
