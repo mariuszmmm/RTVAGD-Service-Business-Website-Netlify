@@ -22,7 +22,7 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: "https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp",
+  serwis: "https://naprawaprzemysl.pl/images/serwis-rtv-agd-naprawa-przemysl.webp",
   serwis_1: "https://naprawaprzemysl.pl/images/serwis.jpg",
   telewizor: "https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora.webp",
   telewizor_300: "https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora_300.webp",
@@ -37,7 +37,7 @@ export const imageUrls = {
   suszarka: "https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-suszarki.webp",
   suszarka_300: "https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki_300.webp",
   logoGoogle: "https://naprawaprzemysl.pl/images/logoGoogle.webp",
-  logo: "https://naprawaprzemysl.pl/images/naprawa-serwis-rtv-agd-przemysl-logo.svg",
+  logo: "https://naprawaprzemysl.pl/images/logo.svg",
   mapa: "https://naprawaprzemysl.pl/images/mapa.webp",
 };
 

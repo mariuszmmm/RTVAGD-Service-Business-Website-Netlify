@@ -31,7 +31,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
       <Container>
         <Title>
-          Naprawa pralek w Przemyślu
+          Naprawa pralek w Przemyślu&nbsp;
           <Emoticon>
             <Image
               src={imageUrls.logo}
@@ -45,9 +45,9 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <Image
-              title="Pralka"
+              title="Pralka automatyczna"
               src={imageUrls.pralka}
-              alt="Pralka naprawiona w profesionalnym serwisie w Przemyślu"
+              alt="Pralka automatyczna naprawiona w serwisie w Przemyślu. Serwis RTV-AGD"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.pralka_300} 500w,

@@ -3,16 +3,16 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
-      <image:caption>Serwis RTV i AGD w Przemyślu ☎️ 790 258 612 ✔️</image:caption>
+      <image:caption>Serwis RTV-AGD w Przemyślu ☎️ 790 258 612 ✔️</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>0.1</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
@@ -21,25 +21,25 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl-serwis-pralki.webp</image:loc>
-      <image:caption>Pralka naprawiona w profesionalnym serwisie w Przemyślu</image:caption>
+      <image:caption>Pralka automatyczna naprawiona w serwisie w Przemyślu. Serwis RTV-AGD</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-suszarki.webp</image:loc>
-      <image:caption>Suszarka naprawiona w profesionalnym serwisie w Przemyślu</image:caption>
+      <image:caption>Suszarka do ubrań naprawiona w serwisie w Przemyślu</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-zmywarki.webp</image:loc>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-naprawa-ekspresu.png</image:loc>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora.png</image:loc>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>0.1</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-08</lastmod>
+    <lastmod>2025-06-09</lastmod>
     <priority>0.1</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>

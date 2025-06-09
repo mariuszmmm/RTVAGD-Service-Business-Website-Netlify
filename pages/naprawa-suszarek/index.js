@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa suszarek w Przemyślu
+          Naprawa suszarek w Przemyślu&nbsp;
           <Emoticon>
             <Image
               src={imageUrls.logo}
@@ -45,9 +45,9 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <Image
-              title="Suszarka"
+              title="Suszarka do ubrań"
               src={imageUrls.suszarka}
-              alt="Suszarka naprawiona w profesionalnym serwisie w Przemyślu"
+              alt="Suszarka do ubrań naprawiona w serwisie w Przemyślu"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.suszarka_300} 500w,

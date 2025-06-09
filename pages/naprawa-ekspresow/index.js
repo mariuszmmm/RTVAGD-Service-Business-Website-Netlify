@@ -30,7 +30,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
       <Container>
 
         <Title>
-          Naprawa ekspresów do&nbsp;kawy w&nbsp;Przemyślu
+          Naprawa ekspresów do&nbsp;kawy w&nbsp;Przemyślu&nbsp;
           <Emoticon>
             <Image
               src={imageUrls.logo}
