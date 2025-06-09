@@ -1,5 +1,7 @@
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 
+console.log("Base URL:", baseUrl);
+
 export const cloudinaryImageUrls = {
   serwis: "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/serwis.webp",
   serwis_auto: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis",
