@@ -18,7 +18,7 @@ const CoffeeMachine_2 = ({ show, setHold }) => (
         <Image
           src={imageUrls.ekspres_2}
           alt="Profesionalny ekspres do kawy"
-          loading='lazy'
+          // loading='lazy'
           fill
           // srcSet={`${imageUrls.ekspres_2_300} 500w,
           // ${imageUrls.ekspres_2} 1000w`}

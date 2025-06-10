@@ -46,12 +46,12 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <Image
-              title="Naprawa suszarek w Przemyślu – suszarka do ubrań po serwisie"
+              title="Suszarka"
               src={imageUrls.suszarka}
-              alt="Naprawa suszarek w Przemyślu – suszarka do ubrań po serwisie"
-              loading='lazy'
+              alt="Naprawiona suszarka w serwisie AGD w Przemyślu"
+              // loading='lazy'
               fill
-              decoding="async"
+              // decoding="async"
               // srcSet={`${imageUrls.suszarka_300} 500w,
               // ${imageUrls.suszarka} 1000w`}
               sizes="(max-width: 500px) 500px, 1000px"
@@ -69,7 +69,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>
-            Najczęstsze problemy z suszarkami
+            Najczęstsze usterki suszarek
           </SubTitle>
           <StyledText as="ul" $cross>
             <li><b>Suszarka nie obraca bębna</b> -&nbsp;może być spowodowane zerwanym paskiem napędowym, uszkodzonym silnikiem lub zużytymi łożyskami.</li>
@@ -127,7 +127,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawiam suszarki w Przemyślu i okolicach</SubTitle>
+          <SubTitle>Świadczę usługi naprawy suszarek w&nbsp;Przemyślu i okolicach</SubTitle>
           <StyledText>
             Oferuję serwis suszarek w Przemyślu oraz dojeżdżamy do sąsiednich miejscowości: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce,Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Jeśli potrzebujesz szybkiej i fachowej naprawy suszarki, wystarczy jeden telefon, a przyjadę do Ciebie w dogodnym terminie.
           </StyledText>

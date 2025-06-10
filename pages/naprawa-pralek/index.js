@@ -48,9 +48,9 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Naprawa pralek w Przemyślu – serwis AGD"
               src={imageUrls.pralka}
-              alt="Naprawa pralek w Przemyślu – profesjonalny serwis pralek"
-              loading='lazy'
-              decoding="async"
+              alt="Naprawiona pralka w profesjonalnym serwisie w Przemyślu"
+              // loading='lazy'
+              // decoding="async"
               fill
               // srcSet={`${imageUrls.pralka_300} 500w,
               // ${imageUrls.pralka} 1000w`}
