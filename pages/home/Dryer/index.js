@@ -14,12 +14,12 @@ const Dryer = ({ show, left, setHold }) => {
     >
       <Link
         href="/naprawa-suszarek"
-        title="Naprawa suszarek w Przemyślu"
+        title="Serwis suszarek w Przemyślu"
       >
         <StyledImage>
           <Image
             src={imageUrls.suszarka}
-            alt="Suszarka do ubrań"
+            alt="Suszarka naprawiona w profesionalnym serwisie w Przemyślu"
             // loading='lazy'
             fill
             // srcSet={`${imageUrls.suszarka_300} 500w,

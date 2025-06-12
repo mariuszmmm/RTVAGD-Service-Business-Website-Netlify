@@ -48,7 +48,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Suszarka"
               src={imageUrls.suszarka}
-              alt="Naprawiona suszarka w serwisie AGD w Przemyślu"
+              alt="Suszarka naprawiona w profesionalnym serwisie w Przemyślu"
               // loading='lazy'
               fill
               // decoding="async"

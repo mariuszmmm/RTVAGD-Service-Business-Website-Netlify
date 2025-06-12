@@ -14,12 +14,12 @@ const WashingMachine = ({ show, left, setHold }) => {
     >
       <Link
         href="/naprawa-pralek"
-        title="Naprawa pralek w Przemyślu"
+        title="Serwis pralek w Przemyślu"
       >
         <StyledImage>
           <Image
             src={imageUrls.pralka}
-            alt="Pralka automatyczna"
+            alt="Pralka naprawiona w profesionalnym serwisie w Przemyślu"
             // loading='lazy'
             fill
             // srcSet={`${imageUrls.pralka_300} 500w,
