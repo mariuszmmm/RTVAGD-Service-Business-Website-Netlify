@@ -26,15 +26,23 @@ export const ContactInfo = styled.div`
 `;
 
 export const ContactText = styled.p`
-  font-size: clamp(0.9rem, 4vw, 1.3rem);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 4px 0;
 
+    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+      gap: 5px;
+    }
+
   span {
     font-weight: 600;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+      width: 100%;
+    }
   }
 `;
 

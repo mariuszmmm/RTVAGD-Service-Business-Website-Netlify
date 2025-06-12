@@ -31,15 +31,15 @@ const Contact = ({ rating, ratingsTotal }) => {
             </SubTitle>
             <ContactText>
               adres:{"  "}
-              <StyledLink href={serwis.url.mapaGoogle} title={serwis.adres}>{serwis.adres}</StyledLink>
+              <span><StyledLink href={serwis.url.mapaGoogle} title={serwis.adres}>{serwis.adres}</StyledLink></span>
             </ContactText>
             <ContactText>
               e-mail:{" "}
-              <StyledLink href={`mailto:${serwis.email}`} title={serwis.email}>{serwis.email}</StyledLink>
+              <span><StyledLink href={`mailto:${serwis.email}`} title={serwis.email}>{serwis.email}</StyledLink></span>
             </ContactText>
             <ContactText>
               telefon:{" "}
-              <StyledLink href={`tel:${serwis.phone.number}`} title={(serwis.phone.formatted).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}>{serwis.phone.formatted}</StyledLink>
+              <span><StyledLink href={`tel:${serwis.phone.number}`} title={(serwis.phone.formatted).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}>{serwis.phone.formatted}</StyledLink></span>
             </ContactText>
             <br />
             <ContactText>NIP: 7952257951</ContactText>
