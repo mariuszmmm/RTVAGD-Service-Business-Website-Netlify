@@ -31,7 +31,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
       <Container>
         <Title>
-          Naprawa pralek w Przemyślu
+          Naprawa pralek Przemyśl<br /> Profesjonalny serwis pralek wszystkich marek
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -46,9 +46,9 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <Image
-              title="Pralka"
               src={imageUrls.pralka}
-              alt="Pralka naprawiona w profesionalnym serwisie w Przemyślu"
+              alt="Naprawa pralek Przemyśl serwis pralek Bosch Samsung Electrolux Whirlpool Beko Miele"
+              title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
               // loading='lazy'
               // decoding="async"
               fill

@@ -16,9 +16,9 @@ const shortName = "Serwis RTV i AGD Przemyśl";
 
 export const address = {
   "@type": "PostalAddress",
-  "streetAddress": "ul. Józefa Sowińskiego 2",
+  "streetAddress": "ul. Generała Sowińskiego 2",
   "addressLocality": "Przemyśl",
-  "addressRegion": "Podkarpackie",
+  // "addressRegion": "Podkarpackie",
   "postalCode": "37-700",
   "addressCountry": "PL"
 };
@@ -149,14 +149,23 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: serwis.shortName + " w Przemyślu ☎️ 790 258 612",
-      canonical: appUrls.home,
-      description: serwis.shortName + " w Przemyślu. Profesjonalna naprawa sprzętu rtv i agd. Szybka diagnoza, oryginalne części, gwarancja jakości.",
-      type: "website",
+      title: "Naprawa RTV-AGD Przemyśl - Serwis pralek, suszarek, zmywarek", // policz znaki: // 60
+      ogTitle: "Naprawa RTV-AGD Przemyśl - Serwis pralek, suszarek, zmywarek",
+      twitterTitle: "Naprawa RTV-AGD Przemyśl - Serwis pralek, suszarek, zmywarek",
+      description: "Profesjonalny serwis RTV-AGD w Przemyślu. Naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów. Szybko, rzetelnie, z gwarancją. ☎️ 790 258 612", // policz znaki: // 160
+      ogDescription: "Profesjonalny serwis RTV-AGD w Przemyślu. Naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów. Szybko, rzetelnie, z gwarancją.",
+      twitterDescription: "Profesjonalny serwis RTV-AGD w Przemyślu. Naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów.",
+      imageAlt: "Serwis RTV-AGD Przemyśl - naprawa pralek suszarek zmywarek",
+      imageWidth: "931",
+      imageHeight: "497",
+      imageType: "image/webp",
       image: imageUrls.serwis,
-      siteName: serwis.shortName,
-      keywords: "naprawa AGD, serwis sprzętu RTV, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD",
-      appleMobileWebAppTitle: serwis.shortName + " w Przemyślu ☎️ 790 258 612",
+      type: "website",
+      siteName: "Naprawa RTV-AGD Przemyśl",
+      canonical: appUrls.home,
+
+      // keywords: "naprawa AGD, serwis sprzętu RTV, Przemyśl, naprawa sprzętu, serwis Przemyśl, naprawa urządzeń domowych, serwis AGD, serwis RTV, naprawa sprzętu AGD",
+      // appleMobileWebAppTitle: serwis.shortName + " w Przemyślu ☎️ 790 258 612",
     },
     schema: {
       localBusiness,
@@ -170,13 +179,30 @@ export const dataForMetaTags = {
         "sameAs": [],
       },
       product: {
-
-        "@type": "Product",
         "@id": appUrls.home + "#product",
-        "name": shortName,
-        "image": [imageUrls.serwis],
-        "description": "Profesjonalny serwis i naprawa sprzętu RTV i AGD w Przemyślu. Szybka diagnoza, oryginalne części, gwarancja jakości.",
-        "url": appUrls.home,
+        "name": "Serwis RTV-AGD Przemyśl",
+        "description": "Profesjonalny serwis i naprawa sprzętu RTV-AGD w Przemyślu: pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy",
+        "image": [imageUrls.serwis, imageUrls.pralka, imageUrls.suszarka],
+        "brand": {
+          "@type": "Brand",
+          "name": "Naprawa RTV-AGD Przemyśl"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceRange": "$$",
+          "priceCurrency": "PLN",
+          "price": "150.00",
+        },
+
+        "provider": {
+          "@type": "Organization",
+          "name": "Naprawa RTV-AGD Przemyśl",
+          "telephone": "+48790258612",
+          address
+        }
+        // "url": appUrls.home,
+
         // "sku": "SEO",
         // "mpn": "SEO-33",
         // "brand": {
@@ -184,103 +210,103 @@ export const dataForMetaTags = {
         //   "name": "NaprawaPrzemyśl",
         // },
 
-        "offers": {
-          "@type": "Offer",
-          "url": appUrls.home,
-          // "url": appUrls.naprawa_telewizorow,
-          "priceCurrency": "PLN",
-          "price": "150",
-          "priceValidUntil": "2026-05-16",
-          //   "itemCondition": "https://schema.org/NewCondition",
-          //       "availability": "https://schema.org/InStock",
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0",
-              "currency": "PLN"
-            },
-            "shippingDestination": [
-              {
-                "@type": "DefinedRegion",
-                "addressCountry": "PL",
-                "addressRegion": ["Podkarpackie"],
-                "name": "Przemyśl"
-              }
-            ],
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
-              },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
-              },
-            }
+        // "offers": {
+        //   "@type": "Offer",
+        //   "url": appUrls.home,
+        //   // "url": appUrls.naprawa_telewizorow,
+        //   "priceCurrency": "PLN",
+        //   "price": "150",
+        //   "priceValidUntil": "2026-05-16",
+        //   //   "itemCondition": "https://schema.org/NewCondition",
+        //   //       "availability": "https://schema.org/InStock",
+        //   "shippingDetails": {
+        //     "@type": "OfferShippingDetails",
+        //     "shippingRate": {
+        //       "@type": "MonetaryAmount",
+        //       "value": "0",
+        //       "currency": "PLN"
+        //     },
+        //     "shippingDestination": [
+        //       {
+        //         "@type": "DefinedRegion",
+        //         "addressCountry": "PL",
+        //         "addressRegion": ["Podkarpackie"],
+        //         "name": "Przemyśl"
+        //       }
+        //     ],
+        //     "deliveryTime": {
+        //       "@type": "ShippingDeliveryTime",
+        //       "handlingTime": {
+        //         "@type": "QuantitativeValue",
+        //         "minValue": 0,
+        //         "maxValue": 1,
+        //         "unitCode": "DAY"
+        //       },
+        //       "transitTime": {
+        //         "@type": "QuantitativeValue",
+        //         "minValue": 0,
+        //         "maxValue": 1,
+        //         "unitCode": "DAY"
+        //       },
+        //     }
 
-          },
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "PL",
-            "returnPolicyCountry": "PL",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 14,
-            "returnMethod": "https://schema.org/ReturnInStore",
-            "returnFees": "https://schema.org/FreeReturn"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0",
-              "currency": "PLN"
-            },
-            "shippingDestination": [
-              {
-                "@type": "DefinedRegion",
-                "addressCountry": "PL",
-                "addressRegion": ["Podkarpackie"],
-                "name": "Przemyśl"
-              }
-            ],
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
-              },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
-              },
-            }
+        //   },
+        //   "hasMerchantReturnPolicy": {
+        //     "@type": "MerchantReturnPolicy",
+        //     "applicableCountry": "PL",
+        //     "returnPolicyCountry": "PL",
+        //     "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        //     "merchantReturnDays": 14,
+        //     "returnMethod": "https://schema.org/ReturnInStore",
+        //     "returnFees": "https://schema.org/FreeReturn"
+        //   },
+        //   "shippingDetails": {
+        //     "@type": "OfferShippingDetails",
+        //     "shippingRate": {
+        //       "@type": "MonetaryAmount",
+        //       "value": "0",
+        //       "currency": "PLN"
+        //     },
+        //     "shippingDestination": [
+        //       {
+        //         "@type": "DefinedRegion",
+        //         "addressCountry": "PL",
+        //         "addressRegion": ["Podkarpackie"],
+        //         "name": "Przemyśl"
+        //       }
+        //     ],
+        //     "deliveryTime": {
+        //       "@type": "ShippingDeliveryTime",
+        //       "handlingTime": {
+        //         "@type": "QuantitativeValue",
+        //         "minValue": 0,
+        //         "maxValue": 1,
+        //         "unitCode": "DAY"
+        //       },
+        //       "transitTime": {
+        //         "@type": "QuantitativeValue",
+        //         "minValue": 0,
+        //         "maxValue": 1,
+        //         "unitCode": "DAY"
+        //       },
+        //     }
 
-          },
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "PL",
-            "returnPolicyCountry": "PL",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 14,
-            "returnMethod": "https://schema.org/ReturnInStore",
-            "returnFees": "https://schema.org/FreeReturn"
-          },
-          // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
-          // "seller": {
-          //   "@type": "LocalBusiness",  // "@type": "Organization",
-          //   "name": "NaprawaPrzemyśl",
-          // },
-        },
+        //   },
+        //   "hasMerchantReturnPolicy": {
+        //     "@type": "MerchantReturnPolicy",
+        //     "applicableCountry": "PL",
+        //     "returnPolicyCountry": "PL",
+        //     "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        //     "merchantReturnDays": 14,
+        //     "returnMethod": "https://schema.org/ReturnInStore",
+        //     "returnFees": "https://schema.org/FreeReturn"
+        //   },
+        //   // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
+        //   // "seller": {
+        //   //   "@type": "LocalBusiness",  // "@type": "Organization",
+        //   //   "name": "NaprawaPrzemyśl",
+        //   // },
+        // },
       },
       place: {
 
@@ -457,14 +483,23 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
-      canonical: appUrls.naprawa_pralek,
-      description: "Profesjonalna naprawa pralek w Przemyślu. Szybka diagnoza, oryginalne części, gwarancja. Zadzwoń: 790 258 612.",
-      type: "article",
+      title: "Naprawa pralek Przemyśl - Serwis pralek wszystkich marek ☎️ 790 258 612", // policz znaki: // 90
+      description: "Profesjonalna naprawa pralek w Przemyślu i okolicach. Serwis pralek Bosch, Samsung, Electrolux, Whirlpool. Szybko, z gwarancją. ☎️ 790 258 612",
+      ogTitle: "Naprawa pralek Przemyśl - Serwis pralek wszystkich marek",
+      ogDescription: "Profesjonalna naprawa pralek w Przemyślu i okolicach. Serwis pralek Bosch, Samsung, Electrolux, Whirlpool. Szybko, z gwarancją",
+      imageType: "image/webp",
       image: imageUrls.pralka,
-      siteName: serwis.shortName,
-      keywords: "naprawa pralek, serwis pralek Przemyśl, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki",
-      appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
+      imageAlt: "Naprawa pralek Przemyśl - serwis pralek wszystkich marek",
+      imageWidth: "700",
+      imageHeight: "700",
+      type: "website",
+      siteName: "Naprawa RTV-AGD Przemyśl",
+      twitterTitle: "Naprawa pralek Przemyśl - Serwis pralek wszystkich marek",
+      twitterDescription: "Profesjonalna naprawa pralek w Przemyślu i okolicach. Serwis pralek Bosch, Samsung, Electrolux, Whirlpool.",
+      canonical: appUrls.naprawa_pralek,
+
+      // keywords: "naprawa pralek, serwis pralek Przemyśl, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki",
+      // appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
     },
     schema: {
       organization: {
@@ -527,10 +562,28 @@ export const dataForMetaTags = {
       product: {
 
         // "@type": "Product",
-        // "@id": appUrls.naprawa_pralek + "#product",
-        "name": "Naprawa pralek w Przemyślu",
-        "description": "Szybka i rzetelna naprawa pralek automatycznych w Przemyślu.",
-        "image": imageUrls.pralka,
+        "@id": appUrls.naprawa_pralek + "#product",
+        "name": "Naprawa pralek Przemyśl",
+        "description": "Profesjonalna naprawa pralek w Przemyślu. Serwis pralek wszystkich marek: Bosch, Samsung, Electrolux, Whirlpool, Beko, Miele i innych",
+        "image": [imageUrls.pralka],
+        "brand": {
+          "@type": "Brand",
+          "name": "Naprawa RTV-AGD Przemyśl"
+        },
+        "category": "Naprawa pralek",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceRange": "150-500 PLN",
+          "priceCurrency": "PLN",
+          "price": "150.00",
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Naprawa RTV-AGD Przemyśl",
+          "telephone": "+48790258612",
+          address
+        }
         // "image": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
         // "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
         // "url": appUrls.naprawa_pralek,
@@ -694,14 +747,24 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
-      canonical: appUrls.naprawa_suszarek,
-      description: "Naprawa suszarek w Przemyślu – szybka diagnoza, oryginalne części, gwarancja. Zadzwoń: 790 258 612.",
-      type: "article",
+      title: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek ☎️ 790 258 612", // policz znaki: // 90
+      description: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung. Szybko, z gwarancją. ☎️ 790 258 612",
+      ogTitle: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek",
+      ogDescription: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung. Szybko, z gwarancją.",
+      imageType: "image/webp",
       image: imageUrls.suszarka,
-      siteName: serwis.shortName,
-      keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
-      appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+      imageAlt: "Naprawa suszarek Przemyśl - serwis suszarek wszystkich marek",
+      imageWidth: "700",
+      imageHeight: "700",
+      type: "website",
+      siteName: "Naprawa RTV-AGD Przemyśl",
+      twitterTitle: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek",
+      twitterDescription: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung.",
+      canonical: appUrls.naprawa_pralek,
+
+      //       keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
+      // appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
+
     },
     schema: {
       organization: {
@@ -741,10 +804,28 @@ export const dataForMetaTags = {
       product: {
 
         // "@type": "Product",
-        // "@id": appUrls.naprawa_suszarek + "#product",
+        "@id": appUrls.naprawa_suszarek + "#product",
         "name": "Naprawa suszarek Przemyśl",
-        "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu.",
-        "image": imageUrls.suszarka,
+        "description": "Profesjonalna naprawa suszarek w Przemyślu. Serwis suszarek wszystkich marek: Bosch, Siemens, Electrolux, Samsung, Whirlpool, Beko i innych",
+        "image": [imageUrls.suszarka],
+        "brand": {
+          "@type": "Brand",
+          "name": "Naprawa RTV-AGD Przemyśl"
+        },
+        "category": "Naprawa suszarek",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceRange": "150-600 PLN",
+          "priceCurrency": "PLN",
+          "price": "150.00",
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "Naprawa RTV-AGD Przemyśl",
+          "telephone": "+48790258612",
+          address
+        }
         // "image": ["https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki.png"],
         // "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
         // "url": appUrls.naprawa_suszarek,

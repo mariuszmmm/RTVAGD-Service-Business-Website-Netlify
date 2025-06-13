@@ -107,7 +107,8 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             lang="pl"
           // aria-label="Naprawa i serwis pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy w Przemyślu"
           >
-            Naprawa i serwis<br />
+            Naprawa RTV-AGD Przemyśl<br /> Profesjonalny serwis pralek, suszarek, zmywarek,<br /> telewizórów i ekspresów do kawy
+            {/* Naprawa i serwis<br />
             <StyledLink
               href="/naprawa-pralek"
               title='Naprawa pralek w Przemyślu'
@@ -147,7 +148,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             >
               ekspresów do&nbsp;kawy
             </StyledLink><br />
-            w&nbsp;Przemyślu
+            w&nbsp;Przemyślu */}
           </HeroTitle>
           <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Serwis RTV i AGD w Przemyślu' $hero>

@@ -24,3 +24,5 @@ node_modules
 /public/api/.htaccess
 .next
 out
+
+test.html

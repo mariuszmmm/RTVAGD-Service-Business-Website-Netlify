@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa suszarek w Przemyślu
+          Naprawa suszarek Przemyśl<br /> Profesjonalny serwis suszarek wszystkich marek
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -46,9 +46,10 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <Image
-              title="Suszarka"
               src={imageUrls.suszarka}
-              alt="Suszarka naprawiona w profesionalnym serwisie w Przemyślu"
+              alt="Naprawa suszarek Przemyśl serwis suszarek Bosch Siemens Electrolux Samsung Whirlpool"
+              title="Profesjonalna naprawa suszarek w Przemyślu - serwis suszarek wszystkich marek"
+
               // loading='lazy'
               fill
               // decoding="async"

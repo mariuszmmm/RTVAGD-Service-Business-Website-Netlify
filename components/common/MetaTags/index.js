@@ -10,13 +10,21 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
   // const [ogTime, setOgTime] = useState(getCurrentDateTimeISOWithOffset());
   const {
     title,
+    ogTitle,
+    twitterTitle,
     canonical,
     description,
+    ogDescription,
+    twitterDescription,
     siteName,
     keywords,
     appleMobileWebAppTitle,
     type,
-    image
+    image,
+    imageAlt,
+    imageWidth,
+    imageHeight,
+    imageType,
   } = page.metaTags;
   const {
     localBusiness,
@@ -208,30 +216,31 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
   return (
     <Head>
       <title>{title}</title>
-      <link rel="canonical" href={canonical} />
       <meta name="description" content={description} />
-      <meta property="og:locale" content="pl_PL" />
-      <meta property="og:type" content={type} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonical} />
-      <meta property="og:site_name" content={siteName} />
-      {/* <meta property="og:updated_time" content={ogTime} /> */}
+      <meta property="og:title" content={ogTitle || title} />
+      <meta property="og:description" content={ogDescription || description} />
       <meta property="og:image" content={image} />
-      {/* <meta property="og:image:secure_url" content={`${appUrls.home}images/share_1.webp`} /> */}
-      {/* <meta property="og:image:width" content="931" />
-      <meta property="og:image:height" content="497" /> */}
-      {/* <meta property="og:image:alt" content="Serwis RTV i AGD Przemyśl" /> */}
-      <meta property="og:image:type" content="image/webp" />
+      {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+      {imageWidth && <meta property="og:image:width" content={imageWidth} />}
+      {imageHeight && <meta property="og:image:height" content={imageHeight} />}
+      {imageType && <meta property="og:image:type" content={imageType} />}
+      <meta property="og:url" content={canonical} />
+      <meta property="og:type" content={type} />
+      <meta property="og:locale" content="pl_PL" />
+      <meta property="og:site_name" content={siteName} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={twitterTitle || title} />
+      <meta name="twitter:description" content={twitterDescription || description} />
       <meta name="twitter:image" content={image} />
+
+      <link rel="canonical" href={canonical} />
+
+      {/* <meta property="og:updated_time" content={ogTime} /> */}
+      {/* <meta property="og:image:secure_url" content={`${appUrls.home}images/share_1.webp`} /> */}
       {/* <meta name="keywords" content={keywords} /> */}
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
-
-      {(path === "/naprawa-suszarek/" || path === "/naprawa-pralek/" || path === "/naprawa-zmywarek/") && (
+      {(path === "/naprawa-zmywarek/") && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
               dangerouslySetInnerHTML={{
@@ -292,6 +301,20 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
+      {(path === "/naprawa-suszarek/" || path === "/naprawa-pralek/") && (
+        <>
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                ...productSchema
+              })
+            }} s
+          />
+        </>
+      )}
+
       {(path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
@@ -348,7 +371,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify(website)
             }}
           /> */}
-          <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
+          {/* <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
@@ -358,12 +381,16 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                 ]
               })
             }}
-          />
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(productSchema)
-            }}
           /> */}
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                ...productSchema
+              })
+            }}
+          />
           {/* <script type="application/ld+json"     // wyłączone 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(organization)
