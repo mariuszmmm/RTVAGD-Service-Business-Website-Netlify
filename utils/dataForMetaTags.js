@@ -483,7 +483,7 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Naprawa pralek Przemyśl - Serwis pralek wszystkich marek ☎️ 790 258 612", // policz znaki: // 90
+      title: "Naprawa pralek Przemyśl - Serwis pralek wszystkich marek", // policz znaki: // 90
       description: "Profesjonalna naprawa pralek w Przemyślu i okolicach. Serwis pralek Bosch, Samsung, Electrolux, Whirlpool. Szybko, z gwarancją. ☎️ 790 258 612",
       ogTitle: "Naprawa pralek Przemyśl - Serwis pralek wszystkich marek",
       ogDescription: "Profesjonalna naprawa pralek w Przemyślu i okolicach. Serwis pralek Bosch, Samsung, Electrolux, Whirlpool. Szybko, z gwarancją",
@@ -574,7 +574,7 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceRange": "150-500 PLN",
+          "priceRange": "$$",
           "priceCurrency": "PLN",
           "price": "150.00",
         },
@@ -747,7 +747,7 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek ☎️ 790 258 612", // policz znaki: // 90
+      title: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek", // policz znaki
       description: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung. Szybko, z gwarancją. ☎️ 790 258 612",
       ogTitle: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek",
       ogDescription: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung. Szybko, z gwarancją.",
@@ -760,7 +760,7 @@ export const dataForMetaTags = {
       siteName: "Naprawa RTV-AGD Przemyśl",
       twitterTitle: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek",
       twitterDescription: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung.",
-      canonical: appUrls.naprawa_pralek,
+      canonical: appUrls.naprawa_suszarek,
 
       //       keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
       // appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
@@ -816,7 +816,7 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceRange": "150-600 PLN",
+          "priceRange": "$$",
           "priceCurrency": "PLN",
           "price": "150.00",
         },
