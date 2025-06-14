@@ -215,32 +215,39 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
   return (
     <Head>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta property="og:title" content={ogTitle || title} />
-      <meta property="og:description" content={ogDescription || description} />
-      <meta property="og:image" content={image} />
-      {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
-      {imageWidth && <meta property="og:image:width" content={imageWidth} />}
-      {imageHeight && <meta property="og:image:height" content={imageHeight} />}
-      {imageType && <meta property="og:image:type" content={imageType} />}
-      <meta property="og:url" content={canonical} />
-      <meta property="og:type" content={type} />
-      <meta property="og:locale" content="pl_PL" />
-      <meta property="og:site_name" content={siteName} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={twitterTitle || title} />
-      <meta name="twitter:description" content={twitterDescription || description} />
-      <meta name="twitter:image" content={image} />
-      <meta name="twitter:image:alt" content={imageAlt} />
+      {/* Basic meta tags */}
+      <title key="title">{title}</title>
+      <meta key="description" name="description" content={description} />
+      {keywords && <meta key="keywords" name="keywords" content={keywords} />}
 
-      <link rel="canonical" href={canonical} />
+      {/* Open Graph */}
+      <meta key="og:title" property="og:title" content={ogTitle || title} />
+      <meta key="og:description" property="og:description" content={ogDescription || description} />
+      <meta key="og:type" property="og:type" content={type} />
+      <meta key="og:url" property="og:url" content={canonical} />
+      <meta key="og:locale" property="og:locale" content="pl_PL" />
+      <meta key="og:site_name" property="og:site_name" content={siteName} />
+      <meta key="og:image" property="og:image" content={image} />
+      {imageAlt && <meta key="og:image:alt" property="og:image:alt" content={imageAlt} />}
+      {imageWidth && <meta key="og:image:width" property="og:image:width" content={imageWidth} />}
+      {imageHeight && <meta key="og:image:height" property="og:image:height" content={imageHeight} />}
+      {imageType && <meta key="og:image:type" property="og:image:type" content={imageType} />}
+
+      {/* Twitter Cards */}
+      <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
+      <meta key="twitter:title" name="twitter:title" content={twitterTitle || title} />
+      <meta key="twitter:description" name="twitter:description" content={twitterDescription || description} />
+      <meta key="twitter:image" name="twitter:image" content={image} />
+      {imageAlt && <meta key="twitter:image:alt" name="twitter:image:alt" content={imageAlt} />}
+
+      {/* Canonical URL */}
+      <link key="canonical" rel="canonical" href={canonical} />
 
       {/* <meta property="og:updated_time" content={ogTime} /> */}
       {/* <meta property="og:image:secure_url" content={`${appUrls.home}images/share_1.webp`} /> */}
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
+      {/* Structured Data */}
       {(path === "/naprawa-zmywarek/") && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
