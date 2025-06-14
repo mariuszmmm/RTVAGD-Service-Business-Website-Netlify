@@ -56,7 +56,7 @@ export const localBusiness = {
   "@id": "https://naprawaprzemysl.pl/#business",  // dodane 17.05.2025
   "url": appUrls.home,
   "telephone": serwis.phone.formatted,
-  "priceRange": "PLN",
+  "priceRange": "$$",
   "address": address,
   // "review": {                   // dodane 17.05.2025
   //   "@type": "Review",
@@ -190,17 +190,17 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceRange": "$$",
+          // "priceRange": "$$",
           "priceCurrency": "PLN",
           "price": "150.00",
         },
 
-        "provider": {
-          "@type": "Organization",
-          "name": "Naprawa RTV-AGD Przemyśl",
-          "telephone": "+48790258612",
-          address
-        }
+        // "provider": {
+        //   "@type": "Organization",
+        //   "name": "Naprawa RTV-AGD Przemyśl",
+        //   "telephone": "+48790258612",
+        //   address
+        // }
         // "url": appUrls.home,
 
         // "sku": "SEO",
@@ -574,16 +574,16 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceRange": "$$",
+          // "priceRange": "$$",
           "priceCurrency": "PLN",
           "price": "150.00",
         },
-        "provider": {
-          "@type": "Organization",
-          "name": "Naprawa RTV-AGD Przemyśl",
-          "telephone": "+48790258612",
-          address
-        }
+        // "provider": {
+        //   "@type": "Organization",
+        //   "name": "Naprawa RTV-AGD Przemyśl",
+        //   "telephone": "+48790258612",
+        //   address
+        // }
         // "image": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
         // "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
         // "url": appUrls.naprawa_pralek,
@@ -826,7 +826,7 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceRange": "100-500",
+          // "priceRange": "$$",
           "priceCurrency": "PLN",
           "price": "150.00",
           "seller": {
@@ -841,10 +841,10 @@ export const dataForMetaTags = {
           }
         },
         "category": "Naprawa suszarek",
-        "serviceArea": {
-          "@type": "Place",
-          "name": "Przemyśl i okolice"
-        }
+        // "serviceArea": {
+        //   "@type": "Place",
+        //   "name": "Przemyśl i okolice"
+        // }
         // "provider": {
         //   "@type": "Organization",
         //   "name": "Naprawa RTV-AGD Przemyśl",

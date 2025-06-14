@@ -69,7 +69,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
               <meta itemProp="availability" content="https://schema.org/InStock" />
               <meta itemProp="priceCurrency" content="PLN" />
-              <meta itemProp="priceRange" content="100-500" />
+              {/* <meta itemProp="priceRange" content="100-500" /> */}
               <meta itemProp="price" content="150" />
             </div>
 
