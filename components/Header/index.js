@@ -43,15 +43,16 @@ const Header = ({ rating }) => {
     <HeaderWrapper>
       <HeaderContainer>
         <Logo href="/" >
+          {` ${serwis.shortName} `}
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
-              alt="Serwis RTV‑AGD"
-              loading="lazy"
+              alt={serwis.shortName}
+              // loading="lazy"
               fill
             />
           </Emoticon>
-          {` ${serwis.shortName}`}</Logo>
+        </Logo>
         <nav>
           <NavList>
             <ListItem>

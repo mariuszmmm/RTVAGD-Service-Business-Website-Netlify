@@ -107,7 +107,9 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             lang="pl"
           // aria-label="Naprawa i serwis pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy w Przemyślu"
           >
-            Naprawa RTV-AGD Przemyśl<br /> Profesjonalny serwis pralek, suszarek, zmywarek,<br /> telewizórów i ekspresów do kawy
+            Naprawa pralek, suszarek, zmywarek,<br />
+            telewizórów i ekspresów do kawy<br />
+            {serwis.shortName} Przemyśl
             {/* Naprawa i serwis<br />
             <StyledLink
               href="/naprawa-pralek"

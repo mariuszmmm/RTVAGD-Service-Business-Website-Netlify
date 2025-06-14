@@ -8,8 +8,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl.webp</image:loc>
-      <image:title>Serwis RTV-AGD Przemyśl - naprawa pralek suszarek zmywarek</image:title>
-      <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu - naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów</image:caption>
+      <image:title>Serwis RTV-AGD Przemyśl</image:title>
+      <image:caption>Serwis RTV-AGD Przemyśl - naprawa pralek suszarek zmywarek telewizorów ekspresów</image:caption>
     </image:image>
   </url>
   <url>
@@ -28,8 +28,8 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl.webp</image:loc>
-      <image:title>Naprawa pralek Przemyśl - serwis pralek wszystkich marek</image:title>
-      <image:caption>Profesjonalna naprawa pralek w Przemyślu - serwis pralek Bosch, Samsung, Electrolux, Whirlpool</image:caption>
+      <image:title>Naprawa pralek Przemyśl</image:title>
+      <image:caption>Serwis i naprawa pralek Przemyśl | Serwis_RTV-AGD</image:caption>
     </image:image>
   </url>
   <url>
@@ -39,8 +39,8 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp</image:loc>
-      <image:title>Naprawa suszarek Przemyśl - serwis suszarek</image:title>
-      <image:caption>Profesjonalna naprawa suszarek wszystkich marek w Przemyślu. Szybka diagnoza i oryginalne części zamienne.</image:caption>
+      <image:title>Naprawa suszarek Przemyśl</image:title>
+      <image:caption>Skuteczna naprawa suszarek Przemyśl | Serwis_RTV-AGD</image:caption>
       <image:geo_location>Przemyśl, Polska</image:geo_location>
     </image:image>
   </url>

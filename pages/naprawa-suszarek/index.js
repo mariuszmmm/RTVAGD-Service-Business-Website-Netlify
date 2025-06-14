@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa suszarek Przemyśl<br /> Profesjonalny serwis suszarek ✔️
+          Naprawa suszarek Przemyśl
           {/* &nbsp;
           <Emoticon>
             <Image

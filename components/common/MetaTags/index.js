@@ -311,6 +311,25 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
       {(path === "/naprawa-pralek/") && (
         <>
+          <script type="application/ld+json"    // wyłączone 15.05.2025
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [imageObject, webpage,
+                  breadcrumbList, website,
+                ]
+              })
+            }}
+          />
+          <script type="application/ld+json"    // wyłączone 15.05.2025
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                ...faqPage
+              })
+            }}
+          />
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
@@ -325,6 +344,25 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
       {(path === "/naprawa-suszarek/") && (
         <>
+          <script type="application/ld+json"    // wyłączone 15.05.2025
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [imageObject, webpage,
+                  breadcrumbList, website,
+                ]
+              })
+            }}
+          />
+          <script type="application/ld+json"    // wyłączone 15.05.2025
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                ...faqPage
+              })
+            }}
+          />
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
@@ -338,7 +376,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
-                "@type": "Product",
+                "@type": "Service",
                 ...serviceSchema
               })
             }}
@@ -403,7 +441,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify(website)
             }}
           /> */}
-          {/* <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
+          <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
@@ -413,8 +451,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                 ]
               })
             }}
-          /> */}
-          <script type="application/ld+json"
+          />
+          {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
@@ -422,7 +460,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                 ...productSchema
               })
             }}
-          />
+          /> */}
           {/* <script type="application/ld+json"     // wyłączone 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(organization)
