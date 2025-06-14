@@ -1,6 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
+import { baseUrl } from '../utils/urls';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -39,15 +40,15 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
           {/* Favicons - kompletny zestaw */}
-          <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-          <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-          <link rel="shortcut icon" href="/images/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="icon" type="image/png" href={baseUrl + "/images/favicon-96x96.png"} sizes="96x96" />
+          <link rel="icon" type="image/svg+xml" href={baseUrl + "/images/favicon.svg"} />
+          <link rel="shortcut icon" href={baseUrl + "/images/favicon.ico"} />
+          <link rel="apple-touch-icon" sizes="180x180" href={baseUrl + "/images/apple-touch-icon.png"} />
+          <link rel="manifest" href={baseUrl + "/site.webmanifest"} />
 
           {/* Additional favicon sizes for better support */}
-          <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href={baseUrl + "/images/favicon-32x32.png"} />
+          <link rel="icon" type="image/png" sizes="16x16" href={baseUrl + "/images/favicon-16x16.png"} />
 
           {/* Basic meta tags */}
           <meta key="robots" name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
