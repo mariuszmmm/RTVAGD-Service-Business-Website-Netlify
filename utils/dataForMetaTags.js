@@ -747,22 +747,22 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek", // policz znaki
-      description: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung. Szybko, z gwarancją. ☎️ 790 258 612",
-      ogTitle: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek",
-      ogDescription: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung. Szybko, z gwarancją.",
+      title: "Naprawa suszarek ✔️ Serwis Przemyśl ☎️ 790 258 612", // policz znaki
+      description: "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś - 790 258 612.",
+      ogTitle: "Naprawa suszarek ✔️ Serwis Przemyśl ☎️ 790 258 612",
+      ogDescription: "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części.",
       imageType: "image/webp",
       image: imageUrls.suszarka,
-      imageAlt: "Naprawa suszarek Przemyśl - serwis suszarek wszystkich marek",
+      imageAlt: "Naprawa suszarek Przemyśl - profesjonalny serwis suszarek",
       imageWidth: "700",
       imageHeight: "700",
       type: "website",
-      siteName: "Naprawa RTV-AGD Przemyśl",
-      twitterTitle: "Naprawa suszarek Przemyśl - Serwis suszarek wszystkich marek",
-      twitterDescription: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Serwis suszarek Bosch, Siemens, Electrolux, Samsung.",
+      siteName: "Naprawa suszarek Przemyśl",
+      twitterTitle: "Naprawa suszarek ✔️ Serwis Przemyśl ☎️ 790 258 612",
+      twitterDescription: "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części.",
       canonical: appUrls.naprawa_suszarek,
 
-      //       keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek w Przemyślu, naprawa suszarki Przemyśl, naprawa suszarek Przemyśl, awaria suszarki",
+      keywords: "naprawa suszarek, serwis suszarek Przemyśl, naprawa suszarek Przemyśl, mechanik suszarek",
       // appleMobileWebAppTitle: "Naprawa suszarek w Przemyślu ☎️ 790 258 612 ✔️ " + serwis.shortName,
 
     },
@@ -777,55 +777,80 @@ export const dataForMetaTags = {
         "sameAs": [],
       },
       service: {
-
         "@type": "Service",
-        "name": "Naprawa Suszarek - " + serwis.name,  // "name": "Naprawa Suszarek",
-        "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
-        "image": "https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki.png",
-        "areaServed": {
-          "@type": "Place",
-          "address": address,
-        },
-        "aggregateRating": {
-          "itemReviewed": {
-            "@type": "Service",
-            "name": "Naprawa Suszarek"
+        "name": "Naprawa suszarek Przemyśl",
+        "description": "Profesjonalna naprawa suszarek wszystkich marek w Przemyślu i okolicach",
+        "provider": {
+          "@type": "Organization",
+          "name": "Serwis RTV-AGD Przemyśl",
+          "telephone": "+48790258612",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Przemyśl",
+            "addressCountry": "PL"
           }
         },
-        "provider": {                           // dodane 14.05.2025
-          "@type": "LocalBusiness",
-          "name": serwis.name,
-          "url": appUrls.home,
-          "telephone": serwis.phone.formatted,
-          "address": address,
-          //  "image": "https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki.png",
-        },
+        "image": imageUrls.suszarka,
+        "serviceType": "Naprawa suszarek",
+        "areaServed": [
+          "Przemyśl",
+          "Bolestraszyce",
+          "Duńkowiczki",
+          "Krówniki",
+          "Nehrybka",
+          "Orzechowce",
+          "Ostrów",
+          "Pikulice",
+          "Prałkowce",
+          "Wyszatyce",
+          "Żurawica"
+        ],
       },
       product: {
 
         // "@type": "Product",
         "@id": appUrls.naprawa_suszarek + "#product",
         "name": "Naprawa suszarek Przemyśl",
-        "description": "Profesjonalna naprawa suszarek w Przemyślu. Serwis suszarek wszystkich marek: Bosch, Siemens, Electrolux, Samsung, Whirlpool, Beko i innych",
-        "image": [imageUrls.suszarka],
+        "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części zamiennych. Obsługujemy wszystkie marki: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele.",
+        "image": {
+          "@type": "ImageObject",
+          "url": imageUrls.suszarka,
+          "width": 700,
+          "height": 700,
+          "caption": "Naprawa suszarek Przemyśl - profesjonalny serwis suszarek"
+        },
         "brand": {
           "@type": "Brand",
-          "name": "Naprawa RTV-AGD Przemyśl"
+          "name": "Serwis RTV-AGD Przemyśl"
         },
-        "category": "Naprawa suszarek",
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          "priceRange": "$$",
+          "priceRange": "100-500",
           "priceCurrency": "PLN",
           "price": "150.00",
+          "seller": {
+            "@type": "Organization",
+            "name": "Serwis RTV-AGD Przemyśl",
+            "telephone": "+48790258612",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Przemyśl",
+              "addressCountry": "PL"
+            }
+          }
         },
-        "provider": {
-          "@type": "Organization",
-          "name": "Naprawa RTV-AGD Przemyśl",
-          "telephone": "+48790258612",
-          address
+        "category": "Naprawa suszarek",
+        "serviceArea": {
+          "@type": "Place",
+          "name": "Przemyśl i okolice"
         }
+        // "provider": {
+        //   "@type": "Organization",
+        //   "name": "Naprawa RTV-AGD Przemyśl",
+        //   "telephone": "+48790258612",
+        //   address
+        // }
         // "image": ["https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki.png"],
         // "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
         // "url": appUrls.naprawa_suszarek,

@@ -217,6 +217,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <meta property="og:title" content={ogTitle || title} />
       <meta property="og:description" content={ogDescription || description} />
       <meta property="og:image" content={image} />
@@ -232,12 +233,12 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       <meta name="twitter:title" content={twitterTitle || title} />
       <meta name="twitter:description" content={twitterDescription || description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={imageAlt} />
 
       <link rel="canonical" href={canonical} />
 
       {/* <meta property="og:updated_time" content={ogTime} /> */}
       {/* <meta property="og:image:secure_url" content={`${appUrls.home}images/share_1.webp`} /> */}
-      {/* <meta name="keywords" content={keywords} /> */}
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
       {(path === "/naprawa-zmywarek/") && (
@@ -301,7 +302,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/naprawa-suszarek/" || path === "/naprawa-pralek/") && (
+      {(path === "/naprawa-pralek/") && (
         <>
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -310,8 +311,32 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                 "@type": "Product",
                 ...productSchema
               })
-            }} s
+            }}
           />
+        </>
+      )}
+
+      {(path === "/naprawa-suszarek/") && (
+        <>
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                ...productSchema
+              })
+            }}
+          />
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                ...serviceSchema
+              })
+            }}
+          />
+
         </>
       )}
 

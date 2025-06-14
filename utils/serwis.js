@@ -15,6 +15,7 @@ export const serwis = {
   phone: {
     number: "+48790258612",
     formatted: "+48 790 258 612",
+    short: "790 258 612",
   },
   adres: "ul. Józefa Sowińskiego 2, 37-700 Przemyśl",
   area: [

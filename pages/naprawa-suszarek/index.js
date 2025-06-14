@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa suszarek Przemyśl<br /> Profesjonalny serwis suszarek wszystkich marek
+          Naprawa suszarek Przemyśl<br /> Profesjonalny serwis suszarek ✔️
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -47,9 +47,11 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           <StyledPhoto>
             <Image
               src={imageUrls.suszarka}
-              alt="Naprawa suszarek Przemyśl serwis suszarek Bosch Siemens Electrolux Samsung Whirlpool"
-              title="Profesjonalna naprawa suszarek w Przemyślu - serwis suszarek wszystkich marek"
-
+              alt="Naprawa suszarek Przemyśl - profesjonalny serwis i naprawa suszarek do ubrań"
+              title="Serwis suszarek Przemyśl - szybka i fachowa naprawa"
+              loading="eager"
+              fetchpriority="high"
+              itemProp="image"
               // loading='lazy'
               fill
               // decoding="async"
@@ -58,6 +60,26 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               sizes="(max-width: 500px) 500px, 1000px"
             />
           </StyledPhoto>
+
+          <div itemScope itemType="https://schema.org/Product">
+            <meta itemProp="name" content="Naprawa suszarek Przemyśl" />
+            <meta itemProp="description" content="Profesjonalna naprawa suszarek do ubrań w Przemyślu" />
+            <img itemProp="image" src="https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp" alt="Naprawa suszarek Przemyśl" style={{ display: "none" }} />
+
+            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
+              <meta itemProp="availability" content="https://schema.org/InStock" />
+              <meta itemProp="priceCurrency" content="PLN" />
+              <meta itemProp="priceRange" content="100-500" />
+              <meta itemProp="price" content="150" />
+            </div>
+
+            <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+              <meta itemProp="ratingValue" content={(rating || serwis.rating).toString()} />
+              <meta itemProp="reviewCount" content={(ratingsTotal || serwis.ratingsTotal).toString()} />
+              <meta itemProp="bestRating" content="5" />
+              <meta itemProp="worstRating" content="1" />
+            </div>
+          </div>
 
           <SubTitle>
             Szybka i fachowa naprawa suszarek w Przemyślu i okolicach
@@ -123,7 +145,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <b>Zadzwoń teraz, aby szybko umówić wizytę i&nbsp;przywrócić pełną sprawność swojej suszarce!</b>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa suszarek w Przemyślu' >
-            Zleć naprawę suszarki
+            📞 Zadzwoń teraz: {serwis.phone.short}
           </ButtonLink>
         </Section>
 
