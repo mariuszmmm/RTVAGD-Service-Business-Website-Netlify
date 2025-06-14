@@ -47,10 +47,10 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           <StyledPhoto>
             <Image
               src={imageUrls.suszarka}
-              alt="Naprawa suszarek Przemyśl - profesjonalny serwis i naprawa suszarek do ubrań"
-              title="Serwis suszarek Przemyśl - szybka i fachowa naprawa"
-              loading="eager"
-              fetchpriority="high"
+              alt="Naprawa suszarek Przemyśl serwis pralek Bosch, Siemens, Electrolux, Whirlpool, Samsung"
+              title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
+// loading="eager"
+             // fetchpriority="high"
               itemProp="image"
               // loading='lazy'
               fill
