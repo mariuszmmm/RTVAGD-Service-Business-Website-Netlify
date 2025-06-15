@@ -107,9 +107,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             lang="pl"
           // aria-label="Naprawa i serwis pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy w Przemyślu"
           >
-            Naprawa pralek, suszarek, zmywarek,<br />
-            telewizórów i ekspresów do kawy<br />
-            {serwis.shortName} Przemyśl
+            Profesjonalny serwis RTV-AGD w Przemyślu
             {/* Naprawa i serwis<br />
             <StyledLink
               href="/naprawa-pralek"
@@ -189,62 +187,59 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle lang="pl">
-            Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i&nbsp;ekspresów&nbsp;do&nbsp;kawy
-          </SubTitle>
-          <StyledText>
             Specjalizuję się w naprawie urządzeń RTV i AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i mniej znanych producentów.<br />
-            Naprawiam urządzenia marek takich jak:
-          </StyledText>
+            Naprawiam:
+          </SubTitle>
           <StyledText as="ul">
             <li>
               <StyledLink
                 href="/naprawa-pralek"
                 title='Naprawa pralek w Przemyślu'
               >
-                <h3>Pralki: </h3>
+                <strong>Pralki: </strong>
               </StyledLink>
               {/* <Schema page={dataForMetaTags.naprawa_pralek} /> */}
-              Bosch, Siemens, LG, Samsung, Whirlpool, Electrolux, Miele, Beko, AEG, Candy
+              Bosch, Siemens, LG, Samsung, Whirlpool, Electrolux, Miele, Beko
             </li>
             <li>
               <StyledLink
                 href="/naprawa-suszarek"
                 title='Naprawa suszarek w Przemyślu'
               >
-                <h3>Suszarki: </h3>
+                <strong>Suszarki: </strong>
               </StyledLink>
               {/* <Schema page={dataForMetaTags.naprawa_suszarek} /> */}
-              Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, AEG, Candy, Amica
+              Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung
             </li>
             <li>
               <StyledLink
                 href="/naprawa-zmywarek"
                 title='Naprawa zmywarek w Przemyślu'
               >
-                <h3>Zmywarki: </h3>
+                <strong>Zmywarki: </strong>
               </StyledLink>
               {/* <Schema page={dataForMetaTags.naprawa_zmywarek} /> */}
-              Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, AEG, Candy, Amica
+              Bosch, Siemens, Whirlpool, Electrolux, Beko,  Samsung, AEG
             </li>
             <li>
               <StyledLink
                 href="/naprawa-telewizorow"
                 title='Naprawa telewizorów w Przemyślu'
               >
-                <h3>Telewizory: </h3>
+                <strong>Telewizory: </strong>
               </StyledLink>
               {/* <Schema page={dataForMetaTags.naprawa_telewizorow} /> */}
-              LG, Samsung, Sony, Philips, Panasonic, TCL, Sharp, Hisense, Grundig, JVC
+              LG, Samsung, Sony, Philips, Panasonic, TCL, Sharp, JVC
             </li>
             <li>
               <StyledLink
                 href="/naprawa-ekspresow"
                 title='Naprawa ekspresów do kawy w Przemyślu'
               >
-                <h3>Ekspresy do kawy: </h3>
+                <strong>Ekspresy do kawy: </strong>
               </StyledLink>
               {/* <Schema page={dataForMetaTags.naprawa_ekspresow} /> */}
-              De’Longhi, Jura, Siemens, Bosch, Philips, Nivona, Krups, Melitta, Smeg, Miele
+              De’Longhi, Jura, Siemens, Bosch, Philips, Krups
             </li>
           </StyledText>
           <StyledText>

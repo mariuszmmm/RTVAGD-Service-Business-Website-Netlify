@@ -32,7 +32,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa zmywarek Przemyśl
+          Naprawa zmywarek w Przemyślu
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -49,7 +49,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Zmywarka"
               src={imageUrls.zmywarka}
-              alt="Zmywarka naprawiona w profesionalnym serwisie w Przemyślu"
+              alt="Zmywarka naprawiona w profesjonalnym serwisie w Przemyślu"
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.zmywarka_300} 500w,
@@ -59,7 +59,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
           </StyledPhoto>
 
           <SubTitle>
-            Szybka i profesjonalna naprawa zmywarek w Przemyślu i okolicach
+            Szybka i profesjonalna naprawa zmywarek
           </SubTitle>
           <StyledText>
             Awaria zmywarki może całkowicie zaburzyć porządek w kuchni. Dlatego <strong>serwis zmywarek</strong> w Przemyślu oferuje kompleksową diagnostykę oraz profesjonalną naprawę urządzeń wszystkich marek.<br />
@@ -83,6 +83,18 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>
+            Dlaczego warto wybrać mój serwis?
+          </SubTitle>
+          <StyledText as="ul" $check>
+            <li><strong>Szybka reakcja:</strong> Zwykle ustalam termin wizyty jeszcze tego samego dnia, abyś mógł szybko odzyskać sprawność swojego sprzętu.</li>
+            <li><strong>Doświadczenie i&nbsp;wiedza:</strong> Ponad 20&nbsp;lat praktyki w&nbsp;serwisowaniu sprzętu AGD pozwala mi naprawiać urządzenia wszystkich marek i&nbsp;modeli, nawet te najbardziej skomplikowane.</li>
+            <li><strong>Elastyczność usług:</strong> Naprawiam zmywarki zarówno w Twoim domu, jak i w moim warsztacie – możesz wybrać dogodną dla siebie opcję.</li>
+            <li><strong>Gwarancja na usługę:</strong> Na każdą naprawę udzielam gwarancji, a stosowane części pochodzą od sprawdzonych producentów, co zapewnia niezawodność naprawy.</li>
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>
             Proces naprawy zmywarki krok po kroku
           </SubTitle>
           <StyledText as="ol" >
@@ -91,18 +103,6 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             <li><strong>Naprawa lub wymiana części:</strong> Usuwam usterkę od razu, a&nbsp;jeśli konieczna jest wymiana elementów, instaluję oryginalne części zamienne.</li>
             <li><strong>Testy końcowe:</strong> Po naprawie przeprowadzam testy działania zmywarki, aby upewnić się, że działa zgodnie z zaleceniami producenta.</li>
             <li><strong>Gwarancja i porady:</strong> Udzielam gwarancji na wykonaną usługę i&nbsp;przekazuję wskazówki eksploatacyjne, by uniknąć podobnych usterek w przyszłości.</li>
-          </StyledText>
-        </Section>
-
-        <Section>
-          <SubTitle>
-            Dlaczego warto wybrać mój serwis?
-          </SubTitle>
-          <StyledText as="ul" $check>
-            <li><strong>Szybka reakcja:</strong> Zwykle ustalam termin wizyty jeszcze tego samego dnia, abyś mógł szybko odzyskać sprawność swojego sprzętu.</li>
-            <li><strong>Doświadczenie i&nbsp;wiedza:</strong> Ponad 20&nbsp;lat praktyki w&nbsp;serwisowaniu sprzętu AGD pozwala mi naprawiać urządzenia wszystkich marek i&nbsp;modeli, nawet te najbardziej skomplikowane.</li>
-            <li><strong>Elastyczność usług:</strong> Naprawiam zmywarki zarówno w Twoim domu, jak i w moim warsztacie – możesz wybrać dogodną dla siebie opcję.</li>
-            <li><strong>Gwarancja na usługę:</strong> Na każdą naprawę udzielam gwarancji, a stosowane części pochodzą od sprawdzonych producentów, co zapewnia niezawodność naprawy.</li>
           </StyledText>
         </Section>
 

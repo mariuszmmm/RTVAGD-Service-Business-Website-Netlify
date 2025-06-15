@@ -31,7 +31,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
       <Container>
         <Title>
-          Naprawa pralek Przemyśl
+          Naprawa pralek w Przemyślu
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -47,8 +47,9 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
           <StyledPhoto>
             <Image
               src={imageUrls.pralka}
-              alt="Naprawa pralek Przemyśl serwis pralek Bosch Samsung Electrolux Whirlpool Beko Miele"
-              title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
+              title="Pralka"
+              alt="Naprawiona pralka w profesjonalnym serwisie w Przemyślu"
+              // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
               // loading='lazy'
               // decoding="async"
               fill
@@ -58,7 +59,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             />
           </StyledPhoto>
 
-          <SubTitle>Szybka i rzetelna naprawa pralek w Przemyślu i okolicach</SubTitle>
+          <SubTitle>Szybka i rzetelna naprawa pralek</SubTitle>
           <StyledText>
             Awaria pralki może utrudnić codzienne obowiązki domowe. Dlatego <strong>serwis pralek</strong> w Przemyślu oferuje szybką diagnostykę oraz rzetelną naprawę pralek wszystkich marek.<br />
             Korzystam z profesjonalnych narzędzi i oryginalnych części zamiennych, aby przywrócić pełną funkcjonalność Twojej pralki już podczas pierwszej wizyty. Zapewniam gwarancję na wykonaną naprawę, dzięki czemu masz pewność satysfakcji i bezproblemowego użytkowania sprzętu. Specjalizuję się w serwisie i naprawie pralek marek Bosch, Electrolux, Samsung, Whirlpool oraz wielu innych, zawsze gwarantując najwyższą jakość usług i szybkie terminy realizacji.
@@ -81,6 +82,18 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>
+            Dlaczego warto wybrać mój serwis?
+          </SubTitle>
+          <StyledText as="ul" $check>
+            <li><strong>Szybka reakcja:</strong> Ustalam termin wizyty jeszcze tego samego dnia, abyś mógł szybko odzyskać sprawność swojej pralki.</li>
+            <li><strong>Doświadczenie i wiedza:</strong> Ponad 20 lat praktyki w serwisowaniu sprzętu AGD pozwala mi naprawiać pralki wszystkich modeli, nawet te najbardziej skomplikowane.</li>
+            <li><strong>Obsługa wszystkich marek:</strong> Specjalizuję się w naprawie pralek różnych producentów, takich jak Bosch, Electrolux, Amica, Samsung, Whirlpool, Beko i wielu innych, co gwarantuje kompleksową obsługę niezależnie od modelu urządzenia.</li>
+            <li><strong>Gwarancja na usługę:</strong> Na każdą naprawę udzielam gwarancji, a stosowane części pochodzą od sprawdzonych producentów, co zapewnia niezawodność naprawy </li>
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>
             Proces naprawy pralki krok po kroku
           </SubTitle>
           <StyledText as="ol" >
@@ -89,18 +102,6 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             <li><strong>Naprawa lub wymiana części:</strong> Natychmiast usuwam usterkę; w razie potrzeby montuję oryginalne części zamienne.</li>
             <li><strong>Testy końcowe:</strong> Po naprawie przeprowadzam pełen cykl prania testowego, by potwierdzić, że wszystko działa wzorowo.</li>
             <li><strong>Gwarancja i porady:</strong> Udzielam gwarancji na wykonaną usługę i doradzam, jak dbać o pralkę, by uniknąć podobnych problemów.</li>
-          </StyledText>
-        </Section>
-
-        <Section>
-          <SubTitle>
-            Dlaczego warto wybrać mój serwis?
-          </SubTitle>
-          <StyledText as="ul" $check>
-            <li><strong>Szybka reakcja:</strong> Ustalam termin wizyty jeszcze tego samego dnia, abyś mógł szybko odzyskać sprawność swojej pralki.</li>
-            <li><strong>Doświadczenie i wiedza:</strong> Ponad 20 lat praktyki w serwisowaniu sprzętu AGD pozwala mi naprawiać pralki wszystkich modeli, nawet te najbardziej skomplikowane.</li>
-            <li><strong>Obsługa wszystkich marek:</strong> Specjalizuję się w naprawie pralek różnych producentów, takich jak Bosch, Electrolux, Amica, Samsung, Whirlpool, Beko i wielu innych, co gwarantuje kompleksową obsługę niezależnie od modelu urządzenia.</li>
-            <li><strong>Gwarancja na usługę:</strong> Na każdą naprawę udzielam gwarancji, a stosowane części pochodzą od sprawdzonych producentów, co zapewnia niezawodność naprawy </li>
           </StyledText>
         </Section>
 

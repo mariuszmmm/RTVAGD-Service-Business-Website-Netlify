@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa suszarek Przemyśl
+          Naprawa suszarek w Przemyślu
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -47,11 +47,12 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           <StyledPhoto>
             <Image
               src={imageUrls.suszarka}
-              alt="Naprawa suszarek Przemyśl serwis pralek Bosch, Siemens, Electrolux, Whirlpool, Samsung"
-              title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
-// loading="eager"
-             // fetchpriority="high"
-              itemProp="image"
+              title="Suszarka"
+              alt="Naprawiona suszarka w serwisie AGD w Przemyślu"
+              // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
+              // loading="eager"
+              // fetchpriority="high"
+              // itemProp="image"
               // loading='lazy'
               fill
               // decoding="async"
@@ -61,7 +62,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             />
           </StyledPhoto>
 
-          <div itemScope itemType="https://schema.org/Product">
+          {/* <div itemScope itemType="https://schema.org/Product">
             <meta itemProp="name" content="Naprawa suszarek Przemyśl" />
             <meta itemProp="description" content="Profesjonalna naprawa suszarek do ubrań w Przemyślu" />
             <img itemProp="image" src="https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp" alt="Naprawa suszarek Przemyśl" style={{ display: "none" }} />
@@ -69,7 +70,6 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
               <meta itemProp="availability" content="https://schema.org/InStock" />
               <meta itemProp="priceCurrency" content="PLN" />
-              {/* <meta itemProp="priceRange" content="100-500" /> */}
               <meta itemProp="price" content="150" />
             </div>
 
@@ -79,10 +79,12 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               <meta itemProp="bestRating" content="5" />
               <meta itemProp="worstRating" content="1" />
             </div>
-          </div>
+          </div> */}
+        </Section>
 
+        <Section>
           <SubTitle>
-            Szybka i fachowa naprawa suszarek w Przemyślu i okolicach
+            Szybka i fachowa naprawa suszarek
           </SubTitle>
           <StyledText>
             Awaria suszarki może znacząco utrudnić codzienne prace domowe, zwłaszcza gdy zależy nam na szybkim wysuszeniu ubrań w sezonie jesienno-zimowym. Dlatego <strong>serwis suszarek</strong> w Przemyślu oferuje kompleksową diagnostykę i fachową naprawę urządzeń wszystkich marek. Korzystam z profesjonalnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, aby już podczas pierwszej wizyty przywrócić pełną funkcjonalność Twojego sprzętu. Zapewniam gwarancję na wykonaną usługę, co daje pewność satysfakcji i nieprzerwanej eksploatacji urządzenia. Specjalizuję się w naprawie suszarek marek takich jak: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi.
@@ -95,11 +97,23 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             Najczęstsze usterki suszarek
           </SubTitle>
           <StyledText as="ul" $cross>
-            <li><b>Suszarka nie obraca bębna</b> -&nbsp;może być spowodowane zerwanym paskiem napędowym, uszkodzonym silnikiem lub zużytymi łożyskami.</li>
-            <li><b>Suszarka wyłącza się przed zakończeniem cyklu</b> -&nbsp;przyczyną może być uszkodzony czujnik wilgotności, przegrzewanie lub usterka modułu elektronicznego.</li>
-            <li><b>Niewystarczające suszenie</b> -&nbsp;zatkany filtr kłaczków lub przewód wentylacyjny (w suszarkach kondensacyjnych –&nbsp;zatkany skraplacz).</li>
-            <li><b>Przecieki wody pod suszarką</b> -&nbsp;nieszczelny wąż spustowy, przepełniony pojemnik na wodę lub uszkodzony zbiornik kondensatora. Zalecane jest czyszczenie układu kondensacyjnego co najmniej raz na sezon.</li>
-            <li><b>Wyświetlanie kodów błędów</b> -&nbsp;problemy z&nbsp;elektroniką, modułem sterującym lub czujnikami.</li>
+            <li><strong>Suszarka nie obraca bębna</strong> -&nbsp;może być spowodowane zerwanym paskiem napędowym, uszkodzonym silnikiem lub zużytymi łożyskami.</li>
+            <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> -&nbsp;przyczyną może być uszkodzony czujnik wilgotności, przegrzewanie lub usterka modułu elektronicznego.</li>
+            <li><strong>Niewystarczające suszenie</strong> -&nbsp;zatkany filtr kłaczków lub przewód wentylacyjny (w suszarkach kondensacyjnych –&nbsp;zatkany skraplacz).</li>
+            <li><strong>Przecieki wody pod suszarką</strong> -&nbsp;nieszczelny wąż spustowy, przepełniony pojemnik na wodę lub uszkodzony zbiornik kondensatora. Zalecane jest czyszczenie układu kondensacyjnego co najmniej raz na sezon.</li>
+            <li><strong>Wyświetlanie kodów błędów</strong> -&nbsp;problemy z&nbsp;elektroniką, modułem sterującym lub czujnikami.</li>
+          </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>
+            Dlaczego warto skorzystać z moich usług
+          </SubTitle>
+          <StyledText as="ul" $check>
+            <li><strong>Szybka reakcja i krótkie terminy realizacji:</strong> Często mogę pojawić się u Ciebie jeszcze tego samego dnia, w jakim otrzymam zgłoszenie.</li>
+            <li><strong>Doświadczenie i&nbsp;wiedza:</strong> Ponad 20 lat praktyki w serwisowaniu średniej i dużej klasy urządzeń AGD. Znajomość specyfiki suszarek kondensacyjnych, z pompą ciepła, elektrycznych.</li>
+            <li><strong>Obsługa wszystkich marek i modeli:</strong> Serwisuję suszarki marek: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi i inne.</li>
+            <li><strong>Gwarancja na wykonaną usługę:</strong> Gwarancja na wszystkie wykonane czynności serwisowe oraz wymienione części. Pracuję wyłącznie na sprawdzonych komponentach, co minimalizuje ryzyko ponownej awarii w krótkim czasie.</li>
           </StyledText>
         </Section>
 
@@ -113,18 +127,6 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <li><strong>Naprawa lub wymiana części:</strong> Usuwam usterkę od razu, jeśli to możliwe. W razie konieczności montuję wyłącznie oryginalne lub wysokiej jakości części zamienne.</li>
             <li><strong>Testy końcowe:</strong> Po naprawie przeprowadzam kilkuminutowy cykl suszenia testowego, aby upewnić się, że suszarka działa w pełni sprawnie. Sprawdzam odprowadzanie skroplin i poprawność temperatury.</li>
             <li><strong>Gwarancja i porady eksploatacyjne:</strong> Na każdą naprawę udzielam gwarancji. Udzielam praktycznych wskazówek, jak dbać o suszarkę, aby uniknąć podobnych awarii w przyszłości.</li>
-          </StyledText>
-        </Section>
-
-        <Section>
-          <SubTitle>
-            Dlaczego warto skorzystać z moich usług
-          </SubTitle>
-          <StyledText as="ul" $check>
-            <li><strong>Szybka reakcja i krótkie terminy realizacji:</strong> Często mogę pojawić się u Ciebie jeszcze tego samego dnia, w jakim otrzymam zgłoszenie.</li>
-            <li><strong>Doświadczenie i&nbsp;wiedza:</strong> Ponad 20 lat praktyki w serwisowaniu średniej i dużej klasy urządzeń AGD. Znajomość specyfiki suszarek kondensacyjnych, z pompą ciepła, elektrycznych.</li>
-            <li><strong>Obsługa wszystkich marek i modeli:</strong> Serwisuję suszarki marek: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi i inne.</li>
-            <li><strong>Gwarancja na wykonaną usługę:</strong> Gwarancja na wszystkie wykonane czynności serwisowe oraz wymienione części. Pracuję wyłącznie na sprawdzonych komponentach, co minimalizuje ryzyko ponownej awarii w krótkim czasie.</li>
           </StyledText>
         </Section>
 
