@@ -398,11 +398,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               }}
             /> */}
 
-          {/* <script type="application/ld+json"   // dodane 16.05.2025
+          <script type="application/ld+json"   // dodane 16.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(breadcrumbList)
             }}
-          /> */}
+          />
 
 
           {/* <script type="application/ld+json"
