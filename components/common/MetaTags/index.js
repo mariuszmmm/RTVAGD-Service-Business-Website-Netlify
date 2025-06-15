@@ -410,13 +410,12 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify(localBusiness)
             }}
           /> */}
-          <script type="application/ld+json"    // wyłączone 15.05.2025
+          <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@graph": [
-                  // breadcrumbList, 
-                  productSchema]
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                ...productSchema
               })
             }}
           />
