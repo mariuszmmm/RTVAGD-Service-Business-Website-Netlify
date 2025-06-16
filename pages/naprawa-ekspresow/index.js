@@ -84,10 +84,10 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
             Dlaczego warto wybrać mój serwis?
           </SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka diagnostyka i&nbsp;naprawa</strong>Rozumiem, jak ważna jest kawa w codziennym życiu, dlatego szybko zidentyfikuję usterkę i&nbsp;przywrócę sprawność urządzenia.</li>
-            <li><strong>Gwarancja wysokiej jakości usług</strong>Używam wyłącznie oryginalnych części zamiennych, co gwarantuje niezawodność naprawy i&nbsp;dłuższą żywotność ekspresu.</li>
-            <li><strong>Wieloletnie doświadczenie</strong>Naprawiam ekspresy do kawy od ponad 20 lat, doskonale rozumiejąc specyfikę różnych marek i&nbsp;modeli.</li>
-            <li><strong>Elastyczność i&nbsp;wygoda klienta</strong>Oferuję możliwość naprawy zarówno w warsztacie, jak i&nbsp;w&nbsp;domu lub miejscu pracy klienta.</li>
+            <li><strong>Szybka diagnostyka i&nbsp;naprawa</strong> Rozumiem, jak ważna jest kawa w codziennym życiu, dlatego szybko zidentyfikuję usterkę i&nbsp;przywrócę sprawność urządzenia.</li>
+            <li><strong>Gwarancja wysokiej jakości usług</strong> Używam wyłącznie oryginalnych części zamiennych, co gwarantuje niezawodność naprawy i&nbsp;dłuższą żywotność ekspresu.</li>
+            <li><strong>Wieloletnie doświadczenie</strong> Naprawiam ekspresy do kawy od ponad 20 lat, doskonale rozumiejąc specyfikę różnych marek i&nbsp;modeli.</li>
+            <li><strong>Elastyczność i&nbsp;wygoda klienta</strong> Oferuję możliwość naprawy zarówno w warsztacie, jak i&nbsp;w&nbsp;domu lub miejscu pracy klienta.</li>
           </StyledText>
         </Section>
 
