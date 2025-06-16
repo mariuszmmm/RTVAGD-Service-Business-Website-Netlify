@@ -74,10 +74,10 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
             Dlaczego warto wybrać moje usługi?
           </SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka i&nbsp;trafna diagnostyka</strong>Zidentyfikuję przyczynę usterki w&nbsp;krótkim czasie, dzięki czemu Twój telewizor szybko wróci do&nbsp;pełnej sprawności.</li>
-            <li><strong>Profesjonalna jakość naprawy</strong>Korzystam wyłącznie z&nbsp;oryginalnych części zamiennych oraz zaawansowanych technik naprawczych, co&nbsp;zapewnia długotrwałą niezawodność urządzenia.</li>
-            <li><strong>20 lat doświadczenia</strong>Specjalizuję się w&nbsp;naprawach telewizorów od&nbsp;ponad dwóch dekad, zdobywając zaufanie wielu klientów.</li>
-            <li><strong>Wygoda i &nbsp;elastyczność</strong>Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do&nbsp;klienta. Dopasowuję terminy do&nbsp;Twoich potrzeb.</li>
+            <li><strong>Szybka i&nbsp;trafna diagnostyka</strong> Zidentyfikuję przyczynę usterki w&nbsp;krótkim czasie, dzięki czemu Twój telewizor szybko wróci do&nbsp;pełnej sprawności.</li>
+            <li><strong>Profesjonalna jakość naprawy</strong> Korzystam wyłącznie z&nbsp;oryginalnych części zamiennych oraz zaawansowanych technik naprawczych, co&nbsp;zapewnia długotrwałą niezawodność urządzenia.</li>
+            <li><strong>20 lat doświadczenia</strong> Specjalizuję się w&nbsp;naprawach telewizorów od&nbsp;ponad dwóch dekad, zdobywając zaufanie wielu klientów.</li>
+            <li><strong>Wygoda i &nbsp;elastyczność</strong> Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do&nbsp;klienta. Dopasowuję terminy do&nbsp;Twoich potrzeb.</li>
           </StyledText>
         </Section>
 
