@@ -248,7 +248,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
       {/* Structured Data */}
-      {(path === appUrls.naprawa_zmywarek) && (
+      {(path === "/naprawa-zmywarek/") && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
               dangerouslySetInnerHTML={{
@@ -310,7 +310,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === appUrls.naprawa_pralek) && (
+      {(path === "/naprawa-pralek/") && (
         <>
           <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
@@ -344,7 +344,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === appUrls.naprawa_suszarek) && (
+      {(path === "/naprawa-suszarek/") && (
         <>
           <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
@@ -388,7 +388,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === appUrls.naprawa_ekspresow || path === appUrls.naprawa_telewizorow) && (
+      {(path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
               dangerouslySetInnerHTML={{
@@ -435,7 +435,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       )}
 
 
-      {path === appUrls.home && (
+      {path === "/" && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -494,7 +494,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           /> */}
         </>
       )}
-      {(path === appUrls.kontakt || path === appUrls.o_mnie || path === appUrls.opinie) && (
+      {(path === "/kontakt/" || path === "/o-mnie/" || path === "/opinie/") && (
         <script type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(breadcrumbList)
