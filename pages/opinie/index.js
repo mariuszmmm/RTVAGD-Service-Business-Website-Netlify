@@ -22,7 +22,6 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
         reviews={reviews}
       />
       <Container>
-
         <ReviewsContainer>
           <Title>Opinie Klientów</Title>
           {status === "loading" && <p>Ładowanie opinii z google...</p>}
@@ -40,9 +39,13 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
             </>
           }
         </ReviewsContainer>
-        {status === "success" && <ButtonLink href={serwis.url.addTestimonial}>
-          Wystaw opinię
-        </ButtonLink>}
+        {status === "success" &&
+          <ButtonLink
+            href={serwis.url.addTestimonial}
+            rel="nofollow"
+          >
+            Wystaw opinię
+          </ButtonLink>}
       </Container>
     </>
   );

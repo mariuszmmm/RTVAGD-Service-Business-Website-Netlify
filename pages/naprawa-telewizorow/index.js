@@ -36,7 +36,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               title="Telewizor"
               src={imageUrls.telewizor}
-              alt="Naprawa telewizorów w Przemyślu - serwis telewizorów"
+              alt={dataForMetaTags.naprawa_telewizorow.metaTags.imageAlt}
               // loading='lazy'
               fill
               // srcSet={`${imageUrls.telewizor_300} 500w,

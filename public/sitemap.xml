@@ -3,27 +3,27 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl.webp</image:loc>
-      <image:title>Serwis RTV AGD Przemyśl</image:title>
-      <image:caption>Profesjonalny serwis i naprawa sprzętu AGD oraz RTV w Przemyślu i okolicach</image:caption>
+      <image:title>Serwis RTV-AGD Przemyśl</image:title>
+      <image:caption>Profesjonalny serwis naprawy sprzętu RTV-AGD w Przemyślu</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
-      <image:caption>Serwis RTV i AGD – o mnie</image:caption>
+      <image:caption>Serwis RTV-AGD – o mnie</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -34,19 +34,19 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp</image:loc>
       <image:title>Naprawa suszarek Przemyśl</image:title>
-      <image:caption>Naprawa suszarek kondensacyjnych i bębnowych w Przemyślu i pobliskich miejscowościach</image:caption>
+      <image:caption>Fachowa naprawa suszarek kondensacyjnych – Przemyśl i okolice</image:caption>
       <image:geo_location>Przemyśl, Polska</image:geo_location>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -68,33 +68,33 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora.png</image:loc>
       <image:title>Naprawa telewizorów Przemyśl</image:title>
-      <image:caption>Naprawa telewizorów LCD, OLED i Smart TV – serwis domowy Przemyśl i okolice</image:caption>
+      <image:caption>Naprawa telewizorów LCD, OLED i Smart TV – serwis Przemyśl i okolice</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
-      <image:caption>Serwis RTV i AGD – opinie klientów</image:caption>
+      <image:caption>Serwis RTV-AGD – opinie klientów</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
-      <image:caption>Serwis RTV i AGD – kontakt</image:caption>
+      <image:caption>Serwis RTV-AGD – kontakt</image:caption>
     </image:image>
   </url>
 </urlset>

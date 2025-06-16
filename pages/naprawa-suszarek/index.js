@@ -2,7 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { imageUrls } from '../../utils/urls';
+import { appUrls, imageUrls } from '../../utils/urls';
 import { Emoticon } from '../../components/common/Emoticon';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -48,7 +48,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               src={imageUrls.suszarka}
               title="Suszarka"
-              alt="Naprawiona suszarka w serwisie AGD w Przemyślu"
+              alt={dataForMetaTags.naprawa_suszarek.metaTags.imageAlt}
               // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
               // loading="eager"
               // fetchpriority="high"
@@ -160,14 +160,42 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>Inne usługi</SubTitle>
-          <StyledText>Oprócz naprawy suszarek oferuję profesjonalny serwis innych urządzeń.<br />
+          <StyledText>
+            Oprócz naprawy suszarek oferuję profesjonalny serwis innych urządzeń.<br />
             Zajmuję się także naprawą
             <StyledLink
-              href="/naprawa-pralek/" title='Naprawa pralek' $standardText> pralek</StyledLink>,
-            <StyledLink href="/naprawa-zmywarek/" title='Naprawa zmywarek' $standardText> zmywarek</StyledLink>,
+              href={appUrls.naprawa_pralek}
+              title='Naprawa pralek'
+              $standardText
+            >
+              {" "}pralek
+            </StyledLink>
+            ,
             <StyledLink
-              href="/naprawa-ekspresow/" title='Naprawa ekspresów do kawy' $standardText> ekspresów do kawy</StyledLink> oraz
-            <StyledLink href="/naprawa-telewizorow/" title='Naprawa telewizorów' $standardText> telewizorów</StyledLink>.</StyledText>
+              href={appUrls.naprawa_zmywarek}
+              title='Naprawa zmywarek'
+              $standardText
+            >
+              {" "}zmywarek
+            </StyledLink>
+            ,
+            <StyledLink
+              href={appUrls.naprawa_ekspresow}
+              title='Naprawa ekspresów do kawy'
+              $standardText
+            >
+              {" "}ekspresów do kawy
+            </StyledLink>
+            {" "}oraz
+            <StyledLink
+              href={appUrls.naprawa_telewizorow}
+              title='Naprawa telewizorów'
+              $standardText
+            >
+              {" "}telewizorów
+            </StyledLink>
+            .
+          </StyledText>
         </Section>
 
       </Container>

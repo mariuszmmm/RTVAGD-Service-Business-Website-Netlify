@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { ImageContainer } from "../../styles/kontakt/KontaktStyled";
 import { getData } from "../../utils/getData";
+import { appUrls } from "../../utils/urls";
 
 const Contact = ({ rating, ratingsTotal }) => {
   const path = useRouter().asPath;
@@ -27,19 +28,47 @@ const Contact = ({ rating, ratingsTotal }) => {
         <ContactSection>
           <ContactForm />
           <ContactInfo>
-            <SubTitle><StyledLink href="/" title={serwis.name}>{serwis.shortName}</StyledLink>
+            <SubTitle>
+              <StyledLink
+                href={appUrls.home}
+                title={serwis.name}
+              >
+                {serwis.shortName}
+              </StyledLink>
             </SubTitle>
             <ContactText>
               adres:{"  "}
-              <span><StyledLink href={serwis.url.mapaGoogle} title={serwis.adres}>{serwis.adres}</StyledLink></span>
+              <span>
+                <StyledLink
+                  href={serwis.url.mapaGoogle}
+                  rel="nofollow"
+                  title={serwis.adres}
+                >
+                  {serwis.adres}
+                </StyledLink>
+              </span>
             </ContactText>
             <ContactText>
               e-mail:{" "}
-              <span><StyledLink href={`mailto:${serwis.email}`} title={serwis.email}>{serwis.email}</StyledLink></span>
+              <span>
+                <StyledLink
+                  href={`mailto:${serwis.email}`}
+                  title={serwis.email}
+                >
+                  {serwis.email}
+                </StyledLink>
+              </span>
             </ContactText>
             <ContactText>
               telefon:{" "}
-              <span><StyledLink href={`tel:${serwis.phone.number}`} title={(serwis.phone.formatted).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}>{serwis.phone.formatted}</StyledLink></span>
+              <span>
+                <StyledLink
+                  href={`tel:${serwis.phone.number}`}
+                  title={(serwis.phone.formatted).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}
+                >
+                  {serwis.phone.formatted}
+                </StyledLink>
+              </span>
             </ContactText>
             <br />
             <ContactText>NIP: 7952257951</ContactText>

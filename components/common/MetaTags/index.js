@@ -248,7 +248,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
       {/* Structured Data */}
-      {(path === "/naprawa-zmywarek/") && (
+      {(path === appUrls.naprawa_zmywarek) && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
               dangerouslySetInnerHTML={{
@@ -273,12 +273,13 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify(localBusiness)
             }}
           /> */}
-          <script type="application/ld+json"    // wyłączone 15.05.2025
+          <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [imageObject, webpage,
-                  breadcrumbList, website,
+                "@graph": [webpage, imageObject, breadcrumbList,
+                  website
+                  //  localBusinessSchema, productSchema
                 ]
               })
             }}
@@ -309,14 +310,15 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/naprawa-pralek/") && (
+      {(path === appUrls.naprawa_pralek) && (
         <>
-          <script type="application/ld+json"    // wyłączone 15.05.2025
+          <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [imageObject, webpage,
-                  breadcrumbList, website,
+                "@graph": [webpage, imageObject, breadcrumbList,
+                  website
+                  //  localBusinessSchema, productSchema
                 ]
               })
             }}
@@ -342,14 +344,15 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/naprawa-suszarek/") && (
+      {(path === appUrls.naprawa_suszarek) && (
         <>
-          <script type="application/ld+json"    // wyłączone 15.05.2025
+          <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [imageObject, webpage,
-                  breadcrumbList, website,
+                "@graph": [webpage, imageObject, breadcrumbList,
+                  website
+                  //  localBusinessSchema, productSchema
                 ]
               })
             }}
@@ -385,7 +388,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
+      {(path === appUrls.naprawa_ekspresow || path === appUrls.naprawa_telewizorow) && (
         <>
           {/* <script type="application/ld+json"           // wyłączone 15.05.2025      // dodane 14.05.2025
               dangerouslySetInnerHTML={{
@@ -398,18 +401,17 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               }}
             /> */}
 
-          <script type="application/ld+json"   // dodane 16.05.2025
+          <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify(breadcrumbList)
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [webpage, imageObject, breadcrumbList,
+                  website
+                  //  localBusinessSchema, productSchema
+                ]
+              })
             }}
           />
-
-
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(localBusiness)
-            }}
-          /> */}
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
@@ -433,7 +435,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       )}
 
 
-      {path === "/" && (
+      {path === appUrls.home && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -492,21 +494,14 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           /> */}
         </>
       )}
-      {/* {(path === "/kontakt/") && (
-        <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
+      {(path === appUrls.kontakt || path === appUrls.o_mnie || path === appUrls.opinie) && (
+        <script type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [website, webpage]
-            })
+            __html: JSON.stringify(breadcrumbList)
           }}
         />
-      )} */}
-      {/* <script type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbList)
-        }}
-      /> */}
+      )}
+
     </Head>
   );
 };

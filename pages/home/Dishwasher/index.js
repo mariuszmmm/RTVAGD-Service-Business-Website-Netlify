@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { imageUrls } from "../../../utils/urls";
+import { appUrls, imageUrls } from "../../../utils/urls";
 import { StyledImage } from "../../../components/common/StyledImage";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
 import Image from "next/image";
@@ -12,13 +12,13 @@ const Dishwasher = ({ show, setHold }) => (
     onMouseLeave={() => setHold(false)}
   >
     <Link
-      href="/naprawa-zmywarek"
+      href={appUrls.naprawa_zmywarek}
       title="Serwis zmywarek w Przemyślu"
     >
       <StyledImage>
         <Image
           src={imageUrls.zmywarka}
-          alt="Zmywarka naprawiona w profesionalnym serwisie w Przemyślu"
+          alt="Zmywarka"
           // loading='lazy'
           fill
           // srcSet={`${imageUrls.zmywarka_300} 500w,

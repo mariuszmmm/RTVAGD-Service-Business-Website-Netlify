@@ -14,6 +14,7 @@ import {
 } from "./styled";
 import { serwis } from "../../utils/serwis";
 import { SubTitle } from "../common/SubTitle";
+import { appUrls } from "../../utils/urls";
 
 const Footer = () => (
   <FooterWrapper>
@@ -23,10 +24,11 @@ const Footer = () => (
         <StyledLink
           area="adres"
           href={serwis.url.mapaGoogle}
+          rel="nofollow"
           title="adres"
         >
           <LocationIcon />
-          <FooterText>ul. {serwis.adres}</FooterText>
+          <FooterText>ul. {serwis.adres} </FooterText>
         </StyledLink>
         <StyledLink
           area="telefon"
@@ -47,6 +49,7 @@ const Footer = () => (
         <StyledLink
           area="facebook"
           href={serwis.url.facebook}
+          rel="nofollow"
           title="Facebook"
         >
           <FacebookIcon />
@@ -54,7 +57,7 @@ const Footer = () => (
         </StyledLink>
         <StyledLink
           area="link"
-          href="/"
+          href={appUrls.home}
           title="naprawaprzemysl.pl"
         >
           <LinkIcon />
@@ -63,6 +66,7 @@ const Footer = () => (
         <StyledLink
           area="google"
           href={serwis.url.google}
+          rel="nofollow"
           title="Google"
         >
           <GoogleIcon />

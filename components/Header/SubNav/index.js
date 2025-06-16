@@ -1,3 +1,4 @@
+import { appUrls } from "../../../utils/urls";
 import { ListItem, NavList, StyledLink } from "../styled";
 import { SubNavWrapper } from "./styled";
 import { usePathname } from 'next/navigation';
@@ -10,8 +11,8 @@ const SubNav = ({ showSubNav }) => {
       <NavList $subNav>
         <ListItem >
           <StyledLink
-            href="/naprawa-pralek"
-            $active={pathname === "/naprawa-pralek/" && showSubNav}
+            href={appUrls.naprawa_pralek}
+            $active={pathname === appUrls.naprawa_pralek && showSubNav}
             $subNav
           >
             Naprawa pralek
@@ -19,8 +20,8 @@ const SubNav = ({ showSubNav }) => {
         </ListItem>
         <ListItem >
           <StyledLink
-            href="/naprawa-suszarek"
-            $active={pathname === "/naprawa-suszarek/" && showSubNav}
+            href={appUrls.naprawa_suszarek}
+            $active={pathname === appUrls.naprawa_suszarek && showSubNav}
             $subNav
           >
             Naprawa suszarek
@@ -28,8 +29,8 @@ const SubNav = ({ showSubNav }) => {
         </ListItem>
         <ListItem >
           <StyledLink
-            href="/naprawa-zmywarek"
-            $active={pathname === "/naprawa-zmywarek/" && showSubNav}
+            href={appUrls.naprawa_zmywarek}
+            $active={pathname === appUrls.naprawa_zmywarek && showSubNav}
             $subNav
           >
             Naprawa zmywarek
@@ -37,8 +38,8 @@ const SubNav = ({ showSubNav }) => {
         </ListItem>
         <ListItem >
           <StyledLink
-            href="/naprawa-ekspresow"
-            $active={pathname === "/naprawa-ekspresow/" && showSubNav}
+            href={appUrls.naprawa_ekspresow}
+            $active={pathname === appUrls.naprawa_ekspresow && showSubNav}
             $subNav
           >
             Naprawa ekspresów
@@ -46,8 +47,8 @@ const SubNav = ({ showSubNav }) => {
         </ListItem>
         <ListItem >
           <StyledLink
-            href="/naprawa-telewizorow"
-            $active={pathname === "/naprawa-telewizorow/" && showSubNav}
+            href={appUrls.naprawa_telewizorow}
+            $active={pathname === appUrls.naprawa_telewizorow && showSubNav}
             $subNav
           >
             Naprawa telewizorów

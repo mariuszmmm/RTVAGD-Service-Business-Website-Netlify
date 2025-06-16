@@ -13,7 +13,7 @@ import SubNav from "./SubNav";
 import { usePathname } from 'next/navigation';
 import { GoogleRating } from '../GoogleRating';
 import { Emoticon } from '../common/Emoticon';
-import { imageUrls } from '../../utils/urls';
+import { appUrls, imageUrls } from '../../utils/urls';
 import Image from "next/image";
 
 const Header = ({ rating }) => {
@@ -42,13 +42,12 @@ const Header = ({ rating }) => {
   return (
     <HeaderWrapper>
       <HeaderContainer>
-        <Logo href="/" >
+        <Logo href={appUrls.home}>
           {` ${serwis.shortName} `}
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
-              alt={serwis.shortName}
-              // loading="lazy"
+              alt="Przemyśl"
               fill
             />
           </Emoticon>
@@ -56,12 +55,18 @@ const Header = ({ rating }) => {
         <nav>
           <NavList>
             <ListItem>
-              <StyledLink href="/" $active={pathname === "/"}>
+              <StyledLink
+                href={appUrls.home}
+                $active={pathname === appUrls.home}
+              >
                 Strona Główna
               </StyledLink>
             </ListItem>
             <ListItem>
-              <StyledLink href="/o-mnie" $active={pathname === "/o-mnie/"}              >
+              <StyledLink
+                href={appUrls.o_mnie}
+                $active={pathname === appUrls.o_mnie}
+              >
                 O mnie
               </StyledLink>
             </ListItem>
@@ -73,24 +78,36 @@ const Header = ({ rating }) => {
               <StyledLink as="div"
                 $active={servicesPath && !showSubNav}
                 $disabled
-              >Usługi
+              >
+                Usługi
               </StyledLink>
               <SubNav showSubNav={showSubNav} />
             </ListItem>
             <ListItem>
-              <StyledLink href="/opinie" $active={pathname === "/opinie/"}>Opinie</StyledLink>
+              <StyledLink
+                href={appUrls.opinie}
+                $active={pathname === appUrls.opinie}
+              >
+                Opinie
+              </StyledLink>
             </ListItem>
             <ListItem>
               <StyledLink
-                href="/kontakt"
-                $active={pathname === "/kontakt/"}
+                href={appUrls.kontakt}
+                $active={pathname === appUrls.kontakt}
               >
                 Kontakt
               </StyledLink>
             </ListItem>
           </NavList>
         </nav>
-        <ButtonLink href={serwis.url.addTestimonial} $opinia $hidden={scrolled} title="Wystaw opinię">
+        <ButtonLink
+          href={serwis.url.addTestimonial}
+          rel="nofollow"
+          $opinia
+          $hidden={scrolled}
+          title="Wystaw opinię"
+        >
           Wystaw opinię
         </ButtonLink>
         {rating && <GoogleRating rating={rating} hidden={scrolled} />}

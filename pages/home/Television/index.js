@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { imageUrls } from "../../../utils/urls";
+import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
 import { StyledImage } from "../../../components/common/StyledImage";
 import Image from "next/image";
@@ -12,7 +12,7 @@ const Television = ({ show, left, setHold }) => (
     $left={left}
   >
     <Link
-      href="/naprawa-telewizorow"
+      href={appUrls.naprawa_telewizorow}
       title="Serwis telewizorów w Przemyślu"
     >
       <StyledImage>

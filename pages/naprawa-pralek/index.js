@@ -2,7 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { imageUrls } from '../../utils/urls';
+import { appUrls, imageUrls } from '../../utils/urls';
 import { Emoticon } from '../../components/common/Emoticon';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
@@ -48,7 +48,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             <Image
               src={imageUrls.pralka}
               title="Pralka"
-              alt="Naprawiona pralka w profesjonalnym serwisie w Przemyślu"
+              alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
               // loading='lazy'
               // decoding="async"
@@ -119,11 +119,14 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <b>Nie trać czasu na pranie ręczne! <Break />
+            <strong>Nie trać czasu na pranie ręczne! <Break />
               Skontaktuj się ze mną, a Twój sprzęt odzyska pełną sprawność.
-            </b>
+            </strong>
           </HeroText>
-          <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa pralek w Przemyślu' >
+          <ButtonLink
+            href={`tel:${serwis.phone.number}`}
+            title='Naprawa pralek w Przemyślu'
+          >
             Zleć naprawę pralki
           </ButtonLink>
         </Section>
@@ -140,11 +143,37 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
           <StyledText>
             Oprócz naprawy pralek oferuję kompleksowy serwis:<br />
             <StyledLink
-              href="/naprawa-zmywarek/" title='Naprawa zmywarek' $standardText>zmywarek</StyledLink>,
-            <StyledLink href="/naprawa-suszarek/" title='Naprawa suszarek' $standardText> suszarek</StyledLink>,
+              href={appUrls.naprawa_zmywarek}
+              title='Naprawa zmywarek'
+              $standardText
+            >
+              {" "}zmywarek
+            </StyledLink>
+            ,
             <StyledLink
-              href="/naprawa-ekspresow/" title='Naprawa ekspresów do kawy' $standardText> ekspresów do kawy</StyledLink> oraz
-            <StyledLink href="/naprawa-telewizorow/" title='Naprawa telewizorów' $standardText> telewizorów</StyledLink>.
+              href={appUrls.naprawa_suszarek}
+              title='Naprawa suszarek'
+              $standardText
+            >
+              {" "}suszarek
+            </StyledLink>
+            ,
+            <StyledLink
+              href={appUrls.naprawa_ekspresow}
+              title='Naprawa ekspresów do kawy'
+              $standardText
+            >
+              {" "}ekspresów do kawy
+            </StyledLink>
+            {" "}oraz
+            <StyledLink
+              href={appUrls.naprawa_telewizorow}
+              title='Naprawa telewizorów'
+              $standardText
+            >
+              {" "}telewizorów
+            </StyledLink>
+            .
           </StyledText>
         </Section>
 

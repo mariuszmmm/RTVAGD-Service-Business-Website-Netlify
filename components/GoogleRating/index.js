@@ -1,5 +1,5 @@
 import { Stars } from "../../components/common/Stars";
-import { imageUrls } from "../../utils/urls";
+import { appUrls, imageUrls } from "../../utils/urls";
 import { ImageWrapper, StyledLink, Text, Wrpper } from "./styled";
 import Image from "next/image";
 
@@ -10,7 +10,10 @@ export const GoogleRating = ({ rating, hidden }) => (
         $hidden={hidden}
         id="rating"
       >
-        <StyledLink href="/opinie/" title="Poznaj opinie zadowolonych klientów! ⭐⭐⭐⭐⭐">
+        <StyledLink
+          href={appUrls.opinie}
+          title="Poznaj opinie zadowolonych klientów! ⭐⭐⭐⭐⭐"
+        >
           <ImageWrapper>
             <Image
               src={imageUrls.logoGoogle}
