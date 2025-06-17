@@ -60,7 +60,7 @@ export const organization = {
 export const localBusiness = {
 
   "@type": "LocalBusiness",
-  "@id": appUrls.home + "#business",  // dodane 17.05.2025
+  "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",   // zgodny z CEIDG
   "image": imageUrls.serwis,  // "image": imageUrls.logo,
   "telephone": serwis.phone.formatted,
