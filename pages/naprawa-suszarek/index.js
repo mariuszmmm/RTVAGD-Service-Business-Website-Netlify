@@ -151,7 +151,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <strong>Potrzebujesz szybkiej i fachowej naprawy suszarki?<Break /> Skontaktuj się, podając objawy usterki – ustalimy optymalny termin wizyty i zakres prac.</strong>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa suszarek w Przemyślu' >
-            📞 Zadzwoń teraz: {serwis.phone.short}
+            Zadzwoń 📞 {serwis.phone.short}
           </ButtonLink>
         </Section>
 
