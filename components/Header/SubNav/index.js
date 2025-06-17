@@ -12,7 +12,7 @@ const SubNav = ({ showSubNav }) => {
         <ListItem >
           <StyledLink
             href={appUrls.naprawa_pralek}
-            $active={pathname === appUrls.naprawa_pralek && showSubNav}
+            $active={pathname === "/naprawa-pralek/" && showSubNav}
             $subNav
           >
             Naprawa pralek
@@ -21,7 +21,7 @@ const SubNav = ({ showSubNav }) => {
         <ListItem >
           <StyledLink
             href={appUrls.naprawa_suszarek}
-            $active={pathname === appUrls.naprawa_suszarek && showSubNav}
+            $active={pathname === "/naprawa-suszarek/" && showSubNav}
             $subNav
           >
             Naprawa suszarek
@@ -30,7 +30,7 @@ const SubNav = ({ showSubNav }) => {
         <ListItem >
           <StyledLink
             href={appUrls.naprawa_zmywarek}
-            $active={pathname === appUrls.naprawa_zmywarek && showSubNav}
+            $active={pathname === "/naprawa-zmywarek/" && showSubNav}
             $subNav
           >
             Naprawa zmywarek
@@ -39,7 +39,7 @@ const SubNav = ({ showSubNav }) => {
         <ListItem >
           <StyledLink
             href={appUrls.naprawa_ekspresow}
-            $active={pathname === appUrls.naprawa_ekspresow && showSubNav}
+            $active={pathname === "/naprawa-ekspresow/" && showSubNav}
             $subNav
           >
             Naprawa ekspresów
@@ -48,7 +48,7 @@ const SubNav = ({ showSubNav }) => {
         <ListItem >
           <StyledLink
             href={appUrls.naprawa_telewizorow}
-            $active={pathname === appUrls.naprawa_telewizorow && showSubNav}
+            $active={pathname === "/naprawa-telewizorow/" && showSubNav}
             $subNav
           >
             Naprawa telewizorów

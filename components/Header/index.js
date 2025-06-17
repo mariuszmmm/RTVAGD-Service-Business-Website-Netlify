@@ -39,8 +39,6 @@ const Header = ({ rating }) => {
     };
   }, []);
 
-  console.log("pathname", pathname)
-
   return (
     <HeaderWrapper>
       <HeaderContainer>
@@ -59,7 +57,7 @@ const Header = ({ rating }) => {
             <ListItem>
               <StyledLink
                 href={appUrls.home}
-                $active={pathname === appUrls.home}
+                $active={pathname === "/"}
               >
                 Strona Główna
               </StyledLink>
@@ -67,7 +65,7 @@ const Header = ({ rating }) => {
             <ListItem>
               <StyledLink
                 href={appUrls.o_mnie}
-                $active={pathname === appUrls.o_mnie}
+                $active={pathname === "/o-mnie/"}
               >
                 O mnie
               </StyledLink>
@@ -88,7 +86,7 @@ const Header = ({ rating }) => {
             <ListItem>
               <StyledLink
                 href={appUrls.opinie}
-                $active={pathname === appUrls.opinie}
+                $active={pathname === "/opinie/"}
               >
                 Opinie
               </StyledLink>
@@ -96,7 +94,7 @@ const Header = ({ rating }) => {
             <ListItem>
               <StyledLink
                 href={appUrls.kontakt}
-                $active={pathname === appUrls.kontakt}
+                $active={pathname === "/kontakt/"}
               >
                 Kontakt
               </StyledLink>
