@@ -530,6 +530,7 @@ export const dataForMetaTags = {
             "@type": "ListItem",
             "position": 2,
             "name": "Kontakt",
+            "item": appUrls.kontakt,
           }
         ]
       },
@@ -561,6 +562,7 @@ export const dataForMetaTags = {
             "@type": "ListItem",
             "position": 2,
             "name": "O mnie",
+            "item": appUrls.o_mnie,
           }
         ]
       },
@@ -593,6 +595,7 @@ export const dataForMetaTags = {
             "@type": "ListItem",
             "position": 2,
             "name": "Opinie",
+            "item": appUrls.opinie,
           }
         ]
       },
@@ -866,6 +869,7 @@ export const dataForMetaTags = {
             "@type": "ListItem",
             "position": 2,
             "name": "Naprawa pralek",
+            "item": appUrls.naprawa_pralek
           }
         ]
       },
@@ -1395,6 +1399,7 @@ export const dataForMetaTags = {
             "@type": "ListItem",
             "position": 2,
             "name": "Naprawa zmywarek",
+            "item": appUrls.naprawa_zmywarek,
           }
         ]
       },
@@ -1731,6 +1736,7 @@ export const dataForMetaTags = {
             "@type": "ListItem",
             "position": 2,
             "name": "Naprawa telewizorów",
+            "item": appUrls.naprawa_telewizorow,
           }
         ]
       },
