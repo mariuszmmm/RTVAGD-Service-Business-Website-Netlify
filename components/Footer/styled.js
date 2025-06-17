@@ -99,7 +99,7 @@ export const LocationIcon = styled(Location)`
 `;
 
 export const StyledLink = styled.a`
-  grid-area: ${(props) => props.area};
+  grid-area: ${({ $area }) => $area};
   display: flex;
   align-items: center;
   justify-self: left;

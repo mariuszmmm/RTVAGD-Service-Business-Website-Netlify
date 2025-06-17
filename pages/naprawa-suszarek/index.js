@@ -15,6 +15,7 @@ import { StyledText } from '../../components/common/Text/styled';
 import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { getData } from '../../utils/getData';
+import { Break } from '../../components/Break';
 
 const DryerService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -84,11 +85,10 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle>
-            Szybka i fachowa naprawa suszarek
+            Pełna diagnostyka i naprawa suszarek
           </SubTitle>
           <StyledText>
-            Awaria suszarki może znacząco utrudnić codzienne prace domowe, zwłaszcza gdy zależy nam na szybkim wysuszeniu ubrań w sezonie jesienno-zimowym. Dlatego <strong>serwis suszarek</strong> w Przemyślu oferuje kompleksową diagnostykę i fachową naprawę urządzeń wszystkich marek. Korzystam z profesjonalnych narzędzi diagnostycznych oraz oryginalnych części zamiennych, aby już podczas pierwszej wizyty przywrócić pełną funkcjonalność Twojego sprzętu. Zapewniam gwarancję na wykonaną usługę, co daje pewność satysfakcji i nieprzerwanej eksploatacji urządzenia. Specjalizuję się w naprawie suszarek marek takich jak: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi.
-            Dzięki ponad 20-letniemu doświadczeniu w serwisowaniu sprzętu AGD, nawet najbardziej skomplikowane usterki nie stanowią dla mnie wyzwania.
+            Awarie suszarek mogą znacząco opóźnić codzienne czynności, zwłaszcza w chłodniejszych miesiącach. Oferuję w Przemyślu i okolicach rzetelne sprawdzenie urządzenia, identyfikację problemów i naprawę suszarek kondensacyjnych, z pompą ciepła oraz tradycyjnych, elektrycznych. Działam z dbałością o precyzję i trwały efekt, stosując profesjonalne narzędzia i części o potwierdzonej jakości.
           </StyledText>
         </Section>
 
@@ -97,23 +97,24 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             Najczęstsze usterki suszarek
           </SubTitle>
           <StyledText as="ul" $cross>
-            <li><strong>Suszarka nie obraca bębna</strong> -&nbsp;może być spowodowane zerwanym paskiem napędowym, uszkodzonym silnikiem lub zużytymi łożyskami.</li>
-            <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> -&nbsp;przyczyną może być uszkodzony czujnik wilgotności, przegrzewanie lub usterka modułu elektronicznego.</li>
-            <li><strong>Niewystarczające suszenie</strong> -&nbsp;zatkany filtr kłaczków lub przewód wentylacyjny (w suszarkach kondensacyjnych –&nbsp;zatkany skraplacz).</li>
-            <li><strong>Przecieki wody pod suszarką</strong> -&nbsp;nieszczelny wąż spustowy, przepełniony pojemnik na wodę lub uszkodzony zbiornik kondensatora. Zalecane jest czyszczenie układu kondensacyjnego co najmniej raz na sezon.</li>
-            <li><strong>Wyświetlanie kodów błędów</strong> -&nbsp;problemy z&nbsp;elektroniką, modułem sterującym lub czujnikami.</li>
+            <li><strong>Bęben nie obraca się</strong> – może wynikać z zerwanego paska napędowego, zużytych łożysk lub uszkodzonego silnika. Dokładna kontrola elementów napędu pozwala zidentyfikować problem.</li>
+            <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> – przyczyną mogą być czujnik wilgotności, przegrzewanie lub moduł sterujący. Sprawdzam układ elektroniczny i termiczne zabezpieczenia.</li>
+            <li><strong>Niewystarczające suszenie</strong> – często efekt niedrożnego filtra kłaczków lub przewodu wentylacyjnego. W suszarkach kondensacyjnych analizuję stan skraplacza oraz pojemnika na wodę.</li>
+            <li><strong>Przecieki wody</strong> – w modelach kondensacyjnych może to być uszkodzony zbiornik lub wąż spustowy; w innych – nieszczelne elementy. Sprawdzam szczelność układów.</li>
+            <li><strong>Kody błędów na wyświetlaczu</strong> – weryfikuję komunikaty, diagnozuję usterki czujników, modułów i ich połączeń.</li>
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Dlaczego warto skorzystać z moich usług
+            Dlaczego warto wybrać ten serwis suszarek?
           </SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka reakcja i krótkie terminy realizacji:</strong> Często mogę pojawić się u Ciebie jeszcze tego samego dnia, w jakim otrzymam zgłoszenie.</li>
-            <li><strong>Doświadczenie i&nbsp;wiedza:</strong> Ponad 20 lat praktyki w serwisowaniu średniej i dużej klasy urządzeń AGD. Znajomość specyfiki suszarek kondensacyjnych, z pompą ciepła, elektrycznych.</li>
-            <li><strong>Obsługa wszystkich marek i modeli:</strong> Serwisuję suszarki marek: Bosch, Siemens, Electrolux, Whirlpool, Samsung, Beko, Amica, AEG, Candy, Miele, Hotpoint-Ariston, LG, Indesit, Zanussi i inne.</li>
-            <li><strong>Gwarancja na wykonaną usługę:</strong> Gwarancja na wszystkie wykonane czynności serwisowe oraz wymienione części. Pracuję wyłącznie na sprawdzonych komponentach, co minimalizuje ryzyko ponownej awarii w krótkim czasie.</li>
+            <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
+            <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
+            <li><strong>Obsługa szerokiego zakresu marek</strong>:   Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, Amica, AEG, Candy, Hotpoint-Ariston, LG, Indesit, Zanussi i inne – potrafię dostosować naprawę do specyfiki modelu.</li>
+            <li><strong>Sprawdzone części i metody</strong>: stosuję części o parametrach odpowiadających oryginalnym lub równoważnym. Dbam o czystość filtrów i przewodów, by przywrócić maksymalną wydajność.</li>
+            <li><strong>Przejrzystość kosztów</strong>: po diagnostyce na miejscu przedstawiam orientacyjną wycenę, byś znał zakres i koszty naprawy przed podjęciem decyzji.</li>
           </StyledText>
         </Section>
 
@@ -122,11 +123,11 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             Proces naprawy suszarki krok po kroku
           </SubTitle>
           <StyledText as="ol" >
-            <li><strong>Kontakt i konsultacja:</strong> Krótki opis usterki przez telefon lub e-mail. Ustalenie dogodnego terminu i miejsca wizyty serwisowej.</li>
-            <li><strong>Diagnostyka na miejscu:</strong> Dokładne sprawdzenie urządzenia przy użyciu profesjonalnych narzędzi pomiarowych. Wstępna diagnoza często jest gotowa podczas pierwszej wizyty.</li>
-            <li><strong>Naprawa lub wymiana części:</strong> Usuwam usterkę od razu, jeśli to możliwe. W razie konieczności montuję wyłącznie oryginalne lub wysokiej jakości części zamienne.</li>
-            <li><strong>Testy końcowe:</strong> Po naprawie przeprowadzam kilkuminutowy cykl suszenia testowego, aby upewnić się, że suszarka działa w pełni sprawnie. Sprawdzam odprowadzanie skroplin i poprawność temperatury.</li>
-            <li><strong>Gwarancja i porady eksploatacyjne:</strong> Na każdą naprawę udzielam gwarancji. Udzielam praktycznych wskazówek, jak dbać o suszarkę, aby uniknąć podobnych awarii w przyszłości.</li>
+            <li><strong>Kontakt i opis usterki</strong>: krótka rozmowa telefoniczna lub wiadomość e-mail z opisem symptomów i modelem urządzenia.</li>
+            <li><strong>Diagnostyka na miejscu</strong>: pełne sprawdzenie suszarki, testy funkcjonalne i analiza ewentualnych kodów błędów.</li>
+            <li><strong>Naprawa lub wymiana części</strong>: wymieniam tylko te podzespoły, które faktycznie są niesprawne, stosując części o potwierdzonej jakości.</li>
+            <li><strong>Test suszenia</strong>: wykonuję krótki cykl testowy, by zweryfikować poprawność działania, szczelność i efektywność odprowadzania wilgoci.</li>
+            <li><strong>Wskazówki eksploatacyjne</strong>: doradzam, jak dbać o suszarkę (czyszczenie filtra, kontrola układu wentylacyjnego/ skraplacza), aby wydłużyć czas bezawaryjnej pracy.</li>
           </StyledText>
         </Section>
 
@@ -144,7 +145,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <b>Zadzwoń teraz, aby szybko umówić wizytę i&nbsp;przywrócić pełną sprawność swojej suszarce!</b>
+            <strong>Potrzebujesz szybkiej i fachowej naprawy suszarki?<Break /> Skontaktuj się, podając objawy usterki – ustalimy optymalny termin wizyty i zakres prac.</strong>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa suszarek w Przemyślu' >
             📞 Zadzwoń teraz: {serwis.phone.short}
@@ -152,50 +153,31 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Świadczę usługi naprawy suszarek w&nbsp;Przemyślu i okolicach</SubTitle>
+          <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Oferuję serwis suszarek w Przemyślu oraz dojeżdżamy do sąsiednich miejscowości: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce,Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Jeśli potrzebujesz szybkiej i fachowej naprawy suszarki, wystarczy jeden telefon, a przyjadę do Ciebie w dogodnym terminie.
+            Serwis suszarek w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt w celu ustalenia dogodnej wizyty.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Inne usługi</SubTitle>
+          <SubTitle>Powiązane usługi</SubTitle>
           <StyledText>
-            Oprócz naprawy suszarek oferuję profesjonalny serwis innych urządzeń.<br />
-            Zajmuję się także naprawą
-            <StyledLink
-              href={appUrls.naprawa_pralek}
-              title='Naprawa pralek'
-              $standardText
-            >
-              {" "}pralek
-            </StyledLink>
-            ,
-            <StyledLink
-              href={appUrls.naprawa_zmywarek}
-              title='Naprawa zmywarek'
-              $standardText
-            >
-              {" "}zmywarek
-            </StyledLink>
-            ,
-            <StyledLink
-              href={appUrls.naprawa_ekspresow}
-              title='Naprawa ekspresów do kawy'
-              $standardText
-            >
-              {" "}ekspresów do kawy
-            </StyledLink>
-            {" "}oraz
-            <StyledLink
-              href={appUrls.naprawa_telewizorow}
-              title='Naprawa telewizorów'
-              $standardText
-            >
-              {" "}telewizorów
-            </StyledLink>
-            .
+            Sprawdź też:
           </StyledText>
+          <StyledText as="ul" $list>
+            <li>
+              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li>
+          </StyledText >
         </Section>
 
       </Container>

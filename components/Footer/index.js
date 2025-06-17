@@ -22,7 +22,7 @@ const Footer = () => (
       <SubTitle>{serwis.shortName}</SubTitle>
       <FooterInfo>
         <StyledLink
-          area="adres"
+          $area="adres"
           href={serwis.url.mapaGoogle}
           rel="nofollow"
           title="adres"
@@ -31,7 +31,7 @@ const Footer = () => (
           <FooterText>ul. {serwis.adres} </FooterText>
         </StyledLink>
         <StyledLink
-          area="telefon"
+          $area="telefon"
           href={`tel:${serwis.phone.number}`}
           title="Telefon"
         >
@@ -39,7 +39,7 @@ const Footer = () => (
           <FooterText>{serwis.phone.formatted} </FooterText>
         </StyledLink>
         <StyledLink
-          area="email"
+          $area="email"
           href={`mailto:${serwis.email}`}
           title="E-mail"
         >
@@ -47,7 +47,7 @@ const Footer = () => (
           <FooterText>{serwis.email} </FooterText>
         </StyledLink>
         <StyledLink
-          area="facebook"
+          $area="facebook"
           href={serwis.url.facebook}
           rel="nofollow"
           title="Facebook"
@@ -56,7 +56,7 @@ const Footer = () => (
           <FooterText>Facebook</FooterText>
         </StyledLink>
         <StyledLink
-          area="link"
+          $area="link"
           href={appUrls.home}
           title="naprawaprzemysl.pl"
         >
@@ -64,7 +64,7 @@ const Footer = () => (
           <FooterText>{"naprawaprzemysl.pl"} </FooterText>
         </StyledLink>
         <StyledLink
-          area="google"
+          $area="google"
           href={serwis.url.google}
           rel="nofollow"
           title="Google"
