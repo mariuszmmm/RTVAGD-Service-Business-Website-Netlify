@@ -1,5 +1,5 @@
 import { serwis } from './serwis';
-import { appUrls, imageUrls } from './urls';
+import { appUrls, baseUrl, imageUrls } from './urls';
 
 const datePublished = new Date("2024-07-03").toISOString();
 const date = new Date().toISOString().slice(0, 10);
@@ -882,15 +882,15 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
-      ogTitle: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
-      twitterTitle: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
-      description: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych.",
-      ogDescription: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych.",
-      twitterDescription: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych.",
+      title: "Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD",
+      ogTitle: "Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD",
+      twitterTitle: "Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD",
+      description: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
+      ogDescription: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
+      twitterDescription: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
       imageType: "image/webp",
       image: imageUrls.suszarka,
-      imageAlt: "Naprawa suszarek w Przemyślu – diagnostyka i usuwanie awarii",
+      imageAlt: "Naprawa suszarek w Przemyślu – diagnostyka i usuwanie awarii suszarek kondensacyjnych, z pompą ciepła i tradycyjnych",
       imageWidth: "700",
       imageHeight: "700",
       type: "website",
@@ -1111,6 +1111,10 @@ export const dataForMetaTags = {
         "width": 700,
         "height": 700,
         "caption": "Suszarka do ubrań naprawiona w serwisie w Przemyślu. Serwis_RTV-AGD",
+        "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg", // test
+        "license": appUrls.home,  // test
+        "keywords": "naprawa suszarek, przemyśl, serwis AGD, suszarki kondensacyjne, pompa ciepła",  // test
+
       },
       webpage: {
         "@type": "WebPage",
@@ -1121,7 +1125,7 @@ export const dataForMetaTags = {
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_suszarek + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_suszarek + "#primaryimage" },
-        "thumbnailUrl": imageUrls.suszarka,
+        "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg",
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",

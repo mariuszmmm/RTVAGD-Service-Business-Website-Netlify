@@ -32,7 +32,8 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa suszarek w Przemyślu 💨
+          Naprawa suszarek w Przemyślu 💨 <br />
+          - Profesjonalny serwis AGD
           {/* &nbsp;
           <Emoticon>
             <Image
@@ -55,6 +56,8 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               // fetchpriority="high"
               // itemProp="image"
               // loading='lazy'
+              decoding="async"
+              loading="eager"
               fill
               // decoding="async"
               // srcSet={`${imageUrls.suszarka_300} 500w,
@@ -159,7 +162,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           </StyledText>
         </Section>
 
-  {/*      <Section>
+        {/*      <Section>
           <SubTitle>Powiązane usługi</SubTitle>
           <StyledText>
             Sprawdź też:

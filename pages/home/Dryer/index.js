@@ -18,7 +18,7 @@ const Dryer = ({ show, left, setHold }) => {
       >
         <StyledImage>
           <Image
-            src={imageUrls.suszarka}
+            src={imageUrls._suszarka}
             alt="Suszarka"
             // loading='lazy'
             fill

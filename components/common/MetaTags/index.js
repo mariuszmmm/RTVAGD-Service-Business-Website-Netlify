@@ -342,6 +342,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
       {(path === "/naprawa-suszarek/") && (
         <>
+          {/* TEST */}
+          <link rel="preload" as="image" href="https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp" />
+          <link rel="preload" as="image" href="https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.jpg" />
+
+
           <script type="application/ld+json"    // wyłączone 16.05.2025   // dodane 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({

@@ -39,9 +39,16 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp</image:loc>
-      <image:title>Naprawa suszarek Przemyśl</image:title>
-      <image:caption>Naprawa suszarek w Przemyślu – diagnostyka i usuwanie awarii</image:caption>
+      <image:title>Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD</image:title>
+      <image:caption>Naprawa suszarek w Przemyślu – diagnostyka i usuwanie awarii suszarek kondensacyjnych, z pompą ciepła i tradycyjnych</image:caption>
       <image:geo_location>Przemyśl, Polska</image:geo_location>
+      <image:license>https://naprawaprzemysl.pl/</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.jpg</image:loc>
+      <image:caption>Miniatura - Naprawa suszarek Przemyśl</image:caption>
+      <image:title>Naprawa suszarek Przemyśl - miniatura</image:title>
+      <image:license>https://naprawaprzemysl.pl/</image:license>
     </image:image>
   </url>
   <url>
