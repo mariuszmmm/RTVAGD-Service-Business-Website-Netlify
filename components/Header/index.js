@@ -39,6 +39,8 @@ const Header = ({ rating }) => {
     };
   }, []);
 
+  console.log("pathname", pathname)
+
   return (
     <HeaderWrapper>
       <HeaderContainer>
