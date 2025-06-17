@@ -28,7 +28,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa telewizorów w Przemyślu
+          Naprawa telewizorów w Przemyślu 🖥️
         </Title>
 
         <Section>

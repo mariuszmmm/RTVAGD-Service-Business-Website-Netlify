@@ -31,7 +31,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
       <Container>
         <Title>
-          Naprawa pralek w Przemyślu
+          Naprawa pralek w Przemyślu 🧺
           {/* &nbsp;
           <Emoticon>
             <Image

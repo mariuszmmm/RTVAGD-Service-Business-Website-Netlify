@@ -346,7 +346,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [breadcrumbList, imageObject, organization, localBusiness, website, productSchema, webpage, faqPage]
+                "@graph": [breadcrumbList, imageObject, organization, localBusiness, productSchema, website, webpage, faqPage]
               })
             }}
           />
@@ -420,7 +420,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [breadcrumbList, imageObject, organization, localBusiness, website, productSchema, webpage]
+                "@graph": [breadcrumbList, imageObject, organization, localBusiness, productSchema, website, webpage]
               })
             }}
           />

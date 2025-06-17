@@ -885,7 +885,7 @@ export const dataForMetaTags = {
       title: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
       ogTitle: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
       twitterTitle: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
-      description: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych. Profesjonalne podejście i sprawdzone części.",
+      description: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych.",
       ogDescription: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych.",
       twitterDescription: "Fachowy serwis suszarek w Przemyślu i okolicach. Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła, elektrycznych.",
       imageType: "image/webp",

@@ -31,7 +31,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
 
       <Container>
         <Title>
-          Naprawa ekspresów do kawy w Przemyślu
+          Naprawa ekspresów do kawy w Przemyślu ☕
           {/* <Emoticon>
             <Image
               src={imageUrls.logo}
