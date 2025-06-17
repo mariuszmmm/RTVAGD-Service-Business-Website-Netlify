@@ -19,7 +19,7 @@ import { appUrls } from "../../utils/urls";
 const Footer = () => (
   <FooterWrapper>
     <FooterContainer>
-      <SubTitle>{serwis.shortName}</SubTitle>
+      <SubTitle>{serwis.shortName} Przemyśl</SubTitle>
       <FooterInfo>
         <StyledLink
           $area="adres"
