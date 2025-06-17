@@ -420,21 +420,18 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [organization, localBusiness, webpage, imageObject, breadcrumbList,
-                  website
-                  //  localBusinessSchema, productSchema
-                ]
+                "@graph": [breadcrumbList, imageObject, organization, localBusiness, website, productSchema, webpage]
               })
             }}
           />
-          <script type="application/ld+json"
+          {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
                 ...productSchema
               })
             }}
-          />
+          /> */}
           {/* <script type="application/ld+json"     // wyłączone 14.05.2025
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(organization)

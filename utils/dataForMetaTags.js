@@ -282,22 +282,26 @@ export const dataForMetaTags = {
       product: {
         "@type": "Product",
         "@id": appUrls.home + "#product",
-        "name": "Serwis RTV-AGD Przemyśl",
-        "description": "Profesjonalny serwis RTV-AGD w Przemyślu i okolicach. Specjalizuję się w naprawie pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy różnych marek. Zapewniam szybką obsługę i gwarancję na wykonane usługi.",
-        "image": [imageUrls.serwis],
+        "name": "Usługa naprawy sprzętu RTV-AGD w Przemyślu",
+        "description": "Diagnostyka i naprawa sprzętu RTV-AGD w Przemyślu, z zachowaniem najwyższej staranności.",
+        "image": imageUrls.serwis,
         "brand": {
           "@type": "Brand",
-          "name": "Naprawa RTV-AGD Przemyśl"
+          "name": "Serwis_RTV-AGD"
         },
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          // "priceRange": "$$",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
-          "url": appUrls.home
+          "url": appUrls.home,
+          "seller": {
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness"
+          }
         },
+
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
         //   { "@type": "City", "name": "Bolestraszyce" },
