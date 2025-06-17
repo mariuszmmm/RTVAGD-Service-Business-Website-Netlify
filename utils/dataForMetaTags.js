@@ -58,7 +58,6 @@ export const organization = {
 };
 
 export const localBusiness = {
-
   "@type": "LocalBusiness",
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",   // zgodny z CEIDG
@@ -281,6 +280,7 @@ export const dataForMetaTags = {
       localBusiness,
 
       product: {
+        "@type": "Product",
         "@id": appUrls.home + "#product",
         "name": "Serwis RTV-AGD Przemyśl",
         "description": "Profesjonalny serwis RTV-AGD w Przemyślu i okolicach. Specjalizuję się w naprawie pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy różnych marek. Zapewniam szybką obsługę i gwarancję na wykonane usługi.",
@@ -677,8 +677,7 @@ export const dataForMetaTags = {
         },
       },
       product: {
-
-        // "@type": "Product",
+        "@type": "Product",
         "@id": appUrls.naprawa_pralek + "#product",
         "name": "Naprawa pralek Przemyśl",
         "description": "Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Oferuję kompleksową diagnostykę oraz naprawę pralek marek Bosch, Electrolux, Samsung, Whirlpool i innych. Korzystam z profesjonalnych narzędzi i oryginalnych części, zapewniając gwarancję na wykonaną usługę.",
@@ -788,7 +787,7 @@ export const dataForMetaTags = {
         // },
       },
       faqPage: {
-        // "@type": "FAQPage",
+        "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
@@ -936,8 +935,7 @@ export const dataForMetaTags = {
         ],
       },
       product: {
-
-        // "@type": "Product",
+        "@type": "Product",
         "@id": appUrls.naprawa_suszarek + "#product",
         "name": "Usługa naprawy suszarek w Przemyślu",
         "description": "Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła i tradycyjnych, z zachowaniem najwyższej staranności.",
@@ -1045,7 +1043,7 @@ export const dataForMetaTags = {
         "name": serwis.name,  // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
       },
       faqPage: {
-        // "@type": "FAQPage",
+        "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
@@ -1230,8 +1228,8 @@ export const dataForMetaTags = {
         },
       },
       product: {
-        // "@type": "Product",
-        // "@id": appUrls.naprawa_zmywarek + "#product",
+        "@type": "Product",
+        "@id": appUrls.naprawa_zmywarek + "#product",
         "name": "Naprawa zmywarek Przemyśl",  // "name": "Naprawa zmywarek Przemyśl",
         "description": "Szybka i profesjonalna naprawa zmywarek w Przemyślu i okolicach. Oferuję kompleksową diagnostykę oraz naprawę zmywarek wszystkich marek (Bosch, Electrolux, Beko i inne). Korzystam z profesjonalnych narzędzi i oryginalnych części, zapewniając gwarancję na usługę.",
         "image": [imageUrls.zmywarka],
@@ -1315,7 +1313,7 @@ export const dataForMetaTags = {
         // },
       },
       faqPage: {
-        // "@type": "FAQPage",
+        "@type": "FAQPage",
         "mainEntity": [
           {
             "@type": "Question",
@@ -1459,6 +1457,7 @@ export const dataForMetaTags = {
         },
       },
       product: {
+        "@type": "Product",
         "@id": appUrls.naprawa_ekspresow + "#product",
         "name": "Naprawa ekspresów Przemyśl",
         "image": imageUrls.ekspres,
@@ -1647,8 +1646,7 @@ export const dataForMetaTags = {
         // ]
       },
       product: {
-
-        // "@type": "Product",
+        "@type": "Product",
         "@id": appUrls.naprawa_telewizorow + "#product",
         "name": "Naprawa telewizorów Przemyśl",
         "description": "Profesjonalna naprawa ekspresów do kawy wszystkich marek w Przemyślu i okolicach. Specjalizuję się w kompleksowej naprawie domowych i profesjonalnych ekspresów, oferując szybką diagnozę i oryginalne części. Zapewniam gwarancję i pełne zadowolenie klientów.",

@@ -288,7 +288,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "FAQPage",
                 ...faqPage
               })
             }}
@@ -297,7 +296,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
-                "@type": "Product",
                 ...productSchema
               })
             }}
@@ -327,7 +325,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "FAQPage",
                 ...faqPage
               })
             }}
@@ -336,7 +333,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
-                "@type": "Product",
                 ...productSchema
               })
             }}
@@ -350,28 +346,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [organization, localBusiness, webpage, imageObject, breadcrumbList,
-                  website
-                  //  localBusinessSchema, productSchema
-                ]
-              })
-            }}
-          />
-          <script type="application/ld+json"    // wyłączone 15.05.2025
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                ...faqPage
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                "@type": "Product",
-                ...productSchema
+                "@graph": [breadcrumbList, imageObject, organization, localBusiness, website, productSchema, webpage, faqPage]
               })
             }}
           />
@@ -416,7 +391,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
-                "@type": "Product",
                 ...productSchema
               })
             }}
@@ -457,7 +431,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
-                "@type": "Product",
                 ...productSchema
               })
             }}
