@@ -74,7 +74,7 @@ const Footer = () => (
         </StyledLink>
       </FooterInfo>
       <FooterCopy>
-        © 2025 Serwis RTV i AGD w Przemyślu. Wszelkie prawa zastrzeżone.
+        © 2025 {serwis.shortName}. Wszelkie prawa zastrzeżone.
       </FooterCopy>
     </FooterContainer>
   </FooterWrapper>
