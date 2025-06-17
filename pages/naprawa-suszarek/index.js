@@ -159,7 +159,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           </StyledText>
         </Section>
 
-        <Section>
+  {/*      <Section>
           <SubTitle>Powiązane usługi</SubTitle>
           <StyledText>
             Sprawdź też:
@@ -178,7 +178,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
             </li>
           </StyledText >
-        </Section>
+        </Section>   */}
 
       </Container>
     </>
