@@ -210,4 +210,10 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
   );
 };
 
+export const getStaticProps = async () => {
+  const data = await getData();
+
+  return { props: data };
+};
+
 export default Home;
