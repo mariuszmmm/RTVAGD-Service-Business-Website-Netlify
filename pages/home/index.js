@@ -17,6 +17,7 @@ import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { useRouter } from 'next/router';
 import { appUrls } from '../../utils/urls';
 import { StyledText } from '../../components/common/Text/styled';
+import { getData } from '../../utils/getData';
 
 const Home = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
