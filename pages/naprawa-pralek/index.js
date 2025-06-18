@@ -50,7 +50,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               title="Pralka"
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
-              // loading='lazy'
+              loading='lazy'
               // decoding="async"
               fill
               // srcSet={`${imageUrls.pralka_300} 500w,
@@ -59,49 +59,50 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             />
           </StyledPhoto>
 
-          <SubTitle>Szybka i rzetelna naprawa pralek</SubTitle>
+          <SubTitle>Kompleksowa diagnostyka i usunięcie awarii pralki</SubTitle>
           <StyledText>
-            Awaria pralki może utrudnić codzienne obowiązki domowe. Dlatego <strong>serwis pralek</strong> w Przemyślu oferuje szybką diagnostykę oraz rzetelną naprawę pralek wszystkich marek.<br />
-            Korzystam z profesjonalnych narzędzi i oryginalnych części zamiennych, aby przywrócić pełną funkcjonalność Twojej pralki już podczas pierwszej wizyty. Zapewniam gwarancję na wykonaną naprawę, dzięki czemu masz pewność satysfakcji i bezproblemowego użytkowania sprzętu. Specjalizuję się w serwisie i naprawie pralek marek Bosch, Electrolux, Samsung, Whirlpool oraz wielu innych, zawsze gwarantując najwyższą jakość usług i szybkie terminy realizacji.
+            Awaria pralki potrafi zaburzyć rytm domowych obowiązków. Oferuję w Przemyślu i okolicach rzetelną analizę problemu oraz naprawę pralki – z dbałością o trwały efekt. Korzystam z profesjonalnych narzędzi diagnostycznych i sprawdzonych części zamiennych, a każde zlecenie traktuję indywidualnie, zwracając uwagę na specyfikę modelu i potrzeby Klienta.
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Najczęstsze usterki pralek
+            Typowe usterki pralek
           </SubTitle>
           <StyledText as="ul" $cross>
-            <li><b>Pralka nie pobiera wody</b> – może to być spowodowane uszkodzonym elektrozaworem, zatkanym filtrem wody, zgiętym wężem doprowadzającym wodę lub awarią hydrostatu, który odpowiada za kontrolę poziomu wody.</li>
-            <li><b>Wycieki wody</b> – często wynikają z nieszczelnej uszczelki drzwi, pękniętego węża odpływowego, uszkodzonej pompy odpływowej lub pęknięcia komory szuflady na detergent.</li>
-            <li><b>Pralka hałasuje lub nadmiernie wibruje</b> – przyczyną mogą być zużyte łożyska bębna, uszkodzone amortyzatory, poluzowana przeciwwaga bębna, nierównomierne rozłożenie wsadu lub nieprawidłowe wypoziomowanie pralki.</li>
-            <li><b>Brak odwirowania</b> – może być spowodowany uszkodzeniem silnika, zużytymi szczotkami, zatkanym filtrem odpływowym, zablokowanym bębnem, uszkodzonym paskiem napędowym lub przeciążeniem pralki. </li>
-            <li><b>Pralka nie uruchamia się</b> – przyczyną może być brak zasilania, uszkodzony kabel zasilający, niesprawna blokada drzwi, awaria modułu elektronicznego lub przepalony bezpiecznik.</li>
-            <li><b>Nieprawidłowe dozowanie detergentu</b> – najczęściej wynika z nadmiernego użycia środka piorącego, co prowadzi do powstawania nadmiernej piany i niedokładnego wypłukania ubrań.</li>
+            <li><strong>Pralka nie pobiera wody</strong> – możliwe przyczyny to uszkodzony elektrozawór, zatkany filtr wody, niedrożny wąż doprowadzający czy problem z czujnikiem poziomu (hydrostat).</li>
+            <li><strong>Wycieki wody</strong> – źródłem mogą być nieszczelne uszczelki drzwi, pęknięty wąż odpływowy lub uszkodzona pompa. Dokładna kontrola pozwala zidentyfikować przyczynę.</li>
+            <li><strong>Hałas lub nadmierne wibracje</strong> – przyczyną bywają zużyte łożyska, amortyzatory, niestabilne ustawienie urządzenia czy nierównomierny wsad. Sprawdzam wszystkie elementy zawieszenia i montażu.</li>
+            <li><strong>Brak odwirowania</strong> – często wiąże się z uszkodzeniem silnika, szczotek, filtrem odpływowym lub problemem z paskiem napędowym. Staram się lokalizować usterki precyzyjnie, by wymienić tylko to, co faktycznie jest uszkodzone.</li>
+            <li><strong>Pralka nie uruchamia się</strong> – możliwe przyczyny to problem z zasilaniem, uszkodzona blokada drzwi czy moduł sterowania. Weryfikuję obwody i komponenty elektroniczne.</li>
+            <li><strong>Nadmierne pienienie lub pozostałości detergentu</strong> – analizuję prawidłowe dozowanie oraz stan dysz i układu płukania, by przywrócić optymalną pracę.</li>
+
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Dlaczego warto wybrać mój serwis?
+            Dlaczego warto skorzystać z tego serwisu?
           </SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka reakcja:</strong> Ustalam termin wizyty jeszcze tego samego dnia, abyś mógł szybko odzyskać sprawność swojej pralki.</li>
-            <li><strong>Doświadczenie i wiedza:</strong> Ponad 20 lat praktyki w serwisowaniu sprzętu AGD pozwala mi naprawiać pralki wszystkich modeli, nawet te najbardziej skomplikowane.</li>
-            <li><strong>Obsługa wszystkich marek:</strong> Specjalizuję się w naprawie pralek różnych producentów, takich jak Bosch, Electrolux, Amica, Samsung, Whirlpool, Beko i wielu innych, co gwarantuje kompleksową obsługę niezależnie od modelu urządzenia.</li>
-            <li><strong>Gwarancja na usługę:</strong> Na każdą naprawę udzielam gwarancji, a stosowane części pochodzą od sprawdzonych producentów, co zapewnia niezawodność naprawy </li>
+            <li><strong>Szybka organizacja terminu</strong>: staram się ustalić dogodny czas wizyty tak szybko, jak to możliwe, aby jak najkrócej odczuwać niedogodności związane z awarią.</li>
+            <li><strong>Wieloletnie doświadczenie</strong>: dzięki praktyce przy różnorodnych modelach od renomowanych producentów (Bosch, Electrolux, Samsung, Whirlpool, Beko, Amica i inne) potrafię skutecznie reagować na złożone usterki.</li>
+            <li><strong>Kompleksowa obsługa</strong>: naprawiam pralki różnych marek, przyjmując urządzenie do diagnozy zarówno w domu Klienta, jak i w warsztacie (jeśli wymagana jest bardziej skomplikowana naprawa).</li>
+            <li><strong>Sprawdzone części</strong>: w razie potrzeby stosuję części od zaufanych dostawców, co minimalizuje ryzyko ponownych problemów.</li>
+            <li><strong>Przejrzyste podejście</strong>: szczegółowo wyjaśniam przyczynę usterki oraz zakres niezbędnych prac, unikając zbędnych wymian i kosztów.</li>
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Proces naprawy pralki krok po kroku
+            Jak przebiega usługa krok po kroku?
           </SubTitle>
           <StyledText as="ol" >
-            <li><strong>Kontakt i konsultacja:</strong> Opowiedz o usterce przez telefon, ustalimy dogodne terminy i zakres usługi.</li>
-            <li><strong>Diagnostyka na miejscu:</strong> Dokonuję precyzyjnej diagnostyki urządzenia przy użyciu profesjonalnych narzędzi pomiarowych, identyfikując przyczynę awarii.</li>
-            <li><strong>Naprawa lub wymiana części:</strong> Natychmiast usuwam usterkę; w razie potrzeby montuję oryginalne części zamienne.</li>
-            <li><strong>Testy końcowe:</strong> Po naprawie przeprowadzam pełen cykl prania testowego, by potwierdzić, że wszystko działa wzorowo.</li>
-            <li><strong>Gwarancja i porady:</strong> Udzielam gwarancji na wykonaną usługę i doradzam, jak dbać o pralkę, by uniknąć podobnych problemów.</li>
+            <li><strong>Kontakt i wstępna konsultacja</strong>: opis awarii telefonicznie lub mailowo, omówienie możliwych przyczyn i wstępna orientacyjna wycena zakresu prac.</li>
+            <li><strong>Diagnostyka na miejscu</strong>: dokładne sprawdzenie pralki przy użyciu narzędzi diagnostycznych, potwierdzenie lub weryfikacja wstępnej hipotezy co do usterki.</li>
+            <li><strong>Naprawa lub wymiana części</strong>: usuwam usterkę z wykorzystaniem oryginalnych lub wysokiej jakości zamienników, dbając o właściwe parametry urządzenia.</li>
+            <li><strong>Test końcowy</strong>: wykonuję cykl testowy, by potwierdzić prawidłowe działanie pralki i zweryfikować brak wycieków czy nieprawidłowości przy odwirowaniu.</li>
+            <li><strong>Porady eksploatacyjne</strong>: podpowiadam, jak dbać o pralkę (czyszczenie filtrów, właściwe rozkładanie wsadu itp.), by unikać podobnych awarii.</li>
           </StyledText>
         </Section>
 
@@ -119,8 +120,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <strong>Nie trać czasu na pranie ręczne! <Break />
-              Skontaktuj się ze mną, a Twój sprzęt odzyska pełną sprawność.
+            <strong>Nie pozwól, by awaria pralki zaburzyła Twoje plany.<Break /> Skontaktuj się już dziś, opisując problem – razem dobierzemy najlepsze rozwiązanie.
             </strong>
           </HeroText>
           <ButtonLink
@@ -132,49 +132,31 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawiam pralki dla mieszkańców Przemyśla i okolic.</SubTitle>
+          <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Potrzebna Ci naprawa pralki w Przemyślu lub w jednej z pobliskich miejscowości? Obsługuję miejscowości Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce i Żurawica – wystarczy telefon, a przyjadę pomóc.
+            Świadczę usługi naprawy pralek w Przemyślu oraz w pobliskich miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Jeśli Twoja miejscowość nie została wymieniona, zapraszam do kontaktu – ustalimy dogodny termin wizyty.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Inne usługi</SubTitle>
+          <SubTitle>Powiązane usługi</SubTitle>
           <StyledText>
-            Oprócz naprawy pralek oferuję kompleksowy serwis:<br />
-            <StyledLink
-              href={appUrls.naprawa_zmywarek}
-              title='Naprawa zmywarek'
-              $standardText
-            >
-              {" "}zmywarek
-            </StyledLink>
-            ,
-            <StyledLink
-              href={appUrls.naprawa_suszarek}
-              title='Naprawa suszarek'
-              $standardText
-            >
-              {" "}suszarek
-            </StyledLink>
-            ,
-            <StyledLink
-              href={appUrls.naprawa_ekspresow}
-              title='Naprawa ekspresów do kawy'
-              $standardText
-            >
-              {" "}ekspresów do kawy
-            </StyledLink>
-            {" "}oraz
-            <StyledLink
-              href={appUrls.naprawa_telewizorow}
-              title='Naprawa telewizorów'
-              $standardText
-            >
-              {" "}telewizorów
-            </StyledLink>
-            .
+            Sprawdź też:
           </StyledText>
+          <StyledText as="ul" $list>
+            <li>
+              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
+            </li>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li> */}
+          </StyledText >
         </Section>
 
       </Container>

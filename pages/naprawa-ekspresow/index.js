@@ -15,6 +15,7 @@ import Image from 'next/image';
 import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { getData } from '../../utils/getData';
 import { StyledText } from '../../components/common/Text/styled';
+import { StyledLink } from '../../components/common/StyledLink';
 
 const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -99,6 +100,18 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa ekspresów do kawy w Przemyślu'>
             Zadzwoń teraz
           </ButtonLink>
+        </Section>
+
+        <Section>
+          <SubTitle>Powiązane usługi</SubTitle>
+          <StyledText>
+            Sprawdź też:
+          </StyledText>
+          <StyledText as="ul" $list>
+            <li>
+              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
+            </li>
+          </StyledText >
         </Section>
       </Container>
     </>

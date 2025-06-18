@@ -210,6 +210,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
   const localBusinessSchema = {
     ...localBusiness,
     // ...getReviews(1),
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": (rating || serwis.rating).toString(),
+      "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
+    },
 
   };
 
@@ -278,7 +283,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject, breadcrumbList,
-                  website
+                  // website
                   //  localBusinessSchema, productSchema
                 ]
               })
@@ -315,7 +320,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject, breadcrumbList,
-                  website
+                  // website
                   //  localBusinessSchema, productSchema
                 ]
               })
@@ -351,7 +356,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [breadcrumbList, imageObject, organization, localBusiness, productSchema, website, webpage, faqPage]
+                "@graph": [breadcrumbList, imageObject,
+                  //  organization, localBusiness, 
+                  productSchema,
+                  // website, 
+                  webpage, faqPage]
               })
             }}
           />
@@ -386,7 +395,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject, breadcrumbList,
-                  website
+                  // website
                   //  localBusinessSchema, productSchema
                 ]
               })
@@ -425,7 +434,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [breadcrumbList, imageObject, organization, localBusiness, productSchema, website, webpage]
+                "@graph": [breadcrumbList, imageObject, organization, localBusinessSchema, productSchema, website, webpage]
               })
             }}
           />

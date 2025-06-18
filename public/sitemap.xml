@@ -3,7 +3,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-i-agd-naprawa-przemysl.webp</image:loc>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -34,13 +34,13 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp</image:loc>
       <image:title>Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD</image:title>
-      <image:caption>Naprawa suszarek w Przemyślu – diagnostyka i usuwanie awarii suszarek kondensacyjnych, z pompą ciepła i tradycyjnych</image:caption>
+      <image:caption>Naprawa suszarek – diagnostyka i usuwanie awarii suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu</image:caption>
       <image:geo_location>Przemyśl, Polska</image:geo_location>
       <image:license>https://naprawaprzemysl.pl/</image:license>
     </image:image>
@@ -53,29 +53,29 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-zmywarki.webp</image:loc>
       <image:title>Naprawa zmywarek Przemyśl</image:title>
-      <image:caption>Serwis zmywarek Bosch, Siemens i innych – Przemyśl, Żurawica, Ostrów</image:caption>
+      <image:caption>Diagnostyka i naprawa zmywarek w Przemyślu</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-naprawa-ekspresu.png</image:loc>
-      <image:title>Naprawa ekspresów do kawy Przemyśl</image:title>
-      <image:caption>Ekspres do kawy – serwis i naprawa AGD w Przemyślu</image:caption>
+      <image:title>Naprawa ekspresów Przemyśl</image:title>
+      <image:caption>Naprawa ekspresów – serwis i naprawa AGD w Przemyślu</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -96,7 +96,7 @@
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-17</lastmod>
+    <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>

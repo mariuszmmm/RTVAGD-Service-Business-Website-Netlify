@@ -59,50 +59,50 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
           </StyledPhoto>
 
           <SubTitle>
-            Szybka i profesjonalna naprawa zmywarek
+            Dokładna diagnostyka i usuwanie usterek zmywarek
           </SubTitle>
           <StyledText>
-            Awaria zmywarki może całkowicie zaburzyć porządek w kuchni. Dlatego <strong>serwis zmywarek</strong> w Przemyślu oferuje kompleksową diagnostykę oraz profesjonalną naprawę urządzeń wszystkich marek.<br />
-            Korzystam z&nbsp;profesjonalnych narzędzi i&nbsp;oryginalnych części zamiennych, aby&nbsp;przywrócić pełną funkcjonalność Twojej zmywarki już podczas pierwszej wizyty. Zapewniam gwarancję na wykonaną naprawę, dzięki czemu masz pewność satysfakcji i&nbsp;bezproblemowego użytkowania sprzętu. Specjalizuję się w&nbsp;serwisie i&nbsp;naprawie zmywarek marek Bosch, Electrolux, Beko oraz wielu innych, zawsze gwarantując najwyższą jakość usług i&nbsp;szybkie terminy realizacji.
+            Awarie zmywarki mogą zakłócić porządek w kuchni i generować dodatkowe obowiązki. W Przemyślu oferuję rzetelne sprawdzenie sprzętu, identyfikację źródła problemu i profesjonalną naprawę zmywarek różnych marek. Korzystam z narzędzi diagnostycznych i części od sprawdzonych dostawców, dbając o to, aby zmywarka działała bez zakłóceń przez długi czas.
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Najczęstsze usterki zmywarek
+            Typowe usterki zmywarek
           </SubTitle>
           <StyledText as="ul" $cross>
-            <li><b>Zmywarka nie pobiera wody</b> –&nbsp;przyczyną może być uszkodzony zawór dopływu, zatkany filtr lub problem z&nbsp;dopływem wody.</li>
-            <li><b>Brak podgrzewania wody</b> –&nbsp;zwykle wywołany uszkodzoną grzałką, czujnikiem temperatury lub modułem sterującym.</li>
-            <li><b>Wycieki wody</b> –&nbsp;najczęściej spowodowane nieszczelnymi uszczelkami drzwi, pękniętym wężem lub wadliwą pompą odpływową.</li>
-            <li><b>Niepełne suszenie naczyń</b> –&nbsp;problemy z&nbsp;wentylatorem, elementem grzejnym lub elektronicznym modułem suszenia.</li>
-            <li><b>Zmywarka nie uruchamia się</b> –&nbsp;możliwa awaria układu zasilania, uszkodzone przyciski sterujące lub usterka elektroniki.</li>
-            <li><b>Brudne naczynia po zakończeniu cyklu</b> –&nbsp;efekt zatkanych dysz spryskujących, zabrudzonego filtra lub zużytych ramion spryskujących.</li>
+            <li><strong>Brak pobierania wody</strong> – zazwyczaj wina zaworu dopływu, niedrożnego filtra lub problemu z dopływem. Sprawdzam obwód wodny i elementy sterujące.</li>
+            <li><strong>Brak podgrzewania</strong> – przyczyną może być uszkodzona grzałka, czujnik temperatury lub moduł sterowania. Dokładnie weryfikuję elementy grzewcze.</li>
+            <li><strong>Wycieki wody</strong> – źródłem mogą być uszczelki drzwi, pęknięty wąż lub nieszczelny mechanizm pompy. Kontrola szczelności to podstawa diagnozy.</li>
+            <li><strong>Niedokładne suszenie</strong> – problem może dotyczyć wentylatora, elementu grzewczego suszenia lub układu sterującego; sprawdzam przepływ powietrza i działanie modułów.</li>
+            <li><strong>Nieuruchamianie się</strong> – sprawdzam zasilanie, przyciski sterowania oraz moduł elektroniczny.</li>
+            <li><strong>Brudne naczynia po cyklu</strong> – często wina zatkanych dysz spryskujących, zabrudzonego filtra lub zużytych ramion; czyszczenie i wymiana podzespołów poprawia efektywność.</li>
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Dlaczego warto wybrać mój serwis?
+            Dlaczego warto wybrać ten serwis?
           </SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka reakcja:</strong> Zwykle ustalam termin wizyty jeszcze tego samego dnia, abyś mógł szybko odzyskać sprawność swojego sprzętu.</li>
-            <li><strong>Doświadczenie i&nbsp;wiedza:</strong> Ponad 20&nbsp;lat praktyki w&nbsp;serwisowaniu sprzętu AGD pozwala mi naprawiać urządzenia wszystkich marek i&nbsp;modeli, nawet te najbardziej skomplikowane.</li>
-            <li><strong>Elastyczność usług:</strong> Naprawiam zmywarki zarówno w Twoim domu, jak i w moim warsztacie – możesz wybrać dogodną dla siebie opcję.</li>
-            <li><strong>Gwarancja na usługę:</strong> Na każdą naprawę udzielam gwarancji, a stosowane części pochodzą od sprawdzonych producentów, co zapewnia niezawodność naprawy.</li>
+            <li><strong>Szybkie ustalanie terminu</strong>: dbam o to, aby wizyta odbyła się w dogodnym dla Klienta terminie, reagując możliwie szybko.</li>
+            <li><strong>Wieloletnia praktyka</strong>: doświadczenie przy zmywarkach marek Bosch, Electrolux, Beko, Siemens i innych pozwala skutecznie diagnozować zarówno standardowe, jak i nietypowe awarie.</li>
+            <li><strong>Elastyczne warunki naprawy</strong>: naprawa u Klienta lub – gdy wymaga tego sytuacja – demontaż i naprawa w warsztacie, po uzgodnieniu.</li>
+            <li><strong>Stosowanie sprawdzonych części</strong>: sięgam po elementy o właściwych parametrach technicznych, by zapewnić długotrwały efekt naprawy.</li>
+            <li><strong>Jasne informacje</strong>: po diagnostyce przekazuję szczegóły usterki i zakres prac, byś wiedział, jakie kroki podejmujemy i jak prezentuje się wycena.</li>
           </StyledText>
         </Section>
 
         <Section>
           <SubTitle>
-            Proces naprawy zmywarki krok po kroku
+            Proces naprawy zmywarki
           </SubTitle>
           <StyledText as="ol" >
-            <li><strong>Kontakt i konsultacja:</strong> Opis usterki przez telefon i&nbsp;umówienie dogodnego terminu wizyty serwisowej.</li>
-            <li><strong>Diagnostyka na miejscu:</strong> Dokładne sprawdzenie urządzenia przy użyciu profesjonalnych narzędzi – często wstępna diagnoza jest gotowa podczas pierwszej wizyty.</li>
-            <li><strong>Naprawa lub wymiana części:</strong> Usuwam usterkę od razu, a&nbsp;jeśli konieczna jest wymiana elementów, instaluję oryginalne części zamienne.</li>
-            <li><strong>Testy końcowe:</strong> Po naprawie przeprowadzam testy działania zmywarki, aby upewnić się, że działa zgodnie z zaleceniami producenta.</li>
-            <li><strong>Gwarancja i porady:</strong> Udzielam gwarancji na wykonaną usługę i&nbsp;przekazuję wskazówki eksploatacyjne, by uniknąć podobnych usterek w przyszłości.</li>
+            <li><strong>Kontakt i wstępne ustalenia</strong>: opis usterki przez telefon lub e-mail, wstępna analiza możliwości i terminu.</li>
+            <li><strong>Diagnostyka na miejscu</strong>: testy wodno-elektryczne, odczyt ewentualnych kodów błędów i kontrola mechaniczna.</li>
+            <li><strong>Naprawa lub wymiana</strong>: wymieniam niesprawne podzespoły, korzystając z oryginalnych lub równoważnych komponentów.</li>
+            <li><strong>Testy końcowe</strong>: uruchamiam cykl testowy, sprawdzam pobieranie i odprowadzanie wody oraz skuteczność mycia i suszenia.</li>
+            <li><strong>Porady użytkowe</strong>: sugeruję, jak dbać o zmywarkę (czyszczenie filtrów, prawidłowe układanie naczyń itp.), aby zmniejszyć ryzyko powtórnej usterki.</li>
           </StyledText>
         </Section>
 
@@ -120,59 +120,39 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <b>Nie pozwól, aby awaria zmywarki zabierała Ci cenny czas. <Break />
-              Skontaktuj się ze&nbsp;mną, a&nbsp;Twój sprzęt odzyska pełną sprawność.</b>
+            <strong>Nie pozwól, aby awaria zmywarki zaburzyła codzienne rytuały w kuchni.<Break /> Skontaktuj się ze mną i omów problem – ustalimy najlepszy termin i zakres prac. </strong>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa zmywarek w Przemyślu' >
-            Zadzwoń teraz
+            📞 Zadzwoń teraz
           </ButtonLink>
         </Section>
 
         <Section>
-          <SubTitle>Świadczę usługi naprawy zmywarek w&nbsp;Przemyślu oraz pobliskich miejscowościach.</SubTitle>
+          <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Naprawiam zmywarki w Przemyślu i&nbsp;okolicach. Jeśli jesteś z&nbsp;miejscowości takich jak Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce czy Żurawica – chętnie do Ciebie przyjadę i&nbsp;usunę usterkę szybko i&nbsp;skutecznie.
+            Naprawiam zmywarki w Przemyślu oraz w pobliskich miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Inne usługi</SubTitle>
+          <SubTitle>Powiązane usługi</SubTitle>
           <StyledText>
-            Oprócz naprawy zmywarek oferuję profesjonalny serwis innych urządzeń.<br />
-            Zajmuję się także naprawą
-            <StyledLink
-              href={appUrls.naprawa_pralek}
-              title='Naprawa pralek'
-              $standardText
-            >
-              {" "}pralek
-            </StyledLink>
-            ,
-            <StyledLink
-              href={appUrls.naprawa_suszarek}
-              title='Naprawa suszarek'
-              $standardText
-            >
-              {" "}suszarek
-            </StyledLink>
-            ,
-            <StyledLink
-              href={appUrls.naprawa_ekspresow}
-              title='Naprawa ekspresów do kawy'
-              $standardText
-            >
-              {" "}ekspresów do kawy
-            </StyledLink>
-            {" "}oraz
-            <StyledLink
-              href={appUrls.naprawa_telewizorow}
-              title='Naprawa telewizorów'
-              $standardText
-            >
-              {" "}telewizorów
-            </StyledLink>
-            .
+            Sprawdź też:
           </StyledText>
+          <StyledText as="ul" $list>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
+            </li> */}
+            <li>
+              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
+            </li>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li> */}
+          </StyledText >
         </Section>
 
       </Container>

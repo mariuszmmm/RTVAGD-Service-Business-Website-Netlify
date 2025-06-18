@@ -435,7 +435,14 @@ export const dataForMetaTags = {
         "geo": geo,
         "name": serwis.name,  // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
       },
-
+      website: {
+        "@type": "WebSite",
+        "id": appUrls.home + "#website",
+        "url": appUrls.home,
+        "name": "Serwis_RTV-AGD",
+        "inLanguage": "pl-PL",
+        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+      },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.home + "#webpage",
@@ -450,14 +457,6 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalny serwis RTV-AGD w Przemyślu. Naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów. Szybko, rzetelnie, z gwarancją. ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.home + "#breadcrumb" },
-      },
-      website: {
-        "@type": "WebSite",
-        "id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "Serwis_RTV-AGD",
-        "inLanguage": "pl-PL",
-        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
       },
       imageObject: {
         "@type": "ImageObject",
@@ -501,12 +500,12 @@ export const dataForMetaTags = {
     },
     schema: {
 
-      website: {
-        "@type": "WebSite",
-        "id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "naprawaprzemysl.pl",
-      },
+      // website: {
+      //   "@type": "WebSite",
+      //   "id": appUrls.home + "#website",
+      //   "url": appUrls.home,
+      //   "name": "naprawaprzemysl.pl",
+      // },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.kontakt,
@@ -607,34 +606,27 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Naprawa pralek Przemyśl – Serwis RTV-AGD",
-      ogTitle: "Naprawa pralek Przemyśl – Serwis RTV-AGD",
-      twitterTitle: "Naprawa pralek Przemyśl – Serwis RTV-AGD",
-      description: "Szybka i rzetelna naprawa pralek wszystkich marek w Przemyślu. Profesjonalna diagnostyka usterki i wymiana części. Telefon: 790 258 612.",
-      ogDescription: "Fachowa naprawa pralek marki Bosch, Siemens, LG i innych w Przemyślu. Gwarancja usługi.",
-      twitterDescription: "Fachowa naprawa pralek marki Bosch, Siemens, LG i innych w Przemyślu. Gwarancja usługi.",
+      title: "Profesjonalny serwis pralek w Przemyślu – naprawa",
+      ogTitle: "Profesjonalny serwis pralek w Przemyślu – naprawa",
+      twitterTitle: "Profesjonalny serwis pralek w Przemyślu – naprawa",
+      description: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych. Zadzwoń ☎️ 790 258 612",
+      ogDescription: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych.",
+      twitterDescription: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych.",
       imageType: "image/webp",
       image: imageUrls.pralka,
-      imageAlt: "Naprawiona pralka w profesjonalnym serwisie w Przemyślu",
+      imageAlt: "Serwis pralek w Przemyślu – fachowa naprawa urządzenia",
       imageWidth: "700",
       imageHeight: "700",
       type: "website",
       siteName: "Serwis_RTV-AGD",
       canonical: appUrls.naprawa_pralek,
 
-      // keywords: "naprawa pralek, serwis pralek Przemyśl, naprawa pralek w Przemyślu, naprawa pralki Przemyśl, naprawa pralek Przemyśl, awaria pralki",
+      keywords: "naprawa pralek Przemyśl, serwis pralek Przemyśl, serwis AGD Przemyśl",
       // appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
     },
     schema: {
-      // organization: {
-
-      //   "@type": "Organization",
-      //   "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-      //   "logo": imageUrls.logo,
-      //   "url": appUrls.home,
-      //   "address": address,
-      //   "sameAs": [],
-      // },
+      // organization,
+      // localBusiness,
       service: {
         "@type": "Service",
         "@id": appUrls.naprawa_pralek + "#service",
@@ -679,21 +671,17 @@ export const dataForMetaTags = {
         //   "address": address,
         //   //  "image": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
         // },
-        "provider": {
-          "@id": "https://twojadomena.pl/#business"
-        },
       },
       product: {
         "@type": "Product",
         "@id": appUrls.naprawa_pralek + "#product",
-        "name": "Naprawa pralek Przemyśl",
-        "description": "Szybka i rzetelna naprawa pralek w Przemyślu i okolicach. Oferuję kompleksową diagnostykę oraz naprawę pralek marek Bosch, Electrolux, Samsung, Whirlpool i innych. Korzystam z profesjonalnych narzędzi i oryginalnych części, zapewniając gwarancję na wykonaną usługę.",
-        "image": [imageUrls.pralka],
+        "name": "Usługa naprawy pralek w Przemyślu",
+        "description": "Kompleksowa diagnostyka i naprawa pralek różnych marek w Przemyślu.",
+        "image": imageUrls.pralka,
         "brand": {
           "@type": "Brand",
           "name": "Serwis_RTV-AGD"
         },
-        // "category": "Naprawa pralek",
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
@@ -701,7 +689,8 @@ export const dataForMetaTags = {
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
-          "url": appUrls.naprawa_pralek
+          "url": appUrls.naprawa_pralek,
+          "seller": { "@id": appUrls.home + "#localbusiness" }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -801,39 +790,55 @@ export const dataForMetaTags = {
             "name": "Dlaczego pralka nie pobiera wody?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Najczęściej uszkodzony jest elektrozawór lub zatkany filtr. Dokładnie diagnozuję usterkę i wymieniam potrzebne elementy."
+              "text": "Może to wynikać z uszkodzonego elektrozaworu, niedrożnego filtra czy problemu z dopływem wody. Dokładna diagnostyka pozwala ustalić, która część wymaga uwagi."
             }
           },
           {
             "@type": "Question",
-            "name": "Czy naprawiane są pralki wszystkich marek, np. Bosch, Electrolux, Samsung?",
+            "name": "Czy serwis obsługuje pralki wszystkich marek?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Tak – mam doświadczenie w serwisowaniu pralek wszystkich popularnych producentów i modeli."
+              "text": "Tak, naprawiam większość dostępnych na rynku modeli (Bosch, Electrolux, Samsung, Whirlpool, Beko, Amica, itp.). Każde urządzenie traktuję indywidualnie."
             }
           },
           {
             "@type": "Question",
-            "name": "Czy po naprawie pralki udzielana jest gwarancja?",
+            "name": "Jak szybko mogę liczyć na wizytę?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oczywiście – na wszystkie wykonane usługi udzielam gwarancji, a używane części pochodzą od renomowanych dostawców."
+              "text": "Staram się ustalić termin możliwie jak najszybciej, zwykle w ciągu kilku dni od zgłoszenia. Dokładny czas zależy od aktualnego obłożenia i dostępności części."
             }
-          }]
+          },
+          {
+            "@type": "Question",
+            "name": "Jakiej jakości części są stosowane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sięgam po części od zaufanych dostawców, odpowiadające specyfikacjom producentów albo spełniające równoważne parametry techniczne."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gdzie naprawiam pralki?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "W większości przypadków naprawa odbywa się u Klienta. W razie konieczności zaawansowanej naprawy mogę zabrać pralkę do warsztatu, po wcześniejszym uzgodnieniu."
+            }
+          },]
       },
       place: {
         "@type": "Place",
         "geo": geo,
         "name": serwis.name,   // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
       },
-      website: {
-        "@type": "WebSite",
-        "id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "Serwis_RTV-AGD",
-        "inLanguage": "pl-PL",
-        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-      },
+      // website: {
+      //   "@type": "WebSite",
+      //   "id": appUrls.home + "#website",
+      //   "url": appUrls.home,
+      //   "name": "Serwis_RTV-AGD",
+      //   "inLanguage": "pl-PL",
+      //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+      // },
       imageObject: {
         "@type": "ImageObject",
         "id": appUrls.naprawa_pralek + "#primaryimage",
@@ -842,22 +847,25 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.pralka,
         "width": 700,
         "height": 700,
-        "caption": "Pralka automatyczna naprawiona w serwisie w Przemyślu. Serwis_RTV-AGD",
+        "caption": "Pralka automatyczna naprawiona w serwisie w Przemyślu.",
+        "thumbnailUrl": imageUrls.pralka, // test
+        "license": appUrls.home,  // test
+        "keywords": "naprawa pralek, przemyśl, serwis AGD, praleki automatyczne",  // test
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": "Serwis i naprawa pralek Przemyśl | Serwis_RTV-AGD",
+        "name": "Naprawa pralek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_pralek + "#primaryimage" },
-        "image": { "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "thumbnailUrl": imageUrls.pralka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalna naprawa pralek w Przemyślu i okolicach. Serwis pralek Bosch, Samsung, Electrolux, Whirlpool. Szybko, z gwarancją. ☎️ 790 258 612",
+        "description": "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych. Zadzwoń ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
+        "mainEntity": { "@id": appUrls.naprawa_pralek + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -901,8 +909,8 @@ export const dataForMetaTags = {
 
     },
     schema: {
-      organization,
-      localBusiness,
+      // organization,
+      // localBusiness,
       // organization: {
 
       //   "@type": "Organization",
@@ -955,15 +963,11 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          // "priceRange": "$$",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
           "url": appUrls.naprawa_suszarek,
-          "seller": {
-            "@type": "LocalBusiness",
-            "@id": appUrls.home + "#localbusiness"
-          }
+          "seller": { "@id": appUrls.home + "#localbusiness" }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -1094,14 +1098,14 @@ export const dataForMetaTags = {
             }
           }]
       },
-      website: {
-        "@type": "WebSite",
-        "id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "Serwis_RTV-AGD",
-        "inLanguage": "pl-PL",
-        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-      },
+      // website: {
+      //   "@type": "WebSite",
+      //   "id": appUrls.home + "#website",
+      //   "url": appUrls.home,
+      //   "name": "Serwis_RTV-AGD",
+      //   "inLanguage": "pl-PL",
+      //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+      // },
       imageObject: {
         "@type": "ImageObject",
         "id": appUrls.naprawa_suszarek + "#primaryimage",
@@ -1110,7 +1114,7 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.suszarka,
         "width": 700,
         "height": 700,
-        "caption": "Suszarka do ubrań naprawiona w serwisie w Przemyślu. Serwis_RTV-AGD",
+        "caption": "Suszarka do ubrań naprawiona w serwisie w Przemyślu. Serwis RTV-AGD",
         "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg", // test
         "license": appUrls.home,  // test
         "keywords": "naprawa suszarek, przemyśl, serwis AGD, suszarki kondensacyjne, pompa ciepła",  // test
@@ -1124,21 +1128,12 @@ export const dataForMetaTags = {
         "name": "Naprawa suszarek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_suszarek + "#primaryimage" },
-        "image": { "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg",
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
         "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
-        "mainEntity": {
-          "@type": "Product",
-          "@id": appUrls.naprawa_suszarek + "#product",
-
-          /* Opcjonalnie:
-          "aggregateRating": { ... },
-          "review": [ ... ]
-          */
-        }
+        "mainEntity": { "@id": appUrls.naprawa_suszarek + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1169,22 +1164,22 @@ export const dataForMetaTags = {
       // type: "article",
       // keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
       // appleMobileWebAppTitle: `${shortName} - naprawa zmywarek`,
-      title: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD",
-      ogTitle: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD",
-      twitterTitle: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD",
-      description: "Szybka i profesjonalna naprawa zmywarek w Przemyślu. Diagnostyka na miejscu, oryginalne części i gwarancja. Telefon: 790 258 612.",
-      ogDescription: "Fachowa naprawa zmywarek marki Bosch, Siemens, Whirlpool i innych w Przemyślu. Gwarancja usługi.",
-      twitterDescription: "Fachowa naprawa zmywarek marki Bosch, Siemens, Whirlpool i innych w Przemyślu. Gwarancja usługi.",
+      title: "Naprawa zmywarek w Przemyślu – diagnostyka i naprawa",
+      ogTitle: "Naprawa zmywarek w Przemyślu – diagnostyka i naprawa",
+      twitterTitle: "Naprawa zmywarek w Przemyślu – diagnostyka i naprawa",
+      description: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy. Obsługa marek Bosch, Siemens, Whirlpool i innych.",
+      ogDescription: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy.",
+      twitterDescription: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy.",
       imageType: "image/webp",
       image: imageUrls.zmywarka,
-      imageAlt: "Zmywarka naprawiona w profesjonalnym serwisie w Przemyślu",
+      imageAlt: "Diagnostyka i naprawa zmywarek w Przemyślu",
       imageWidth: "700",
       imageHeight: "700",
       type: "article",
       siteName: "Serwis_RTV-AGD",
       canonical: appUrls.naprawa_zmywarek,
 
-      // keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
+      keywords: "naprawa zmywarek Przemyśl, serwis zmywarek Przemyśl, AGD Przemyśl",
       // appleMobileWebAppTitle: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612 ✔️ | Serwis RTV-AGD",
     },
     schema: {
@@ -1235,16 +1230,13 @@ export const dataForMetaTags = {
         //   "address": address,
         //   //  "image": "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
         // },
-        "provider": {
-          "@id": "https://twojadomena.pl/#business"
-        },
       },
       product: {
         "@type": "Product",
         "@id": appUrls.naprawa_zmywarek + "#product",
-        "name": "Naprawa zmywarek Przemyśl",  // "name": "Naprawa zmywarek Przemyśl",
+        "name": "Usługa naprawy zmywarek w Przemyślu",  // "name": "Naprawa zmywarek Przemyśl",
         "description": "Szybka i profesjonalna naprawa zmywarek w Przemyślu i okolicach. Oferuję kompleksową diagnostykę oraz naprawę zmywarek wszystkich marek (Bosch, Electrolux, Beko i inne). Korzystam z profesjonalnych narzędzi i oryginalnych części, zapewniając gwarancję na usługę.",
-        "image": [imageUrls.zmywarka],
+        "image": imageUrls.zmywarka,
         "brand": {
           "@type": "Brand",
           "name": "Serwis_RTV-AGD"
@@ -1256,6 +1248,7 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "100.00",
           "url": appUrls.naprawa_zmywarek,
+          "seller": { "@id": appUrls.home + "#localbusiness" }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -1329,26 +1322,42 @@ export const dataForMetaTags = {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Co może być przyczyną problemu, gdy zmywarka nie pobiera wody?",
+            "name": "Co powoduje brak pobierania wody przez zmywarkę?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Najczęściej jest to uszkodzenie zaworu dopływu wody, zatkany filtr lub awaria czujnika. Serwis diagnozuje przyczynę usterki i wymienia uszkodzone elementy szybko i profesjonalnie."
+              "text": "Najczęściej problemem są zawór dopływu lub zatkany filtr. Diagnostyka pozwala ustalić, czy wystarczy czyszczenie czy też konieczna jest wymiana elementu."
             }
           },
           {
             "@type": "Question",
-            "name": "Czy serwis naprawia zmywarki wszystkich marek, np. Bosch, Electrolux, Beko?",
+            "name": "Czy obsługiwane są zmywarki wszystkich marek?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Tak, posiadam duże doświadczenie w serwisowaniu zmywarek popularnych marek takich jak Bosch, Electrolux, Beko oraz innych. Gwarantuję fachową naprawę niezależnie od modelu urządzenia."
+              "text": "Tak – mam doświadczenie z wieloma markami: Bosch, Electrolux, Beko, Siemens, Whirlpool, itp. Każdy model traktuję indywidualnie."
             }
           },
           {
             "@type": "Question",
-            "name": "Czy serwis udziela gwarancji na naprawę zmywarki?",
+            "name": "Jakie są orientacyjne koszty?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Na każdą wykonaną naprawę udzielana jest gwarancja. Używam oryginalnych lub wysokiej jakości zamienników części, dzięki czemu usługi są niezawodne i objęte gwarancją."
+              "text": "Koszt zależy od rodzaju usterki i ceny części. Po diagnozie przedstawiam przybliżoną wycenę naprawy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy naprawa odbywa się u mnie w domu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zwykle przeprowadzam naprawę na miejscu u Klienta. Jeśli konieczna jest bardziej zaawansowana interwencja, urządzenie może zostać przewiezione do warsztatu po uzgodnieniu szczegółów."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak szybko mogę liczyć na interwencję?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Termin ustalamy indywidualnie, starając się działać możliwie sprawnie, w zależności od dostępności części."
             }
           }]
       },
@@ -1360,14 +1369,14 @@ export const dataForMetaTags = {
       },
 
 
-      website: {
-        "@type": "WebSite",
-        "id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "Serwis_RTV-AGD",
-        "inLanguage": "pl-PL",
-        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-      },
+      // website: {
+      //   "@type": "WebSite",
+      //   "id": appUrls.home + "#website",
+      //   "url": appUrls.home,
+      //   "name": "Serwis_RTV-AGD",
+      //   "inLanguage": "pl-PL",
+      //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+      // },
       imageObject: {
         "@type": "ImageObject",
         "id": appUrls.naprawa_zmywarek + "#primaryimage",
@@ -1376,22 +1385,26 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.zmywarka,
         "width": 700,
         "height": 700,
-        "caption": "Zmywarka do naczyń naprawiona w serwisie w Przemyślu. Serwis_RTV-AGD"
+        "caption": "Zmywarka do naczyń naprawiona w serwisie w Przemyślu. Serwis RTV-AGD",
+        "thumbnailUrl": imageUrls.zmywarka, // test
+        "license": appUrls.home,  // test
+        "keywords": "naprawa zmywarek, przemyśl, serwis AGD, zmywarki do naczyń",  // test
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_zmywarek + "#webpage",
         "url": appUrls.naprawa_zmywarek,
         "inLanguage": "pl-PL",
-        "name": "Naprawa zmywarek w Przemyślu ☎️ 790 258 612 ✔️ | Serwis RTV-AGD",
+        "name": "Naprawa zmywarek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_zmywarek + "#primaryimage" },
-        "image": { "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.zmywarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Serwis zmywarek w Przemyślu. Oferuje kompleksową diagnostykę zmywarek oraz profesjonalną naprawę zmywarek w Przemyślu.",
+        "description": "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy. Obsługa marek Bosch, Siemens, Whirlpool i innych.",
         "breadcrumb": { "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
+        "mainEntity": { "@id": appUrls.naprawa_zmywarek + "#product" }
+
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1509,14 +1522,14 @@ export const dataForMetaTags = {
       "geo": geo,
       "name": serwis.name,    //  "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
     },
-    website: {
-      "@type": "WebSite",
-      "id": appUrls.home + "#website",
-      "url": appUrls.home,
-      "name": "Serwis_RTV-AGD",
-      "inLanguage": "pl-PL",
-      "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-    },
+    // website: {
+    //   "@type": "WebSite",
+    //   "id": appUrls.home + "#website",
+    //   "url": appUrls.home,
+    //   "name": "Serwis_RTV-AGD",
+    //   "inLanguage": "pl-PL",
+    //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+    // },
     imageObject: {
       "@type": "ImageObject",
       "id": appUrls.naprawa_ekspresow + "#primaryimage",
@@ -1696,14 +1709,14 @@ export const dataForMetaTags = {
         "geo": geo,
         "name": serwis.name,    //  "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
       },
-      website: {
-        "@type": "WebSite",
-        "id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "Serwis_RTV-AGD",
-        "inLanguage": "pl-PL",
-        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-      },
+      // website: {
+      //   "@type": "WebSite",
+      //   "id": appUrls.home + "#website",
+      //   "url": appUrls.home,
+      //   "name": "Serwis_RTV-AGD",
+      //   "inLanguage": "pl-PL",
+      //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+      // },
       imageObject: {
         "@type": "ImageObject",
         "id": appUrls.naprawa_telewizorow + "#primaryimage",
