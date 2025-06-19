@@ -31,45 +31,32 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>
-          Naprawa zmywarek w Przemyślu 🍽️
-          {/* &nbsp;
-          <Emoticon>
-            <Image
-              src={imageUrls.logo}
-              alt={serwis.shortName}
-              loading="lazy"
-              fill
-            />
-          </Emoticon> */}
-        </Title>
+        <Title>Naprawa zmywarek do naczyń w Przemyślu 🍽️</Title>
 
         <Section>
           <StyledPhoto>
             <Image
-              title="Zmywarka"
+              title="Naprawa zmywarek Przemyśl"
               src={imageUrls.zmywarka}
               alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
-              // loading='lazy'
+              loading='lazy'
               fill
               // srcSet={`${imageUrls.zmywarka_300} 500w,
               // ${imageUrls.zmywarka} 1000w`}
               sizes="(max-width: 500px) 500px, 1000px"
             />
           </StyledPhoto>
+        </Section>
 
-          <SubTitle>
-            Dokładna diagnostyka i usuwanie usterek zmywarek
-          </SubTitle>
+        <Section>
+          <SubTitle>Dokładna diagnostyka i usuwanie usterek zmywarek</SubTitle>
           <StyledText>
             Awarie zmywarki mogą zakłócić porządek w kuchni i generować dodatkowe obowiązki. W Przemyślu oferuję rzetelne sprawdzenie sprzętu, identyfikację źródła problemu i profesjonalną naprawę zmywarek różnych marek. Korzystam z narzędzi diagnostycznych i części od sprawdzonych dostawców, dbając o to, aby zmywarka działała bez zakłóceń przez długi czas.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Typowe usterki zmywarek
-          </SubTitle>
+          <SubTitle>Typowe usterki zmywarek</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Brak pobierania wody</strong> – zazwyczaj wina zaworu dopływu, niedrożnego filtra lub problemu z dopływem. Sprawdzam obwód wodny i elementy sterujące.</li>
             <li><strong>Brak podgrzewania</strong> – przyczyną może być uszkodzona grzałka, czujnik temperatury lub moduł sterowania. Dokładnie weryfikuję elementy grzewcze.</li>
@@ -81,9 +68,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Dlaczego warto wybrać ten serwis?
-          </SubTitle>
+          <SubTitle>Dlaczego warto wybrać ten serwis?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalanie terminu</strong>: dbam o to, aby wizyta odbyła się w dogodnym dla Klienta terminie, reagując możliwie szybko.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie przy zmywarkach marek Bosch, Electrolux, Beko, Siemens i innych pozwala skutecznie diagnozować zarówno standardowe, jak i nietypowe awarie.</li>
@@ -94,9 +79,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Proces naprawy zmywarki
-          </SubTitle>
+          <SubTitle>Proces naprawy zmywarki</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępne ustalenia</strong>: opis usterki przez telefon lub e-mail, wstępna analiza możliwości i terminu.</li>
             <li><strong>Diagnostyka na miejscu</strong>: testy wodno-elektryczne, odczyt ewentualnych kodów błędów i kontrola mechaniczna.</li>
@@ -135,10 +118,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Powiązane usługi</SubTitle>
-          <StyledText>
-            Sprawdź też:
-          </StyledText>
+          <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
             {/* <li>
               <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>

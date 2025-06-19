@@ -31,74 +31,32 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>
-          Naprawa suszarek w Przemyślu 💨 <br />
-          - Profesjonalny serwis AGD
-          {/* &nbsp;
-          <Emoticon>
-            <Image
-              src={imageUrls.logo}
-              alt={serwis.shortName}
-              loading="lazy"
-              fill
-            />
-          </Emoticon> */}
-        </Title>
+        <Title>Naprawa suszarek do ubrań w Przemyślu 💨</Title>
 
         <Section>
           <StyledPhoto>
             <Image
               src={imageUrls.suszarka}
-              title="Suszarka"
+              title="Naprawa suszarek Przemyśl"
               alt={dataForMetaTags.naprawa_suszarek.metaTags.imageAlt}
-              // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
-              // loading="eager"
-              // fetchpriority="high"
-              // itemProp="image"
-              // loading='lazy'
-              decoding="async"
-              loading="eager"
+              loading='lazy'
               fill
-              // decoding="async"
               // srcSet={`${imageUrls.suszarka_300} 500w,
               // ${imageUrls.suszarka} 1000w`}
               sizes="(max-width: 500px) 500px, 1000px"
             />
           </StyledPhoto>
-
-          {/* <div itemScope itemType="https://schema.org/Product">
-            <meta itemProp="name" content="Naprawa suszarek Przemyśl" />
-            <meta itemProp="description" content="Profesjonalna naprawa suszarek do ubrań w Przemyślu" />
-            <img itemProp="image" src="https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl.webp" alt="Naprawa suszarek Przemyśl" style={{ display: "none" }} />
-
-            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
-              <meta itemProp="availability" content="https://schema.org/InStock" />
-              <meta itemProp="priceCurrency" content="PLN" />
-              <meta itemProp="price" content="150" />
-            </div>
-
-            <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
-              <meta itemProp="ratingValue" content={(rating || serwis.rating).toString()} />
-              <meta itemProp="reviewCount" content={(ratingsTotal || serwis.ratingsTotal).toString()} />
-              <meta itemProp="bestRating" content="5" />
-              <meta itemProp="worstRating" content="1" />
-            </div>
-          </div> */}
         </Section>
 
         <Section>
-          <SubTitle>
-            Pełna diagnostyka i naprawa suszarek
-          </SubTitle>
+          <SubTitle>Pełna diagnostyka i naprawa suszarek</SubTitle>
           <StyledText>
             Awarie suszarek mogą znacząco opóźnić codzienne czynności, zwłaszcza w chłodniejszych miesiącach. Oferuję w Przemyślu i okolicach rzetelne sprawdzenie urządzenia, identyfikację problemów i naprawę suszarek kondensacyjnych, z pompą ciepła oraz tradycyjnych, elektrycznych. Działam z dbałością o precyzję i trwały efekt, stosując profesjonalne narzędzia i części o potwierdzonej jakości.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Najczęstsze usterki suszarek
-          </SubTitle>
+          <SubTitle>Najczęstsze usterki suszarek</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Bęben nie obraca się</strong> – może wynikać z zerwanego paska napędowego, zużytych łożysk lub uszkodzonego silnika. Dokładna kontrola elementów napędu pozwala zidentyfikować problem.</li>
             <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> – przyczyną mogą być czujnik wilgotności, przegrzewanie lub moduł sterujący. Sprawdzam układ elektroniczny i termiczne zabezpieczenia.</li>
@@ -109,9 +67,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Dlaczego warto wybrać ten serwis suszarek?
-          </SubTitle>
+          <SubTitle>Dlaczego warto wybrać ten serwis suszarek?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
@@ -122,9 +78,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Proces naprawy suszarki krok po kroku
-          </SubTitle>
+          <SubTitle>Proces naprawy suszarki krok po kroku</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i opis usterki</strong>: krótka rozmowa telefoniczna lub wiadomość e-mail z opisem symptomów i modelem urządzenia.</li>
             <li><strong>Diagnostyka na miejscu</strong>: pełne sprawdzenie suszarki, testy funkcjonalne i analiza ewentualnych kodów błędów.</li>
@@ -162,11 +116,8 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           </StyledText>
         </Section>
 
-        {/*      <Section>
-          <SubTitle>Powiązane usługi</SubTitle>
-          <StyledText>
-            Sprawdź też:
-          </StyledText>
+        {/* <Section>
+          <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
             <li>
               <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
@@ -181,7 +132,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
             </li>
           </StyledText >
-        </Section>   */}
+        </Section> */}
 
       </Container>
     </>

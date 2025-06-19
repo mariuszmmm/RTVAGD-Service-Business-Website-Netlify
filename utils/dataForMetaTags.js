@@ -448,7 +448,7 @@ export const dataForMetaTags = {
         "id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": "Serwis pralek, suszarek, zmywarek - Serwis_RTV-AGD",
+        "name": "Serwis pralek, suszarek, zmywarek, telewizorów i ekspresów - Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.home + "#primaryimage" },
         "image": { "@id": appUrls.home + "#primaryimage" },
@@ -511,7 +511,7 @@ export const dataForMetaTags = {
         "id": appUrls.kontakt,
         "url": appUrls.kontakt,
         "inLanguage": "pl-PL",
-        "name": "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790 258 612 | naprawaprzemysl.pl",
+        "name": "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790 258 612 | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
@@ -606,15 +606,15 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Profesjonalny serwis pralek w Przemyślu – naprawa",
-      ogTitle: "Profesjonalny serwis pralek w Przemyślu – naprawa",
-      twitterTitle: "Profesjonalny serwis pralek w Przemyślu – naprawa",
-      description: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych. Zadzwoń ☎️ 790 258 612",
+      title: "Naprawa pralek Przemyśl – Serwis RTV-AGD ✔️",
+      ogTitle: "Naprawa pralek Przemyśl – Serwis RTV-AGD",
+      twitterTitle: "Naprawa pralek Przemyśl – Serwis RTV-AGD",
+      description: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych. ☎️ 790 258 612",
       ogDescription: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych.",
       twitterDescription: "Serwis pralek w Przemyślu i okolicach. Fachowa diagnostyka, naprawa urządzeń Bosch, Siemens, LG i innych.",
-      imageType: "image/webp",
+      imageType: "image/png",
       image: imageUrls.pralka,
-      imageAlt: "Serwis pralek w Przemyślu – fachowa naprawa urządzenia",
+      imageAlt: "Naprawa pralek automatycznych – serwis i naprawa pralek w Przemyślu",
       imageWidth: "700",
       imageHeight: "700",
       type: "website",
@@ -847,17 +847,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.pralka,
         "width": 700,
         "height": 700,
-        "caption": "Pralka automatyczna naprawiona w serwisie w Przemyślu.",
-        "thumbnailUrl": imageUrls.pralka, // test
-        "license": appUrls.home,  // test
-        "keywords": "naprawa pralek, przemyśl, serwis AGD, praleki automatyczne",  // test
+        "caption": "Naprawa pralek automatycznych – serwis i naprawa pralek w Przemyślu",
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": "Naprawa pralek w Przemyślu | Serwis_RTV-AGD",
+        "name": "Seriws i naprawa pralek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_pralek + "#primaryimage" },
         "thumbnailUrl": imageUrls.pralka,
@@ -890,15 +887,15 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD",
-      ogTitle: "Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD",
-      twitterTitle: "Profesjonalna naprawa suszarek w Przemyślu - Serwis RTV-AGD",
-      description: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
+      title: "Naprawa suszarek Przemyśl – Serwis RTV-AGD ✔️",
+      ogTitle: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
+      twitterTitle: "Naprawa suszarek Przemyśl – Serwis RTV-AGD",
+      description: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania. ☎️ 790 258 612",
       ogDescription: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
       twitterDescription: "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
-      imageType: "image/webp",
+      imageType: "image/png",
       image: imageUrls.suszarka,
-      imageAlt: "Naprawa suszarek w Przemyślu – diagnostyka i usuwanie awarii suszarek kondensacyjnych, z pompą ciepła i tradycyjnych",
+      imageAlt: "Naprawa suszarek do ubrań – serwis i naprawa suszarek w Przemyślu",
       imageWidth: "700",
       imageHeight: "700",
       type: "website",
@@ -1114,18 +1111,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.suszarka,
         "width": 700,
         "height": 700,
-        "caption": "Suszarka do ubrań naprawiona w serwisie w Przemyślu. Serwis RTV-AGD",
-        "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg", // test
-        "license": appUrls.home,  // test
-        "keywords": "naprawa suszarek, przemyśl, serwis AGD, suszarki kondensacyjne, pompa ciepła",  // test
-
+        "caption": "Naprawa suszarek do ubrań – serwis i naprawa suszarek w Przemyślu",
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_suszarek + "#webpage",
         "url": appUrls.naprawa_suszarek,
         "inLanguage": "pl-PL",
-        "name": "Naprawa suszarek w Przemyślu | Serwis_RTV-AGD",
+        "name": "Seriws i naprawa suszarek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_suszarek + "#primaryimage" },
         "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg",
@@ -1164,18 +1157,18 @@ export const dataForMetaTags = {
       // type: "article",
       // keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
       // appleMobileWebAppTitle: `${shortName} - naprawa zmywarek`,
-      title: "Naprawa zmywarek w Przemyślu – diagnostyka i naprawa",
-      ogTitle: "Naprawa zmywarek w Przemyślu – diagnostyka i naprawa",
-      twitterTitle: "Naprawa zmywarek w Przemyślu – diagnostyka i naprawa",
-      description: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy. Obsługa marek Bosch, Siemens, Whirlpool i innych.",
+      title: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD ✔️",
+      ogTitle: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD",
+      twitterTitle: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD",
+      description: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy. Obsługa marek Bosch, Siemens, Whirlpool i innych. ☎️ 790 258 612",
       ogDescription: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy.",
       twitterDescription: "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy.",
-      imageType: "image/webp",
+      imageType: "image/png",
       image: imageUrls.zmywarka,
-      imageAlt: "Diagnostyka i naprawa zmywarek w Przemyślu",
+      imageAlt: "Naprawa zmywarek do naczyń – serwis i naprawa zmywarek w Przemyślu",
       imageWidth: "700",
       imageHeight: "700",
-      type: "article",
+      type: "website",
       siteName: "Serwis_RTV-AGD",
       canonical: appUrls.naprawa_zmywarek,
 
@@ -1385,17 +1378,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.zmywarka,
         "width": 700,
         "height": 700,
-        "caption": "Zmywarka do naczyń naprawiona w serwisie w Przemyślu. Serwis RTV-AGD",
-        "thumbnailUrl": imageUrls.zmywarka, // test
-        "license": appUrls.home,  // test
-        "keywords": "naprawa zmywarek, przemyśl, serwis AGD, zmywarki do naczyń",  // test
+        "caption": "Naprawa zmywarek do naczyń – serwis i naprawa zmywarek w Przemyślu",
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_zmywarek + "#webpage",
         "url": appUrls.naprawa_zmywarek,
         "inLanguage": "pl-PL",
-        "name": "Naprawa zmywarek w Przemyślu | Serwis_RTV-AGD",
+        "name": "Seriws i naprawa zmywarek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.zmywarka,
@@ -1428,22 +1418,22 @@ export const dataForMetaTags = {
   },
   naprawa_ekspresow: {
     metaTags: {
-      title: "Naprawa ekspresów Przemyśl – Serwis RTV-AGD",
+      title: "Naprawa ekspresów Przemyśl – Serwis RTV-AGD ✔️",
       ogTitle: "Naprawa ekspresów Przemyśl – Serwis RTV-AGD",
       twitterTitle: "Naprawa ekspresów Przemyśl – Serwis RTV-AGD",
-      description: "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja. Telefon: 790 258 612.",
-      ogDescription: "Fachowa naprawa ekspresów marki De’Longhi, Jura, Siemens i innych w Przemyślu. Gwarancja usługi.",
-      twitterDescription: "Fachowa naprawa ekspresów marki De’Longhi, Jura, Siemens i innych w Przemyślu. Gwarancja usługi.",
-      imageType: "image/webp",
+      description: "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja. ☎️ 790 258 612.",
+      ogDescription: "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja.",
+      twitterDescription: "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja.",
+      imageType: "image/png",
       image: imageUrls.ekspres,
-      imageAlt: "Naprawiony ekspres w profesjonalnym serwisie w Przemyślu",
+      imageAlt: "Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu",
       imageWidth: "700",
       imageHeight: "700",
-      type: "article",
+      type: "website",
       siteName: "Serwis_RTV-AGD",
       canonical: appUrls.naprawa_ekspresow,
 
-      // keywords: "naprawa ekspresów do kawy, serwis ekspresów Przemyśl, naprawa ekspresu do kawy Przemyśl, naprawa ekspresów w Przemyślu, naprawa ekspresu Przemyśl, awaria ekspresu do kawy",
+      keywords: "naprawa ekspresów Przemyśl, serwis ekspresów Przemyśl, AGD Przemyśl",
       // appleMobileWebAppTitle: `${shortName} - naprawa ekspresów`,
     },
     schema: {
@@ -1516,7 +1506,44 @@ export const dataForMetaTags = {
         // ]
         // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
       },
+      faqPage: {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Dlaczego ekspres nie zaparza kawy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Problem może być w układzie ciśnieniowym (pompa), zatkanych dyszach czy uszkodzonym elemencie zaparzania. Diagnostyka odsłania, które części wymagają interwencji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy obsługujecie ekspresy profesjonalne?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, zarówno ekspresy domowe automatyczne, jak i maszyny gastronomiczne. Każde urządzenie traktuję z uwzględnieniem specyfiki i wymagań serwisowych."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak często wykonywać konserwację?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zalecam regularne odkamienianie zgodnie z instrukcją producenta oraz wymianę filtrów wody co kilka miesięcy (w zależności od jakości wody). Pomaga to uniknąć częstych usterek."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy mogę liczyć na szybką naprawę?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Termin ustalamy indywidualnie, starając się zminimalizować przestój urządzenia. Dokładne terminy zależą od dostępności części i rodzaju usterki."
+            }
+          }]
+      }
     },
+
     place: {
       "@type": "Place",
       "geo": geo,
@@ -1538,14 +1565,14 @@ export const dataForMetaTags = {
       "contentUrl": imageUrls.ekspres,
       "width": 700,
       "height": 700,
-      "caption": "Ekspres do kawy naprawiony w serwisie w Przemyślu. Serwis_RTV-AGD",
+      "caption": "Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu",
     },
     webpage: {
       "@type": "WebPage",
       "id": appUrls.naprawa_ekspresow + "#webpage",
       "url": appUrls.naprawa_ekspresow,
       "inLanguage": "pl-PL",
-      "name": "Serwis i naprawa ekspresów Przemyśl | Serwis_RTV-AGD",
+      "name": "Serwis i naprawa ekspresów w Przemyślu | Serwis_RTV-AGD",
       "isPartOf": { "@id": appUrls.home + "#website" },
       "primaryImageOfPage": { "id": appUrls.naprawa_ekspresow + "#primaryimage" },
       "image": { "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
@@ -1575,22 +1602,22 @@ export const dataForMetaTags = {
   },
   naprawa_telewizorow: {
     metaTags: {
-      title: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD",
+      title: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️",
       ogTitle: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD",
       twitterTitle: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD",
-      description: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Dojeżdżam do klienta, diagnoza w razie potrzeby. Telefon: 790 258 612.",
-      ogDescription: "Fachowa naprawa telewizorów marki LG, Samsung, Sony i innych w Przemyślu. Gwarancja usługi.",
-      twitterDescription: "Szybka i rzetelna naprawa telewizorów wszystkich marek w Przemyślu. Profesjonalna diagnostyka usterki i wymiana części. Telefon: 790 258 612.",
-      imageType: "image/webp",
+      description: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Gwarancja, szybko, rzetelnie. ☎️ 790 258 612",
+      ogDescription: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Gwarancja, szybko, rzetelnie.",
+      twitterDescription: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Gwarancja, szybko, rzetelnie.",
+      imageType: "image/png",
       image: imageUrls.telewizor,
-      imageAlt: "Naprawiony telewizor w profesjonalnym serwisie w Przemyślu",
+      imageAlt: "Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu",
       imageWidth: "700",
       imageHeight: "700",
-      type: "article",
+      type: "website",
       siteName: "Serwis_RTV-AGD",
       canonical: appUrls.naprawa_telewizorow,
 
-      // keywords: "naprawa telewizorów, serwis telewizorów Przemyśl, naprawa telewizora w Przemyślu, naprawa telewizorów LCD, naprawa telewizorów LED, serwis telewizora Przemyśl",
+      keywords: "naprawa telewizorów Przemyśl, serwis telewizorów Przemyśl, RTV Przemyśl",
       // appleMobileWebAppTitle: `${shortName} - naprawa telewizorów`,
     },
     schema: {
@@ -1703,6 +1730,42 @@ export const dataForMetaTags = {
         //   { "@type": "City", "name": "Żurawica" }
         // ],
       },
+      faqPage: {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Co zrobić, gdy telewizor nie włącza się?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sprawdzam zasilanie, listwę, panel sterowania i płyty wewnętrzne. Dokładna diagnoza wskaże, czy problem dotyczy zasilacza, panelu sterowania lub innego elementu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak postępować przy braku obrazu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Diagnoza obejmuje kontrolę podświetlenia, matrycy oraz układów sterujących. Oceniam stan techniczny i doradzam rozwiązanie, uwzględniając opłacalność naprawy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy naprawiacie Smart TV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, weryfikuję problemy z oprogramowaniem, siecią i aplikacjami. Pomagam z konfiguracją i aktualizacjami systemu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ile trwa naprawa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Czas zależy od rodzaju usterki i dostępności części. Po diagnostyce informuję o przewidywanym czasie realizacji."
+            }
+          }]
+      },
       place: {
 
         "@type": "Place",
@@ -1725,14 +1788,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.telewizor,
         "width": 700,
         "height": 700,
-        "caption": "Telewizor LED naprawiony w serwisie w Przemyślu. Serwis_RTV-AGD.",
+        "caption": "Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu",
       },
       webpage: {
         "@type": "WebPage",
         "id": appUrls.naprawa_telewizorow + "#webpage",
         "url": appUrls.naprawa_telewizorow,
         "inLanguage": "pl-PL",
-        "name": "Serwis i naprawa telewizorów Przemyśl | Serwis_RTV-AGD",
+        "name": "Serwis i naprawa telewizorów w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },

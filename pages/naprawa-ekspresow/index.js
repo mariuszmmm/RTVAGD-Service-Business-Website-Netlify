@@ -16,6 +16,8 @@ import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { getData } from '../../utils/getData';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
+import { Break } from '../../components/Break';
+import { HeroText } from '../../styles/home/HomeStyled';
 
 const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -31,25 +33,15 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>
-          Naprawa ekspresów do kawy w Przemyślu ☕
-          {/* <Emoticon>
-            <Image
-              src={imageUrls.logo}
-              alt="Serwis RTV i AGD logo"
-              loading="lazy"
-              fill
-            />
-          </Emoticon> */}
-        </Title>
+        <Title>Naprawa ekspresów do kawy w Przemyślu ☕</Title>
 
         <Section>
           <StyledPhoto>
             <Image
-              title="Ekspres do kawy"
+              title="Naprawa ekspresów Przemyśl"
               src={imageUrls.ekspres}
               alt={dataForMetaTags.naprawa_ekspresow.metaTags.imageAlt}
-              // loading='lazy'
+              loading='lazy'
               fill
               // srcSet={`${imageUrls.ekspres_300} 500w,
               // ${imageUrls.ekspres} 1000w`}
@@ -59,58 +51,87 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Profesjonalna naprawa ekspresów wszystkich marek
-          </SubTitle>
+          <SubTitle>Profesjonalna naprawa ekspresów wszystkich marek</SubTitle>
           <StyledText>
             Awaria ekspresu do kawy może skutecznie zepsuć poranek lub uniemożliwić sprawne działanie kawiarni. Oferuję kompleksowe usługi naprawcze, które pozwolą Ci ponownie cieszyć się aromatyczną kawą. Specjalizuję się zarówno w naprawach domowych ekspresów automatycznych, jak i profesjonalnych urządzeń stosowanych w gastronomii.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Najczęstsze problemy z ekspresami
-          </SubTitle>
+          <SubTitle>Typowe problemy z ekspresami do kawy</SubTitle>
           <StyledText as="ul" $cross>
-            <li><b>ekspres nie zaparza kawy</b> -&nbsp;problem z&nbsp;układem zaparzania, zatkane dysze lub uszkodzenie pompy.</li>
-            <li><b>wycieki wody podczas pracy</b> -&nbsp;uszkodzone uszczelki, pęknięte przewody lub nieszczelny bojler.</li>
-            <li><b>ekspres wyświetla błędy</b> -&nbsp;usterki elektroniki, czujników lub niewłaściwa konfiguracja urządzenia.</li>
-            <li><b>słabe spienianie mleka</b> -&nbsp;problem z&nbsp;dyszą spieniającą, kamień w układzie lub uszkodzona pompa pary.</li>
-            <li><b>kawa ma inny smak niż zwykle</b> -&nbsp;konieczność konserwacji, wymiany filtra wody lub odkamieniania.</li>
+            <li><strong>Brak zaparzania kawy</strong> – może wynikać z zatkanych dysz, problemu z pompą lub układem zaparzania. Dokładne czyszczenie i weryfikacja elementów ciśnieniowych to klucz do przywrócenia funkcji.</li>
+            <li><strong>Wycieki wody podczas pracy</strong> – najczęściej uszkodzone uszczelki, szczelność przewodów lub elementy bojlera wymagają kontroli i ewentualnej wymiany.</li>
+            <li><strong>Błędy na wyświetlaczu</strong> – usterki elektroniki, czujników lub nieprawidłowe parametry konfiguracji. Analizuję komunikaty i weryfikuję moduły sterujące.</li>
+            <li><strong>Słabe spienianie mleka</strong> – może być wynikiem zabrudzeń układu parowego, kamienia lub problemu z pompą ciśnieniową. Czyszczenie i regulacja układu spieniania to częste działania.</li>
+            <li><strong>Zmiana smaku kawy</strong> – często kwestia stanu filtra wody, zanieczyszczeń lub konieczności odkamieniania. Doradzam, jak regularnie przeprowadzać konserwację.</li>
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Dlaczego warto wybrać mój serwis?
-          </SubTitle>
+          <SubTitle>Dlaczego warto wybrać ten serwis ekspresów?</SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka diagnostyka i&nbsp;naprawa</strong> Rozumiem, jak ważna jest kawa w codziennym życiu, dlatego szybko zidentyfikuję usterkę i&nbsp;przywrócę sprawność urządzenia.</li>
-            <li><strong>Gwarancja wysokiej jakości usług</strong> Używam wyłącznie oryginalnych części zamiennych, co gwarantuje niezawodność naprawy i&nbsp;dłuższą żywotność ekspresu.</li>
-            <li><strong>Wieloletnie doświadczenie</strong> Naprawiam ekspresy do kawy od ponad 20 lat, doskonale rozumiejąc specyfikę różnych marek i&nbsp;modeli.</li>
-            <li><strong>Elastyczność i&nbsp;wygoda klienta</strong> Oferuję możliwość naprawy zarówno w warsztacie, jak i&nbsp;w&nbsp;domu lub miejscu pracy klienta.</li>
+            <li><strong>Szybka diagnoza</strong>: precyzyjnie określam źródło awarii, by ograniczyć czas przestoju ekspresu.</li>
+            <li><strong>Wieloletnie doświadczenie</strong>: praca z różnymi modelami i markami ekspresów – od urządzeń kompaktowych po profesjonalne maszyny gastronomiczne.</li>
+            <li><strong>Sprawdzone części</strong>: korzystam z komponentów o odpowiednich parametrach, by przywrócić niezawodne działanie ekspresu.</li>
+            <li><strong>Przejrzystość działań</strong>: wyjaśniam przyczynę usterki i zakres koniecznych prac, abyś wiedział, jakie są etapy naprawy i związane z tym koszty.</li>
           </StyledText>
         </Section>
 
         <Section>
-          <StyledText>
-            <b>Nie pozwól, aby awaria ekspresu popsuła Twój dzień! </b>
-            Skontaktuj się ze mną, a sprawnie przywrócę pełną funkcjonalność Twojego urządzenia, abyś mógł cieszyć się ulubioną kawą każdego dnia.
+          <SubTitle>Proces naprawy ekspresu do kawy</SubTitle>
+          <StyledText as="ol" >
+            <li><strong>Konsultacja i wstępne ustalenie</strong>: opis problemu (objawy, model), wstępne wskazówki co do możliwych przyczyn i terminu wizyty.</li>
+            <li><strong>Diagnostyka</strong>: dokładna kontrola układu hydraulicznego, ciśnieniowego i elektronicznego; odczyt kodów błędów, testy funkcjonalne.</li>
+            <li><strong>Naprawa i konserwacja</strong>: czyszczenie systemu zaparzania, wymiana uszczelek, naprawa pompy, modułów elektronicznych lub innych uszkodzonych komponentów.</li>
+            <li><strong>Test końcowy</strong>: przygotowanie próbnej kawy, ocena temperatury, smaku i funkcji spieniania mleka, weryfikacja szczelności instalacji.</li>
+            <li><strong>Porady użytkowe</strong>: wskazówki dotyczące regularnego odkamieniania, wymiany filtrów wody i codziennej pielęgnacji, aby uniknąć powtórnych awarii.</li>
           </StyledText>
-          <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa ekspresów do kawy w Przemyślu'>
+        </Section>
+
+        <Section>
+          <SubTitle>FAQ – najczęściej zadawane pytania</SubTitle>
+          <StyledText as="ul" $list>
+            {dataForMetaTags.naprawa_ekspresow.schema.faqPage.mainEntity.map((item, index) => (
+              <li key={index}>
+                <h3>{item.name}</h3>
+                <StyledText>{item.acceptedAnswer.text}</StyledText>
+              </li>
+            ))}
+          </StyledText >
+        </Section>
+
+        <Section>
+          <HeroText>
+            <strong>Nie pozwól, aby awaria ekspresu popsuła Twój dzień!<Break /> Skontaktuj się ze mną, a sprawnie przywrócę pełną funkcjonalność Twojego urządzenia, abyś mógł cieszyć się ulubioną kawą każdego dnia.</strong>
+          </HeroText>
+          <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa ekspresów w Przemyślu'>
             Zadzwoń teraz
           </ButtonLink>
         </Section>
 
         <Section>
-          <SubTitle>Powiązane usługi</SubTitle>
+          <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Sprawdź też:
+            Serwis ekspresów do kawy w Przemyślu i okolicach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.<Break /> Pozostałe lokalizacje – proszę o kontakt.
           </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
+            </li> */}
             <li>
               <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
             </li>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li> */}
           </StyledText >
         </Section>
       </Container>

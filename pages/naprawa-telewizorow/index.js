@@ -13,6 +13,8 @@ import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { getData } from '../../utils/getData';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
+import { HeroText } from '../../styles/home/HomeStyled';
+import { Break } from '../../components/Break';
 
 const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -28,17 +30,15 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>
-          Naprawa telewizorów w Przemyślu 🖥️
-        </Title>
+        <Title>Naprawa telewizorów w Przemyślu 🖥️</Title>
 
         <Section>
           <StyledPhoto>
             <Image
-              title="Telewizor"
+              title="Naprawa telewizorów Przemyśl"
               src={imageUrls.telewizor}
               alt={dataForMetaTags.naprawa_telewizorow.metaTags.imageAlt}
-              // loading='lazy'
+              loading='lazy'
               fill
               // srcSet={`${imageUrls.telewizor_300} 500w,
               // ${imageUrls.telewizor} 1000w`}
@@ -48,59 +48,94 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Fachowa naprawa telewizorów wszystkich typów
-          </SubTitle>
+          <SubTitle>Specjalistyczna naprawa telewizorów LCD, OLED, Smart TV</SubTitle>
           <StyledText>
-            Zepsuty telewizor to problem, który może zakłócić Twoją rozrywkę i dostęp do informacji. Niezależnie od tego, czy Twój sprzęt to starszy model LCD, nowoczesny OLED, czy zaawansowany telewizor Smart TV, jestem tutaj, aby pomóc. Oferuję profesjonalną naprawę telewizorów, niezależnie od marki i typu urządzenia, zapewniając szybką i skuteczną obsługę.
+            Awaria telewizora może ograniczyć dostęp do ulubionych programów lub niezbędnych informacji. W Przemyślu oferuję diagnostykę i naprawę różnych typów telewizorów – od starszych modeli LCD, przez panele OLED po zaawansowane Smart TV. Dbam o to, aby po interwencji sprzęt działał stabilnie i bez niespodzianek.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Najczęstsze problemy z telewizorami
-          </SubTitle>
+          <SubTitle>Typowe usterki telewizorów</SubTitle>
           <StyledText as="ul" $cross>
-            <li><b>brak obrazu lub problemy z&nbsp;jakością wyświetlania</b> -&nbsp;usterki matrycy, uszkodzenia podświetlenia LED, błędy w&nbsp;układzie sterowania.</li>
-            <li><b>brak dźwięku</b> -&nbsp;awarie układów audio, problemy z&nbsp;głośnikami lub oprogramowaniem.</li>
-            <li><b>problemy z&nbsp;zasilaniem</b> -&nbsp;telewizor nie włącza się, wyłącza samoczynnie lub występują nieregularności w&nbsp;działaniu zasilacza.</li>
-            <li><b>uszkodzona matryca</b> -&nbsp;pęknięcia, przebarwienia lub martwe piksele.</li>
-            <li><b>awaria funkcji Smart&nbsp;TV</b> -&nbsp;problemy z&nbsp;połączeniem internetowym, aplikacjami lub oprogramowaniem.</li>
-            <li><b>zakłócenia obrazu lub dźwięku</b> -&nbsp;linie na ekranie, zniekształcony obraz, trzaski w&nbsp;dźwięku.</li>
+            <li><strong>Brak obrazu lub problemy z wyświetlaniem</strong> – przyczyny to awarie matrycy, uszkodzenia podświetlenia LED, problemy w układzie sterowania. Dokładna diagnostyka elektroniki i podzespołów wyświetlania pozwala zlokalizować usterkę.</li>
+            <li><strong>Brak dźwięku</strong> – usterki układów audio, głośników lub oprogramowania mogą powodować ciszę. Weryfikuję połączenia, moduły audio i oprogramowanie Smart TV.</li>
+            <li><strong>Problemy z zasilaniem</strong> – telewizor nie włącza się, wyłącza się samoczynnie lub ma nieregularne zachowanie zasilacza. Kontrola zasilania i elementów bezpiecznikowych pozwala stwierdzić, co wymaga naprawy.</li>
+            <li><strong>Uszkodzenia matrycy</strong> – pęknięcia, przebarwienia lub martwe piksele. Oceniam, czy naprawa jest opłacalna, i doradzam najlepsze rozwiązanie.</li>
+            <li><strong>Awaria funkcji Smart TV</strong> – problemy z łącznością internetową, aplikacjami lub oprogramowaniem. Sprawdzam ustawienia sieci, aktualizacje firmware i konfigurację systemu.</li>
+            <li><strong>Zakłócenia obrazu lub dźwięku</strong> – linie na ekranie, zniekształcenia lub trzaski. Analizuję układy wewnętrzne, kable i sygnały wejściowe.</li>
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Dlaczego warto wybrać moje usługi?
-          </SubTitle>
+          <SubTitle>Dlaczego warto wybrać ten serwis telewizorów?</SubTitle>
           <StyledText as="ul" $check>
-            <li><strong>Szybka i&nbsp;trafna diagnostyka</strong> Zidentyfikuję przyczynę usterki w&nbsp;krótkim czasie, dzięki czemu Twój telewizor szybko wróci do&nbsp;pełnej sprawności.</li>
-            <li><strong>Profesjonalna jakość naprawy</strong> Korzystam wyłącznie z&nbsp;oryginalnych części zamiennych oraz zaawansowanych technik naprawczych, co&nbsp;zapewnia długotrwałą niezawodność urządzenia.</li>
-            <li><strong>20 lat doświadczenia</strong> Specjalizuję się w&nbsp;naprawach telewizorów od&nbsp;ponad dwóch dekad, zdobywając zaufanie wielu klientów.</li>
-            <li><strong>Wygoda i &nbsp;elastyczność</strong> Oferuję zarówno naprawy w warsztacie, jak i&nbsp;dojazd do&nbsp;klienta. Dopasowuję terminy do&nbsp;Twoich potrzeb.</li>
+            <li><strong>Szybka i trafna diagnoza</strong>: określam przyczynę usterki możliwie szybko, aby ograniczyć czas bez telewizora.</li>
+            <li><strong>Wieloletnie doświadczenie</strong>: praca z różnorodnymi technologiami (LCD, LED, OLED, QLED, Smart TV) pomaga skutecznie lokalizować i usuwać problemy.</li>
+            <li><strong>Sprawdzone części</strong>: korzystam z komponentów, które odpowiadają specyfikacjom producenta, by zapewnić długotrwałe działanie.</li>
+            <li><strong>Elastyczność lokalizacji naprawy</strong>: prostsze naprawy u Klienta, bardziej złożone w warsztacie – doradzam najwygodniejszą opcję.</li>
+            <li><strong>Przejrzystość kosztów</strong>: po diagnostyce informuję o przewidywanym zakresie prac i kosztach, by uniknąć niespodzianek.</li>
           </StyledText>
         </Section>
 
         <Section>
-          <StyledText>
-            <b>Nie pozwól, aby usterka telewizora popsuła Twój czas wolny! </b>
-            Skontaktuj się ze mną już dziś, a sprawnie przywrócę Twój telewizor do pełnej funkcjonalności, byś mógł znów cieszyć się ulubionymi programami i filmami.
+          <SubTitle>Proces naprawy telewizora</SubTitle>
+          <StyledText as="ol" >
+            <li><strong>Kontakt i opis objawów</strong>: krótka konsultacja telefoniczna lub e-mail z informacją, co się dzieje (np. brak obrazu, migotanie, brak dźwięku).</li>
+            <li><strong>Diagnostyka</strong>: testy elektroniki, analiza podzespołów zasilania, sterowania i wyświetlania; sprawdzenie oprogramowania Smart TV.</li>
+            <li><strong>Naprawa lub wymiana</strong>: w zależności od usterki wymiana odpowiednich elementów: płyta zasilająca, podświetlenie, matryca, moduły audio, elementy sieciowe lub elektroniczne.</li>
+            <li><strong>Test działania</strong>: uruchamiam telewizor w różnych trybach (wejścia HDMI, TV, Smart), sprawdzam jakość obrazu i dźwięku.</li>
+            <li><strong>Porady i wskazówki</strong>: rekomenduję ustawienia, aktualizacje oprogramowania i sposób eksploatacji, by minimalizować ryzyko awarii.</li>
           </StyledText>
-          <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa telewizorów w Przemyślu' >
+        </Section>
+
+        <Section>
+          <SubTitle>FAQ – najczęściej zadawane pytania</SubTitle>
+          <StyledText as="ul" $list>
+            {dataForMetaTags.naprawa_telewizorow.schema.faqPage.mainEntity.map((item, index) => (
+              <li key={index}>
+                <h3>{item.name}</h3>
+                <StyledText>{item.acceptedAnswer.text}</StyledText>
+              </li>
+            ))}
+          </StyledText >
+        </Section>
+
+        <Section>
+          <HeroText>
+            <strong>
+              Nie pozwól, by usterka telewizora ograniczała Twój komfort.<Break /> Skontaktuj się ze mną, a ustalimy, jak szybko przywrócić urządzenie do sprawności.
+            </strong>
+          </HeroText>
+          <ButtonLink
+            href={`tel:${serwis.phone.number}`}
+            title='Naprawa telewizorów w Przemyślu'
+          >
             Zadzwoń teraz
           </ButtonLink>
         </Section>
 
         <Section>
-          <SubTitle>Powiązane usługi</SubTitle>
+          <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Sprawdź też:
+            Naprawa telewizorów w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Dalsze lokalizacje – zapraszam do kontaktu.
           </StyledText>
+        </Section>
+
+        <Section>
+          <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
+            </li> */}
             <li>
               <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
             </li>
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
+            </li> */}
           </StyledText >
         </Section>
       </Container>

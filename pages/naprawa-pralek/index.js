@@ -30,35 +30,24 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         reviews={reviews}
       />
       <Container>
-        <Title>
-          Naprawa pralek w Przemyślu 🧺
-          {/* &nbsp;
-          <Emoticon>
-            <Image
-              src={imageUrls.logo}
-              alt={serwis.shortName}
-              loading="lazy"
-              fill
-            />
-          </Emoticon> */}
-        </Title>
+        <Title>Naprawa pralek automatycznych w Przemyślu 🧺</Title>
 
         <Section>
           <StyledPhoto>
             <Image
               src={imageUrls.pralka}
-              title="Pralka"
+              title="Naprawa pralek Przemyśl"
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              // title="Profesjonalna naprawa pralek w Przemyślu - serwis pralek wszystkich marek"
               loading='lazy'
-              // decoding="async"
               fill
               // srcSet={`${imageUrls.pralka_300} 500w,
               // ${imageUrls.pralka} 1000w`}
               sizes="(max-width: 500px) 500px, 1000px"
             />
           </StyledPhoto>
+        </Section>
 
+        <Section>
           <SubTitle>Kompleksowa diagnostyka i usunięcie awarii pralki</SubTitle>
           <StyledText>
             Awaria pralki potrafi zaburzyć rytm domowych obowiązków. Oferuję w Przemyślu i okolicach rzetelną analizę problemu oraz naprawę pralki – z dbałością o trwały efekt. Korzystam z profesjonalnych narzędzi diagnostycznych i sprawdzonych części zamiennych, a każde zlecenie traktuję indywidualnie, zwracając uwagę na specyfikę modelu i potrzeby Klienta.
@@ -66,9 +55,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Typowe usterki pralek
-          </SubTitle>
+          <SubTitle>Typowe usterki pralek</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Pralka nie pobiera wody</strong> – możliwe przyczyny to uszkodzony elektrozawór, zatkany filtr wody, niedrożny wąż doprowadzający czy problem z czujnikiem poziomu (hydrostat).</li>
             <li><strong>Wycieki wody</strong> – źródłem mogą być nieszczelne uszczelki drzwi, pęknięty wąż odpływowy lub uszkodzona pompa. Dokładna kontrola pozwala zidentyfikować przyczynę.</li>
@@ -76,14 +63,11 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             <li><strong>Brak odwirowania</strong> – często wiąże się z uszkodzeniem silnika, szczotek, filtrem odpływowym lub problemem z paskiem napędowym. Staram się lokalizować usterki precyzyjnie, by wymienić tylko to, co faktycznie jest uszkodzone.</li>
             <li><strong>Pralka nie uruchamia się</strong> – możliwe przyczyny to problem z zasilaniem, uszkodzona blokada drzwi czy moduł sterowania. Weryfikuję obwody i komponenty elektroniczne.</li>
             <li><strong>Nadmierne pienienie lub pozostałości detergentu</strong> – analizuję prawidłowe dozowanie oraz stan dysz i układu płukania, by przywrócić optymalną pracę.</li>
-
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>
-            Dlaczego warto skorzystać z tego serwisu?
-          </SubTitle>
+          <SubTitle>Dlaczego warto skorzystać z tego serwisu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka organizacja terminu</strong>: staram się ustalić dogodny czas wizyty tak szybko, jak to możliwe, aby jak najkrócej odczuwać niedogodności związane z awarią.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: dzięki praktyce przy różnorodnych modelach od renomowanych producentów (Bosch, Electrolux, Samsung, Whirlpool, Beko, Amica i inne) potrafię skutecznie reagować na złożone usterki.</li>
@@ -94,9 +78,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>
-            Jak przebiega usługa krok po kroku?
-          </SubTitle>
+          <SubTitle>Jak przebiega usługa krok po kroku?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępna konsultacja</strong>: opis awarii telefonicznie lub mailowo, omówienie możliwych przyczyn i wstępna orientacyjna wycena zakresu prac.</li>
             <li><strong>Diagnostyka na miejscu</strong>: dokładne sprawdzenie pralki przy użyciu narzędzi diagnostycznych, potwierdzenie lub weryfikacja wstępnej hipotezy co do usterki.</li>
@@ -139,10 +121,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Powiązane usługi</SubTitle>
-          <StyledText>
-            Sprawdź też:
-          </StyledText>
+          <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
             <li>
               <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
