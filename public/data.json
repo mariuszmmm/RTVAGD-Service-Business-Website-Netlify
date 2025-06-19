@@ -1,6 +1,13 @@
 {
   "reviews": [
     {
+      "author_name": "Mariusz Cieśla",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKfwSGWEC62zGRP-GUu_ecDVZB-Yxra6UWt-izLuOx0j2sxLw=s128-c0x00000000-cc-rp-mo-ba4",
+      "text": "Płyta indukcyjna naprawiona w szybkim czasie. Trafna diagnoza i niski koszt. Jeśli coś nam się zepsuje na pewno wrócę.",
+      "rating": 5,
+      "time": 1749651424
+    },
+    {
       "author_name": "Piotrek Fary",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLdDWO0BGpNv7-P_tBAkz4Lbjkp2Z1AvtdjWV9WqNXg0255XQ=s128-c0x00000000-cc-rp-mo",
       "text": "Bardzo szybko, sprawnie, profesjonalnie i na plus bo pralka działa 😁",
@@ -27,16 +34,9 @@
       "text": "Super fachowiec. Mało mówi, za to dużo robi... dobrego :-) W moim 46 calowym Samsungu padło podświetlenie i dzięki temu Panu TV odżył, za stosunkowo nie duże pieniądze, w porównaniu z ceną nowego odpowiednika TV.",
       "rating": 5,
       "time": 1739309092
-    },
-    {
-      "author_name": "Marta M",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKRA0X6LgORfbVanU44l8XjOW-IJJUIFHWTHd7RQiu8Db4dfQ=s128-c0x00000000-cc-rp-mo",
-      "text": "Z czystym sumieniem polecam serwis za profesjonalne czyszczenie mojego ekspresu do kawy! Usługa została wykonana szybko i z najwyższą starannością. Ekspres działa teraz jak nowy, a smak kawy zyskał zupełnie nową jakość. Fachowa obsługa, miły kontakt i konkurencyjne ceny sprawiają, że na pewno wrócę przy kolejnych potrzebach. Serdecznie dziękuję za tak świetną pracę!",
-      "rating": 5,
-      "time": 1726153581
     }
   ],
   "rating": 4.6,
   "user_ratings_total": 73,
-  "update_time": "2025-06-19 00:25:41"
+  "update_time": "2025-06-19 12:09:47"
 }
