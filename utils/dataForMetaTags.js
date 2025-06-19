@@ -1120,7 +1120,7 @@ export const dataForMetaTags = {
         "name": "Seriws i naprawa suszarek w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_suszarek + "#primaryimage" },
-        "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg",
+        "thumbnailUrl": imageUrls.suszarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania. ☎️ 790 258 612",
@@ -1540,64 +1540,65 @@ export const dataForMetaTags = {
               "text": "Termin ustalamy indywidualnie, starając się zminimalizować przestój urządzenia. Dokładne terminy zależą od dostępności części i rodzaju usterki."
             }
           }]
-      }
-    },
 
-    place: {
-      "@type": "Place",
-      "geo": geo,
-      "name": serwis.name,    //  "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-    },
-    // website: {
-    //   "@type": "WebSite",
-    //   "id": appUrls.home + "#website",
-    //   "url": appUrls.home,
-    //   "name": "Serwis_RTV-AGD",
-    //   "inLanguage": "pl-PL",
-    //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-    // },
-    imageObject: {
-      "@type": "ImageObject",
-      "id": appUrls.naprawa_ekspresow + "#primaryimage",
-      "url": imageUrls.ekspres,
-      "inLanguage": "pl-PL",
-      "contentUrl": imageUrls.ekspres,
-      "width": 700,
-      "height": 700,
-      "caption": "Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu",
-    },
-    webpage: {
-      "@type": "WebPage",
-      "id": appUrls.naprawa_ekspresow + "#webpage",
-      "url": appUrls.naprawa_ekspresow,
-      "inLanguage": "pl-PL",
-      "name": "Serwis i naprawa ekspresów w Przemyślu | Serwis_RTV-AGD",
-      "isPartOf": { "@id": appUrls.home + "#website" },
-      "primaryImageOfPage": { "id": appUrls.naprawa_ekspresow + "#primaryimage" },
-      "thumbnailUrl": imageUrls.ekspres,
-      "datePublished": datePublished,
-      "dateModified": dateModified,
-      "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja. ☎️ 790 258 612.",
-      "breadcrumb": { "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
-      "mainEntity": { "@id": appUrls.naprawa_ekspresow + "#product" }
-    },
-    breadcrumbList: {
-      "@type": "BreadcrumbList",
-      "@id": appUrls.naprawa_ekspresow + "#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Strona Główna",
-          "item": appUrls.home,
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Naprawa ekspresów",
-        }
-      ]
-    },
+      },
+
+      place: {
+        "@type": "Place",
+        "geo": geo,
+        "name": serwis.name,    //  "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+      },
+      // website: {
+      //   "@type": "WebSite",
+      //   "id": appUrls.home + "#website",
+      //   "url": appUrls.home,
+      //   "name": "Serwis_RTV-AGD",
+      //   "inLanguage": "pl-PL",
+      //   "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+      // },
+      imageObject: {
+        "@type": "ImageObject",
+        "id": appUrls.naprawa_ekspresow + "#primaryimage",
+        "url": imageUrls.ekspres,
+        "inLanguage": "pl-PL",
+        "contentUrl": imageUrls.ekspres,
+        "width": 700,
+        "height": 700,
+        "caption": "Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu",
+      },
+      webpage: {
+        "@type": "WebPage",
+        "id": appUrls.naprawa_ekspresow + "#webpage",
+        "url": appUrls.naprawa_ekspresow,
+        "inLanguage": "pl-PL",
+        "name": "Serwis i naprawa ekspresów w Przemyślu | Serwis_RTV-AGD",
+        "isPartOf": { "@id": appUrls.home + "#website" },
+        "primaryImageOfPage": { "id": appUrls.naprawa_ekspresow + "#primaryimage" },
+        "thumbnailUrl": imageUrls.ekspres,
+        "datePublished": datePublished,
+        "dateModified": dateModified,
+        "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja. ☎️ 790 258 612.",
+        "breadcrumb": { "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
+        "mainEntity": { "@id": appUrls.naprawa_ekspresow + "#product" }
+      },
+      breadcrumbList: {
+        "@type": "BreadcrumbList",
+        "@id": appUrls.naprawa_ekspresow + "#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona Główna",
+            "item": appUrls.home,
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Naprawa ekspresów",
+          }
+        ]
+      },
+    }
   },
   naprawa_telewizorow: {
     metaTags: {
