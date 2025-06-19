@@ -1124,7 +1124,7 @@ export const dataForMetaTags = {
         "thumbnailUrl": baseUrl + "/images/naprawa-suszarek-przemysl.jpg",
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania.",
+        "description": "Fachowy serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu. Diagnostyka, naprawa i testy działania. ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_suszarek + "#product" }
       },
@@ -1391,7 +1391,7 @@ export const dataForMetaTags = {
         "thumbnailUrl": imageUrls.zmywarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy. Obsługa marek Bosch, Siemens, Whirlpool i innych.",
+        "description": "Profesjonalny serwis zmywarek w Przemyślu i okolicach. Diagnostyka, wymiana elementów i testy. Obsługa marek Bosch, Siemens, Whirlpool i innych. ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_zmywarek + "#product" }
 
@@ -1579,7 +1579,7 @@ export const dataForMetaTags = {
       "thumbnailUrl": imageUrls.ekspres,
       "datePublished": datePublished,
       "dateModified": dateModified,
-      "description": "Profesjonalna naprawa ekspresów w Przemyślu i okolicach. Serwis ekspresów De’Longhi, Jura, Siemens, Bosch. Szybko, z gwarancją. ☎️ 790 258 612",
+      "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu – domowych i gastronomicznych. Szybka diagnoza, oryginalne części, gwarancja. ☎️ 790 258 612.",
       "breadcrumb": { "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
     },
     breadcrumbList: {
@@ -1802,7 +1802,7 @@ export const dataForMetaTags = {
         "thumbnailUrl": imageUrls.telewizor,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalna naprawa telewizorów w Przemyślu i okolicach. Serwis telewizorów LG, Samsung, Sony, Philips. Szybko, z gwarancją. ☎️ 790 258 612",
+        "description": "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Gwarancja, szybko, rzetelnie. ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
       },
 
