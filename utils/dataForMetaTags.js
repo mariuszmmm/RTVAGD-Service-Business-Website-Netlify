@@ -53,7 +53,7 @@ export const organization = {
   "description": "Profesjonalny serwis AGD w Przemyślu – naprawa pralek, suszarek, zmywarek, ekspresów do kawy i telewizorów.",
   "sameAs": [
     serwis.url.facebook,
-    serwis.url.google,
+    serwis.url.mapaGoogle
   ]
 };
 
