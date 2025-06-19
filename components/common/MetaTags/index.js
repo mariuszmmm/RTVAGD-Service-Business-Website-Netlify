@@ -218,6 +218,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
   };
 
+  console.log("webpage, imageObject, breadcrumbList", webpage, imageObject, breadcrumbList);
+
   return (
     <Head>
       {/* Basic meta tags */}

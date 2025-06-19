@@ -1798,14 +1798,13 @@ export const dataForMetaTags = {
         "name": "Serwis i naprawa telewizorów w Przemyślu | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "id": appUrls.naprawa_telewizorow + "#primaryimage" },
-        "image": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "thumbnailUrl": imageUrls.telewizor,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Gwarancja, szybko, rzetelnie. ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
+        "mainEntity": { "@id": appUrls.naprawa_pralek + "#product" }
       },
-
       breadcrumbList: {
         "@type": "BreadcrumbList",
         "@id": appUrls.naprawa_telewizorow + "#breadcrumb",
