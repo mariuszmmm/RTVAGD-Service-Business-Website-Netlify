@@ -356,11 +356,26 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [breadcrumbList, imageObject,
-                  //  organization, localBusiness, 
-                  productSchema,
-                  // website, 
-                  webpage, faqPage]
+                "@graph": [webpage, imageObject, breadcrumbList,
+                  // website
+                  //  localBusinessSchema, productSchema
+                ]
+              })
+            }}
+          />
+          <script type="application/ld+json"    // wyłączone 15.05.2025
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                ...faqPage
+              })
+            }}
+          />
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...productSchema
               })
             }}
           />
@@ -398,6 +413,14 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   // website
                   //  localBusinessSchema, productSchema
                 ]
+              })
+            }}
+          />
+          <script type="application/ld+json"    // wyłączone 15.05.2025
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                ...faqPage
               })
             }}
           />

@@ -685,7 +685,6 @@ export const dataForMetaTags = {
         "offers": {
           "@type": "Offer",
           "availability": "https://schema.org/InStock",
-          // "priceRange": "$$",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
@@ -1475,10 +1474,9 @@ export const dataForMetaTags = {
       product: {
         "@type": "Product",
         "@id": appUrls.naprawa_ekspresow + "#product",
-        "name": "Naprawa ekspresów Przemyśl",
-        "image": imageUrls.ekspres,
+        "name": "Usługa naprawy ekspresów w Przemyślu",
         "description": "Profesjonalna naprawa ekspresów do kawy wszystkich marek w Przemyślu i okolicach. Specjalizuję się w kompleksowej naprawie domowych i profesjonalnych ekspresów, oferując szybką diagnozę i oryginalne części. Zapewniam gwarancję i pełne zadowolenie klientów.",
-        "image": [imageUrls.ekspres],
+        "image": imageUrls.ekspres,
         "brand": {
           "@type": "Brand",
           "name": "Serwis_RTV-AGD"
@@ -1490,6 +1488,7 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "100.00",
           "url": appUrls.naprawa_ekspresow,
+          "seller": { "@id": appUrls.home + "#localbusiness" }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -1701,9 +1700,9 @@ export const dataForMetaTags = {
       product: {
         "@type": "Product",
         "@id": appUrls.naprawa_telewizorow + "#product",
-        "name": "Naprawa telewizorów Przemyśl",
-        "description": "Profesjonalna naprawa ekspresów do kawy wszystkich marek w Przemyślu i okolicach. Specjalizuję się w kompleksowej naprawie domowych i profesjonalnych ekspresów, oferując szybką diagnozę i oryginalne części. Zapewniam gwarancję i pełne zadowolenie klientów.",
-        "image": [imageUrls.telewizor],
+        "name": "Usługa naprawy telewizorów w Przemyślu",
+        "description": "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu",
+        "image": imageUrls.telewizor,
         "brand": {
           "@type": "Brand",
           "name": "Serwis_RTV-AGD"
@@ -1715,6 +1714,7 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "150.00",
           "url": appUrls.naprawa_telewizorow,
+          "seller": { "@id": appUrls.home + "#localbusiness" }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
