@@ -336,7 +336,10 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {(path === "/kontakt/" || path === "/o-mnie/" || path === "/opinie/") && (
         <script type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbList)
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              ...breadcrumbList
+            })
           }}
         />
       )}
