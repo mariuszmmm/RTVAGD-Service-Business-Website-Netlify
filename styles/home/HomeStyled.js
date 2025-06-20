@@ -2,13 +2,13 @@ import styled, { css } from "styled-components";
 
 export const Hero = styled.main`
   text-align: center;
-  padding: 120px 0 9vh;
+  padding: 160px 0 9vh;
   min-height: 100vh;  
   position: relative;
   overflow: hidden;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 80px 0 6vh;
+    padding: 120px 0 6vh;
   }
 `;
 

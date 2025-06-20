@@ -4,12 +4,12 @@ export const ContactContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0 0;
+  padding: 160px 0 0;
   text-align: left;
   min-height: calc(100vh - 5vh);
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-    padding: 80px 0 0;
+    padding: 120px 0 0;
   }
 `;
 
