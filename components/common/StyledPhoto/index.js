@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const StyledPhoto = styled.div`
   position: relative;
   width: 30vw;
-  aspect-ratio: 1;
-  max-width: 600px;
+  aspect-ratio: ${({ $width, $height }) => $width && $height ? `${$width} / ${$height}` : '1 / 1'};
   justify-self: center;
   margin-bottom: 60px;
 
