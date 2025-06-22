@@ -3,97 +3,101 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:title>Serwis RTV-AGD Przemyśl</image:title>
-      <image:caption>Profesjonalny serwis naprawy sprzętu RTV-AGD w Przemyślu</image:caption>
+      <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
+      <image:title>Serwis RTV-AGD</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>Serwis RTV-AGD – o mnie</image:caption>
+      <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
+      <image:title>Serwis RTV-AGD</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl-serwis-1.webp</image:loc>
-      <image:title>Naprawa pralek Przemyśl</image:title>
-      <image:caption>Naprawa pralek automatycznych – serwis i naprawa pralek w Przemyślu</image:caption>
+      <image:caption>Naprawa pralek automatycznych w Przemyślu</image:caption>
+      <image:title>Serwis pralek automatycznych</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-1.webp</image:loc>
-      <image:title>Naprawa suszarek Przemyśl</image:title>
-      <image:caption>Naprawa suszarek do ubrań – serwis i naprawa suszarek w Przemyślu</image:caption>
+      <image:caption>Naprawa suszarek do ubrań w Przemyślu</image:caption>
+      <image:title>Serwis suszarek</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-1.webp</image:loc>
-      <image:title>Naprawa zmywarek Przemyśl</image:title>
-      <image:caption>Naprawa zmywarek do naczyń – serwis i naprawa zmywarek w Przemyślu</image:caption>
+      <image:caption>Naprawa zmywarek do naczyń w Przemyślu</image:caption>
+      <image:title>Serwis zmywarek</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-ekspresow-przemysl-serwis-1.webp</image:loc>
-      <image:title>Naprawa ekspresów Przemyśl</image:title>
-      <image:caption>Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu</image:caption>
+      <image:caption>Naprawa ekspresów do kawy w Przemyślu</image:caption>
+      <image:title>Serwis ekspresów do kawy</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-telewizorow-przemysl-serwis-1.webp</image:loc>
-      <image:title>Naprawa telewizorów Przemyśl</image:title>
-      <image:caption>Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu</image:caption>
+      <image:caption>Naprawa telewizorów w Przemyślu</image:caption>
+      <image:title>Serwis telewizorów</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>Serwis RTV-AGD – opinie klientów</image:caption>
+      <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
+      <image:title>Serwis RTV-AGD - opinie klientów</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-21</lastmod>
+    <lastmod>2025-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>Serwis RTV-AGD – kontakt</image:caption>
+      <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
+      <image:title>Serwis RTV-AGD - kontakt</image:title>
     </image:image>
   </url>
 </urlset>
