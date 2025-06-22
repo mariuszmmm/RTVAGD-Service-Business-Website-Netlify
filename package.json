@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build",
+    "build": "NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build && next-sitemap",
     "postbuild": "next-sitemap",
     "serve": "npx serve@latest out",
     "update-data": "node public/scripts/update_data.js"
