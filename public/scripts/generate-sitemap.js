@@ -1,13 +1,12 @@
 const fs = require('fs');
 const path = require('path');
-const { dataForMetaTags } = require('../../utils/dataForMetaTags');
 
 const BASE_URL = 'https://naprawaprzemysl.pl';
 const routes = {
   '/': {
     priority: '1.0',
-    image: dataForMetaTags.home.imageObject.url + "_test_",
-    caption: dataForMetaTags.home.imageObject.caption + "_test",
+    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
+    caption: 'Profesjonalny serwis RTV-AGD w Przemyślu',
     title: 'Serwis RTV-AGD'
   },
   '/o-mnie/': {
