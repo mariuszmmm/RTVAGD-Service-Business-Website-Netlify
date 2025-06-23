@@ -88,6 +88,7 @@ const outputPath = path.join(__dirname, '..', 'test.xml');
 try {
   fs.writeFileSync(outputPath, sitemap.trim());
   console.log('✅ sitemap.xml został wygenerowany!');
+  console.log('Ścieżka do pliku:', outputPath);
   console.log('\n--- Zawartość test.xml ---\n');
   console.log(fs.readFileSync(outputPath, 'utf8'));
 } catch (err) {
