@@ -59,10 +59,7 @@ const routes = {
   },
 }
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+const urlsXml = `
   ${Object.entries(routes)
     .map(([route]) => {
       return `  <url>
@@ -79,7 +76,14 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   </url>`;
     })
     .join('\n')}
-</urlset>`;
+`;
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+  `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n` +
+  `  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"\n` +
+  `  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
+  urlsXml + '\n' +
+  `</urlset>`;
 
 const outputPath = path.join(__dirname, '..', 'test.xml');
 

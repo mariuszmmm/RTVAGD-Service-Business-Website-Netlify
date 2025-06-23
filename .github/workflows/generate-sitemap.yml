@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Generate sitemap
-        run: node public/scripts/generate-sitemap.js
+        run: npm run generate-sitemap
 
       - name: Commit sitemap
         run: |
