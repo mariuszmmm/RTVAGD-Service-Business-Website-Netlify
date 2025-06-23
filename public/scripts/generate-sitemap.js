@@ -6,7 +6,7 @@ const BASE_URL = 'https://naprawaprzemysl.pl';
 const routes = {
   '/': {
     priority: '1.0',
-    image: dataForMetaTags.home.imageObject.url + "_test",
+    image: dataForMetaTags.home.imageObject.url + "_test_",
     caption: dataForMetaTags.home.imageObject.caption + "_test",
     title: 'Serwis RTV-AGD'
   },
