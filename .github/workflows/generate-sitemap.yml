@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Generate sitemap
-        run: node scripts/generate-sitemap.js
+        run: node public/scripts/generate-sitemap.js
 
       - name: Commit sitemap
         run: |
