@@ -74,7 +74,7 @@ const urlsXml = Object.entries(routes)
       `     <image:title>${routes[route].title}</image:title>`,
       `   </image:image>`,
       `</url>`
-    ];
+    ].join('\n');;
   })
   .join('\n');
 
