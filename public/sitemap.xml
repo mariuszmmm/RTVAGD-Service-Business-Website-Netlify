@@ -11,6 +11,7 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
       <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>Serwis RTV-AGD</image:title>
@@ -22,6 +23,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
       <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>Serwis RTV-AGD</image:title>
@@ -33,6 +35,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl-serwis-1.webp</image:loc>
       <image:caption>Naprawa pralek automatycznych w Przemyślu</image:caption>
       <image:title>Serwis pralek automatycznych</image:title>
@@ -44,6 +47,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-1.webp</image:loc>
       <image:caption>Naprawa suszarek do ubrań w Przemyślu</image:caption>
       <image:title>Serwis suszarek</image:title>
@@ -55,6 +59,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-1.webp</image:loc>
       <image:caption>Naprawa zmywarek do naczyń w Przemyślu</image:caption>
       <image:title>Serwis zmywarek</image:title>
@@ -66,6 +71,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-ekspresow-przemysl-serwis-1.webp</image:loc>
       <image:caption>Naprawa ekspresów do kawy w Przemyślu</image:caption>
       <image:title>Serwis ekspresów do kawy</image:title>
@@ -77,6 +83,7 @@
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-telewizorow-przemysl-serwis-1.webp</image:loc>
       <image:caption>Naprawa telewizorów w Przemyślu</image:caption>
       <image:title>Serwis telewizorów</image:title>
@@ -88,6 +95,7 @@
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
       <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>Serwis RTV-AGD - opinie klientów</image:title>
@@ -99,6 +107,7 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
+      <mobile:mobile/>
       <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
       <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>Serwis RTV-AGD - kontakt</image:title>

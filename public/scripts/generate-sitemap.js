@@ -75,6 +75,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority>${routes[route].priority || '0.8'}</priority>
+    <mobile:mobile/>
     <image:image>
       <image:loc>${images[route].image}</image:loc>
       <image:caption>${routes[route].caption}</image:caption>
