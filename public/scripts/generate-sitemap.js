@@ -87,6 +87,12 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>`;
 
 const outputPath = path.join(__dirname, '..', 'test.xml');
-fs.writeFileSync(outputPath, sitemap.trim());
 
-console.log('✅ sitemap.xml został wygenerowany!');
+try {
+  fs.writeFileSync(outputPath, sitemap.trim());
+  console.log('✅ sitemap.xml został wygenerowany!');
+  console.log('\n--- Zawartość test.xml ---\n');
+  console.log(fs.readFileSync(outputPath, 'utf8'));
+} catch (err) {
+  console.error('❌ Błąd podczas zapisu pliku:', err);
+}
