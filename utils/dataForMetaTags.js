@@ -1,5 +1,6 @@
-import { serwis } from './serwis';
-import { appUrls, baseUrl, imageUrls } from './urls';
+
+const { serwis } = require('./serwis');
+const { appUrls, baseUrl, imageUrls } = require('./urls');
 
 const datePublished = new Date("2024-07-03").toISOString();
 const date = new Date().toISOString().slice(0, 10);
