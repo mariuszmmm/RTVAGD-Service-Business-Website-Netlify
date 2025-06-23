@@ -65,8 +65,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   ${Object.entries(routes)
     .map(([route]) => {
-      return `
-  <url>
+      return `<url>
     <loc>${BASE_URL}${route}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
