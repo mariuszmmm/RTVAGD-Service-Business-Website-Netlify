@@ -1,5 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const { dataForMetaTags } = require('../src/utils/dataForMetaTags');
+
+console.log('dataForMetaTags', dataForMetaTags);
 
 const BASE_URL = 'https://naprawaprzemysl.pl';
 const routes = {
