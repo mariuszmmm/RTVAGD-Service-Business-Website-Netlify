@@ -74,7 +74,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>${routes[route].priority || '0.8'}</priority>
     <mobile:mobile/>
     <image:image>
-      <image:loc>${routes[route].image}</image:loc>
+      <image:loc>${routes[route].image} </image:loc>
       <image:caption>${routes[route].caption}</image:caption>
       <image:title>${routes[route].title}</image:title>
     </image:image>
@@ -83,7 +83,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     .join('\n')}
 </urlset>`;
 
-const outputPath = path.join(__dirname, '..', 'test.xml');
+const outputPath = path.join(__dirname, '..', 'public', 'test.xml');
 
 try {
   fs.writeFileSync(outputPath, sitemap.trim());
