@@ -1,6 +1,5 @@
-
-const { serwis } = require('./serwis');
-const { appUrls, baseUrl, imageUrls } = require('./urls');
+import { serwis } from './serwis';
+import { appUrls, baseUrl, imageUrls } from './urls';
 
 const datePublished = new Date("2024-07-03").toISOString();
 const date = new Date().toISOString().slice(0, 10);
@@ -15,7 +14,7 @@ const dateModified = process.env.NEXT_PUBLIC_BUILD_DATE || new Date(date).toISOS
 
 const shortName = "Serwis RTV i AGD Przemyśl";
 
-const address = {
+export const address = {
   "@type": "PostalAddress",
   "streetAddress": "Generała Józefa Sowińskiego 2",
   "addressLocality": "Przemyśl",
@@ -24,13 +23,13 @@ const address = {
   "addressCountry": "PL"
 };
 
-const geo = {
+export const geo = {
   "@type": "GeoCoordinates",
   "latitude": "49.7827725",
   "longitude": "22.7760291"
 };
 
-const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
+export const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
 
 // const breadcrumbList = {
 //   // wyłączone 15.05.2025
@@ -46,7 +45,7 @@ const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
 //   ]
 // };
 
-const organization = {
+export const organization = {
   "@type": "Organization",
   "name": ".Naprawa sprzętu RTV i AGD Serwis_RTV-AGD",   //  "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
   "url": appUrls.home,
@@ -59,7 +58,7 @@ const organization = {
   ],
 };
 
-const localBusiness = {
+export const localBusiness = {
   "@type": "LocalBusiness",
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",   // zgodny z CEIDG
@@ -208,7 +207,7 @@ const localBusiness = {
   // }
 };
 
-const siteNavigationElements = [
+export const siteNavigationElements = [
   {
     "@type": "SiteNavigationElement",
     "name": "Strona główna",
@@ -256,7 +255,7 @@ const siteNavigationElements = [
   },
 ]
 
-const dataForMetaTags = {
+export const dataForMetaTags = {
   home: {
     metaTags: {
       title: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów", // policz znaki:
@@ -469,6 +468,7 @@ const dataForMetaTags = {
         "width": 931,
         "height": 497,
         "caption": "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
+
         "name": "Serwis RTV-AGD Przemyśl",
         "description": "Warsztat serwisowy RTV i AGD w Przemyślu z technikiem przy naprawie urządzenia",
       },
@@ -1847,17 +1847,6 @@ const dataForMetaTags = {
       },
     }
   },
-};
-
-
-module.s = {
-  address,
-  geo,
-  openingHours,
-  organization,
-  localBusiness,
-  siteNavigationElements,
-  dataForMetaTags,
 };
 
 
