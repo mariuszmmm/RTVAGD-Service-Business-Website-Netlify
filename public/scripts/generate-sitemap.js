@@ -84,8 +84,8 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
   `  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
   `   <url>` +
   urlsXml +
-  `   </url>`
-    `</urlset>`;
+  `   </url>` +
+  `</urlset>`;
 
 const outputPath = path.join(__dirname, '..', 'test.xml');
 
