@@ -468,7 +468,6 @@ export const dataForMetaTags = {
         "width": 931,
         "height": 497,
         "caption": "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
-
         "name": "Serwis RTV-AGD Przemyśl",
         "description": "Warsztat serwisowy RTV i AGD w Przemyślu z technikiem przy naprawie urządzenia",
       },

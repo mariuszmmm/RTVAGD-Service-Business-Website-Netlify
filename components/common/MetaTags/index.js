@@ -258,8 +258,16 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...imageObject
+              })
+            }}
+          />
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, imageObject, breadcrumbList]
+                "@graph": [webpage, breadcrumbList]
               })
             }}
           />
@@ -287,8 +295,16 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...imageObject
+              })
+            }}
+          />
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [breadcrumbList, imageObject, organization, localBusinessSchema, productSchema, website, webpage]
+                "@graph": [breadcrumbList, organization, localBusinessSchema, productSchema, website, webpage]
               })
             }}
           />
@@ -334,14 +350,24 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       )}
 
       {(path === "/kontakt/" || path === "/o-mnie/" || path === "/opinie/") && (
-        <script type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org/",
-              ...breadcrumbList
-            })
-          }}
-        />
+        <>
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...imageObject
+              })
+            }}
+          />
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...breadcrumbList
+              })
+            }}
+          />
+        </>
       )}
 
     </Head>
