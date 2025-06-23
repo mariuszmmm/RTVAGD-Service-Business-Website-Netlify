@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
- <url>
-   <loc>https://naprawaprzemysl.pl/</loc>
+  <url>
+    <loc>https://naprawaprzemysl.pl/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -13,9 +13,9 @@
       <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>Serwis RTV-AGD</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -25,9 +25,9 @@
       <image:caption>O mnie - profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>O mnie - Serwis RTV-AGD</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/opinie/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/opinie/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -37,9 +37,9 @@
       <image:caption>Opinie klientów o serwisie RTV-AGD w Przemyślu</image:caption>
       <image:title>Opinie - Serwis RTV-AGD</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/kontakt/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/kontakt/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -49,9 +49,9 @@
       <image:caption>Kontakt - profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
       <image:title>Kontakt - Serwis RTV-AGD</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -61,9 +61,9 @@
       <image:caption>Naprawa pralek automatycznych w Przemyślu</image:caption>
       <image:title>Serwis pralek automatycznych</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -73,9 +73,9 @@
       <image:caption>Naprawa suszarek do ubrań w Przemyślu</image:caption>
       <image:title>Serwis suszarek</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -85,9 +85,9 @@
       <image:caption>Naprawa zmywarek do naczyń w Przemyślu</image:caption>
       <image:title>Serwis zmywarek</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -97,9 +97,9 @@
       <image:caption>Naprawa ekspresów do kawy w Przemyślu</image:caption>
       <image:title>Serwis ekspresów do kawy</image:title>
     </image:image>
- </url>
- <url>
-   <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
     <lastmod>2025-06-23T07:41:10.343Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -109,5 +109,5 @@
       <image:caption>Naprawa telewizorów w Przemyślu</image:caption>
       <image:title>Serwis telewizorów</image:title>
     </image:image>
- </url>
+  </url>
 </urlset>

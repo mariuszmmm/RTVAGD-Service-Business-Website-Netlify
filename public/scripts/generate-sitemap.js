@@ -62,7 +62,7 @@ const routes = {
 const urlsXml = Object.entries(routes)
   .map(([route]) => {
     return [
-      ` <url>`,
+      `  <url>`,
       `   <loc>${BASE_URL}${route}</loc>`,
       `   <lastmod>${new Date().toISOString()}</lastmod>`,
       `   <changefreq>daily</changefreq>`,
