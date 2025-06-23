@@ -63,17 +63,17 @@ const urlsXml = Object.entries(routes)
   .map(([route]) => {
     return [
       `  <url>`,
-      `   <loc>${BASE_URL}${route}</loc>`,
-      `   <lastmod>${new Date().toISOString()}</lastmod>`,
-      `   <changefreq>daily</changefreq>`,
-      `   <priority>${routes[route].priority || '0.8'}</priority>`,
-      `   <mobile:mobile/>`,
-      `   <image:image>`,
-      `     <image:loc>${routes[route].image}</image:loc>`,
-      `     <image:caption>${routes[route].caption}</image:caption>`,
-      `     <image:title>${routes[route].title}</image:title>`,
-      `   </image:image>`,
-      ` </url>`
+      `    <loc>${BASE_URL}${route}</loc>`,
+      `    <lastmod>${new Date().toISOString()}</lastmod>`,
+      `    <changefreq>daily</changefreq>`,
+      `    <priority>${routes[route].priority || '0.8'}</priority>`,
+      `    <mobile:mobile/>`,
+      `    <image:image>`,
+      `      <image:loc>${routes[route].image}</image:loc>`,
+      `      <image:caption>${routes[route].caption}</image:caption>`,
+      `      <image:title>${routes[route].title}</image:title>`,
+      `    </image:image>`,
+      `  </url>`
     ].join('\n');;
   })
   .join('\n');
