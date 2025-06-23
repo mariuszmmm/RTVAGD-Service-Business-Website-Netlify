@@ -2,10 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2025-06-23T07:02:15.982Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <mobile:mobile/>
@@ -15,10 +14,9 @@
       <image:title>Serwis RTV-AGD</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-23T07:02:15.982Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <mobile:mobile/>
@@ -28,10 +26,9 @@
       <image:title>O mnie - Serwis RTV-AGD</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-23T07:02:15.982Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <mobile:mobile/>
@@ -41,10 +38,9 @@
       <image:title>Opinie - Serwis RTV-AGD</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-23T07:02:15.982Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <mobile:mobile/>
@@ -54,10 +50,9 @@
       <image:title>Kontakt - Serwis RTV-AGD</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2025-06-23T07:02:15.983Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
@@ -67,10 +62,9 @@
       <image:title>Serwis pralek automatycznych</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2025-06-23T07:02:15.983Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
@@ -80,10 +74,9 @@
       <image:title>Serwis suszarek</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2025-06-23T07:02:15.983Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
@@ -93,10 +86,9 @@
       <image:title>Serwis zmywarek</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2025-06-23T07:02:15.983Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
@@ -106,10 +98,9 @@
       <image:title>Serwis ekspresów do kawy</image:title>
     </image:image>
   </url>
-
-  <url>
+<url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2025-06-23T07:02:15.983Z</lastmod>
+    <lastmod>2025-06-23T07:10:50.558Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <mobile:mobile/>
