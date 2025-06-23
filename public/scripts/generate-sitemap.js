@@ -86,7 +86,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     .join('\n')}
 </urlset>`;
 
-const outputPath = path.join(__dirname, '..', 'public', '_sitemap.xml_');
+const outputPath = path.join(__dirname, '..', 'public', 'test.xml');
 fs.writeFileSync(outputPath, sitemap.trim());
 
 console.log('✅ sitemap.xml został wygenerowany!');
