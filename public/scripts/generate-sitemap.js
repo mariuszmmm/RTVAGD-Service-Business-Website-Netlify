@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { dataForMetaTags } = require('../src/utils/dataForMetaTags');
+const { dataForMetaTags } = require('../../utils/dataForMetaTags');
 
 console.log('dataForMetaTags', dataForMetaTags);
 
