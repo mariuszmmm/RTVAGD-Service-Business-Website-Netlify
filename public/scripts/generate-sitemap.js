@@ -68,7 +68,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     .map(([route]) => {
       return `
   <url>
-    <loc>${BASE_URL}${route}</loc>
+    <loc>${BASE_URL}${route} </loc>
     <lastmod>${new Date().toISOString()} </lastmod>
     <changefreq>daily</changefreq>
     <priority>${routes[route].priority || '0.8'} </priority>
