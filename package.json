@@ -22,7 +22,9 @@
   },
   "scripts": {
     "dev": "next dev",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
     "build": "NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build",
+    "postbuild": "npm run generate-sitemap",
     "serve": "npx serve@latest out",
     "update-data": "node public/scripts/update_data.js"
   },
