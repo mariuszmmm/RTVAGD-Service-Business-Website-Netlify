@@ -65,7 +65,7 @@ const urlsXml = Object.entries(routes)
       ` <url>`,
       `   <loc>${BASE_URL}${route}</loc>`,
       `    <lastmod>${new Date().toISOString()}</lastmod>`,
-      `    <changefreq>daily</changefreq>` +
+      `    <changefreq>daily</changefreq>`,
       `    <priority>${routes[route].priority || '0.8'}</priority>`,
       `    <mobile:mobile/>`,
       `    <image:image>`,
