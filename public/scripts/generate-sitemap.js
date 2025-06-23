@@ -83,7 +83,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     .join('\n')}
 </urlset>`;
 
-const outputPath = path.join(__dirname, '..', 'public', 'test.xml');
+const outputPath = path.join(__dirname, '..', 'test.xml');
 
 try {
   fs.writeFileSync(outputPath, sitemap.trim());
