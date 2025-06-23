@@ -94,5 +94,5 @@ try {
   console.log('\n--- Zawartość sitemap.xml ---\n');
   console.log(fs.readFileSync(outputPath, 'utf8'));
 } catch (err) {
-  console.error('❌ Błąd podczas zapisu pliku:', err);
+  console.error('❌ _ Błąd podczas zapisu pliku:', err);
 }
