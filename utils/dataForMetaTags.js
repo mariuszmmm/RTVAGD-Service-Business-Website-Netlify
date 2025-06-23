@@ -15,7 +15,7 @@ const dateModified = process.env.NEXT_PUBLIC_BUILD_DATE || new Date(date).toISOS
 
 const shortName = "Serwis RTV i AGD Przemyśl";
 
-export const address = {
+const address = {
   "@type": "PostalAddress",
   "streetAddress": "Generała Józefa Sowińskiego 2",
   "addressLocality": "Przemyśl",
@@ -24,13 +24,13 @@ export const address = {
   "addressCountry": "PL"
 };
 
-export const geo = {
+const geo = {
   "@type": "GeoCoordinates",
   "latitude": "49.7827725",
   "longitude": "22.7760291"
 };
 
-export const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
+const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
 
 // const breadcrumbList = {
 //   // wyłączone 15.05.2025
@@ -46,7 +46,7 @@ export const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
 //   ]
 // };
 
-export const organization = {
+const organization = {
   "@type": "Organization",
   "name": ".Naprawa sprzętu RTV i AGD Serwis_RTV-AGD",   //  "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
   "url": appUrls.home,
@@ -59,7 +59,7 @@ export const organization = {
   ],
 };
 
-export const localBusiness = {
+const localBusiness = {
   "@type": "LocalBusiness",
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",   // zgodny z CEIDG
@@ -208,7 +208,7 @@ export const localBusiness = {
   // }
 };
 
-export const siteNavigationElements = [
+const siteNavigationElements = [
   {
     "@type": "SiteNavigationElement",
     "name": "Strona główna",
@@ -256,7 +256,7 @@ export const siteNavigationElements = [
   },
 ]
 
-export const dataForMetaTags = {
+const dataForMetaTags = {
   home: {
     metaTags: {
       title: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów", // policz znaki:
@@ -1847,6 +1847,17 @@ export const dataForMetaTags = {
       },
     }
   },
+};
+
+
+module.s = {
+  address,
+  geo,
+  openingHours,
+  organization,
+  localBusiness,
+  siteNavigationElements,
+  dataForMetaTags,
 };
 
 
