@@ -24,7 +24,7 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: baseUrl + "/images/serwis-rtv-agd-przemysl-1.webp",
+  serwis: `${baseUrl}/images/serwis-rtv-agd-przemysl-1.webp`,
   serwis_1: baseUrl + "/images/serwis.jpg",
   telewizor: baseUrl + "/images/naprawa-telewizorow-przemysl-serwis-1.webp",
   _telewizor: baseUrl + "/images/telewizor.webp",
