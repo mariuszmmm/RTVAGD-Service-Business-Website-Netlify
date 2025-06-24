@@ -45,9 +45,18 @@ export const openingHours = "Mo, Tu, We, Th, Fr, 09:30-17:00";
 //   ]
 // };
 
+export const website = {
+  "@type": "WebSite",
+  "@id": appUrls.home + "#website",
+  "url": appUrls.home,
+  "name": "Serwis_RTV-AGD",
+  "inLanguage": "pl-PL",
+  "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
+};
+
 export const organization = {
   "@type": "Organization",
-  "name": ".Naprawa sprzętu RTV i AGD Serwis_RTV-AGD",   //  "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+  "name": "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",   //  "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
   "url": appUrls.home,
   "logo": imageUrls.logo,
   "description": "Profesjonalny serwis RTV i AGD w Przemyślu – naprawa pralek, suszarek, zmywarek, ekspresów do kawy i telewizorów.",
@@ -134,45 +143,55 @@ export const localBusiness = {
     "itemListElement": [
       {
         "@type": "Offer",
+        "@id": appUrls.naprawa_pralek + "#offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Naprawa pralek",
+          "@id": appUrls.naprawa_pralek + "#service",
+          "name": "Naprawa Pralek",
           "serviceType": "Naprawa pralek",
           "description": "Diagnostyka i naprawa pralek wszystkich marek w Przemyślu i okolicach."
         }
       },
       {
         "@type": "Offer",
+        "@id": appUrls.naprawa_suszarek + "#offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Naprawa suszarek",
+          "@id": appUrls.naprawa_suszarek + "#service",
+          "name": "Naprawa Suszarek",
           "serviceType": "Naprawa suszarek",
           "description": "Serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu."
         }
       },
       {
         "@type": "Offer",
+        "@id": appUrls.naprawa_zmywarek + "#offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Naprawa zmywarek",
+          "@id": appUrls.naprawa_zmywarek + "#service",
+          "name": "Naprawa Zmywarek",
           "serviceType": "Naprawa zmywarek",
           "description": "Kompleksowa diagnostyka i naprawa zmywarek różnych marek w Przemyślu."
         }
       },
       {
         "@type": "Offer",
+        "@id": appUrls.naprawa_ekspresow + "#offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Naprawa ekspresów do kawy",
-          "serviceType": "Naprawa ekspresów do kawy",
+          "@id": appUrls.naprawa_ekspresow + "#service",
+          "name": "Naprawa Ekspresów",
+          "serviceType": "Naprawa ekspresów",
           "description": "Fachowa naprawa ekspresów domowych i profesjonalnych w Przemyślu."
         }
       },
       {
         "@type": "Offer",
+        "@id": appUrls.naprawa_telewizorow + "#offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Naprawa telewizorów",
+          "@id": appUrls.naprawa_telewizorow + "#service",
+          "name": "Naprawa Telewizorów",
           "serviceType": "Naprawa telewizorów",
           "description": "Profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu."
         }
@@ -298,7 +317,7 @@ export const dataForMetaTags = {
           "price": "150.00",
           "url": appUrls.home,
           "seller": {
-            "@type": "LocalBusiness",
+            // "@type": "LocalBusiness",
             "@id": appUrls.home + "#localbusiness"
           }
         },
@@ -436,14 +455,7 @@ export const dataForMetaTags = {
         "geo": geo,
         "name": serwis.name,  // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
       },
-      website: {
-        "@type": "WebSite",
-        "@id": appUrls.home + "#website",
-        "url": appUrls.home,
-        "name": "Serwis_RTV-AGD",
-        "inLanguage": "pl-PL",
-        "description": "Serwisuję wszystkie marki telewizorów, pralek, suszarek, zmywarek i ekspresów do kawy",
-      },
+      website,
       webpage: {
         "@type": "WebPage",
         "@id": appUrls.home + "#webpage",
@@ -508,6 +520,7 @@ export const dataForMetaTags = {
       //   "url": appUrls.home,
       //   "name": "naprawaprzemysl.pl",
       // },
+      website,
       webpage: {
         "@type": "WebPage",
         "@id": appUrls.kontakt,
@@ -627,52 +640,32 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
     },
     schema: {
-      // organization,
-      // localBusiness,
+      organization,
+      localBusiness,
       service: {
         "@type": "Service",
         "@id": appUrls.naprawa_pralek + "#service",
-        "name": "Naprawa Pralek",  //  "name": "Naprawa Pralek",
-        "serviceType": "Naprawa pralek wszystkich marek",
+        "name": "Naprawa Pralek",
+        "serviceType": "Naprawa pralek",
         "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
-        // "image": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
-            "caption": "Pralka przed naprawą"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
-            "caption": "Pralka po naprawie"
-          }
-        ],
-        // "areaServed": {
-        //   "@type": "Place",
-        //   // "address": address,
-        //   "name": "Przemyśl",
-        // },
-        "areaServed": ["Przemyśl", "Bolestraszyce", "Duńkowiczki", "Krówniki", "Nehrybka", "Orzechowce", "Ostrów", "Pikulice", "Prałkowce", "Wyszatyce", "Żurawica"],
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "klienci indywidualni"
+        "image": imageUrls.pralka,
+        "provider": {
+          "@type": "LocalBusiness",
+          "@id": appUrls.home + "#localbusiness"
         },
-        // "aggregateRating": {
-        //   "@type": "AggregateRating",
-        //   "itemReviewed": {
-        //     "@type": "Service",
-        //     "name": "Naprawa Pralek"
-        //   }
-        // },
-        // "provider": {                           // dodane 14.05.2025
-        //   "@type": "LocalBusiness",
-        //   "name": serwis.name,
-        //   "url": appUrls.home,
-        //   "telephone": serwis.phone.formatted,
-        //   "address": address,
-        //   //  "image": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
-        // },
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_pralek + "#offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "PLN",
+            "price": "150.00",
+            "priceValidUntil": "2025-12-31"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": { "@id": appUrls.naprawa_pralek + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
+        }
       },
       product: {
         "@type": "Product",
@@ -691,7 +684,10 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "150.00",
           "url": appUrls.naprawa_pralek,
-          "seller": { "@id": appUrls.home + "#localbusiness" }
+          "seller": {
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness"
+          }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -785,6 +781,7 @@ export const dataForMetaTags = {
       },
       faqPage: {
         "@type": "FAQPage",
+        "name": "Najczęściej zadawane pytania dotyczące naprawy pralek",
         "mainEntity": [
           {
             "@type": "Question",
@@ -846,15 +843,16 @@ export const dataForMetaTags = {
         "url": imageUrls.pralka,
         "inLanguage": "pl-PL",
         "contentUrl": imageUrls.pralka,
-        "name": "Naprawa pralek Przemyśl",
-        "description": "Serwisant diagnozuje i naprawia uszkodzoną pralkę automatyczną",
         "width": 700,
         "height": 700,
+        "name": "Naprawa pralek Przemyśl",
+        "description": "Serwisant diagnozuje i naprawia uszkodzoną pralkę automatyczną",
         "caption": "Naprawa pralek automatycznych – serwis i naprawa pralek w Przemyślu",
       },
+      website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.naprawa_pralek + "#webpage",
+        // "@id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
         "name": "Naprawa pralek Przemyśl – Serwis RTV-AGD ✔️",
@@ -864,12 +862,12 @@ export const dataForMetaTags = {
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalny serwis i naprawa pralek w Przemyślu. Szybka diagnoza i naprawa pralek wszystkich marek. ☎️ 790 258 612",
-        "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
+        // "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_pralek + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
-        "@id": appUrls.naprawa_pralek + "#breadcrumb",
+        // "@id": appUrls.naprawa_pralek + "#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -909,46 +907,32 @@ export const dataForMetaTags = {
 
     },
     schema: {
-      // organization,
-      // localBusiness,
-      // organization: {
-
-      //   "@type": "Organization",
-      //   "name": "Naprawa Suszarek - " + serwis.name,  // "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-      //   "logo": imageUrls.logo,
-      //   "url": appUrls.home,
-      //   "address": address,
-      //   "sameAs": [],
-      // },
+      organization,
+      localBusiness,
       service: {
-        // "@type": "Service",
-        "name": "Naprawa suszarek Przemyśl",
-        "description": "Profesjonalna naprawa suszarek wszystkich marek w Przemyślu i okolicach",
-        "provider": {
-          "@type": "Organization",
-          "name": "Serwis RTV-AGD Przemyśl",
-          "telephone": "+48790258612",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Przemyśl",
-            "addressCountry": "PL"
-          }
-        },
-        "image": imageUrls.suszarka,
+        "@type": "Service",
+        "@id": appUrls.naprawa_suszarek + "#service",
+        "name": "Naprawa suszarek",
         "serviceType": "Naprawa suszarek",
-        "areaServed": [
-          "Przemyśl",
-          "Bolestraszyce",
-          "Duńkowiczki",
-          "Krówniki",
-          "Nehrybka",
-          "Orzechowce",
-          "Ostrów",
-          "Pikulice",
-          "Prałkowce",
-          "Wyszatyce",
-          "Żurawica"
-        ],
+        "description": "Profesjonalna naprawa suszarek wszystkich marek w Przemyślu i okolicach",
+        "image": imageUrls.suszarka,
+        "provider": {
+          "@type": "LocalBusiness",
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_suszarek + "#offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "PLN",
+            "price": "150.00",
+            "priceValidUntil": "2025-12-31"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": { "@id": appUrls.naprawa_suszarek + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
+        }
       },
       product: {
         "@type": "Product",
@@ -957,7 +941,7 @@ export const dataForMetaTags = {
         "description": "Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła i tradycyjnych, z zachowaniem najwyższej staranności.",
         "image": imageUrls.suszarka,
         "brand": {
-          "@type": "Thing",
+          "@type": "Brand",
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
@@ -967,12 +951,11 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "150.00",
           "url": appUrls.naprawa_suszarek,
-          "seller": { "@id": appUrls.home + "#organization", "name": "Serwis_RTV-AGD" },
-          "itemCondition": "https://schema.org/UsedCondition"
+          "seller": {
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness"
+          }
         },
-
-        "sku": "SEO",
-        "mpn": "SEO-33"
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
         //   { "@type": "City", "name": "Bolestraszyce" },
@@ -1060,6 +1043,7 @@ export const dataForMetaTags = {
       },
       faqPage: {
         "@type": "FAQPage",
+        "name": "Najczęściej zadawane pytania dotyczące naprawy suszarek",
         "mainEntity": [
           {
             "@type": "Question",
@@ -1118,18 +1102,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.suszarka,
         "width": 700,
         "height": 700,
-        "caption": "Naprawa suszarek do ubrań – serwis i naprawa suszarek w Przemyślu",
-
         "name": "Naprawa suszarek Przemyśl",
-        "description": "Technik serwisu AGD naprawia awarię suszarki do ubrań",
-
-        "author": { "@type": "Organization", "name": "Naprawa sprzętu RTV i AGD Serwis_RTV-AGD" },
-        "contentLocation": { "@type": "Place", "name": "Przemyśl" },
-
+        "description": "Serwisant diagnozuje i naprawia uszkodzoną suszarkę do ubrań",
+        "caption": "Naprawa suszarek do ubrań – serwis i naprawa suszarek w Przemyślu",
       },
+      website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.naprawa_suszarek + "#webpage",
+        // "@id": appUrls.naprawa_suszarek + "#webpage",
         "url": appUrls.naprawa_suszarek,
         "inLanguage": "pl-PL",
         "name": "Naprawa suszarek Przemyśl – Serwis RTV-AGD ✔️",
@@ -1139,12 +1119,12 @@ export const dataForMetaTags = {
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalny serwis suszarek do ubrań w Przemyślu. Szybka naprawa suszarek kondensacyjnych, z pompą ciepła i elektrycznych. ☎️ 790 258 612",
-        "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
+        // "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_suszarek + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
-        "@id": appUrls.naprawa_suszarek + "#breadcrumb",
+        // "@id": appUrls.naprawa_suszarek + "#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -1165,12 +1145,6 @@ export const dataForMetaTags = {
   },
   naprawa_zmywarek: {
     metaTags: {
-      // title: "Naprawa zmywarek Przemyśl ✔️ Serwis RTV i AGD | Szybka diagnoza i gwarancja",
-      // canonical: appUrls.naprawa_zmywarek,
-      // description: "Profesjonalny serwis i naprawa zmywarek w Przemyślu i okolicach. Szybka diagnostyka, naprawa z dojazdem, gwarancja. Bosch, Electrolux, Beko. ☎ 790 258 612",
-      // type: "article",
-      // keywords: "naprawa zmywarek, serwis zmywarek Przemyśl, naprawa zmywarki Przemyśl, naprawa zmywarki w Przemyślu, naprawa zmywarek Przemyśl, awaria zmywarki",
-      // appleMobileWebAppTitle: `${shortName} - naprawa zmywarek`,
       title: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD ✔️",
       ogTitle: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD ✔️",
       twitterTitle: "Naprawa zmywarek Przemyśl – Serwis RTV-AGD ✔️",
@@ -1190,53 +1164,32 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612 ✔️ | Serwis RTV-AGD",
     },
     schema: {
-      // organization: {
-
-      //   "@type": "Organization",
-      //   "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-      //   "logo": imageUrls.logo,
-      //   "url": appUrls.home,
-      //   "address": address,
-      //   "sameAs": [],
-      // },
+      organization,
+      localBusiness,
       service: {
         "@type": "Service",
-        // "name": "Naprawa Zmywarek - " + serwis.name,  //   "name": "Naprawa Zmywarek",
         "@id": appUrls.naprawa_zmywarek + "#service",
         "name": "Naprawa Zmywarek",
-        "serviceType": "Naprawa zmywarek wszystkich marek",
-
+        "serviceType": "Naprawa zmywarek",
         "description": "Profesjonalna naprawa zmywarek w Przemyślu – serwis u klienta lub w warsztacie, szybki dojazd, oryginalne części i gwarancja. Skontaktuj się i zamów usługę!",
-        // "image": "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
-            "caption": "Pralka przed naprawą"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
-            "caption": "Pralka po naprawie"
-          }
-        ],
-        // "areaServed": {
-        //   "@type": "Place",
-        //   "address": address,
-        // },
-        "areaServed": ["Przemyśl", "Bolestraszyce", "Duńkowiczki", "Krówniki", "Nehrybka", "Orzechowce", "Ostrów", "Pikulice", "Prałkowce", "Wyszatyce", "Żurawica"],
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "klienci indywidualni"
+        "image": imageUrls.zmywarka,
+        "provider": {
+          "@type": "LocalBusiness",
+          "@id": appUrls.home + "#localbusiness"
         },
-        // "provider": {                           // dodane 14.05.2025
-        //   "@type": "LocalBusiness",
-        //   "name": serwis.name,
-        //   "url": appUrls.home,
-        //   "telephone": serwis.phone.formatted,
-        //   "address": address,
-        //   //  "image": "https://naprawaprzemysl.pl/images/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
-        // },
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_zmywarek + "#offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "PLN",
+            "price": "100.00",
+            "priceValidUntil": "2025-12-31"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": { "@id": appUrls.naprawa_zmywarek + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
+        }
       },
       product: {
         "@type": "Product",
@@ -1255,7 +1208,10 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "100.00",
           "url": appUrls.naprawa_zmywarek,
-          "seller": { "@id": appUrls.home + "#localbusiness" }
+          "seller": {
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness"
+          }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -1326,6 +1282,7 @@ export const dataForMetaTags = {
       },
       faqPage: {
         "@type": "FAQPage",
+        "name": "Najczęściej zadawane pytania dotyczące naprawy zmywarek",
         "mainEntity": [
           {
             "@type": "Question",
@@ -1392,13 +1349,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.zmywarka,
         "width": 700,
         "height": 700,
-        "caption": "Naprawa zmywarek do naczyń – serwis i naprawa zmywarek w Przemyślu",
         "name": "Naprawa zmywarek Przemyśl",
-        "description": "Serwisant serwisu naprawia usterkę zmywarki do naczyń"
+        "description": "Serwisant serwisu naprawia usterkę zmywarki do naczyń",
+        "caption": "Naprawa zmywarek do naczyń – serwis i naprawa zmywarek w Przemyślu"
       },
+      website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.naprawa_zmywarek + "#webpage",
+        // "@id": appUrls.naprawa_zmywarek + "#webpage",
         "url": appUrls.naprawa_zmywarek,
         "inLanguage": "pl-PL",
         "name": "Naprawa zmywarek Przemyśl – Serwis RTV-AGD ✔️",
@@ -1408,13 +1366,13 @@ export const dataForMetaTags = {
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalny serwis i naprawa zmywarek do naczyń w Przemyślu. Diagnostyka i usuwanie usterek zmywarek różnych marek. ☎️ 790 258 612",
-        "breadcrumb": { "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
+        // "breadcrumb": { "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_zmywarek + "#product" }
 
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
-        "@id": appUrls.naprawa_zmywarek + "#breadcrumb",
+        // "@id": appUrls.naprawa_zmywarek + "#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -1453,40 +1411,31 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - naprawa ekspresów`,
     },
     schema: {
-      // organization: {
-
-      //   "@type": "Organization",
-      //   "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-      //   "logo": imageUrls.logo,
-      //   "url": appUrls.home,
-      //   "address": address,
-      //   "sameAs": [],
-      // },
+      organization,
+      localBusiness,
       service: {
-
         "@type": "Service",
-        "name": "Naprawa Ekspresów - " + shortName,   //   "name": "Naprawa Ekspresów",
+        "name": "Naprawa Ekspresów",
+        "serviceType": "Naprawa ekspresów",
         "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Szybka pomoc, najnowsze technologie i oryginalne części. Skontaktuj się ze mną już dziś.",
-        "image": "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-naprawa-ekspresu.png",
-        "areaServed": {
-          "@type": "Place",
-          "address": address,
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "itemReviewed": {
-            "@type": "Service",
-            "name": "Naprawa Ekspresów"
-          }
-        },
-        "provider": {                           // dodane 14.05.2025
+        "image": imageUrls.ekspres,
+        "provider": {
           "@type": "LocalBusiness",
-          "name": serwis.name,
-          "url": appUrls.home,
-          "telephone": serwis.phone.formatted,
-          "address": address,
-          //  "image": "https://naprawaprzemysl.pl/images/serwis-ekspresow-przemysl-naprawa-ekspresu.png",
+          "@id": appUrls.home + "#localbusiness"
         },
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_ekspresow + "#offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "PLN",
+            "price": "100.00",
+            "priceValidUntil": "2025-12-31"
+          },
+          "availability": "https://schema.org/InStock",
+          "itemOffered": { "@id": appUrls.naprawa_ekspresow + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
+        }
       },
       product: {
         "@type": "Product",
@@ -1505,7 +1454,10 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "100.00",
           "url": appUrls.naprawa_ekspresow,
-          "seller": { "@id": appUrls.home + "#localbusiness" }
+          "seller": {
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness"
+          }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -1524,6 +1476,7 @@ export const dataForMetaTags = {
       },
       faqPage: {
         "@type": "FAQPage",
+        "name": "Najczęściej zadawane pytania dotyczące naprawy ekspresów",
         "mainEntity": [
           {
             "@type": "Question",
@@ -1581,13 +1534,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.ekspres,
         "width": 700,
         "height": 700,
-        "caption": "Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu",
         "name": "Naprawa ekspresów do kawy Przemyśl",
-        "description": "Serwisant serwisu naprawia ekspres do kawy"
+        "description": "Serwisant serwisu naprawia ekspres do kawy",
+        "caption": "Naprawa ekspresów do kawy – serwis i naprawa ekspresów w Przemyślu",
       },
+      website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.naprawa_ekspresow + "#webpage",
+        // "@id": appUrls.naprawa_ekspresow + "#webpage",
         "url": appUrls.naprawa_ekspresow,
         "inLanguage": "pl-PL",
         "name": "Naprawa ekspresów Przemyśl – Serwis RTV-AGD ✔️",
@@ -1597,12 +1551,12 @@ export const dataForMetaTags = {
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Obsługa ekspresów automatycznych i gastronomicznych, szybka diagnoza, oryginalne części ☎️ 790 258 612",
-        "breadcrumb": { "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
+        // "breadcrumb": { "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_ekspresow + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
-        "@id": appUrls.naprawa_ekspresow + "#breadcrumb",
+        // "@id": appUrls.naprawa_ekspresow + "#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -1640,82 +1594,31 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - naprawa telewizorów`,
     },
     schema: {
-      // organization: {
-
-      //   "@type": "Organization",
-      //   "name": "Naprawa Telewizorów - " + serwis.name,    //   "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-      //   "logo": imageUrls.logo,
-      //   "url": appUrls.home,
-      //   "address": address,
-      //   "sameAs": [],
-      // },
+      organization,
+      localBusiness,
       service: {
-
         "@type": "Service",
-        "name": "Naprawa Telewizorów",    //   "name": "Naprawa Telewizorów",
-        "serviceType": "Naprawa telewizorów wszystkich marek",
-
-        // "description": "Profesjonalna naprawa telewizorów w Przemyślu. Szybka pomoc, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś!",
-        "image": ["https://naprawaprzemysl.pl/images/serwis-telewizorow-przemysl-naprawa-telewizora.png"],
-        "areaServed": {
-          "@type": "Place",
-          "address": address,
-        },
-        // "aggregateRating": {
-        //   "@type": "AggregateRating",
-        //   "itemReviewed": {
-        //     "@type": "Service",
-        //     "name": "Naprawa Telewizorów"
-        //   }
-        // },
+        "name": "Naprawa Telewizorów",
+        "serviceType": "Naprawa telewizorów",
+        "description": "Profesjonalna naprawa telewizorów w Przemyślu. Szybka pomoc, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś!",
+        "image": imageUrls.telewizor,
         "provider": {
           "@type": "LocalBusiness",
-          "@id": "https://naprawaprzemysl.pl/#service",
-          "name": shortName,  // "name": serwis.name,  // "name": "Naprawa Przemyśl",
-          "image": [imageUrls.serwis],  // "image": imageUrls.logo,
-          "telephone": serwis.phone.formatted,
-          "priceRange": "$$",
-          "address": address,
+          "@id": appUrls.home + "#localbusiness"
         },
-        "areaServed": [
-          { "@type": "City", "name": "Przemyśl" },
-          { "@type": "City", "name": "Bolestraszyce" },
-          { "@type": "City", "name": "Duńkowiczki" },
-          { "@type": "City", "name": "Krówniki" },
-          { "@type": "City", "name": "Nehrybka" },
-          { "@type": "City", "name": "Orzechowce" },
-          { "@type": "City", "name": "Ostrów" },
-          { "@type": "City", "name": "Pikulice" },
-          { "@type": "City", "name": "Prałkowce" },
-          { "@type": "City", "name": "Wyszatyce" },
-          { "@type": "City", "name": "Żurawica" }
-        ],
-
-
         "offers": {
           "@type": "Offer",
-          "priceCurrency": "PLN",
+          "@id": appUrls.naprawa_telewizorow + "#offer",
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "price": "od 100",
-            "priceCurrency": "PLN"
+            "priceCurrency": "PLN",
+            "price": "150.00",
+            "priceValidUntil": "2025-12-31"
           },
-          "url": "https://naprawaprzemysl.pl/naprawa-telewizorow"
-        },
-        // "aggregateRating": {
-        //   "@type": "AggregateRating",
-        //   "ratingValue": "4.6",
-        //   "reviewCount": "65"
-        // },
-        // "review": [
-        //   {
-        //     "@type": "Review",
-        //     "author": { "@type": "Person", "name": "egon920" },
-        //     "datePublished": "2025-02-11",
-        //     "reviewBody": "Super fachowiec…",
-        //     "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
-        //   }
-        // ]
+          "availability": "https://schema.org/InStock",
+          "itemOffered": { "@id": appUrls.naprawa_telewizorow + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
+        }
       },
       product: {
         "@type": "Product",
@@ -1734,7 +1637,10 @@ export const dataForMetaTags = {
           "priceCurrency": "PLN",
           "price": "150.00",
           "url": appUrls.naprawa_telewizorow,
-          "seller": { "@id": appUrls.home + "#localbusiness" }
+          "seller": {
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness"
+          }
         },
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -1752,6 +1658,7 @@ export const dataForMetaTags = {
       },
       faqPage: {
         "@type": "FAQPage",
+        "name": "Najczęściej zadawane pytania dotyczące naprawy telewizorów",
         "mainEntity": [
           {
             "@type": "Question",
@@ -1808,13 +1715,14 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.telewizor,
         "width": 700,
         "height": 700,
-        "caption": "Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu",
         "name": "Naprawa telewizorów Przemyśl",
-        "description": "Serwisant naprawia telewizor LED w serwisie RTV"
+        "description": "Serwisant naprawia telewizor LED w serwisie RTV",
+        "caption": "Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu",
       },
+      website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.naprawa_telewizorow + "#webpage",
+        // "@id": appUrls.naprawa_telewizorow + "#webpage",
         "url": appUrls.naprawa_telewizorow,
         "inLanguage": "pl-PL",
         "name": "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️",
@@ -1824,12 +1732,12 @@ export const dataForMetaTags = {
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Dojazd do klienta, szybka diagnoza i gwarancja usunięcia usterki. ☎️ 790 258 612",
-        "breadcrumb": { "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
+        // "breadcrumb": { "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_telewizorow + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
-        "@id": appUrls.naprawa_telewizorow + "#breadcrumb",
+        // "@id": appUrls.naprawa_telewizorow + "#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
