@@ -660,11 +660,9 @@ export const dataForMetaTags = {
             "@type": "PriceSpecification",
             "priceCurrency": "PLN",
             "price": "150.00",
-            "priceValidUntil": "2025-12-31"
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_pralek + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -927,11 +925,9 @@ export const dataForMetaTags = {
             "@type": "PriceSpecification",
             "priceCurrency": "PLN",
             "price": "150.00",
-            "priceValidUntil": "2025-12-31"
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_suszarek + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1184,11 +1180,9 @@ export const dataForMetaTags = {
             "@type": "PriceSpecification",
             "priceCurrency": "PLN",
             "price": "100.00",
-            "priceValidUntil": "2025-12-31"
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_zmywarek + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1430,11 +1424,9 @@ export const dataForMetaTags = {
             "@type": "PriceSpecification",
             "priceCurrency": "PLN",
             "price": "100.00",
-            "priceValidUntil": "2025-12-31"
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_ekspresow + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1613,11 +1605,9 @@ export const dataForMetaTags = {
             "@type": "PriceSpecification",
             "priceCurrency": "PLN",
             "price": "150.00",
-            "priceValidUntil": "2025-12-31"
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_telewizorow + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
