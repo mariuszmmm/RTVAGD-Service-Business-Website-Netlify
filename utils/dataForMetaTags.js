@@ -860,7 +860,7 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalny serwis i naprawa pralek w Przemyślu. Szybka diagnoza i naprawa pralek wszystkich marek. ☎️ 790 258 612",
         // "breadcrumb": { "@id": appUrls.naprawa_pralek + "#breadcrumb" },
-        "mainEntity": { "@id": appUrls.naprawa_pralek + "#product" }
+        // "mainEntity": { "@id": appUrls.naprawa_pralek + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1114,7 +1114,7 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalny serwis suszarek do ubrań w Przemyślu. Szybka naprawa suszarek kondensacyjnych, z pompą ciepła i elektrycznych. ☎️ 790 258 612",
         // "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
-        "mainEntity": { "@id": appUrls.naprawa_suszarek + "#product" }
+        // "mainEntity": { "@id": appUrls.naprawa_suszarek + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1358,7 +1358,7 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalny serwis i naprawa zmywarek do naczyń w Przemyślu. Diagnostyka i usuwanie usterek zmywarek różnych marek. ☎️ 790 258 612",
         // "breadcrumb": { "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
-        "mainEntity": { "@id": appUrls.naprawa_zmywarek + "#product" }
+        // "mainEntity": { "@id": appUrls.naprawa_zmywarek + "#product" }
 
       },
       breadcrumbList: {
@@ -1541,7 +1541,7 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Obsługa ekspresów automatycznych i gastronomicznych, szybka diagnoza, oryginalne części ☎️ 790 258 612",
         // "breadcrumb": { "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
-        "mainEntity": { "@id": appUrls.naprawa_ekspresow + "#product" }
+        // "mainEntity": { "@id": appUrls.naprawa_ekspresow + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1720,7 +1720,7 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Dojazd do klienta, szybka diagnoza i gwarancja usunięcia usterki. ☎️ 790 258 612",
         // "breadcrumb": { "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
-        "mainEntity": { "@id": appUrls.naprawa_telewizorow + "#product" }
+        // "mainEntity": { "@id": appUrls.naprawa_telewizorow + "#product" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
