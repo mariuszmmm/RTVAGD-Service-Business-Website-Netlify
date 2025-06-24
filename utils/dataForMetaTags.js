@@ -644,7 +644,6 @@ export const dataForMetaTags = {
       localBusiness,
       service: {
         "@type": "Service",
-        "@id": appUrls.naprawa_pralek + "#service",
         "name": "Naprawa Pralek",
         "serviceType": "Naprawa pralek",
         "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
@@ -663,6 +662,7 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_pralek + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -909,7 +909,6 @@ export const dataForMetaTags = {
       localBusiness,
       service: {
         "@type": "Service",
-        "@id": appUrls.naprawa_suszarek + "#service",
         "name": "Naprawa suszarek",
         "serviceType": "Naprawa suszarek",
         "description": "Profesjonalna naprawa suszarek wszystkich marek w Przemyślu i okolicach",
@@ -928,6 +927,7 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_suszarek + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1164,7 +1164,6 @@ export const dataForMetaTags = {
       localBusiness,
       service: {
         "@type": "Service",
-        "@id": appUrls.naprawa_zmywarek + "#service",
         "name": "Naprawa Zmywarek",
         "serviceType": "Naprawa zmywarek",
         "description": "Profesjonalna naprawa zmywarek w Przemyślu – serwis u klienta lub w warsztacie, szybki dojazd, oryginalne części i gwarancja. Skontaktuj się i zamów usługę!",
@@ -1183,6 +1182,8 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_zmywarek + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
+
         }
       },
       product: {
@@ -1427,6 +1428,7 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_ekspresow + "#service" },
+          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1609,7 +1611,6 @@ export const dataForMetaTags = {
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_telewizorow + "#service" },
           "provider": { "@id": appUrls.home + "#localbusiness" }
-
         }
       },
       product: {
