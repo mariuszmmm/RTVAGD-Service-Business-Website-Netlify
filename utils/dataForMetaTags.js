@@ -280,9 +280,9 @@ export const dataForMetaTags = {
       title: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów", // policz znaki:
       ogTitle: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów",
       twitterTitle: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów",
-      description: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. Szybki serwis z dojazdem do klienta. ☎️ 790 258 612", // policz znaki: // 160
-      ogDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. Szybki serwis z dojazdem do klienta. ☎️ 790 258 612",
-      twitterDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. Szybki serwis z dojazdem do klienta. ☎️ 790 258 612",
+      description: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612", // policz znaki: // 160
+      ogDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
+      twitterDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
       imageAlt: "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
       imageWidth: "931",
       imageHeight: "497",
@@ -467,7 +467,7 @@ export const dataForMetaTags = {
         "thumbnailUrl": imageUrls.serwis,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. Szybki serwis z dojazdem do klienta. ☎️ 790 258 612",
+        "description": "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
         "breadcrumb": { "@id": appUrls.home + "#breadcrumb" },
       },
       imageObject: {
