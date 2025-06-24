@@ -662,7 +662,6 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_pralek + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -927,7 +926,6 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_suszarek + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1182,8 +1180,6 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_zmywarek + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
-
         }
       },
       product: {
@@ -1428,7 +1424,6 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_ekspresow + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
@@ -1610,7 +1605,6 @@ export const dataForMetaTags = {
           },
           "availability": "https://schema.org/InStock",
           "itemOffered": { "@id": appUrls.naprawa_telewizorow + "#service" },
-          "provider": { "@id": appUrls.home + "#localbusiness" }
         }
       },
       product: {
