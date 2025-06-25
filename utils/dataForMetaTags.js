@@ -1,9 +1,12 @@
 import { serwis } from './serwis';
 import { appUrls, baseUrl, imageUrls } from './urls';
+import { routes } from '../public/scripts/generate-sitemap.js';
 
 const datePublished = new Date("2024-07-03").toISOString();
 const date = new Date().toISOString().slice(0, 10);
 const dateModified = process.env.NEXT_PUBLIC_BUILD_DATE || new Date(date).toISOString();
+
+console.log("routes", routes)
 
 // const test = "Naprawa suszarek ✔️ Serwis Przemyśl ☎️ 790 258 612 | naprawaprzemysl.pl";
 

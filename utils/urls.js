@@ -61,4 +61,16 @@ export const appUrls = {
   naprawa_telewizorow: baseUrl + "/naprawa-telewizorow/",
 };
 
+// export const routes = {
+//   home: "/",
+//   kontakt: "/kontakt/",
+//   o_mnie: "/o-mnie/",
+//   opinie: "/opinie/",
+//   naprawa_pralek: "/naprawa-pralek/",
+//   naprawa_suszarek: "/naprawa-suszarek/",
+//   naprawa_zmywarek: "/naprawa-zmywarek/",
+//   naprawa_ekspresow: "/naprawa-ekspresow/",
+//   naprawa_telewizorow: "/naprawa-telewizorow/",
+// };
+
 export const dataUrl = baseUrl ? `${baseUrl}/data.json` : "http://localhost:3000/data.json";

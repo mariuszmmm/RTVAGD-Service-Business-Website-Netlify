@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "";
 const routes = {
@@ -101,7 +101,7 @@ try {
   console.error('❌ Błąd podczas zapisu pliku:', err);
 }
 
-exports = {
+export {
   sitemap,
   outputPath,
   BASE_URL,
