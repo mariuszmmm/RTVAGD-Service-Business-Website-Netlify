@@ -1,4 +1,4 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "";
 
 export const cloudinaryImageUrls = {
   serwis: "https://res.cloudinary.com/difc0i71u/image/upload/v1731168333/Serwis/serwis.webp",
