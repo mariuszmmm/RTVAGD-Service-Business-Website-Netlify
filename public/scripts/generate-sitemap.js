@@ -100,3 +100,10 @@ try {
 } catch (err) {
   console.error('❌ Błąd podczas zapisu pliku:', err);
 }
+
+exports = {
+  sitemap,
+  outputPath,
+  BASE_URL,
+  routes
+};
