@@ -1,4 +1,3 @@
-const { ro } = require('date-fns/locale');
 const fs = require('fs');
 const path = require('path');
 const { routes, BASE_URL } = require('../../utils/routes');

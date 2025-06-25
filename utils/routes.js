@@ -46,8 +46,7 @@ export const routes = {
   '/o-mnie/': {
     changefreq: 'weekly',
     priority: '0.5',
-  },
-  '/opinie/': {
+  }, '/opinie/': {
     changefreq: 'weekly',
     priority: '0.5',
   },
@@ -56,3 +55,5 @@ export const routes = {
     priority: '0.5',
   },
 }
+
+module.exports = { routes, BASE_URL };
