@@ -1,7 +1,7 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "";
+const BASE_URL = 'https://naprawaprzemysl.pl';
 const routes = {
   '/': {
     changefreq: 'daily',
@@ -100,10 +100,3 @@ try {
 } catch (err) {
   console.error('❌ Błąd podczas zapisu pliku:', err);
 }
-
-export {
-  sitemap,
-  outputPath,
-  BASE_URL,
-  routes
-};
