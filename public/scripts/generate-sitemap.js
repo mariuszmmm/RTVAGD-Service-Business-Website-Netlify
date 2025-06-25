@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://naprawaprzemysl.pl';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "";
 const routes = {
   '/': {
     changefreq: 'daily',
