@@ -13,39 +13,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>O mnie - profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
-      <image:title>O mnie - Serwis RTV-AGD</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>Opinie klientów o serwisie RTV-AGD w Przemyślu</image:caption>
-      <image:title>Opinie - Serwis RTV-AGD</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-    <image:image>
-      <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>Kontakt - profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
-      <image:title>Kontakt - Serwis RTV-AGD</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>daily</changefreq>
@@ -99,5 +66,26 @@
       <image:caption>Naprawa telewizorów w Przemyślu</image:caption>
       <image:title>Serwis telewizorów</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
+    <lastmod>2025-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/opinie/</loc>
+    <lastmod>2025-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://naprawaprzemysl.pl/kontakt/</loc>
+    <lastmod>2025-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
   </url>
 </urlset>
