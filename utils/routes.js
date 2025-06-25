@@ -1,6 +1,6 @@
-export const BASE_URL = 'https://naprawaprzemysl.pl';
+const BASE_URL = 'https://naprawaprzemysl.pl';
 
-export const routes = {
+const routes = {
   '/': {
     changefreq: 'daily',
     priority: '1.0',
