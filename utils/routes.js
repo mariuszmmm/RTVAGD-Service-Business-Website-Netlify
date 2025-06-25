@@ -1,4 +1,4 @@
-const { imageUrls } = require("./urls");
+import imageUrls from './urls';
 
 const BASE_URL = 'https://naprawaprzemysl.pl';
 
