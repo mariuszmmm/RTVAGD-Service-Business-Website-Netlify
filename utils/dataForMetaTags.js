@@ -272,6 +272,7 @@ export const dataForMetaTags = {
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
+        "type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
@@ -623,6 +624,7 @@ export const dataForMetaTags = {
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
+"type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
@@ -876,6 +878,7 @@ export const dataForMetaTags = {
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
+"type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
@@ -1119,6 +1122,7 @@ export const dataForMetaTags = {
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
+"type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
@@ -1352,6 +1356,7 @@ export const dataForMetaTags = {
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
+"type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
@@ -1522,6 +1527,7 @@ export const dataForMetaTags = {
           "name": "Serwis_RTV-AGD"
         },
         "offers": {
+"type": "Offer",
           "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
