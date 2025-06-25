@@ -1,3 +1,5 @@
+const { imageUrls } = require("./urls");
+
 const BASE_URL = 'https://naprawaprzemysl.pl';
 
 const routes = {
@@ -11,7 +13,7 @@ const routes = {
   '/naprawa-pralek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-pralek-przemysl-serwis-1.webp`,
+    image: imageUrls.pralka,
     caption: 'Naprawa pralek automatycznych w Przemyślu',
     title: 'Serwis pralek automatycznych'
   },
