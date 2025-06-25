@@ -1,6 +1,13 @@
 {
   "reviews": [
     {
+      "author_name": "piotrek zych",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLW8bduEpygNEvP8Qnz7uN9d3ogvYJgKlghKiq6OHiVUlBtUA=s128-c0x00000000-cc-rp-mo",
+      "text": "Polecam , gość profesjonalnie podszedł do usterki. Szybko i sprawnie🙂",
+      "rating": 5,
+      "time": 1750254031
+    },
+    {
       "author_name": "Mariusz Cieśla",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKfwSGWEC62zGRP-GUu_ecDVZB-Yxra6UWt-izLuOx0j2sxLw=s128-c0x00000000-cc-rp-mo-ba4",
       "text": "Płyta indukcyjna naprawiona w szybkim czasie. Trafna diagnoza i niski koszt. Jeśli coś nam się zepsuje na pewno wrócę.",
@@ -13,13 +20,6 @@
       "text": "Bardzo szybko, sprawnie, profesjonalnie i na plus bo pralka działa 😁",
       "rating": 5,
       "time": 1749464784
-    },
-    {
-      "author_name": "Magdalena M.",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVlIxXza8blpWCFVVAytoXTq4TbdMLHTIfhT3gFuDtJbTxW1FoPTg=s128-c0x00000000-cc-rp-mo",
-      "text": "Korzystam z usług Pana Piotra od lat. Polecam za rzetelność, szybkość i jakość.",
-      "rating": 5,
-      "time": 1748949998
     },
     {
       "author_name": "Meggie",
@@ -38,5 +38,5 @@
   ],
   "rating": 4.6,
   "user_ratings_total": 73,
-  "update_time": "2025-06-24 12:10:08"
+  "update_time": "2025-06-25 00:25:43"
 }
