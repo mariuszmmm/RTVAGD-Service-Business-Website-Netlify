@@ -1,4 +1,4 @@
-import imageUrls from './urls';
+import { imageUrls } from './urls';
 
 const BASE_URL = 'https://naprawaprzemysl.pl';
 
