@@ -1,77 +1,83 @@
+const { ro } = require('date-fns/locale');
 const fs = require('fs');
 const path = require('path');
 
 const BASE_URL = 'https://naprawaprzemysl.pl';
 const routes = {
   '/': {
+    changefreq: 'daily',
     priority: '1.0',
     image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
     caption: 'Profesjonalny serwis RTV-AGD w Przemyślu',
     title: 'Serwis RTV-AGD'
   },
-  '/o-mnie/': {
-    priority: '0.5',
-    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
-    caption: 'O mnie - profesjonalny serwis RTV-AGD w Przemyślu',
-    title: 'O mnie - Serwis RTV-AGD'
-  },
-  '/opinie/': {
-    priority: '0.5',
-    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
-    caption: 'Opinie klientów o serwisie RTV-AGD w Przemyślu',
-    title: 'Opinie - Serwis RTV-AGD'
-  },
-  '/kontakt/': {
-    priority: '0.5',
-    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
-    caption: 'Kontakt - profesjonalny serwis RTV-AGD w Przemyślu',
-    title: 'Kontakt - Serwis RTV-AGD'
-  },
   '/naprawa-pralek/': {
+    changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-pralek-przemysl-serwis-1.webp`,
     caption: 'Naprawa pralek automatycznych w Przemyślu',
     title: 'Serwis pralek automatycznych'
   },
   '/naprawa-suszarek/': {
+    changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-suszarek-przemysl-serwis-2.webp`,
     caption: 'Naprawa suszarek do ubrań w Przemyślu',
     title: 'Serwis suszarek'
   },
   '/naprawa-zmywarek/': {
+    changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-zmywarek-przemysl-serwis-1.webp`,
     caption: 'Naprawa zmywarek do naczyń w Przemyślu',
     title: 'Serwis zmywarek'
   },
   '/naprawa-ekspresow/': {
+    changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-ekspresow-przemysl-serwis-1.webp`,
     caption: 'Naprawa ekspresów do kawy w Przemyślu',
     title: 'Serwis ekspresów do kawy'
   },
   '/naprawa-telewizorow/': {
+    changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-telewizorow-przemysl-serwis-1.webp`,
     caption: 'Naprawa telewizorów w Przemyślu',
     title: 'Serwis telewizorów'
   },
+  '/o-mnie/': {
+    changefreq: 'weekly',
+    priority: '0.5',
+  },
+  '/opinie/': {
+    changefreq: 'weekly',
+    priority: '0.5',
+  },
+  '/kontakt/': {
+    changefreq: 'monthly',
+    priority: '0.5',
+  },
 }
 
 const urlsXml = Object.entries(routes)
   .map(([route]) => {
+    const data = routes[route];
     return [
       `  <url>`,
       `    <loc>${BASE_URL}${route}</loc>`,
       `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>`,
-      `    <changefreq>daily</changefreq>`,
-      `    <priority>${routes[route].priority || '0.8'}</priority>`,
-      `    <image:image>`,
-      `      <image:loc>${routes[route].image}</image:loc>`,
-      `      <image:caption>${routes[route].caption}</image:caption>`,
-      `      <image:title>${routes[route].title}</image:title>`,
-      `    </image:image>`,
+      `    <changefreq>${data.changefreq || 'daily'}</changefreq>`,
+      `    <priority>${data.priority || '0.8'}</priority>`,
+      data.image && data.caption && data.title
+        ? [
+          `    <image:image>`,
+          `      <image:loc>${data.image}</image:loc>`,
+          `      <image:caption>${data.caption}</image:caption>`,
+          `      <image:title>${data.title}</image:title>`,
+          `    </image:image>`
+        ].join('\n')
+        : '',
       `  </url>`
     ].join('\n');;
   })
