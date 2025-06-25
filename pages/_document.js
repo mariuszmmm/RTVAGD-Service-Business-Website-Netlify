@@ -28,8 +28,9 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
-
   render() {
+    const isDevelopment = process.env.NODE_ENV === 'development';
+    
     return (
       <Html lang='pl'>
         <Head>
@@ -54,39 +55,40 @@ export default class MyDocument extends Document {
           <meta key="robots" name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
           <meta key="fb:app_id" property="fb:app_id" content="100063811592941" />
           <meta key="Content-Language" httpEquiv="Content-Language" content="pl" />
-          <meta key="theme-color" name="theme-color" content="#141111" />
-
-          {/* Security headers */}
+          <meta key="theme-color" name="theme-color" content="#141111" />          {/* Security headers */}
           <meta key="X-Content-Type-Options" httpEquiv="X-Content-Type-Options" content="nosniff" />
           <meta key="Referrer-Policy" httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
-          {/* GTM Script */}
-          <Script
-            id="gtm-script"
-            dangerouslySetInnerHTML={{
-              __html: `
-                (function(w,d,s,l,i){
-                  w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-                  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                  j.async=true;
-                  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                  f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-P52JLLB7');
-              `,
-            }}
-            strategy="afterInteractive"
-          />
-        </Head>
+          {/* GTM Script - tylko w produkcji */}
+          {!isDevelopment && (
+            <Script
+              id="gtm-script"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  (function(w,d,s,l,i){
+                    w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+                    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                    j.async=true;
+                    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                    f.parentNode.insertBefore(j,f);
+                  })(window,document,'script','dataLayer','GTM-P52JLLB7');
+                `,
+              }}
+              strategy="afterInteractive"
+            />
+          )}        </Head>
         <body>
-          {/* GTM NoScript */}
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-P52JLLB7"
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
-            ></iframe>
-          </noscript>
+          {/* GTM NoScript - tylko w produkcji */}
+          {!isDevelopment && (
+            <noscript>
+              <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-P52JLLB7"
+                height="0"
+                width="0"
+                style={{ display: 'none', visibility: 'hidden' }}
+              ></iframe>
+            </noscript>
+          )}
           <Main />
           <NextScript />
         </body>
