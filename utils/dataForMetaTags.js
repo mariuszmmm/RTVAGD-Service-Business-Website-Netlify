@@ -266,7 +266,7 @@ export const dataForMetaTags = {
         "@id": appUrls.home + "#product",
         "name": "Usługa naprawy sprzętu RTV-AGD w Przemyślu",
         "description": "Diagnostyka i naprawa sprzętu RTV-AGD w Przemyślu, z zachowaniem najwyższej staranności.",
-        "image": imageUrls.serwis,
+        "image": { "@id": appUrls.home + "#primaryimage", },
         "brand": {
           "@type": "Brand",
           "name": "Serwis_RTV-AGD"
@@ -440,10 +440,9 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.serwis,
         "width": 931,
         "height": 497,
-        "caption": "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
-
         "name": "Serwis RTV-AGD Przemyśl",
         "description": "Warsztat serwisowy RTV i AGD w Przemyślu z technikiem przy naprawie urządzenia",
+        "caption": "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
