@@ -1,6 +1,63 @@
 const fs = require('fs');
 const path = require('path');
-const { routes } = require('../../utils/urls');
+
+const BASE_URL = 'https://naprawaprzemysl.pl';
+const routes = {
+  '/': {
+    priority: '1.0',
+    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
+    caption: 'Profesjonalny serwis RTV-AGD w Przemyślu',
+    title: 'Serwis RTV-AGD'
+  },
+  '/o-mnie/': {
+    priority: '0.5',
+    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
+    caption: 'O mnie - profesjonalny serwis RTV-AGD w Przemyślu',
+    title: 'O mnie - Serwis RTV-AGD'
+  },
+  '/opinie/': {
+    priority: '0.5',
+    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
+    caption: 'Opinie klientów o serwisie RTV-AGD w Przemyślu',
+    title: 'Opinie - Serwis RTV-AGD'
+  },
+  '/kontakt/': {
+    priority: '0.5',
+    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
+    caption: 'Kontakt - profesjonalny serwis RTV-AGD w Przemyślu',
+    title: 'Kontakt - Serwis RTV-AGD'
+  },
+  '/naprawa-pralek/': {
+    priority: '0.9',
+    image: `${BASE_URL}/images/naprawa-pralek-przemysl-serwis-1.webp`,
+    caption: 'Naprawa pralek automatycznych w Przemyślu',
+    title: 'Serwis pralek automatycznych'
+  },
+  '/naprawa-suszarek/': {
+    priority: '0.9',
+    image: `${BASE_URL}/images/naprawa-suszarek-przemysl-serwis-2.webp`,
+    caption: 'Naprawa suszarek do ubrań w Przemyślu',
+    title: 'Serwis suszarek'
+  },
+  '/naprawa-zmywarek/': {
+    priority: '0.9',
+    image: `${BASE_URL}/images/naprawa-zmywarek-przemysl-serwis-1.webp`,
+    caption: 'Naprawa zmywarek do naczyń w Przemyślu',
+    title: 'Serwis zmywarek'
+  },
+  '/naprawa-ekspresow/': {
+    priority: '0.9',
+    image: `${BASE_URL}/images/naprawa-ekspresow-przemysl-serwis-1.webp`,
+    caption: 'Naprawa ekspresów do kawy w Przemyślu',
+    title: 'Serwis ekspresów do kawy'
+  },
+  '/naprawa-telewizorow/': {
+    priority: '0.9',
+    image: `${BASE_URL}/images/naprawa-telewizorow-przemysl-serwis-1.webp`,
+    caption: 'Naprawa telewizorów w Przemyślu',
+    title: 'Serwis telewizorów'
+  },
+}
 
 const urlsXml = Object.entries(routes)
   .map(([route]) => {
