@@ -255,13 +255,13 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów - Serwis_RTV-AGD", // policz znaki:
-      ogTitle: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów - Serwis_RTV-AGD",
-      twitterTitle: "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów - Serwis_RTV-AGD",
+      title: "Serwis RTV-AGD Przemyśl – Naprawa pralek, suszarek, zmywarek", // policz znaki:
+      ogTitle: "Serwis RTV-AGD Przemyśl – Naprawa pralek, suszarek, zmywarek",
+      twitterTitle: "Serwis RTV-AGD Przemyśl – Naprawa pralek, suszarek, zmywarek",
       description: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612", // policz znaki: // 160
       ogDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
       twitterDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
-      imageAlt: "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
+      imageAlt: "Serwis RTV i AGD w Przemyślu",
       imageWidth: "931",
       imageHeight: "497",
       imageType: "image/webp",
@@ -439,7 +439,7 @@ export const dataForMetaTags = {
         "@id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": "Serwis RTV-AGD Przemyśl – Naprawa pralek, zmywarek, telewizorów - Serwis_RTV-AGD",
+        "name": "Serwis RTV-AGD Przemyśl – Naprawa pralek, suszarek, zmywarek",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@id": appUrls.home + "#primaryimage" },
         "image": { "@id": appUrls.home + "#primaryimage" },
@@ -467,7 +467,7 @@ export const dataForMetaTags = {
         "height": 497,
         "name": "Serwis RTV-AGD Przemyśl",
         "description": "Warsztat serwisowy RTV i AGD w Przemyślu z technikiem przy naprawie urządzenia",
-        "caption": "Technik serwisu AGD i RTV przy pracy nad urządzeniem",
+        "caption": "Serwis RTV i AGD w Przemyślu",
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1595,9 +1595,9 @@ export const dataForMetaTags = {
   },
   naprawa_telewizorow: {
     metaTags: {
-      title: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD Przemyśl",
-      ogTitle: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD Przemyśl",
-      twitterTitle: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD Przemyśl",
+      title: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD",
+      ogTitle: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD",
+      twitterTitle: "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD",
       description: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Dojazd do klienta, szybka diagnoza i gwarancja usunięcia usterki. ☎️ 790 258 612",
       ogDescription: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Dojazd do klienta, szybka diagnoza i gwarancja usunięcia usterki. ☎️ 790 258 612",
       twitterDescription: "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu. Dojazd do klienta, szybka diagnoza i gwarancja usunięcia usterki. ☎️ 790 258 612",
@@ -1732,7 +1732,7 @@ export const dataForMetaTags = {
         "@id": appUrls.naprawa_telewizorow + "#webpage",
         "url": appUrls.naprawa_telewizorow,
         "inLanguage": "pl-PL",
-        "name": "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD Przemyśl",
+        "name": "Naprawa telewizorów Przemyśl – Serwis RTV-AGD ✔️ | Serwis_RTV-AGD",
         "isPartOf": { "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "image": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
