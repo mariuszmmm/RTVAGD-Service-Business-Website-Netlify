@@ -45,15 +45,14 @@ const Header = ({ rating }) => {
       itemType="https://schema.org/WPHeader"
     >
       <HeaderContainer>
-        <Logo
-          href={appUrls.home}
-          itemProp="alternateName">
+        <Logo href={appUrls.home}>
           {` ${serwis.shortName} `}
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
               alt="Przemyśl"
               fill
+              itemProp="image"
             />
           </Emoticon>
         </Logo>
