@@ -52,7 +52,7 @@ const Header = ({ rating }) => {
               src={imageUrls.logo}
               alt="Przemyśl"
               fill
-              itemprop="logo"
+              itemProp="logo"
             />
           </Emoticon>
         </Logo>

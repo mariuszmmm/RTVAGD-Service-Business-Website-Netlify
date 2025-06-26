@@ -29,6 +29,7 @@ const Footer = () => (
           href={serwis.url.mapaGoogle}
           rel="nofollow"
           title="adres"
+          itemProp="address"
         >
           <LocationIcon />
           <FooterText>ul. {serwis.adres} </FooterText>
@@ -37,6 +38,7 @@ const Footer = () => (
           $area="telefon"
           href={`tel:${serwis.phone.number}`}
           title="Telefon"
+          itemProp="telephone"
         >
           <PhoneIcon />
           <FooterText>{serwis.phone.formatted} </FooterText>
@@ -45,6 +47,7 @@ const Footer = () => (
           $area="email"
           href={`mailto:${serwis.email}`}
           title="E-mail"
+          itemProp="email"
         >
           <EmailIcon />
           <FooterText>{serwis.email} </FooterText>
@@ -54,6 +57,7 @@ const Footer = () => (
           href={serwis.url.facebook}
           rel="nofollow"
           title="Facebook"
+          itemProp="sameAs"
         >
           <FacebookIcon />
           <FooterText>Facebook</FooterText>
@@ -71,6 +75,7 @@ const Footer = () => (
           href={serwis.url.google}
           rel="nofollow"
           title="Google"
+          itemProp="sameAs"
         >
           <GoogleIcon />
           <FooterText>Google</FooterText>
