@@ -85,8 +85,15 @@ export const localBusiness = {
   "telephone": serwis.phone.formatted,
   "email": serwis.email,
   "url": appUrls.home,
-  "address": address,
+  address,
+
   "geo": geo,
+  "logo": imageUrls.logo,
+  "sameAs": [
+    serwis.url.facebook,
+    serwis.url.mapaGoogle
+  ],
+
   "areaServed": [
     { "@type": "Place", "name": "Przemyśl" },
     { "@type": "Place", "name": "Bolestraszyce" },
@@ -267,7 +274,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: serwis.shortName + " w Przemyślu ☎️ 790 258 612",
     },
     schema: {
-      organization,
+      // organization,
       localBusiness,
 
       product: {
@@ -641,7 +648,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: "Naprawa pralek w Przemyślu ☎️ 790 258 612 – " + serwis.shortName,
     },
     schema: {
-      organization,
+      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -910,7 +917,7 @@ export const dataForMetaTags = {
 
     },
     schema: {
-      organization,
+      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1169,7 +1176,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: "Naprawa zmywarek w Przemyślu ☎️ 790 258 612 ✔️ | Serwis RTV-AGD",
     },
     schema: {
-      organization,
+      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1419,7 +1426,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - naprawa ekspresów`,
     },
     schema: {
-      organization,
+      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1607,7 +1614,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - naprawa telewizorów`,
     },
     schema: {
-      organization,
+      // organization,
       localBusiness,
       service: {
         "@type": "Service",
