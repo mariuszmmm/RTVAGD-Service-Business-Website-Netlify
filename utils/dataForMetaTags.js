@@ -261,7 +261,7 @@ export const dataForMetaTags = {
       description: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612", // policz znaki: // 160
       ogDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
       twitterDescription: "Profesjonalny serwis RTV i AGD w Przemyślu. Naprawiamy pralki, zmywarki, suszarki, telewizory oraz ekspresy do kawy. ☎️ 790 258 612",
-      imageAlt: "Serwis RTV i AGD w Przemyślu",
+      imageAlt: "Profesjonalny serwis RTV-AGD w Przemyślu",
       imageWidth: "931",
       imageHeight: "497",
       imageType: "image/webp",
@@ -467,7 +467,7 @@ export const dataForMetaTags = {
         "height": 497,
         "name": "Serwis RTV-AGD Przemyśl",
         "description": "Warsztat serwisowy RTV i AGD w Przemyślu z technikiem przy naprawie urządzenia",
-        "caption": "Serwis RTV i AGD w Przemyślu",
+        "caption": "Profesjonalny serwis RTV-AGD w Przemyślu",
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
