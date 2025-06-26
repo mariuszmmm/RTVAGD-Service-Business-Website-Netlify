@@ -17,7 +17,10 @@ import { SubTitle } from "../common/SubTitle";
 import { appUrls } from "../../utils/urls";
 
 const Footer = () => (
-  <FooterWrapper>
+  <FooterWrapper
+    itemScope
+    itemType="https://schema.org/WPFooter"
+  >
     <FooterContainer>
       <SubTitle>{serwis.shortName} Przemyśl</SubTitle>
       <FooterInfo>

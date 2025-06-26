@@ -25,3 +25,4 @@ node_modules
 .next
 out
 test.html
+test.js

@@ -260,7 +260,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
                 ...imageObject
-              })
+              })  
             }}
           /> */}
           <script type="application/ld+json"
