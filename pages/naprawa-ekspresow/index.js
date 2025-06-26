@@ -126,10 +126,10 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
             <li>
               <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
             </li>
-            {/* <li>
+            <li>
               <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
             </li>
-            <li>
+            {/* <li>
               <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
             </li> */}
           </StyledText >

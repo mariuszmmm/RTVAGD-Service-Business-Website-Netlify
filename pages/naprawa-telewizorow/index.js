@@ -30,7 +30,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa telewizorów w Przemyślu 🖥️</Title>
+        <Title>Naprawa telewizorów w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -124,16 +124,16 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
-            {/* <li>
+            <li>
               <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
-            </li> */}
+            </li>
             <li>
               <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
             </li>
             {/* <li>
               <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
             </li> */}
           </StyledText >

@@ -118,7 +118,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
           </StyledText>
         </Section>
 
-        {/* <Section>
+        <Section>
           <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
             <li>
@@ -127,14 +127,14 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
             <li>
               <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
             </li>
-            <li>
+            {/* <li>
               <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
-            </li>
+            </li> */}
           </StyledText >
-        </Section> */}
+        </Section>
 
       </Container>
     </>

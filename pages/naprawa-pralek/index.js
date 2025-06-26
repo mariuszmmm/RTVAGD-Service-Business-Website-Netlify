@@ -128,13 +128,13 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             </li>
             {/* <li>
               <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
-            </li>
+            </li> */}
+            {/* <li>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li> */}
             <li>
               <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
             </li>
-            <li>
-              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
-            </li> */}
           </StyledText >
         </Section>
 

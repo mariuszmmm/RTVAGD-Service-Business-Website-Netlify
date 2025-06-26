@@ -128,10 +128,10 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             </li>
             {/* <li>
               <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
-            </li>
+            </li> */}
             <li>
               <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
-            </li> */}
+            </li>
           </StyledText >
         </Section>
 
