@@ -18,6 +18,7 @@ import { useRouter } from 'next/router';
 import { appUrls } from '../../utils/urls';
 import { StyledText } from '../../components/common/Text/styled';
 import { getData } from '../../utils/getData';
+import { Break } from '../../components/Break';
 
 const Home = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -94,7 +95,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Naprawa RTV i AGD Przemyśl -<br /> Profesjonalny Serwis Pralek, Zmywarek,<br /> Suszarek, Telewizorów i Ekspresów
+            Naprawa RTV i AGD Przemyśl -<Break /> Profesjonalny Serwis Pralek, Zmywarek,<Break /> Suszarek, Telewizorów i Ekspresów
           </HeroTitle>
           <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
           <ButtonLink
