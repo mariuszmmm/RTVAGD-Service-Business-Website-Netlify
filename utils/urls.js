@@ -41,7 +41,7 @@ export const imageUrls = {
   pralka: baseUrl + "/images/naprawa-pralek-przemysl-serwis-1.webp",
   _pralka: baseUrl + "/images/pralka.webp",
   pralka_300: baseUrl + "/images/naprawa-pralek-przemysl-serwis-300.webp",
-  suszarka: baseUrl + "/images/naprawa-suszarek-przemysl-serwis-1.webp",
+  suszarka: baseUrl + "/images/naprawa-suszarek-przemysl-serwis-2.webp",
   _suszarka: baseUrl + "/images/suszarka.webp",
   suszarka_300: baseUrl + "/images/serwis-suszarek-przemysl-naprawa-suszarki_300.webp",
   logoGoogle: baseUrl + "/images/logoGoogle.webp",
