@@ -51,9 +51,9 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Profesjonalna naprawa ekspresów wszystkich marek</SubTitle>
+          <SubTitle>Naprawa ekspresów Przemyśl – Profesjonalny serwis wszystkich marek</SubTitle>
           <StyledText>
-            Awaria ekspresu do kawy może skutecznie zepsuć poranek lub uniemożliwić sprawne działanie kawiarni. Oferuję kompleksowe usługi naprawcze, które pozwolą Ci ponownie cieszyć się aromatyczną kawą. Specjalizuję się zarówno w naprawach domowych ekspresów automatycznych, jak i profesjonalnych urządzeń stosowanych w gastronomii.
+            Poranek bez ulubionej kawy? A może awaria ekspresu paraliżuje pracę w Twojej kawiarni? Doskonale rozumiem ten problem. Oferuję profesjonalny serwis i naprawę ekspresów w Przemyślu, by szybko przywrócić Twoje urządzenie do życia. Niezależnie od tego, czy posiadasz domowy ekspres automatyczny, czy profesjonalną maszynę gastronomiczną, podejdę do problemu z pełnym zaangażowaniem. Jeśli szukasz fachowca, dla którego naprawa ekspresów w Przemyślu to codzienność, dobrze trafiłeś. Skontaktuj się, a ja zajmę się resztą!
           </StyledText>
         </Section>
 
@@ -69,7 +69,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać ten serwis ekspresów?</SubTitle>
+          <SubTitle>Dlaczego warto wybrać mój serwis ekspresów w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka diagnoza</strong>: precyzyjnie określam źródło awarii, by ograniczyć czas przestoju ekspresu.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: praca z różnymi modelami i markami ekspresów – od urządzeń kompaktowych po profesjonalne maszyny gastronomiczne.</li>
@@ -79,7 +79,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Proces naprawy ekspresu do kawy</SubTitle>
+          <SubTitle>Jak przebiega naprawa ekspresu do kawy? Krok po kroku</SubTitle>
           <StyledText as="ol" >
             <li><strong>Konsultacja i wstępne ustalenie</strong>: opis problemu (objawy, model), wstępne wskazówki co do możliwych przyczyn i terminu wizyty.</li>
             <li><strong>Diagnostyka</strong>: dokładna kontrola układu hydraulicznego, ciśnieniowego i elektronicznego; odczyt kodów błędów, testy funkcjonalne.</li>

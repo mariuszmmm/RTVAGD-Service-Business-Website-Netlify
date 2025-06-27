@@ -38,19 +38,19 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               src={imageUrls.pralka}
               title="Naprawa pralek Przemyśl"
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              loading='lazy'
+              loading='eager'
               fill
-              // srcSet={`${imageUrls.pralka_300} 500w,
-              // ${imageUrls.pralka} 1000w`}
-              sizes="(max-width: 500px) 500px, 1000px"
+            // srcSet={`${imageUrls.pralka_300} 500w,
+            // ${imageUrls.pralka} 1000w`}
+            // sizes="(max-width: 500px) 500px, 1000px"
             />
           </StyledPhoto>
         </Section>
 
         <Section>
-          <SubTitle>Kompleksowa diagnostyka i usunięcie awarii pralki</SubTitle>
+          <SubTitle>Naprawa pralek Przemyśl – Kompleksowa diagnostyka i usunięcie awarii</SubTitle>
           <StyledText>
-            Awaria pralki potrafi zaburzyć rytm domowych obowiązków. Oferuję w Przemyślu i okolicach rzetelną analizę problemu oraz naprawę pralki – z dbałością o trwały efekt. Korzystam z profesjonalnych narzędzi diagnostycznych i sprawdzonych części zamiennych, a każde zlecenie traktuję indywidualnie, zwracając uwagę na specyfikę modelu i potrzeby Klienta.
+            Zepsuta pralka to nie koniec świata, ale na pewno spore zamieszanie w codziennym życiu. Doskonale to rozumiem, dlatego oferuję szybką i skuteczną naprawę pralek na terenie Przemyśla i okolic. Niezależnie od tego, czy Twoja pralka hałasuje, cieknie, czy po prostu odmówiła posłuszeństwa – jestem tu, by pomóc. Podchodzę do każdej naprawy indywidualnie, używając profesjonalnego sprzętu i sprawdzonych części. Moim celem jest nie tylko usunięcie usterki, ale zapewnienie, że Twoja pralka będzie działać jak nowa. Jeśli szukasz fachowca, dla którego naprawa pralek w Przemyślu to chleb powszedni, dobrze trafiłeś!
           </StyledText>
         </Section>
 
@@ -67,7 +67,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto skorzystać z tego serwisu?</SubTitle>
+          <SubTitle>Dlaczego warto wybrać mój serwis pralek w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka organizacja terminu</strong>: staram się ustalić dogodny czas wizyty tak szybko, jak to możliwe, aby jak najkrócej odczuwać niedogodności związane z awarią.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: dzięki praktyce przy różnorodnych modelach od renomowanych producentów (Bosch, Electrolux, Samsung, Whirlpool, Beko, Amica i inne) potrafię skutecznie reagować na złożone usterki.</li>
@@ -78,7 +78,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega usługa krok po kroku?</SubTitle>
+          <SubTitle>Jak przebiega naprawa pralki? Krok po kroku</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępna konsultacja</strong>: opis awarii telefonicznie lub mailowo, omówienie możliwych przyczyn i wstępna orientacyjna wycena zakresu prac.</li>
             <li><strong>Diagnostyka na miejscu</strong>: dokładne sprawdzenie pralki przy użyciu narzędzi diagnostycznych, potwierdzenie lub weryfikacja wstępnej hipotezy co do usterki.</li>

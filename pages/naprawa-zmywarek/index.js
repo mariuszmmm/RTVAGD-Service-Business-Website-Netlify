@@ -49,9 +49,9 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dokładna diagnostyka i usuwanie usterek zmywarek</SubTitle>
+          <SubTitle>Naprawa zmywarek Przemyśl – Dokładna diagnostyka i usuwanie usterek</SubTitle>
           <StyledText>
-            Awarie zmywarki mogą zakłócić porządek w kuchni i generować dodatkowe obowiązki. W Przemyślu oferuję rzetelne sprawdzenie sprzętu, identyfikację źródła problemu i profesjonalną naprawę zmywarek różnych marek. Korzystam z narzędzi diagnostycznych i części od sprawdzonych dostawców, dbając o to, aby zmywarka działała bez zakłóceń przez długi czas.
+            Zmywarka odmówiła posłuszeństwa, a góra naczyń rośnie? Bez obaw, jestem tutaj, aby pomóc. Oferuję szybką i skuteczną naprawę zmywarek w Przemyślu i okolicy. Niezależnie od tego, czy Twoja zmywarka nie pobiera wody, nie grzeje, czy zostawia brudne naczynia – znam się na rzeczy. Jako specjalista od naprawy zmywarek w Przemyślu, podchodzę do każdego zlecenia indywidualnie, korzystając ze sprawdzonych części i profesjonalnego sprzętu. Moim celem jest, aby Twoja zmywarka znów działała jak nowa, a Ty mógłbyś zapomnieć o ręcznym zmywaniu. Skontaktuj się ze mną, a szybko przywrócę porządek w Twojej kuchni!
           </StyledText>
         </Section>
 
@@ -68,7 +68,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać ten serwis?</SubTitle>
+          <SubTitle>Dlaczego warto wybrać mój serwis zmywarek w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalanie terminu</strong>: dbam o to, aby wizyta odbyła się w dogodnym dla Klienta terminie, reagując możliwie szybko.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie przy zmywarkach marek Bosch, Electrolux, Beko, Siemens i innych pozwala skutecznie diagnozować zarówno standardowe, jak i nietypowe awarie.</li>
@@ -79,7 +79,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Proces naprawy zmywarki</SubTitle>
+          <SubTitle>Jak przebiega naprawa zmywarki? Krok po kroku</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępne ustalenia</strong>: opis usterki przez telefon lub e-mail, wstępna analiza możliwości i terminu.</li>
             <li><strong>Diagnostyka na miejscu</strong>: testy wodno-elektryczne, odczyt ewentualnych kodów błędów i kontrola mechaniczna.</li>

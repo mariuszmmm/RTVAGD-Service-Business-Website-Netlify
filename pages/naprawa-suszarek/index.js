@@ -51,9 +51,9 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Pełna diagnostyka i naprawa suszarek</SubTitle>
+          <SubTitle>Naprawa suszarek Przemyśl – Pełna diagnostyka i naprawa</SubTitle>
           <StyledText>
-            Awarie suszarek mogą znacząco opóźnić codzienne czynności, zwłaszcza w chłodniejszych miesiącach. Oferuję w Przemyślu i okolicach rzetelne sprawdzenie urządzenia, identyfikację problemów i naprawę suszarek kondensacyjnych, z pompą ciepła oraz tradycyjnych, elektrycznych. Działam z dbałością o precyzję i trwały efekt, stosując profesjonalne narzędzia i części o potwierdzonej jakości.
+            Gdy suszarka do ubrań odmawia posłuszeństwa, szczególnie w deszczowe dni, domowe obowiązki potrafią się skomplikować. Jeśli właśnie spotkała Cię taka sytuacja, jestem do Twojej dyspozycji. Specjalizuję się w serwisie i naprawie suszarek na terenie Przemyśla i okolic. Niezależnie od tego, czy masz nowoczesny model z pompą ciepła, kondensacyjny, czy tradycyjny – znam je od podszewki. Moja praca to nie tylko szybka diagnoza, ale przede wszystkim skuteczna naprawa suszarek, która przywróci Twojemu urządzeniu pełną sprawność. Zaufaj mojemu doświadczeniu – Twoja suszarka szybko wróci do formy!
           </StyledText>
         </Section>
 
@@ -69,18 +69,18 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać ten serwis suszarek?</SubTitle>
+          <SubTitle>Dlaczego warto wybrać mój serwis suszarek w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
-            <li><strong>Obsługa szerokiego zakresu marek</strong>:   Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, Amica, AEG, Candy, Hotpoint-Ariston, LG, Indesit, Zanussi i inne – potrafię dostosować naprawę do specyfiki modelu.</li>
+            <li><strong>Obsługa szerokiego zakresu marek</strong>: Bosch, Siemens, Whirlpool, Electrolux, Beko, Miele, Samsung, Amica, AEG, Candy, Hotpoint-Ariston, LG, Indesit, Zanussi i inne – potrafię dostosować naprawę do specyfiki modelu.</li>
             <li><strong>Sprawdzone części i metody</strong>: stosuję części o parametrach odpowiadających oryginalnym lub równoważnym. Dbam o czystość filtrów i przewodów, by przywrócić maksymalną wydajność.</li>
             <li><strong>Przejrzystość kosztów</strong>: po diagnostyce na miejscu przedstawiam orientacyjną wycenę, byś znał zakres i koszty naprawy przed podjęciem decyzji.</li>
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Proces naprawy suszarki krok po kroku</SubTitle>
+          <SubTitle>Jak przebiega naprawa suszarki? Krok po kroku</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i opis usterki</strong>: krótka rozmowa telefoniczna lub wiadomość e-mail z opisem symptomów i modelem urządzenia.</li>
             <li><strong>Diagnostyka na miejscu</strong>: pełne sprawdzenie suszarki, testy funkcjonalne i analiza ewentualnych kodów błędów.</li>

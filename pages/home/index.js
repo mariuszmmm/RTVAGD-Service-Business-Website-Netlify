@@ -94,12 +94,12 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Profesjonalny serwis RTV-AGD w Przemyślu
+            Naprawa AGD i RTV Przemyśl -<br /> Profesjonalny Serwis Pralek, Zmywarek,<br /> Suszarek, Telewizorów i Ekspresów
           </HeroTitle>
           <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
           <ButtonLink
             href={`tel:${serwis.phone.number}`}
-            title='Serwis RTV i AGD w Przemyślu'
+            title='Naprawa AGD i RTV Przemyśl - Zadzwoń teraz'
             $hero
           >
             Zadzwoń teraz
@@ -136,8 +136,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle lang="pl">
-            Specjalizuję się w naprawie urządzeń RTV i AGD różnych marek, oferując profesjonalną obsługę zarówno dla popularnych, jak i mniej znanych producentów.<br />
-            Naprawiam:
+            Profesjonalna naprawa AGD i RTV w Przemyślu – serwisuję sprzęt wszystkich popularnych marek
           </SubTitle>
           <StyledText as="ul">
             <li>
@@ -187,21 +186,21 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             </li>
           </StyledText>
           <StyledText>
-            Dzięki doświadczeniu oraz dostępowi do oryginalnych części zamiennych, możesz mieć pewność, że Twoje urządzenie zostanie naprawione szybko i solidnie.
+            Posiadam wieloletnie doświadczenie i dostęp do oryginalnych części zamiennych, co gwarantuje szybką diagnozę i solidną naprawę Twojego sprzętu. Niezależnie od marki, możesz liczyć na profesjonalną pomoc.
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Naprawy realizuję w&nbsp;Przemyślu i&nbsp;okolicach</SubTitle>
+          <SubTitle>Serwis AGD i RTV z dojazdem – Przemyśl i okolice</SubTitle>
           <StyledText>
-            Działam na terenie Przemyśla i oferuję usługi również w pobliskich miejscowościach. Jeśli mieszkasz w jednym z poniższych miejsc lub w ich sąsiedztwie, chętnie przyjadę do Ciebie i naprawię Twoje urządzenie: Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.
+            Oferuję mobilny serwis AGD i RTV z dojazdem do klienta na terenie Przemyśla i okolic. Jeśli Twoje urządzenie wymaga naprawy, a mieszkasz w jednej z wymienionych miejscowości, skontaktuj się ze mną: Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.
           </StyledText>
         </Section>
 
         <Section>
           <HeroText>
             <strong>
-              Zaufaj profesjonalnemu serwisowi, który codziennie dba o niezawodność Twoich urządzeń.
+              Zaufaj doświadczeniu – gwarantuję szybką i skuteczną naprawę Twojego sprzętu.
             </strong>
           </HeroText>
         </Section>

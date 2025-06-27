@@ -48,7 +48,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     const reviewsArray = selectedReviews.map((review) => (
       {
         "@type": "Review",
-        "name": "Polecam serwis RTV AGD w Przemyślu",
+        "name": "Polecam serwis AGD RTV w Przemyślu",
         "author": {
           "@type": "Person",
           "name": review.author_name,
@@ -63,8 +63,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         },
         "itemReviewed": {
           "@type": "Service",
-          "name": "Naprawa sprzętu RTV i AGD",
-          // "serviceType": "Naprawa sprzętu RTV i AGD",
+          "name": "Naprawa sprzętu AGD i RTV",
+          // "serviceType": "Naprawa sprzętu AGD i RTV",
           // "address": {
           //   "@type": "PostalAddress",
           //   "addressLocality": "Przemyśl",
@@ -112,7 +112,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     const reviewsArray = [
       {
         "@type": "Review",
-        "name": "Polecam serwis RTV AGD w Przemyślu",
+        "name": "Polecam serwis AGD RTV w Przemyślu",
         "author": {
           "@type": "Person",
           "name": review.author_name,
@@ -127,8 +127,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         },
         "itemReviewed": {
           // "@type": "Service",
-          "name": "Serwis RTV i AGD" + (reveiwFor ? ` - ${reveiwFor}` : ""),
-          // "serviceType": "Naprawa sprzętu RTV i AGD",
+          "name": "Serwis AGD i RTV" + (reveiwFor ? ` - ${reveiwFor}` : ""),
+          // "serviceType": "Naprawa sprzętu AGD i RTV",
           // "address": {
           //   "@type": "PostalAddress",
           //   "addressLocality": "Przemyśl",
@@ -148,7 +148,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       //   "ratingCount": (ratingsTotal || serwis.ratingsTotal).toString(),
       //   "itemReviewed": {
       //     // "@type": "Service",
-      //     "name": "Serwis RTV i AGD" + (reveiwFor ? ` - ${reveiwFor}` : ""),
+      //     "name": "Serwis AGD i RTV" + (reveiwFor ? ` - ${reveiwFor}` : ""),
       //   },
       // },
 
@@ -181,7 +181,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "worstRating": "1",
       // "itemReviewed": {
       //   // "@type": "Service",
-      //   "name": "Serwis RTV i AGD Przemyśl",
+      //   "name": "Serwis AGD i RTV Przemyśl",
       // },
     },
 

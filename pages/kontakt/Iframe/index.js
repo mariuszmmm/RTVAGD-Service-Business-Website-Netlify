@@ -8,7 +8,7 @@ const Iframe = () => {
     <StyledIframe
       src={iframeSrc}
       loading="lazy"
-      title="Lokalizacja serwisu RTV-AGD"
+      title="Lokalizacja serwisu AGD-RTV"
     />
   );
 };

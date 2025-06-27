@@ -3,85 +3,85 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://naprawaprzemysl.pl/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-przemysl-1.webp</image:loc>
-      <image:caption>Profesjonalny serwis RTV-AGD w Przemyślu</image:caption>
-      <image:title>Profesjonalny Serwis RTV-AGD</image:title>
+      <image:loc>https://naprawaprzemysl.pl/images/serwis-agd-rtv-przemysl-1.webp</image:loc>
+      <image:caption>Naprawa AGD i RTV w Przemyślu. Profesjonalny serwis pralek, zmywarek, suszarek, telewizorów i ekspresów do kawy.</image:caption>
+      <image:title>Naprawa AGD i RTV Przemyśl - Profesjonalny Serwis</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-pralek-przemysl-serwis-1.webp</image:loc>
-      <image:caption>Naprawa pralek automatycznych w Przemyślu</image:caption>
-      <image:title>Naprawa pralek</image:title>
+      <image:caption>Naprawa pralek Przemyśl. Profesjonalny serwis pralek automatycznych, szybka diagnoza i dojazd do klienta.</image:caption>
+      <image:title>Naprawa Pralek Przemyśl - Serwis AGD</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-suszarek-przemysl-serwis-2.webp</image:loc>
-      <image:caption>Naprawa suszarek do ubrań w Przemyślu</image:caption>
-      <image:title>Naprawa suszarek</image:title>
+      <image:caption>Naprawa suszarek do ubrań Przemyśl. Serwis suszarek kondensacyjnych i bębnowych. Gwarancja jakości.</image:caption>
+      <image:title>Naprawa Suszarek Przemyśl - Serwis AGD</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-zmywarek-przemysl-serwis-1.webp</image:loc>
-      <image:caption>Naprawa zmywarek do naczyń w Przemyślu</image:caption>
-      <image:title>Naprawa zmywarek</image:title>
+      <image:caption>Naprawa zmywarek Przemyśl. Serwis zmywarek wolnostojących i do zabudowy. Skuteczne usuwanie awarii.</image:caption>
+      <image:title>Naprawa Zmywarek Przemyśl - Serwis AGD</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-ekspresow-przemysl-serwis-1.webp</image:loc>
-      <image:caption>Naprawa ekspresów do kawy w Przemyślu</image:caption>
-      <image:title>Naprawa ekspresów</image:title>
+      <image:caption>Naprawa ekspresów do kawy Przemyśl. Profesjonalny serwis ekspresów ciśnieniowych i automatycznych.</image:caption>
+      <image:title>Naprawa Ekspresów do Kawy Przemyśl - Serwis</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://naprawaprzemysl.pl/images/naprawa-telewizorow-przemysl-serwis-1.webp</image:loc>
-      <image:caption>Naprawa telewizorów w Przemyślu</image:caption>
-      <image:title>Naprawa telewizorów</image:title>
+      <image:caption>Naprawa telewizorów Przemyśl. Serwis TV LCD, LED, OLED. Szybka i skuteczna naprawa telewizorów wszystkich marek.</image:caption>
+      <image:title>Naprawa Telewizorów Przemyśl - Serwis RTV</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
-    <lastmod>2025-06-26</lastmod>
+    <lastmod>2025-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

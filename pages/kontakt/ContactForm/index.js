@@ -17,7 +17,7 @@ const ContactForm = () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Serwis RTV i AGD",
+      to_name: "Serwis AGD i RTV",
       message: message,
     };
 
@@ -77,11 +77,11 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
         required
       />
-      <Button 
-       type="submit" 
-       value="Send"
-       $submit
-       >
+      <Button
+        type="submit"
+        value="Send"
+        $submit
+      >
         Wyślij
       </Button>
     </Form>
