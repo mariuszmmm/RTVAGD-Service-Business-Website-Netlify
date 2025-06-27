@@ -6,9 +6,9 @@ const routes = {
   '/': {
     changefreq: 'daily',
     priority: '1.0',
-    image: `${BASE_URL}/images/serwis-agd-rtv-przemysl-1.webp`,
-    caption: 'Naprawa AGD i RTV w Przemyślu. Profesjonalny serwis pralek, zmywarek, suszarek, telewizorów i ekspresów do kawy.',
-    title: 'Naprawa AGD i RTV Przemyśl - Profesjonalny Serwis'
+    image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
+    caption: 'Naprawa RTV i AGD w Przemyślu. Profesjonalny serwis pralek, zmywarek, suszarek, telewizorów i ekspresów do kawy.',
+    title: 'Naprawa RTV i AGD Przemyśl - Profesjonalny Serwis'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',

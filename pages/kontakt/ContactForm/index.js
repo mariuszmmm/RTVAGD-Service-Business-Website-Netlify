@@ -17,7 +17,7 @@ const ContactForm = () => {
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Serwis AGD i RTV",
+      to_name: "Serwis RTV i AGD",
       message: message,
     };
 

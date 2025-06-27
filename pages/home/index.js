@@ -94,12 +94,12 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Naprawa AGD i RTV Przemyśl -<br /> Profesjonalny Serwis Pralek, Zmywarek,<br /> Suszarek, Telewizorów i Ekspresów
+            Naprawa RTV i AGD Przemyśl -<br /> Profesjonalny Serwis Pralek, Zmywarek,<br /> Suszarek, Telewizorów i Ekspresów
           </HeroTitle>
           <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
           <ButtonLink
             href={`tel:${serwis.phone.number}`}
-            title='Naprawa AGD i RTV Przemyśl - Zadzwoń teraz'
+            title='Naprawa RTV i AGD Przemyśl - Zadzwoń teraz'
             $hero
           >
             Zadzwoń teraz
@@ -136,7 +136,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle lang="pl">
-            Profesjonalna naprawa AGD i RTV w Przemyślu – serwisuję sprzęt wszystkich popularnych marek
+            Profesjonalna naprawa RTV i AGD w Przemyślu – serwisuję sprzęt wszystkich popularnych marek
           </SubTitle>
           <StyledText as="ul">
             <li>
@@ -191,9 +191,9 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Serwis AGD i RTV z dojazdem – Przemyśl i okolice</SubTitle>
+          <SubTitle>Serwis RTV i AGD z dojazdem – Przemyśl i okolice</SubTitle>
           <StyledText>
-            Oferuję mobilny serwis AGD i RTV z dojazdem do klienta na terenie Przemyśla i okolic. Jeśli Twoje urządzenie wymaga naprawy, a mieszkasz w jednej z wymienionych miejscowości, skontaktuj się ze mną: Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.
+            Oferuję mobilny serwis RTV i AGD z dojazdem do klienta na terenie Przemyśla i okolic. Jeśli Twoje urządzenie wymaga naprawy, a mieszkasz w jednej z wymienionych miejscowości, skontaktuj się ze mną: Przemyśl, Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.
           </StyledText>
         </Section>
 
