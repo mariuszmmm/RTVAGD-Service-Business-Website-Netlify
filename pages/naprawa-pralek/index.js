@@ -30,13 +30,13 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         reviews={reviews}
       />
       <Container>
-        <Title>Naprawa pralek automatycznych w Przemyślu 🧺</Title>
+        <Title>Naprawa pralek Przemyśl 🧺</Title>
 
         <Section>
           <StyledPhoto>
             <Image
               src={imageUrls.pralka}
-              title="Naprawa pralek Przemyśl"
+              title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               loading='eager'
               fill

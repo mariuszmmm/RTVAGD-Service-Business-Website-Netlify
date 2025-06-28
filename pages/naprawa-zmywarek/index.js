@@ -31,15 +31,15 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa zmywarek do naczyń w Przemyślu 🍽️</Title>
+        <Title>Naprawa zmywarek Przemyśl 🍽️</Title>
 
         <Section>
           <StyledPhoto>
             <Image
-              title="Naprawa zmywarek Przemyśl"
+              title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
               src={imageUrls.zmywarka}
               alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
-              loading='lazy'
+              loading='eager'
               fill
               // srcSet={`${imageUrls.zmywarka_300} 500w,
               // ${imageUrls.zmywarka} 1000w`}

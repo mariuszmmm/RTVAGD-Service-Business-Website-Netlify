@@ -32,6 +32,8 @@ const Header = ({ rating }) => {
       }
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -52,6 +54,7 @@ const Header = ({ rating }) => {
               src={imageUrls.logo}
               alt="Przemyśl"
               fill
+              loading="lazy"
               itemProp="image"
             />
           </Emoticon>

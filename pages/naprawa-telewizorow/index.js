@@ -30,15 +30,15 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa telewizorów w Przemyślu 📺</Title>
+        <Title>Naprawa telewizorów Przemyśl 📺</Title>
 
         <Section>
           <StyledPhoto>
             <Image
-              title="Naprawa telewizorów Przemyśl"
+              title={dataForMetaTags.naprawa_telewizorow.metaTags.imageTitle}
               src={imageUrls.telewizor}
               alt={dataForMetaTags.naprawa_telewizorow.metaTags.imageAlt}
-              loading='lazy'
+              loading='eager'
               fill
               // srcSet={`${imageUrls.telewizor_300} 500w,
               // ${imageUrls.telewizor} 1000w`}

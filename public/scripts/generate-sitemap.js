@@ -13,37 +13,37 @@ const routes = {
   '/naprawa-pralek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-pralek-przemysl-serwis-1.webp`,
+    image: `${BASE_URL}/images/naprawa-pralek-przemysl.webp`,
     caption: 'Naprawa pralek Przemyśl. Profesjonalny serwis pralek automatycznych, szybka diagnoza i dojazd do klienta.',
     title: 'Naprawa Pralek Przemyśl - Serwis AGD'
   },
   '/naprawa-suszarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-suszarek-przemysl-serwis-2.webp`,
+    image: `${BASE_URL}/images/naprawa-suszarek-przemysl.webp`,
     caption: 'Naprawa suszarek do ubrań Przemyśl. Serwis suszarek kondensacyjnych i bębnowych. Gwarancja jakości.',
     title: 'Naprawa Suszarek Przemyśl - Serwis AGD'
   },
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-zmywarek-przemysl-serwis-1.webp`,
-    caption: 'Naprawa zmywarek Przemyśl. Serwis zmywarek wolnostojących i do zabudowy. Skuteczne usuwanie awarii.',
-    title: 'Naprawa Zmywarek Przemyśl - Serwis AGD'
+    image: `${BASE_URL}/images/naprawa-zmywarek-przemysl.webp`,
+    caption: 'Serwis zmywarek Przemyśl - naprawa zmywarki do naczyń',
+    title: 'Profesjonalna naprawa zmywarek w Przemyślu - Serwis AGD'
   },
   '/naprawa-ekspresow/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-ekspresow-przemysl-serwis-1.webp`,
-    caption: 'Naprawa ekspresów do kawy Przemyśl. Profesjonalny serwis ekspresów ciśnieniowych i automatycznych.',
-    title: 'Naprawa Ekspresów do Kawy Przemyśl - Serwis'
+    image: `${BASE_URL}/images/serwis-ekspresow-przemysl-naprawa-ekspresu.webp`,
+    caption: 'Serwis ekspresów Przemyśl - naprawa ekspresu do kawy',
+    title: 'Profesjonalna naprawa ekspresów do kawy w Przemyślu'
   },
   '/naprawa-telewizorow/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-telewizorow-przemysl-serwis-1.webp`,
-    caption: 'Naprawa telewizorów Przemyśl. Serwis TV LCD, LED, OLED. Szybka i skuteczna naprawa telewizorów wszystkich marek.',
-    title: 'Naprawa Telewizorów Przemyśl - Serwis RTV'
+    image: `${BASE_URL}/images/serwis-telewizorow-przemysl-naprawa-telewizora.webp`,
+    caption: 'Serwis telewizorów Przemyśl - naprawa telewizora LCD LED',
+    title: 'Profesjonalna naprawa telewizorów w Przemyślu - Serwis RTV'
   },
   '/o-mnie/': {
     changefreq: 'weekly',

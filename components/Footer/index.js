@@ -22,7 +22,7 @@ const Footer = () => (
     itemType="https://schema.org/WPFooter"
   >
     <FooterContainer>
-      <SubTitle>{serwis.shortName} Przemyśl</SubTitle>
+      <SubTitle>{serwis.shortName}</SubTitle>
       <FooterInfo>
         <StyledLink
           $area="adres"
@@ -39,7 +39,7 @@ const Footer = () => (
           title="Telefon"
         >
           <PhoneIcon />
-          <FooterText>{serwis.phone.formatted} </FooterText>
+          <FooterText>{serwis.phone.short} </FooterText>
         </StyledLink>
         <StyledLink
           $area="email"

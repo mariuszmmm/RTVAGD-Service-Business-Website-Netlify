@@ -33,15 +33,15 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa ekspresów do kawy w Przemyślu ☕</Title>
+        <Title>Naprawa ekspresów Przemyśl ☕</Title>
 
         <Section>
           <StyledPhoto>
             <Image
-              title="Naprawa ekspresów Przemyśl"
+              title={dataForMetaTags.naprawa_ekspresow.metaTags.imageTitle}
               src={imageUrls.ekspres}
               alt={dataForMetaTags.naprawa_ekspresow.metaTags.imageAlt}
-              loading='lazy'
+              loading='eager'
               fill
               // srcSet={`${imageUrls.ekspres_300} 500w,
               // ${imageUrls.ekspres} 1000w`}
