@@ -82,6 +82,7 @@ export const localBusiness = {
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",   // zgodny z CEIDG
   "image": imageUrls.serwis,  // "image": imageUrls.logo,
+  "logo": imageUrls.logo,
   "telephone": serwis.phone.formatted,
   "email": serwis.email,
   "url": appUrls.home,
@@ -114,65 +115,35 @@ export const localBusiness = {
     "closes": "17:00"
   },
   "priceRange": "PLN",
-  "description": "Wieloletni serwis AGD w Przemyślu: pralki, suszarki, zmywarki, ekspresy do kawy, telewizory. Diagnostyka i naprawa u klienta lub w warsztacie.",
+  "description": "Profesjonalny serwis RTV i AGD w Przemyślu: pralki, suszarki, zmywarki, ekspresy do kawy, telewizory. Diagnostyka i naprawa u klienta lub w warsztacie.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Usługi serwisowe AGD",
+    "name": "Usługi serwisowe RTV i AGD",
     "itemListElement": [
       {
         "@type": "Offer",
         "@id": appUrls.naprawa_pralek + "#offer",
-        "itemOffered": {
-          "@type": "Service",
-          "@id": appUrls.naprawa_pralek + "#service",
-          "name": "Naprawa Pralek",
-          "serviceType": "Naprawa pralek",
-          "description": "Diagnostyka i naprawa pralek wszystkich marek w Przemyślu i okolicach."
-        }
+        "itemOffered": { "@id": appUrls.naprawa_pralek + "#service" }
       },
       {
         "@type": "Offer",
         "@id": appUrls.naprawa_suszarek + "#offer",
-        "itemOffered": {
-          "@type": "Service",
-          "@id": appUrls.naprawa_suszarek + "#service",
-          "name": "Naprawa Suszarek",
-          "serviceType": "Naprawa suszarek",
-          "description": "Serwis suszarek kondensacyjnych, z pompą ciepła i tradycyjnych w Przemyślu."
-        }
+        "itemOffered": { "@id": appUrls.naprawa_suszarek + "#service" }
       },
       {
         "@type": "Offer",
         "@id": appUrls.naprawa_zmywarek + "#offer",
-        "itemOffered": {
-          "@type": "Service",
-          "@id": appUrls.naprawa_zmywarek + "#service",
-          "name": "Naprawa Zmywarek",
-          "serviceType": "Naprawa zmywarek",
-          "description": "Kompleksowa diagnostyka i naprawa zmywarek różnych marek w Przemyślu."
-        }
+        "itemOffered": { "@id": appUrls.naprawa_zmywarek + "#service" }
       },
       {
         "@type": "Offer",
         "@id": appUrls.naprawa_ekspresow + "#offer",
-        "itemOffered": {
-          "@type": "Service",
-          "@id": appUrls.naprawa_ekspresow + "#service",
-          "name": "Naprawa Ekspresów",
-          "serviceType": "Naprawa ekspresów",
-          "description": "Fachowa naprawa ekspresów domowych i profesjonalnych w Przemyślu."
-        }
+        "itemOffered": { "@id": appUrls.naprawa_ekspresow + "#service" }
       },
       {
         "@type": "Offer",
         "@id": appUrls.naprawa_telewizorow + "#offer",
-        "itemOffered": {
-          "@type": "Service",
-          "@id": appUrls.naprawa_telewizorow + "#service",
-          "name": "Naprawa Telewizorów",
-          "serviceType": "Naprawa telewizorów",
-          "description": "Profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu."
-        }
+        "itemOffered": { "@id": appUrls.naprawa_telewizorow + "#service" }
       }
     ]
   }
@@ -659,7 +630,17 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
         "image": { "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "provider": { "@id": appUrls.home + "#localbusiness" },
-        "offers": { "@id": appUrls.naprawa_pralek + "#offer" }
+        "offers": [{ "@id": appUrls.naprawa_pralek + "#offer" }]
+      },
+      offer: {
+        "@type": "Offer",
+        "@id": appUrls.naprawa_pralek + "#offer",
+        "itemOffered": { "@id": appUrls.naprawa_pralek + "#service" },
+        "price": "150.00",
+        "priceCurrency": "PLN",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": appUrls.naprawa_pralek
       },
       product: {
         "@type": "Product",
@@ -907,7 +888,7 @@ export const dataForMetaTags = {
       twitterDescription: "Fachowa naprawa suszarek kondensacyjnych w Przemyślu. Diagnoza ✓ Części oryginalne ✓ Gwarancja ✓ Bosch, Siemens, Samsung, Beko. 790 258 612",
       imageType: "image/webp",
       image: imageUrls.suszarka,
-      imageAlt: "Serwis suszarek Przemyśl - naprawa suszarki kondensacyjnej",
+      imageAlt: "Naprawa suszarek Przemyśl – serwis suszarek kondensacyjnych",
       imageTitle: "Profesjonalna naprawa suszarek w Przemyślu - Serwis kondensacyjnych",
       imageWidth: "869",
       imageHeight: "700",
@@ -930,7 +911,17 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa suszarek wszystkich marek w Przemyślu i okolicach",
         "image": { "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "provider": { "@id": appUrls.home + "#localbusiness" },
-        "offers": { "@id": appUrls.naprawa_suszarek + "#offer" }
+        "offers": [{ "@id": appUrls.naprawa_suszarek + "#offer" }]
+      },
+      offer: {
+        "@type": "Offer",
+        "@id": appUrls.naprawa_suszarek + "#offer",
+        "itemOffered": { "@id": appUrls.naprawa_suszarek + "#service" },
+        "price": "150.00",
+        "priceCurrency": "PLN",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": appUrls.naprawa_suszarek
       },
       product: {
         "@type": "Product",
@@ -1101,9 +1092,10 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.suszarka,
         "width": 700,
         "height": 700,
-        "name": "Naprawa suszarek do ubrań w Przemyślu",
-        "description": "Serwisant diagnozuje i naprawia uszkodzoną suszarkę do ubrań",
-        "caption": "Naprawa suszarek do ubrań – serwis i naprawa suszarek w Przemyślu",
+        "name": "Naprawa suszarek Przemyśl – serwis suszarek kondensacyjnych",
+        "description": "Serwisant naprawy suszarek Przemyśl – diagnoza i uszczelnianie kondensatorów",
+        "caption": "Naprawa suszarek Przemyśl – serwis u klienta i w warsztacie",
+        "representativeOfPage": true
       },
       website,
       webpage: {
@@ -1118,7 +1110,7 @@ export const dataForMetaTags = {
         "thumbnailUrl": imageUrls.suszarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Fachowa naprawa suszarek kondensacyjnych w Przemyślu. Diagnoza ✓ Części oryginalne ✓ Gwarancja ✓ Bosch, Siemens, Samsung, Beko. 790 258 612",
+        "description": "Fachowa naprawa suszarek kondensacyjnych w Przemyślu. Diagnoza ✓ Części oryginalne ✓ Gwarancja ✓ Bosch, Siemens, Samsung, Beko.",
         "breadcrumb": { "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
         "mainEntity": { "@id": appUrls.naprawa_suszarek + "#service" },
 
@@ -1128,7 +1120,8 @@ export const dataForMetaTags = {
             "@type": "ReadAction",
             "target": [appUrls.naprawa_suszarek]
           }
-        ]
+        ],
+        "about": { "@id": appUrls.naprawa_suszarek + "#service" }
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1190,7 +1183,17 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa zmywarek w Przemyślu – serwis u klienta lub w warsztacie, szybki dojazd, oryginalne części i gwarancja. Skontaktuj się i zamów usługę!",
         "image": { "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "provider": { "@id": appUrls.home + "#localbusiness" },
-        "offers": { "@id": appUrls.naprawa_zmywarek + "#offer" }
+        "offers": [{ "@id": appUrls.naprawa_zmywarek + "#offer" }]
+      },
+      offer: {
+        "@type": "Offer",
+        "@id": appUrls.naprawa_zmywarek + "#offer",
+        "itemOffered": { "@id": appUrls.naprawa_zmywarek + "#service" },
+        "price": "100.00",
+        "priceCurrency": "PLN",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": appUrls.naprawa_zmywarek
       },
       product: {
         "@type": "Product",
@@ -1441,7 +1444,17 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Szybka pomoc, najnowsze technologie i oryginalne części. Skontaktuj się ze mną już dziś.",
         "image": { "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
         "provider": { "@id": appUrls.home + "#localbusiness" },
-        "offers": { "@id": appUrls.naprawa_ekspresow + "#offer" }
+        "offers": [{ "@id": appUrls.naprawa_ekspresow + "#offer" }]
+      },
+      offer: {
+        "@type": "Offer",
+        "@id": appUrls.naprawa_ekspresow + "#offer",
+        "itemOffered": { "@id": appUrls.naprawa_ekspresow + "#service" },
+        "price": "100.00",
+        "priceCurrency": "PLN",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": appUrls.naprawa_ekspresow
       },
       product: {
         "@type": "Product",
@@ -1630,7 +1643,17 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa telewizorów w Przemyślu. Szybka pomoc, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś!",
         "image": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "provider": { "@id": appUrls.home + "#localbusiness" },
-        "offers": { "@id": appUrls.naprawa_telewizorow + "#offer" }
+        "offers": [{ "@id": appUrls.naprawa_telewizorow + "#offer" }]
+      },
+      offer: {
+        "@type": "Offer",
+        "@id": appUrls.naprawa_telewizorow + "#offer",
+        "itemOffered": { "@id": appUrls.naprawa_telewizorow + "#service" },
+        "price": "150.00",
+        "priceCurrency": "PLN",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": appUrls.naprawa_telewizorow
       },
       product: {
         "@type": "Product",
