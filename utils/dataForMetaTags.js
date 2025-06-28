@@ -819,7 +819,6 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa pralek w Przemyślu. Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ✓ Obsługa marek: Bosch, Samsung, Electrolux. 790 258 612",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_pralek + "#breadcrumb" },
         "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-        "mainEntityOfPage": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
 
         // test 
         "potentialAction": [{ "@type": "ReadAction", "target": [appUrls.naprawa_pralek] }],
@@ -1083,7 +1082,6 @@ export const dataForMetaTags = {
         "description": "Fachowa naprawa suszarek kondensacyjnych w Przemyślu. Diagnoza ✓ Części oryginalne ✓ Gwarancja ✓ Bosch, Siemens, Samsung, Beko.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
         "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
-        "mainEntityOfPage": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
 
         // test 
         "potentialAction": [{ "@type": "ReadAction", "target": [appUrls.naprawa_suszarek] }],
@@ -1333,7 +1331,6 @@ export const dataForMetaTags = {
         "description": "Kompleksowy serwis zmywarek w Przemyślu. Szybka naprawa ✓ Oryginalne części ✓ Gwarancja ✓ Bosch, Electrolux, Beko. Zadzwoń: 790 258 612",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
         "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
-        "mainEntityOfPage": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
 
         // test 
         "potentialAction": [{ "@type": "ReadAction", "target": [appUrls.naprawa_zmywarek] }],
@@ -1522,7 +1519,6 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Automatyczne i ciśnieniowe ✓ Szybka diagnoza ✓ Gwarancja ✓ Wszystkie marki. 790 258 612",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
         "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
-        "mainEntityOfPage": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
 
         // test 
         "potentialAction": [{ "@type": "ReadAction", "target": [appUrls.naprawa_ekspresow] }],
@@ -1709,7 +1705,6 @@ export const dataForMetaTags = {
         "description": "Fachowa naprawa telewizorów LCD, LED, OLED w Przemyślu. Smart TV ✓ Szybka diagnoza ✓ Gwarancja ✓ Wszystkie marki. Zadzwoń: 790 258 612",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
         "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
-        "mainEntityOfPage": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
 
         // test 
         "potentialAction": [{ "@type": "ReadAction", "target": [appUrls.naprawa_telewizorow] }],
