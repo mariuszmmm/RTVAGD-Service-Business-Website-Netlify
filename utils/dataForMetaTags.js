@@ -1689,6 +1689,18 @@ export const dataForMetaTags = {
         "caption": "Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu",
         "representativeOfPage": true
       },
+      imageObject_2: {
+        "@type": "ImageObject",
+        "url": imageUrls.telewizor,
+        "inLanguage": "pl-PL",
+        "contentUrl": imageUrls.telewizor,
+        "width": 700,
+        "height": 700,
+        "name": "Naprawa telewizorów w Przemyślu",
+        "description": "Serwisant naprawia telewizor LED w serwisie RTV",
+        "caption": "Naprawa telewizorów – serwis i naprawa telewizorów w Przemyślu",
+        "representativeOfPage": true
+      },
       website,
       webpage: {
         "@type": "WebPage",

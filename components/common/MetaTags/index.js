@@ -36,6 +36,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     webpage,
     website,
     imageObject,
+    imageObject_2,
     breadcrumbList,
   } = page.schema;
 
@@ -253,7 +254,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
       {/* Structured Data */}
-      {(path === "/naprawa-zmywarek/" || path === "/naprawa-pralek/" || path === "/naprawa-suszarek/" || path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
+      {(path === "/naprawa-zmywarek/" || path === "/naprawa-pralek/" || path === "/naprawa-suszarek/" || path === "/naprawa-ekspresow/") && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -336,6 +337,19 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               })
             }}
           /> */}
+        </>
+      )}
+
+      {(path === "/naprawa-telewizorow/") && (
+        <>
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [webpage, imageObject, imageObject_2, localBusinessSchema, website, breadcrumbList, faqPage, productSchema, serviceSchema]
+              })
+            }}
+          />
         </>
       )}
 
