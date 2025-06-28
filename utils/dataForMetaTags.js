@@ -237,7 +237,7 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis_RTV-AGD" },
         "offers": {
           "@type": "Offer",
-          "availability": "InStock",
+          "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
@@ -282,7 +282,7 @@ export const dataForMetaTags = {
         //   "price": "150",
         //   "priceValidUntil": "2026-05-16",
         //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "InStock",
+        //   //       "availability": "https://schema.org/InStock",
         //   "shippingDetails": {
         //     "@type": "OfferShippingDetails",
         //     "shippingRate": {
@@ -604,17 +604,16 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
-        "offers": [{ "@type": "Offer", "@id": appUrls.naprawa_pralek + "#offer" }]
-      },
-      offer: {
-        "@type": "Offer",
-        "@id": appUrls.naprawa_pralek + "#offer",
-        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-        "price": "150.00",
-        "priceCurrency": "PLN",
-        "priceValidUntil": "2025-12-31",
-        "availability": "InStock",
-        "url": appUrls.naprawa_pralek
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_pralek + "#offer",
+          "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
+          "price": "150.00",
+          "priceCurrency": "PLN",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": appUrls.naprawa_pralek
+        }
       },
       product: {
         "@type": "Product",
@@ -625,7 +624,7 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis_RTV-AGD" },
         "offers": {
           "@type": "Offer",
-          "availability": "InStock",
+          "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
@@ -677,7 +676,7 @@ export const dataForMetaTags = {
         //   "price": "150",
         //   "priceValidUntil": "2026-05-16",
         //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "InStock",
+        //   //       "availability": "https://schema.org/InStock",
         //   "shippingDetails": {
         //     "@type": "OfferShippingDetails",
         //     "shippingRate": {
@@ -874,17 +873,16 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa suszarek wszystkich marek w Przemyślu i okolicach",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
-        "offers": [{ "@type": "Offer", "@id": appUrls.naprawa_suszarek + "#offer" }]
-      },
-      offer: {
-        "@type": "Offer",
-        "@id": appUrls.naprawa_suszarek + "#offer",
-        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
-        "price": "150.00",
-        "priceCurrency": "PLN",
-        "priceValidUntil": "2025-12-31",
-        "availability": "InStock",
-        "url": appUrls.naprawa_suszarek
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_suszarek + "#offer",
+          "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
+          "price": "150.00",
+          "priceCurrency": "PLN",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": appUrls.naprawa_suszarek
+        }
       },
       product: {
         "@type": "Product",
@@ -895,7 +893,7 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis_RTV-AGD" },
         "offers": {
           "@type": "Offer",
-          "availability": "InStock",
+          "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
@@ -936,7 +934,7 @@ export const dataForMetaTags = {
         //   "price": "150",
         //   "priceValidUntil": "2026-05-16",
         //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "InStock",
+        //   //       "availability": "https://schema.org/InStock",
         //   "shippingDetails": {
         //     "@type": "OfferShippingDetails",
         //     "shippingRate": {
@@ -1135,17 +1133,16 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa zmywarek w Przemyślu – serwis u klienta lub w warsztacie, szybki dojazd, oryginalne części i gwarancja. Skontaktuj się i zamów usługę!",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
-        "offers": [{ "@type": "Offer", "@id": appUrls.naprawa_zmywarek + "#offer" }]
-      },
-      offer: {
-        "@type": "Offer",
-        "@id": appUrls.naprawa_zmywarek + "#offer",
-        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
-        "price": "100.00",
-        "priceCurrency": "PLN",
-        "priceValidUntil": "2025-12-31",
-        "availability": "InStock",
-        "url": appUrls.naprawa_zmywarek
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_zmywarek + "#offer",
+          "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
+          "price": "100.00",
+          "priceCurrency": "PLN",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": appUrls.naprawa_zmywarek
+        }
       },
       product: {
         "@type": "Product",
@@ -1156,7 +1153,7 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis_RTV-AGD" },
         "offers": {
           "@type": "Offer",
-          "availability": "InStock",
+          "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "100.00",
@@ -1185,7 +1182,7 @@ export const dataForMetaTags = {
         //   "price": 130,
         //   "priceValidUntil": "2026-05-16",
         //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "InStock",
+        //   //       "availability": "https://schema.org/InStock",
         //   // "shippingDetails": {
         //   //   "@type": "OfferShippingDetails",
         //   //   "shippingRate": {
@@ -1384,17 +1381,16 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Szybka pomoc, najnowsze technologie i oryginalne części. Skontaktuj się ze mną już dziś.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
-        "offers": [{ "@type": "Offer", "@id": appUrls.naprawa_ekspresow + "#offer" }]
-      },
-      offer: {
-        "@type": "Offer",
-        "@id": appUrls.naprawa_ekspresow + "#offer",
-        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
-        "price": "100.00",
-        "priceCurrency": "PLN",
-        "priceValidUntil": "2025-12-31",
-        "availability": "InStock",
-        "url": appUrls.naprawa_ekspresow
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_ekspresow + "#offer",
+          "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
+          "price": "100.00",
+          "priceCurrency": "PLN",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": appUrls.naprawa_ekspresow
+        }
       },
       product: {
         "@type": "Product",
@@ -1405,7 +1401,7 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis_RTV-AGD" },
         "offers": {
           "@type": "Offer",
-          "availability": "InStock",
+          "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "100.00",
@@ -1572,17 +1568,16 @@ export const dataForMetaTags = {
         "description": "Profesjonalna naprawa telewizorów w Przemyślu. Szybka pomoc, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś!",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
-        "offers": [{ "@type": "Offer", "@id": appUrls.naprawa_telewizorow + "#offer" }]
-      },
-      offer: {
-        "@type": "Offer",
-        "@id": appUrls.naprawa_telewizorow + "#offer",
-        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
-        "price": "150.00",
-        "priceCurrency": "PLN",
-        "priceValidUntil": "2025-12-31",
-        "availability": "InStock",
-        "url": appUrls.naprawa_telewizorow
+        "offers": {
+          "@type": "Offer",
+          "@id": appUrls.naprawa_telewizorow + "#offer",
+          "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
+          "price": "150.00",
+          "priceCurrency": "PLN",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": appUrls.naprawa_telewizorow
+        }
       },
       product: {
         "@type": "Product",
@@ -1593,7 +1588,7 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis_RTV-AGD" },
         "offers": {
           "@type": "Offer",
-          "availability": "InStock",
+          "availability": "https://schema.org/InStock",
           "priceValidUntil": "2025-12-31",
           "priceCurrency": "PLN",
           "price": "150.00",
