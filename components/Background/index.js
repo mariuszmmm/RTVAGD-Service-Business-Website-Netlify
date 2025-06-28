@@ -14,7 +14,7 @@ const Background = () => {
       {!servicesPath && <BackgroundImage>
         <Image
           src={imageUrls.serwis}
-          alt="Serwis RTV AGD Przemyśl - Naprawa pralek, zmywarek, telewizorów, suszarek, ekspresów do kawy."
+          alt="Serwis sprzętu RTV-AGD w Przemyśl - naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów."
           // loading="lazy"
           // width="931" height="497"
           fill

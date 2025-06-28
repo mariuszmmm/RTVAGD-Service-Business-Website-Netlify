@@ -7,22 +7,22 @@ const routes = {
     changefreq: 'daily',
     priority: '1.0',
     image: `${BASE_URL}/images/serwis-rtv-agd-przemysl-1.webp`,
-    caption: 'Naprawa RTV i AGD w Przemyślu. Profesjonalny serwis pralek, zmywarek, suszarek, telewizorów i ekspresów do kawy.',
-    title: 'Naprawa RTV i AGD Przemyśl - Profesjonalny Serwis'
+    caption: 'Serwis sprzętu RTV-AGD w Przemyśl - naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów.',
+    title: 'Serwis RTV-AGD Przemyśl - Naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-pralek-przemysl.webp`,
-    caption: 'Naprawa pralek Przemyśl. Profesjonalny serwis pralek automatycznych, szybka diagnoza i dojazd do klienta.',
-    title: 'Naprawa Pralek Przemyśl - Serwis AGD'
+    caption: 'Serwis pralek Przemyśl - naprawa pralki automatycznej',
+    title: 'Profesjonalna naprawa pralek w Przemyślu - Serwis RTV-AGD'
   },
   '/naprawa-suszarek/': {
     changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-suszarek-przemysl.webp`,
-    caption: 'Naprawa suszarek do ubrań Przemyśl. Serwis suszarek kondensacyjnych i bębnowych. Gwarancja jakości.',
-    title: 'Naprawa Suszarek Przemyśl - Serwis AGD'
+    caption: 'Serwis suszarek Przemyśl - naprawa suszarki kondensacyjnej',
+    title: 'Profesjonalna naprawa suszarek w Przemyślu - Serwis kondensacyjnych'
   },
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
