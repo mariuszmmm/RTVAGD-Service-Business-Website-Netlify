@@ -120,11 +120,26 @@ export const localBusiness = {
     "@type": "OfferCatalog",
     "name": "Usługi serwisowe RTV i AGD",
     "itemListElement": [
-      { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-      { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
-      { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
-      { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
-      { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" }
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" }
+      }
     ]
   }
 
@@ -606,7 +621,6 @@ export const dataForMetaTags = {
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
         "offers": {
           "@type": "Offer",
-          "@id": appUrls.naprawa_pralek + "#offer",
           "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
           "price": "150.00",
           "priceCurrency": "PLN",
@@ -875,7 +889,6 @@ export const dataForMetaTags = {
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
         "offers": {
           "@type": "Offer",
-          "@id": appUrls.naprawa_suszarek + "#offer",
           "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
           "price": "150.00",
           "priceCurrency": "PLN",
@@ -1135,7 +1148,6 @@ export const dataForMetaTags = {
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
         "offers": {
           "@type": "Offer",
-          "@id": appUrls.naprawa_zmywarek + "#offer",
           "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
           "price": "100.00",
           "priceCurrency": "PLN",
@@ -1383,7 +1395,6 @@ export const dataForMetaTags = {
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
         "offers": {
           "@type": "Offer",
-          "@id": appUrls.naprawa_ekspresow + "#offer",
           "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
           "price": "100.00",
           "priceCurrency": "PLN",
@@ -1570,7 +1581,6 @@ export const dataForMetaTags = {
         "provider": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" },
         "offers": {
           "@type": "Offer",
-          "@id": appUrls.naprawa_telewizorow + "#offer",
           "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
           "price": "150.00",
           "priceCurrency": "PLN",
