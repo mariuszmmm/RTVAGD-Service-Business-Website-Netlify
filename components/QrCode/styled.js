@@ -72,7 +72,6 @@ export const ImageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  gap: 50px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     width: 25px;
@@ -111,7 +110,7 @@ export const Text = styled.p`
   text-align: center;
   font-weight: bold;
   z-index: 1;
-  margin: 0;
+  margin: 20px 0 0 0 ;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     font-size: 1.5rem;
