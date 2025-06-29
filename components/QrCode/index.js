@@ -1,12 +1,11 @@
-import { Stars } from "../common/Stars";
-import { appUrls, imageUrls } from "../../utils/urls";
-import { ImageWrapper, StyledLink, Text, Wrpper } from "./styled";
+import { imageUrls } from "../../utils/urls";
+import { Background, ImageWrapper, Text, Wrpper } from "./styled";
 import Image from "next/image";
-import { Emoticon } from "../common/Emoticon";
 import { useEffect, useState } from "react";
 
 export const QrCode = ({ hidden }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [delay, setDelay] = useState(true);
 
   useEffect(() => {
     const preventScroll = (e) => {
@@ -14,28 +13,33 @@ export const QrCode = ({ hidden }) => {
     };
 
     if (isOpen) {
-      window.addEventListener('wheel', preventScroll, { passive: false });
-      window.addEventListener('touchmove', preventScroll, { passive: false });
+      setTimeout(() => {
+        setDelay(false);
+      }, 800);
+      window.addEventListener("wheel", preventScroll, { passive: false });
+      window.addEventListener("touchmove", preventScroll, { passive: false });
     }
 
     return () => {
-      window.removeEventListener('wheel', preventScroll);
-      window.removeEventListener('touchmove', preventScroll);
+      setDelay(true);
+      window.removeEventListener("wheel", preventScroll);
+      window.removeEventListener("touchmove", preventScroll);
     };
   }, [isOpen]);
 
   return (
     <>
-      <Wrpper onClick={() => setIsOpen(!isOpen)} $show={!isOpen} $hidden={hidden}>
-        <ImageWrapper $show={!isOpen}>
-          <Image
-            src={imageUrls.qrCode}
-            alt="qr code"
-            fill
-            loading="lazy"
-          />
+      <Background $isOpen={isOpen} />
+      <Wrpper
+        onClick={() => setIsOpen(!isOpen)}
+        $isOpen={isOpen}
+        $hidden={hidden}
+      >
+        <ImageWrapper $isOpen={isOpen}>
+          <Image src={imageUrls.qrCode} alt="review qr code" fill loading="lazy" />
+          {isOpen && <Text $delay={delay}>Zeskanuj kod QR i wystaw opinię</Text>}
         </ImageWrapper>
       </Wrpper>
     </>
-  )
+  );
 };
