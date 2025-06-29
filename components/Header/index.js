@@ -15,6 +15,7 @@ import { GoogleRating } from '../GoogleRating';
 import { Emoticon } from '../common/Emoticon';
 import { appUrls, imageUrls } from '../../utils/urls';
 import Image from "next/image";
+import { QrCode } from "../QrCode";
 
 const Header = ({ rating }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -117,6 +118,7 @@ const Header = ({ rating }) => {
         >
           Wystaw opinię
         </ButtonLink>
+        <QrCode hidden={scrolled} />
         {rating && <GoogleRating rating={rating} hidden={scrolled} />}
       </HeaderContainer>
     </HeaderWrapper>
