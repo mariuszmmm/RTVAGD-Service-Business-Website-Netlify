@@ -6,7 +6,7 @@ export const SubNavWrapper = styled.div`
     max-height: 0;
     opacity: 0;
     overflow-x: hidden;
-    z-index: 1;
+    z-index: 1010;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     transition-delay: 0.05s;
 

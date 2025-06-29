@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
 import { baseUrl } from '../utils/urls';
+import { serwis } from '../utils/serwis';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -52,6 +53,7 @@ export default class MyDocument extends Document {
 
           {/* Basic meta tags */}
           <meta key="robots" name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+          <meta key="fb:app_id" property="fb:app_id" content={serwis.url.fb_app_id} />
           <meta key="Content-Language" httpEquiv="Content-Language" content="pl" />
           <meta key="theme-color" name="theme-color" content="#141111" />
 

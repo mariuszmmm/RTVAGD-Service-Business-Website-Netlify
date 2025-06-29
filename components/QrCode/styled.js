@@ -37,9 +37,6 @@ export const Wrpper = styled.div`
     top: 86px;
   }
 
-  &:hover {
-    opacity: 1;
-  }
 
   ${({ $isOpen }) =>
     $isOpen ?
@@ -68,15 +65,6 @@ export const ImageWrapper = styled.div`
   max-height: 900px;
   width: 42px;
   height: 42px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-
-  /* aspect-ratio: 1; */
-  /* justify-self: center; */
-  align-self: center;
-
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     width: 25px;
@@ -103,17 +91,12 @@ export const ImageWrapper = styled.div`
       }
     `: css`
       transition: width 0.4s ease-in-out, height 0.4s ease-in-out, margin 0.4s ease-in-out;
-       transition-delay: 0s, 0s, 0s;
-
+      transition-delay: 0s, 0s, 0s;
     `}
 `;
 
 export const Text = styled.span`
-// wyśrodkuj
-
-  /* opacity: ${({ $delay }) => ($delay ? 0 : 1)}; */
-
-display: ${({ $delay }) => $delay ? "none" : "block"};
+  display: ${({ $delay }) => ($delay ? "none" : "block")};
   font-size: 2rem;
   color: black;
   text-align: center;
