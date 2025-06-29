@@ -72,7 +72,7 @@ export const ImageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  padding-top: 20px;
+
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     width: 25px;
@@ -91,16 +91,20 @@ export const ImageWrapper = styled.div`
       transition-delay: 0.1s, 0.1s, 0.1s;
       margin: 10px;
       width: 90vmin;
-      height: 90vmin;
+      height: 96vmin;
 
       @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
         width: 90vmin;
-        height: 90vmin;
+        height: 98vmin;
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+        width: 90vmin;
+        height: 95vmin;
       }
     `: css`
       transition: width 0.4s ease-in-out, height 0.4s ease-in-out, margin 0.4s ease-in-out;
-       transition-delay: 0s, 0s, 0s;
-
+      transition-delay: 0s, 0s, 0s;
     `}
 `;
 
@@ -111,7 +115,7 @@ export const Text = styled.p`
   text-align: center;
   font-weight: bold;
   z-index: 1;
-  margin: 20px 0 0 0 ;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     font-size: 1.5rem;

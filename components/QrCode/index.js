@@ -36,7 +36,7 @@ export const QrCode = ({ hidden }) => {
         $hidden={hidden}
       >
         <ImageWrapper $isOpen={isOpen}>
-          <Image src={imageUrls.qrCode} alt="review qr code" fill loading="lazy" /> <br />
+          <Image src={imageUrls.qrCode} alt="review qr code" fill loading="lazy" />
           {isOpen && <Text $delay={delay}>Zeskanuj kod QR i wystaw opinię</Text>}
         </ImageWrapper>
       </Wrpper>
