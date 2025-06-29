@@ -64,15 +64,12 @@ export const Wrpper = styled.div`
 export const ImageWrapper = styled.div`
   position: relative;
   margin: 1px;
-  max-width: 900px;
-  max-height: 950px;
   width: 42px;
   height: 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     width: 25px;
@@ -85,27 +82,30 @@ export const ImageWrapper = styled.div`
   }
 
   ${({ $isOpen }) =>
-    $isOpen ?
-      css`
-      transition: width 0.4s ease-in-out, height 0.4s ease-in-out, margin 0.4s ease-in-out;
-      transition-delay: 0.1s, 0.1s, 0.1s;
-      margin: 10px;
-      width: 90vmin;
-      height: 96vmin;
+    $isOpen
+      ? css`
+          transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
+            margin 0.4s ease-in-out;
+          transition-delay: 0.1s, 0.1s, 0.1s;
+          margin: 10px;
+          width: min(90vmin, 900px);
+          height: min(96vmin, 950px);
 
-      @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-        width: 90vmin;
-        height: 98vmin;
-      }
+          @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+            width: min(90vmin, 900px);
+            height: min(98vmin, 950px);
+          }
 
-      @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-        width: 90vmin;
-        height: 95vmin;
-      }
-    `: css`
-      transition: width 0.4s ease-in-out, height 0.4s ease-in-out, margin 0.4s ease-in-out;
-      transition-delay: 0s, 0s, 0s;
-    `}
+          @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+            width: min(90vmin, 900px);
+            height: min(95vmin, 950px);
+          }
+        `
+      : css`
+          transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
+            margin 0.4s ease-in-out;
+          transition-delay: 0s, 0s, 0s;
+        `}
 `;
 
 export const Text = styled.p`
