@@ -21,7 +21,9 @@ export const QrCode = ({ hidden }) => {
     }
 
     return () => {
-      setDelay(true);
+      setTimeout(() => {
+        setDelay(true);
+      }, 800);
       window.removeEventListener("wheel", preventScroll);
       window.removeEventListener("touchmove", preventScroll);
     };
@@ -38,7 +40,7 @@ export const QrCode = ({ hidden }) => {
         <ImageWrapper $isOpen={isOpen}>
           <Image src={imageUrls.qrCode} alt="review qr code" fill loading="lazy" />
         </ImageWrapper>
-        {isOpen && <Text $delay={delay}>Zeskanuj kod QR i wystaw opinię</Text>}
+        {isOpen && <Text $delay={delay}>{delay ? "" : "Zeskanuj kod QR i wystaw opinię"}</Text>}
       </Wrpper>
     </>
   );

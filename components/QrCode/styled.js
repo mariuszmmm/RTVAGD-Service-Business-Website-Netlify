@@ -19,7 +19,7 @@ export const Wrpper = styled.div`
   top: 132px;
   right: 20px;  
   transform: translate(0, 0);
-  opacity: 0.3;
+  opacity: 0.8;
   border-radius: 2px;
 
   ${({ $hidden }) =>
@@ -108,8 +108,12 @@ export const ImageWrapper = styled.div`
     `}
 `;
 
-export const Text = styled.p`
-  opacity: ${({ $delay }) => $delay ? 0 : 1};
+export const Text = styled.span`
+// wyśrodkuj
+
+  /* opacity: ${({ $delay }) => ($delay ? 0 : 1)}; */
+
+display: ${({ $delay }) => $delay ? "none" : "block"};
   font-size: 2rem;
   color: black;
   text-align: center;
