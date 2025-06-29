@@ -64,12 +64,19 @@ export const Wrpper = styled.div`
 export const ImageWrapper = styled.div`
   position: relative;
   margin: 1px;
+  max-width: 900px;
+  max-height: 900px;
   width: 42px;
   height: 42px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
+
+  /* aspect-ratio: 1; */
+  /* justify-self: center; */
+  align-self: center;
+
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     width: 25px;
@@ -82,30 +89,23 @@ export const ImageWrapper = styled.div`
   }
 
   ${({ $isOpen }) =>
-    $isOpen
-      ? css`
-          transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
-            margin 0.4s ease-in-out;
-          transition-delay: 0.1s, 0.1s, 0.1s;
-          margin: 10px;
-          width: min(90vmin, 900px);
-          height: min(96vmin, 950px);
+    $isOpen ?
+      css`
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out, margin 0.4s ease-in-out;
+      transition-delay: 0.1s, 0.1s, 0.1s;
+      margin: 10px;
+      width: 90vmin;
+      height: 90vmin;
 
-          @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
-            width: min(90vmin, 900px);
-            height: min(98vmin, 950px);
-          }
+      @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
+        width: 90vmin;
+        height: 90vmin;
+      }
+    `: css`
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out, margin 0.4s ease-in-out;
+       transition-delay: 0s, 0s, 0s;
 
-          @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-            width: min(90vmin, 900px);
-            height: min(95vmin, 950px);
-          }
-        `
-      : css`
-          transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
-            margin 0.4s ease-in-out;
-          transition-delay: 0s, 0s, 0s;
-        `}
+    `}
 `;
 
 export const Text = styled.p`
@@ -115,7 +115,7 @@ export const Text = styled.p`
   text-align: center;
   font-weight: bold;
   z-index: 1;
-  margin: 0;
+  margin: 10px ;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     font-size: 1.5rem;
