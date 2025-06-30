@@ -30,7 +30,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa telewizorów Przemyśl 📺</Title>
+        <Title>Naprawa telewizorów Przemyśl –<Break /> Profesjonalny serwis RTV 📺</Title>
 
         <Section>
           <StyledPhoto>

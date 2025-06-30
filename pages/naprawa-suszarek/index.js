@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa suszarek Przemyśl 💨</Title>
+        <Title>Naprawa suszarek Przemyśl –<Break /> Profesjonalny serwis suszarek 💨</Title>
 
         <Section>
           <StyledPhoto

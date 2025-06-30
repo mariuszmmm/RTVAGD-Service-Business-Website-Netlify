@@ -33,7 +33,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa ekspresów Przemyśl ☕</Title>
+        <Title>Naprawa ekspresów Przemyśl –<Break /> Profesjonalny serwis ekspresów ☕</Title>
 
         <Section>
           <StyledPhoto>
