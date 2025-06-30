@@ -7,8 +7,8 @@ const routes = {
     changefreq: 'daily',
     priority: '1.0',
     image: `${BASE_URL}/images/naprawa-rtv-i-agd-przemysl-serwis.webp`,
-    caption: 'Serwis RTV i AGD Przemyśl oferuje kompleksową naprawę pralek, zmywarek i suszarek.',
-    title: 'Profesjonalna naprawa pralek Przemyśl – Serwis RTV i AGD'
+    caption: 'Naprawa pralek Przemyśl, naprawa suszarek Przemyśl, naprawa zmywarek Przemyśl, naprawa telewizorów Przemyśl, naprawa ekspresów Przemyśl',
+    title: 'Profesjonalna naprawa RTV i AGD w Przemyślu'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',

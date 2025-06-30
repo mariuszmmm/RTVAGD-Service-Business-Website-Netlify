@@ -221,13 +221,13 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: "Naprawa RTV i AGD Przemyśl – Naprawa pralek, zmywarek, suszarek | Naprawa RTV i AGD",
-      ogTitle: "Naprawa RTV i AGD Przemyśl – Naprawa pralek, zmywarek, suszarek | Naprawa RTV i AGD",
-      twitterTitle: "Naprawa RTV i AGD Przemyśl – Naprawa pralek, zmywarek, suszarek | Naprawa RTV i AGD",
+      title: "Naprawa pralek i sprzętu RTV – Przemyśl | Naprawa RTV i AGD",
+      ogTitle: "Naprawa pralek i sprzętu RTV – Przemyśl | Naprawa RTV i AGD",
+      twitterTitle: "Naprawa pralek i sprzętu RTV – Przemyśl | Naprawa RTV i AGD",
       description: "Naprawa RTV i AGD Przemyśl – Profesjonalny serwis pralek, zmywarek i suszarek. ✓ Szybka diagnoza ✓ Gwarancja ✓ Wszystkie marki. ☎️ 790 258 612",
       ogDescription: "Naprawa RTV i AGD Przemyśl – Profesjonalny serwis pralek, zmywarek i suszarek. ✓ Szybka diagnoza ✓ Gwarancja ✓ Wszystkie marki. ☎️ 790 258 612",
       twitterDescription: "Naprawa RTV i AGD Przemyśl – Profesjonalny serwis pralek, zmywarek i suszarek. ✓ Szybka diagnoza ✓ Gwarancja ✓ Wszystkie marki. ☎️ 790 258 612",
-      imageAlt: "Serwis RTV i AGD – profesjonalna naprawa pralek, zmywarek i suszarek",
+      imageAlt: "Naprawa pralek Przemyśl, naprawa suszarek Przemyśl, naprawa zmywarek Przemyśl, naprawa telewizorów Przemyśl, naprawa ekspresów Przemyśl",
       imageTitle: "Serwis RTV i AGD – naprawa pralek, zmywarek, suszarek",
       imageWidth: "931",
       imageHeight: "497",
@@ -400,7 +400,7 @@ export const dataForMetaTags = {
         "@id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": "Naprawa RTV i AGD Przemyśl – Naprawa pralek, zmywarek, suszarek | Naprawa RTV i AGD",
+        "name": "Naprawa pralek i sprzętu RTV – Przemyśl | Naprawa RTV i AGD",
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
@@ -421,9 +421,9 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.serwis,
         "width": 931,
         "height": 497,
-        "name": "Serwis RTV i AGD w Przemyślu – Naprawa pralek i zmywarek",
+        "name": "Naprawa RTV i AGD Przemyśl",
         "description": "Warsztat serwisowy RTV i AGD w Przemyślu z technikiem przy naprawie urządzenia",
-        "caption": "Profesjonalny serwis RTV-AGD w Przemyślu",
+        "caption": "Naprawa pralek Przemyśl, naprawa suszarek Przemyśl, naprawa zmywarek Przemyśl, naprawa telewizorów Przemyśl, naprawa ekspresów Przemyśl",
         "representativeOfPage": true
       },
       breadcrumbList: {
@@ -586,12 +586,12 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Naprawa pralek Przemyśl ⚡ Serwis AGD ☎️ 790 258 612 | Naprawa RTV i AGD",
-      ogTitle: "Naprawa pralek Przemyśl ⚡ Serwis AGD ☎️ 790 258 612 | Naprawa RTV i AGD",
-      twitterTitle: "Naprawa pralek Przemyśl ⚡ Serwis AGD ☎️ 790 258 612 | Naprawa RTV i AGD",
-      description: "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od frontu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ✓ Obsługa marek: Bosch, Samsung, Electrolux. ☎️ 790 258 612",
-      ogDescription: "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od frontu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ✓ Obsługa marek: Bosch, Samsung, Electrolux. ☎️ 790 258 612",
-      twitterDescription: "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od frontu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ✓ Obsługa marek: Bosch, Samsung, Electrolux. ☎️ 790 258 612",
+      title: "Naprawa pralek Przemyśl ☎️ 790 258 612 | Naprawa RTV i AGD",
+      ogTitle: "Naprawa pralek Przemyśl ☎️ 790 258 612 | Naprawa RTV i AGD",
+      twitterTitle: "Naprawa pralek Przemyśl ☎️ 790 258 612 | Naprawa RTV i AGD",
+      description: "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od przodu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ☎️ 790 258 612",
+      ogDescription: "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od przodu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ☎️ 790 258 612",
+      twitterDescription: "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od przodu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ☎️ 790 258 612",
       imageType: "image/webp",
       image: imageUrls.pralka,
       imageAlt: "Naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od przodu",
@@ -802,14 +802,14 @@ export const dataForMetaTags = {
         "@id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": "Naprawa pralek Przemyśl ⚡ Serwis AGD ☎️ 790 258 612 | Naprawa RTV i AGD",
+        "name": "Naprawa pralek Przemyśl ☎️ 790 258 612 | Naprawa RTV i AGD",
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "thumbnailUrl": imageUrls.pralka,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od frontu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ✓ Obsługa marek: Bosch, Samsung, Electrolux. ☎️ 790 258 612",
+        "description": "Profesjonalna naprawa pralek Przemyśl – serwis pralek automatycznych i ładowanych od przodu. ✓ Szybka diagnoza ✓ Oryginalne części ✓ Gwarancja ☎️ 790 258 612",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_pralek + "#breadcrumb" },
         "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
 
@@ -1710,5 +1710,31 @@ export const dataForMetaTags = {
     }
   },
 };
+
+
+
+// const values = ["title", "description", "imageAlt", "imageTitle"];
+const values = ["siteName", "title", "description"];
+
+function logMetaTagLengths(pageKeys) {
+  pageKeys.forEach(pageKey => {
+    const metaTags = dataForMetaTags[pageKey]?.metaTags;
+    if (!metaTags) return;
+    console.log(" ");
+    console.log(`Dla strony https://naprawaprzemysl.pl${dataForMetaTags[pageKey]?.metaTags.canonical} mam:`);
+
+    Object.entries(metaTags).forEach(([key, value]) => {
+      if (values.includes(key)) {
+        console.log(`${key}: "${value}",`);
+        console.log(`${key} length: ${value.length},`);
+      }
+    });
+  });
+}
+
+// logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
+
+logMetaTagLengths(["home", "naprawa_pralek"]);
+
 
 
