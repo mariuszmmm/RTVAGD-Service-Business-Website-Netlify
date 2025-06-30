@@ -95,7 +95,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Naprawa RTV i AGD Przemyśl -<Break /> Profesjonalny Serwis Pralek, Zmywarek,<Break /> Suszarek, Telewizorów i Ekspresów
+            Naprawa RTV i AGD Przemyśl –<Break /> Profesjonalny Serwis Pralek, Zmywarek,<Break /> Suszarek, Telewizorów i Ekspresów
           </HeroTitle>
           <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
           <ButtonLink
