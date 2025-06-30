@@ -31,16 +31,16 @@ export const QrCode = ({ hidden }) => {
 
   return (
     <>
-      <Background $isOpen={isOpen} />
+      <Background $isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
       <Wrpper
         onClick={() => setIsOpen(!isOpen)}
         $isOpen={isOpen}
         $hidden={hidden}
       >
         <ImageWrapper $isOpen={isOpen}>
-          <Image src={imageUrls.qrCode} alt="review qr code" fill loading="lazy" />
+          <Image src={imageUrls.qrCode} alt="QrCode - wystaw opinię" fill loading="lazy" />
         </ImageWrapper>
-        {isOpen && <Text $delay={delay}>{delay ? "" : "Zeskanuj kod QR i wystaw opinię"}</Text>}
+        {isOpen && <Text $delay={delay}>Zeskanuj kod QR i wystaw opinię</Text>}
       </Wrpper>
     </>
   );
