@@ -51,7 +51,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa ekspresów Przemyśl – Profesjonalny serwis wszystkich marek</SubTitle>
+          <SubTitle>Naprawa Ekspresów Przemyśl – Profesjonalny Serwis wszystkich marek</SubTitle>
           <StyledText>
             Poranek bez ulubionej kawy? A może awaria ekspresu paraliżuje pracę w Twojej kawiarni? Doskonale rozumiem ten problem. Oferuję profesjonalny serwis i naprawę ekspresów w Przemyślu, by szybko przywrócić Twoje urządzenie do życia. Niezależnie od tego, czy posiadasz domowy ekspres automatyczny, czy profesjonalną maszynę gastronomiczną, podejdę do problemu z pełnym zaangażowaniem. Jeśli szukasz fachowca, dla którego naprawa ekspresów w Przemyślu to codzienność, dobrze trafiłeś. Skontaktuj się, a ja zajmę się resztą!
           </StyledText>
@@ -69,7 +69,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego Wybrać Mój Serwis Ekspresów w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego wybrać mój Serwis Ekspresów w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka diagnoza</strong>: precyzyjnie określam źródło awarii, by ograniczyć czas przestoju ekspresu.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: praca z różnymi modelami i markami ekspresów – od urządzeń kompaktowych po profesjonalne maszyny gastronomiczne.</li>
@@ -79,7 +79,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak Przebiega Proces Naprawy Ekspresu do Kawy?</SubTitle>
+          <SubTitle>Jak przebiega proces Naprawy Ekspresu do Kawy?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Konsultacja i wstępne ustalenie</strong>: opis problemu (objawy, model), wstępne wskazówki co do możliwych przyczyn i terminu wizyty.</li>
             <li><strong>Diagnostyka</strong>: dokładna kontrola układu hydraulicznego, ciśnieniowego i elektronicznego; odczyt kodów błędów, testy funkcjonalne.</li>
