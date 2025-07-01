@@ -1769,7 +1769,7 @@ export const dataForMetaTags = {
 
 
 // const values = ["title", "description", "imageAlt", "imageTitle"];
-const values = ["description"];
+const values = ["title"];
 
 function logMetaTagLengths(pageKeys) {
   pageKeys.forEach(pageKey => {

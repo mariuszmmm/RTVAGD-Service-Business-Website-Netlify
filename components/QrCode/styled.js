@@ -19,9 +19,10 @@ export const Wrpper = styled.div`
   top: 130px;
   right: 20px;  
   transform: translate(0, 0);
-  opacity: 0.8;
   border-radius: 2px;
+  opacity: ${({ $loaded }) => ($loaded ? "0.8" : "0")};
 
+  
   ${({ $hidden }) =>
     $hidden &&
     css`
@@ -29,16 +30,18 @@ export const Wrpper = styled.div`
       pointer-events: none;
     `};
 
-  &:hover {
-    opacity: 1;
-  }
-
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     top: 94px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
     top: 84px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 1;
+    }
   }
 
   ${({ $isOpen }) =>
@@ -56,7 +59,7 @@ export const Wrpper = styled.div`
         top: 50vh;
       }
     `: css`
-        transition:  top 0.3s ease-in-out, right 0.3s ease-in-out, transform 0.3s ease-in-out, border-radius 0.2s ease-in-out, opacity 0.2s ease;
+        transition:  top 0.3s ease-in-out, right 0.3s ease-in-out, transform 0.3s ease-in-out, border-radius 0.2s ease-in-out, opacity 0.3s ease;
         transition-delay: 0.1s, 0.1s, 0.1s, 0.1s, 0s;
       `}; 
 `;
@@ -84,7 +87,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Text = styled.p`
-transition: font-size 0.4s ease-in-out, margin 0.4s ease-in-out;
+transition: font-size 0.3s ease-in-out, margin 0.4s ease-in-out;
    ${({ $delay }) => ($delay ?
     css`
       font-size: 0.01rem;
