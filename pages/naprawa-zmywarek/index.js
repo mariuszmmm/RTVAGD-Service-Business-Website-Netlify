@@ -49,14 +49,14 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa zmywarek Przemyśl – Dokładna diagnostyka i usuwanie usterek</SubTitle>
+          <SubTitle>Naprawa Zmywarek Przemyśl – Dokładna Diagnostyka i Usuwanie Usterek</SubTitle>
           <StyledText>
             Zmywarka odmówiła posłuszeństwa, a góra naczyń rośnie? Bez obaw, jestem tutaj, aby pomóc. Oferuję szybką i skuteczną naprawę zmywarek w Przemyślu i okolicy. Niezależnie od tego, czy Twoja zmywarka nie pobiera wody, nie grzeje, czy zostawia brudne naczynia – znam się na rzeczy. Jako specjalista od naprawy zmywarek w Przemyślu, podchodzę do każdego zlecenia indywidualnie, korzystając ze sprawdzonych części i profesjonalnego sprzętu. Moim celem jest, aby Twoja zmywarka znów działała jak nowa, a Ty mógłbyś zapomnieć o ręcznym zmywaniu. Skontaktuj się ze mną, a szybko przywrócę porządek w Twojej kuchni!
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Typowe Usterki Zmywarek i Ich Rozwiązania</SubTitle>
+          <SubTitle>Typowe Usterki Zmywarek i ich Rozwiązania</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Brak pobierania wody</strong> – zazwyczaj wina zaworu dopływu, niedrożnego filtra lub problemu z dopływem. Sprawdzam obwód wodny i elementy sterujące.</li>
             <li><strong>Brak podgrzewania</strong> – przyczyną może być uszkodzona grzałka, czujnik temperatury lub moduł sterowania. Dokładnie weryfikuję elementy grzewcze.</li>
@@ -79,7 +79,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Kroki Naprawy Zmywarki w Moim Serwisie</SubTitle>
+          <SubTitle>Kroki Naprawy Zmywarki w moim Serwisie</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępne ustalenia</strong>: opis usterki przez telefon lub e-mail, wstępna analiza możliwości i terminu.</li>
             <li><strong>Diagnostyka na miejscu</strong>: testy wodno-elektryczne, odczyt ewentualnych kodów błędów i kontrola mechaniczna.</li>
