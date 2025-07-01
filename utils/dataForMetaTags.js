@@ -74,7 +74,6 @@ export const localBusiness = {
     "closes": "17:00"
   },
   "priceRange": "PLN",
-  "serviceType": "Naprawa Sprzętu AGD i RTV",
   "areaServed": [
     { "@type": "Place", "name": "Przemyśl" },
     { "@type": "Place", "name": "Bolestraszyce" },
