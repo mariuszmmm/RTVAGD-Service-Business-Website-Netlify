@@ -69,7 +69,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego Wybrać <strong>NaprawaPrzemysl</strong> do Naprawy Suszarki?</SubTitle>
+          <SubTitle>Dlaczego Wybrać "NaprawaPrzemysl" do Naprawy Suszarki?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
