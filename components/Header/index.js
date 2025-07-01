@@ -50,7 +50,7 @@ const Header = ({ rating }) => {
       <HeaderContainer>
         <Logo
           href={appUrls.home}
-          title="NaprawaPrzemysl - Strona główna"
+          title={`${serwis.shortName.split(" ")[0]} - Strona główna`}
         >
           <Emoticon $logo>
             <Image
