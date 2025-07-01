@@ -48,7 +48,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa telewizorów Przemyśl – Specjalistyczna obsługa LCD, OLED, Smart TV</SubTitle>
+          <SubTitle>Naprawa Telewizorów Przemyśl – Specjalistyczna Obsługa LCD, OLED, Smart TV</SubTitle>
           <StyledText>
             Twój telewizor odmówił posłuszeństwa w najmniej odpowiednim momencie? Doskonale to znam. Oferuję profesjonalną naprawę telewizorów w Przemyślu, podchodząc do każdego przypadku z pełnym zaangażowaniem. Niezależnie od tego, czy to problem z obrazem w Twoim OLED, kłopoty ze Smart TV, czy usterka w starszym modelu LCD – znajdę rozwiązanie. Moim celem jest szybka diagnoza i skuteczna naprawa, byś mógł jak najszybciej wrócić do swoich ulubionych seansów. Jeśli interesuje Cię solidna naprawa telewizorów w Przemyślu, zapraszam do kontaktu.
           </StyledText>
@@ -67,7 +67,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego Wybrać Mój Serwis TV w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego wybrać mój Serwis TV w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka i trafna diagnoza</strong>: określam przyczynę usterki możliwie szybko, aby ograniczyć czas bez telewizora.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: praca z różnorodnymi technologiami (LCD, LED, OLED, QLED, Smart TV) pomaga skutecznie lokalizować i usuwać problemy.</li>
@@ -78,7 +78,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak Przebiega Naprawa Telewizora?</SubTitle>
+          <SubTitle>Jak przebiega Naprawa Telewizora?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i opis objawów</strong>: krótka konsultacja telefoniczna lub e-mail z informacją, co się dzieje (np. brak obrazu, migotanie, brak dźwięku).</li>
             <li><strong>Diagnostyka</strong>: testy elektroniki, analiza podzespołów zasilania, sterowania i wyświetlania; sprawdzenie oprogramowania Smart TV.</li>
