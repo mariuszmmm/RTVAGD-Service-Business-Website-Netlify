@@ -30,7 +30,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa telewizorów Przemyśl –<Break /> Profesjonalny serwis RTV 📺</Title>
+        <Title>Naprawa Telewizorów w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -55,7 +55,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Typowe usterki telewizorów</SubTitle>
+          <SubTitle>Najczęstsze Usterki Telewizorów – Diagnoza i Naprawa</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Brak obrazu lub problemy z wyświetlaniem</strong> – przyczyny to awarie matrycy, uszkodzenia podświetlenia LED, problemy w układzie sterowania. Dokładna diagnostyka elektroniki i podzespołów wyświetlania pozwala zlokalizować usterkę.</li>
             <li><strong>Brak dźwięku</strong> – usterki układów audio, głośników lub oprogramowania mogą powodować ciszę. Weryfikuję połączenia, moduły audio i oprogramowanie Smart TV.</li>
@@ -67,7 +67,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać mój serwis telewizorów w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego Wybrać Mój Serwis TV w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka i trafna diagnoza</strong>: określam przyczynę usterki możliwie szybko, aby ograniczyć czas bez telewizora.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: praca z różnorodnymi technologiami (LCD, LED, OLED, QLED, Smart TV) pomaga skutecznie lokalizować i usuwać problemy.</li>
@@ -78,7 +78,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega naprawa telewizora? Krok po kroku</SubTitle>
+          <SubTitle>Jak Przebiega Naprawa Telewizora?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i opis objawów</strong>: krótka konsultacja telefoniczna lub e-mail z informacją, co się dzieje (np. brak obrazu, migotanie, brak dźwięku).</li>
             <li><strong>Diagnostyka</strong>: testy elektroniki, analiza podzespołów zasilania, sterowania i wyświetlania; sprawdzenie oprogramowania Smart TV.</li>

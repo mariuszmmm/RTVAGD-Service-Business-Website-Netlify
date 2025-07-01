@@ -49,16 +49,17 @@ const Header = ({ rating }) => {
     >
       <HeaderContainer>
         <Logo href={appUrls.home}>
-          {` ${serwis.shortName} `}
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
-              alt="Przemyśl"
+              alt="Logo NaprawaPrzemysl - Serwis AGD i RTV w Przemyślu"
+              title="NaprawaPrzemysl - Strona główna"
               fill
               loading="lazy"
               itemProp="image"
             />
           </Emoticon>
+          NaprawaPrzemysl
         </Logo>
         <nav>
           <NavList>

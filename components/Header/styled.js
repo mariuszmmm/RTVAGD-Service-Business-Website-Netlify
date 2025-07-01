@@ -110,7 +110,7 @@ export const Logo = styled(Link)`
   font-weight: bold;
   padding-right: 5px;
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   align-items: center;
   gap: 10px;
 `;

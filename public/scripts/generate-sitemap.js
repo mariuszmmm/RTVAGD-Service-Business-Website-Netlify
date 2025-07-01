@@ -6,44 +6,44 @@ const routes = {
   '/': {
     changefreq: 'daily',
     priority: '1.0',
-    image: `${BASE_URL}/images/naprawa-rtv-i-agd-przemysl-serwis.webp`,
-    caption: 'Naprawa pralek Przemyśl, naprawa suszarek Przemyśl, naprawa zmywarek Przemyśl, naprawa telewizorów Przemyśl, naprawa ekspresów Przemyśl',
-    title: 'Profesjonalna naprawa RTV i AGD w Przemyślu'
+    image: `${BASE_URL}/images/serwis-agd-rtv-2.webp`,
+    caption: 'Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu.',
+    title: 'Serwis AGD i RTV Przemyśl'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-pralek-przemysl-serwis.webp`,
-    caption: 'Szybka i profesjonalna naprawa pralek automatycznych w Przemyślu.',
-    title: 'Naprawa pralek Przemyśl – Serwis RTV i AGD'
+    image: `${BASE_URL}/images/naprawa-pralek-2.webp`,
+    caption: 'Profesjonalna naprawa pralek w Przemyślu.',
+    title: 'Serwis Pralek Przemyśl'
   },
   '/naprawa-suszarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-suszarek-przemysl.webp`,
-    caption: 'Szybka i profesjonalna naprawa suszarek bębnowych i kondensacyjnych w Przemyślu.',
-    title: 'Naprawa suszarek Przemyśl – Serwis RTV i AGD'
+    image: `${BASE_URL}/images/naprawa-suszarek-2.webp`,
+    caption: 'Profesjonalna naprawa suszarek do ubrań w Przemyślu.',
+    title: 'Serwis Suszarek Przemyśl'
   },
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-zmywarek-przemysl.webp`,
-    caption: 'Szybka i profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.',
-    title: 'Naprawa zmywarek Przemyśl – Serwis RTV i AGD'
+    image: `${BASE_URL}/images/naprawa-zmywarek-2.webp`,
+    caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
+    title: 'Serwis Zmywarek Przemyśl'
   },
   '/naprawa-ekspresow/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/serwis-ekspresow-przemysl-naprawa-ekspresu.webp`,
-    caption: 'Szybka i profesjonalna naprawa ekspresów ciśnieniowych i automatycznych w Przemyślu.',
-    title: 'Naprawa ekspresów Przemyśl – Serwis RTV i AGD'
+    image: `${BASE_URL}/images/naprawa-ekspresow-2.webp`,
+    caption: 'Profesjonalna naprawa ekspresów do kawy w Przemyślu.',
+    title: 'Serwis Ekspresów do Kawy Przemyśl'
   },
   '/naprawa-telewizorow/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/serwis-telewizorow-przemysl-naprawa-telewizora.webp`,
-    caption: 'Szybka i profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu.',
-    title: 'Naprawa telewizorów Przemyśl – Serwis RTV i AGD'
+    image: `${BASE_URL}/images/naprawa-telewizorow-2.webp`,
+    caption: 'Profesjonalna naprawa telewizorów w Przemyślu.',
+    title: 'Serwis Telewizorów Przemyśl'
   },
   '/o-mnie/': {
     changefreq: 'weekly',
@@ -60,7 +60,7 @@ const routes = {
 }
 
 const urlsXml = Object.entries(routes)
-  .map(([route]) => {
+  .map(([route], index) => {
     const data = routes[route];
     const imageBlock = data.image && data.caption && data.title
       ? [
@@ -78,7 +78,8 @@ const urlsXml = Object.entries(routes)
       `    <changefreq>${data.changefreq || 'daily'}</changefreq>`,
       `    <priority>${data.priority || '0.8'}</priority>`,
       imageBlock,
-      `  </url>`
+      `  </url>`,
+      `${index === Object.entries(routes).length - 1 ? '' : ' '}`
     ].filter(Boolean).join('\n');
   })
   .join('\n');

@@ -31,7 +31,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa zmywarek Przemyśl –<Break /> Profesjonalny serwis zmywarek 🍽️</Title>
+        <Title>Naprawa Zmywarek w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -56,7 +56,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Typowe usterki zmywarek</SubTitle>
+          <SubTitle>Typowe Usterki Zmywarek i Ich Rozwiązania</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Brak pobierania wody</strong> – zazwyczaj wina zaworu dopływu, niedrożnego filtra lub problemu z dopływem. Sprawdzam obwód wodny i elementy sterujące.</li>
             <li><strong>Brak podgrzewania</strong> – przyczyną może być uszkodzona grzałka, czujnik temperatury lub moduł sterowania. Dokładnie weryfikuję elementy grzewcze.</li>
@@ -68,7 +68,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać mój serwis zmywarek w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego Warto Mi Zaufać w Kwestii Naprawy Zmywarki?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalanie terminu</strong>: dbam o to, aby wizyta odbyła się w dogodnym dla Klienta terminie, reagując możliwie szybko.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie przy zmywarkach marek Bosch, Electrolux, Beko, Siemens i innych pozwala skutecznie diagnozować zarówno standardowe, jak i nietypowe awarie.</li>
@@ -79,7 +79,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega naprawa zmywarki? Krok po kroku</SubTitle>
+          <SubTitle>Kroki Naprawy Zmywarki w Moim Serwisie</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępne ustalenia</strong>: opis usterki przez telefon lub e-mail, wstępna analiza możliwości i terminu.</li>
             <li><strong>Diagnostyka na miejscu</strong>: testy wodno-elektryczne, odczyt ewentualnych kodów błędów i kontrola mechaniczna.</li>

@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa suszarek Przemyśl –<Break /> Profesjonalny serwis suszarek 💨</Title>
+        <Title>Naprawa Suszarek do Ubrań w Przemyślu</Title>
 
         <Section>
           <StyledPhoto
@@ -58,7 +58,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Najczęstsze usterki suszarek</SubTitle>
+          <SubTitle>Częste Problemy z Suszarkami – Rozwiązania</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Bęben nie obraca się</strong> – może wynikać z zerwanego paska napędowego, zużytych łożysk lub uszkodzonego silnika. Dokładna kontrola elementów napędu pozwala zidentyfikować problem.</li>
             <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> – przyczyną mogą być czujnik wilgotności, przegrzewanie lub moduł sterujący. Sprawdzam układ elektroniczny i termiczne zabezpieczenia.</li>
@@ -69,7 +69,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać mój serwis suszarek w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego Wybrać <strong>NaprawaPrzemysl</strong> do Naprawy Suszarki?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
@@ -80,7 +80,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega naprawa suszarki? Krok po kroku</SubTitle>
+          <SubTitle>Jak Działam – Proces Serwisu Suszarek</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i opis usterki</strong>: krótka rozmowa telefoniczna lub wiadomość e-mail z opisem symptomów i modelem urządzenia.</li>
             <li><strong>Diagnostyka na miejscu</strong>: pełne sprawdzenie suszarki, testy funkcjonalne i analiza ewentualnych kodów błędów.</li>

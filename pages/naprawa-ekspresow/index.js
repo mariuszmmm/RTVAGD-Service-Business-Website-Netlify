@@ -33,7 +33,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa ekspresów Przemyśl –<Break /> Profesjonalny serwis ekspresów ☕</Title>
+        <Title>Naprawa Ekspresów do Kawy w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -58,7 +58,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Typowe problemy z ekspresami do kawy</SubTitle>
+          <SubTitle>Najczęstsze Usterki Ekspresów do Kawy</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Brak zaparzania kawy</strong> – może wynikać z zatkanych dysz, problemu z pompą lub układem zaparzania. Dokładne czyszczenie i weryfikacja elementów ciśnieniowych to klucz do przywrócenia funkcji.</li>
             <li><strong>Wycieki wody podczas pracy</strong> – najczęściej uszkodzone uszczelki, szczelność przewodów lub elementy bojlera wymagają kontroli i ewentualnej wymiany.</li>
@@ -69,7 +69,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać mój serwis ekspresów w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego Wybrać Mój Serwis Ekspresów w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka diagnoza</strong>: precyzyjnie określam źródło awarii, by ograniczyć czas przestoju ekspresu.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: praca z różnymi modelami i markami ekspresów – od urządzeń kompaktowych po profesjonalne maszyny gastronomiczne.</li>
@@ -79,7 +79,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega naprawa ekspresu do kawy? Krok po kroku</SubTitle>
+          <SubTitle>Jak Przebiega Proces Naprawy Ekspresu do Kawy?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Konsultacja i wstępne ustalenie</strong>: opis problemu (objawy, model), wstępne wskazówki co do możliwych przyczyn i terminu wizyty.</li>
             <li><strong>Diagnostyka</strong>: dokładna kontrola układu hydraulicznego, ciśnieniowego i elektronicznego; odczyt kodów błędów, testy funkcjonalne.</li>

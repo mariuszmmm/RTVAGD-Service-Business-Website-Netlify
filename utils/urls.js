@@ -24,12 +24,12 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: `${baseUrl}/images/naprawa-rtv-i-agd-przemysl-serwis.webp`,
-  pralka: baseUrl + "/images/naprawa-pralek-przemysl-serwis.webp",
-  suszarka: baseUrl + "/images/naprawa-suszarek-przemysl.webp",
-  zmywarka: baseUrl + "/images/naprawa-zmywarek-przemysl.webp",
-  telewizor: baseUrl + "/images/serwis-telewizorow-przemysl-naprawa-telewizora.webp",
-  ekspres: baseUrl + "/images/serwis-ekspresow-przemysl-naprawa-ekspresu.webp",
+  serwis: `${baseUrl}/images/serwis-agd-rtv-2.webp`,
+  pralka: `${baseUrl}/images/naprawa-pralek-2.webp`,
+  suszarka: `${baseUrl}/images/naprawa-suszarek-2.webp`,
+  zmywarka: `${baseUrl}/images/naprawa-zmywarek-2.webp`,
+  telewizor: `${baseUrl}/images/naprawa-telewizorow-2.webp`,
+  ekspres: `${baseUrl}/images/naprawa-ekspresow-2.webp`,
 
   serwis_1: baseUrl + "/images/serwis.jpg",
   _telewizor: baseUrl + "/images/telewizor.webp",

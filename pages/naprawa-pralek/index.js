@@ -30,7 +30,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         reviews={reviews}
       />
       <Container>
-        <Title>Naprawa pralek Przemyśl –<Break /> Profesjonalny serwis pralek 🧺</Title>
+        <Title>Naprawa Pralek w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -55,7 +55,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Typowe usterki pralek</SubTitle>
+          <SubTitle>Najczęstsze Usterki Pralek, Które Naprawiam</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Pralka nie pobiera wody</strong> – możliwe przyczyny to uszkodzony elektrozawór, zatkany filtr wody, niedrożny wąż doprowadzający czy problem z czujnikiem poziomu (hydrostat).</li>
             <li><strong>Wycieki wody</strong> – źródłem mogą być nieszczelne uszczelki drzwi, pęknięty wąż odpływowy lub uszkodzona pompa. Dokładna kontrola pozwala zidentyfikować przyczynę.</li>
@@ -67,7 +67,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego warto wybrać mój serwis pralek w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego Wybrać Mój Serwis Pralek w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka organizacja terminu</strong>: staram się ustalić dogodny czas wizyty tak szybko, jak to możliwe, aby jak najkrócej odczuwać niedogodności związane z awarią.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: dzięki praktyce przy różnorodnych modelach od renomowanych producentów (Bosch, Electrolux, Samsung, Whirlpool, Beko, Amica i inne) potrafię skutecznie reagować na złożone usterki.</li>
@@ -78,7 +78,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega naprawa pralki? Krok po kroku</SubTitle>
+          <SubTitle>Jak Przebiega Proces Naprawy Pralki?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępna konsultacja</strong>: opis awarii telefonicznie lub mailowo, omówienie możliwych przyczyn i wstępna orientacyjna wycena zakresu prac.</li>
             <li><strong>Diagnostyka na miejscu</strong>: dokładne sprawdzenie pralki przy użyciu narzędzi diagnostycznych, potwierdzenie lub weryfikacja wstępnej hipotezy co do usterki.</li>

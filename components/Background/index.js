@@ -1,5 +1,5 @@
 import { imageUrls } from "../../utils/urls.js";
-import { serwis } from "../../utils/serwis.js";
+import { dataForMetaTags } from "../../utils/dataForMetaTags.js";
 import { BackgroundImage } from "../common/BackgroundImage/index.js";
 import { BackgroundWrapper, Circle, Rotating } from "./styled.js";
 import Image from "next/image";
@@ -14,8 +14,9 @@ const Background = () => {
       {!servicesPath && <BackgroundImage>
         <Image
           src={imageUrls.serwis}
-          alt="Naprawa sprzętu RTV i AGD w Przemyśl – naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów."
-          // loading="lazy"
+          title={dataForMetaTags.home.metaTags.imageTitle}
+          alt={dataForMetaTags.home.metaTags.imageAlt}
+          loading="lazy"
           // width="931" height="497"
           fill
         />
