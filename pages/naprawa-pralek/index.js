@@ -48,14 +48,14 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa pralek Przemyśl – Kompleksowa diagnostyka i usunięcie awarii</SubTitle>
+          <SubTitle>Naprawa Pralek Przemyśl – Kompleksowa Diagnostyka i Usunięcie Awarii</SubTitle>
           <StyledText>
             Zepsuta pralka to nie koniec świata, ale na pewno spore zamieszanie w codziennym życiu. Doskonale to rozumiem, dlatego oferuję szybką i skuteczną naprawę pralek na terenie Przemyśla i okolic. Niezależnie od tego, czy Twoja pralka hałasuje, cieknie, czy po prostu odmówiła posłuszeństwa – jestem tu, by pomóc. Podchodzę do każdej naprawy indywidualnie, używając profesjonalnego sprzętu i sprawdzonych części. Moim celem jest nie tylko usunięcie usterki, ale zapewnienie, że Twoja pralka będzie działać jak nowa. Jeśli szukasz fachowca, dla którego naprawa pralek w Przemyślu to chleb powszedni, dobrze trafiłeś!
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Najczęstsze Usterki Pralek, Które Naprawiam</SubTitle>
+          <SubTitle>Najczęstsze Usterki Pralek, które Naprawiam</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Pralka nie pobiera wody</strong> – możliwe przyczyny to uszkodzony elektrozawór, zatkany filtr wody, niedrożny wąż doprowadzający czy problem z czujnikiem poziomu (hydrostat).</li>
             <li><strong>Wycieki wody</strong> – źródłem mogą być nieszczelne uszczelki drzwi, pęknięty wąż odpływowy lub uszkodzona pompa. Dokładna kontrola pozwala zidentyfikować przyczynę.</li>
@@ -67,7 +67,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego Wybrać Mój Serwis Pralek w Przemyślu?</SubTitle>
+          <SubTitle>Dlaczego wybrać mój Serwis Pralek w Przemyślu?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybka organizacja terminu</strong>: staram się ustalić dogodny czas wizyty tak szybko, jak to możliwe, aby jak najkrócej odczuwać niedogodności związane z awarią.</li>
             <li><strong>Wieloletnie doświadczenie</strong>: dzięki praktyce przy różnorodnych modelach od renomowanych producentów (Bosch, Electrolux, Samsung, Whirlpool, Beko, Amica i inne) potrafię skutecznie reagować na złożone usterki.</li>
@@ -78,7 +78,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak Przebiega Proces Naprawy Pralki?</SubTitle>
+          <SubTitle>Jak przebiega Proces Naprawy Pralki?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępna konsultacja</strong>: opis awarii telefonicznie lub mailowo, omówienie możliwych przyczyn i wstępna orientacyjna wycena zakresu prac.</li>
             <li><strong>Diagnostyka na miejscu</strong>: dokładne sprawdzenie pralki przy użyciu narzędzi diagnostycznych, potwierdzenie lub weryfikacja wstępnej hipotezy co do usterki.</li>
