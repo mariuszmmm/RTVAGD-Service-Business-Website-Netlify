@@ -45,10 +45,10 @@ export const FooterInfo = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.medium}) {
     grid-template-areas:
-      "telefon email"
-      "google facebook"
-      "adres adres"
-      "link link";
+      "telefon google"
+      "email facebook"
+      "link link"
+      "adres adres";
   }
 `;
 
