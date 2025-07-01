@@ -6,9 +6,9 @@ const routes = {
   '/': {
     changefreq: 'daily',
     priority: '1.0',
-    image: `${BASE_URL}/images/serwis-agd-rtv-2.webp`,
-    caption: 'Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu.',
-    title: 'Serwis AGD i RTV Przemyśl'
+    image: `${BASE_URL}/images/serwis-rtv-agd-2.webp`,
+    caption: 'Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu.',
+    title: 'Serwis RTV i AGD Przemyśl'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',

@@ -48,18 +48,20 @@ const Header = ({ rating }) => {
       itemType="https://schema.org/WPHeader"
     >
       <HeaderContainer>
-        <Logo href={appUrls.home}>
+        <Logo
+          href={appUrls.home}
+          title="NaprawaPrzemysl - Strona główna"
+        >
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
-              alt="Logo NaprawaPrzemysl - Serwis AGD i RTV w Przemyślu"
-              title="NaprawaPrzemysl - Strona główna"
+              alt={`Logo ${serwis.shortName} w Przemyślu`}
               fill
               loading="lazy"
               itemProp="image"
             />
           </Emoticon>
-          NaprawaPrzemysl
+          {serwis.shortName.split(" ")[0]}
         </Logo>
         <nav>
           <NavList>

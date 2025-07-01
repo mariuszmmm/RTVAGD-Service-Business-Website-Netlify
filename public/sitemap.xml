@@ -7,12 +7,12 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://naprawaprzemysl.pl/images/serwis-agd-rtv-2.webp</image:loc>
+      <image:loc>https://naprawaprzemysl.pl/images/serwis-rtv-agd-2.webp</image:loc>
       <image:caption>Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu.</image:caption>
       <image:title>Serwis AGD i RTV Przemyśl</image:title>
     </image:image>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-pralek/</loc>
     <lastmod>2025-07-01</lastmod>
@@ -24,7 +24,7 @@
       <image:title>Serwis Pralek Przemyśl</image:title>
     </image:image>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-suszarek/</loc>
     <lastmod>2025-07-01</lastmod>
@@ -36,7 +36,7 @@
       <image:title>Serwis Suszarek Przemyśl</image:title>
     </image:image>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-zmywarek/</loc>
     <lastmod>2025-07-01</lastmod>
@@ -48,7 +48,7 @@
       <image:title>Serwis Zmywarek Przemyśl</image:title>
     </image:image>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-ekspresow/</loc>
     <lastmod>2025-07-01</lastmod>
@@ -60,7 +60,7 @@
       <image:title>Serwis Ekspresów do Kawy Przemyśl</image:title>
     </image:image>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/naprawa-telewizorow/</loc>
     <lastmod>2025-07-01</lastmod>
@@ -72,21 +72,21 @@
       <image:title>Serwis Telewizorów Przemyśl</image:title>
     </image:image>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/o-mnie/</loc>
     <lastmod>2025-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/opinie/</loc>
     <lastmod>2025-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
- 
+
   <url>
     <loc>https://naprawaprzemysl.pl/kontakt/</loc>
     <lastmod>2025-07-01</lastmod>

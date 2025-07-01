@@ -12,7 +12,7 @@ const dateModified = process.env.NEXT_PUBLIC_BUILD_DATE || new Date(date).toISOS
 // console.log(test, test?.length);
 
 
-const shortName = "NaprawaPrzemysl";
+const shortName = serwis.shortName.split(" ")[0];
 
 export const address = {
   "@type": "PostalAddress",
@@ -37,7 +37,7 @@ export const website = {
   "url": appUrls.home,
   "name": shortName,
   "inLanguage": "pl-PL",
-  "description": "Profesjonalny serwis AGD i RTV w Przemyślu. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
+  "description": "Profesjonalny serwis RTV i AGD w Przemyślu. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
 };
 
 export const organization = {
@@ -63,7 +63,7 @@ export const localBusiness = {
   // "logo": imageUrls.logo,
   "telephone": serwis.phone.formatted,
   "email": serwis.email,
-  "description": "Profesjonalny serwis i naprawa sprzętu AGD i RTV w Przemyślu. Specjalizujemy się w naprawie pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
+  "description": "Profesjonalny serwis i naprawa sprzętu RTV i AGD w Przemyślu. Specjalizujemy się w naprawie pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
   address,
   geo,
   "hasMap": serwis.url.mapaGoogle,
@@ -201,14 +201,14 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      title: "Naprawa AGD i RTV Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + " | " + shortName,
-      ogTitle: "Naprawa AGD i RTV Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      twitterTitle: "Naprawa AGD i RTV Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      description: "Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja. Zadzwoń!",
-      ogDescription: "Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja.",
-      twitterDescription: "Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja.",
+      title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + " | " + shortName,
+      ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
+      twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
+      description: "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja. Zadzwoń!",
+      ogDescription: "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja.",
+      twitterDescription: "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja.",
       imageAlt: "Technik serwisu NaprawaPrzemysl naprawiający sprzęt AGD w Przemyślu",
-      imageTitle: "Serwis AGD i RTV Przemyśl",
+      imageTitle: "Serwis RTV i AGD Przemyśl",
       imageWidth: "931",
       imageHeight: "497",
       imageType: "image/webp",
@@ -387,7 +387,7 @@ export const dataForMetaTags = {
         "thumbnailUrl": imageUrls.serwis,
         "datePublished": datePublished,
         "dateModified": dateModified,
-        "description": "Profesjonalna naprawa sprzętu AGD i RTV w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy.",
+        "description": "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.home + "#breadcrumb" },
       },
       imageObject: {
@@ -398,9 +398,9 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.serwis,
         "width": 931,
         "height": 497,
-        "name": "Profesjonalna Naprawa Sprzętu AGD i RTV",
+        "name": "Profesjonalna Naprawa Sprzętu RTV i AGD",
         "description": "Doświadczony technik serwisu NaprawaPrzemysl w trakcie naprawy urządzenia AGD w Przemyślu.",
-        "caption": "Twój zaufany serwis AGD i RTV w Przemyślu – szybkie i skuteczne naprawy.",
+        "caption": "Twój zaufany serwis RTV i AGD w Przemyślu – szybkie i skuteczne naprawy.",
         "representativeOfPage": true
       },
       breadcrumbList: {

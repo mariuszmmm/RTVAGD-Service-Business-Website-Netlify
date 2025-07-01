@@ -11,7 +11,7 @@ export const serwis = {
   // subName: "Serwis RTV i AGD",
   name: "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",
   subName: "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
-  shortName: "Serwis RTV-AGD",
+  shortName: "NaprawaPrzemysl – Serwis RTV i AGD",
   email: "piotrek_serwis@wp.pl",
   phone: {
     number: "+48790258612",

@@ -24,7 +24,7 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: `${baseUrl}/images/serwis-agd-rtv-2.webp`,
+  serwis: `${baseUrl}/images/serwis-rtv-agd-2.webp`,
   pralka: `${baseUrl}/images/naprawa-pralek-2.webp`,
   suszarka: `${baseUrl}/images/naprawa-suszarek-2.webp`,
   zmywarka: `${baseUrl}/images/naprawa-zmywarek-2.webp`,
