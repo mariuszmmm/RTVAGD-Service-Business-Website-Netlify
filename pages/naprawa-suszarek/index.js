@@ -51,7 +51,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa suszarek Przemyśl – Pełna diagnostyka i naprawa</SubTitle>
+          <SubTitle>Naprawa Suszarek Przemyśl – Pełna Diagnostyka i Naprawa</SubTitle>
           <StyledText>
             Gdy suszarka do ubrań odmawia posłuszeństwa, szczególnie w deszczowe dni, domowe obowiązki potrafią się skomplikować. Jeśli właśnie spotkała Cię taka sytuacja, jestem do Twojej dyspozycji. Specjalizuję się w serwisie i naprawie suszarek na terenie Przemyśla i okolic. Niezależnie od tego, czy masz nowoczesny model z pompą ciepła, kondensacyjny, czy tradycyjny – znam je od podszewki. Moja praca to nie tylko szybka diagnoza, ale przede wszystkim skuteczna naprawa suszarek, która przywróci Twojemu urządzeniu pełną sprawność. Zaufaj mojemu doświadczeniu – Twoja suszarka szybko wróci do formy!
           </StyledText>
@@ -69,7 +69,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego Wybrać 'NaprawaPrzemysl' do Naprawy Suszarki?</SubTitle>
+          <SubTitle>Dlaczego wybrać NaprawaPrzemysl do Naprawy Suszarki?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
