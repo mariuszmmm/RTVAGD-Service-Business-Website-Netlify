@@ -1109,9 +1109,12 @@ export const dataForMetaTags = {
   },
   naprawa_zmywarek: {
     metaTags: {
-      title: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis" + " | " + shortName,
-      ogTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
-      twitterTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
+      // title: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis" + " | " + shortName,
+      // ogTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
+      // twitterTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
+      title: "Naprawa Zmywarek Przemyśl - Serwis" + " | " + shortName,
+      ogTitle: "Naprawa Zmywarek Przemyśl - Serwis",
+      twitterTitle: "Naprawa Zmywarek Przemyśl - Serwis",
       description: "Zepsuta zmywarka w Przemyślu? Oferuję profesjonalną naprawę zmywarek wolnostojących i do zabudowy. Szybka diagnoza i usunięcie usterki.",
       ogDescription: "Zepsuta zmywarka w Przemyślu? Oferuję profesjonalną naprawę zmywarek wolnostojących i do zabudowy. Szybka diagnoza i usunięcie usterki.",
       twitterDescription: "Zepsuta zmywarka w Przemyślu? Oferuję profesjonalną naprawę zmywarek wolnostojących i do zabudowy. Szybka diagnoza i usunięcie usterki.",
@@ -1372,7 +1375,7 @@ export const dataForMetaTags = {
       twitterDescription: "Profesjonalna naprawa ekspresów do kawy w Przemyślu. Serwis ekspresów ciśnieniowych, automatycznych i kolbowych wszystkich marek. Szybko i skutecznie.",
       imageType: "image/webp",
       image: imageUrls.ekspres,
-      imageAlt: "Serwisant NaprawaPrzemysl naprawiający ekspres do kawy Jura w Przemyślu",
+      imageAlt: "Serwisant NaprawaPrzemysl naprawiający ekspres do kawy Philips w Przemyślu",
       imageTitle: "Serwis Ekspresów do Kawy Przemyśl",
       imageWidth: "700",
       imageHeight: "700",
@@ -1769,7 +1772,7 @@ export const dataForMetaTags = {
 
 
 // const values = ["title", "description", "imageAlt", "imageTitle"];
-const values = ["title"];
+const values = ["imageTitle"];
 
 function logMetaTagLengths(pageKeys) {
   pageKeys.forEach(pageKey => {
