@@ -51,14 +51,14 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Suszarek Przemyśl – Pełna Diagnostyka i Naprawa</SubTitle>
+          <SubTitle>Naprawa Suszarek do Ubrań w Przemyślu – Pełna Diagnostyka i Serwis</SubTitle>
           <StyledText>
             Gdy suszarka do ubrań odmawia posłuszeństwa, szczególnie w deszczowe dni, domowe obowiązki potrafią się skomplikować. Jeśli właśnie spotkała Cię taka sytuacja, jestem do Twojej dyspozycji. Specjalizuję się w serwisie i naprawie suszarek na terenie Przemyśla i okolic. Niezależnie od tego, czy masz nowoczesny model z pompą ciepła, kondensacyjny, czy tradycyjny – znam je od podszewki. Moja praca to nie tylko szybka diagnoza, ale przede wszystkim skuteczna naprawa suszarek, która przywróci Twojemu urządzeniu pełną sprawność. Zaufaj mojemu doświadczeniu – Twoja suszarka szybko wróci do formy!
           </StyledText>
         </Section>
 
         <Section>
-          <SubTitle>Częste Problemy z Suszarkami – Rozwiązania</SubTitle>
+          <SubTitle>Częste problemy z Suszarkami – Rozwiązania</SubTitle>
           <StyledText as="ul" $cross>
             <li><strong>Bęben nie obraca się</strong> – może wynikać z zerwanego paska napędowego, zużytych łożysk lub uszkodzonego silnika. Dokładna kontrola elementów napędu pozwala zidentyfikować problem.</li>
             <li><strong>Suszarka wyłącza się przed zakończeniem cyklu</strong> – przyczyną mogą być czujnik wilgotności, przegrzewanie lub moduł sterujący. Sprawdzam układ elektroniczny i termiczne zabezpieczenia.</li>
@@ -69,7 +69,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego wybrać NaprawaPrzemysl do Naprawy Suszarki?</SubTitle>
+          <SubTitle>Dlaczego wybrać <span>NaprawaPrzemysl</span> do Naprawy Suszarki?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalenie terminu</strong>: staram się zaaranżować wizytę jak najszybciej, z uwzględnieniem potrzeb Klienta i dostępności części.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie w różnych typach suszarek – kondensacyjnych, z pompą ciepła czy z grzałką elektryczną – pozwala sprawnie diagnozować nawet nietypowe usterki.</li>
@@ -80,7 +80,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak Działam – Proces Serwisu Suszarek</SubTitle>
+          <SubTitle>Jak działam – proces Serwisu Suszarek</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i opis usterki</strong>: krótka rozmowa telefoniczna lub wiadomość e-mail z opisem symptomów i modelem urządzenia.</li>
             <li><strong>Diagnostyka na miejscu</strong>: pełne sprawdzenie suszarki, testy funkcjonalne i analiza ewentualnych kodów błędów.</li>
@@ -104,7 +104,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <strong>Potrzebujesz szybkiej i fachowej naprawy suszarki?<Break /> Skontaktuj się, podając objawy usterki – ustalimy optymalny termin wizyty i zakres prac.</strong>
+            <strong>Potrzebujesz szybkiej i fachowej Naprawy Suszarki?<Break /> Skontaktuj się, podając objawy usterki – ustalimy optymalny termin wizyty i zakres prac.</strong>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa suszarek w Przemyślu' >
             Zadzwoń 📞 {serwis.phone.short}
@@ -114,7 +114,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Serwis suszarek w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt w celu ustalenia dogodnej wizyty.
+            Serwis Suszarek w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt w celu ustalenia dogodnej wizyty.
           </StyledText>
         </Section>
 

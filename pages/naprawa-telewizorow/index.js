@@ -48,7 +48,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Telewizorów Przemyśl – Specjalistyczna Obsługa LCD, OLED, Smart TV</SubTitle>
+          <SubTitle>Naprawa Telewizorów w Przemyślu – Specjalistyczna Obsługa LCD, OLED, Smart TV</SubTitle>
           <StyledText>
             Twój telewizor odmówił posłuszeństwa w najmniej odpowiednim momencie? Doskonale to znam. Oferuję profesjonalną naprawę telewizorów w Przemyślu, podchodząc do każdego przypadku z pełnym zaangażowaniem. Niezależnie od tego, czy to problem z obrazem w Twoim OLED, kłopoty ze Smart TV, czy usterka w starszym modelu LCD – znajdę rozwiązanie. Moim celem jest szybka diagnoza i skuteczna naprawa, byś mógł jak najszybciej wrócić do swoich ulubionych seansów. Jeśli interesuje Cię solidna naprawa telewizorów w Przemyślu, zapraszam do kontaktu.
           </StyledText>
@@ -103,7 +103,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <HeroText>
             <strong>
-              Nie pozwól, by usterka telewizora ograniczała Twój komfort.<Break /> Skontaktuj się ze mną, a ustalimy, jak szybko przywrócić urządzenie do sprawności.
+              Nie pozwól, by Usterka Telewizora ograniczała Twój komfort.<Break /> Skontaktuj się ze mną, a ustalimy, jak szybko przywrócić urządzenie do sprawności.
             </strong>
           </HeroText>
           <ButtonLink
@@ -117,7 +117,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Naprawa telewizorów w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Dalsze lokalizacje – zapraszam do kontaktu.
+            Naprawa Telewizorów w Przemyślu i w miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Dalsze lokalizacje – zapraszam do kontaktu.
           </StyledText>
         </Section>
 

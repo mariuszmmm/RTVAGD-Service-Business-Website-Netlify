@@ -48,7 +48,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Pralek Przemyśl – Kompleksowa Diagnostyka i Usunięcie Awarii</SubTitle>
+          <SubTitle>Naprawa Pralek w Przemyślu – Kompleksowa Diagnostyka i Usunięcie Awarii</SubTitle>
           <StyledText>
             Zepsuta pralka to nie koniec świata, ale na pewno spore zamieszanie w codziennym życiu. Doskonale to rozumiem, dlatego oferuję szybką i skuteczną naprawę pralek na terenie Przemyśla i okolic. Niezależnie od tego, czy Twoja pralka hałasuje, cieknie, czy po prostu odmówiła posłuszeństwa – jestem tu, by pomóc. Podchodzę do każdej naprawy indywidualnie, używając profesjonalnego sprzętu i sprawdzonych części. Moim celem jest nie tylko usunięcie usterki, ale zapewnienie, że Twoja pralka będzie działać jak nowa. Jeśli szukasz fachowca, dla którego naprawa pralek w Przemyślu to chleb powszedni, dobrze trafiłeś!
           </StyledText>
@@ -78,7 +78,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Jak przebiega Proces Naprawy Pralki?</SubTitle>
+          <SubTitle>Jak przebiega proces Naprawy Pralki?</SubTitle>
           <StyledText as="ol" >
             <li><strong>Kontakt i wstępna konsultacja</strong>: opis awarii telefonicznie lub mailowo, omówienie możliwych przyczyn i wstępna orientacyjna wycena zakresu prac.</li>
             <li><strong>Diagnostyka na miejscu</strong>: dokładne sprawdzenie pralki przy użyciu narzędzi diagnostycznych, potwierdzenie lub weryfikacja wstępnej hipotezy co do usterki.</li>
@@ -102,14 +102,14 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <strong>Nie pozwól, by awaria pralki zaburzyła Twoje plany.<Break /> Skontaktuj się już dziś, opisując problem – razem dobierzemy najlepsze rozwiązanie.
+            <strong>Nie pozwól, by Awaria Pralki zaburzyła Twoje plany.<Break /> Skontaktuj się już dziś, opisując problem – razem dobierzemy najlepsze rozwiązanie.
             </strong>
           </HeroText>
           <ButtonLink
             href={`tel:${serwis.phone.number}`}
             title='Naprawa pralek w Przemyślu'
           >
-            Zleć naprawę pralki
+            Zleć Naprawę Pralki
           </ButtonLink>
         </Section>
 

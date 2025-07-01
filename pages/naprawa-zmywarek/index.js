@@ -49,7 +49,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Zmywarek Przemyśl – Dokładna Diagnostyka i Usuwanie Usterek</SubTitle>
+          <SubTitle>Naprawa Zmywarek w Przemyślu – Dokładna Diagnostyka i Usuwanie Usterek</SubTitle>
           <StyledText>
             Zmywarka odmówiła posłuszeństwa, a góra naczyń rośnie? Bez obaw, jestem tutaj, aby pomóc. Oferuję szybką i skuteczną naprawę zmywarek w Przemyślu i okolicy. Niezależnie od tego, czy Twoja zmywarka nie pobiera wody, nie grzeje, czy zostawia brudne naczynia – znam się na rzeczy. Jako specjalista od naprawy zmywarek w Przemyślu, podchodzę do każdego zlecenia indywidualnie, korzystając ze sprawdzonych części i profesjonalnego sprzętu. Moim celem jest, aby Twoja zmywarka znów działała jak nowa, a Ty mógłbyś zapomnieć o ręcznym zmywaniu. Skontaktuj się ze mną, a szybko przywrócę porządek w Twojej kuchni!
           </StyledText>
@@ -68,7 +68,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Dlaczego Warto Mi Zaufać w Kwestii Naprawy Zmywarki?</SubTitle>
+          <SubTitle>Dlaczego warto mi zaufać w kwestii Naprawy Zmywarki?</SubTitle>
           <StyledText as="ul" $check>
             <li><strong>Szybkie ustalanie terminu</strong>: dbam o to, aby wizyta odbyła się w dogodnym dla Klienta terminie, reagując możliwie szybko.</li>
             <li><strong>Wieloletnia praktyka</strong>: doświadczenie przy zmywarkach marek Bosch, Electrolux, Beko, Siemens i innych pozwala skutecznie diagnozować zarówno standardowe, jak i nietypowe awarie.</li>
@@ -103,7 +103,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <strong>Nie pozwól, aby awaria zmywarki zaburzyła codzienne rytuały w kuchni.<Break /> Skontaktuj się ze mną i omów problem – ustalimy najlepszy termin i zakres prac. </strong>
+            <strong>Nie pozwól, aby Awaria Zmywarki zaburzyła codzienne rytuały w kuchni.<Break /> Skontaktuj się ze mną i omów problem – ustalimy najlepszy termin i zakres prac. </strong>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa zmywarek w Przemyślu' >
             📞 Zadzwoń teraz
@@ -113,7 +113,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Naprawiam zmywarki w Przemyślu oraz w pobliskich miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt.
+            Naprawiam Zmywarki w Przemyślu oraz w pobliskich miejscowościach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica. Inne lokalizacje – proszę o kontakt.
           </StyledText>
         </Section>
 

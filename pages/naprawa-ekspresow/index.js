@@ -51,7 +51,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Ekspresów Przemyśl – Profesjonalny Serwis wszystkich marek</SubTitle>
+          <SubTitle>Naprawa Ekspresów do Kawy w Przemyślu – Profesjonalny Serwis wszystkich marek</SubTitle>
           <StyledText>
             Poranek bez ulubionej kawy? A może awaria ekspresu paraliżuje pracę w Twojej kawiarni? Doskonale rozumiem ten problem. Oferuję profesjonalny serwis i naprawę ekspresów w Przemyślu, by szybko przywrócić Twoje urządzenie do życia. Niezależnie od tego, czy posiadasz domowy ekspres automatyczny, czy profesjonalną maszynę gastronomiczną, podejdę do problemu z pełnym zaangażowaniem. Jeśli szukasz fachowca, dla którego naprawa ekspresów w Przemyślu to codzienność, dobrze trafiłeś. Skontaktuj się, a ja zajmę się resztą!
           </StyledText>
@@ -103,7 +103,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <HeroText>
-            <strong>Nie pozwól, aby awaria ekspresu popsuła Twój dzień!<Break /> Skontaktuj się ze mną, a sprawnie przywrócę pełną funkcjonalność Twojego urządzenia, abyś mógł cieszyć się ulubioną kawą każdego dnia.</strong>
+            <strong>Nie pozwól, aby Awaria Ekspresu popsuła Twój dzień!<Break /> Skontaktuj się ze mną, a sprawnie przywrócę pełną funkcjonalność Twojego urządzenia, abyś mógł cieszyć się ulubioną kawą każdego dnia.</strong>
           </HeroText>
           <ButtonLink href={`tel:${serwis.phone.number}`} title='Naprawa ekspresów w Przemyślu'>
             Zadzwoń teraz
@@ -113,7 +113,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <SubTitle>Obsługiwany obszar</SubTitle>
           <StyledText>
-            Serwis ekspresów do kawy w Przemyślu i okolicach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.<Break /> Pozostałe lokalizacje – proszę o kontakt.
+            Serwis Ekspresów do kawy w Przemyślu i okolicach: Bolestraszyce, Duńkowiczki, Krówniki, Nehrybka, Orzechowce, Ostrów, Pikulice, Prałkowce, Wyszatyce, Żurawica.<Break /> Pozostałe lokalizacje – proszę o kontakt.
           </StyledText>
         </Section>
 
