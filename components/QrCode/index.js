@@ -66,7 +66,7 @@ export const QrCode = ({ hidden }) => {
         <ImageWrapper $isOpen={isOpen}>
           <Image
             src={imageUrls.qrCode}
-            alt="QrCode - wystaw opinię"
+            alt="QrCode"
             fill
             loading="lazy"
             onLoad={() => setLoaded(true)}
