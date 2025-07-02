@@ -53,7 +53,10 @@ export default class MyDocument extends Document {
 
           {/* Basic meta tags */}
           <meta key="robots" name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-          <meta key="fb:app_id" property="fb:app_id" content={serwis.url.fb_app_id} />
+
+          {/* ustawić na https://developers.facebook.com/ */}
+          {/* <meta key="fb:app_id" property="fb:app_id" content={serwis.url.fb_app_id} /> */}
+
           <meta key="Content-Language" httpEquiv="Content-Language" content="pl" />
           <meta key="theme-color" name="theme-color" content="#141111" />
 
@@ -90,7 +93,9 @@ export default class MyDocument extends Document {
           </noscript>
           <Main />
           <NextScript />
-          <Script
+
+          {/* pixel Facebooka - nie używany, ale zostawiam na przyszłość */}
+          {/* <Script                                                  
             id="facebook-sdk"
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
@@ -113,7 +118,7 @@ export default class MyDocument extends Document {
                 }(document, 'script', 'facebook-jssdk'));
               `,
             }}
-          />
+          /> */}
         </body>
       </Html>
     );

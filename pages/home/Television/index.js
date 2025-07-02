@@ -18,7 +18,7 @@ const Television = ({ show, left, setHold }) => (
       <StyledImage>
         <Image
           src={imageUrls._telewizor}
-          alt="Telewizor"
+          alt="004"
           // loading='lazy'
           fill
           // srcSet={`${imageUrls.telewizor_300} 500w,

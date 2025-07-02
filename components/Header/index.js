@@ -61,7 +61,7 @@ const Header = ({ rating }) => {
               itemProp="image"
             />
           </Emoticon>
-          {serwis.shortName.split(" ")[0]}
+          {" "}{serwis.shortName.split(" ")[0]}
         </Logo>
         <nav>
           <NavList>

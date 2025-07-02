@@ -28,7 +28,7 @@ const Footer = () => (
           $area="adres"
           href={serwis.url.mapaGoogle}
           rel="nofollow"
-          title="adres"
+          title="Adres"
         >
           <LocationIcon />
           <FooterText>ul. {serwis.adres} </FooterText>

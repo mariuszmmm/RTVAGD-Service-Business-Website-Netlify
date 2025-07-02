@@ -18,7 +18,6 @@ import { useRouter } from 'next/router';
 import { appUrls } from '../../utils/urls';
 import { StyledText } from '../../components/common/Text/styled';
 import { getData } from '../../utils/getData';
-import { Break } from '../../components/Break';
 
 const Home = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -103,7 +102,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             title='Naprawa RTV i AGD Przemyśl - Zadzwoń teraz'
             $hero
           >
-            Zadzwoń teraz
+            Zleć naprawę
           </ButtonLink>
 
           {!activeScene.reset && <WashingMachine
@@ -137,8 +136,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle lang="pl">
-            Naprawa Pralek, Suszarek, Zmywarek, Telewizorów i Ekspresów do Kawy
-            <br />– serwisuję sprzęt wszystkich popularnych marek
+            Serwis i naprawa sprzętu wszystkich popularnych marek
           </SubTitle>
           <StyledText as="ul">
             <li>
@@ -188,7 +186,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             </li>
           </StyledText>
           <StyledText>
-            Posiadam wieloletnie doświadczenie i dostęp do oryginalnych części zamiennych, co gwarantuje szybką diagnozę i solidną naprawę Twojego sprzętu. Niezależnie od marki, możesz liczyć na profesjonalną pomoc.
+            Wieloletnie doświadczenie i dostęp do oryginalnych części zamiennych, gwarantuje szybką diagnozę i solidną naprawę Twojego sprzętu. Niezależnie od marki, możesz liczyć na profesjonalną pomoc.
           </StyledText>
         </Section>
 

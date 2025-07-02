@@ -59,7 +59,7 @@ export const Wrpper = styled.div`
         top: 50vh;
       }
     `: css`
-        transition:  top 0.3s ease-in-out, right 0.3s ease-in-out, transform 0.3s ease-in-out, border-radius 0.2s ease-in-out, opacity 0.3s ease;
+        transition:  top 0.3s ease-in-out, right 0.3s ease-in-out, transform 0.3s ease-in-out, border-radius 0.2s ease-in-out, opacity 0.2s ease;
         transition-delay: 0.1s, 0.1s, 0.1s, 0.1s, 0s;
       `}; 
 `;

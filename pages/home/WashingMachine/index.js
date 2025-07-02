@@ -19,7 +19,7 @@ const WashingMachine = ({ show, left, setHold }) => {
         <StyledImage>
           <Image
             src={imageUrls._pralka}
-            alt="Pralka"
+            alt="001"
             // loading='lazy'
             fill
             // srcSet={`${imageUrls.pralka_300} 500w,
