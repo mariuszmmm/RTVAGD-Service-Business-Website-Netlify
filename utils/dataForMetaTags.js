@@ -1566,9 +1566,9 @@ export const dataForMetaTags = {
   },
   naprawa_telewizorow: {
     metaTags: {
-      title: "Naprawa Telewizorów ✔️ Serwis Przemyśl ☎️ 790 258 612" + " | " + shortName,
-      ogTitle: "Naprawa Telewizorów ✔️ Serwis Przemyśl ☎️ 790 258 612",
-      twitterTitle: "Naprawa Telewizorów ✔️ Serwis Przemyśl ☎️ 790 258 612",
+      title: "Naprawa Telewizorów ✔️ Serwis Przemyśl ☎️ 790258612" + " | " + shortName,
+      ogTitle: "Naprawa Telewizorów ✔️ Serwis Przemyśl ☎️ 790258612",
+      twitterTitle: "Naprawa Telewizorów ✔️ Serwis Przemyśl ☎️ 790258612",
       description: "Profesjonalna naprawa telewizorów w Przemyślu. Serwis TV LCD, LED, OLED, Smart TV wszystkich marek. Szybka diagnoza i usunięcie usterek.",
       ogDescription: "Profesjonalna naprawa telewizorów w Przemyślu. Serwis TV LCD, LED, OLED, Smart TV wszystkich marek. Szybka diagnoza i usunięcie usterek.",
       twitterDescription: "Profesjonalna naprawa telewizorów w Przemyślu. Serwis TV LCD, LED, OLED, Smart TV wszystkich marek. Szybka diagnoza i usunięcie usterek.",
