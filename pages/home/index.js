@@ -136,7 +136,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <SubTitle lang="pl">
-            Serwis i naprawa sprzętu wszystkich popularnych marek
+            Serwis i naprawa sprzętu RTV i AGD  wszystkich popularnych marek
           </SubTitle>
           <StyledText as="ul">
             <li>
