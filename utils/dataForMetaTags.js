@@ -201,12 +201,12 @@ export const siteNavigationElements = [
 export const dataForMetaTags = {
   home: {
     metaTags: {
-      // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + " | " + shortName,
+     // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + " | " + shortName,
       // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      title: "Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ 790258612" + " | " + shortName,
-      ogTitle: "Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ 790258612",
-      twitterTitle: "Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ 790258612",
+     // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
+     title: "Naprawa RTV i AGD Przemyśl ✔️ Serwis" + " | " + shortName,
+       ogTitle: "Naprawa RTV i AGD Przemyśl ✔️ Serwis",
+      twitterTitle: "Naprawa RTV i AGD Przemyśl ✔️ Serwis",
       description: "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja. Zadzwoń!",
       ogDescription: "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja.",
       twitterDescription: "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnoza, gwarancja.",
@@ -844,9 +844,9 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa Suszarek ✔️ Serwis Przemyśl ☎️ 790258612" + " | " + shortName,
-      ogTitle: "Naprawa Suszarek ✔️ Serwis Przemyśl ☎️ 790258612",
-      twitterTitle: "Naprawa Suszarek ✔️ Serwis Przemyśl ☎️ 790258612",
+      title: "Naprawa Suszarek Przemyśl ✔️ Serwis RTV i AGD" + " | " + shortName,
+      ogTitle: "Naprawa Suszarek Przemyśl ✔️ Serwis RTV i AGD",
+      twitterTitle: "Naprawa Suszarek Przemyśl ✔️ Serwis RTV i AGD",
       description: "Awaria suszarki w Przemyślu? Zapewniam profesjonalną naprawę suszarek do ubrań, kondensacyjnych i z pompą ciepła. Szybka diagnoza i naprawa.",
       ogDescription: "Awaria suszarki w Przemyślu? Zapewniam profesjonalną naprawę suszarek do ubrań, kondensacyjnych i z pompą ciepła.",
       twitterDescription: "Awaria suszarki w Przemyślu? Zapewniam profesjonalną naprawę suszarek do ubrań, kondensacyjnych i z pompą ciepła.",
@@ -1115,9 +1115,9 @@ export const dataForMetaTags = {
       // title: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis" + " | " + shortName,
       // ogTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
       // twitterTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
-      title: "Naprawa Zmywarek do naczyń ✔️ Serwis Przemyśl" + " | " + shortName,
-      ogTitle: "Naprawa Zmywarek do naczyń ✔️ Serwis Przemyśl",
-      twitterTitle: "Naprawa Zmywarek do naczyń ✔️ Serwis Przemyśl",
+      title: "Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD" + " | " + shortName,
+      ogTitle: "Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD",
+      twitterTitle: "Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD",
       description: "Zepsuta zmywarka w Przemyślu? Oferuję profesjonalną naprawę zmywarek wolnostojących i do zabudowy. Szybka diagnoza i usunięcie usterki.",
       ogDescription: "Zepsuta zmywarka w Przemyślu? Oferuję profesjonalną naprawę zmywarek wolnostojących i do zabudowy. Szybka diagnoza i usunięcie usterki.",
       twitterDescription: "Zepsuta zmywarka w Przemyślu? Oferuję profesjonalną naprawę zmywarek wolnostojących i do zabudowy. Szybka diagnoza i usunięcie usterki.",
@@ -1566,9 +1566,9 @@ export const dataForMetaTags = {
   },
   naprawa_telewizorow: {
     metaTags: {
-      title: "Naprawa Telewizorów Przemyśl - Serwis" + " | " + shortName,
-      ogTitle: "Naprawa Telewizorów Przemyśl - Serwis",
-      twitterTitle: "Naprawa Telewizorów Przemyśl - Serwis",
+      title: "Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD" + " | " + shortName,
+      ogTitle: "Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD",
+      twitterTitle: "Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD",
       description: "Profesjonalna naprawa telewizorów w Przemyślu. Serwis TV LCD, LED, OLED, Smart TV wszystkich marek. Szybka diagnoza i usunięcie usterek.",
       ogDescription: "Profesjonalna naprawa telewizorów w Przemyślu. Serwis TV LCD, LED, OLED, Smart TV wszystkich marek. Szybka diagnoza i usunięcie usterek.",
       twitterDescription: "Profesjonalna naprawa telewizorów w Przemyślu. Serwis TV LCD, LED, OLED, Smart TV wszystkich marek. Szybka diagnoza i usunięcie usterek.",
