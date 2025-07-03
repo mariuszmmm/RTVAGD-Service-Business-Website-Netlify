@@ -80,6 +80,37 @@ export default class MyDocument extends Document {
             }}
             strategy="afterInteractive"
           />
+
+          {/* testowy prywatny - Meta Pixel Code */}
+          {/* <Script
+            id="facebook-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '3182193465264695');
+      fbq('track', 'PageView');
+    `,
+            }}
+          />
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src="https://www.facebook.com/tr?id=3182193465264695&ev=PageView&noscript=1"
+              alt=""
+            />
+          </noscript> */}
+          {/* End Meta Pixel Code */}
+
         </Head>
         <body>
           {/* GTM NoScript */}
@@ -94,7 +125,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          {/* pixel Facebooka - nie używany, ale zostawiam na przyszłość */}
+          {/* przykładowy pixel  Facebooka - nie używany, ale zostawiam na przyszłość */}
           {/* <Script                                                  
             id="facebook-sdk"
             strategy="afterInteractive"
