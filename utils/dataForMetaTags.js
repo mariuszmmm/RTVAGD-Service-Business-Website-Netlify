@@ -426,7 +426,7 @@ export const dataForMetaTags = {
   },
   kontakt: {
     metaTags: {
-      title: "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790 258 612" + " | " + shortName,
+      title: "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790 258 612", // + " | " + shortName,
       canonical: appUrls.kontakt,
       description: "Skontaktuj się pod numerem 790 258 612 lub odwiedź nas w Przemyślu, ul. Generała Sowińskiego 2. Szybkie, fachowe usługi naprawy sprzętu RTV i AGD.",
       type: "article",
@@ -485,7 +485,7 @@ export const dataForMetaTags = {
   },
   o_mnie: {
     metaTags: {
-      title: "Informacje o serwisie RTV i AGD w Przemyślu, ul.Sowińskiego 2." + " | " + shortName,
+      title: "Informacje o serwisie RTV i AGD w Przemyślu, ul.Sowińskiego", // + " | " + shortName,
       canonical: appUrls.o_mnie,
       description: "Dowiedz się o moim doświadczeniu w naprawie sprzętu RTV i AGD oraz zaangażowaniu w najwyższej jakości usługi serwisowe w Przemyślu.",
       type: "article",
@@ -526,7 +526,7 @@ export const dataForMetaTags = {
   opinie: {
     path: "/opinie/",
     metaTags: {
-      title: "Poznaj opinie klientów ✔️ Serwis RTV AGD w Przemyślu" + " | " + shortName,
+      title: "Poznaj opinie klientów ✔️ Serwis RTV AGD w Przemyślu", // + " | " + shortName,
       canonical: appUrls.opinie,
       description: "Sprawdź opinie klientów serwisu RTV i AGD w Przemyślu. Dowiedz się, dlaczego tak wielu poleca moje usługi.",
       type: "article",
