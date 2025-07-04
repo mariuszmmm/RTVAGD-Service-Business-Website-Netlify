@@ -204,12 +204,12 @@ export const dataForMetaTags = {
       // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + " | " + shortName,
       // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
       // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      title: "Naprawa RTV i AGD Przemyśl | Serwis AGD RTV z Dojazdem" + " | " + shortName,
-      ogTitle: "Naprawa RTV i AGD Przemyśl | Serwis AGD RTV z Dojazdem",
-      twitterTitle: "Naprawa RTV i AGD Przemyśl | Serwis AGD RTV z Dojazdem",
-      description: "Profesjonalny serwis RTV i AGD w Przemyślu i okolicach. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy z dojazdem do klienta.",
-      ogDescription: "Profesjonalny serwis RTV i AGD w Przemyślu i okolicach. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy z dojazdem do klienta.",
-      twitterDescription: "Profesjonalny serwis RTV i AGD w Przemyślu i okolicach. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy z dojazdem do klienta.",
+      title: "Naprawa RTV i AGD Przemyśl | Serwis RTV-AGD z Dojazdem", // + " | " + shortName,
+      ogTitle: "Naprawa RTV i AGD Przemyśl | Serwis RTV-AGD z Dojazdem",
+      twitterTitle: "Naprawa RTV i AGD Przemyśl | Serwis RTV-AGD z Dojazdem",
+      description: "Profesjonalny serwis RTV-AGD w Przemyślu i okolicach. Skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów z dojazdem do klienta.",
+      ogDescription: "Profesjonalny serwis RTV-AGD w Przemyślu i okolicach. Skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów z dojazdem do klienta.",
+      twitterDescription: "Profesjonalny serwis RTV-AGD w Przemyślu i okolicach. Skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów z dojazdem do klienta.",
       imageAlt: "Technik serwisu NaprawaPrzemysl naprawiający sprzęt w Przemyślu",
       imageTitle: "Serwis RTV i AGD Przemyśl",
       imageWidth: "931",
@@ -566,9 +566,9 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: "Naprawa Pralek Przemyśl | Serwis i Usuwanie Usterek Pralek" + " | " + shortName,
-      ogTitle: "Naprawa Pralek Przemyśl | Serwis i Usuwanie Usterek Pralek",
-      twitterTitle: "Naprawa Pralek Przemyśl | Serwis i Usuwanie Usterek Pralek",
+      title: "Naprawa Pralek Przemyśl | Serwis Pralek z Dojazdem", // + " | " + shortName,
+      ogTitle: "Naprawa Pralek Przemyśl | Serwis Pralek z Dojazdem",
+      twitterTitle: "Naprawa Pralek Przemyśl | Serwis Pralek z Dojazdem",
       description: "Szybka i profesjonalna naprawa pralek w Przemyślu. Diagnostyka, wymiana części i usuwanie typowych usterek pralek wszystkich marek z gwarancją.",
       ogDescription: "Szybka i profesjonalna naprawa pralek w Przemyślu. Diagnostyka, wymiana części i usuwanie typowych usterek pralek wszystkich marek z gwarancją.",
       twitterDescription: "Szybka i profesjonalna naprawa pralek w Przemyślu. Diagnostyka, wymiana części i usuwanie typowych usterek pralek wszystkich marek z gwarancją.",
@@ -844,7 +844,7 @@ export const dataForMetaTags = {
   },
   naprawa_suszarek: {
     metaTags: {
-      title: "Naprawa Suszarek Przemyśl | Serwis Suszarek z Dojazdem" + " | " + shortName,
+      title: "Naprawa Suszarek Przemyśl | Serwis Suszarek z Dojazdem", // + " | " + shortName,
       ogTitle: "Naprawa Suszarek Przemyśl | Serwis Suszarek z Dojazdem",
       twitterTitle: "Naprawa Suszarek Przemyśl | Serwis Suszarek z Dojazdem",
       description: "Profesjonalna naprawa suszarek w Przemyślu i okolicach. Szybka diagnoza i skuteczne rozwiązania dla Twojej suszarki. Sprawdź FAQ i obsługiwane marki.",
@@ -1115,9 +1115,9 @@ export const dataForMetaTags = {
       // title: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis" + " | " + shortName,
       // ogTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
       // twitterTitle: "Naprawa Zmywarek Przemyśl - Szybki i Skuteczny Serwis",
-      title: "Naprawa Zmywarek Przemyśl | Diagnostyka i Skuteczne Usuwanie Usterek" + " | " + shortName,
-      ogTitle: "Naprawa Zmywarek Przemyśl | Diagnostyka i Skuteczne Usuwanie Usterek",
-      twitterTitle: "Naprawa Zmywarek Przemyśl | Diagnostyka i Skuteczne Usuwanie Usterek",
+      title: "Naprawa Zmywarek Przemyśl | Serwis Zmywarek z Dojazdem", // + " | " + shortName,
+      ogTitle: "Naprawa Zmywarek Przemyśl | Serwis Zmywarek z Dojazdem",
+      twitterTitle: "Naprawa Zmywarek Przemyśl | Serwis Zmywarek z Dojazdem",
       description: "Szybka i skuteczna naprawa zmywarek w Przemyślu i okolicy. Dokładna diagnostyka i usuwanie typowych usterek zmywarek wolnostojących i do zabudowy.",
       ogDescription: "Szybka i skuteczna naprawa zmywarek w Przemyślu i okolicy. Dokładna diagnostyka i usuwanie typowych usterek zmywarek wolnostojących i do zabudowy.",
       twitterDescription: "Szybka i skuteczna naprawa zmywarek w Przemyślu i okolicy. Dokładna diagnostyka i usuwanie typowych usterek zmywarek wolnostojących i do zabudowy.",
@@ -1370,12 +1370,12 @@ export const dataForMetaTags = {
   },
   naprawa_ekspresow: {
     metaTags: {
-      title: "Naprawa Ekspresów do Kawy Przemyśl | Serwis Ekspresów" + " | " + shortName,
-      ogTitle: "Naprawa Ekspresów do Kawy Przemyśl | Serwis Ekspresów",
-      twitterTitle: "Naprawa Ekspresów do Kawy Przemyśl | Serwis Ekspresów",
-      description: "Profesjonalna naprawa ekspresów do kawy w Przemyślu i okolicach. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
-      ogDescription: "Profesjonalna naprawa ekspresów do kawy w Przemyślu i okolicach. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
-      twitterDescription: "Profesjonalna naprawa ekspresów do kawy w Przemyślu i okolicach. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
+      title: "Naprawa Ekspresów Przemyśl | Serwis Ekspresów z Dojazdem", // + " | " + shortName,
+      ogTitle: "Naprawa Ekspresów Przemyśl | Serwis Ekspresów z Dojazdem",
+      twitterTitle: "Naprawa Ekspresów Przemyśl | Serwis Ekspresów z Dojazdem",
+      description: "Profesjonalna naprawa ekspresów w Przemyślu. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
+      ogDescription: "Profesjonalna naprawa ekspresów w Przemyślu. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
+      twitterDescription: "Profesjonalna naprawa ekspresów w Przemyślu. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
       imageType: "image/webp",
       image: imageUrls.ekspres,
       imageAlt: "Serwisant NaprawaPrzemysl naprawiający ekspres do kawy Philips w Przemyślu",
@@ -1566,12 +1566,12 @@ export const dataForMetaTags = {
   },
   naprawa_telewizorow: {
     metaTags: {
-      title: "Naprawa Telewizorów Przemyśl | Serwis LCD, OLED, Smart TV" + " | " + shortName,
-      ogTitle: "Naprawa Telewizorów Przemyśl | Serwis LCD, OLED, Smart TV",
-      twitterTitle: "Naprawa Telewizorów Przemyśl | Serwis LCD, OLED, Smart TV",
-      description: "Profesjonalna naprawa telewizorów w Przemyślu. Specjalistyczna obsługa LCD, OLED, Smart TV. Szybka diagnoza i skuteczna naprawa.",
-      ogDescription: "Profesjonalna naprawa telewizorów w Przemyślu. Specjalistyczna obsługa LCD, OLED, Smart TV. Szybka diagnoza i skuteczna naprawa.",
-      twitterDescription: "Profesjonalna naprawa telewizorów w Przemyślu. Specjalistyczna obsługa LCD, OLED, Smart TV. Szybka diagnoza i skuteczna naprawa.",
+      title: "Naprawa Telewizorów Przemyśl | Serwis Telewizorów z Dojazdem", // + " | " + shortName,
+      ogTitle: "Naprawa Telewizorów Przemyśl | Serwis Telewizorów z Dojazdem",
+      twitterTitle: "Naprawa Telewizorów Przemyśl | Serwis Telewizorów z Dojazdem",
+      description: "Profesjonalna naprawa ekspresów w Przemyślu. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
+      ogDescription: "Profesjonalna naprawa ekspresów w Przemyślu. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
+      twitterDescription: "Profesjonalna naprawa ekspresów w Przemyślu. Szybka diagnostyka i skuteczne usuwanie usterek ekspresów ciśnieniowych, automatycznych i kolbowych.",
       imageType: "image/webp",
       image: imageUrls.telewizor,
       imageAlt: "Technik NaprawaPrzemysl naprawiający telewizor Smart TV w Przemyślu",
@@ -1775,7 +1775,7 @@ export const dataForMetaTags = {
 
 
 // const values = ["title", "description", "imageAlt", "imageTitle"];
-const values = ["title"];
+const values = ["description"];
 
 function logMetaTagLengths(pageKeys) {
   pageKeys.forEach(pageKey => {
