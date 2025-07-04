@@ -51,7 +51,8 @@ export const imageUrls = {
   logoGoogle: baseUrl + "/images/logoGoogle.webp",
   logo: baseUrl + "/images/logo.svg",
   mapa: baseUrl + "/images/mapa.webp",
-  qrCode: baseUrl + "/images/qrCode.png",
+  qrCode: baseUrl + "/images/qrCode.svg",
+  favicon: baseUrl + "/images/favicon.svg",
 };
 
 export const appUrls = {
