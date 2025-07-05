@@ -33,7 +33,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa Ekspresów do Kawy w Przemyślu</Title>
+        <Title>Naprawa Ekspresów do Kawy w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -51,7 +51,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Ekspresów do Kawy w Przemyślu – Profesjonalny Serwis wszystkich marek</SubTitle>
+          <SubTitle>Naprawa Ekspresów Przemyśl – Profesjonalny Serwis wszystkich marek</SubTitle>
           <StyledText>
             Poranek bez ulubionej kawy? A może awaria ekspresu paraliżuje pracę w Twojej kawiarni? Doskonale rozumiem ten problem. Oferuję profesjonalny serwis i naprawę ekspresów w Przemyślu, by szybko przywrócić Twoje urządzenie do życia. Niezależnie od tego, czy posiadasz domowy ekspres automatyczny, czy profesjonalną maszynę gastronomiczną, podejdę do problemu z pełnym zaangażowaniem. Jeśli szukasz fachowca, dla którego naprawa ekspresów w Przemyślu to codzienność, dobrze trafiłeś. Skontaktuj się, a ja zajmę się resztą!
           </StyledText>
