@@ -40,8 +40,8 @@ const Contact = ({ rating, ratingsTotal }) => {
               adres:{"  "}
               <span>
                 <StyledLink
-                  href={serwis.url.mapaGoogle}
-                  rel="nofollow"
+                  href={serwis.url.google}
+                  rel="noopener noreferrer"
                   title={serwis.adres}
                 >
                   {serwis.adres}

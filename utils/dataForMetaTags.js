@@ -50,7 +50,7 @@ export const organization = {
   address,
   "sameAs": [
     serwis.url.facebook,
-    serwis.url.mapaGoogle
+    serwis.url.google
   ],
 };
 
@@ -66,7 +66,7 @@ export const localBusiness = {
   "description": "Profesjonalny serwis i naprawa sprzętu RTV i AGD w Przemyślu. Specjalizujemy się w naprawie pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
   address,
   geo,
-  "hasMap": serwis.url.mapaGoogle,
+  "hasMap": serwis.url.google,
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -89,7 +89,7 @@ export const localBusiness = {
   ],
   "sameAs": [
     serwis.url.facebook,
-    serwis.url.mapaGoogle
+    serwis.url.google
   ],
 
   // "hasOfferCatalog": {
@@ -136,13 +136,13 @@ export const localBusiness = {
   //     "name": " NaprawaPrzemyśl",
   //   },
   // },
-  // "sameAs": [serwis.url.mapaGoogle, serwis.url.facebook],    // dodane 17.05.2025
+  // "sameAs": [serwis.url.google, serwis.url.facebook],    // dodane 17.05.2025
   // "openingHours": openingHours,
   // "hasMap": "https://maps.google.com/?q=49.7827725,22.7760291",
   // "description": "Naprawa sprzętu RTV i AGD w Przemyślu. Serwis pogwarancyjny. Naprawa pralek, zmywarek, suszarek, ekspresów, telewizorów.",
   // "description": "Serwis RTV i AGD w Przemyślu zajmuje się naprawą pralek, zmywarek, telewizorów i innego sprzętu domowego. Szybka diagnoza, oryginalne części, gwarancja jakości."
   // "email": serwis.email,
-  // "hasMap": serwis.url.mapaGoogle,
+  // "hasMap": serwis.url.google,
   // "contactPoint": {
   //   "@type": "ContactPoint",
   //   "telephone": serwis.phone.formatted,
@@ -1013,7 +1013,7 @@ export const dataForMetaTags = {
             "name": "Dlaczego suszarka dłużej suszy lub nie suszy wystarczająco?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Przyczyną często jest niedrożny filtr kłaczków, zanieczyszczony przewód wentylacyjny lub w suszarkach kondensacyjnych zabrudzony skraplacz. Pełna diagnostyka pozwala szybko ustalić źródło problemu."
+              "text": "Przyczyną często jest niedrożny filtr kłaczków, zanieczyszczony przewód wentylacyjny lub zabrudzony skraplacz. Pełna diagnostyka pozwala szybko ustalić źródło problemu."
             }
           },
           {

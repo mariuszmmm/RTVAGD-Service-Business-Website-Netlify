@@ -114,7 +114,7 @@ const Header = ({ rating }) => {
         </nav>
         <ButtonLink
           href={serwis.url.addTestimonial}
-          rel="nofollow"
+          rel="noopener noreferrer"
           $opinia
           $hidden={scrolled}
           title="Wystaw opinię"

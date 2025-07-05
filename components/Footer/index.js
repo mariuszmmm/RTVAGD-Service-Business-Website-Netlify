@@ -26,8 +26,8 @@ const Footer = () => (
       <FooterInfo>
         <StyledLink
           $area="adres"
-          href={serwis.url.mapaGoogle}
-          rel="nofollow"
+          href={serwis.url.google}
+          rel="noopener noreferrer"
           title="Adres"
         >
           <LocationIcon />
@@ -52,7 +52,7 @@ const Footer = () => (
         <StyledLink
           $area="facebook"
           href={serwis.url.facebook}
-          rel="nofollow"
+          rel="noopener noreferrer"
           title="Facebook"
           itemProp="sameAs"
         >
@@ -70,7 +70,7 @@ const Footer = () => (
         <StyledLink
           $area="google"
           href={serwis.url.google}
-          rel="nofollow"
+          rel="noopener noreferrer"
           title="Google"
           itemProp="sameAs"
         >

@@ -42,7 +42,7 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
         {status === "success" &&
           <ButtonLink
             href={serwis.url.addTestimonial}
-            rel="nofollow"
+            rel="noopener noreferrer"
           >
             Wystaw opinię
           </ButtonLink>}

@@ -18,7 +18,7 @@ export const Schema = ({ page }) => {
     "priceRange": "$$",
     "address": address,
     "geo": geo,
-    "hasMap": serwis.url.mapaGoogle,
+    "hasMap": serwis.url.google,
     "openingHours": openingHours,
     "contactPoint": {
       "@type": "ContactPoint",
