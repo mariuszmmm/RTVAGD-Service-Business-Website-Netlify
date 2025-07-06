@@ -8,8 +8,6 @@ export const getData = async () => {
     const reviews = response.data?.reviews || [];
     const ratingsTotal = response.data?.user_ratings_total || null;
     const rating = response.data?.rating || null;
-    const ratingAceptable = rating >= 4 ? rating : null
-
 
     if (!Array.isArray(reviews) || !ratingsTotal || !rating) {
       throw new Error('Invalid response from Google Places API');
@@ -31,7 +29,7 @@ export const getData = async () => {
       status: 'success',
       reviews: selectedReviews,
       ratingsTotal,
-      rating: ratingAceptable
+      rating
     };
   } catch (error) {
     console.error('Error fetching data from Google Places API:', error);

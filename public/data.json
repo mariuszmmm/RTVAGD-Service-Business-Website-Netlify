@@ -1,6 +1,20 @@
 {
   "reviews": [
     {
+      "author_name": "Barbara Dorosz",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLX7Y_eHOvrx2DdLyEn31Vo5HWI4FmqUsivWadBWZ_MxdKo3w=s128-c0x00000000-cc-rp-mo",
+      "text": "Sprwnie, solidnie i skutecznie. Polecam",
+      "rating": 5,
+      "time": 1750939726
+    },
+    {
+      "author_name": "Andrzej",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIFLfVlsGfPKPYJKb1rgEjUAhZxrSsQcSFnhfO3hno4Aw72XX4=s128-c0x00000000-cc-rp-mo",
+      "text": "Polecam ten punkt serwisowy. Szybka naprawa i miła obsługa.",
+      "rating": 5,
+      "time": 1750924818
+    },
+    {
       "author_name": "piotrek zych",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLW8bduEpygNEvP8Qnz7uN9d3ogvYJgKlghKiq6OHiVUlBtUA=s128-c0x00000000-cc-rp-mo",
       "text": "Polecam , gość profesjonalnie podszedł do usterki. Szybko i sprawnie🙂",
@@ -38,5 +52,6 @@
   ],
   "rating": 4.7,
   "user_ratings_total": 76,
-  "update_time": "2025-07-06 00:28:33"
+  "update_time": "2025-07-06 07:24:44",
+  "test": null
 }

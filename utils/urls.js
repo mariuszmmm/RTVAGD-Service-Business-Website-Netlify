@@ -31,12 +31,12 @@ export const imageUrls = {
   telewizor: `${baseUrl}/images/naprawa-telewizorow-2.webp`,
   ekspres: `${baseUrl}/images/naprawa-ekspresow-2.webp`,
 
-  _pralka: baseUrl + "/images/001.webp",
-  _suszarka: baseUrl + "/images/002.webp",
-  _zmywarka: baseUrl + "/images/003.webp",
-  _telewizor: baseUrl + "/images/004.webp",
-  _ekspres: baseUrl + "/images/005.webp",
-  _ekspres_2: baseUrl + "/images/006.webp",
+  _pralka: baseUrl + "/images/pralki.webp",
+  _suszarka: baseUrl + "/images/suszarki.webp",
+  _zmywarka: baseUrl + "/images/zmywarki.webp",
+  _telewizor: baseUrl + "/images/telewizora.webp",
+  _ekspres: baseUrl + "/images/ekspresu.webp",
+  _ekspres_2: baseUrl + "/images/RTV-AGD.webp",
 
   serwis_1: baseUrl + "/images/serwis.jpg",
   telewizor_300: baseUrl + "/images/serwis-telewizorow-przemysl-naprawa-telewizora_300.webp",

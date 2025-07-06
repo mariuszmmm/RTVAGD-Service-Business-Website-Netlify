@@ -239,6 +239,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {imageHeight && <meta key="og:image:height" property="og:image:height" content={imageHeight} />}
       {imageType && <meta key="og:image:type" property="og:image:type" content={imageType} />}
 
+      {/* test */}
+      <link rel="image_src" href={image} />
+
       {/* Twitter Cards */}
       <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
       <meta key="twitter:title" name="twitter:title" content={twitterTitle || title} />
@@ -254,7 +257,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
       {/* Structured Data */}
-      {(path === "/naprawa-zmywarek/" || path === "/naprawa-pralek/" || path === "/naprawa-suszarek/" || path === "/naprawa-ekspresow/") && (
+      {(path === "/naprawa-zmywarek/" || path === "/naprawa-pralek/" || path === "/naprawa-suszarek/" || path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -337,19 +340,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               })
             }}
           /> */}
-        </>
-      )}
-
-      {(path === "/naprawa-telewizorow/") && (
-        <>
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList, faqPage, serviceSchema]
-              })
-            }}
-          />
         </>
       )}
 
