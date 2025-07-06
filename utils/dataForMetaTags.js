@@ -428,7 +428,7 @@ export const dataForMetaTags = {
     metaTags: {
       title: "Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ 790258612", // + " | " + shortName,
       canonical: appUrls.kontakt,
-      description: "Skontaktuj się pod numerem 790258612 lub odwiedź nas w Przemyślu, ul. Generała Sowińskiego 2.",
+      description: "Skontaktuj się pod numerem 790 258 612 lub odwiedź nas w Przemyślu, ul. Generała Sowińskiego 2. Szybkie, fachowe usługi naprawy sprzętu RTV i AGD.",
       type: "article",
       image: imageUrls.serwis,
       siteName: shortName,
@@ -847,9 +847,9 @@ export const dataForMetaTags = {
       title: "Naprawa Suszarek Przemyśl ✔️ Serwis Suszarek ☎️ 790258612", // + " | " + shortName,
       ogTitle: "Naprawa Suszarek Przemyśl ✔️ Serwis Suszarek ☎️ 790258612",
       twitterTitle: "Naprawa Suszarek Przemyśl ✔️ Serwis Suszarek ☎️ 790258612",
-      description: "Potrzebujesz naprawić suszarkę w Przemyślu? Profesjonalny serwis suszarek bębnowych. Szybka diagnoza i usunięcie usterek. Zadzwoń po pomoc!",
-      ogDescription: "Potrzebujesz naprawić suszarkę w Przemyślu? Profesjonalny serwis suszarek bębnowych. Szybka diagnoza i usunięcie usterek. Zadzwoń po pomoc!",
-      twitterDescription: "Potrzebujesz naprawić suszarkę w Przemyślu? Profesjonalny serwis suszarek bębnowych. Szybka diagnoza i usunięcie usterek. Zadzwoń po pomoc!",
+      description: "Potrzebujesz naprawić suszarkę w Przemyślu? Profesjonalny serwis suszarek bębnowych. Szybka diagnoza i usunięcie usterek. Gwarancja. Zadzwoń po pomoc!",
+      ogDescription: "Potrzebujesz naprawić suszarkę w Przemyślu? Profesjonalny serwis suszarek bębnowych. Szybka diagnoza i usunięcie usterek.",
+      twitterDescription: "Potrzebujesz naprawić suszarkę w Przemyślu? Profesjonalny serwis suszarek bębnowych. Szybka diagnoza i usunięcie usterek.",
       imageType: "image/webp",
       image: imageUrls.suszarka,
       imageAlt: "Serwisant NaprawaPrzemysl diagnozujący suszarkę do ubrań w Przemyślu",
@@ -1775,7 +1775,7 @@ export const dataForMetaTags = {
 
 
 // const values = ["title", "description", "imageAlt", "imageTitle"];
-const values = ["title", "description"];
+const values = ["description"];
 
 function logMetaTagLengths(pageKeys) {
   pageKeys.forEach(pageKey => {
@@ -1795,7 +1795,7 @@ function logMetaTagLengths(pageKeys) {
 
 // logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
 
-// logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow"]);
+// logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt"]);
 
 
 
