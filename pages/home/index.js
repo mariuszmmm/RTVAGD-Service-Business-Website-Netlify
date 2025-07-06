@@ -8,7 +8,7 @@ import CoffeeMachine from './CoffeeMachine';
 import Television from './Television';
 import Dishwasher from './Dishwasher';
 import Dryer from './Dryer';
-import CoffeeMachine_2 from './CoffeeMachine_2';
+import CoffeeMachine2 from './CoffeeMachine_2';
 import { StyledLink } from '../../components/common/StyledLink';
 import { useState, useEffect, useRef } from 'react';
 import { mobileScene, scene } from "../../utils/scenes";
@@ -94,9 +94,9 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Profesjonalna Naprawa Sprzętu RTV i AGD w Przemyślu
+            Profesjonalna Naprawa Sprzętu RTV i AGD w Przemyślu
           </HeroTitle>
-          <HeroText> Rzetelnie, szybko i&nbsp;skutecznie!</HeroText>
+          <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
           <ButtonLink
             href={`tel:${serwis.phone.number}`}
             title='Naprawa RTV i AGD Przemyśl - Zadzwoń teraz'
@@ -128,7 +128,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
             show={activeScene.content[4]}
             setHold={setHold}
           />}
-          {!activeScene.reset && <CoffeeMachine_2
+          {!activeScene.reset && <CoffeeMachine2
             show={activeScene.content[5]}
             setHold={setHold}
           />}
