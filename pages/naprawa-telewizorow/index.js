@@ -30,7 +30,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa Telewizorów w Przemyślu</Title>
+        <Title>Naprawa Telewizorów w Przemyślu</Title>
 
         <Section>
           <StyledPhoto>
@@ -48,7 +48,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Telewizorów Przemyśl – Specjalistyczna Obsługa LCD, OLED, Smart TV</SubTitle>
+          <SubTitle>Naprawa Telewizorów Przemyśl – Specjalistyczna Obsługa LCD, OLED, Smart TV</SubTitle>
           <StyledText>
             Twój telewizor odmówił posłuszeństwa w najmniej odpowiednim momencie? Doskonale to znam. Oferuję profesjonalną naprawę telewizorów w Przemyślu, podchodząc do każdego przypadku z pełnym zaangażowaniem. Niezależnie od tego, czy to problem z obrazem w Twoim OLED, kłopoty ze Smart TV, czy usterka w starszym modelu LCD – znajdę rozwiązanie. Moim celem jest szybka diagnoza i skuteczna naprawa, byś mógł jak najszybciej wrócić do swoich ulubionych seansów. Jeśli interesuje Cię solidna naprawa telewizorów w Przemyślu, zapraszam do kontaktu.
           </StyledText>

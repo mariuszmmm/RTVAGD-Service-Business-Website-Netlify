@@ -94,9 +94,9 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Profesjonalna Naprawa Sprzętu RTV i AGD w Przemyślu
+            Profesjonalna Naprawa Sprzętu RTV i AGD w Przemyślu
           </HeroTitle>
-          <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
+          <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
           <ButtonLink
             href={`tel:${serwis.phone.number}`}
             title='Naprawa RTV i AGD Przemyśl - Zadzwoń teraz'

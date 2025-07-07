@@ -50,18 +50,18 @@ const Header = ({ rating }) => {
       <HeaderContainer>
         <Logo
           href={appUrls.home}
-          title={`${serwis.shortName.split(" ")[0]} - Strona główna`}
+          title={`${serwis.subName}`}
         >
           <Emoticon $logo>
             <Image
               src={imageUrls.logo}
-              alt={`Logo ${serwis.shortName} w Przemyślu`}
+              alt={`Logo ${serwis.shortName}`}
               fill
               loading="lazy"
               itemProp="image"
             />
           </Emoticon>
-          {" "}{serwis.shortName.split(" ")[0]}
+          {" "}{serwis.shortName}
         </Logo>
         <nav>
           <NavList>
