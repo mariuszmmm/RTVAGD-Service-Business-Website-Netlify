@@ -196,7 +196,7 @@ export const dataForMetaTags = {
       // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + ` | ${shortName}`,
       // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
       // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      title: `Naprawa RTV i AGD Przemyśl ✔️ Serwis RTV-AGD" | ${shortName}`,
+      title: `Naprawa RTV i AGD Przemyśl ✔️ Serwis RTV-AGD | ${shortName}`,
       ogTitle: "Naprawa RTV i AGD Przemyśl ✔️ Serwis RTV-AGD",
       twitterTitle: "Naprawa RTV i AGD Przemyśl ✔️ Serwis RTV-AGD",
       description: "Naprawa AGD i RTV w Przemyślu. Profesjonalny serwis pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy. Szybka diagnostyka, gwarancja. Zadzwoń!",
