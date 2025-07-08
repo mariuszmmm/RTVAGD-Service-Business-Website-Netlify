@@ -64,9 +64,9 @@ const Contact = ({ rating, ratingsTotal }) => {
               <span>
                 <StyledLink
                   href={`tel:${serwis.phone.number}`}
-                  title={(serwis.phone.formatted).replace(/(\d{3})(\d{3})(\d{3})/, '$1-$2-$3')}
+                  title={serwis.phone.international}
                 >
-                  {serwis.phone.formatted}
+                  {serwis.phone.international}
                 </StyledLink>
               </span>
             </ContactText>

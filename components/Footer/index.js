@@ -39,7 +39,7 @@ const Footer = () => (
           title="Telefon"
         >
           <PhoneIcon />
-          <FooterText>{serwis.phone.short} </FooterText>
+          <FooterText>{serwis.phone.formatted} </FooterText>
         </StyledLink>
         <StyledLink
           $area="email"

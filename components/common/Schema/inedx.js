@@ -13,7 +13,7 @@ export const Schema = ({ page }) => {
     "logo": imageUrls.logo,
     "image": imageUrls.serwis,
     "description": "Naprawa sprzętu RTV i AGD w Przemyślu. Serwis pogwarancyjny. Naprawa pralek, zmywarek, suszarek, ekspresów, telewizorów.",
-    "telephone": serwis.phone.formatted,
+    "telephone": serwis.phone.international,
     "email": serwis.email,
     "priceRange": "$$",
     "address": address,
@@ -22,7 +22,7 @@ export const Schema = ({ page }) => {
     "openingHours": openingHours,
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": serwis.phone.formatted,
+      "telephone": serwis.phone.international,
       "contactType": "office"
     }
   };
