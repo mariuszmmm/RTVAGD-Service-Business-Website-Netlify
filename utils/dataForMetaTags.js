@@ -560,7 +560,7 @@ export const dataForMetaTags = {
   naprawa_pralek: {
     metaTags: {
       title: `Naprawa Pralek Przemyśl ☎️ ${shortPhoneNmuber} ✔️ Serwis AGD | ${shortName}`,
-      ogTitle: `Naprawa Pralek Przemyśl ☎️ ${shortPhoneNmuber} ✔️ Serwis AGDi`,
+      ogTitle: `Naprawa Pralek Przemyśl ☎️ ${shortPhoneNmuber} ✔️ Serwis AGD`,
       twitterTitle: `Naprawa Pralek Przemyśl ☎️ ${shortPhoneNmuber} ✔️ Serwis AGD`,
       description: `Serwis i naprawa Pralek w Przemyślu. Awaria pralki w Przemyślu? Oferuję szybką i skuteczną naprawę pralek z gwarancją. ✔️ Zadzwoń! ☎️ ${shortPhoneNmuber}`,
       ogDescription: "Serwis i naprawa Pralek w Przemyślu. Awaria pralki w Przemyślu? Oferuję szybką i skuteczną naprawę pralek z gwarancją.",
