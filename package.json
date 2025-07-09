@@ -22,6 +22,7 @@
     "styled-normalize": "^8.1.1"
   },
   "scripts": {
+    "start": "next dev",
     "dev": "next dev",
     "build": "NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build",
     "serve": "npx serve@latest out",

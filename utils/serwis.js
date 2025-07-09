@@ -11,12 +11,12 @@ export const serwis = {
   // subName: "Serwis RTV i AGD",
   name: "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",
   subName: "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
-  shortName: "Serwis RTV i AGD",
+  shortName: "Serwis RTV i AGD",
   email: "piotrek_serwis@wp.pl",
   phone: {
     number: "+48790258612",
     international: "+48 790 258 612",
-    formatted: "790-258-612",
+    formatted: "790 258 612",
     short: "790258612"
   },
   adres: "Generała Józefa Sowińskiego 2, 37-700 Przemyśl",
