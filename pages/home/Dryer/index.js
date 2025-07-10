@@ -19,7 +19,7 @@ const Dryer = ({ show, left, setHold }) => {
         <StyledImage>
           <Image
             src={imageUrls._suszarka}
-            alt="002"
+            alt="Suszarki"
             // loading='lazy'
             fill
             // srcSet={`${imageUrls.suszarka_300} 500w,

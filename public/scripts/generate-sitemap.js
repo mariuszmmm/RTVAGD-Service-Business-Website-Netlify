@@ -8,7 +8,7 @@ const routes = {
     priority: '1.0',
     image: `${BASE_URL}/images/serwis-rtv-agd-2.webp`,
     caption: 'Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu.',
-    title: 'Serwis RTV i AGD Przemyśl'
+    title: 'Serwis RTV i AGD Przemyśl'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',
@@ -79,8 +79,8 @@ const urlsXml = Object.entries(routes)
       `    <priority>${data.priority || '0.8'}</priority>`,
       imageBlock,
       `  </url>`,
-      `${index === Object.entries(routes).length - 1 ? '' : ' '}`
-    ].filter(Boolean).join('\n');
+    ].filter(Boolean).join('\n')
+      + (index === Object.entries(routes).length - 1 ? '' : '\n');
   })
   .join('\n');
 

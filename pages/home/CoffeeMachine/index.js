@@ -17,7 +17,7 @@ const CoffeeMachine = ({ show, setHold }) => (
       <StyledImage>
         <Image
           src={imageUrls._ekspres}
-          alt="005"
+          alt="Ekspresy"
           // loading='lazy'
           fill
           // srcSet={`${imageUrls.ekspres_300} 500w,

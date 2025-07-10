@@ -61,7 +61,7 @@ const Header = ({ rating }) => {
               itemProp="image"
             />
           </Emoticon>
-          {" "}{serwis.shortName}
+          {" "}{serwis.url.site}
         </Logo>
         <nav>
           <NavList>

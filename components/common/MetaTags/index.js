@@ -36,7 +36,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     webpage,
     website,
     imageObject,
-    imageObject_2,
     breadcrumbList,
   } = page.schema;
 

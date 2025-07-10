@@ -1,5 +1,6 @@
 export const serwis = {
   url: {
+    site: "naprawaprzemysl.pl",
     facebook: "https://www.facebook.com/100063811592941",
     fb_app_id: "1465845357931091",
     // google: "https://g.co/kgs/XdcEw7o",

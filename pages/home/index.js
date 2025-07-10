@@ -94,7 +94,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
       <Hero>
         <HeroHeader >
           <HeroTitle lang="pl">
-            Profesjonalna Naprawa Sprzętu RTV i AGD w Przemyślu
+            Serwis RTV i AGD w Przemyślu
           </HeroTitle>
           <HeroText> Rzetelnie, szybko i skutecznie!</HeroText>
           <ButtonLink

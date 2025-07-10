@@ -18,7 +18,7 @@ const Dishwasher = ({ show, setHold }) => (
       <StyledImage>
         <Image
           src={imageUrls._zmywarka}
-          alt="003"
+          alt="Zmywarki"
           // loading='lazy'
           fill
           // srcSet={`${imageUrls.zmywarka_300} 500w,
