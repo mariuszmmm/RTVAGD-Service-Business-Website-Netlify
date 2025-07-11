@@ -44,7 +44,7 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
         {status === "success" &&
           <Section>
             <HeroText>
-              <strong>Czy jesteś zadowolony z naszych usług? Podziel się swoim doświadczeniem i pomóż innym klientom w podejmowaniu najlepszych decyzji!</strong>
+              <strong>Czy jesteś zadowolony z usług? Podziel się swoim doświadczeniem i pomóż innym klientom w podejmowaniu najlepszych decyzji!</strong>
             </HeroText>
             <ButtonLink
               href={serwis.url.addTestimonial}
