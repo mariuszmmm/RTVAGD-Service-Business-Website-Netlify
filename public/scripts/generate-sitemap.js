@@ -21,7 +21,7 @@ const routes = {
     changefreq: 'daily',
     priority: '0.9',
     image: `${BASE_URL}/images/naprawa-suszarek-2.webp`,
-    caption: 'Profesjonalna naprawa suszarek do ubrań w Przemyślu.',
+    caption: 'Profesjonalna naprawa suszarek do prania w Przemyślu.',
     title: 'Serwis Suszarek Przemyśl'
   },
   '/naprawa-zmywarek/': {
@@ -50,12 +50,12 @@ const routes = {
     priority: '0.5',
   },
   '/opinie/': {
-    changefreq: 'weekly',
-    priority: '0.5',
+    changefreq: 'daily',
+    priority: '0.8',
   },
   '/kontakt/': {
     changefreq: 'monthly',
-    priority: '0.5',
+    priority: '0.8',
   },
 }
 

@@ -41,7 +41,32 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
 
   // const selectedReviews = reviews?.filter((review, index) => index < 2);
-  const getReviews = (selectedReviewNumber) => {
+
+  const getReviews = () => {
+    if (!reviews) return null;
+
+    return reviews.map((review) => (
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "@id": appUrls.home + "#localbusiness",
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": review.rating,
+        },
+        "author": {
+          "@type": "Person",
+          "name": review.author_name,
+        },
+        "datePublished": formattedDate(review.time),
+        "reviewBody": review.text,
+      }
+    ))
+  };
+
+  const getReviewsOld = (selectedReviewNumber) => {
     if (!reviews) return null;
 
     const selectedReviews = !!selectedReviewNumber ? [reviews[selectedReviewNumber - 1]] : reviews;
@@ -165,12 +190,12 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     // ...(path === "/naprawa-zmywarek/" && getReview("naprawa zmywarki")),
     // ...(path === "/" && getReview()),
 
-    // ...(path === "/naprawa-telewizorow/" && getReviews()),
-    // ...(path === "/naprawa-ekspresow/" && getReviews()),
-    // ...(path === "/naprawa-pralek/" && getReviews()),
-    // ...(path === "/naprawa-suszarek/" && getReviews()),
-    // ...(path === "/naprawa-zmywarek/" && getReviews()),
-    // ...(path === "/" && getReviews()),
+    // ...(path === "/naprawa-telewizorow/" && getReviewsOld()),
+    // ...(path === "/naprawa-ekspresow/" && getReviewsOld()),
+    // ...(path === "/naprawa-pralek/" && getReviewsOld()),
+    // ...(path === "/naprawa-suszarek/" && getReviewsOld()),
+    // ...(path === "/naprawa-zmywarek/" && getReviewsOld()),
+    // ...(path === "/" && getReviewsOld()),
 
 
     "aggregateRating": {
@@ -209,7 +234,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
   const localBusinessSchema = {
     ...localBusiness,
-    // ...getReviews(1),
+    // ...getReviewsOld(1),
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": (rating || serwis.rating).toString(),
@@ -270,7 +295,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList, faqPage, serviceSchema]
+                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList, faqPage, serviceSchema, productSchema]
               })
             }}
           />
@@ -356,7 +381,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList]
+                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList, productSchema]
               })
             }}
           />
@@ -401,7 +426,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/kontakt/" || path === "/o-mnie/" || path === "/opinie/") && (
+      {(path === "/kontakt/" || path === "/o-mnie/") && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -416,6 +441,29 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
                 ...breadcrumbList
+              })
+            }}
+          />
+        </>
+      )}
+
+      {path === "/opinie/" && (
+        <>
+          {/* <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...imageObject
+              })
+            }}
+          /> */}
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [
+                  webpage, localBusinessSchema, website, breadcrumbList,
+                  getReviews()]
               })
             }}
           />
