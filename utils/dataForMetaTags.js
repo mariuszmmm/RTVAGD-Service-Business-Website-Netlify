@@ -64,31 +64,31 @@ export const localBusiness = {
 "openingHoursSpecification": [
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "https://schema.org/Monday",
+    "dayOfWeek": "Monday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "https://schema.org/Tuesday",
+    "dayOfWeek": "Tuesday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "https://schema.org/Wednesday",
+    "dayOfWeek": "Wednesday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "https://schema.org/Thursday",
+    "dayOfWeek": "Thursday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "https://schema.org/Friday",
+    "dayOfWeek": "Friday",
     "opens": "09:30",
     "closes": "17:00"
   }
