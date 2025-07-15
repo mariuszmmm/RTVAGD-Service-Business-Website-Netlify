@@ -426,7 +426,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/kontakt/" || path === "/o-mnie/" || path === "/opinie/") && (
+      {(path === "/kontakt/" || path === "/o-mnie/") && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -449,14 +449,14 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
      {path === "/opinie/" && (
         <>
-          {/* <script type="application/ld+json"
+             <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
-                ...imageObject
+                ...breadcrumbList
               })
             }}
-          /> */}
+          />
      {/*    <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
