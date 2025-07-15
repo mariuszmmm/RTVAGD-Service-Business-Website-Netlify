@@ -255,16 +255,16 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
 
-        // próbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "availability": "https://schema.org/InStock",
-        //   "priceValidUntil": "2025-12-31",
-        //   "priceCurrency": "PLN",
-        //   "price": "150.00",
-        //   "url": appUrls.home,
-        //   "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        // },
+      //   próbnie wyłączone
+         "offers": {
+           "@type": "Offer",
+           "availability": "https://schema.org/InStock",
+           "priceValidUntil": "2025-12-31",
+           "priceCurrency": "PLN",
+           "price": "150.00",
+           "url": appUrls.home,
+           "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
+         },
 
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -635,18 +635,18 @@ export const dataForMetaTags = {
 
 
         // pórbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-        //   "price": "150.00",
-        //   "priceCurrency": "PLN",
-        //   "priceSpecification": {
-        //     "@type": "UnitPriceSpecification",
-        //     "unitText": "usługa"
-        //   },
-        //   "priceValidUntil": "2025-12-31",
-        //   "availability": "https://schema.org/InStock",
-        // },
+         "offers": {
+           "@type": "Offer",
+           "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
+           "price": "150.00",
+           "priceCurrency": "PLN",
+           "priceSpecification": {
+             "@type": "UnitPriceSpecification",
+             "unitText": "usługa"
+           },
+           "priceValidUntil": "2025-12-31",
+           "availability": "https://schema.org/InStock",
+         },
         "areaServed": [
           { "@type": "Place", "name": "Przemyśl" },
           { "@type": "Place", "name": "Bolestraszyce" },
@@ -670,15 +670,15 @@ export const dataForMetaTags = {
         "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
 
         // próbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "availability": "https://schema.org/InStock",
-        //   "priceValidUntil": "2025-12-31",
-        //   "priceCurrency": "PLN",
-        //   "price": "150.00",
-        //   "url": appUrls.naprawa_pralek,
-        //   "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        // },
+         "offers": {
+           "@type": "Offer",
+           "availability": "https://schema.org/InStock",
+           "priceValidUntil": "2025-12-31",
+           "priceCurrency": "PLN",
+           "price": "150.00",
+           "url": appUrls.naprawa_pralek,
+           "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
+         },
 
 
 
