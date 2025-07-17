@@ -65,12 +65,12 @@ export const localBusiness = {
  //   {
   //    "@type": "OpeningHoursSpecification",
    //   "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-      ],
+   //   "Monday",
+  //    "Tuesday",
+  //    "Wednesday",
+  //    "Thursday",
+  //    "Friday"
+   //   ],
   //    "opens": "09:30",
    //   "closes": "17:00"
   //  }
