@@ -62,37 +62,19 @@ export const localBusiness = {
   geo,
   "hasMap": serwis.url.google,
 "openingHoursSpecification": [
-  {
-    "@type": "OpeningHoursSpecification",
-    "DayOfWeek": "Monday",
-    "opens": "09:30",
-    "closes": "17:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "DayOfWeek": "Tuesday",
-    "opens": "09:30",
-    "closes": "17:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "DayOfWeek": "Wednesday",
-    "opens": "09:30",
-    "closes": "17:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "DayOfWeek": "Thursday",
-    "opens": "09:30",
-    "closes": "17:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "DayOfWeek": "Friday",
-    "opens": "09:30",
-    "closes": "17:00"
-  }
-],
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "https://schema.org/Monday",
+        "https://schema.org/Tuesday",
+        "https://schema.org/Wednesday",
+        "https://schema.org/Thursday",
+        "https://schema.org/Friday"
+      ],
+      "opens": "09:30",
+      "closes": "17:00"
+    }
+  ],
   "priceRange": "PLN",
   "areaServed": [
     { "@type": "Place", "name": "Przemyśl" },
