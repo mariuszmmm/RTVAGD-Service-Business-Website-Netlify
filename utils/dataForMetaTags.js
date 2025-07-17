@@ -64,31 +64,31 @@ export const localBusiness = {
 "openingHoursSpecification": [
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Monday",
+    "DayOfWeek": "Monday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Tuesday",
+    "DayOfWeek": "Tuesday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Wednesday",
+    "DayOfWeek": "Wednesday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Thursday",
+    "DayOfWeek": "Thursday",
     "opens": "09:30",
     "closes": "17:00"
   },
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Friday",
+    "DayOfWeek": "Friday",
     "opens": "09:30",
     "closes": "17:00"
   }
