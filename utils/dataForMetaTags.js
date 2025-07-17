@@ -61,6 +61,9 @@ export const localBusiness = {
   address,
   geo,
   "hasMap": serwis.url.google,
+
+"openingHours":["Mo-Fr 9:30-18:00"],
+
 //  "openingHoursSpecification": [
  //   {
   //    "@type": "OpeningHoursSpecification",
