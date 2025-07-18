@@ -450,15 +450,15 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
      {path === "/opinie/" && (
         <>
-             <script type="application/ld+json"
+       {/*      <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
                 ...breadcrumbList
               })
             }}
-          />
-     {/*    <script type="application/ld+json"
+          />  */}
+         <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
@@ -467,7 +467,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   getReviews()]
               })
             }}
-          />   */}
+          />   
         </>
       )} 
 
