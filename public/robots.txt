@@ -7,6 +7,4 @@ Allow: /
 User-agent: AhrefsBot
 Allow: /
 
-Host: https://naprawaprzemysl.pl
-
 Sitemap: https://naprawaprzemysl.pl/sitemap.xml
