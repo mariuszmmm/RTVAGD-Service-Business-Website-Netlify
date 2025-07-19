@@ -108,7 +108,7 @@ export const localBusiness = {
   //  { "@type": "Place", "name": "Prałkowce" },
   //  { "@type": "Place", "name": "Wyszatyce" },
   //  { "@type": "Place", "name": "Żurawica" }
-  ],
+//  ],
 "areaServed": {
   "@type": "GeoCircle",
   "geoMidpoint": {
