@@ -49,9 +49,9 @@ export const organization = {
 };
 
 export const localBusiness = {
-"@type": ["RepairBusiness", "LocalBusiness"],
- // "@type": "LocalBusiness",
-  "serviceType": ["ApplianceRepair", "ElectronicsRepair"],
+// "@type": ["RepairBusiness", "LocalBusiness"],
+  "@type": "LocalBusiness",
+ // "serviceType": ["ApplianceRepair", "ElectronicsRepair"],
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": shortName,   // zgodny z CEIDG
   "image": imageUrls.logo,
