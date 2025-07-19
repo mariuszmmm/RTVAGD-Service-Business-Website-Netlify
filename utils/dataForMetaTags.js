@@ -49,7 +49,9 @@ export const organization = {
 };
 
 export const localBusiness = {
-  "@type": "LocalBusiness",
+"@type": ["RepairBusiness", "LocalBusiness"],
+ // "@type": "LocalBusiness",
+  "serviceType": ["ApplianceRepair", "ElectronicsRepair"],
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": shortName,   // zgodny z CEIDG
   "image": imageUrls.logo,
@@ -63,6 +65,13 @@ export const localBusiness = {
   "hasMap": serwis.url.google,
 
 "openingHours":["Mo-Fr 9:30-17:00"],
+
+"openingHoursSpecification": { // DODANO jako uzupełnienie
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:30",
+    "closes": "17:00"
+  },
 
 //  "openingHoursSpecification": [
  //   {
@@ -78,20 +87,37 @@ export const localBusiness = {
    //   "closes": "17:00"
   //  }
 //  ],
-  "priceRange": "PLN",
-  "areaServed": [
-    { "@type": "Place", "name": "Przemyśl" },
-    { "@type": "Place", "name": "Bolestraszyce" },
-    { "@type": "Place", "name": "Duńkowiczki" },
-    { "@type": "Place", "name": "Krówniki" },
-    { "@type": "Place", "name": "Nehrybka" },
-    { "@type": "Place", "name": "Orzechowce" },
-    { "@type": "Place", "name": "Ostrów" },
-    { "@type": "Place", "name": "Pikulice" },
-    { "@type": "Place", "name": "Prałkowce" },
-    { "@type": "Place", "name": "Wyszatyce" },
-    { "@type": "Place", "name": "Żurawica" }
+
+//  "priceRange": "PLN",
+
+"priceRange": "100-500 PLN",  // ZMIANA: Konkretny zakres cen
+//      "areaServed": {
+ //       "@type": "City",
+ //       "name": "Przemyśl i okolice (20 km)"  // ZMIANA: Ujednolicony opis
+ //     },
+
+ // "areaServed": [
+  //  { "@type": "Place", "name": "Przemyśl" },
+  //  { "@type": "Place", "name": "Bolestraszyce" },
+  //  { "@type": "Place", "name": "Duńkowiczki" },
+  //  { "@type": "Place", "name": "Krówniki" },
+  //  { "@type": "Place", "name": "Nehrybka" },
+  //  { "@type": "Place", "name": "Orzechowce" },
+  //  { "@type": "Place", "name": "Ostrów" },
+  //  { "@type": "Place", "name": "Pikulice" },
+  //  { "@type": "Place", "name": "Prałkowce" },
+  //  { "@type": "Place", "name": "Wyszatyce" },
+  //  { "@type": "Place", "name": "Żurawica" }
   ],
+"areaServed": {
+  "@type": "GeoCircle",
+  "geoMidpoint": {
+     "@type": "GeoCoordinates",
+     "latitude": 49.7827725,
+     "longitude": 22.7760291
+  },
+  "geoRadius": 20000 // 20 km od Przemyśla
+},
   "sameAs": [
     serwis.url.facebook,
     serwis.url.google
