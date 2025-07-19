@@ -239,6 +239,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "@type": "AggregateRating",
       "ratingValue": (rating || serwis.rating).toString(),
       "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
+"bestRating": "5"
     },
 
   };
