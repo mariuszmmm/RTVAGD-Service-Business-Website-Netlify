@@ -65,51 +65,21 @@ export const localBusiness = {
   "hasMap": serwis.url.google,
 
 "openingHours":["Mo-Fr 9:30-17:00"],
-
-"openingHoursSpecification": [
+"hoursAvailable": [{
+        "@type": "OpeningHoursSpecification",
+        "opens": "09:30",
+        "closes": "17:00",
+        "dayOfWeek": [{
+            "@type": "DayOfWeek",
+            "@id": "http://schema.org/Monday",
+            "name": "Monday"
+        },
 {
-      "@type": "OpeningHoursSpecification",
-      "closes":  "17:00:00",
-      "dayOfWeek": "https://schema.org/Sunday",
-      "opens":  "09:30:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "closes": "17:00:00" ,
-      "dayOfWeek": "https://schema.org/Saturday",
-      "opens": "09:30:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "closes":  "17:00:00",
-      "dayOfWeek": "https://schema.org/Thursday",
-      "opens": "09:30:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "closes": "17:00:00",
-      "dayOfWeek": "https://schema.org/Tuesday",
-      "opens": "09:30:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "closes": "17:00:00",
-      "dayOfWeek":  "https://schema.org/Friday",
-      "opens": "09:30:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "closes": "17:00:00",
-      "dayOfWeek": "https://schema.org/Monday",
-      "opens": "09:30:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "closes": "17:00:00",
-      "dayOfWeek":  "https://schema.org/Wednesday",
-      "opens": "09:30:00"
-    }
-  ],
+            "@type": "DayOfWeek",
+            "@id": "http://schema.org/Tuesday",
+            "name": "Tuesday"
+        }
+],
 
 //  "openingHoursSpecification": [
  //   {
