@@ -66,12 +66,38 @@ export const localBusiness = {
 
 "openingHours":["Mo-Fr 9:30-17:00"],
 
-"openingHoursSpecification": { // DODANO jako uzupełnienie
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-    "opens": "09:30",
-    "closes": "17:00"
-  },
+"openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes":  "17:00:00",
+      "dayOfWeek": "https://schema.org/Thursday",
+      "opens": "09:30:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "https://schema.org/Tuesday",
+      "opens": "09:30:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek":  "https://schema.org/Friday",
+      "opens": "09:30:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek": "https://schema.org/Monday",
+      "opens": "09:30:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00",
+      "dayOfWeek":  "https://schema.org/Wednesday",
+      "opens": "09:30:00"
+    }
+  ]
 
 //  "openingHoursSpecification": [
  //   {
