@@ -32,6 +32,7 @@ export const website = {
   "name": shortName,
   "inLanguage": "pl-PL",
   "description": "Profesjonalny serwis RTV i AGD w Przemyślu. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
+"image": "https://naprawaprzemysl.pl/images/logo.svg",
 };
 
 export const organization = {
