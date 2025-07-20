@@ -65,21 +65,14 @@ export const localBusiness = {
   "hasMap": serwis.url.google,
 
 "openingHours":["Mo-Fr 9:30-17:00"],
-"hoursAvailable": [{
-        "@type": "OpeningHoursSpecification",
-        "opens": "09:30",
-        "closes": "17:00",
-        "dayOfWeek": [{
-            "@type": "DayOfWeek",
-            "@id": "http://schema.org/Monday",
-            "name": "Monday"
-        },
-{
-            "@type": "DayOfWeek",
-            "@id": "http://schema.org/Tuesday",
-            "name": "Tuesday"
-        }]
-}],
+"openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "https://schema.org/Monday",
+            "opens": "09:30",
+            "closes": "17:00"
+        }
+    ],
 
 //  "openingHoursSpecification": [
  //   {
