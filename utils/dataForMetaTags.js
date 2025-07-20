@@ -67,6 +67,18 @@ export const localBusiness = {
 "openingHours":["Mo-Fr 9:30-17:00"],
 
 "openingHoursSpecification": [
+{
+      "@type": "OpeningHoursSpecification",
+      "closes":  "17:00:00",
+      "dayOfWeek": "https://schema.org/Sunday",
+      "opens":  "09:30:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "closes": "17:00:00" ,
+      "dayOfWeek": "https://schema.org/Saturday",
+      "opens": "09:30:00"
+    },
     {
       "@type": "OpeningHoursSpecification",
       "closes":  "17:00:00",
