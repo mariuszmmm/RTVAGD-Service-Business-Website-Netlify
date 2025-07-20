@@ -78,8 +78,8 @@ export const localBusiness = {
             "@type": "DayOfWeek",
             "@id": "http://schema.org/Tuesday",
             "name": "Tuesday"
-        }
-],
+        }]
+}],
 
 //  "openingHoursSpecification": [
  //   {
