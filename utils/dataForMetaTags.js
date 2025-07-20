@@ -109,7 +109,7 @@ export const localBusiness = {
       "dayOfWeek":  "https://schema.org/Wednesday",
       "opens": "09:30:00"
     }
-  ]
+  ],
 
 //  "openingHoursSpecification": [
  //   {
