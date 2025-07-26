@@ -453,7 +453,7 @@ export const dataForMetaTags = {
   },
   kontakt: {
     metaTags: {
-      title: `Kontakt | ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} `,
+      title: `Kontakt – Serwis RTV-AGD Przemyśl | ${shortName}`,
       canonical: appUrls.kontakt,
       description: `Skontaktuj się z Serwisem RTV i AGD w Przemyślu pod numerem ☎️ ${formattedPhoneNumber} lub odwiedź nas przy ul. Generała Sowińskiego 2. Fachowe usługi!`,
       type: "article",
@@ -476,7 +476,7 @@ export const dataForMetaTags = {
         "@id": appUrls.kontakt,
         "url": appUrls.kontakt,
         "inLanguage": "pl-PL",
-        "name": `Kontakt ✔️ Serwis RTV AGD w Przemyślu ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `Kontakt – Serwis RTV-AGD Przemyśl | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
@@ -512,7 +512,7 @@ export const dataForMetaTags = {
   },
   o_mnie: {
     metaTags: {
-      title: `O serwisie RTV i AGD w Przemyślu | ${shortName}`,
+      title: `O Serwisie RTV-AGD w Przemyślu | ${shortName}`,
       canonical: appUrls.o_mnie,
       description: "Dowiedz się o moim doświadczeniu w naprawie sprzętu RTV i AGD oraz zaangażowaniu w najwyższej jakości usługi serwisowe w Przemyślu.",
       type: "article",
@@ -553,7 +553,7 @@ export const dataForMetaTags = {
   opinie: {
     path: "/opinie/",
     metaTags: {
-      title: `Opinie o Serwisie RTV i AGD w Przemyślu | ${shortName}`,
+      title: `Opinie o Serwisie RTV-AGD w Przemyślu | ${shortName}`,
       canonical: appUrls.opinie,
       description: "Przejrzyj opinie zadowolonych klientów Serwisu RTV i AGD w Przemyślu. Dowiedz się, dlaczego skorzystali własnie z tego serwisu.",
       type: "article",
@@ -570,7 +570,7 @@ export const dataForMetaTags = {
         "@id": appUrls.opinie,
         "url": appUrls.opinie,
         "inLanguage": "pl-PL",
-        "name": `Opinie o Serwisie RTV i AGD w Przemyślu | ${shortName}`,
+        "name": `Opinie o Serwisie RTV-AGD w Przemyślu | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
