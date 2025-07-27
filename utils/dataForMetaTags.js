@@ -229,9 +229,9 @@ export const dataForMetaTags = {
       // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + ` | ${shortName}`,
       // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
       // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      title: `Serwis RTV-AGD ✔️ Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      ogTitle: `Serwis RTV-AGD ✔️ Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      twitterTitle: `Serwis RTV-AGD ✔️ Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      title: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      ogTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      twitterTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
       description: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       ogDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       twitterDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -410,7 +410,7 @@ export const dataForMetaTags = {
         "@id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": `Serwis RTV-AGD ✔️ Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
@@ -428,7 +428,7 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.serwis,
         "width": 931,
         "height": 497,
-        "name": `Serwis RTV-AGD ✔️ Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "description": "Doświadczony technik serwisu RTV i AGD w trakcie naprawy urządzenia w Przemyślu.",
         "caption": "Twój zaufany serwis RTV i AGD w Przemyślu – szybkie i skuteczne naprawy.",
         "representativeOfPage": true
@@ -453,7 +453,7 @@ export const dataForMetaTags = {
   },
   kontakt: {
     metaTags: {
-      title: `Kontakt | ${shortName} Przemyśl`,
+      title: `Kontakt ✔️ ${shortName} Przemyśl ☎️ ${formattedPhoneNumber}`,
       canonical: appUrls.kontakt,
       description: `Skontaktuj się z Serwisem RTV i AGD w Przemyślu pod numerem ☎️ ${formattedPhoneNumber} lub odwiedź nas przy ul. Generała Sowińskiego 2. Fachowe usługi!`,
       type: "article",
@@ -476,7 +476,7 @@ export const dataForMetaTags = {
         "@id": appUrls.kontakt,
         "url": appUrls.kontakt,
         "inLanguage": "pl-PL",
-        "name": `Kontakt | ${shortName} Przemyśl`,
+        "name": `Kontakt ✔️ ${shortName} Przemyśl ☎️ ${formattedPhoneNumber}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
@@ -512,7 +512,7 @@ export const dataForMetaTags = {
   },
   o_mnie: {
     metaTags: {
-      title: `O mnie | ${shortName} Przemyśl`,
+      title: `O mnie ✔️ ${shortName} Przemyśl`,
       canonical: appUrls.o_mnie,
       description: "Dowiedz się o moim doświadczeniu w naprawie sprzętu RTV i AGD oraz zaangażowaniu w najwyższej jakości usługi serwisowe w Przemyślu.",
       type: "article",
@@ -553,7 +553,7 @@ export const dataForMetaTags = {
   opinie: {
     path: "/opinie/",
     metaTags: {
-      title: `Opinie | ${shortName} Przemyśl`,
+      title: `Opinie ✔️ ${shortName} Przemyśl`,
       canonical: appUrls.opinie,
       description: "Przejrzyj opinie zadowolonych klientów Serwisu RTV i AGD w Przemyślu. Dowiedz się, dlaczego skorzystali własnie z tego serwisu.",
       type: "article",
@@ -570,7 +570,7 @@ export const dataForMetaTags = {
         "@id": appUrls.opinie,
         "url": appUrls.opinie,
         "inLanguage": "pl-PL",
-        "name": `Opinie | ${shortName} Przemyśl`,
+        "name": `Opinie ✔️ ${shortName} Przemyśl`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
