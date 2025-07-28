@@ -32,7 +32,7 @@ export const website = {
   "name": shortName,
   "inLanguage": "pl-PL",
   "description": "Profesjonalny serwis RTV i AGD w Przemyślu. Szybka i skuteczna naprawa pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
-"image": "https://naprawaprzemysl.pl/images/logo.svg",
+  "image": "https://naprawaprzemysl.pl/images/logo.svg",
 };
 
 export const organization = {
@@ -50,9 +50,9 @@ export const organization = {
 };
 
 export const localBusiness = {
-// "@type": ["RepairBusiness", "LocalBusiness"],
+  // "@type": ["RepairBusiness", "LocalBusiness"],
   "@type": "LocalBusiness",
- // "serviceType": ["ApplianceRepair", "ElectronicsRepair"],
+  // "serviceType": ["ApplianceRepair", "ElectronicsRepair"],
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": shortName,   // zgodny z CEIDG
   "image": imageUrls.serwis,
@@ -65,32 +65,32 @@ export const localBusiness = {
   geo,
   "hasMap": serwis.url.google,
 
-openingHours,
+  openingHours,
 
-//  "openingHoursSpecification": [
- //   {
+  //  "openingHoursSpecification": [
+  //   {
   //    "@type": "OpeningHoursSpecification",
-   //   "dayOfWeek": [
-   //   "Monday",
+  //   "dayOfWeek": [
+  //   "Monday",
   //    "Tuesday",
   //    "Wednesday",
   //    "Thursday",
   //    "Friday"
-   //   ],
+  //   ],
   //    "opens": "09:30",
-   //   "closes": "17:00"
+  //   "closes": "17:00"
   //  }
-//  ],
+  //  ],
 
-//  "priceRange": "PLN",
+  //  "priceRange": "PLN",
 
-"priceRange": "100-500 PLN",  // ZMIANA: Konkretny zakres cen
-//      "areaServed": {
- //       "@type": "City",
- //       "name": "Przemyśl i okolice (20 km)"  // ZMIANA: Ujednolicony opis
- //     },
+  "priceRange": "100-500 PLN",  // ZMIANA: Konkretny zakres cen
+  //      "areaServed": {
+  //       "@type": "City",
+  //       "name": "Przemyśl i okolice (20 km)"  // ZMIANA: Ujednolicony opis
+  //     },
 
- // "areaServed": [
+  // "areaServed": [
   //  { "@type": "Place", "name": "Przemyśl" },
   //  { "@type": "Place", "name": "Bolestraszyce" },
   //  { "@type": "Place", "name": "Duńkowiczki" },
@@ -102,16 +102,16 @@ openingHours,
   //  { "@type": "Place", "name": "Prałkowce" },
   //  { "@type": "Place", "name": "Wyszatyce" },
   //  { "@type": "Place", "name": "Żurawica" }
-//  ],
-"areaServed": {
-  "@type": "GeoCircle",
-  "geoMidpoint": {
-     "@type": "GeoCoordinates",
-     "latitude": 49.7827725,
-     "longitude": 22.7760291
+  //  ],
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.7827725,
+      "longitude": 22.7760291
+    },
+    "geoRadius": 20000 // 20 km od Przemyśla
   },
-  "geoRadius": 20000 // 20 km od Przemyśla
-},
   "sameAs": [
     serwis.url.facebook,
     serwis.url.google
@@ -229,9 +229,9 @@ export const dataForMetaTags = {
       // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + ` | ${shortName}`,
       // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
       // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      title: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      ogTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      twitterTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      title: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber}`,
+      ogTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber}`,
+      twitterTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber}`,
       description: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       ogDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       twitterDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -260,16 +260,16 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
 
-      //   próbnie wyłączone
-  //       "offers": {
-   //        "@type": "Offer",
-    //       "availability": "https://schema.org/InStock",
-     //      "priceValidUntil": "2025-12-31",
-   //        "priceCurrency": "PLN",
-     //      "price": "150.00",
-     //      "url": appUrls.home,
-    //       "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-    //     },
+        //   próbnie wyłączone
+        //       "offers": {
+        //        "@type": "Offer",
+        //       "availability": "https://schema.org/InStock",
+        //      "priceValidUntil": "2025-12-31",
+        //        "priceCurrency": "PLN",
+        //      "price": "150.00",
+        //      "url": appUrls.home,
+        //       "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
+        //     },
 
         // "areaServed": [
         //   { "@type": "City", "name": "Przemyśl" },
@@ -410,7 +410,7 @@ export const dataForMetaTags = {
         "@id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
@@ -428,7 +428,7 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.serwis,
         "width": 931,
         "height": 497,
-        "name": `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber}`,
         "description": "Doświadczony technik serwisu RTV i AGD w trakcie naprawy urządzenia w Przemyślu.",
         "caption": "Twój zaufany serwis RTV i AGD w Przemyślu – szybkie i skuteczne naprawy.",
         "representativeOfPage": true
@@ -606,9 +606,9 @@ export const dataForMetaTags = {
   },
   naprawa_pralek: {
     metaTags: {
-      title: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      ogTitle: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      twitterTitle: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      title: `Naprawa Pralek ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
+      ogTitle: `Naprawa Pralek ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
+      twitterTitle: `Naprawa Pralek ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
       description: `Naprawa pralek w Przemyślu. ☝ Awaria pralki ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       ogDescription: `Naprawa pralek w Przemyślu. ☝ Awaria pralki ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       twitterDescription: `Naprawa pralek w Przemyślu. ☝ Awaria pralki ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -619,7 +619,7 @@ export const dataForMetaTags = {
       imageWidth: "700",
       imageHeight: "700",
       type: "article",
-      siteName: shortName,
+      siteName: `${shortName} - naprawa pralek`,
       canonical: appUrls.naprawa_pralek,
 
       keywords: "Naprawa Pralek Przemyśl, Serwis Pralek Przemyśl, Usterki Pralek Przemyśl",
@@ -640,18 +640,18 @@ export const dataForMetaTags = {
 
 
         // pórbnie wyłączone
-   //      "offers": {
-    //       "@type": "Offer",
-    //       "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-     //      "price": "150.00",
-     //      "priceCurrency": "PLN",
-      //     "priceSpecification": {
-      //       "@type": "UnitPriceSpecification",
-       //      "unitText": "usługa"
-      //     },
-       //    "priceValidUntil": "2025-12-31",
-      //     "availability": "https://schema.org/InStock",
-   //      },
+        //      "offers": {
+        //       "@type": "Offer",
+        //       "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
+        //      "price": "150.00",
+        //      "priceCurrency": "PLN",
+        //     "priceSpecification": {
+        //       "@type": "UnitPriceSpecification",
+        //      "unitText": "usługa"
+        //     },
+        //    "priceValidUntil": "2025-12-31",
+        //     "availability": "https://schema.org/InStock",
+        //      },
         "areaServed": [
           { "@type": "Place", "name": "Przemyśl" },
           { "@type": "Place", "name": "Bolestraszyce" },
@@ -672,18 +672,18 @@ export const dataForMetaTags = {
         "name": "Usługa naprawy pralek w Przemyślu",
         "description": "Kompleksowa diagnostyka i naprawa pralek różnych marek w Przemyślu.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
-        "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
+        "brand": { "@type": "Brand", "name": shortName },
 
         // próbnie wyłączone
-     //    "offers": {
-     //      "@type": "Offer",
-      //     "availability": "https://schema.org/InStock",
-     //      "priceValidUntil": "2025-12-31",
-     //      "priceCurrency": "PLN",
-      //     "price": "150.00",
-      //     "url": appUrls.naprawa_pralek,
-     //      "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-     //    },
+        //    "offers": {
+        //      "@type": "Offer",
+        //     "availability": "https://schema.org/InStock",
+        //      "priceValidUntil": "2025-12-31",
+        //      "priceCurrency": "PLN",
+        //     "price": "150.00",
+        //     "url": appUrls.naprawa_pralek,
+        //      "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
+        //    },
 
 
 
@@ -836,7 +836,7 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.pralka,
         "width": 700,
         "height": 700,
-        "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `Naprawa Pralek ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
         "description": "Profesjonalna naprawa pralek w Przemyślu, szybka diagnoza i usunięcie usterki.",
         "caption": "Serwisant naprawia pralkę – szybko i skutecznie.",
         "representativeOfPage": true
@@ -847,7 +847,7 @@ export const dataForMetaTags = {
         "@id": appUrls.naprawa_pralek + "#webpage",
         "url": appUrls.naprawa_pralek,
         "inLanguage": "pl-PL",
-        "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `Naprawa Pralek ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },

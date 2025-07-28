@@ -1,7 +1,7 @@
-import { imageUrls } from "../../utils/urls.js";
-import { dataForMetaTags } from "../../utils/dataForMetaTags.js";
-import { BackgroundImage } from "../common/BackgroundImage/index.js";
-import { BackgroundWrapper, Circle, Rotating } from "./styled.js";
+import { imageUrls } from "../../utils/urls";
+import { dataForMetaTags } from "../../utils/dataForMetaTags";
+import { BackgroundImage } from "../common/BackgroundImage";
+import { BackgroundWrapper, Circle, Rotating } from "./styled";
 import Image from "next/image";
 // import { usePathname } from "next/navigation.js";
 
