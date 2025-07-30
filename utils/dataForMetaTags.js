@@ -633,6 +633,7 @@ export const dataForMetaTags = {
           "@type": "LocalBusiness",
           "name": name,
           "id": appUrls.home + "#localbusiness",
+          address
         },
       },
       breadcrumbList: {

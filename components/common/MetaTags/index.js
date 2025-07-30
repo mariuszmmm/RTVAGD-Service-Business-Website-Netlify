@@ -491,7 +491,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [
-                  webpage, website, breadcrumbList,
+                  webpage, website, localBusinessSchema, breadcrumbList,
                   getReviews()]
               })
             }}
