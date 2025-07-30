@@ -545,7 +545,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - o mnie`,
     },
     schema: {
-      localBusiness,
+      // localBusiness,
       aboutPage: {
         "@type": "AboutPage",
         "name": "O Serwisie RTV i AGD w Przemyślu",

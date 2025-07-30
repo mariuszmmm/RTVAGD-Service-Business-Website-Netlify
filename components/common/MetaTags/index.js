@@ -434,27 +434,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {path === "/o-mnie/" && (
-        <>
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...imageObject
-              })
-            }}
-          /> */}
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@graph": [aboutPage, person, localBusinessSchema, breadcrumbList]
-              })
-            }}
-          />
-        </>
-      )}
-
       {path === "/kontakt/" && (
         <>
           {/* <script type="application/ld+json"
