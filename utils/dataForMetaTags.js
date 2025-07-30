@@ -1,3 +1,4 @@
+import { addRequestMeta } from "next/dist/server/request-meta";
 import { serwis } from "./serwis";
 import { appUrls, imageUrls } from './urls';
 
@@ -616,7 +617,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - opinie`,
     },
     schema: {
-      localBusiness,
+      // localBusiness,
       website,
       webpage: {
         "@type": "WebPage",
@@ -631,6 +632,7 @@ export const dataForMetaTags = {
         "about": {
           "@type": "LocalBusiness",
           "name": name,
+          address,
         },
       },
       breadcrumbList: {
