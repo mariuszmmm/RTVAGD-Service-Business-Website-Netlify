@@ -617,7 +617,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - opinie`,
     },
     schema: {
-      // localBusiness,
+      localBusiness,
       website,
       webpage: {
         "@type": "WebPage",
@@ -632,7 +632,7 @@ export const dataForMetaTags = {
         "about": {
           "@type": "LocalBusiness",
           "name": name,
-          address,
+          "id": appUrls.home + "#localbusiness",
         },
       },
       breadcrumbList: {
