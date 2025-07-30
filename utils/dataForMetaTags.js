@@ -548,7 +548,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - o mnie`,
     },
     schema: {
-      // localBusiness,
+      localBusiness,
       aboutPage: {
         "@type": "AboutPage",
         "name": "O Serwisie RTV i AGD w Przemyślu",
@@ -559,7 +559,7 @@ export const dataForMetaTags = {
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness",
-          address,
+
 
         }
       },
@@ -1974,7 +1974,7 @@ function logMetaTagLengths(pageKeys) {
   });
 }
 
-logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
+// logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
 
 // logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow"]);
 
