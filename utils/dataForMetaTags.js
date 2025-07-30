@@ -483,6 +483,8 @@ export const dataForMetaTags = {
           "telephone": serwis.phone.number,
           "email": serwis.email,
           address,
+          "priceRange": "100-500 PLN",
+          "image": imageUrls.serwis,
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
