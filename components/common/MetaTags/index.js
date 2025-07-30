@@ -434,7 +434,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         </>
       )}
 
-      {(path === "/kontakt/" || path === "/o-mnie/") && (
+      {path === "/o-mnie/" && (
         <>
           {/* <script type="application/ld+json"
             dangerouslySetInnerHTML={{
