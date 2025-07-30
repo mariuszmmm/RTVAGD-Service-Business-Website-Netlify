@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import Image from 'next/image';
 import { getData } from '../../utils/getData';
+import { serwis } from '../../utils/serwis';
 
 const About = ({ rating, ratingsTotal }) => {
   const path = useRouter().asPath;
@@ -23,20 +24,24 @@ const About = ({ rating, ratingsTotal }) => {
       />
       <Container >
         <Section>
-          <Title>Kim jestem</Title>
+          <Title>O Serwisie RTV i AGD w Przemyślu</Title>
           <div>
             <Text>
-              Jestem specjalistą z wieloletnim doświadczeniem w naprawie pralek, suszarek, zmywarek, telewizorów oraz ekspresów do kawy.
-              Każda naprawa to dla mnie nie tylko techniczne zadanie, ale również okazja do budowanie zaufania i dobrych relacji z klientami.
-              Wykonuję swoją pracę z pełnym zaangażowaniem i pasją, dążąc do tego, aby każdy klient był w pełni zadowolony z jakości usług.
+              Witaj w Serwisie RTV i AGD w Przemyślu! Jestem {serwis.person} – specjalista z wieloletnim doświadczeniem w branży. Moja misja to skuteczna i rzetelna naprawa pralek, suszarek, zmywarek, telewizorów oraz ekspresów do kawy, zawsze z myślą o pełnym zadowoleniu klienta.
             </Text>
+
             <Text>
-              Stawiam na indywidualne podejście, co pozwala mi dostosować naprawę do specyficznych potrzeb każdego urządzenia oraz oczekiwań klienta.
-              W mojej pracy gwarantuję rzetelność, terminowość oraz uczciwość.
+              Wiem, jak ważny jest sprawny sprzęt w każdym domu. Dlatego do każdej naprawy podchodzę indywidualnie, z pełnym zaangażowaniem i pasją. Nie jest to dla mnie tylko techniczne zadanie, ale przede wszystkim okazja do zbudowania trwałego zaufania i dobrych relacji z moimi klientami. Gwarantuję rzetelność, terminowość oraz uczciwość w każdym etapie pracy.
             </Text>
+
             <Text>
-              Skorzystaj z moich usług, a Twoje urządzenia odzyskają swoją sprawność!
+              Stawiam na precyzyjną diagnostykę i efektywne rozwiązania, aby Twoje urządzenia odzyskały pełną sprawność na długo. Kiedy korzystasz z moich usług, masz pewność, że Twoim sprzętem zajmuje się doświadczony i sprawdzony fachowiec.
             </Text>
+
+            <Text>
+              Serdecznie zapraszam do kontaktu i skorzystania z profesjonalnych usług mojego serwisu!
+            </Text>
+
             <Team>
               <Image
                 src={imageUrls.serwis_1}

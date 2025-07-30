@@ -37,6 +37,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     website,
     imageObject,
     breadcrumbList,
+    aboutPage,
+    person,
+    contactPage
   } = page.schema;
 
 
@@ -239,7 +242,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "@type": "AggregateRating",
       "ratingValue": (rating || serwis.rating).toString(),
       "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
-"bestRating": "5"
+      "bestRating": "5"
     },
 
   };
@@ -297,9 +300,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList, faqPage,
-serviceSchema, 
-productSchema
-]
+                  serviceSchema,
+                  productSchema
+                ]
               })
             }}
           />
@@ -386,7 +389,7 @@ productSchema
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList,
-productSchema ]
+                  productSchema]
               })
             }}
           />
@@ -444,17 +447,59 @@ productSchema ]
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...breadcrumbList
+                "@context": "https://schema.org",
+                "@graph": [aboutPage, person, breadcrumbList]
               })
             }}
           />
         </>
       )}
 
-     {path === "/opinie/" && (
+      {path === "/kontakt/" && (
         <>
-       {/*      <script type="application/ld+json"
+          {/* <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...imageObject
+              })
+            }}
+          /> */}
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [contactPage, breadcrumbList]
+              })
+            }}
+          />
+        </>
+      )}
+
+      {path === "/o-mnie/" && (
+        <>
+          {/* <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                ...imageObject
+              })
+            }}
+          /> */}
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@graph": [aboutPage, person, breadcrumbList]
+              })
+            }}
+          />
+        </>
+      )}
+
+      {path === "/opinie/" && (
+        <>
+          {/*      <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org/",
@@ -462,7 +507,7 @@ productSchema ]
               })
             }}
           />  */}
-         <script type="application/ld+json"
+          <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
@@ -471,9 +516,9 @@ productSchema ]
                   getReviews()]
               })
             }}
-          />   
+          />
         </>
-      )} 
+      )}
 
     </Head>
   );

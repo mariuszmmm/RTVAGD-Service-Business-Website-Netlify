@@ -51,29 +51,29 @@ const ContactForm = () => {
   return (
     <Form onSubmit={sendEmail}>
       <SendInfo show={showInfo} success={success} />
-      <Label>Imię</Label>
+      {/* <Label>Imię</Label> */}
       <Input
         type="text"
         name="name"
         value={name}
-        placeholder="Twoje imię"
+        placeholder="Imię i nazwisko"
         onChange={(e) => setName(e.target.value)}
         required
       />
-      <Label>Email</Label>
+      {/* <Label>Email</Label> */}
       <Input
         type="email"
         name="email"
         value={email}
-        placeholder="Twój email"
+        placeholder="Email"
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-      <Label>Wiadomość</Label>
+      {/* <Label>Wiadomość</Label> */}
       <Textarea
         name="message"
         value={message}
-        placeholder="Twoja wiadomość"
+        placeholder="Wiadomość"
         onChange={(e) => setMessage(e.target.value)}
         required
       />
@@ -82,7 +82,7 @@ const ContactForm = () => {
         value="Send"
         $submit
       >
-        Wyślij
+        Prześlij
       </Button>
     </Form>
   );
