@@ -726,19 +726,19 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        "potentialAction": {
-          "@type": "CallAction",
-          "target": {
-            "@type": "EntryPoint",
-            "actionFeature": "Pobierz informacje",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/IOSPlatform",
-              "http://schema.org/AndroidPlatform"
-            ],
-            "urlTemplate": "tel:+48790258612"
-          }
-        }
+        // "potentialAction": {
+        //   "@type": "CallAction",
+        //   "target": {
+        //     "@type": "EntryPoint",
+        //     "actionFeature": "Pobierz informacje",
+        //     "actionPlatform": [
+        //       "http://schema.org/DesktopWebPlatform",
+        //       "http://schema.org/IOSPlatform",
+        //       "http://schema.org/AndroidPlatform"
+        //     ],
+        //     "urlTemplate": "tel:+48790258612"
+        //   }
+        // }
       },
       product: {
         "@type": "Product",
@@ -1024,19 +1024,19 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        "potentialAction": {
-          "@type": "CallAction",
-          "target": {
-            "@type": "EntryPoint",
-            "actionFeature": "Pobierz informacje",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/IOSPlatform",
-              "http://schema.org/AndroidPlatform"
-            ],
-            "urlTemplate": "tel:+48790258612"
-          }
-        }
+        // "potentialAction": {
+        //   "@type": "CallAction",
+        //   "target": {
+        //     "@type": "EntryPoint",
+        //     "actionFeature": "Pobierz informacje",
+        //     "actionPlatform": [
+        //       "http://schema.org/DesktopWebPlatform",
+        //       "http://schema.org/IOSPlatform",
+        //       "http://schema.org/AndroidPlatform"
+        //     ],
+        //     "urlTemplate": "tel:+48790258612"
+        //   }
+        // }
       },
       product: {
         "@type": "Product",
@@ -1310,19 +1310,19 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        "potentialAction": {
-          "@type": "CallAction",
-          "target": {
-            "@type": "EntryPoint",
-            "actionFeature": "Pobierz informacje",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/IOSPlatform",
-              "http://schema.org/AndroidPlatform"
-            ],
-            "urlTemplate": "tel:+48790258612"
-          }
-        }
+        // "potentialAction": {
+        //   "@type": "CallAction",
+        //   "target": {
+        //     "@type": "EntryPoint",
+        //     "actionFeature": "Pobierz informacje",
+        //     "actionPlatform": [
+        //       "http://schema.org/DesktopWebPlatform",
+        //       "http://schema.org/IOSPlatform",
+        //       "http://schema.org/AndroidPlatform"
+        //     ],
+        //     "urlTemplate": "tel:+48790258612"
+        //   }
+        // }
       },
       product: {
         "@type": "Product",
@@ -1584,19 +1584,19 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        "potentialAction": {
-          "@type": "CallAction",
-          "target": {
-            "@type": "EntryPoint",
-            "actionFeature": "Pobierz informacje",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/IOSPlatform",
-              "http://schema.org/AndroidPlatform"
-            ],
-            "urlTemplate": "tel:+48790258612"
-          }
-        }
+        // "potentialAction": {
+        //   "@type": "CallAction",
+        //   "target": {
+        //     "@type": "EntryPoint",
+        //     "actionFeature": "Pobierz informacje",
+        //     "actionPlatform": [
+        //       "http://schema.org/DesktopWebPlatform",
+        //       "http://schema.org/IOSPlatform",
+        //       "http://schema.org/AndroidPlatform"
+        //     ],
+        //     "urlTemplate": "tel:+48790258612"
+        //   }
+        // }
       },
       product: {
         "@type": "Product",
@@ -1799,19 +1799,19 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        "potentialAction": {
-          "@type": "CallAction",
-          "target": {
-            "@type": "EntryPoint",
-            "actionFeature": "Pobierz informacje",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/IOSPlatform",
-              "http://schema.org/AndroidPlatform"
-            ],
-            "urlTemplate": "tel:+48790258612"
-          }
-        }
+        // "potentialAction": {
+        //   "@type": "CallAction",
+        //   "target": {
+        //     "@type": "EntryPoint",
+        //     "actionFeature": "Pobierz informacje",
+        //     "actionPlatform": [
+        //       "http://schema.org/DesktopWebPlatform",
+        //       "http://schema.org/IOSPlatform",
+        //       "http://schema.org/AndroidPlatform"
+        //     ],
+        //     "urlTemplate": "tel:+48790258612"
+        //   }
+        // }
       },
       product: {
         "@type": "Product",
