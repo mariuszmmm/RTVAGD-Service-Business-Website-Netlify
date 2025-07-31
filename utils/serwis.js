@@ -5,8 +5,9 @@ export const serwis = {
     fb_app_id: "1465845357931091",
     // google: "https://g.co/kgs/XdcEw7o",
     // google: "https://www.google.com/maps/place/Naprawa+pralek+i+sprz%C4%99tu+RTV+-+naprawa+ekspres%C3%B3w+do+kawy,+naprawa+telewizor%C3%B3w,+naprawa+zmywarki,+serwis+agd,/@49.7827725,22.776029,17z/data=!3m1!4b1!4m6!3m5!1s0x473b7f241be960ad:0xfc3cd55238f8f8a6!8m2!3d49.7827725!4d22.776029!16s%2Fg%2F1w0j2zhh?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D",
-    google: "https://maps.google.com/?cid=18175636745280354470",
+    google: "https://maps.google.com/?cid=18175636745280354470", // raczej nie przydatny
     addTestimonial: "https://g.page/r/Cab4-DhS1Tz8EAE/review",
+    GMF: "https://g.page/r/Cab4-DhS1Tz8EAE",
 
   },
   // name: "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",

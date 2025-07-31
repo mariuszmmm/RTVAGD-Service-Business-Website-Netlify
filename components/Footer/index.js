@@ -26,7 +26,7 @@ const Footer = () => (
       <FooterInfo>
         <StyledLink
           $area="adres"
-          href={serwis.url.google}
+          href={serwis.url.GMF}
           rel="noopener noreferrer"
           title="Adres"
         >
@@ -69,7 +69,7 @@ const Footer = () => (
         </StyledLink>
         <StyledLink
           $area="google"
-          href={serwis.url.google}
+          href={serwis.url.GMF}
           rel="noopener noreferrer"
           title="Google"
           itemProp="sameAs"

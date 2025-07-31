@@ -47,7 +47,7 @@ export const organization = {
   address,
   "sameAs": [
     serwis.url.facebook,
-    serwis.url.google
+    serwis.url.GMF
   ],
 };
 
@@ -65,7 +65,7 @@ export const localBusiness = {
   "description": "Profesjonalny serwis i naprawa sprzętu RTV i AGD w Przemyślu. Specjalizujemy się w naprawie pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
   address,
   geo,
-  "hasMap": serwis.url.google,
+  "hasMap": serwis.url.GMF,
 
   openingHours,
 
@@ -116,7 +116,7 @@ export const localBusiness = {
   },
   "sameAs": [
     serwis.url.facebook,
-    serwis.url.google
+    serwis.url.GMF
   ],
 
   // "hasOfferCatalog": {
@@ -163,13 +163,13 @@ export const localBusiness = {
   //     "name": " NaprawaPrzemyśl",
   //   },
   // },
-  // "sameAs": [serwis.url.google, serwis.url.facebook],    // dodane 17.05.2025
+  // "sameAs": [serwis.url.GMF, serwis.url.facebook],    // dodane 17.05.2025
   // "openingHours": openingHours,
   // "hasMap": "https://maps.google.com/?q=49.7827725,22.7760291",
   // "description": "Naprawa sprzętu RTV i AGD w Przemyślu. Serwis pogwarancyjny. Naprawa pralek, zmywarek, suszarek, ekspresów, telewizorów.",
   // "description": `${shortName} w Przemyślu zajmuje się naprawą pralek, zmywarek, telewizorów i innego sprzętu domowego. Szybka diagnoza, oryginalne części, gwarancja jakości.`
   // "email": serwis.email,
-  // "hasMap": serwis.url.google,
+  // "hasMap": serwis.url.GMF,
   // "contactPoint": {
   //   "@type": "ContactPoint",
   //   "telephone": serwis.phone.international,
@@ -231,9 +231,9 @@ export const dataForMetaTags = {
       // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + ` | ${shortName}`,
       // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
       // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-      title: `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | Naprawa Pralek, TV, AGD`,
-      ogTitle: `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | Naprawa Pralek, TV, AGD`,
-      twitterTitle: `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | Naprawa Pralek, TV, AGD`,
+      title: `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      ogTitle: `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      twitterTitle: `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | ${shortName}`,
       description: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
       ogDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
       twitterDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. ✔️ Pralki ✔️ Suszarki do prania ✔️ Zmywarki ✔️ Telewizory ✔️ Ekspresy do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
@@ -412,7 +412,7 @@ export const dataForMetaTags = {
         "@id": appUrls.home + "#webpage",
         "url": appUrls.home,
         "inLanguage": "pl-PL",
-        "name": `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | Naprawa Pralek, TV, AGD`,
+        "name": `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
@@ -430,7 +430,7 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.serwis,
         "width": 931,
         "height": 497,
-        "name": `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | Naprawa Pralek, TV, AGD`,
+        "name": `${shortName} w Przemyślu ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "description": "Doświadczony technik serwisu RTV i AGD w trakcie naprawy urządzenia w Przemyślu.",
         "caption": "Twój zaufany serwis RTV i AGD w Przemyślu – szybkie i skuteczne naprawy.",
         "representativeOfPage": true
@@ -559,8 +559,6 @@ export const dataForMetaTags = {
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness",
-
-
         }
       },
       person: {

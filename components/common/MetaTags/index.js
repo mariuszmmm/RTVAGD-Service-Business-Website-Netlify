@@ -299,7 +299,10 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList, faqPage,
+                "@graph": [webpage, imageObject,
+                  // localBusinessSchema,
+                  //  website, 
+                  breadcrumbList, faqPage,
                   serviceSchema,
                   productSchema
                 ]
