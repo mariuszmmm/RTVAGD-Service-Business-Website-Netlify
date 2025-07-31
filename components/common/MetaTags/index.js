@@ -303,8 +303,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   // localBusinessSchema,
                   //  website, 
                   breadcrumbList, faqPage,
-                  serviceSchema,
-                  productSchema
+                  serviceSchema,    // przywrócić jeśli Product wyświetlać gwiazdki
+                  // productSchema
                 ]
               })
             }}
@@ -392,7 +392,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList,
-                  productSchema]
+                  // productSchema
+                ]
               })
             }}
           />
@@ -472,7 +473,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [aboutPage, person, localBusinessSchema, breadcrumbList]
+                "@graph": [aboutPage, person,
+                  // localBusinessSchema,
+                  breadcrumbList]
               })
             }}
           />
@@ -494,7 +497,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [
-                  webpage, website, localBusinessSchema, breadcrumbList,
+                  webpage,
+                  // website, localBusinessSchema, 
+                  breadcrumbList,
                   getReviews()]
               })
             }}
