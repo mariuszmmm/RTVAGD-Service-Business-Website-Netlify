@@ -67,7 +67,16 @@ export const localBusiness = {
   geo,
   "hasMap": serwis.url.GMF,
 
-  openingHours,
+  // openingHours,
+
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:30",
+      "closes": "17:00"
+    }
+  ],
 
   //  "openingHoursSpecification": [
   //   {
@@ -260,8 +269,14 @@ export const dataForMetaTags = {
         "name": "Usługa naprawy sprzętu RTV i AGD w Przemyślu",
         "description": "Diagnostyka i naprawa sprzętu RTV-AGD w Przemyślu, z zachowaniem najwyższej staranności.",
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
-        "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
-
+        "brand": { "@type": "Brand", "name": shortName },
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": name,
+          "url": appUrls.home,
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "url": appUrls.home,
         //   próbnie wyłączone
         //       "offers": {
         //        "@type": "Offer",
@@ -479,23 +494,10 @@ export const dataForMetaTags = {
         "description": "Skontaktuj się z Serwisem RTV i AGD w Przemyślu. Dane kontaktowe, adres i godziny otwarcia.",
         "about": {
           "@type": "LocalBusiness",
-          "name": name,
-          "url": appUrls.home,
-          "telephone": serwis.phone.number,
-          "email": serwis.email,
-          address,
-          "priceRange": "100-500 PLN",
-          "image": imageUrls.serwis,
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "09:30",
-              "closes": "17:00"
-            }
-          ]
+          "@id": appUrls.home + "#localbusiness",
         }
       },
+
       website,
       webpage: {
         "@type": "WebPage",
@@ -551,19 +553,35 @@ export const dataForMetaTags = {
       localBusiness,
       aboutPage: {
         "@type": "AboutPage",
-        "name": "O Serwisie RTV i AGD w Przemyślu",
+        "id": appUrls.o_mnie + "#webpage",
         "url": appUrls.o_mnie,
+        "inLanguage": "pl-PL",
+        "name": `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber} | Doświadczony Fachowiec`,
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": appUrls.home + "#website"
+        },
         "description": "Poznaj Serwis RTV i AGD w Przemyślu – Twojego doświadczonego specjalistę od napraw AGD i RTV. Poznaj moją misję i podejście do klienta.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": appUrls.o_mnie + "#breadcrumb"
+        },
+        "mainEntity": {
+          "@type": "Person",
+          "@id": appUrls.o_mnie + "#person"
+        },
         "about": {
           "@type": "LocalBusiness",
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness",
-        }
+        },
       },
       person: {
         "@type": "Person",
+        "id": appUrls.o_mnie + "#person",
         "name": serwis.person,
+        "url": appUrls.o_mnie,
         "jobTitle": "Właściciel i Specjalista Serwisu RTV i AGD",
         "worksFor": {
           "@type": "LocalBusiness",
@@ -572,7 +590,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness",
         },
         "description": `Jestem ${serwis.person} – specjalista z wieloletnim doświadczeniem w naprawie sprzętu RTV i AGD w Przemyślu. Kładę nacisk na indywidualne podejście i zadowolenie klienta.`,
-        "url": appUrls.o_mnie,
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -629,11 +646,10 @@ export const dataForMetaTags = {
         "description": `Przeczytaj opinie naszych klientów o Serwisie RTV i AGD w Przemyślu. Dowiedz się, dlaczego warto nam zaufać.`,
         "about": {
           "@type": "LocalBusiness",
-          "name": name,
           "id": appUrls.home + "#localbusiness",
-          address
         },
       },
+
       breadcrumbList: {
         "@type": "BreadcrumbList",
         "@id": appUrls.opinie + "#breadcrumb",
@@ -745,6 +761,14 @@ export const dataForMetaTags = {
         "description": "Kompleksowa diagnostyka i naprawa pralek różnych marek w Przemyślu.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": name,
+          "url": appUrls.home,
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "url": appUrls.naprawa_pralek,
+
 
         // próbnie wyłączone
         //    "offers": {
@@ -928,10 +952,9 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa pralek w Przemyślu, szybka diagnoza i usunięcie usterki.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_pralek + "#breadcrumb" },
-        "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-
+        "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_pralek + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
         // test 
-        "about": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" }
+        "about": { "@type": "Product", "@id": appUrls.naprawa_pralek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -998,7 +1021,8 @@ export const dataForMetaTags = {
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness"
-        }, "url": appUrls.naprawa_suszarek,
+        },
+        "url": appUrls.naprawa_suszarek,
 
         // pórbnie wyłączone
         // "offers": {
@@ -1042,7 +1066,14 @@ export const dataForMetaTags = {
         "name": "Usługa naprawy suszarek w Przemyślu",
         "description": "Diagnostyka i naprawa suszarek kondensacyjnych, z pompą ciepła i tradycyjnych, z zachowaniem najwyższej staranności.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
-        "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
+        "brand": { "@type": "Brand", "name": shortName },
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": name,
+          "url": appUrls.home,
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "url": appUrls.naprawa_suszarek,
 
         // próbnie wyłączone
         // "offers": {
@@ -1215,10 +1246,9 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa suszarek do prania, kondensacyjnych i z pompą ciepła w Przemyślu.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
-        "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
-
+        "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_suszarek + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
         // test 
-        "about": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" }
+        "about": { "@type": "Product", "@id": appUrls.naprawa_suszarek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1284,7 +1314,8 @@ export const dataForMetaTags = {
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness"
-        }, "url": appUrls.naprawa_zmywarek,
+        },
+        "url": appUrls.naprawa_zmywarek,
 
         // pórbnie wyłączone
         // "offers": {
@@ -1328,7 +1359,14 @@ export const dataForMetaTags = {
         "name": "Usługa naprawy zmywarek w Przemyślu",  // "name": "Naprawa zmywarek Przemyśl",
         "description": "Szybka i profesjonalna naprawa zmywarek w Przemyślu i okolicach. Oferuję kompleksową diagnostykę oraz naprawę zmywarek wszystkich marek (Bosch, Electrolux, Beko i inne). Korzystam z profesjonalnych narzędzi i oryginalnych części, zapewniając gwarancję na usługę.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-        "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
+        "brand": { "@type": "Brand", "name": shortName },
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": name,
+          "url": appUrls.home,
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "url": appUrls.naprawa_zmywarek,
 
         // próbnie wyłączone
         // "offers": {
@@ -1489,10 +1527,8 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
-        "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
-
-        // test 
-        "about": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" }
+        "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_zmywarek + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
+        "about": { "@type": "Product", "@id": appUrls.naprawa_zmywarek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1558,7 +1594,8 @@ export const dataForMetaTags = {
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness"
-        }, "url": appUrls.naprawa_ekspresow,
+        },
+        "url": appUrls.naprawa_ekspresow,
 
         // pórbnie wyłączone
         // "offers": {
@@ -1602,7 +1639,14 @@ export const dataForMetaTags = {
         "name": "Usługa naprawy ekspresów w Przemyślu",
         "description": "Profesjonalna naprawa ekspresów do kawy wszystkich marek w Przemyślu i okolicach. Specjalizuję się w kompleksowej naprawie domowych i profesjonalnych ekspresów, oferując szybką diagnozę i oryginalne części. Zapewniam gwarancję i pełne zadowolenie klientów.",
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
-        "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
+        "brand": { "@type": "Brand", "name": shortName },
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": name,
+          "url": appUrls.home,
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "url": appUrls.naprawa_ekspresow,
 
         // próbnie wyłączone
         // "offers": {
@@ -1704,10 +1748,8 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa ekspresów ciśnieniowych i automatycznych w Przemyślu.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
-        "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
-
-        // test 
-        "about": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" }
+        "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_ekspresow + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
+        "about": { "@type": "Product", "@id": appUrls.naprawa_ekspresow + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1773,7 +1815,8 @@ export const dataForMetaTags = {
           "name": name,
           "url": appUrls.home,
           "@id": appUrls.home + "#localbusiness"
-        }, "url": appUrls.naprawa_telewizorow,
+        },
+        "url": appUrls.naprawa_telewizorow,
 
         // pórbnie wyłączone
         // "offers": {
@@ -1817,7 +1860,14 @@ export const dataForMetaTags = {
         "name": "Usługa naprawy telewizorów w Przemyślu",
         "description": "Fachowa naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu",
         "image": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
-        "brand": { "@type": "Brand", "name": "Serwis RTV-AGD" },
+        "brand": { "@type": "Brand", "name": shortName },
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": name,
+          "url": appUrls.home,
+          "@id": appUrls.home + "#localbusiness"
+        },
+        "url": appUrls.naprawa_telewizorow,
 
         // próbnie wyłączone
         // "offers": {
@@ -1917,10 +1967,8 @@ export const dataForMetaTags = {
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu.",
         "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
-        "mainEntity": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
-
-        // test 
-        "about": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" }
+        "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_telewizorow + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
+        "about": { "@type": "Product", "@id": appUrls.naprawa_telewizorow + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1973,7 +2021,7 @@ function logMetaTagLengths(pageKeys) {
   });
 }
 
-logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
+// logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
 
 // logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow"]);
 

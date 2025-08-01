@@ -45,28 +45,41 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
   // const selectedReviews = reviews?.filter((review, index) => index < 2);
 
-  const getReviews = () => {
+  const getReviews = (onlyId) => {
     if (!reviews) return null;
 
-    return reviews.map((review) => (
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "LocalBusiness",
-          "@id": appUrls.home + "#localbusiness",
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": review.rating,
-        },
-        "author": {
-          "@type": "Person",
-          "name": review.author_name,
-        },
-        "datePublished": formattedDate(review.time),
-        "reviewBody": review.text,
-      }
-    ))
+    // console.log("getReviews", reviews);
+
+    return reviews.map((review) => {
+      if (!review) return null;
+
+      return (
+        onlyId ?
+          {
+            "@type": "Review",
+            "id": `${appUrls.home}opinie/#review${review.time}`,
+          }
+          :
+          {
+            "@type": "Review",
+            "id": `${appUrls.home}opinie/#review${review.time}`,
+            "itemReviewed": {
+              "@type": "LocalBusiness",
+              "@id": appUrls.home + "#localbusiness",
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": review.rating,
+            },
+            "author": {
+              "@type": "Person",
+              "name": review.author_name,
+            },
+            "datePublished": formattedDate(review.time),
+            "reviewBody": review.text,
+          }
+      )
+    })
   };
 
   const getReviewsOld = (selectedReviewNumber) => {
@@ -212,7 +225,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       //   "name": "Serwis RTV i AGD Przemyśl",
       // },
     },
-
+    "review": getReviews(true),
 
     // "aggregateRating": {
     //   ...(product?.["aggregateRating"]),
@@ -223,6 +236,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
     // test
   };
+
+  // console.log("productSchema", productSchema);
+
 
   const serviceSchema = {
     ...service,
