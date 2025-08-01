@@ -41,7 +41,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               src={imageUrls.suszarka}
               title={dataForMetaTags.naprawa_suszarek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_suszarek.metaTags.imageAlt}
-              loading='eager'
+              priority
               fill
               // srcSet={`${imageUrls.suszarka_300} 500w,
               // ${imageUrls.suszarka} 1000w`}

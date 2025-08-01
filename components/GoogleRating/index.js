@@ -18,7 +18,6 @@ export const GoogleRating = ({ rating, hidden }) => (
             <Image
               src={imageUrls.logoGoogle}
               alt="google logo"
-              loading="lazy"
               fill
             />
           </ImageWrapper>

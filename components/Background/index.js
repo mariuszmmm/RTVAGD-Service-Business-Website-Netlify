@@ -3,11 +3,11 @@ import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { BackgroundImage } from "../common/BackgroundImage";
 import { BackgroundWrapper, Circle, Rotating } from "./styled";
 import Image from "next/image";
-// import { usePathname } from "next/navigation.js";
+import { usePathname } from "next/navigation.js";
 
 const Background = () => {
-  // const pathname = usePathname()
-  // const servicesPath = pathname.includes("naprawa-");
+  const pathname = usePathname()
+  const servicesPath = pathname.includes("naprawa-");
 
   return (
     <BackgroundWrapper>
@@ -18,7 +18,7 @@ const Background = () => {
             src={imageUrls.serwis}
             title={dataForMetaTags.home.metaTags.imageTitle}
             alt={dataForMetaTags.home.metaTags.imageAlt}
-            loading="lazy"
+            priority={!servicesPath}
             // width="931" height="497"
             fill
           />

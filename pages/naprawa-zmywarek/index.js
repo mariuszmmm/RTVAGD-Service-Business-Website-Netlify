@@ -39,7 +39,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
               title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
               src={imageUrls.zmywarka}
               alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
-              loading='eager'
+              priority
               fill
               // srcSet={`${imageUrls.zmywarka_300} 500w,
               // ${imageUrls.zmywarka} 1000w`}

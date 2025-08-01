@@ -38,7 +38,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
               title={dataForMetaTags.naprawa_telewizorow.metaTags.imageTitle}
               src={imageUrls.telewizor}
               alt={dataForMetaTags.naprawa_telewizorow.metaTags.imageAlt}
-              loading='eager'
+              priority
               fill
               // srcSet={`${imageUrls.telewizor_300} 500w,
               // ${imageUrls.telewizor} 1000w`}

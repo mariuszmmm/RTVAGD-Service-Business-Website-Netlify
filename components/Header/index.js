@@ -57,7 +57,6 @@ const Header = ({ rating }) => {
               src={imageUrls.logo}
               alt={`Logo ${serwis.shortName}`}
               fill
-              loading="lazy"
               itemProp="image"
             />
           </Emoticon>

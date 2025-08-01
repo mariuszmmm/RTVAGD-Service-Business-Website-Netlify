@@ -107,7 +107,6 @@ export const QrCode = ({ hidden }) => {
                 src={qrCodeSvg}
                 alt="QrCode"
                 fill
-                loading="lazy"
                 onLoad={() => setLoaded(true)}
               />
             </ImageWrapper>

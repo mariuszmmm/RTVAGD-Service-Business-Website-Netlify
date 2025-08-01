@@ -38,7 +38,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               src={imageUrls.pralka}
               title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              loading='eager'
+              priority
               fill
             // srcSet={`${imageUrls.pralka_300} 500w,
             // ${imageUrls.pralka} 1000w`}

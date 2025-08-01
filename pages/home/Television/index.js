@@ -19,7 +19,6 @@ const Television = ({ show, left, setHold }) => (
         <Image
           src={imageUrls._telewizor}
           alt="Telewizory"
-          // loading='lazy'
           fill
           // srcSet={`${imageUrls.telewizor_300} 500w,
           // ${imageUrls.telewizor} 1000w`}

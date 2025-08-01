@@ -41,7 +41,7 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
               title={dataForMetaTags.naprawa_ekspresow.metaTags.imageTitle}
               src={imageUrls.ekspres}
               alt={dataForMetaTags.naprawa_ekspresow.metaTags.imageAlt}
-              loading='eager'
+              priority
               fill
               // srcSet={`${imageUrls.ekspres_300} 500w,
               // ${imageUrls.ekspres} 1000w`}
