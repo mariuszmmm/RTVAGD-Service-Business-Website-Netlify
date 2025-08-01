@@ -303,9 +303,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   // localBusinessSchema,
                   //  website, 
                   breadcrumbList, faqPage,
-                  serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
+                  // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
 
-                  // productSchema  //  tymczasowo wyłączone dla testów czy Service zacznie pokazywać gwiazdki
+                  productSchema
                 ]
               })
             }}
