@@ -45,6 +45,23 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
   // const selectedReviews = reviews?.filter((review, index) => index < 2);
 
+
+  function generateReviewName(reviewBody, wordCount = 10) {
+    // Rozbija tekst na słowa
+    const words = reviewBody.split(' ');
+    // Sprawdza, czy słów jest więcej niż ustalona liczba
+    const hasMoreWords = words.length > wordCount;
+    // Bierzemy tylko pierwsze 'wordCount' słów
+    const titleWords = words.slice(0, wordCount);
+    // Łączymy słowa z powrotem w ciąg
+    let title = titleWords.join(' ');
+    // Dodajemy "..." jeśli tekst był dłuższy
+    if (hasMoreWords) {
+      title += '...';
+    }
+    return title;
+  }
+
   const getReviews = (onlyId) => {
     if (!reviews) return null;
 
@@ -63,6 +80,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           {
             "@type": "Review",
             "id": `${appUrls.home}opinie/#review${review.time}`,
+            "name": generateReviewName(review.text, 10) || "Polecam serwis RTV AGD w Przemyślu",
             "itemReviewed": {
               "@type": "LocalBusiness",
               "@id": appUrls.home + "#localbusiness",
