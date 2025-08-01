@@ -464,7 +464,7 @@ export const dataForMetaTags = {
   },
   kontakt: {
     metaTags: {
-      title: `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń lub Odwiedź`,
+      title: `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń`,
       canonical: appUrls.kontakt,
       description: `Skontaktuj się z Serwisem RTV i AGD w Przemyślu pod numerem ☎️ ${formattedPhoneNumber} lub odwiedź nas przy ul. Generała Sowińskiego 2. Fachowe usługi!`,
       type: "article",
@@ -498,7 +498,7 @@ export const dataForMetaTags = {
         "@id": appUrls.kontakt,
         "url": appUrls.kontakt,
         "inLanguage": "pl-PL",
-        "name": `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń lub Odwiedź`,
+        "name": `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
@@ -534,7 +534,7 @@ export const dataForMetaTags = {
   },
   o_mnie: {
     metaTags: {
-      title: `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber} | Doświadczony Fachowiec`,
+      title: `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber}`,
       canonical: appUrls.o_mnie,
       description: "Dowiedz się o moim doświadczeniu w naprawie sprzętu RTV i AGD oraz zaangażowaniu w najwyższej jakości usługi serwisowe w Przemyślu.",
       type: "article",
@@ -550,7 +550,7 @@ export const dataForMetaTags = {
         "id": appUrls.o_mnie + "#webpage",
         "url": appUrls.o_mnie,
         "inLanguage": "pl-PL",
-        "name": `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber} | Doświadczony Fachowiec`,
+        "name": `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber}`,
         "isPartOf": {
           "@type": "WebSite",
           "@id": appUrls.home + "#website"
