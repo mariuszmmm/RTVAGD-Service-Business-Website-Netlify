@@ -62,8 +62,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     return title;
   }
 
-  const getReviews = (onlyId) => {
-    if (!reviews) return null;
+  const getReviews = (item) => {
+    if (!reviews || !item) return null;
 
     // console.log("getReviews", reviews);
 
@@ -71,32 +71,26 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       if (!review) return null;
 
       return (
-        onlyId ?
-          {
-            "@type": "Review",
-            "id": `${appUrls.home}opinie/#review${review.time}`,
-          }
-          :
-          {
-            "@type": "Review",
-            "id": `${appUrls.home}opinie/#review${review.time}`,
-            // "name": generateReviewName(review.text, 10) || "Polecam serwis RTV AGD w Przemyślu",
-            // "name": `Polecam serwis RTV AGD w Przemyślu - ${review.time}`,
-            "itemReviewed": {
-              "@type": "LocalBusiness",
-              "@id": appUrls.home + "#localbusiness",
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": review.rating,
-            },
-            "author": {
-              "@type": "Person",
-              "name": review.author_name,
-            },
-            "datePublished": formattedDate(review.time),
-            "reviewBody": review.text,
-          }
+        {
+          "@type": "Review",
+          "id": `${appUrls.home}opinie/#review${review.time}`,
+          // "name": generateReviewName(review.text, 10) || "Polecam serwis RTV AGD w Przemyślu",
+          // "name": `Polecam serwis RTV AGD w Przemyślu - ${review.time}`,
+          "itemReviewed": {
+            "@type": item["@type"],
+            "@id": item["@id"],
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": review.rating,
+          },
+          "author": {
+            "@type": "Person",
+            "name": review.author_name,
+          },
+          "datePublished": formattedDate(review.time),
+          "reviewBody": review.text,
+        }
       )
     })
   };
@@ -245,7 +239,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       // },
     },
     // "review": getReviews(true),
-    "review": getReviews(),
+    "review": getReviews(product),
 
 
     // "aggregateRating": {
@@ -281,6 +275,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
       "bestRating": "5"
     },
+    "review": getReviews(localBusiness),
 
   };
 
@@ -340,7 +335,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   localBusinessSchema,
                   //  website, 
                   breadcrumbList, faqPage,
-                  serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
+                  // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
 
                   productSchema
                 ]
@@ -539,7 +534,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   // website, 
                   localBusinessSchema,
                   breadcrumbList,
-                  getReviews()]
+                  // getReviews()
+                ]
               })
             }}
           />
