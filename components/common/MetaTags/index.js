@@ -42,8 +42,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     contactPage
   } = page.schema;
 
-  const getReviews = (item) => {
-    if (!item || !reviews || !Array.isArray(reviews)) return null;
+  const getReviews = () => {
+    if (!reviews || !Array.isArray(reviews)) return null;
 
     return reviews.map((review) => {
       if (!review) return null;
@@ -53,8 +53,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           "@type": "Review",
           "id": `${appUrls.home}opinie/#review${review.time}`,
           "itemReviewed": {
-            "@type": item["@type"],
-            "@id": item["@id"],
+            "@type": "LocalBusiness",
+            "@id": appUrls.home + "#localbusiness",
           },
           "reviewRating": {
             "@type": "Rating",
@@ -102,7 +102,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
       "bestRating": "5"
     },
-    "review": getReviews(localBusiness),
+    "review": getReviews(),
   };
 
   return (
@@ -207,7 +207,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, localBusinessSchema, breadcrumbList]
+                "@graph": [webpage, localBusinessSchema, getReviews(), breadcrumbList]
               })
             }}
           />
