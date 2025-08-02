@@ -332,7 +332,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject,
-                  localBusinessSchema,
+                  // localBusinessSchema,
                   //  website, 
                   breadcrumbList, faqPage,
                   // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
