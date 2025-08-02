@@ -534,7 +534,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                 "@context": "https://schema.org",
                 "@graph": [
                   webpage,
-                  // website, localBusinessSchema, 
+                  // website, 
+                  localBusinessSchema,
                   breadcrumbList,
                   getReviews()]
               })
