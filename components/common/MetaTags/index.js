@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { appUrls } from '../../../utils/urls';
 import { serwis } from '../../../utils/serwis';
 import { localBusiness, siteNavigationElements } from '../../../utils/dataForMetaTags';
+import { eachWeekOfInterval } from 'date-fns';
 
 const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
   // const [ogTime, setOgTime] = useState(getCurrentDateTimeISOWithOffset());
@@ -62,8 +63,65 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     return title;
   }
 
+  let selectedReviews = {
+    pralka: [],
+    suszarka: [],
+    zmywarka: [],
+    ekspres: [],
+    telewizor: [],
+    all: [],
+  }
+
+  if (reviews && Array.isArray(reviews)) {
+    reviews.forEach((item) => {
+      const text = item.text?.toLowerCase() || "";
+      if (["pralka", "pralce", "pralki"].some(word => text.includes(word))) {
+        selectedReviews.pralka.push(item);
+      } else if (["suszarka", "suszarce", "suszarki"].some(word => text.includes(word))) {
+        selectedReviews.suszarka.push(item);
+      } else if (["zmywarka", "zmywarce", "zmywarki"].some(word => text.includes(word))) {
+        selectedReviews.zmywarka.push(item);
+      } else if (["ekspres", "ekspresu", "ekspresy"].some(word => text.includes(word))) {
+        selectedReviews.ekspres.push(item);
+      } else if (["telewizor", "telewizora", "tv"].some(word => text.includes(word))) {
+        selectedReviews.telewizor.push(item);
+      } else {
+        selectedReviews.all.push(item);
+      }
+    });
+  }
+
+  // console.log("selectedReviews", selectedReviews);
+
   const getReviews = (item) => {
-    if (!reviews || !item) return null;
+    if (!item) return null;
+
+    let reviews = [];
+
+    switch (item["@id"]) {
+      case appUrls.naprawa_pralek + "#product":
+        reviews = selectedReviews.pralka;
+        break;
+      case appUrls.naprawa_suszarek + "#product":
+        reviews = selectedReviews.suszarka;
+        break;
+      case appUrls.naprawa_zmywarek + "#product":
+        reviews = selectedReviews.zmywarka;
+        break;
+      case appUrls.naprawa_ekspresow + "#product":
+        reviews = selectedReviews.ekspres;
+        break;
+      case appUrls.naprawa_telewizorow + "#product":
+        reviews = selectedReviews.telewizor;
+        break;
+      default:
+        reviews = selectedReviews.all;
+    }
+
+
+    if (reviews.length === 0) return null;
+
+
 
     // console.log("getReviews", reviews);
 
