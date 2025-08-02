@@ -297,7 +297,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       // },
     },
     // "review": getReviews(true),
-    "review": getReviews(product),
+    // "review": getReviews(product),
 
 
     // "aggregateRating": {
