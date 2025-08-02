@@ -474,13 +474,7 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `${shortName} - kontakt`,
     },
     schema: {
-
-      // website: {
-      //   "@type": "WebSite",
-      //   "@id": appUrls.home + "#website",
-      //   "url": appUrls.home,
-      //   "name": "naprawaprzemysl.pl",
-      // },
+      localBusiness,
       contactPage: {
         "@type": "ContactPage",
         "name": `Kontakt - ${name}`,

@@ -8,7 +8,6 @@ import { localBusiness, siteNavigationElements } from '../../../utils/dataForMet
 import { eachWeekOfInterval } from 'date-fns';
 
 const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
-  // const [ogTime, setOgTime] = useState(getCurrentDateTimeISOWithOffset());
   const {
     title,
     ogTitle,
@@ -43,87 +42,8 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     contactPage
   } = page.schema;
 
-
-  // const selectedReviews = reviews?.filter((review, index) => index < 2);
-
-
-  function generateReviewName(reviewBody, wordCount = 10) {
-    // Rozbija tekst na słowa
-    const words = reviewBody.split(' ');
-    // Sprawdza, czy słów jest więcej niż ustalona liczba
-    const hasMoreWords = words.length > wordCount;
-    // Bierzemy tylko pierwsze 'wordCount' słów
-    const titleWords = words.slice(0, wordCount);
-    // Łączymy słowa z powrotem w ciąg
-    let title = titleWords.join(' ');
-    // Dodajemy "..." jeśli tekst był dłuższy
-    if (hasMoreWords) {
-      title += '...';
-    }
-    return title;
-  }
-
-  let selectedReviews = {
-    pralka: [],
-    suszarka: [],
-    zmywarka: [],
-    ekspres: [],
-    telewizor: [],
-    all: [],
-  }
-
-  if (reviews && Array.isArray(reviews)) {
-    reviews.forEach((item) => {
-      const text = item.text?.toLowerCase() || "";
-      if (["pralka", "pralce", "pralki"].some(word => text.includes(word))) {
-        selectedReviews.pralka.push(item);
-      } else if (["suszarka", "suszarce", "suszarki"].some(word => text.includes(word))) {
-        selectedReviews.suszarka.push(item);
-      } else if (["zmywarka", "zmywarce", "zmywarki"].some(word => text.includes(word))) {
-        selectedReviews.zmywarka.push(item);
-      } else if (["ekspres", "ekspresu", "ekspresy"].some(word => text.includes(word))) {
-        selectedReviews.ekspres.push(item);
-      } else if (["telewizor", "telewizora", "tv"].some(word => text.includes(word))) {
-        selectedReviews.telewizor.push(item);
-      } else {
-        selectedReviews.all.push(item);
-      }
-    });
-  }
-
-  // console.log("selectedReviews", selectedReviews);
-
   const getReviews = (item) => {
-    if (!item) return null;
-
-    let reviews = [];
-
-    switch (item["@id"]) {
-      case appUrls.naprawa_pralek + "#product":
-        reviews = selectedReviews.pralka;
-        break;
-      case appUrls.naprawa_suszarek + "#product":
-        reviews = selectedReviews.suszarka;
-        break;
-      case appUrls.naprawa_zmywarek + "#product":
-        reviews = selectedReviews.zmywarka;
-        break;
-      case appUrls.naprawa_ekspresow + "#product":
-        reviews = selectedReviews.ekspres;
-        break;
-      case appUrls.naprawa_telewizorow + "#product":
-        reviews = selectedReviews.telewizor;
-        break;
-      default:
-        reviews = selectedReviews.all;
-    }
-
-
-    if (reviews.length === 0) return null;
-
-
-
-    // console.log("getReviews", reviews);
+    if (!item || !reviews || !Array.isArray(reviews)) return null;
 
     return reviews.map((review) => {
       if (!review) return null;
@@ -132,8 +52,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
         {
           "@type": "Review",
           "id": `${appUrls.home}opinie/#review${review.time}`,
-          // "name": generateReviewName(review.text, 10) || "Polecam serwis RTV AGD w Przemyślu",
-          // "name": `Polecam serwis RTV AGD w Przemyślu - ${review.time}`,
           "itemReviewed": {
             "@type": item["@type"],
             "@id": item["@id"],
@@ -153,180 +71,31 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     })
   };
 
-  const getReviewsOld = (selectedReviewNumber) => {
-    if (!reviews) return null;
-
-    const selectedReviews = !!selectedReviewNumber ? [reviews[selectedReviewNumber - 1]] : reviews;
-    const reviewsArray = selectedReviews.map((review) => (
-      {
-        "@type": "Review",
-        "name": "Polecam serwis RTV AGD w Przemyślu",
-        "author": {
-          "@type": "Person",
-          "name": review.author_name,
-        },
-        "datePublished": formattedDate(review.time),
-        "reviewBody": review.text,
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": review.rating,
-          "bestRating": "5",
-          "worstRating": "1",
-        },
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Naprawa sprzętu RTV i AGD",
-          // "serviceType": "Naprawa sprzętu RTV i AGD",
-          // "address": {
-          //   "@type": "PostalAddress",
-          //   "addressLocality": "Przemyśl",
-          //   "addressCountry": "PL",
-          // },
-
-        },
-      }
-    ))
-
-    return {
-      "review": reviewsArray,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": (rating || serwis.rating).toString(),
-        "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
-      },
-
-    }
-  };
-
-  const getReview = (reveiwFor) => {
-    const rewiwes = serwis.reviews
-    if (!rewiwes) return null;
-
-    const reviewSelected = () => {
-      switch (reveiwFor) {
-        case "telewizor":
-          return rewiwes.find((review) => review.reveiwFor.includes("naprawa telewizora"));
-        case "ekspres":
-          return rewiwes.find((review) => review.reveiwFor.includes("naprawa ekspresu"));
-        case "pralka":
-          return rewiwes.find((review) => review.reveiwFor.includes("naprawa pralki"));
-        case "suszarka":
-          return rewiwes.find((review) => review.reveiwFor.includes("naprawa suszarki"));
-        case "zmywarka":
-          return rewiwes.find((review) => review.reveiwFor.includes("naprawa zmywarki"));
-        default:
-          return rewiwes[5];
-      }
-    }
-
-    const review = reveiwFor ? reviewSelected(reveiwFor) : rewiwes[5];
-
-    const reviewsArray = [
-      {
-        "@type": "Review",
-        "name": "Polecam serwis RTV AGD w Przemyślu",
-        "author": {
-          "@type": "Person",
-          "name": review.author_name,
-        },
-        "datePublished": formattedDate(review.time),
-        "reviewBody": review.text,
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": review.rating,
-          "bestRating": "5",
-          "worstRating": "1",
-        },
-        // "itemReviewed": {
-        //   // "@type": "Service",
-        //   "name": "Serwis RTV i AGD" + (reveiwFor ? ` - ${reveiwFor}` : ""),
-        //   // "serviceType": "Naprawa sprzętu RTV i AGD",
-        //   // "address": {
-        //   //   "@type": "PostalAddress",
-        //   //   "addressLocality": "Przemyśl",
-        //   //   "addressCountry": "PL",
-        //   // },
-
-        // },
-      }
-    ]
-
-    return {
-      "review": reviewsArray,
-      // "aggregateRating": {
-      //   "@type": "AggregateRating",
-      //   "ratingValue": (rating || serwis.rating).toString(),
-      //   "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
-      //   "ratingCount": (ratingsTotal || serwis.ratingsTotal).toString(),
-      //   "itemReviewed": {
-      //     // "@type": "Service",
-      //     "name": "Serwis RTV i AGD" + (reveiwFor ? ` - ${reveiwFor}` : ""),
-      //   },
-      // },
-
-    }
-  };
 
   const productSchema = {
-
     ...product,
-    // ...(path === "/naprawa-telewizorow/" && getReview("naprawa telewizora")),
-    // ...(path === "/naprawa-ekspresow/" && getReview("naprawa ekspresu")),
-    // ...(path === "/naprawa-pralek/" && getReview("naprawa pralki")),
-    // ...(path === "/naprawa-suszarek/" && getReview("naprawa suszarki")),
-    // ...(path === "/naprawa-zmywarek/" && getReview("naprawa zmywarki")),
-    // ...(path === "/" && getReview()),
-
-    // ...(path === "/naprawa-telewizorow/" && getReviewsOld()),
-    // ...(path === "/naprawa-ekspresow/" && getReviewsOld()),
-    // ...(path === "/naprawa-pralek/" && getReviewsOld()),
-    // ...(path === "/naprawa-suszarek/" && getReviewsOld()),
-    // ...(path === "/naprawa-zmywarek/" && getReviewsOld()),
-    // ...(path === "/" && getReviewsOld()),
-
-
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": (rating || serwis.rating).toString(),
       "ratingCount": (ratingsTotal || serwis.ratingsTotal).toString(),
       "bestRating": "5",
       "worstRating": "1",
-      // "itemReviewed": {
-      //   // "@type": "Service",
-      //   "name": "Serwis RTV i AGD Przemyśl",
-      // },
     },
-    // "review": getReviews(true),
-    // "review": getReviews(product),
-
-
-    // "aggregateRating": {
-    //   ...(product?.["aggregateRating"]),
-    //   "ratingValue": (rating || serwis.rating).toString(),
-    //   "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
-    //   // ...(path === "/" && { "ratingCount": (ratingsTotal || serwis.ratingsTotal).toString() }),
-    // }
-
-    // test
   };
-
-  // console.log("productSchema", productSchema);
-
 
   const serviceSchema = {
     ...service,
     // "aggregateRating": {
-    //   // ...(service?.["aggregateRating"]),
     //   "@type": "AggregateRating",
     //   "ratingValue": (rating || serwis.rating).toString(),
-    //   "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
-    //   // ...(path === "/" && { "ratingCount": (ratingsTotal || serwis.ratingsTotal).toString() }),
-    // }
+    //   "ratingCount": (ratingsTotal || serwis.ratingsTotal).toString(),
+    //   "bestRating": "5",
+    //   "worstRating": "1",
+    // },
   };
 
   const localBusinessSchema = {
     ...localBusiness,
-    // ...getReviewsOld(1),
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": (rating || serwis.rating).toString(),
@@ -334,7 +103,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "bestRating": "5"
     },
     "review": getReviews(localBusiness),
-
   };
 
   return (
@@ -377,173 +145,43 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {/* Structured Data */}
       {(path === "/naprawa-zmywarek/" || path === "/naprawa-pralek/" || path === "/naprawa-suszarek/" || path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
         <>
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...imageObject
-              })  
-            }}
-          /> */}
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject,
-                  // localBusinessSchema,
-                  //  website, 
+                  localBusinessSchema,
                   breadcrumbList, faqPage,
                   // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
-
                   productSchema
                 ]
               })
             }}
           />
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",  
-                ...localBusinessSchema
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...organization
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...website
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...webpage
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...breadcrumbList
-              })
-            }}
-          />
-
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                ...faqPage
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...productSchema
-              })
-            }}
-          />
-          <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...serviceSchema
-              })
-            }}
-          /> */}
         </>
       )}
 
       {path === "/" && (
         <>
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...imageObject
-              })
-            }}
-          /> */}
+
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList,
-                  // productSchema
-                ]
+                "@graph": [webpage, imageObject, localBusinessSchema, website, breadcrumbList]
               })
             }}
           />
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...productSchema
-              })
-            }}
-          /> */}
-          {/* <script type="application/ld+json"     // wyłączone 14.05.2025
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(organization)
-            }}
-          /> */}
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(place)
-            }}
-          /> */}
-          {/* <script type="application/ld+json"     // wyłączone 16.05.2025
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(webpage)
-            }}
-          /> */}
-          {/* <script type="application/ld+json"   // wyłączone 15.05.2025
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(imageObject)
-            }}
-          /> */}
-          {/* <script type="application/ld+json"     // wyłączone 15.05.2025
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(productSchema)
-            }}
-          /> */}
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(breadcrumbList)
-            }}
-          /> */}
         </>
       )}
 
       {path === "/kontakt/" && (
         <>
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...imageObject
-              })
-            }}
-          /> */}
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [contactPage, breadcrumbList]
+                "@graph": [contactPage, localBusinessSchema, breadcrumbList]
               })
             }}
           />
@@ -552,21 +190,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
       {path === "/o-mnie/" && (
         <>
-          {/* <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...imageObject
-              })
-            }}
-          /> */}
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [aboutPage, person,
-                  // localBusinessSchema,
-                  breadcrumbList]
+                "@graph": [aboutPage, person, localBusinessSchema, breadcrumbList]
               })
             }}
           />
@@ -575,25 +203,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
       {path === "/opinie/" && (
         <>
-          {/*      <script type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                ...breadcrumbList
-              })
-            }}
-          />  */}
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [
-                  webpage,
-                  // website, 
-                  localBusinessSchema,
-                  breadcrumbList,
-                  // getReviews()
-                ]
+                "@graph": [webpage, localBusinessSchema, breadcrumbList]
               })
             }}
           />
