@@ -185,17 +185,17 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           "bestRating": "5",
           "worstRating": "1",
         },
-        "itemReviewed": {
-          // "@type": "Service",
-          "name": "Serwis RTV i AGD" + (reveiwFor ? ` - ${reveiwFor}` : ""),
-          // "serviceType": "Naprawa sprzętu RTV i AGD",
-          // "address": {
-          //   "@type": "PostalAddress",
-          //   "addressLocality": "Przemyśl",
-          //   "addressCountry": "PL",
-          // },
+        // "itemReviewed": {
+        //   // "@type": "Service",
+        //   "name": "Serwis RTV i AGD" + (reveiwFor ? ` - ${reveiwFor}` : ""),
+        //   // "serviceType": "Naprawa sprzętu RTV i AGD",
+        //   // "address": {
+        //   //   "@type": "PostalAddress",
+        //   //   "addressLocality": "Przemyśl",
+        //   //   "addressCountry": "PL",
+        //   // },
 
-        },
+        // },
       }
     ]
 
@@ -244,7 +244,9 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       //   "name": "Serwis RTV i AGD Przemyśl",
       // },
     },
-    "review": getReviews(true),
+    // "review": getReviews(true),
+    "review": getReviews(),
+
 
     // "aggregateRating": {
     //   ...(product?.["aggregateRating"]),
@@ -335,7 +337,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@graph": [webpage, imageObject,
-                  // localBusinessSchema,
+                  localBusinessSchema,
                   //  website, 
                   breadcrumbList, faqPage,
                   // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
