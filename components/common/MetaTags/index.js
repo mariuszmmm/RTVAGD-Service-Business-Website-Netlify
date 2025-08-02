@@ -80,7 +80,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
           {
             "@type": "Review",
             "id": `${appUrls.home}opinie/#review${review.time}`,
-            "name": generateReviewName(review.text, 10) || "Polecam serwis RTV AGD w Przemyślu",
+            // "name": generateReviewName(review.text, 10) || "Polecam serwis RTV AGD w Przemyślu",
             // "name": `Polecam serwis RTV AGD w Przemyślu - ${review.time}`,
             "itemReviewed": {
               "@type": "LocalBusiness",
@@ -340,7 +340,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                   localBusinessSchema,
                   //  website, 
                   breadcrumbList, faqPage,
-                  // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
+                  serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
 
                   productSchema
                 ]
