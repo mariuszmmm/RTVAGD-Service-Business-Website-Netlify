@@ -1,4 +1,3 @@
-import { addRequestMeta } from "next/dist/server/request-meta";
 import { serwis } from "./serwis";
 import { appUrls, imageUrls } from './urls';
 
@@ -37,24 +36,8 @@ export const website = {
   "image": "https://naprawaprzemysl.pl/images/logo.svg",
 };
 
-export const organization = {
-  "@type": "Organization",
-  "@id": appUrls.home + "#organization",
-  "name": serwis.name,   //  "name": ".Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
-  "url": appUrls.home,
-  "logo": imageUrls.logo,
-  "description": "Profesjonalny serwis RTV i AGD w Przemyślu – naprawa pralek, suszarek, zmywarek, ekspresów do kawy i telewizorów.",
-  address,
-  "sameAs": [
-    serwis.url.facebook,
-    serwis.url.GMF
-  ],
-};
-
 export const localBusiness = {
-  // "@type": ["RepairBusiness", "LocalBusiness"],
   "@type": "LocalBusiness",
-  // "serviceType": ["ApplianceRepair", "ElectronicsRepair"],
   "@id": appUrls.home + "#localbusiness",  // dodane 17.05.2025
   "name": name,   // zgodny z CEIDG
   "image": imageUrls.serwis,
@@ -66,9 +49,7 @@ export const localBusiness = {
   address,
   geo,
   "hasMap": serwis.url.GMF,
-
   // openingHours,
-
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -77,30 +58,7 @@ export const localBusiness = {
       "closes": "17:00"
     }
   ],
-
-  //  "openingHoursSpecification": [
-  //   {
-  //    "@type": "OpeningHoursSpecification",
-  //   "dayOfWeek": [
-  //   "Monday",
-  //    "Tuesday",
-  //    "Wednesday",
-  //    "Thursday",
-  //    "Friday"
-  //   ],
-  //    "opens": "09:30",
-  //   "closes": "17:00"
-  //  }
-  //  ],
-
-  //  "priceRange": "PLN",
-
-  "priceRange": "100-500 PLN",  // ZMIANA: Konkretny zakres cen
-  //      "areaServed": {
-  //       "@type": "City",
-  //       "name": "Przemyśl i okolice (20 km)"  // ZMIANA: Ujednolicony opis
-  //     },
-
+  "priceRange": "100-500 PLN",
   // "areaServed": [
   //  { "@type": "Place", "name": "Przemyśl" },
   //  { "@type": "Place", "name": "Bolestraszyce" },
@@ -127,7 +85,6 @@ export const localBusiness = {
     serwis.url.facebook,
     serwis.url.GMF
   ],
-
   // "hasOfferCatalog": {
   //   "@type": "OfferCatalog",
   //   "name": "Usługi serwisowe RTV i AGD",
@@ -153,36 +110,6 @@ export const localBusiness = {
   //       "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" }
   //     }
   //   ]
-  // }
-
-
-
-
-
-  // "alternateName": "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",  // zgodny z google maps
-  // "logo": imageUrls.logo,
-  // "review": {                   // dodane 17.05.2025
-  //   "@type": "Review",
-  //   "reviewRating": {
-  //     "@type": "Rating",
-  //     "bestRating": "5",
-  //   },
-  //   "author": {
-  //     "@type": "Person",
-  //     "name": " NaprawaPrzemyśl",
-  //   },
-  // },
-  // "sameAs": [serwis.url.GMF, serwis.url.facebook],    // dodane 17.05.2025
-  // "openingHours": openingHours,
-  // "hasMap": "https://maps.google.com/?q=49.7827725,22.7760291",
-  // "description": "Naprawa sprzętu RTV i AGD w Przemyślu. Serwis pogwarancyjny. Naprawa pralek, zmywarek, suszarek, ekspresów, telewizorów.",
-  // "description": `${shortName} w Przemyślu zajmuje się naprawą pralek, zmywarek, telewizorów i innego sprzętu domowego. Szybka diagnoza, oryginalne części, gwarancja jakości.`
-  // "email": serwis.email,
-  // "hasMap": serwis.url.GMF,
-  // "contactPoint": {
-  //   "@type": "ContactPoint",
-  //   "telephone": serwis.phone.international,
-  //   "contactType": "office"
   // }
 };
 
@@ -255,14 +182,11 @@ export const dataForMetaTags = {
       type: "website",
       siteName: shortName,
       canonical: appUrls.home,
-
       keywords: "Naprawa RTV AGD Przemyśl, Serwis RTV AGD Przemyśl, Naprawa AGD z dojazdem Przemyśl",
       // appleMobileWebAppTitle: serwis.shortName + ` w Przemyślu ☎️ ${shortPhoneNmuber}`,
     },
     schema: {
-      // organization,
       localBusiness,
-
       product: {
         "@type": "Product",
         "@id": appUrls.home + "#product",
@@ -271,149 +195,11 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
         "url": appUrls.home,
-        //   próbnie wyłączone
-        //       "offers": {
-        //        "@type": "Offer",
-        //       "availability": "https://schema.org/InStock",
-        //      "priceValidUntil": "2025-12-31",
-        //        "priceCurrency": "PLN",
-        //      "price": "150.00",
-        //      "url": appUrls.home,
-        //       "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        //     },
-
-        // "areaServed": [
-        //   { "@type": "City", "name": "Przemyśl" },
-        //   { "@type": "City", "name": "Bolestraszyce" },
-        //   { "@type": "City", "name": "Duńkowiczki" },
-        //   { "@type": "City", "name": "Krówniki" },
-        //   { "@type": "City", "name": "Nehrybka" },
-        //   { "@type": "City", "name": "Orzechowce" },
-        //   { "@type": "City", "name": "Ostrów" },
-        //   { "@type": "City", "name": "Pikulice" },
-        //   { "@type": "City", "name": "Prałkowce" },
-        //   { "@type": "City", "name": "Wyszatyce" },
-        //   { "@type": "City", "name": "Żurawica" }
-        // ]
-
-        // "provider": {
-        //   "@type": "Organization",
-        //   "name": "Naprawa RTV-AGD Przemyśl",
-        //   "telephone": "+48790258612",
-        //   address
-        // }
-        // "url": appUrls.home,
-
-        // "sku": "SEO",
-        // "mpn": "SEO-33",
-        // "brand": {
-        //   "@type": "Thing",
-        //   "name": "NaprawaPrzemyśl",
-        // },
-
-        // "offers": {
-        //   "@type": "Offer",
-        //   "url": appUrls.home,
-        //   // "url": appUrls.naprawa_telewizorow,
-        //   "priceCurrency": "PLN",
-        //   "price": "150",
-        //   "priceValidUntil": "2026-05-16",
-        //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "https://schema.org/InStock",
-        //   "shippingDetails": {
-        //     "@type": "OfferShippingDetails",
-        //     "shippingRate": {
-        //       "@type": "MonetaryAmount",
-        //       "value": "0",
-        //       "currency": "PLN"
-        //     },
-        //     "shippingDestination": [
-        //       {
-        //         "@type": "DefinedRegion",
-        //         "addressCountry": "PL",
-        //         "addressRegion": ["Podkarpackie"],
-        //         "name": "Przemyśl"
-        //       }
-        //     ],
-        //     "deliveryTime": {
-        //       "@type": "ShippingDeliveryTime",
-        //       "handlingTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //       "transitTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //     }
-
-        //   },
-        //   "hasMerchantReturnPolicy": {
-        //     "@type": "MerchantReturnPolicy",
-        //     "applicableCountry": "PL",
-        //     "returnPolicyCountry": "PL",
-        //     "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        //     "merchantReturnDays": 14,
-        //     "returnMethod": "https://schema.org/ReturnInStore",
-        //     "returnFees": "https://schema.org/FreeReturn"
-        //   },
-        //   "shippingDetails": {
-        //     "@type": "OfferShippingDetails",
-        //     "shippingRate": {
-        //       "@type": "MonetaryAmount",
-        //       "value": "0",
-        //       "currency": "PLN"
-        //     },
-        //     "shippingDestination": [
-        //       {
-        //         "@type": "DefinedRegion",
-        //         "addressCountry": "PL",
-        //         "addressRegion": ["Podkarpackie"],
-        //         "name": "Przemyśl"
-        //       }
-        //     ],
-        //     "deliveryTime": {
-        //       "@type": "ShippingDeliveryTime",
-        //       "handlingTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //       "transitTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //     }
-
-        //   },
-        //   "hasMerchantReturnPolicy": {
-        //     "@type": "MerchantReturnPolicy",
-        //     "applicableCountry": "PL",
-        //     "returnPolicyCountry": "PL",
-        //     "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        //     "merchantReturnDays": 14,
-        //     "returnMethod": "https://schema.org/ReturnInStore",
-        //     "returnFees": "https://schema.org/FreeReturn"
-        //   },
-        //   // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
-        //   // "seller": {
-        //   //   "@type": "LocalBusiness",  // "@type": "Organization",
-        //   //   "name": "NaprawaPrzemyśl",
-        //   // },
-        // },
       },
       place: {
-
         "@type": "Place",
         "geo": geo,
-        "name": serwis.name,   // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+        "name": serwis.name,
       },
       website,
       webpage: {
@@ -424,12 +210,12 @@ export const dataForMetaTags = {
         "name": `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
-        "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
+        // "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
         "thumbnailUrl": imageUrls.serwis,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu. Serwis pralek, suszarek, zmywarek, telewizorów i ekspresów do kawy.",
-        "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.home + "#breadcrumb" },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.home + "#breadcrumb" },
       },
       imageObject: {
         "@type": "ImageObject",
@@ -485,7 +271,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness",
         }
       },
-
       website,
       webpage: {
         "@type": "WebPage",
@@ -545,15 +330,9 @@ export const dataForMetaTags = {
         "url": appUrls.o_mnie,
         "inLanguage": "pl-PL",
         "name": `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber}`,
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": appUrls.home + "#website"
-        },
+        "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "description": "Poznaj Serwis RTV i AGD w Przemyślu – Twojego doświadczonego specjalistę od napraw AGD i RTV. Poznaj moją misję i podejście do klienta.",
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "@id": appUrls.o_mnie + "#breadcrumb"
-        },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.o_mnie + "#breadcrumb" },
         "mainEntity": {
           "@type": "Person",
           "@id": appUrls.o_mnie + "#person"
@@ -637,7 +416,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness",
         },
       },
-
       breadcrumbList: {
         "@type": "BreadcrumbList",
         "@id": appUrls.opinie + "#breadcrumb",
@@ -688,7 +466,6 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `Naprawa pralek w Przemyślu ☎️ ${shortPhoneNmuber} – ` + serwis.shortName,
     },
     schema: {
-      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -704,21 +481,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness"
         },
         "url": appUrls.naprawa_pralek,
-
-
-        // pórbnie wyłączone
-        //      "offers": {
-        //       "@type": "Offer",
-        //       "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_pralek + "#service" },
-        //      "price": "150.00",
-        //      "priceCurrency": "PLN",
-        //     "priceSpecification": {
-        //       "@type": "UnitPriceSpecification",
-        //      "unitText": "usługa"
-        //     },
-        //    "priceValidUntil": "2025-12-31",
-        //     "availability": "https://schema.org/InStock",
-        //      },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
@@ -728,19 +490,6 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        // "potentialAction": {
-        //   "@type": "CallAction",
-        //   "target": {
-        //     "@type": "EntryPoint",
-        //     "actionFeature": "Pobierz informacje",
-        //     "actionPlatform": [
-        //       "http://schema.org/DesktopWebPlatform",
-        //       "http://schema.org/IOSPlatform",
-        //       "http://schema.org/AndroidPlatform"
-        //     ],
-        //     "urlTemplate": "tel:+48790258612"
-        //   }
-        // }
       },
       product: {
         "@type": "Product",
@@ -750,110 +499,6 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
         "url": appUrls.naprawa_pralek,
-
-
-        // próbnie wyłączone
-        //    "offers": {
-        //      "@type": "Offer",
-        //     "availability": "https://schema.org/InStock",
-        //      "priceValidUntil": "2025-12-31",
-        //      "priceCurrency": "PLN",
-        //     "price": "150.00",
-        //     "url": appUrls.naprawa_pralek,
-        //      "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        //    },
-
-
-
-        // "areaServed": [
-        //   { "@type": "City", "name": "Przemyśl" },
-        //   { "@type": "City", "name": "Bolestraszyce" },
-        //   { "@type": "City", "name": "Duńkowiczki" },
-        //   { "@type": "City", "name": "Krówniki" },
-        //   { "@type": "City", "name": "Nehrybka" },
-        //   { "@type": "City", "name": "Orzechowce" },
-        //   { "@type": "City", "name": "Ostrów" },
-        //   { "@type": "City", "name": "Pikulice" },
-        //   { "@type": "City", "name": "Prałkowce" },
-        //   { "@type": "City", "name": "Wyszatyce" },
-        //   { "@type": "City", "name": "Żurawica" }
-        // ]
-        // "provider": {
-        //   "@type": "Organization",
-        //   "name": "Naprawa RTV-AGD Przemyśl",
-        //   "telephone": "+48790258612",
-        //   address
-        // }
-        // "image": "https://naprawaprzemysl.pl/images/serwis-pralek-przemysl-naprawa-pralki.png",
-        // "description": "Profesjonalna naprawa pralek automatycznych w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
-        // "url": appUrls.naprawa_pralek,
-        // "offers": {
-        //   "@type": "Offer",
-
-
-
-        //   "itemOffered": {          /// dodane PROBNIE  -->
-        //     "@id": appUrls.naprawa_pralek + "#service"
-        //   },
-        //   "priceSpecification": {
-        //     "@type": "UnitPriceSpecification",
-        //     "price": "120.00",
-        //     "priceCurrency": "PLN"
-        //   },
-        //   "validFrom": "2025-01-01",   /// dodane PROBNIE   <---
-
-
-
-
-        //   "url": appUrls.naprawa_pralek,
-        //   "priceCurrency": "PLN",
-        //   "price": "150",
-        //   "priceValidUntil": "2026-05-16",
-        //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "https://schema.org/InStock",
-        //   "shippingDetails": {
-        //     "@type": "OfferShippingDetails",
-        //     "shippingRate": {
-        //       "@type": "MonetaryAmount",
-        //       "value": "0",
-        //       "currency": "PLN"
-        //     },
-        //     "shippingDestination": [
-        //       {
-        //         "@type": "DefinedRegion",
-        //         "addressCountry": "PL",
-        //         "addressRegion": ["Podkarpackie"],
-        //         "name": "Przemyśl"
-        //       }
-        //     ],
-        //     "deliveryTime": {
-        //       "@type": "ShippingDeliveryTime",
-        //       "handlingTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //       "transitTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //     }
-
-        //   },
-        //   "hasMerchantReturnPolicy": {
-        //     "@type": "MerchantReturnPolicy",
-        //     "applicableCountry": "PL",
-        //     "returnPolicyCountry": "PL",
-        //     "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        //     "merchantReturnDays": 14,
-        //     "returnMethod": "https://schema.org/ReturnInStore",
-        //     "returnFees": "https://schema.org/FreeReturn"
-        //   },
-        //   // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
-        // },
       },
       faqPage: {
         "@type": "FAQPage",
@@ -904,7 +549,7 @@ export const dataForMetaTags = {
       place: {
         "@type": "Place",
         "geo": geo,
-        "name": serwis.name,   // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+        "name": serwis.name,
       },
       imageObject: {
         "@type": "ImageObject",
@@ -928,15 +573,14 @@ export const dataForMetaTags = {
         "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
-        "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
+        // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
         "thumbnailUrl": imageUrls.pralka,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa pralek w Przemyślu, szybka diagnoza i usunięcie usterki.",
-        "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_pralek + "#breadcrumb" },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_pralek + "#breadcrumb" },
         "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_pralek + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
-        // test 
-        "about": { "@type": "Product", "@id": appUrls.naprawa_pralek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
+        // "about": { "@type": "Product", "@id": appUrls.naprawa_pralek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -985,11 +629,8 @@ export const dataForMetaTags = {
       canonical: appUrls.naprawa_suszarek,
       keywords: "Naprawa Suszarek Przemyśl, Serwis Suszarek Przemyśl, Naprawa Suszarek z dojazdem Przemyśl, Naprawa Suszarek do ubrań Przemyśl, Naprawa Suszarek do prania Przemyśl"
       // appleMobileWebAppTitle: `Naprawa suszarek w Przemyślu ☎️ ${shortPhoneNmuber} ✔️ ` + serwis.shortName,
-
-      //test
     },
     schema: {
-      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1005,20 +646,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness"
         },
         "url": appUrls.naprawa_suszarek,
-
-        // pórbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_suszarek + "#service" },
-        //   "price": "150.00",
-        //   "priceCurrency": "PLN",
-        //   "priceSpecification": {
-        //     "@type": "UnitPriceSpecification",
-        //     "unitText": "usługa"
-        //   },
-        //   "priceValidUntil": "2025-12-31",
-        //   "availability": "https://schema.org/InStock",
-        // },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
@@ -1028,19 +655,6 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        // "potentialAction": {
-        //   "@type": "CallAction",
-        //   "target": {
-        //     "@type": "EntryPoint",
-        //     "actionFeature": "Pobierz informacje",
-        //     "actionPlatform": [
-        //       "http://schema.org/DesktopWebPlatform",
-        //       "http://schema.org/IOSPlatform",
-        //       "http://schema.org/AndroidPlatform"
-        //     ],
-        //     "urlTemplate": "tel:+48790258612"
-        //   }
-        // }
       },
       product: {
         "@type": "Product",
@@ -1050,103 +664,11 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
         "url": appUrls.naprawa_suszarek,
-
-        // próbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "availability": "https://schema.org/InStock",
-        //   "priceValidUntil": "2025-12-31",
-        //   "priceCurrency": "PLN",
-        //   "price": "150.00",
-        //   "url": appUrls.naprawa_suszarek,
-        //   "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        // },
-
-
-        // "areaServed": [
-        //   { "@type": "City", "name": "Przemyśl" },
-        //   { "@type": "City", "name": "Bolestraszyce" },
-        //   { "@type": "City", "name": "Duńkowiczki" },
-        //   { "@type": "City", "name": "Krówniki" },
-        //   { "@type": "City", "name": "Nehrybka" },
-        //   { "@type": "City", "name": "Orzechowce" },
-        //   { "@type": "City", "name": "Ostrów" },
-        //   { "@type": "City", "name": "Pikulice" },
-        //   { "@type": "City", "name": "Prałkowce" },
-        //   { "@type": "City", "name": "Wyszatyce" },
-        //   { "@type": "City", "name": "Żurawica" }
-        // ],
-        // "category": "Naprawa suszarek",
-        // "serviceArea": {
-        //   "@type": "Place",
-        //   "name": "Przemyśl i okolice"
-        // }
-        // "provider": {
-        //   "@type": "Organization",
-        //   "name": "Naprawa RTV-AGD Przemyśl",
-        //   "telephone": "+48790258612",
-        //   address
-        // }
-        // "image": ["https://naprawaprzemysl.pl/images/serwis-suszarek-przemysl-naprawa-suszarki.png"],
-        // "description": "Profesjonalna naprawa suszarek do ubrań w Przemyślu. Szybka diagnoza, nowoczesne technologie i oryginalne części. Skontaktuj się już dziś.",
-        // "url": appUrls.naprawa_suszarek,
-        // "offers": {
-        //   "@type": "Offer",
-        //   "url": appUrls.naprawa_suszarek,
-        //   "priceCurrency": "PLN",
-        //   "price": "150",
-        //   "priceValidUntil": "2026-05-16",
-        //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "https://schema.org/InStock",
-        //   "shippingDetails": {
-        //     "@type": "OfferShippingDetails",
-        //     "shippingRate": {
-        //       "@type": "MonetaryAmount",
-        //       "value": "0",
-        //       "currency": "PLN"
-        //     },
-        //     "shippingDestination": [
-        //       {
-        //         "@type": "DefinedRegion",
-        //         "addressCountry": "PL",
-        //         "addressRegion": ["Podkarpackie"],
-        //         "name": "Przemyśl"
-        //       }
-        //     ],
-        //     "deliveryTime": {
-        //       "@type": "ShippingDeliveryTime",
-        //       "handlingTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //       "transitTime": {
-        //         "@type": "QuantitativeValue",
-        //         "minValue": 0,
-        //         "maxValue": 1,
-        //         "unitCode": "DAY"
-        //       },
-        //     }
-
-        //   },
-        //   "hasMerchantReturnPolicy": {
-        //     "@type": "MerchantReturnPolicy",
-        //     "applicableCountry": "PL",
-        //     "returnPolicyCountry": "PL",
-        //     "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        //     "merchantReturnDays": 14,
-        //     "returnMethod": "https://schema.org/ReturnInStore",
-        //     "returnFees": "https://schema.org/FreeReturn"
-        //   },
-        //   // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
-        // },
       },
       place: {
-
         "@type": "Place",
         "geo": geo,
-        "name": serwis.name,  // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+        "name": serwis.name,
       },
       faqPage: {
         "@type": "FAQPage",
@@ -1216,15 +738,14 @@ export const dataForMetaTags = {
         "name": `Naprawa Suszarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@id": appUrls.naprawa_suszarek + "#primaryimage" },
-        "image": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
+        // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.suszarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa suszarek do prania, kondensacyjnych i z pompą ciepła w Przemyślu.",
-        "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_suszarek + "#breadcrumb" },
         "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_suszarek + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
-        // test 
-        "about": { "@type": "Product", "@id": appUrls.naprawa_suszarek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
+        // "about": { "@type": "Product", "@id": appUrls.naprawa_suszarek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1276,7 +797,6 @@ export const dataForMetaTags = {
       // appleMobileWebAppTitle: `Naprawa zmywarek w Przemyślu ☎️ ${shortPhoneNmuber} ✔️ | Serwis RTV-AGD`,
     },
     schema: {
-      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1292,20 +812,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness"
         },
         "url": appUrls.naprawa_zmywarek,
-
-        // pórbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_zmywarek + "#service" },
-        //   "price": "100.00",
-        //   "priceCurrency": "PLN",
-        //   "priceSpecification": {
-        //     "@type": "UnitPriceSpecification",
-        //     "unitText": "usługa"
-        //   },
-        //   "priceValidUntil": "2025-12-31",
-        //   "availability": "https://schema.org/InStock",
-        // },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
@@ -1315,19 +821,6 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        // "potentialAction": {
-        //   "@type": "CallAction",
-        //   "target": {
-        //     "@type": "EntryPoint",
-        //     "actionFeature": "Pobierz informacje",
-        //     "actionPlatform": [
-        //       "http://schema.org/DesktopWebPlatform",
-        //       "http://schema.org/IOSPlatform",
-        //       "http://schema.org/AndroidPlatform"
-        //     ],
-        //     "urlTemplate": "tel:+48790258612"
-        //   }
-        // }
       },
       product: {
         "@type": "Product",
@@ -1337,85 +830,6 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
         "url": appUrls.naprawa_zmywarek,
-
-        // próbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "availability": "https://schema.org/InStock",
-        //   "priceValidUntil": "2025-12-31",
-        //   "priceCurrency": "PLN",
-        //   "price": "100.00",
-        //   "url": appUrls.naprawa_zmywarek,
-        //   "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        // },
-
-
-        // "areaServed": [
-        //   { "@type": "City", "name": "Przemyśl" },
-        //   { "@type": "City", "name": "Bolestraszyce" },
-        //   { "@type": "City", "name": "Duńkowiczki" },
-        //   { "@type": "City", "name": "Krówniki" },
-        //   { "@type": "City", "name": "Nehrybka" },
-        //   { "@type": "City", "name": "Orzechowce" },
-        //   { "@type": "City", "name": "Ostrów" },
-        //   { "@type": "City", "name": "Pikulice" },
-        //   { "@type": "City", "name": "Prałkowce" },
-        //   { "@type": "City", "name": "Wyszatyce" },
-        //   { "@type": "City", "name": "Żurawica" }
-        // ]
-        // "description": `Naprawa zmywarek w Przemyślu i okolicach. Szybka diagnostyka, naprawa z dojazdem, gwarancja. Bosch, Electrolux, Beko. ☎ ${shortPhoneNmuber}`,
-        // "url": appUrls.naprawa_zmywarek,
-        // "offers": {
-        //   "@type": "Offer",
-        //   "url": appUrls.naprawa_zmywarek,
-        //   "priceCurrency": "PLN",
-        //   "price": 130,
-        //   "priceValidUntil": "2026-05-16",
-        //   //   "itemCondition": "https://schema.org/NewCondition",
-        //   //       "availability": "https://schema.org/InStock",
-        //   // "shippingDetails": {
-        //   //   "@type": "OfferShippingDetails",
-        //   //   "shippingRate": {
-        //   //     "@type": "MonetaryAmount",
-        //   //     "value": "0",
-        //   //     "currency": "PLN"
-        //   //   },
-        //   //   "shippingDestination": [
-        //   //     {
-        //   //       "@type": "DefinedRegion",
-        //   //       "addressCountry": "PL",
-        //   //       "addressRegion": ["Podkarpackie"],
-        //   //       "name": "Przemyśl"
-        //   //     }
-        //   //   ],
-        //   //   "deliveryTime": {
-        //   //     "@type": "ShippingDeliveryTime",
-        //   //     "handlingTime": {
-        //   //       "@type": "QuantitativeValue",
-        //   //       "minValue": 0,
-        //   //       "maxValue": 1,
-        //   //       "unitCode": "DAY"
-        //   //     },
-        //   //     "transitTime": {
-        //   //       "@type": "QuantitativeValue",
-        //   //       "minValue": 0,
-        //   //       "maxValue": 1,
-        //   //       "unitCode": "DAY"
-        //   //     },
-        //   //   }
-
-        //   // },
-        //   // "hasMerchantReturnPolicy": {
-        //   //   "@type": "MerchantReturnPolicy",
-        //   //   "applicableCountry": "PL",
-        //   //   "returnPolicyCountry": "PL",
-        //   //   "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        //   //   "merchantReturnDays": 14,
-        //   //   "returnMethod": "https://schema.org/ReturnInStore",
-        //   //   "returnFees": "https://schema.org/FreeReturn"
-        //   // },
-        //   // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
-        // },
       },
       faqPage: {
         "@type": "FAQPage",
@@ -1464,10 +878,9 @@ export const dataForMetaTags = {
           }]
       },
       place: {
-
         "@type": "Place",
         "geo": geo,
-        "name": serwis.name,   // "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+        "name": serwis.name,
       },
       imageObject: {
         "@type": "ImageObject",
@@ -1491,14 +904,14 @@ export const dataForMetaTags = {
         "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-        "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
+        // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         "thumbnailUrl": imageUrls.zmywarka,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",
-        "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_zmywarek + "#breadcrumb" },
         "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_zmywarek + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
-        "about": { "@type": "Product", "@id": appUrls.naprawa_zmywarek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
+        // "about": { "@type": "Product", "@id": appUrls.naprawa_zmywarek + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1545,12 +958,10 @@ export const dataForMetaTags = {
       type: "article",
       siteName: shortName,
       canonical: appUrls.naprawa_ekspresow,
-
       keywords: "Naprawa Ekspresów Przemyśl, Serwis Ekspresów do Kawy Przemyśl",
       // appleMobileWebAppTitle: `${shortName} - naprawa ekspresów`,
     },
     schema: {
-      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1566,20 +977,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness"
         },
         "url": appUrls.naprawa_ekspresow,
-
-        // pórbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_ekspresow + "#service" },
-        //   "price": "100.00",
-        //   "priceCurrency": "PLN",
-        //   "priceSpecification": {
-        //     "@type": "UnitPriceSpecification",
-        //     "unitText": "usługa"
-        //   },
-        //   "priceValidUntil": "2025-12-31",
-        //   "availability": "https://schema.org/InStock",
-        // },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
@@ -1589,19 +986,6 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        // "potentialAction": {
-        //   "@type": "CallAction",
-        //   "target": {
-        //     "@type": "EntryPoint",
-        //     "actionFeature": "Pobierz informacje",
-        //     "actionPlatform": [
-        //       "http://schema.org/DesktopWebPlatform",
-        //       "http://schema.org/IOSPlatform",
-        //       "http://schema.org/AndroidPlatform"
-        //     ],
-        //     "urlTemplate": "tel:+48790258612"
-        //   }
-        // }
       },
       product: {
         "@type": "Product",
@@ -1611,33 +995,6 @@ export const dataForMetaTags = {
         "image": { "@type": "ImageObject", "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
         "url": appUrls.naprawa_ekspresow,
-
-        // próbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "availability": "https://schema.org/InStock",
-        //   "priceValidUntil": "2025-12-31",
-        //   "priceCurrency": "PLN",
-        //   "price": "100.00",
-        //   "url": appUrls.naprawa_ekspresow,
-        //   "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        // },
-
-
-        // "areaServed": [
-        //   { "@type": "City", "name": "Przemyśl" },
-        //   { "@type": "City", "name": "Bolestraszyce" },
-        //   { "@type": "City", "name": "Duńkowiczki" },
-        //   { "@type": "City", "name": "Krówniki" },
-        //   { "@type": "City", "name": "Nehrybka" },
-        //   { "@type": "City", "name": "Orzechowce" },
-        //   { "@type": "City", "name": "Ostrów" },
-        //   { "@type": "City", "name": "Pikulice" },
-        //   { "@type": "City", "name": "Prałkowce" },
-        //   { "@type": "City", "name": "Wyszatyce" },
-        //   { "@type": "City", "name": "Żurawica" }
-        // ]
-        // "businessFunction": "http://purl.org/goodrelations/v1#Repair",
       },
       faqPage: {
         "@type": "FAQPage",
@@ -1678,11 +1035,10 @@ export const dataForMetaTags = {
           }]
 
       },
-
       place: {
         "@type": "Place",
         "geo": geo,
-        "name": serwis.name,    //  "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+        "name": serwis.name,
       },
       imageObject: {
         "@type": "ImageObject",
@@ -1706,14 +1062,14 @@ export const dataForMetaTags = {
         "name": `Naprawa Ekspresów do Kawy Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
-        "image": { "@type": "ImageObject", "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
+        // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_ekspresow + "#primaryimage" },
         "thumbnailUrl": imageUrls.ekspres,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa ekspresów ciśnieniowych i automatycznych w Przemyślu.",
-        "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_ekspresow + "#breadcrumb" },
         "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_ekspresow + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
-        "about": { "@type": "Product", "@id": appUrls.naprawa_ekspresow + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
+        // "about": { "@type": "Product", "@id": appUrls.naprawa_ekspresow + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1760,12 +1116,10 @@ export const dataForMetaTags = {
       type: "article",
       siteName: shortName,
       canonical: appUrls.naprawa_telewizorow,
-
       keywords: "Naprawa Telewizorów Przemyśl, Serwis TV Przemyśl, Naprawa Smart TV Przemyśl, Naprawa LCD OLED Przemyśl",
       // appleMobileWebAppTitle: `${shortName} - naprawa telewizorów`,
     },
     schema: {
-      // organization,
       localBusiness,
       service: {
         "@type": "Service",
@@ -1781,20 +1135,6 @@ export const dataForMetaTags = {
           "@id": appUrls.home + "#localbusiness"
         },
         "url": appUrls.naprawa_telewizorow,
-
-        // pórbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "itemOffered": { "@type": "Service", "@id": appUrls.naprawa_telewizorow + "#service" },
-        //   "price": "150.00",
-        //   "priceCurrency": "PLN",
-        //   "priceSpecification": {
-        //     "@type": "UnitPriceSpecification",
-        //     "unitText": "usługa"
-        //   },
-        //   "priceValidUntil": "2025-12-31",
-        //   "availability": "https://schema.org/InStock",
-        // },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
@@ -1804,19 +1144,6 @@ export const dataForMetaTags = {
           },
           "geoRadius": 20000
         },
-        // "potentialAction": {
-        //   "@type": "CallAction",
-        //   "target": {
-        //     "@type": "EntryPoint",
-        //     "actionFeature": "Pobierz informacje",
-        //     "actionPlatform": [
-        //       "http://schema.org/DesktopWebPlatform",
-        //       "http://schema.org/IOSPlatform",
-        //       "http://schema.org/AndroidPlatform"
-        //     ],
-        //     "urlTemplate": "tel:+48790258612"
-        //   }
-        // }
       },
       product: {
         "@type": "Product",
@@ -1826,32 +1153,6 @@ export const dataForMetaTags = {
         "image": { "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "brand": { "@type": "Brand", "name": shortName },
         "url": appUrls.naprawa_telewizorow,
-
-        // próbnie wyłączone
-        // "offers": {
-        //   "@type": "Offer",
-        //   "availability": "https://schema.org/InStock",
-        //   "priceValidUntil": "2025-12-31",
-        //   "priceCurrency": "PLN",
-        //   "price": "150.00",
-        //   "url": appUrls.naprawa_telewizorow,
-        //   "seller": { "@type": "LocalBusiness", "@id": appUrls.home + "#localbusiness" }
-        // },
-
-
-        // "areaServed": [
-        //   { "@type": "City", "name": "Przemyśl" },
-        //   { "@type": "City", "name": "Bolestraszyce" },
-        //   { "@type": "City", "name": "Duńkowiczki" },
-        //   { "@type": "City", "name": "Krówniki" },
-        //   { "@type": "City", "name": "Nehrybka" },
-        //   { "@type": "City", "name": "Orzechowce" },
-        //   { "@type": "City", "name": "Ostrów" },
-        //   { "@type": "City", "name": "Pikulice" },
-        //   { "@type": "City", "name": "Prałkowce" },
-        //   { "@type": "City", "name": "Wyszatyce" },
-        //   { "@type": "City", "name": "Żurawica" }
-        // ],
       },
       faqPage: {
         "@type": "FAQPage",
@@ -1892,10 +1193,9 @@ export const dataForMetaTags = {
           }]
       },
       place: {
-
         "@type": "Place",
         "geo": geo,
-        "name": serwis.name,    //  "name": "Naprawa sprzętu RTV i AGD NaprawaPrzemyśl",
+        "name": serwis.name,
       },
       imageObject: {
         "@type": "ImageObject",
@@ -1919,14 +1219,14 @@ export const dataForMetaTags = {
         "name": `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
-        "image": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
+        // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         "thumbnailUrl": imageUrls.telewizor,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu.",
-        "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
+        // "breadcrumb": { "@type": "BreadcrumbList", "@id": appUrls.naprawa_telewizorow + "#breadcrumb" },
         "mainEntity": { "@type": "Product", "@id": appUrls.naprawa_telewizorow + "#product" },  // jeśli występuje Product to mainEntity powinien być Product, w przeciwnym przypadku Service
-        "about": { "@type": "Product", "@id": appUrls.naprawa_telewizorow + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
+        // "about": { "@type": "Product", "@id": appUrls.naprawa_telewizorow + "#product" }  // jeśli występuje Product to typ powinien być Product, w przeciwnym przypadku Service
       },
       breadcrumbList: {
         "@type": "BreadcrumbList",
@@ -1958,8 +1258,6 @@ export const dataForMetaTags = {
   },
 };
 
-
-
 // const values = ["title", "description", "imageAlt", "imageTitle"];
 const values = ["title", "description"];
 
@@ -1982,6 +1280,3 @@ function logMetaTagLengths(pageKeys) {
 // logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow", "kontakt", "o_mnie", "opinie"]);
 
 // logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow"]);
-
-
-
