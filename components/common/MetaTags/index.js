@@ -106,7 +106,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
       "bestRating": "5"
     },
-    "review": getReviews(),
+    // "review": getReviews(),
   };
 
   return (
@@ -213,7 +213,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
                 "@context": "https://schema.org",
                 "@graph": [webpage,
                   localBusinessSchema,
-                  //  ...getReviews(),
+                  ...getReviews(),
                   breadcrumbList]
               })
             }}
