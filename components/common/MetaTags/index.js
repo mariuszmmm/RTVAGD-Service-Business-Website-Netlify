@@ -48,10 +48,13 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
     return reviews.map((review) => {
       if (!review) return null;
 
+      const reviewName = review.text.split(' ').slice(0, 5).join(' ') + '...';
+
       return (
         {
           "@type": "Review",
           "id": `${appUrls.home}opinie/#review${review.time}`,
+          "name": reviewName,
           "itemReviewed": {
             "@type": "LocalBusiness",
             "@id": appUrls.home + "#localbusiness",
@@ -81,6 +84,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "bestRating": "5",
       "worstRating": "1",
     },
+    "review": getReviews(),
   };
 
   const serviceSchema = {
@@ -102,7 +106,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "reviewCount": (ratingsTotal || serwis.ratingsTotal).toString(),
       "bestRating": "5"
     },
-    // "review": getReviews(),
+    "review": getReviews(),
   };
 
   return (
@@ -207,7 +211,10 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, localBusinessSchema, getReviews(), breadcrumbList]
+                "@graph": [webpage,
+                  localBusinessSchema,
+                  //  ...getReviews(),
+                  breadcrumbList]
               })
             }}
           />

@@ -489,7 +489,7 @@ export const dataForMetaTags = {
       website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.kontakt,
+        "@id": appUrls.kontakt + "#webpage",
         "url": appUrls.kontakt,
         "inLanguage": "pl-PL",
         "name": `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń`,
@@ -541,7 +541,7 @@ export const dataForMetaTags = {
       localBusiness,
       aboutPage: {
         "@type": "AboutPage",
-        "id": appUrls.o_mnie + "#webpage",
+        "@id": appUrls.o_mnie + "#webpage",
         "url": appUrls.o_mnie,
         "inLanguage": "pl-PL",
         "name": `O Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber}`,
@@ -567,7 +567,7 @@ export const dataForMetaTags = {
       },
       person: {
         "@type": "Person",
-        "id": appUrls.o_mnie + "#person",
+        "@id": appUrls.o_mnie + "#person",
         "name": serwis.person,
         "url": appUrls.o_mnie,
         "jobTitle": "Właściciel i Specjalista Serwisu RTV i AGD",
@@ -624,7 +624,7 @@ export const dataForMetaTags = {
       website,
       webpage: {
         "@type": "WebPage",
-        "@id": appUrls.opinie,
+        "@id": appUrls.opinie + "#webpage",
         "url": appUrls.opinie,
         "inLanguage": "pl-PL",
         "name": `Opinie o Serwisie RTV i AGD w Przemyślu ☎️ ${formattedPhoneNumber} | Sprawdź nas!`,
@@ -634,7 +634,7 @@ export const dataForMetaTags = {
         "description": `Przeczytaj opinie naszych klientów o Serwisie RTV i AGD w Przemyślu. Dowiedz się, dlaczego warto nam zaufać.`,
         "about": {
           "@type": "LocalBusiness",
-          "id": appUrls.home + "#localbusiness",
+          "@id": appUrls.home + "#localbusiness",
         },
       },
 
