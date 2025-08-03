@@ -44,8 +44,8 @@ const Header = ({ rating }) => {
 
   return (
     <HeaderWrapper
-      itemScope
-      itemType="https://schema.org/WPHeader"
+    // itemScope
+    // itemType="https://schema.org/WPHeader"
     >
       <HeaderContainer>
         <Logo
@@ -57,7 +57,7 @@ const Header = ({ rating }) => {
               src={imageUrls.logo}
               alt={`Logo ${serwis.shortName}`}
               fill
-              itemProp="image"
+            // itemProp="image"
             />
           </Emoticon>
           {" "}{serwis.url.site}

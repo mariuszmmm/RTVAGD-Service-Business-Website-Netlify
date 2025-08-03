@@ -18,8 +18,8 @@ import { appUrls } from "../../utils/urls";
 
 const Footer = () => (
   <FooterWrapper
-    itemScope
-    itemType="https://schema.org/WPFooter"
+  // itemScope
+  // itemType="https://schema.org/WPFooter"
   >
     <FooterContainer>
       <SubTitle>{serwis.shortName}</SubTitle>
@@ -54,7 +54,7 @@ const Footer = () => (
           href={serwis.url.facebook}
           rel="noopener noreferrer"
           title="Facebook"
-          itemProp="sameAs"
+        // itemProp="sameAs"
         >
           <FacebookIcon />
           <FooterText>Facebook</FooterText>
@@ -72,7 +72,7 @@ const Footer = () => (
           href={serwis.url.GMF}
           rel="noopener noreferrer"
           title="Google"
-          itemProp="sameAs"
+        // itemProp="sameAs"
         >
           <GoogleIcon />
           <FooterText>Google</FooterText>
