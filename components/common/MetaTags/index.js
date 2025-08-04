@@ -153,11 +153,10 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage, imageObject,
-                  localBusinessSchema,
-                  breadcrumbList, faqPage,
+                "@graph": [webpage, imageObject, localBusinessSchema, faqPage,
                   // serviceSchema,    // przywrócić jeśli Product przestanie wyświetlać gwiazdki
-                  productSchema
+                  productSchema,  // dodany aby wyświetlać gwiazdki
+                  breadcrumbList
                 ]
               })
             }}
@@ -167,7 +166,6 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
 
       {path === "/" && (
         <>
-
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
@@ -211,10 +209,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@graph": [webpage,
-                  localBusinessSchema,
-                  ...getReviews(),
-                  breadcrumbList]
+                "@graph": [webpage, localBusinessSchema, ...getReviews(), breadcrumbList]
               })
             }}
           />
