@@ -43,7 +43,9 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
               fill
               // srcSet={`${imageUrls.zmywarka_300} 500w,
               // ${imageUrls.zmywarka} 1000w`}
-              sizes="(max-width: 500px) 500px, 1000px"
+
+              // sizes="(max-width: 500px) 500px, 1000px"
+              sizes="(max-width: 768px) 59vw, 30vw"
             />
           </StyledPhoto>
         </Section>

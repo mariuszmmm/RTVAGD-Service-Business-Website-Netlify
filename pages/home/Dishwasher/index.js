@@ -22,7 +22,10 @@ const Dishwasher = ({ show, setHold }) => (
           fill
           // srcSet={`${imageUrls.zmywarka_300} 500w,
           // ${imageUrls.zmywarka} 1000w`}
-          sizes="(max-width: 500px) 500px, 1000px"
+
+          // sizes="(max-width: 500px) 500px, 1000px"
+          sizes="(max-width: 767px) 520px, 600px"
+          quality={60}
         />
       </StyledImage>
     </Link>

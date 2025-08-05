@@ -45,7 +45,10 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
               fill
               // srcSet={`${imageUrls.suszarka_300} 500w,
               // ${imageUrls.suszarka} 1000w`}
-              sizes="(max-width: 500px) 500px, 1000px"
+
+              // sizes="(max-width: 500px) 500px, 1000px"
+              sizes="(max-width: 768px) 59vw, 30vw"
+
             />
           </StyledPhoto>
         </Section>

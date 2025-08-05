@@ -45,7 +45,9 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
               fill
               // srcSet={`${imageUrls.ekspres_300} 500w,
               // ${imageUrls.ekspres} 1000w`}
-              sizes="(max-width: 500px) 500px, 1000px"
+
+              // sizes="(max-width: 500px) 500px, 1000px"
+              sizes="(max-width: 768px) 59vw, 30vw"
             />
           </StyledPhoto>
         </Section>

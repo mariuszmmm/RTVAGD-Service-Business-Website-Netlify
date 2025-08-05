@@ -40,9 +40,11 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               priority
               fill
-            // srcSet={`${imageUrls.pralka_300} 500w,
-            // ${imageUrls.pralka} 1000w`}
-            // sizes="(max-width: 500px) 500px, 1000px"
+              // srcSet={`${imageUrls.pralka_300} 500w,
+              // ${imageUrls.pralka} 1000w`}
+
+              // sizes="(max-width: 500px) 500px, 1000px"
+              sizes="(max-width: 768px) 59vw, 30vw"
             />
           </StyledPhoto>
         </Section>

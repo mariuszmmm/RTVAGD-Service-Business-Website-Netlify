@@ -24,7 +24,10 @@ const WashingMachine = ({ show, left, setHold }) => {
             fill
             // srcSet={`${imageUrls.pralka_300} 500w,
             // ${imageUrls.pralka} 1000w`}
-            sizes="(max-width: 500px) 500px, 1000px"
+
+            // sizes="(max-width: 500px) 500px, 1000px"
+            sizes="(max-width: 767px) 520px, 600px"
+            quality={60}
           />
         </StyledImage>
       </Link>

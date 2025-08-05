@@ -23,7 +23,10 @@ const Dryer = ({ show, left, setHold }) => {
             fill
             // srcSet={`${imageUrls.suszarka_300} 500w,
             // ${imageUrls.suszarka} 1000w`}
-            sizes="(max-width: 500px) 500px, 1000px"
+
+            // sizes="(max-width: 500px) 500px, 1000px"
+            sizes="(max-width: 767px) 520px, 600px"
+            quality={60}
           />
         </StyledImage>
       </Link>
