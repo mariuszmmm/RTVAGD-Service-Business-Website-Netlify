@@ -111,7 +111,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             href={`tel:${serwis.phone.number}`}
             title='Naprawa pralek w Przemyślu'
           >
-            Zleć Naprawę Pralki
+            📞 Zadzwoń teraz
           </ButtonLink>
         </Section>
 
