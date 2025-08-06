@@ -25,13 +25,14 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "build": "NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build",
+    "build": "npm run generate-sitemap && NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build",
     "serve": "npx serve@latest out",
     "update-data": "node public/scripts/update_data.js",
     "generate-sitemap": "node public/scripts/generate-sitemap.js"
   },
   "eslintConfig": {
     "extends": [
+      "next/core-web-vitals",
       "react-app",
       "react-app/jest"
     ]
@@ -49,10 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@svgr/webpack": "^8.1.0",
-    "babel-plugin-styled-components": "^2.1.4",
-    "eslint-config-next": "^15.0.3",
-    "file-loader": "^6.2.0"
+    "eslint-config-next": "^15.0.3"
   }
 }

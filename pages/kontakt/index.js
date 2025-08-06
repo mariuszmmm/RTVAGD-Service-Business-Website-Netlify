@@ -91,7 +91,10 @@ const Contact = ({ rating, ratingsTotal }) => {
 export const getStaticProps = async () => {
   const data = await getData();
 
-  return { props: data };
+  return {
+    props: data,
+    revalidate: 86400
+  };
 };
 
 export default Contact;
