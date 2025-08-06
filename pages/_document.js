@@ -65,7 +65,7 @@ export default class MyDocument extends Document {
           <meta key="Referrer-Policy" httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
           {/* GTM Script */}
-          <Script
+          {/* <Script
             id="gtm-script"
             dangerouslySetInnerHTML={{
               __html: `
@@ -79,7 +79,7 @@ export default class MyDocument extends Document {
               `,
             }}
             strategy="afterInteractive"
-          />
+          /> */}
 
           {/* testowy prywatny - Meta Pixel Code */}
           {/* <Script

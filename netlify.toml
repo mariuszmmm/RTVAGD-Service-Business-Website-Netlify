@@ -6,3 +6,19 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"  
+
+# Proxy dla skryptu Facebook Pixel
+[[redirects]]
+  from = "/proxy/fbevents.js"
+  to = "https://connect.facebook.net/en_US/fbevents.js"
+  status = 200
+  [redirects.headers]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Proxy dla skryptu Cookiebot
+[[redirects]]
+  from = "/proxy/uc.js"
+  to = "https://consent.cookiebot.com/uc.js"
+  status = 200
+  [redirects.headers]
+    Cache-Control = "public, max-age=31536000, immutable"
