@@ -250,7 +250,7 @@ export const dataForMetaTags = {
   },
   kontakt: {
     metaTags: {
-      title: `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń!`,
+      title: `Kontakt | Serwis RTV i AGD Przemyśl ☎️ 790 258 612`,
       canonical: appUrls.kontakt,
       description: `Skontaktuj się z Serwisem RTV i AGD w Przemyślu pod numerem ☎️ ${formattedPhoneNumber} lub odwiedź nas przy ul. Generała Sowińskiego 2. Fachowe usługi!`,
       type: "article",
@@ -277,7 +277,7 @@ export const dataForMetaTags = {
         "@id": appUrls.kontakt + "#webpage",
         "url": appUrls.kontakt,
         "inLanguage": "pl-PL",
-        "name": `Kontakt - ${shortName} Przemyśl ☎️ ${formattedPhoneNumber} | Zadzwoń!`,
+        "name": `Kontakt | Serwis RTV i AGD Przemyśl ☎️ 790 258 612`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "datePublished": datePublished,
         "dateModified": dateModified,
