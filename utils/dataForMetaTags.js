@@ -1101,9 +1101,9 @@ export const dataForMetaTags = {
   },
   naprawa_telewizorow: {
     metaTags: {
-      title: `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      ogTitle: `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-      twitterTitle: `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+      title: `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
+      ogTitle: `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
+      twitterTitle: `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
       description: `Naprawa telewizorów LED, LCD, OLED w Przemyślu. ☝ Twój telewizor nie działa ❓ Profesjonalny serwis RTV ❗ Z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       ogDescription: `Naprawa telewizorów LED, LCD, OLED w Przemyślu. ☝ Twój telewizor nie działa ❓ Profesjonalny serwis RTV ❗ Z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       twitterDescription: `Naprawa telewizorów LED, LCD, OLED w Przemyślu. ☝ Twój telewizor nie działa ❓ Profesjonalny serwis RTV ❗ Z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -1205,7 +1205,7 @@ export const dataForMetaTags = {
         "contentUrl": imageUrls.telewizor,
         "width": 700,
         "height": 700,
-        "name": `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
         "description": "Profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu.",
         "caption": "Serwisant przywróci Twój telewizor do życia.",
         "representativeOfPage": true
@@ -1216,7 +1216,7 @@ export const dataForMetaTags = {
         "@id": appUrls.naprawa_telewizorow + "#webpage",
         "url": appUrls.naprawa_telewizorow,
         "inLanguage": "pl-PL",
-        "name": `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        "name": `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         // "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
         // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
