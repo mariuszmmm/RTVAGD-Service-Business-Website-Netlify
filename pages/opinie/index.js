@@ -62,10 +62,7 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
 export const getStaticProps = async () => {
   const data = await getData();
 
-  return {
-    props: data,
-    revalidate: 86400
-  };
+  return { props: data };
 };
 
 export default Reviews;

@@ -145,10 +145,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 export const getStaticProps = async () => {
   const data = await getData();
 
-  return {
-    props: data,
-    revalidate: 86400
-  };
+  return { props: data };
 };
 
 export default DishwasherService;

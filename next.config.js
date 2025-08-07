@@ -1,16 +1,8 @@
 const nextConfig = {
   reactStrictMode: true,
-  // output: 'export',
+  output: 'export',
   images: {
-    // unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
-        port: '',
-        pathname: '/**',
-      },
-    ],
+    unoptimized: true,
   },
   compiler: {
     styledComponents: true,
@@ -21,20 +13,7 @@ const nextConfig = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
         use: ['@svgr/webpack'],
-      },
-      // {
-      //   test: /\.(png|jpe?g|gif)$/i,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[path][name].[ext]',
-      //         publicPath: '/_next/static/images/',
-      //         outputPath: 'static/images/',
-      //       },
-      //     },
-      //   ],
-      // }
+      }
     );
 
     return config;
