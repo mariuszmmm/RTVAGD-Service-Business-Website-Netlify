@@ -20,7 +20,7 @@ function App({ Component, pageProps }) {
         <Footer />
       </ThemeProvider>
 
-      <Script
+      {/* <Script
         id="gtm-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -34,7 +34,7 @@ function App({ Component, pageProps }) {
             })(window,document,'script','dataLayer','GTM-P52JLLB7');
           `,
         }}
-      />
+      /> */}
     </React.StrictMode>
   );
 }

@@ -2,7 +2,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
 import { baseUrl } from '../utils/urls';
-import { serwis } from '../utils/serwis';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -54,9 +53,6 @@ export default class MyDocument extends Document {
           {/* Basic meta tags */}
           <meta key="robots" name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-          {/* ustawić na https://developers.facebook.com/ */}
-          {/* <meta key="fb:app_id" property="fb:app_id" content={serwis.url.fb_app_id} /> */}
-
           <meta key="Content-Language" httpEquiv="Content-Language" content="pl" />
           <meta key="theme-color" name="theme-color" content="#141111" />
 
@@ -65,7 +61,7 @@ export default class MyDocument extends Document {
           <meta key="Referrer-Policy" httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
           {/* GTM Script */}
-          {/* <Script
+          <Script
             id="gtm-script"
             dangerouslySetInnerHTML={{
               __html: `
@@ -79,37 +75,7 @@ export default class MyDocument extends Document {
               `,
             }}
             strategy="afterInteractive"
-          /> */}
-
-          {/* testowy prywatny - Meta Pixel Code */}
-          {/* <Script
-            id="facebook-pixel"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '3182193465264695');
-      fbq('track', 'PageView');
-    `,
-            }}
           />
-          <noscript>
-            <img
-              height="1"
-              width="1"
-              style={{ display: "none" }}
-              src="https://www.facebook.com/tr?id=3182193465264695&ev=PageView&noscript=1"
-              alt=""
-            />
-          </noscript> */}
-          {/* End Meta Pixel Code */}
 
         </Head>
         <body>
@@ -124,32 +90,6 @@ export default class MyDocument extends Document {
           </noscript>
           <Main />
           <NextScript />
-
-          {/* przykładowy pixel  Facebooka - nie używany, ale zostawiam na przyszłość */}
-          {/* <Script                                                  
-            id="facebook-sdk"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.fbAsyncInit = function() {
-                  FB.init({
-                    appId      : '721822667104912',
-                    xfbml      : true,
-                    version    : 'v23.0'
-                  });
-                  FB.AppEvents.logPageView();
-                };
-
-                (function(d, s, id){
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) {return;}
-                  js = d.createElement(s); js.id = id;
-                  js.src = "https://connect.facebook.net/en_US/sdk.js";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-              `,
-            }}
-          /> */}
         </body>
       </Html>
     );
