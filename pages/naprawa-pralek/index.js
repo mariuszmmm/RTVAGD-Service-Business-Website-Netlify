@@ -57,14 +57,14 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               width="700"
               height="700"
               // src="Serwis/naprawa-pralek-2"
-               // src={cloudinaryImageUrls.pralka}
-src="Serwis/naprawa-pralek-2"
+               src={cloudinaryImageUrls.pralka}
+// src="Serwis/naprawa-pralek-2"
               title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               priority
               sizes="(max-width: 768px) 59vw, 30vw"
               style={{ width: '100%', height: 'auto' }}
-deliveryType="fetch"
+// deliveryType="fetch"
             />
           </StyledPhoto>
         </Section>
