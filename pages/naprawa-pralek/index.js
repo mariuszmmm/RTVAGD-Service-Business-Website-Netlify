@@ -16,9 +16,17 @@ import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
+import { CldImage, getCldImageUrl } from 'next-cloudinary';
+import { cloudinaryImageUrls } from '../../utils/urls';
 
 const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
+
+  const url = getCldImageUrl({
+    width: 700,
+    height: 700,
+    src: 'Serwis/naprawa-pralek-2.webp'
+  });
 
   return (
     <>
@@ -33,18 +41,28 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Title>Naprawa Pralek w Przemyślu</Title>
 
         <Section>
-          <StyledPhoto>
+          {/* <StyledPhoto>
             <Image
               src={imageUrls.pralka}
               title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               priority
               fill
-              // srcSet={`${imageUrls.pralka_300} 500w,
-              // ${imageUrls.pralka} 1000w`}
-
-              // sizes="(max-width: 500px) 500px, 1000px"
               sizes="(max-width: 768px) 59vw, 30vw"
+            />
+          </StyledPhoto> */}
+
+          <StyledPhoto>
+            <CldImage
+              // width="700"
+              // height="700"
+              fill
+              src={url}
+              title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
+              alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
+              priority
+            // sizes="100vw"
+            // sizes="(max-width: 768px) 59vw, 30vw"
             />
           </StyledPhoto>
         </Section>
