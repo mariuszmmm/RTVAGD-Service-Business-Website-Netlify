@@ -47,7 +47,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
                 ${imageUrls.pralka_700} 700w
               `}
               style={{ width: '100%', height: 'auto' }}
-              sizes="(max-width: 480px) 29vw, (max-width: 1732px) 14vw, 700px" />
+              sizes="(max-width: 692px) 29vw, (max-width: 1268px) 14vw, 700px" />
           </StyledPhoto>
         </Section>
 
