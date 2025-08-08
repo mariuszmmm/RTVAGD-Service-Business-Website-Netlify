@@ -63,6 +63,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               priority
               sizes="(max-width: 768px) 59vw, 30vw"
               style={{ width: '100%', height: 'auto' }}
+deliveryType="fetch"
             />
           </StyledPhoto>
         </Section>
