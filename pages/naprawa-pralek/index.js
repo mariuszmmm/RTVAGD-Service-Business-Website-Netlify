@@ -22,11 +22,11 @@ import { cloudinaryImageUrls } from '../../utils/urls';
 const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
 
-  const url = getCldImageUrl({
-    width: 700,
-    height: 700,
-    src: 'Serwis/naprawa-pralek-2.webp'
-  });
+  // const url = getCldImageUrl({
+  //   width: 700,
+  //   height: 700,
+  //   src: 'Serwis/naprawa-pralek-2.webp'
+  // });
 
   return (
     <>
@@ -54,15 +54,14 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
 
           <StyledPhoto>
             <CldImage
-              // width="700"
-              // height="700"
-              fill
-              src={url}
+              width="700"
+              height="700"
+              src="Serwis/naprawa-pralek-2"
               title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
               priority
-            // sizes="100vw"
-            // sizes="(max-width: 768px) 59vw, 30vw"
+              sizes="(max-width: 768px) 59vw, 30vw"
+              style={{ width: '100%', height: 'auto' }}
             />
           </StyledPhoto>
         </Section>
