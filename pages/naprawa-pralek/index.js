@@ -3,7 +3,6 @@ import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
 import { appUrls, imageUrls } from '../../utils/urls';
-import { Emoticon } from '../../components/common/Emoticon';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import MetaTags from '../../components/common/MetaTags';
@@ -16,17 +15,9 @@ import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
-import { CldImage, getCldImageUrl } from 'next-cloudinary';
-import { cloudinaryImageUrls } from '../../utils/urls';
 
 const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
-
-  // const url = getCldImageUrl({
-  //   width: 700,
-  //   height: 700,
-  //   src: 'Serwis/naprawa-pralek-2.webp'
-  // });
 
   return (
     <>
@@ -41,29 +32,22 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Title>Naprawa Pralek w Przemyślu</Title>
 
         <Section>
-          {/* <StyledPhoto>
-            <Image
-              src={imageUrls.pralka}
-              title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
-              alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              priority
-              fill
-              sizes="(max-width: 768px) 59vw, 30vw"
-            />
-          </StyledPhoto> */}
-
           <StyledPhoto>
-            <CldImage
+            <img
               width="700"
               height="700"
-              // src="Serwis/naprawa-pralek-2"
-              src={cloudinaryImageUrls.pralka}
+              src={imageUrls.pralka_700}
               title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              priority
-              sizes="(max-width: 768px) 59vw, 30vw"
+              // priority
+              // fill
+              srcSet={`
+                ${imageUrls.pralka_284} 284w,
+                ${imageUrls.pralka_520} 520w,
+                ${imageUrls.pralka_700} 700w
+              `}
               style={{ width: '100%', height: 'auto' }}
-            />
+              sizes="(max-width: 480px) 29vw, (max-width: 1732px) 14vw, 700px" />
           </StyledPhoto>
         </Section>
 

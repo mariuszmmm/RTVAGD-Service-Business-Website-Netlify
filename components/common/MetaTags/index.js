@@ -130,7 +130,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       {imageType && <meta key="og:image:type" property="og:image:type" content={imageType} />}
 
       {/* test */}
-      <link rel="image_src" href={image} />
+      {/* <link rel="image_src" href={image} /> */}
 
       {/* Twitter Cards */}
       <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
