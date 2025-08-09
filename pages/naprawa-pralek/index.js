@@ -34,20 +34,18 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <img
-              width="700"
-              height="700"
-              src={imageUrls.pralka_700}
+              src={imageUrls.pralka}
               title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
               alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              // priority
-              // fill
+              priority
+              fill
               srcSet={`
                 ${imageUrls.pralka_284} 284w,
                 ${imageUrls.pralka_520} 520w,
                 ${imageUrls.pralka_700} 700w
               `}
               style={{ width: '100%', height: 'auto' }}
-              sizes="(max-width: 480px) 29vw, (max-width: 1732px) 14vw, 700px" />
+              sizes="(max-width: 480px) 142px, (max-width: 1224px) 260px, 700px" />
           </StyledPhoto>
         </Section>
 

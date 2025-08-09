@@ -36,6 +36,8 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <StyledPhoto>
             <Image
+              width="700"
+              height="700"
               title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
               src={imageUrls.zmywarka}
               alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
