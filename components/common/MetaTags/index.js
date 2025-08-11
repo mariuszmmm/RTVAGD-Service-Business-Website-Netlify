@@ -84,7 +84,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
       "bestRating": "5",
       "worstRating": "1",
     },
-    "review": getReviews(),
+    // "review": getReviews(),
   };
 
   const serviceSchema = {
