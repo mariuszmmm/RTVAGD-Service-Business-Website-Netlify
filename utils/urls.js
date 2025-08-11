@@ -13,7 +13,15 @@ export const cloudinaryImageUrls = {
   ekspres_auto: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis-ekspresow-przemysl-naprawa-ekspresu",
   ekspres_2: "https://res.cloudinary.com/difc0i71u/image/upload/v1734715051/Serwis/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu.png",
   ekspres_2_auto: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/serwis-ekspresow-przemysl-profesjonalna-naprawa-ekspresu",
-  zmywarka: "https://res.cloudinary.com/difc0i71u/image/upload/v1734715051/Serwis/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
+  // zmywarka: "https://res.cloudinary.com/difc0i71u/image/upload/v1734715051/Serwis/serwis-zmywarek-przemysl-naprawa-zmywarki.webp",
+
+  zmywarka: "https://res.cloudinary.com/difc0i71u/image/upload/w_700/v1754622765/Serwis/naprawa-zmywarek.webp",
+  zmywarka_520: "https://res.cloudinary.com/difc0i71u/image/upload/w_520/v1754622765/Serwis/naprawa-zmywarek.webp",
+  zmywarka_284: "https://res.cloudinary.com/difc0i71u/image/upload/w_284/v1754622765/Serwis/naprawa-zmywarek.webp",
+
+
+
+
   zmywarka_auto: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto,w_300/v1/Serwis/serwis-zmywarek-przemysl-naprawa-zmywarki",
 
   // pralka: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto/q_auto/v1754622763/Serwis/naprawa-pralek-2.webp",
@@ -31,15 +39,20 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: `${baseUrl}/images/serwis-rtv-agd-2.webp`,
-  pralka: `${baseUrl}/images/naprawa-pralek-2.webp`,
+  serwis: `${baseUrl}/images/serwis-rtv-agd-931.webp`,
+  serwis_768: `${baseUrl}/images/serwis-rtv-agd-768.webp`,
+  serwis_480: `${baseUrl}/images/serwis-rtv-agd-480.webp`,
 
-  pralka_700: `${baseUrl}/images/naprawa-pralek-700.webp`,
+  pralka: `${baseUrl}/images/naprawa-pralek-700.webp`,
   pralka_520: `${baseUrl}/images/naprawa-pralek-520.webp`,
   pralka_284: `${baseUrl}/images/naprawa-pralek-284.webp`,
 
   suszarka: `${baseUrl}/images/naprawa-suszarek-2.webp`,
-  zmywarka: `${baseUrl}/images/naprawa-zmywarek-2.webp`,
+
+  zmywarka: `${baseUrl}/images/naprawa-zmywarek-700.webp`,
+  zmywarka_520: `${baseUrl}/images/naprawa-zmywarek-520.webp`,
+  zmywarka_284: `${baseUrl}/images/naprawa-zmywarek-284.webp`,
+
   telewizor: `${baseUrl}/images/naprawa-telewizorow-2.webp`,
   ekspres: `${baseUrl}/images/naprawa-ekspresow-2.webp`,
 

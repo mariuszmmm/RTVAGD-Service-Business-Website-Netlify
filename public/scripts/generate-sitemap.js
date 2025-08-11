@@ -6,14 +6,14 @@ const routes = {
   '/': {
     changefreq: 'daily',
     priority: '1.0',
-    image: `${BASE_URL}/images/serwis-rtv-agd-2.webp`,
+    image: `${BASE_URL}/images/serwis-rtv-agd-931.webp`,
     caption: 'Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu.',
-    title: 'Serwis RTV i AGD Przemyśl'
+    title: 'Serwis RTV i AGD Przemyśl'
   },
   '/naprawa-pralek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-pralek-2.webp`,
+    image: `${BASE_URL}/images/naprawa-pralek-700.webp`,
     caption: 'Profesjonalna naprawa pralek w Przemyślu.',
     title: 'Serwis Pralek Przemyśl'
   },
@@ -27,7 +27,7 @@ const routes = {
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `${BASE_URL}/images/naprawa-zmywarek-2.webp`,
+    image: `${BASE_URL}/images/naprawa-zmywarek-700.webp`,
     caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
     title: 'Serwis Zmywarek Przemyśl'
   },

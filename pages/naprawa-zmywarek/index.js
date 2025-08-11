@@ -2,9 +2,9 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { StyledPhoto } from '../../components/common/StyledPhoto';
+import { Photo, StyledPhoto } from '../../components/common/StyledPhoto';
 import { Emoticon } from '../../components/common/Emoticon';
-import { appUrls, imageUrls } from '../../utils/urls';
+import { appUrls, cloudinaryImageUrls, imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
@@ -16,9 +16,16 @@ import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
+import { CldImage, getCldImageUrl } from 'next-cloudinary';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
+
+  const getUrl = (size) => getCldImageUrl({
+    width: size,
+    height: size,
+    src: "Serwis/naprawa-zmywarek"
+  });
 
   return (
     <>
@@ -34,22 +41,21 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Title>Naprawa Zmywarek w Przemyślu</Title>
 
         <Section>
-          <StyledPhoto>
-            <Image
-              width="700"
-              height="700"
-              title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
-              src={imageUrls.zmywarka}
-              alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
-              priority
-              fill
-              // srcSet={`${imageUrls.zmywarka_300} 500w,
-              // ${imageUrls.zmywarka} 1000w`}
-
-              // sizes="(max-width: 500px) 500px, 1000px"
-              sizes="(max-width: 768px) 59vw, 30vw"
-            />
-          </StyledPhoto>
+          <Photo
+            src={getUrl(700)}
+            srcSet={`
+              ${getUrl(284)} 284w,
+              ${getUrl(520)} 520w,
+              ${getUrl(700)} 700w
+            `}
+            sizes="(max-width: 480px) 142px, (max-width: 1440px) 260px, 700px"
+            width={700}
+            height={700}
+            alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
+            title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
+            loading="eager"
+            fetchpriority="high"
+          />
         </Section>
 
         <Section>

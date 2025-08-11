@@ -8,8 +8,7 @@ import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import MetaTags from '../../components/common/MetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
-import Image from 'next/image';
-import { StyledPhoto } from '../../components/common/StyledPhoto';
+import { Photo } from '../../components/common/StyledPhoto';
 import { StyledText } from '../../components/common/Text/styled';
 import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledLink } from '../../components/common/StyledLink';
@@ -32,21 +31,21 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Title>Naprawa Pralek w Przemyślu</Title>
 
         <Section>
-          <StyledPhoto>
-            <img
-              src={imageUrls.pralka}
-              title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
-              alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-              priority
-              fill
-              srcSet={`
-                ${imageUrls.pralka_284} 284w,
-                ${imageUrls.pralka_520} 520w,
-                ${imageUrls.pralka_700} 700w
-              `}
-              style={{ width: '100%', height: 'auto' }}
-              sizes="(max-width: 480px) 142px, (max-width: 1224px) 260px, 700px" />
-          </StyledPhoto>
+          <Photo
+            src={imageUrls.pralka}
+            srcSet={`
+              ${imageUrls.pralka_284} 284w,
+              ${imageUrls.pralka_520} 520w,
+              ${imageUrls.pralka} 700w
+            `}
+            sizes="(max-width: 480px) 142px, (max-width: 1440px) 260px, 700px"
+            width={700}
+            height={700}
+            alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
+            title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
+            loading="eager"
+            fetchpriority="high"
+          />
         </Section>
 
         <Section>
