@@ -21,7 +21,7 @@ const Background = () => {
             ${imageUrls.serwis_768} 768w,
             ${imageUrls.serwis} 931w
           `}
-          sizes="(max-width: 480px) 240px, (max-width: 768px) 384px, 931px"
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 931px"
           width={931}
           height={497}
           loading="eager"
