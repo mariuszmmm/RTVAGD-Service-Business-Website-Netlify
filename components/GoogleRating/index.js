@@ -15,11 +15,11 @@ export const GoogleRating = ({ rating, hidden }) => (
           title="Poznaj opinie zadowolonych klientów! ⭐⭐⭐⭐⭐"
         >
           <ImageWrapper>
-            {/* <Image
+            <Image
               src={imageUrls.logoGoogle}
               alt="google logo"
               fill
-            /> */}
+            />
           </ImageWrapper>
           <Text>Google Rating {rating.toString().replace(".", ",")}</Text >
           <Stars rating={5} center />
