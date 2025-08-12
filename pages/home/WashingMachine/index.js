@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage } from "../../../components/common/StyledImage";
-import Image from "next/image";
+import { StyledImage2 } from "../../../components/common/StyledImage";
 
 const WashingMachine = ({ show, left, setHold }) => {
   return (
@@ -16,20 +15,19 @@ const WashingMachine = ({ show, left, setHold }) => {
         href={appUrls.naprawa_pralek}
         title="Serwis pralek w Przemyślu"
       >
-        <StyledImage>
-          <Image
-            src={imageUrls._pralka}
-            alt="Pralki"
-            loading='lazy'
-            fill
-            // srcSet={`${imageUrls.pralka_300} 500w,
-            // ${imageUrls.pralka} 1000w`}
-
-            // sizes="(max-width: 500px) 500px, 1000px"
-            sizes="(max-width: 767px) 520px, 600px"
-            quality={60}
-          />
-        </StyledImage>
+        <StyledImage2
+          src={imageUrls._pralka}
+          alt="Pralki"
+          width={700}
+          height={700}
+          style={{ width: "100%", height: "auto" }}
+          srcSet={`
+            ${imageUrls._pralka_284} 284w,
+            ${imageUrls._pralka_520} 520w,
+            ${imageUrls._pralka} 700w
+          `}
+          sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+        />
       </Link>
     </ImageWrapper>
   );

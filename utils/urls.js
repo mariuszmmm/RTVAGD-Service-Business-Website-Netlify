@@ -56,12 +56,30 @@ export const imageUrls = {
   telewizor: `${baseUrl}/images/naprawa-telewizorow-2.webp`,
   ekspres: `${baseUrl}/images/naprawa-ekspresow-2.webp`,
 
-  _pralka: baseUrl + "/images/pralki.webp",
-  _suszarka: baseUrl + "/images/suszarki.webp",
-  _zmywarka: baseUrl + "/images/zmywarki.webp",
-  _telewizor: baseUrl + "/images/telewizora.webp",
-  _ekspres: baseUrl + "/images/ekspresu.webp",
-  _ekspres_2: baseUrl + "/images/RTV-AGD.webp",
+  _pralka: `${baseUrl}/images/pralka.webp`,
+  _pralka_520: `${baseUrl}/images/pralka-520.webp`,
+  _pralka_284: `${baseUrl}/images/pralka-284.webp`,
+
+  _suszarka: `${baseUrl}/images/suszarka.webp`,
+  _suszarka_520: `${baseUrl}/images/suszarka-520.webp`,
+  _suszarka_284: `${baseUrl}/images/suszarka-284.webp`,
+
+  _zmywarka: `${baseUrl}/images/zmywarka.webp`,
+  _zmywarka_520: `${baseUrl}/images/zmywarka-520.webp`,
+  _zmywarka_284: `${baseUrl}/images/zmywarka-284.webp`,
+
+  _telewizor: `${baseUrl}/images/telewizor.webp`,
+  _telewizor_520: `${baseUrl}/images/telewizor-520.webp`,
+  _telewizor_284: `${baseUrl}/images/telewizor-284.webp`,
+
+  _ekspres: `${baseUrl}/images/ekspres.webp`,
+  _ekspres_520: `${baseUrl}/images/ekspres-520.webp`,
+  _ekspres_284: `${baseUrl}/images/ekspres-284.webp`,
+
+  _ekspres_2: `${baseUrl}/images/ekspres_2.webp`,
+  _ekspres_2_284: `${baseUrl}/images/ekspres_2-284.webp`,
+
+
 
   serwis_1: baseUrl + "/images/serwis.jpg",
   telewizor_300: baseUrl + "/images/serwis-telewizorow-przemysl-naprawa-telewizora_300.webp",

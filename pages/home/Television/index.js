@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage } from "../../../components/common/StyledImage";
-import Image from "next/image";
+import { StyledImage2 } from "../../../components/common/StyledImage";
 
 const Television = ({ show, left, setHold }) => (
   <ImageWrapper
@@ -15,19 +14,19 @@ const Television = ({ show, left, setHold }) => (
       href={appUrls.naprawa_telewizorow}
       title="Serwis telewizorów w Przemyślu"
     >
-      <StyledImage>
-        <Image
-          src={imageUrls._telewizor}
-          alt="Telewizory"
-          fill
-          // srcSet={`${imageUrls.telewizor_300} 500w,
-          // ${imageUrls.telewizor} 1000w`}
-
-          // sizes="(max-width: 500px) 500px, 1000px"
-          sizes="(max-width: 767px) 520px, 600px"
-          quality={60}
-        />
-      </StyledImage>
+      <StyledImage2
+        src={imageUrls._telewizor}
+        alt="Telewizory"
+        width={700}
+        height={700}
+        style={{ width: "100%", height: "auto" }}
+        srcSet={`
+          ${imageUrls._telewizor_284} 284w,
+          ${imageUrls._telewizor_520} 520w,
+          ${imageUrls._telewizor} 700w
+        `}
+        sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+      />
     </Link>
   </ImageWrapper>
 );
