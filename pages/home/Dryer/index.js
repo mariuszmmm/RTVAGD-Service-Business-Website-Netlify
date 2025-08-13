@@ -25,7 +25,8 @@ const Dryer = ({ show, left, setHold }) => {
               ${imageUrls._suszarka_520} 520w,
               ${imageUrls._suszarka} 700w
             `}
-          sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+          // sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+          sizes="(orientation: portrait) clamp(30vw, 29vw, 520px), (max-width: 945px) 15vw, (max-width: 1730px) 15vw, 600px"
           loading="lazy"
         />
       </Link>

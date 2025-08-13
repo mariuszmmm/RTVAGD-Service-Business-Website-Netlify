@@ -22,7 +22,8 @@ const CoffeeMachine_2 = ({ show, setHold }) => (
           ${imageUrls._ekspres_2_284} 284w,
           ${imageUrls._ekspres_2} 370w
         `}
-        sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+        // sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+        sizes="(orientation: portrait) clamp(30vw, 29vw, 520px), (max-width: 945px) 15vw, (max-width: 1730px) 15vw, 600px"
         loading="lazy"
       />
     </Link>
