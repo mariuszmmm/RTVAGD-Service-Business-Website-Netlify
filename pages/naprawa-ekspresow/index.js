@@ -43,11 +43,13 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
               alt={dataForMetaTags.naprawa_ekspresow.metaTags.imageAlt}
               priority
               fill
-              // srcSet={`${imageUrls.ekspres_300} 500w,
-              // ${imageUrls.ekspres} 1000w`}
+            // srcSet={`${imageUrls.ekspres_300} 500w,
+            // ${imageUrls.ekspres} 1000w`}
 
-              // sizes="(max-width: 500px) 500px, 1000px"
-              sizes="(max-width: 768px) 59vw, 30vw"
+            // sizes="(max-width: 500px) 500px, 1000px"
+            // sizes="(max-width: 768px) 59vw, 42vw"
+            // sizes="(orientation: portrait) 59vw, 42vw"
+
             />
           </StyledPhoto>
         </Section>

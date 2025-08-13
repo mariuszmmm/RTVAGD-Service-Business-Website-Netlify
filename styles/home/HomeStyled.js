@@ -38,10 +38,6 @@ export const HeroTitle = styled.h1`
   margin: 30px 0 0;
     font-size: 1.3rem;
   }
-
-  /* @media (orientation: portrait) {
-     margin: 20px 0 0;
-  } */
 `;
 
 export const HeroText = styled.p`

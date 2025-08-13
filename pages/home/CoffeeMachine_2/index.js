@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage2 } from "../../../components/common/StyledImage";
-import Image from "next/image";
+import { StyledImage } from "../../../components/common/StyledImage";
 
 const CoffeeMachine_2 = ({ show, setHold }) => (
   <ImageWrapper
@@ -14,17 +13,17 @@ const CoffeeMachine_2 = ({ show, setHold }) => (
       href={appUrls.naprawa_ekspresow}
       title="Naprawa ekspresów do kawy w Przemyślu"
     >
-      <StyledImage2
+      <StyledImage
         src={imageUrls._ekspres_2}
         alt="Ekspresy"
         width={700}
         height={700}
-        style={{ width: "100%", height: "auto" }}
         srcSet={`
           ${imageUrls._ekspres_2_284} 284w,
           ${imageUrls._ekspres_2} 370w
         `}
         sizes="(orientation: portrait) clamp(30vw, 59vw, 520px), 30vw"
+        loading="lazy"
       />
     </Link>
   </ImageWrapper>

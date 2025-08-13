@@ -1,8 +1,8 @@
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  // output: 'export',
   images: {
-    unoptimized: true,
+    // unoptimized: true,
   },
   compiler: {
     styledComponents: true,
