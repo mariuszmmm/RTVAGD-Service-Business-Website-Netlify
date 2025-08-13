@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage } from "../../../components/common/StyledImage";
+import { HeroImage } from "../../../styles/home/HomeStyled";
 
 const Dishwasher = ({ show, setHold }) => (
   <ImageWrapper
@@ -13,7 +13,7 @@ const Dishwasher = ({ show, setHold }) => (
       href={appUrls.naprawa_zmywarek}
       title="Serwis zmywarek w Przemyślu"
     >
-      <StyledImage
+      <HeroImage
         src={imageUrls._zmywarka}
         alt="Zmywarki"
         width={700}

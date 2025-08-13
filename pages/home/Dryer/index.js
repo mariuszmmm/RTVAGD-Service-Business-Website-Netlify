@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage } from "../../../components/common/StyledImage";
+import { HeroImage } from "../../../styles/home/HomeStyled";
 
 const Dryer = ({ show, left, setHold }) => {
   return (
@@ -15,7 +15,7 @@ const Dryer = ({ show, left, setHold }) => {
         href={appUrls.naprawa_suszarek}
         title="Serwis suszarek w Przemyślu"
       >
-        <StyledImage
+        <HeroImage
           src={imageUrls._suszarka}
           alt="Suszarki"
           width={700}

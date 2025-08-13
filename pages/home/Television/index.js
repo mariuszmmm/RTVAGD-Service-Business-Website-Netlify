@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage } from "../../../components/common/StyledImage";
+import { HeroImage } from "../../../styles/home/HomeStyled";
 
 const Television = ({ show, left, setHold }) => (
   <ImageWrapper
@@ -14,7 +14,7 @@ const Television = ({ show, left, setHold }) => (
       href={appUrls.naprawa_telewizorow}
       title="Serwis telewizorów w Przemyślu"
     >
-      <StyledImage
+      <HeroImage
         src={imageUrls._telewizor}
         alt="Telewizory"
         width={700}

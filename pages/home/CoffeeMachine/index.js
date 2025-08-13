@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { StyledImage } from "../../../components/common/StyledImage";
+import { HeroImage } from "../../../styles/home/HomeStyled";
 
 const CoffeeMachine = ({ show, setHold }) => (
   <ImageWrapper
@@ -13,7 +13,7 @@ const CoffeeMachine = ({ show, setHold }) => (
       href={appUrls.naprawa_ekspresow}
       title="Naprawa ekspresów do kawy w Przemyślu"
     >
-      <StyledImage
+      <HeroImage
         src={imageUrls._ekspres}
         alt="Ekspresy"
         width={700}
