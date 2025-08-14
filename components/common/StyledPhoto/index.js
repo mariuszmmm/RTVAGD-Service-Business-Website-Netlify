@@ -20,13 +20,5 @@ export const StyledPhoto = styled.div`
 export const Photo = styled.img`
   width: 59vw;
   height: auto;
-  max-width: 700px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
-      max-width: 284px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.big}) {
-      max-width: 520px;
-  }
+  max-width: 520px;
 `;  

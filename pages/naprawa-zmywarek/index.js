@@ -48,7 +48,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
               ${getUrl(520)} 520w,
               ${getUrl(700)} 700w
             `}
-            sizes="(max-width: 480px) 59vw, (max-width: 1440px) 59vw, 700px"
+            sizes="(max-width: 1440px) 30vw, 700px"
             width={700}
             height={700}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
