@@ -49,7 +49,7 @@ export const imageUrls = {
 
   suszarka: `${baseUrl}/images/naprawa-suszarek-2.webp`,
 
-  zmywarka: `${baseUrl}/images/naprawa-zmywarek-700.webp`,
+  zmywarka: `https://res.cloudinary.com/difc0i71u/image/upload/c_limit,w_1024/f_auto/q_auto/v1/Serwis/naprawa-zmywarek?_a=BAVAZGGf0`,
   zmywarka_520: `${baseUrl}/images/naprawa-zmywarek-520.webp`,
   zmywarka_284: `${baseUrl}/images/naprawa-zmywarek-284.webp`,
 
