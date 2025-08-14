@@ -38,7 +38,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
               ${imageUrls.pralka_520} 520w,
               ${imageUrls.pralka} 700w
             `}
-            sizes="(max-width: 1440px) 30vw, 700px"
+            sizes="59vw"
             width={700}
             height={700}
             alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}

@@ -2,21 +2,19 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Photo, StyledPhoto } from '../../components/common/StyledPhoto';
-import { Emoticon } from '../../components/common/Emoticon';
-import { appUrls, cloudinaryImageUrls, imageUrls } from '../../utils/urls';
+import { Photo } from '../../components/common/StyledPhoto';
+import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
-import Image from 'next/image';
 import { HeroText } from '../../styles/home/HomeStyled';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
-import { CldImage, getCldImageUrl } from 'next-cloudinary';
+import { getCldImageUrl } from 'next-cloudinary';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -44,11 +42,15 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
           <Photo
             src={getUrl(700)}
             srcSet={`
+              ${getUrl(142)} 142w,
               ${getUrl(284)} 284w,
+              ${getUrl(426)} 426w,
+              ${getUrl(472)} 472w,
               ${getUrl(520)} 520w,
-              ${getUrl(700)} 700w
+              ${getUrl(708)} 708w,
+              ${getUrl(1024)} 1024w
             `}
-            sizes="(max-width: 1440px) 30vw, 700px"
+            sizes="59vw"
             width={700}
             height={700}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
