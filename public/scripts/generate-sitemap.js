@@ -27,7 +27,7 @@ const routes = {
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: `https://res.cloudinary.com/difc0i71u/image/upload/c_limit,w_700/f_auto/q_auto/v1/Serwis/naprawa-zmywarek?_a=BAVAZGGf0`,
+    image: 'https://res.cloudinary.com/difc0i71u/image/upload/c_limit,w_1024/f_auto/q_auto/v1/Serwis/naprawa-zmywarek?_a=BAVAZGGf0',
     caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
     title: 'Serwis Zmywarek Przemyśl'
   },
