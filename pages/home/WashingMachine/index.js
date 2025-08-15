@@ -27,7 +27,7 @@ const WashingMachine = ({ show, left, setHold }) => {
         title="Serwis pralek w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._pralka}
+          src={getUrl(700)}
           alt="Pralki"
           width={700}
           height={700}
