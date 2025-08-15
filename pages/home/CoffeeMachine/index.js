@@ -26,7 +26,7 @@ const CoffeeMachine = ({ show, setHold }) => {
         title="Naprawa ekspresów do kawy w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._ekspres}
+          src={getUrl(700)}
           alt="Ekspresy"
           width={700}
           height={700}
