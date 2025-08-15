@@ -26,7 +26,7 @@ const Dishwasher = ({ show, setHold }) => {
         title="Serwis zmywarek w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._zmywarka}
+          src={getUrl(700)}
           alt="Zmywarki"
           width={700}
           height={700}
