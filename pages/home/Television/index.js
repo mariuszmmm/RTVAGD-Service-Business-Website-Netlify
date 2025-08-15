@@ -27,7 +27,7 @@ const Television = ({ show, left, setHold }) => {
         title="Serwis telewizorów w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._telewizor}
+          src={getUrl(700)}
           alt="Telewizory"
           width={700}
           height={700}
