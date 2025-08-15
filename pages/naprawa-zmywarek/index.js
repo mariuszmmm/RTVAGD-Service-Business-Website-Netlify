@@ -47,12 +47,13 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
               ${getUrl(426)} 426w,
               ${getUrl(472)} 472w,
               ${getUrl(520)} 520w,
-              ${getUrl(708)} 708w,
-              ${getUrl(1024)} 1024w
+              ${getUrl(760)} 760w,
+              ${getUrl(1024)} 1024w,
+              ${getUrl(1400)} 1400w
             `}
             sizes="59vw"
-            width={700}
-            height={700}
+            width={760}
+            height={760}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"

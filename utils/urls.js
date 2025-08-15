@@ -39,7 +39,7 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: `${baseUrl}/images/serwis-rtv-agd-931.webp`,
+  serwis: `${baseUrl}/images/serwis-rtv-agd.webp`,
   serwis_768: `${baseUrl}/images/serwis-rtv-agd-768.webp`,
   serwis_480: `${baseUrl}/images/serwis-rtv-agd-480.webp`,
 

@@ -2,33 +2,50 @@ import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
 import { HeroImage } from "../../../styles/home/HomeStyled";
+import { getCldImageUrl } from "next-cloudinary";
 
-const Dryer = ({ show, left, setHold }) => (
-  <ImageWrapper
-    $show={show}
-    onMouseEnter={() => setHold(true)}
-    onMouseLeave={() => setHold(false)}
-    $left={left}
-  >
-    <Link
-      href={appUrls.naprawa_suszarek}
-      title="Serwis suszarek w Przemyślu"
+const Dryer = ({ show, left, setHold }) => {
+
+  const getUrl = (size) => getCldImageUrl({
+    src: 'Serwis/suszarka',
+    width: size,
+    height: size,
+    quality: 'auto',
+    fetchFormat: 'auto',
+    dpr: 'auto'
+  });
+
+  return (
+    <ImageWrapper
+      $show={show}
+      onMouseEnter={() => setHold(true)}
+      onMouseLeave={() => setHold(false)}
+      $left={left}
     >
-      <HeroImage
-        src={imageUrls._suszarka}
-        alt="Suszarki"
-        width={700}
-        height={700}
-        srcSet={`
-              ${imageUrls._suszarka_284} 284w,
-              ${imageUrls._suszarka_520} 520w,
-              ${imageUrls._suszarka} 700w
-            `}
-        sizes="(orientation: portrait) 30vw, (max-width: 1730px) 15vw, 600px"
-        loading="lazy"
-      />
-    </Link>
-  </ImageWrapper>
-);
+      <Link
+        href={appUrls.naprawa_suszarek}
+        title="Serwis suszarek w Przemyślu"
+      >
+        <HeroImage
+          src={imageUrls._suszarka}
+          alt="Suszarki"
+          width={700}
+          height={700}
+          srcSet={`
+            ${getUrl(142)} 142w,
+            ${getUrl(284)} 284w,
+            ${getUrl(426)} 426w,
+            ${getUrl(520)} 520w,
+            ${getUrl(700)} 700w,
+            ${getUrl(1024)} 1024w,
+            ${getUrl(1400)} 1400w
+          `}
+          sizes="(orientation: portrait) and (max-width: 520px) 59vw, (orientation: portrait) 520px, 30vw"
+          loading="lazy"
+        />
+      </Link>
+    </ImageWrapper>
+  )
+};
 
 export default Dryer;

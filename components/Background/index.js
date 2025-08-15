@@ -3,10 +3,20 @@ import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { BackgroundImage } from "../common/BackgroundImage";
 import { BackgroundWrapper, Circle, Rotating } from "./styled";
 import { usePathname } from "next/navigation.js";
+import { getCldImageUrl } from "next-cloudinary";
 
 const Background = () => {
   const pathname = usePathname()
   const servicesPath = pathname.includes("naprawa-");
+
+  const getUrl = (size) => getCldImageUrl({
+    src: 'Serwis/serwis-rtv-agd',
+    width: size,
+    height: size,
+    quality: 'auto',
+    fetchFormat: 'auto',
+    dpr: 'auto'
+  });
 
   return (
     <BackgroundWrapper>
@@ -17,11 +27,12 @@ const Background = () => {
           title={dataForMetaTags.home.metaTags.imageTitle}
           alt={dataForMetaTags.home.metaTags.imageAlt}
           srcSet={`
-            ${imageUrls.serwis_480} 480w,
-            ${imageUrls.serwis_768} 768w,
-            ${imageUrls.serwis} 931w
+            ${getUrl(480)} 480w,
+            ${getUrl(768)} 768w,
+            ${getUrl(931)} 931w,
+            ${getUrl(1400)} 1400w
           `}
-          sizes="(max-width: 768px) 50vw, 931px"
+          sizes="100vw"
           width={931}
           height={497}
           loading="eager"
