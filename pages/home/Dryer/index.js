@@ -27,7 +27,7 @@ const Dryer = ({ show, left, setHold }) => {
         title="Serwis suszarek w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._suszarka}
+          src={getUrl(700)}
           alt="Suszarki"
           width={700}
           height={700}
