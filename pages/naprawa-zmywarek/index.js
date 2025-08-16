@@ -40,7 +40,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <Photo
-            src={getUrl(700)}
+            src={getUrl(760)}
             srcSet={`
               ${getUrl(142)} 142w,
               ${getUrl(284)} 284w,
