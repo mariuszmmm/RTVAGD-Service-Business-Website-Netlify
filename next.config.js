@@ -1,3 +1,7 @@
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
@@ -21,4 +25,5 @@ const nextConfig = {
   trailingSlash: true,
 }
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

@@ -11,7 +11,6 @@
     "axios": "^1.7.8",
     "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
-    "eslint-config-react-app": "^7.0.1",
     "next": "^15.0.3",
     "next-cloudinary": "^6.16.0",
     "node-fetch": "^2.7.0",
@@ -28,13 +27,12 @@
     "build": "npm run generate-sitemap && NEXT_PUBLIC_BUILD_DATE=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") next build",
     "serve": "npx serve@latest out",
     "update-data": "node public/scripts/update_data.js",
-    "generate-sitemap": "node public/scripts/generate-sitemap.js"
+    "generate-sitemap": "node public/scripts/generate-sitemap.js",
+    "analyze": "set ANALYZE=true&&next build"
   },
   "eslintConfig": {
     "extends": [
-      "next/core-web-vitals",
-      "react-app",
-      "react-app/jest"
+      "next/core-web-vitals"
     ]
   },
   "browserslist": {
@@ -51,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.4.6",
     "@svgr/webpack": "^8.1.0",
     "eslint-config-next": "^15.0.3",
     "webpack-bundle-analyzer": "^4.10.2"

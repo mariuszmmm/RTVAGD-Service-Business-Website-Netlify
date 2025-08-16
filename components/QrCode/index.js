@@ -3,7 +3,6 @@ import { serwis } from "../../utils/serwis";
 import { Background, ImageWrapper, Text, Wrpper } from "./styled";
 import NextImage from "next/image";
 import { useEffect, useRef, useState } from "react";
-import QRCode from 'qrcode'
 
 export const QrCode = ({ hidden }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,34 +59,52 @@ export const QrCode = ({ hidden }) => {
 
 
   useEffect(() => {
-    const canvas = document.createElement('canvas');
-    const logoUrl = imageUrls.logoGoogle;
-    const qrCodeSize = 256;
-    const logoSize = isOpen ? 100 : 0;
+    let cancelled = false;
+    const buildQr = async () => {
+      const canvas = document.createElement('canvas');
+      const logoUrl = imageUrls.logoGoogle;
+      const qrCodeSize = 256;
+      const logoSize = isOpen ? 100 : 0;
 
-    QRCode.toCanvas(canvas, serwis.url.addTestimonial, {
-      width: qrCodeSize,
-      margin: 2,
-      errorCorrectionLevel: 'high',
-      color: {
-        dark: '#000000',
-        light: '#FFFFFF'
+      try {
+        // Dynamically import qrcode only when needed on client
+        const QRCode = (await import('qrcode')).default;
+
+        QRCode.toCanvas(canvas, serwis.url.addTestimonial, {
+          width: qrCodeSize,
+          margin: 2,
+          errorCorrectionLevel: 'high',
+          color: { dark: '#000000', light: '#FFFFFF' }
+        }, (error) => {
+          if (error) {
+            console.error(error);
+            return;
+          }
+
+          if (cancelled) return;
+
+          const ctx = canvas.getContext('2d');
+          const logo = new Image();
+          logo.src = logoUrl;
+          logo.crossOrigin = 'Anonymous';
+          logo.onload = () => {
+            if (cancelled) return;
+            const logoX = (qrCodeSize - logoSize) / 2;
+            const logoY = (qrCodeSize - logoSize) / 2;
+            ctx.drawImage(logo, logoX, logoY, logoSize, logoSize);
+            setQrCodeSvg(canvas.toDataURL('image/png'));
+          };
+        });
+      } catch (err) {
+        console.error('Failed to load qrcode library', err);
       }
-    }, (error) => {
-      if (error) console.error(error);
+    };
 
-      const ctx = canvas.getContext('2d');
-      const logo = new Image();
-      logo.src = logoUrl;
-      logo.crossOrigin = "Anonymous";
-      logo.onload = () => {
-        const logoX = (qrCodeSize - logoSize) / 2;
-        const logoY = (qrCodeSize - logoSize) / 2;
+    buildQr();
 
-        ctx.drawImage(logo, logoX, logoY, logoSize, logoSize);
-        setQrCodeSvg(canvas.toDataURL('image/png'));
-      };
-    });
+    return () => {
+      cancelled = true;
+    };
   }, [isOpen]);
 
   return (
