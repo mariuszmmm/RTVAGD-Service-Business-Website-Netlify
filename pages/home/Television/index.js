@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../styles/home/HomeStyled";
+import { HeroImage } from "../../../components/common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
 const Television = ({ show, left, setHold }) => {
@@ -27,7 +27,7 @@ const Television = ({ show, left, setHold }) => {
         title="Serwis telewizorów w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._telewizor}
+          src={getUrl(700)}
           alt="Telewizory"
           width={700}
           height={700}

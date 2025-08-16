@@ -12,7 +12,7 @@ import { serwis } from '../../utils/serwis';
 import Image from 'next/image';
 import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { StyledText } from '../../components/common/Text/styled';
-import { HeroText } from '../../styles/home/HomeStyled';
+import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledLink } from '../../components/common/StyledLink';
 import { getData } from '../../utils/getData';
 import { Break } from '../../components/Break';

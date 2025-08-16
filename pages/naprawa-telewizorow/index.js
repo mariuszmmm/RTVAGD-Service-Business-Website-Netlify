@@ -13,7 +13,7 @@ import { StyledPhoto } from '../../components/common/StyledPhoto';
 import { getData } from '../../utils/getData';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
-import { HeroText } from '../../styles/home/HomeStyled';
+import { HeroText } from '../../components/common/Hero/HeroText';
 import { Break } from '../../components/Break';
 
 const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
@@ -127,14 +127,14 @@ const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
           <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
             <li>
+              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            <li>
               <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
             </li>
             <li>
-              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
+              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek do prania</strong></StyledLink>
             </li>
-            {/* <li>
-              <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
-            </li> */}
             {/* <li>
               <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
             </li> */}

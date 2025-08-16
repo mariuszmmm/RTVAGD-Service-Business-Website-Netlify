@@ -2,10 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Text } from '../../components/common/Text';
-import { ServiceOffer } from '../../components/common/ServiceOffer';
 import { appUrls, imageUrls } from '../../utils/urls';
-import { Emoticon } from '../../components/common/Emoticon';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
@@ -17,7 +14,7 @@ import { getData } from '../../utils/getData';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
-import { HeroText } from '../../styles/home/HomeStyled';
+import { HeroText } from '../../components/common/Hero/HeroText';
 
 const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -124,14 +121,14 @@ const CoffeeMachineService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <SubTitle>Sprawdź też inne usługi</SubTitle>
           <StyledText as="ul" $list>
-            {/* <li>
-              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
-            </li> */}
-            <li>
-              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
-            </li>
             <li>
               <StyledLink href={appUrls.naprawa_zmywarek}><strong>Naprawa zmywarek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek do ubrań</strong></StyledLink>
             </li>
             {/* <li>
               <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>

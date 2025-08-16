@@ -36,7 +36,6 @@ const Background = () => {
           width={931}
           height={497}
           loading="eager"
-          fetchpriority="high"
         />
       }
       <Rotating>

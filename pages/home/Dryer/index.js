@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../styles/home/HomeStyled";
+import { HeroImage } from "../../../components/common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
 const Dryer = ({ show, left, setHold }) => {
@@ -27,7 +27,7 @@ const Dryer = ({ show, left, setHold }) => {
         title="Serwis suszarek w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._suszarka}
+          src={getUrl(700)}
           alt="Suszarki"
           width={700}
           height={700}

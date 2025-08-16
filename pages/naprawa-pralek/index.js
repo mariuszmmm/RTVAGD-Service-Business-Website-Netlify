@@ -10,7 +10,7 @@ import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
 import { Photo } from '../../components/common/StyledPhoto';
 import { StyledText } from '../../components/common/Text/styled';
-import { HeroText } from '../../styles/home/HomeStyled';
+import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
@@ -44,7 +44,6 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
             loading="eager"
-            fetchpriority="high"
           />
         </Section>
 

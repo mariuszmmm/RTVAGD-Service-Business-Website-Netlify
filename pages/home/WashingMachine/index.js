@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../styles/home/HomeStyled";
+import { HeroImage } from "../../../components/common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
 const WashingMachine = ({ show, left, setHold }) => {
 
   const getUrl = (size) => getCldImageUrl({
-    src: 'Serwis/ekspres',
+    src: 'Serwis/pralka',
     width: size,
     height: size,
     quality: 'auto',
@@ -27,7 +27,7 @@ const WashingMachine = ({ show, left, setHold }) => {
         title="Serwis pralek w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._pralka}
+          src={getUrl(700)}
           alt="Pralki"
           width={700}
           height={700}

@@ -1,4 +1,7 @@
-import { Hero, HeroHeader, HeroText, HeroTitle, } from '../../styles/home/HomeStyled';
+import { HeroMain } from '../../components/common/Hero/HeroMain';
+import { HeroHeader } from '../../components/common/Hero/HeroHeader';
+import { HeroText } from '../../components/common/Hero/HeroText';
+import { HeroTitle } from '../../components/common/Hero/HeroTitle';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { Section } from '../../components/common/Section';
 import { SubTitle } from '../../components/common/SubTitle';
@@ -91,7 +94,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
         ratingsTotal={ratingsTotal}
         reviews={reviews}
       />
-      <Hero>
+      <HeroMain>
         <HeroHeader >
           <HeroTitle lang="pl">
             Serwis RTV i AGD w Przemyślu
@@ -205,7 +208,7 @@ const Home = ({ rating, ratingsTotal, reviews }) => {
           </HeroText>
         </Section>
 
-      </Hero>
+      </HeroMain>
     </>
   );
 };

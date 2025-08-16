@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
-import { HeroText } from '../../styles/home/HomeStyled';
+import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
@@ -57,7 +57,6 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
-            fetchpriority="high"
           />
         </Section>
 
@@ -137,14 +136,14 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
               <StyledLink href={appUrls.naprawa_pralek}><strong>Naprawa pralek</strong></StyledLink>
             </li> */}
             <li>
-              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek</strong></StyledLink>
+              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
+            </li>
+            <li>
+              <StyledLink href={appUrls.naprawa_suszarek}><strong>Naprawa suszarek do prania</strong></StyledLink>
             </li>
             {/* <li>
               <StyledLink href={appUrls.naprawa_ekspresow}><strong>Naprawa ekspresów do kawy</strong></StyledLink>
             </li> */}
-            <li>
-              <StyledLink href={appUrls.naprawa_telewizorow}><strong>Naprawa telewizorów</strong></StyledLink>
-            </li>
           </StyledText >
         </Section>
 

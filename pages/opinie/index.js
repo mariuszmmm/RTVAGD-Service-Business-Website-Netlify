@@ -8,7 +8,7 @@ import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { useRouter } from "next/router";
 import { getData } from "../../utils/getData";
 import { Section } from "../../components/common/Section";
-import { HeroText } from "../../styles/home/HomeStyled";
+import { HeroText } from "../../components/common/Hero/HeroText";
 
 const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
   const path = useRouter().asPath;

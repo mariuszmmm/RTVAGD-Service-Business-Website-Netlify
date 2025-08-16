@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
 import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../styles/home/HomeStyled";
+import { HeroImage } from "../../../components/common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
 const CoffeeMachine = ({ show, setHold }) => {
@@ -26,7 +26,7 @@ const CoffeeMachine = ({ show, setHold }) => {
         title="Naprawa ekspresów do kawy w Przemyślu"
       >
         <HeroImage
-          src={imageUrls._ekspres}
+          src={getUrl(700)}
           alt="Ekspresy"
           width={700}
           height={700}
