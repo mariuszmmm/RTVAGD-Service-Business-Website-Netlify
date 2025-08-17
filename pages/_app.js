@@ -3,11 +3,10 @@ import theme from '../styles/theme';
 import { Normalize } from 'styled-normalize';
 import GlobalStyle from '../styles/GlobalStyle';
 import React from 'react';
-import dynamic from 'next/dynamic';
-// Load Background on the client to avoid bundling heavy image/third-party helpers into _app
-const Background = dynamic(() => import('../components/Background'), { ssr: false, loading: () => null });
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import dynamic from 'next/dynamic';
+const Background = dynamic(() => import('../components/Background'), { ssr: false, loading: () => null });
 
 function App({ Component, pageProps }) {
   return (

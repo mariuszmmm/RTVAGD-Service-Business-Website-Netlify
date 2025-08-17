@@ -3,7 +3,12 @@ import { StyledLink } from "../../components/common/StyledLink";
 import { SubTitle } from "../../components/common/SubTitle";
 import { Title } from "../../components/common/Title";
 import { serwis } from "../../utils/serwis";
-import ContactForm from "./ContactForm";
+import dynamic from 'next/dynamic';
+
+const ContactForm = dynamic(() => import('./ContactForm'), {
+  ssr: false,
+  loading: () => <p>Ładowanie formularza…</p>,
+});
 import Iframe from "./Iframe";
 import MetaTags from "../../components/common/MetaTags";
 import { useRouter } from "next/router";

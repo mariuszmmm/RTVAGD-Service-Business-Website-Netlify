@@ -6,10 +6,9 @@ import { getCldImageUrl } from "next-cloudinary";
 
 const CoffeeMachine = ({ show, setHold }) => {
 
-  const getUrl = (size) => getCldImageUrl({
+  const getUrl = (width) => getCldImageUrl({
     src: 'Serwis/ekspres',
-    width: size,
-    height: size,
+    width,
     quality: 'auto',
     fetchFormat: 'auto',
     dpr: 'auto'

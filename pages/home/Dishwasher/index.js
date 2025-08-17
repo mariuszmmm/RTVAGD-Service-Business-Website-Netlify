@@ -6,10 +6,9 @@ import { getCldImageUrl } from "next-cloudinary";
 
 const Dishwasher = ({ show, setHold }) => {
 
-  const getUrl = (size) => getCldImageUrl({
+  const getUrl = (width) => getCldImageUrl({
     src: 'Serwis/zmywarka',
-    width: size,
-    height: size,
+    width,
     quality: 'auto',
     fetchFormat: 'auto',
     dpr: 'auto'

@@ -6,10 +6,9 @@ import { getCldImageUrl } from "next-cloudinary";
 
 const WashingMachine = ({ show, left, setHold }) => {
 
-  const getUrl = (size) => getCldImageUrl({
+  const getUrl = (width) => getCldImageUrl({
     src: 'Serwis/pralka',
-    width: size,
-    height: size,
+    width,
     quality: 'auto',
     fetchFormat: 'auto',
     dpr: 'auto'

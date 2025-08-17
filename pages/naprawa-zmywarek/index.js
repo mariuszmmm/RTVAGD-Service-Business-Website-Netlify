@@ -19,10 +19,12 @@ import { getCldImageUrl } from 'next-cloudinary';
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
 
-  const getUrl = (size) => getCldImageUrl({
-    width: size,
-    height: size,
-    src: "Serwis/naprawa-zmywarek"
+  const getUrl = (width) => getCldImageUrl({
+    src: "Serwis/naprawa-zmywarek",
+    width,
+    quality: 'auto',
+    fetchFormat: 'auto',
+    dpr: 'auto'
   });
 
   return (
@@ -41,16 +43,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <Photo
             src={getUrl(760)}
-            srcSet={`
-              ${getUrl(142)} 142w,
-              ${getUrl(284)} 284w,
-              ${getUrl(426)} 426w,
-              ${getUrl(472)} 472w,
-              ${getUrl(520)} 520w,
-              ${getUrl(760)} 760w,
-              ${getUrl(1024)} 1024w,
-              ${getUrl(1400)} 1400w
-            `}
+            srcSet={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
             sizes="59vw"
             width={760}
             height={760}
