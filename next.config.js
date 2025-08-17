@@ -5,6 +5,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  swcMinify: true,
+  experimental: {
+    esmExternals: "loose",
+  },
   images: {
     unoptimized: true,
   },
@@ -19,7 +23,6 @@ const nextConfig = {
         use: ['@svgr/webpack'],
       }
     );
-
     return config;
   },
   trailingSlash: true,
