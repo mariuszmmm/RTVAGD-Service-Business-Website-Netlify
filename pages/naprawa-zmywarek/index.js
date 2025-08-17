@@ -15,6 +15,7 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
 import { getCldImageUrl } from 'next-cloudinary';
+import Image from 'next/image';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
@@ -39,7 +40,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Title>Naprawa Zmywarek w Przemyślu</Title>
 
         <Section>
-          <Photo
+          <Image
             src={getUrl(760)}
             srcSet={`
               ${getUrl(142)} 142w,
@@ -57,6 +58,12 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
+            priority
+            style={{
+              width: '59vw',
+              height: 'auto',
+              maxWidth: '520px',
+            }}
           />
         </Section>
 
