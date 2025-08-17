@@ -59,6 +59,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
             priority
+            fetchpriority="high"
             style={{
               width: '59vw',
               height: 'auto',
