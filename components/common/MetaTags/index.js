@@ -128,7 +128,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imag
       {/* test */}
       {image?.includes('https://res.cloudinary.com') &&
         <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />}
-      {imagesrcset && imagesizes &&
+      {image && imagesrcset && imagesizes &&
         <link
           rel="preload"
           as="image"
