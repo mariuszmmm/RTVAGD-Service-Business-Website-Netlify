@@ -134,7 +134,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imag
           as="image"
           imagesrcset={imagesrcset}
           imagesizes={imagesizes}
-          crossOrigin={image?.includes('https://res.cloudinary.com') ? 'anonymous' : undefined}
+        // crossOrigin={image?.includes('https://res.cloudinary.com') ? 'anonymous' : undefined}
         />}
 
       {/* Twitter Cards */}
