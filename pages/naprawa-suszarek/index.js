@@ -31,7 +31,7 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
       />
 
       <Container>
-        <Title>Naprawa Suszarek w Przemyślu</Title>
+        <Title>Naprawa Suszarek w&nbsp;Przemyślu</Title>
 
         <Section>
           <StyledPhoto

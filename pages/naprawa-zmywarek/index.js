@@ -2,7 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Photo } from '../../components/common/StyledPhoto';
+import { Photo } from '../../components/common/Photo';
 import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -35,10 +35,12 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
+        imagesrcset={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
+        imagesizes="59vw"
       />
 
       <Container>
-        <Title>Naprawa Zmywarek w Przemyślu</Title>
+        <Title>Naprawa Zmywarek w&nbsp;Przemyślu</Title>
 
         <Section>
           <Photo
@@ -50,7 +52,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
-            fetchPriority="high"
+          // fetchpriority="high"
           />
         </Section>
 

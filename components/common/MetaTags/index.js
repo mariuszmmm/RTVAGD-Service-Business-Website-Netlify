@@ -1,13 +1,9 @@
 import Head from 'next/head';
 import { formattedDate } from '../../../utils/formattedDate';
-import { getCurrentDateTimeISOWithOffset } from '../../../utils/formatDateToISOWithOffset';
-import { useState } from 'react';
 import { appUrls } from '../../../utils/urls';
 import { serwis } from '../../../utils/serwis';
-import { localBusiness, siteNavigationElements } from '../../../utils/dataForMetaTags';
-import { eachWeekOfInterval } from 'date-fns';
 
-const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
+const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imagesizes }) => {
   const {
     title,
     ogTitle,
@@ -112,35 +108,43 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews }) => {
   return (
     <Head>
       {/* Basic meta tags */}
-      <title key="title">{title}</title>
-      <meta key="description" name="description" content={description} />
+      {title && <title key="title">{title}</title>}
+      {description && <meta key="description" name="description" content={description} />}
       {keywords && <meta key="keywords" name="keywords" content={keywords} />}
 
       {/* Open Graph */}
-      <meta key="og:title" property="og:title" content={ogTitle || title} />
-      <meta key="og:description" property="og:description" content={ogDescription || description} />
-      <meta key="og:type" property="og:type" content={type} />
-      <meta key="og:url" property="og:url" content={canonical} />
+      {(ogTitle || title) && <meta key="og:title" property="og:title" content={ogTitle || title} />}
+      {(ogDescription || description) && <meta key="og:description" property="og:description" content={ogDescription || description} />}
+      {type && <meta key="og:type" property="og:type" content={type} />}
+      {canonical && <meta key="og:url" property="og:url" content={canonical} />}
       <meta key="og:locale" property="og:locale" content="pl_PL" />
-      <meta key="og:site_name" property="og:site_name" content={siteName} />
-      <meta key="og:image" property="og:image" content={image} />
+      {siteName && <meta key="og:site_name" property="og:site_name" content={siteName} />}
+      {image && <meta key="og:image" property="og:image" content={image} />}
       {imageAlt && <meta key="og:image:alt" property="og:image:alt" content={imageAlt} />}
       {imageWidth && <meta key="og:image:width" property="og:image:width" content={imageWidth} />}
       {imageHeight && <meta key="og:image:height" property="og:image:height" content={imageHeight} />}
       {imageType && <meta key="og:image:type" property="og:image:type" content={imageType} />}
 
       {/* test */}
-      {/* <link rel="image_src" href={image} /> */}
+      {/* {image?.includes("https://res.cloudinary.com") && <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />} */}
+      {imagesrcset && imagesizes && <link
+        rel="preload"
+        as="image"
+        // href={preloadHref}
+        imagesrcset={imagesrcset}
+        imagesizes={imagesizes}
+      />}
+
 
       {/* Twitter Cards */}
       <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
-      <meta key="twitter:title" name="twitter:title" content={twitterTitle || title} />
-      <meta key="twitter:description" name="twitter:description" content={twitterDescription || description} />
-      <meta key="twitter:image" name="twitter:image" content={image} />
+      {(twitterTitle || title) && <meta key="twitter:title" name="twitter:title" content={twitterTitle || title} />}
+      {(twitterDescription || description) && <meta key="twitter:description" name="twitter:description" content={twitterDescription || description} />}
+      {image && <meta key="twitter:image" name="twitter:image" content={image} />}
       {imageAlt && <meta key="twitter:image:alt" name="twitter:image:alt" content={imageAlt} />}
 
       {/* Canonical URL */}
-      <link key="canonical" rel="canonical" href={canonical} />
+      {canonical && <link key="canonical" rel="canonical" href={canonical} />}
 
       {/* <meta property="og:updated_time" content={ogTime} /> */}
       {/* <meta property="og:image:secure_url" content={`${appUrls.home}images/share_1.webp`} /> */}

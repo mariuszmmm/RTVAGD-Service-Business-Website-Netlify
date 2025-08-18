@@ -16,9 +16,3 @@ export const StyledPhoto = styled.div`
     width: clamp(30vw, 59vw, 520px);
   }
 `;
-
-export const Photo = styled.img`
-  width: 59vw;
-  height: auto;
-  max-width: 520px;
-`;  

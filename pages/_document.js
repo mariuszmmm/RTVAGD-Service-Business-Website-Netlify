@@ -34,10 +34,10 @@ export default class MyDocument extends Document {
       <Html lang='pl'>
         <Head>
           {/* Performance optimizations */}
-          <link rel="preconnect" href="https://www.googletagmanager.com" />
-          <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          {/* <link rel="preconnect" href="https://www.googletagmanager.com" /> */}
+          {/* <link rel="dns-prefetch" href="https://www.googletagmanager.com" /> */}
+          {/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
+          {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" /> */}
 
           {/* Favicons - kompletny zestaw */}
           <link rel="icon" type="image/png" href={baseUrl + "/images/favicon-96x96.png"} sizes="96x96" />
@@ -61,7 +61,7 @@ export default class MyDocument extends Document {
           <meta key="Referrer-Policy" httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
 
           {/* GTM Script */}
-{/*
+          {/*
           <Script
             id="gtm-script"
             dangerouslySetInnerHTML={{
@@ -81,7 +81,7 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           {/* GTM NoScript */}
-{/*
+          {/*
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-P52JLLB7"

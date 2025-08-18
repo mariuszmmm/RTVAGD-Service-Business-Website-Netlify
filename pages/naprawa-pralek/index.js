@@ -8,7 +8,7 @@ import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import MetaTags from '../../components/common/MetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
-import { Photo } from '../../components/common/StyledPhoto';
+import { Photo } from '../../components/common/Photo';
 import { StyledText } from '../../components/common/Text/styled';
 import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledLink } from '../../components/common/StyledLink';
@@ -28,7 +28,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews }) => {
         reviews={reviews}
       />
       <Container>
-        <Title>Naprawa Pralek w Przemyślu</Title>
+        <Title>Naprawa Pralek w&nbsp;Przemyślu</Title>
 
         <Section>
           <Photo
