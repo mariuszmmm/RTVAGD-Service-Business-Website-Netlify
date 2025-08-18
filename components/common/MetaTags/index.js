@@ -126,15 +126,16 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imag
       {imageType && <meta key="og:image:type" property="og:image:type" content={imageType} />}
 
       {/* test */}
-      {image?.includes("https://res.cloudinary.com") && <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />}
-      {imagesrcset && imagesizes && <link
-        rel="preload"
-        as="image"
-        // href={preloadHref}
-        imagesrcset={imagesrcset}
-        imagesizes={imagesizes}
-      />}
-
+      {image?.includes('https://res.cloudinary.com') &&
+        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />}
+      {imagesrcset && imagesizes &&
+        <link
+          rel="preload"
+          as="image"
+          imagesrcset={imagesrcset}
+          imagesizes={imagesizes}
+          crossOrigin={image?.includes('https://res.cloudinary.com') ? 'anonymous' : undefined}
+        />}
 
       {/* Twitter Cards */}
       <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
