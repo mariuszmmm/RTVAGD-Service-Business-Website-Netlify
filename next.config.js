@@ -4,7 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig = {
   reactStrictMode: true,
-swcMinify: true,
   output: 'export',
   images: { unoptimized: true },
   compiler: { styledComponents: true },
@@ -19,9 +18,6 @@ swcMinify: true,
     return config;
   },
   trailingSlash: true,
-experimental: {
-    legacyBrowsers: false, 
-  },
 }
 
 // module.exports = nextConfig;
