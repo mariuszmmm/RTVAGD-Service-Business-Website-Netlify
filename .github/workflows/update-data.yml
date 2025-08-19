@@ -39,7 +39,7 @@ jobs:
           echo "NEXT_PUBLIC_GOOGLE_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_API_KEY }}" >> $GITHUB_ENV
 
       # 5. Uruchomienie skryptu Node.js (aktualizacja data.json)
-      - name: Uruchom update_data.js
+      - name: Uruchom update-data.js
         run: npm run update-data
 
       - name: Debug – sprawdź czy plik data.json istnieje
