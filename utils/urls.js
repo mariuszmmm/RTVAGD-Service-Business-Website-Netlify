@@ -39,7 +39,8 @@ export const cloudinaryImageUrls = {
 };
 
 export const imageUrls = {
-  serwis: `https://res.cloudinary.com/difc0i71u/image/upload/v1755230400/Serwis/serwis-rtv-agd.webp`,
+  // serwis: `https://res.cloudinary.com/difc0i71u/image/upload/v1755230400/Serwis/serwis-rtv-agd.webp`,
+  serwis: `${baseUrl}/images/serwis-rtv-agd.webp`,
   serwis_768: `${baseUrl}/images/serwis-rtv-agd-768.webp`,
   serwis_480: `${baseUrl}/images/serwis-rtv-agd-480.webp`,
 
@@ -52,6 +53,7 @@ export const imageUrls = {
   zmywarka: `https://res.cloudinary.com/difc0i71u/image/upload/v1755148164/Serwis/naprawa-zmywarek.webp`,
   zmywarka_520: `${baseUrl}/images/naprawa-zmywarek-520.webp`,
   zmywarka_284: `${baseUrl}/images/naprawa-zmywarek-284.webp`,
+  zmywarka_test: `${baseUrl}/images/naprawa-zmywarek-700.webp`,
 
   telewizor: `${baseUrl}/images/naprawa-telewizorow-2.webp`,
   ekspres: `${baseUrl}/images/naprawa-ekspresow-2.webp`,

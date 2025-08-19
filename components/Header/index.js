@@ -12,11 +12,10 @@ import { useEffect, useState } from "react";
 import SubNav from "./SubNav";
 import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
-// Dynamically load heavy interactive components so they don't land in the initial _app bundle
-const GoogleRating = dynamic(() => import('../GoogleRating').then(mod => mod.GoogleRating), { ssr: false });
 import { Emoticon } from '../common/Emoticon';
 import { appUrls, imageUrls } from '../../utils/urls';
 import Image from "next/image";
+const GoogleRating = dynamic(() => import('../GoogleRating').then(mod => mod.GoogleRating), { ssr: false });
 const QrCode = dynamic(() => import('../QrCode').then(mod => mod.QrCode), { ssr: false });
 
 const Header = ({ rating }) => {

@@ -15,17 +15,28 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
 import { getCldImageUrl } from 'next-cloudinary';
+import Image from 'next/image';
+import { imageUrls } from '../../utils/urls';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
 
-  const getUrl = (width) => getCldImageUrl({
-    src: "Serwis/naprawa-zmywarek",
-    width,
-    quality: 'auto',
-    fetchFormat: 'auto',
-    dpr: 'auto'
-  });
+  // const getUrl = (width) => getCldImageUrl({
+  //   src: "Serwis/naprawa-zmywarek",
+  //   width,
+  //   quality: 'auto',
+  //   fetchFormat: 'auto',
+  //   dpr: 'auto'
+  // });
+
+  // const cloudinaryLoader = ({ src, width }) =>
+  //   getCldImageUrl({
+  //     src, // np. "Serwis/naprawa-zmywarek"
+  //     width,
+  //     quality: 'auto',
+  //     fetchFormat: 'auto',
+  //     dpr: 'auto'
+  //   });
 
   return (
     <>
@@ -35,15 +46,15 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
-        imagesrcset={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
-        imagesizes="59vw"
+      // imagesrcset={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
+      // imagesizes="59vw"
       />
 
       <Container>
         <Title>Naprawa Zmywarek w&nbsp;Przemyślu</Title>
 
         <Section>
-          <Photo
+          {/* <Photo
             src={getUrl(760)}
             srcSet={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
             sizes="59vw"
@@ -53,7 +64,30 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
           // fetchpriority="high"
-          />
+          /> */}
+          <div style={{
+            position: 'relative',
+            width: '59vw',
+            maxWidth: '520px',
+            aspectRatio: '1/1',
+            margin: '0 auto',
+          }}>
+            <Image
+              // loader={cloudinaryLoader}
+              // src="Serwis/naprawa-zmywarek"
+              src={imageUrls.zmywarka_test}
+              alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
+              title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
+              loading="eager"
+              // fetchpriority="high"
+              fill
+              // sizes="(max-width:600px) 90vw, 59vw"
+              sizes="59vw"
+              style={{ objectFit: 'contain' }}
+              quality={100}
+            // loading="lazy"
+            />
+          </div>
         </Section>
 
         <Section>

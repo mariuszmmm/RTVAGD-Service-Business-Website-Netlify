@@ -4,8 +4,30 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
-  images: { unoptimized: true },
+  // output: 'export',
+  images: {
+    // unoptimized: true 
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'naprawaprzemysl.pl',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
   compiler: { styledComponents: true },
   webpack(config) {
     config.module.rules.push(
