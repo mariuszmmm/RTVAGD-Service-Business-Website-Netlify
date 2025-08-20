@@ -6,7 +6,7 @@ const routes = {
   '/': {
     changefreq: 'daily',
     priority: '1.0',
-    image: `https://res.cloudinary.com/difc0i71u/image/upload/v1755230400/Serwis/serwis-rtv-agd.webp`,
+    image: `${BASE_URL}/images/serwis-rtv-agd.webp`,
     caption: 'Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu.',
     title: 'Serwis RTV i AGD Przemyśl'
   },
@@ -27,7 +27,7 @@ const routes = {
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: 'https://res.cloudinary.com/difc0i71u/image/upload/v1755148164/Serwis/naprawa-zmywarek.webp',
+    image: `${BASE_URL}/images/naprawa-zmywarek.png`,
     caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
     title: 'Serwis Zmywarek Przemyśl'
   },

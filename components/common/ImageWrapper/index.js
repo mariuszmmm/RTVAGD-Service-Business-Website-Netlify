@@ -5,7 +5,8 @@ export const ImageWrapper = styled.div`
   top: 400px;
   left: 50%;
   transition: opacity 0.5s ease-in-out;
-  z-index: ${({ $show }) => ($show ? 1 : -1)};
+  /* z-index: ${({ $show }) => ($show ? 1 : -1)}; */
+  z-index: -1;
   pointer-events: ${({ $show }) => ($show ? "auto" : "none")};
   transform: ${({ $left }) => ($left ? "translateX(-150%)" : "translateX(50%)")};
   opacity: ${({ $show }) => ($show ? 1 : 0)};

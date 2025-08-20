@@ -2,7 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Photo } from '../../components/common/Photo';
+import { Photo1 } from '../../components/common/Photo';
 import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -29,14 +29,14 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   //   dpr: 'auto'
   // });
 
-  // const cloudinaryLoader = ({ src, width }) =>
-  //   getCldImageUrl({
-  //     src, // np. "Serwis/naprawa-zmywarek"
-  //     width,
-  //     quality: 'auto',
-  //     fetchFormat: 'auto',
-  //     dpr: 'auto'
-  //   });
+  const cloudinaryLoader = ({ src, width }) =>
+    getCldImageUrl({
+      src, // np. "Serwis/naprawa-zmywarek"
+      width,
+      quality: 'auto',
+      fetchFormat: 'auto',
+      dpr: 'auto'
+    });
 
   return (
     <>
@@ -65,29 +65,21 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             loading="eager"
           // fetchpriority="high"
           /> */}
-          <div style={{
-            position: 'relative',
-            width: '59vw',
-            maxWidth: '520px',
-            aspectRatio: '1/1',
-            margin: '0 auto',
-          }}>
+          <Photo1>
             <Image
               // loader={cloudinaryLoader}
               // src="Serwis/naprawa-zmywarek"
-              src={imageUrls.zmywarka_test}
+              src={imageUrls.zmywarka}
               alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
               title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
               loading="eager"
               // fetchpriority="high"
               fill
-              // sizes="(max-width:600px) 90vw, 59vw"
-              sizes="59vw"
+              sizes="(max-width: 880px) 59vw, 520px"
+              // sizes="59vw"
               style={{ objectFit: 'contain' }}
-              quality={100}
-            // loading="lazy"
             />
-          </div>
+          </Photo1>
         </Section>
 
         <Section>

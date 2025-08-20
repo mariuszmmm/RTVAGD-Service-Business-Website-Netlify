@@ -125,6 +125,9 @@ export const QrCode = ({ hidden }) => {
                 alt="QrCode"
                 fill
                 onLoad={() => setLoaded(true)}
+                // sizes="42px"
+                sizes="(max-width: 880px) 42px, 900px"
+                style={{ objectFit: 'contain' }}
               />
             </ImageWrapper>
             <Text $delay={delay}>Zeskanuj kod QR i wystaw opinię</Text>

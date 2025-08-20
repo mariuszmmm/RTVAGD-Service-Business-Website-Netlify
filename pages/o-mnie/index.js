@@ -24,7 +24,7 @@ const About = ({ rating, ratingsTotal }) => {
       />
       <Container >
         <Section>
-          <Title>O Serwisie RTV i AGD w Przemyślu</Title>
+          <Title>O Serwisie RTV i AGD w&nbsp;Przemyślu</Title>
           <div>
             <Text>
               Witaj w Serwisie RTV i AGD w Przemyślu! Jestem {serwis.person} – specjalista z wieloletnim doświadczeniem w branży. Moja misja to skuteczna i rzetelna naprawa pralek, suszarek, zmywarek, telewizorów oraz ekspresów do kawy, zawsze z myślą o pełnym zadowoleniu klienta.
