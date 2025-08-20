@@ -36,7 +36,7 @@ const Background = () => {
           width: "100vw",
           // height: "auto",
           aspectRatio: "931/497",
-          // opacity: 0.0001,
+          opacity: 0.0001,
           marginTop: "20px"
         }}>
           <Image
