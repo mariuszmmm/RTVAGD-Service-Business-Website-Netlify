@@ -2,7 +2,7 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Photo1 } from '../../components/common/Photo';
+import { Photo, Photo1 } from '../../components/common/Photo';
 import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { useRouter } from 'next/router';
@@ -21,22 +21,18 @@ import { imageUrls } from '../../utils/urls';
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = useRouter().asPath;
 
-  // const getUrl = (width) => getCldImageUrl({
-  //   src: "Serwis/naprawa-zmywarek",
-  //   width,
-  //   quality: 'auto',
-  //   fetchFormat: 'auto',
-  //   dpr: 'auto'
-  // });
+  const getImageUrl = ({ src, width }) => getCldImageUrl({
+    src,
+    width,
+    // crop: 'limit',
+    quality: 'auto',
+    fetchFormat: 'auto',
+    // przytnij do wysokości zawartości
+  });
 
-  const cloudinaryLoader = ({ src, width }) =>
-    getCldImageUrl({
-      src, // np. "Serwis/naprawa-zmywarek"
-      width,
-      quality: 'auto',
-      fetchFormat: 'auto',
-      dpr: 'auto'
-    });
+  const src = "Serwis/naprawa-zmywarek";
+  const widths = [142, 284, 426, 520, 780, 1024];
+  const photoSrcSet = widths.map(width => `${getImageUrl({ src, width })} ${width}w`).join(', ');
 
   return (
     <>
@@ -46,40 +42,24 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
-      // imagesrcset={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
-      // imagesizes="59vw"
+      // imagesrcset={photoSrcSet}
+      // imagesizes="(max-width: 880px) 59vw, 520px"
       />
 
       <Container>
         <Title>Naprawa Zmywarek w&nbsp;Przemyślu</Title>
 
         <Section>
-          {/* <Photo
-            src={getUrl(760)}
-            srcSet={`${getUrl(142)} 142w, ${getUrl(284)} 284w, ${getUrl(426)} 426w, ${getUrl(472)} 472w, ${getUrl(520)} 520w, ${getUrl(760)} 760w`}
-            sizes="59vw"
-            width={760}
-            height={760}
+          <Photo
+            src={getImageUrl({ src, width: 520 })}
+            srcSet={photoSrcSet}
+            sizes="(max-width: 880px) 59vw, 520px"
+            width={520}
+            height={520}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
-          // fetchpriority="high"
-          /> */}
-          <Photo1>
-            <Image
-              // loader={cloudinaryLoader}
-              // src="Serwis/naprawa-zmywarek"
-              src={imageUrls.zmywarka}
-              alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
-              title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
-              loading="eager"
-              // fetchpriority="high"
-              fill
-              sizes="(max-width: 880px) 59vw, 520px"
-              // sizes="59vw"
-              style={{ objectFit: 'contain' }}
-            />
-          </Photo1>
+          />
         </Section>
 
         <Section>

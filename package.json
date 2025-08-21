@@ -48,7 +48,6 @@
     ]
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^15.4.6",
     "@svgr/webpack": "^8.1.0",
     "eslint-config-next": "^15.0.3",
     "webpack-bundle-analyzer": "^4.10.2"

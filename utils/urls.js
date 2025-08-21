@@ -50,10 +50,10 @@ export const imageUrls = {
 
   suszarka: `${baseUrl}/images/naprawa-suszarek-2.webp`,
 
-  // zmywarka: `https://res.cloudinary.com/difc0i71u/image/upload/v1755148164/Serwis/naprawa-zmywarek.webp`,
+  zmywarka: `https://res.cloudinary.com/difc0i71u/image/upload/v1755748024/Serwis/naprawa-zmywarek.png`,
   zmywarka_520: `${baseUrl}/images/naprawa-zmywarek-520.webp`,
   zmywarka_284: `${baseUrl}/images/naprawa-zmywarek-284.webp`,
-  zmywarka: `${baseUrl}/images/naprawa-zmywarek.png`,
+  // zmywarka: `${baseUrl}/images/naprawa-zmywarek.png`,
 
   telewizor: `${baseUrl}/images/naprawa-telewizorow-2.webp`,
   ekspres: `${baseUrl}/images/naprawa-ekspresow-2.webp`,
