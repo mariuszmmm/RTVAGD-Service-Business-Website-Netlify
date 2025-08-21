@@ -4,7 +4,6 @@ import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
 import { appUrls, imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
-import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
@@ -17,7 +16,7 @@ import { HeroText } from '../../components/common/Hero/HeroText';
 import { Break } from '../../components/Break';
 
 const TelevisionService = ({ rating, ratingsTotal, reviews }) => {
-  const path = useRouter().asPath;
+  const path = appUrls.naprawa_telewizorow;
 
   return (
     <>

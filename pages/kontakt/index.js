@@ -6,14 +6,13 @@ import { Title } from "../../components/common/Title";
 import { serwis } from "../../utils/serwis";
 import Iframe from "./Iframe";
 import MetaTags from "../../components/common/MetaTags";
-import { useRouter } from "next/router";
 import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { ImageContainer } from "../../styles/kontakt/KontaktStyled";
 import { getData } from "../../utils/getData";
 import { appUrls } from "../../utils/urls";
 
 const Contact = ({ rating, ratingsTotal }) => {
-  const path = useRouter().asPath;
+  const path = appUrls.kontakt;
 
   return (
     <>

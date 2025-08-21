@@ -5,14 +5,13 @@ import { Text } from '../../components/common/Text';
 import { Team } from '../../components/common/TeamImage';
 import { imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
-import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import Image from 'next/image';
 import { getData } from '../../utils/getData';
 import { serwis } from '../../utils/serwis';
 
 const About = ({ rating, ratingsTotal }) => {
-  const path = useRouter().asPath;
+  const path = appUrls.o_mnie;
 
   return (
     <>

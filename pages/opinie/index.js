@@ -5,13 +5,12 @@ import { serwis } from "../../utils/serwis";
 import { ButtonLink } from "../../components/common/ButtonLink";
 import MetaTags from "../../components/common/MetaTags";
 import { dataForMetaTags } from "../../utils/dataForMetaTags";
-import { useRouter } from "next/router";
 import { getData } from "../../utils/getData";
 import { Section } from "../../components/common/Section";
 import { HeroText } from "../../components/common/Hero/HeroText";
 
 const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
-  const path = useRouter().asPath;
+  const path = appUrls.opinie;
 
   return (
     <>

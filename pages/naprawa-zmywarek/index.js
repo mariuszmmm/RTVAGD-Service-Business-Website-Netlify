@@ -2,10 +2,9 @@ import { Container } from '../../components/common/Container';
 import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
-import { Photo, Photo1 } from '../../components/common/Photo';
+import { Photo } from '../../components/common/Photo';
 import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
-import { useRouter } from 'next/router';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
@@ -15,19 +14,16 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
 import { getCldImageUrl } from 'next-cloudinary';
-import Image from 'next/image';
-import { imageUrls } from '../../utils/urls';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
-   const path = appUrls.naprawa_zmywarek; 
+  const path = appUrls.naprawa_zmywarek;
 
   const getImageUrl = ({ src, width }) => getCldImageUrl({
     src,
     width,
-    // crop: 'limit',
+    crop: 'limit',
     quality: 'auto',
     fetchFormat: 'auto',
-    // przytnij do wysokości zawartości
   });
 
   const src = "Serwis/naprawa-zmywarek";
@@ -59,6 +55,8 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
+            $fetchPriority="high"
+
           />
         </Section>
 
