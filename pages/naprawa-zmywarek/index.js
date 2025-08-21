@@ -19,7 +19,7 @@ import Image from 'next/image';
 import { imageUrls } from '../../utils/urls';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
-  const path = useRouter().asPath;
+   const path = appUrls.naprawa_zmywarek; 
 
   const getImageUrl = ({ src, width }) => getCldImageUrl({
     src,
