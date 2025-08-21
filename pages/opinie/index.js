@@ -8,6 +8,7 @@ import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { getData } from "../../utils/getData";
 import { Section } from "../../components/common/Section";
 import { HeroText } from "../../components/common/Hero/HeroText";
+import { appUrls } from "../../utils/urls";
 
 const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
   const path = appUrls.opinie;

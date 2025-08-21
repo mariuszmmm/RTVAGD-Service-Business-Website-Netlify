@@ -3,7 +3,7 @@ import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { Text } from '../../components/common/Text';
 import { Team } from '../../components/common/TeamImage';
-import { imageUrls } from '../../utils/urls';
+import { appUrls, imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import Image from 'next/image';
