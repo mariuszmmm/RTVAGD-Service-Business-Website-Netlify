@@ -24,6 +24,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
     crop: 'limit',
     quality: 'auto',
     fetchFormat: 'auto',
+    version: 'v1755748024',
   });
 
   const src = "Serwis/naprawa-zmywarek";
@@ -38,8 +39,9 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
-      // imagesrcset={photoSrcSet}
-      // imagesizes="(max-width: 880px) 59vw, 520px"
+        href={getImageUrl({ src, width: 520 })}
+        imagesrcset={photoSrcSet}
+        imagesizes="(max-width: 880px) 59vw, 520px"
       />
 
       <Container>
@@ -55,8 +57,6 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
-            $fetchPriority="high"
-
           />
         </Section>
 

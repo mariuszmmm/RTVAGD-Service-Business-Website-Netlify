@@ -3,7 +3,7 @@ import { formattedDate } from '../../../utils/formattedDate';
 import { appUrls } from '../../../utils/urls';
 import { serwis } from '../../../utils/serwis';
 
-const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imagesizes }) => {
+const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imagesizes, href }) => {
   const {
     title,
     ogTitle,
@@ -128,10 +128,11 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imagesrcset, imag
       {/* test */}
       {image?.includes('https://res.cloudinary.com') &&
         <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />}
-      {image && imagesrcset && imagesizes &&
+      {image && imagesrcset && imagesizes && href &&
         <link
           rel="preload"
           as="image"
+          href={href}
           imagesrcset={imagesrcset}
           imagesizes={imagesizes}
         // crossOrigin={image?.includes('https://res.cloudinary.com') ? 'anonymous' : undefined}
