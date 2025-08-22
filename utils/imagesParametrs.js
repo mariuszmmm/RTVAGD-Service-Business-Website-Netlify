@@ -16,7 +16,7 @@ const getSrcSet = ({ version }) => widths.map(width => `${getImageUrl({ src, wid
 
 export const imagesParameters = {
   zmywarka: {
-    url: getImageUrl({ src: "Serwis/naprawa-zmywarek", width: 1024, height: 1024, version: 'v1755748024_' }),
+    url: getImageUrl({ src: "Serwis/naprawa-zmywarek", width: 1024, height: 1024, version: 'v1755748024' }),
     photoSrcSet: getSrcSet({ version: 'v1755748024' }),
     width: 1024,
     height: 1024,
