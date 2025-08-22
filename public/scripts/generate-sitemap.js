@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { imageUrls } = require('../../utils/urls');
+const { imagesParameters } = require('../../utils/imagesParametrs');
 
 const BASE_URL = 'https://naprawaprzemysl.pl';
 const routes = {
@@ -28,7 +28,7 @@ const routes = {
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: "imagesParameters.zmywarka.url",
+    image: imagesParameters.zmywarka.url,
     caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
     title: 'Serwis Zmywarek Przemyśl'
   },
