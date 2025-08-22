@@ -3,7 +3,7 @@ import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
 import { Photo } from '../../components/common/Photo';
-import { appUrls, imageUrls } from '../../utils/urls';
+import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
@@ -13,6 +13,7 @@ import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
+import { imagesParameters } from '../../utils/imagesParametrs';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = appUrls.naprawa_zmywarek;
@@ -51,11 +52,11 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <Photo
-            src={imageUrls.zmywarka.url}
-            srcSet={imageUrls.zmywarka.photoSrcSet}
+            src={imagesParameters.zmywarka.url}
+            srcSet={imagesParameters.zmywarka.photoSrcSet}
             sizes="(max-width: 880px) 59vw, 520px"
-            width={imageUrls.zmywarka.width}
-            height={imageUrls.zmywarka.height}
+            width={imagesParameters.zmywarka.width}
+            height={imagesParameters.zmywarka.height}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"

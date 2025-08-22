@@ -1,3 +1,4 @@
+import { imagesParameters } from "./imagesParametrs";
 import { serwis } from "./serwis";
 import { appUrls, imageUrls } from './urls';
 
@@ -784,7 +785,7 @@ export const dataForMetaTags = {
       ogDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       twitterDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       imageType: "image/webp",
-      image: imageUrls.zmywarka.url,
+      image: imagesParameters.zmywarka.url,
       imageAlt: "Technik serwisu AGD naprawiający zmywarkę w Przemyślu",
       imageTitle: "Serwis Zmywarek Przemyśl",
       imageWidth: 1024,
@@ -885,9 +886,9 @@ export const dataForMetaTags = {
       imageObject: {
         "@type": "ImageObject",
         "@id": appUrls.naprawa_zmywarek + "#primaryimage",
-        "url": imageUrls.zmywarka.url,
+        "url": imagesParameters.zmywarka.url,
         "inLanguage": "pl-PL",
-        "contentUrl": imageUrls.zmywarka.url,
+        "contentUrl": imagesParameters.zmywarka.url,
         "width": 1024,
         "height": 1024,
         "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
@@ -905,7 +906,7 @@ export const dataForMetaTags = {
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-        "thumbnailUrl": imageUrls.zmywarka.url,
+        "thumbnailUrl": imagesParameters.zmywarka.url,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",

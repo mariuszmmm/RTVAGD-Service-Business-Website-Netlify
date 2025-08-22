@@ -1,4 +1,3 @@
-import { getCldImageUrl } from "next-cloudinary";
 
 export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 // export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://naprawaprzemysl.pl";
@@ -40,19 +39,7 @@ export const cloudinaryImageUrls = {
   mapa_auto: "https://res.cloudinary.com/difc0i71u/image/upload/f_auto,q_auto/v1/Serwis/mapa",
 };
 
-const getImageUrl = ({ src, width, height, version }) => getCldImageUrl({
-  src,
-  width,
-  height,
-  crop: 'limit',
-  quality: 'auto',
-  fetchFormat: 'auto',
-  version,
-}).split('?')[0];
 
-const src = "Serwis/naprawa-zmywarek";
-const widths = [190, 284, 380, 425, 480, 520, 850, 960, 1040, 1560];
-const getSrcSet = ({ version }) => widths.map(width => `${getImageUrl({ src, width, height: width, version })} ${width}w`).join(', ');
 
 
 
@@ -69,12 +56,7 @@ export const imageUrls = {
   suszarka: `${baseUrl}/images/naprawa-suszarek-2.webp`,
 
   // zmywarka: `https://res.cloudinary.com/difc0i71u/image/upload/v1755748024/Serwis/naprawa-zmywarek.png`,
-  zmywarka: {
-    url: getImageUrl({ src: "Serwis/naprawa-zmywarek", width: 1024, height: 1024, version: 'v1755748024_' }),
-    photoSrcSet: getSrcSet({ version: 'v1755748024' }),
-    width: 1024,
-    height: 1024,
-  },
+
 
   zmywarka_520: `${baseUrl}/images/naprawa-zmywarek-520.webp`,
   zmywarka_284: `${baseUrl}/images/naprawa-zmywarek-284.webp`,
