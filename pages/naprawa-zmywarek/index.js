@@ -3,7 +3,7 @@ import { Section } from '../../components/common/Section';
 import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
 import { Photo } from '../../components/common/Photo';
-import { appUrls } from '../../utils/urls';
+import { appUrls, imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
@@ -13,23 +13,25 @@ import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
-import { getCldImageUrl } from 'next-cloudinary';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = appUrls.naprawa_zmywarek;
 
-  const getImageUrl = ({ src, width }) => getCldImageUrl({
-    src,
-    width,
-    crop: 'limit',
-    quality: 'auto',
-    fetchFormat: 'auto',
-    version: 'v1755748024',
-  });
+  // const getImageUrl = ({ src, width, height }) => getCldImageUrl({
+  //   src,
+  //   width,
+  //   height,
+  //   crop: 'limit',
+  //   quality: 'auto',
+  //   fetchFormat: 'auto',
+  //   version: 'v1755748024',
+  // }).split('?')[0];
 
-  const src = "Serwis/naprawa-zmywarek";
-  const widths = [142, 284, 426, 520, 780, 1024];
-  const photoSrcSet = widths.map(width => `${getImageUrl({ src, width })} ${width}w`).join(', ');
+  // const src = "Serwis/naprawa-zmywarek";
+  // const widths = [190, 284, 380, 425, 480, 520, 850, 960, 1040, 1560];
+  // const photoSrcSet = widths.map(width => `${getImageUrl({ src, width, height: width })} ${width}w`).join(', ');
+
+  // console.log("getImageUrl({ src, width: 520 })", getImageUrl({ src, width: 520 }))
 
   return (
     <>
@@ -39,9 +41,9 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
-        href={getImageUrl({ src, width: 520 })}
-        imagesrcset={photoSrcSet}
-        imagesizes="(max-width: 880px) 59vw, 520px"
+      // href={getImageUrl({ src, width: 520, height: 520 })}
+      // imageSrcSet={photoSrcSet}
+      // imageSizes="(max-width: 880px) 59vw, 520px"
       />
 
       <Container>
@@ -49,17 +51,16 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <Photo
-            src={getImageUrl({ src, width: 520 })}
-            srcSet={photoSrcSet}
+            src={imageUrls.zmywarka.url}
+            srcSet={imageUrls.zmywarka.photoSrcSet}
             sizes="(max-width: 880px) 59vw, 520px"
-            width={520}
-            height={520}
+            width={imageUrls.zmywarka.width}
+            height={imageUrls.zmywarka.height}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
           />
         </Section>
-
         <Section>
           <SubTitle>Naprawa Zmywarek Przemyśl – Dokładna Diagnostyka i Usuwanie Usterek</SubTitle>
           <StyledText>
