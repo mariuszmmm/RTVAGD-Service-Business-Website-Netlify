@@ -24,7 +24,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
     crop: 'limit',
     quality: 'auto',
     fetchFormat: 'auto',
-    version: 'v1755748024',
+    version: 'v1755867034',
   });
 
   const src = "Serwis/naprawa-zmywarek";
