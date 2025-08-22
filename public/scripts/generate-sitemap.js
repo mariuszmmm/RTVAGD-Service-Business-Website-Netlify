@@ -28,7 +28,7 @@ const routes = {
   '/naprawa-zmywarek/': {
     changefreq: 'daily',
     priority: '0.9',
-    image: imagesParameters.zmywarka.url,
+    image: "https://res.cloudinary.com/difc0i71u/image/upload/c_limit,w_1024/f_auto/q_auto/v1755748024/Serwis/naprawa-zmywarek",
     caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
     title: 'Serwis Zmywarek Przemyśl'
   },
