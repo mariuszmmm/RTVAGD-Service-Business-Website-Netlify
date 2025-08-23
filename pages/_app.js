@@ -6,15 +6,20 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic';
-const Background = dynamic(() => import('../components/Background'), { ssr: false, loading: () => null });
+import Background from '../components/Background';
+// const Background = dynamic(() => import('../components/Background'), { ssr: false, loading: () => null });
 
-function App({ Component, pageProps }) {
+function App({ Component, pageProps, dataForMetaTags }) {
+
+  // console.log("dataForMetaTags in Background", dataForMetaTags)
+
+  // console.log("dataForMetaTags in _app.js", dataForMetaTags)
   return (
     <React.StrictMode>
       <ThemeProvider theme={theme}>
         <Normalize />
         <GlobalStyle />
-        <Background />
+        <Background dataForMetaTags={pageProps.dataForMetaTags} />
         <Header {...pageProps} />
         <Component {...pageProps} />
         <Footer />

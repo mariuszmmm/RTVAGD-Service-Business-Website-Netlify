@@ -152,7 +152,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) =
 // };
 export const getStaticProps = async () => {
   const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParametersmeters();
+  const imageParameters = await getImageParameters();
   const data = await getData();
   // console.log("dataForMetaTags", { dataForMetaTags })
 

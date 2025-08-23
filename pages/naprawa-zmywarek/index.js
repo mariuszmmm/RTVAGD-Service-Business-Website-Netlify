@@ -38,6 +38,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dat
 
   // console.log("getImageUrl({ src, width: 520 })", getImageUrl({ src, width: 520 }))
 
+  console.log("dataForMetaTags", dataForMetaTags)
   return (
     <>
       <MetaTags

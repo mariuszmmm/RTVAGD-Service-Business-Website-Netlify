@@ -15,7 +15,7 @@ export const getStaticProps = async () => {
   const dataForMetaTags = await getDataForMetaTags();
   const imageParameters = await getImageParameters();
   const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  // console.log("dataForMetaTags in Background", dataForMetaTags)
 
   return {
     props: {

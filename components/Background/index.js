@@ -1,12 +1,12 @@
 import { imageUrls } from "../../utils/urls";
-import { dataForMetaTags } from "../../utils/dataForMetaTags";
+// import { dataForMetaTags } from "../../utils/dataForMetaTags";
 import { BackgroundImage } from "../common/BackgroundImage";
 import { BackgroundWrapper, Circle, Rotating } from "./styled";
 import { usePathname } from "next/navigation";
 import { getCldImageUrl } from "next-cloudinary";
 import Image from "next/image";
 
-const Background = () => {
+const Background = ({ dataForMetaTags }) => {
   const pathname = usePathname() || "";
   const isServicesPath = pathname.includes("naprawa-");
 
@@ -17,6 +17,9 @@ const Background = () => {
     fetchFormat: 'auto',
     dpr: 'auto'
   });
+
+  // console.log("dataForMetaTags in Background", dataForMetaTags)
+  // console.log("dataForMetaTags.home", dataForMetaTags.home)
 
   return (
     <BackgroundWrapper>
