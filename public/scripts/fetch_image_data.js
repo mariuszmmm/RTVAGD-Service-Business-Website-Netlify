@@ -15,7 +15,7 @@ const imagePublicIds = [
   // Dodaj tutaj public_id innych obrazów, których potrzebujesz
 ];
 
-async function fetchVersions() {
+async function fetchImageData() {
   console.log("Pobieranie wersji obrazów z Cloudinary...");
   try {
     const imageDetails = await Promise.all(
@@ -25,7 +25,7 @@ async function fetchVersions() {
     const imageParameters = {};
     imageDetails.forEach(detail => {
       // Użyjemy ostatniej części public_id jako klucza
-      const key = detail.public_id.split('/').pop();
+      const key = detail.public_id.split('/').pop().replace("-", "_");
       imageParameters[key] = {
         public_id: detail.public_id,
         version: `v${detail.version}`,
@@ -43,4 +43,4 @@ async function fetchVersions() {
   }
 }
 
-fetchVersions();
+fetchImageData();

@@ -1,41 +1,46 @@
 import axios from 'axios';
 import { imageDataUrl } from "./urls";
-import { serwis } from './serwis';
+import { getCldImageUrl } from "next-cloudinary";
 
 export const getImageData = async () => {
   try {
-    const response = await axios(imageDataUrl)
+    const response = await axios(imageDataUrl).data
+    const data = response.data || {};
 
-    console.log("response", response)
+    console.log("DATA !!!!!!", data)
 
 
-    // const reviews = response.data?.reviews || [];
-    // const ratingsTotal = response.data?.user_ratings_total || null;
-    // const rating = response.data?.rating || null;
 
-    // if (!Array.isArray(reviews) || !ratingsTotal || !rating) {
-    //   throw new Error('Invalid response from Google Places API');
-    // };
+    const getImageUrl = ({ src, width, version }) => getCldImageUrl({
+      src,
+      width,
+      crop: 'limit',
+      quality: 'auto',
+      fetchFormat: 'auto',
+      version,
+    }).split('?')[0];
 
-    // let selectedReviews = [...reviews];
-    // if (reviews.length < 5) {
-    //   let reserveReviews = serwis.reviews.filter((item) =>
-    //     !selectedReviews.find((review) => review.text === item.text));
-    //   let reserveReviewsIndex = 0;
+    const widths = [190, 284, 380, 425, 480, 520, 568, 760, 850, 1024];
+    const getSrcSet = ({ src, version }) => widths.map(width => `${getImageUrl({ src, width, version })} ${width}w`).join(', ');
 
-    //   while (selectedReviews.length < 5 && reserveReviewsIndex < reserveReviews.length) {
-    //     selectedReviews = [...selectedReviews, reserveReviews[reserveReviewsIndex]];
-    //     reserveReviewsIndex++;
-    //   };
-    // }
+    // const zmywarkaData = imageData['naprawa-zmywarek'];
+
+    const imageParameters = {
+      zmywarka: {
+        url: "getImageUrl({ src: data.naprawa_zmywarek.public_id, width: data.naprawa_zmywarek.width, version: data.naprawa_zmywarek.version })",
+        srcSet: "getSrcSet({ src: data.naprawa_zmywarek.public_id, version: data.naprawa_zmywarek.version })",
+        width: "data.naprawa_zmywarek.width",
+        height: "data.naprawa_zmywarek.height,"
+      },
+    };
 
     return {
-      response
+      imageParameters: imageParameters || null
     };
   } catch (error) {
-    console.error('Error fetching ImagData , error');
+    console.error('Error fetching ImageData', error);
     return {
-      response: null
+      imageParameters: null
     };
   }
 };

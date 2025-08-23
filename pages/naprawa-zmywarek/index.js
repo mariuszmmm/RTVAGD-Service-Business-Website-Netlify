@@ -13,13 +13,13 @@ import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
-import { imageParameters } from '../../utils/imagesParametrs';
+// import { imageParameters } from '../../utils/imagesParametrs';
 import { getImageData } from '../../utils/getImageData';
 
-const DishwasherService = ({ rating, ratingsTotal, reviews, imageData }) => {
+const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) => {
   const path = appUrls.naprawa_zmywarek;
 
-  console.log("imageData", imageData)
+  console.log("imageParameters", imageParameters)
 
   // const getImageUrl = ({ src, width, height }) => getCldImageUrl({
   //   src,
@@ -158,10 +158,10 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageData }) => {
 };
 
 export const getStaticProps = async () => {
-  const imageData = await getImageData();
+  const imageParameters = await getImageData();
   const data = await getData();
 
-  return { props: { ...data, imageData } };
+  return { props: { ...data, ...imageParameters } };
 };
 
 export default DishwasherService;
