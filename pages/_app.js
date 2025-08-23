@@ -20,9 +20,8 @@ function App({ Component, pageProps }) {
         <Normalize />
         <GlobalStyle />
         <Background dataForMetaTags={pageProps.dataForMetaTags || {}} />
-        {/* <Header {...pageProps} /> */}
-        <Header dataForMetaTags={pageProps.dataForMetaTags || {}} />
-
+        <Header {...pageProps} />
+        {/* <Header dataForMetaTags={pageProps.dataForMetaTags || {}} /> */}
         <Component {...pageProps} />
         <Footer />
       </ThemeProvider>
