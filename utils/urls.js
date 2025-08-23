@@ -131,4 +131,5 @@ export const appUrls = {
 //   naprawa_telewizorow: "/naprawa-telewizorow/",
 // };
 
-export const dataUrl = baseUrl ? `${baseUrl}/data.json` : "http://localhost:3000/data.json";
+// export const dataUrl = baseUrl ? `${baseUrl}/data.json` : "http://localhost:3000/data.json";
+export const dataUrl = "https://naprawaprzemysl.pl/data.json";

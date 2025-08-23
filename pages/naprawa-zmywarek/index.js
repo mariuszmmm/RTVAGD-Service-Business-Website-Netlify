@@ -53,7 +53,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Section>
           <Photo
             src={imagesParameters.zmywarka.url}
-            srcSet={imagesParameters.zmywarka.photoSrcSet}
+            srcSet={imagesParameters.zmywarka.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
             width={imagesParameters.zmywarka.width}
             height={imagesParameters.zmywarka.height}
