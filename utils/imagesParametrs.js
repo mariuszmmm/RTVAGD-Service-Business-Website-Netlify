@@ -1,16 +1,16 @@
 import { getCldImageUrl } from "next-cloudinary";
 import imageData from "../public/image-data.json" with { type: "json" };
-import { imageDataUrl } from "./urls";
+import { imageDataUrl } from "./urls.js";
 import axios from "axios";
 
 
 export const getImageParameters = async () => {
   try {
     const response = await axios(imageDataUrl)
-    console.log("TEST_", imageDataUrl)
+    // console.log("TEST_", imageDataUrl)
 
     const imageData = response.data;
-    console.log("imageData________________", imageData);
+    // console.log("imageData________________", imageData);
     const getImageUrl = ({ src, width, version }) => getCldImageUrl({
       src,
       width,
@@ -23,7 +23,7 @@ export const getImageParameters = async () => {
     const widths = [190, 284, 380, 425, 480, 520, 568, 760, 850, 1024];
     const getSrcSet = ({ src, version }) => widths.map(width => `${getImageUrl({ src, width, version })} ${width}w`).join(', ');
 
-    console.log(imageData)
+    // console.log(imageData)
     const naprawa_zmywarek = imageData['naprawa_zmywarek'];
 
     // export const imageParameters = {

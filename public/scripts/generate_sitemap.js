@@ -2,9 +2,13 @@ const fs = require('fs');
 require('dotenv').config({ path: '.env' });
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const path = require('path');
-const { imageParameters } = require("../../utils/imagesParametrs.js");
+// const { imageParameters } = require("../../utils/imagesParametrs.js");
+
 
 const generateSitemap = async () => {
+  const { getImageParameters } = await import("../../utils/imagesParametrs.js");
+  const imageParameters = await getImageParameters();
+
   const routes = {
     '/': {
       changefreq: 'daily',
