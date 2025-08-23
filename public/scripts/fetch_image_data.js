@@ -16,7 +16,7 @@ const imagePublicIds = [
 ];
 
 async function fetchImageData() {
-  console.log("Pobieranie wersji obrazów z Cloudinary...");
+  console.log("Pobieranie danych obrazów z Cloudinary...");
   try {
     const imageDetails = await Promise.all(
       imagePublicIds.map(id => cloudinary.api.resource(id))
@@ -24,7 +24,6 @@ async function fetchImageData() {
 
     const imageParameters = {};
     imageDetails.forEach(detail => {
-      // Użyjemy ostatniej części public_id jako klucza
       const key = detail.public_id.split('/').pop().replace("-", "_");
       imageParameters[key] = {
         public_id: detail.public_id,
@@ -34,12 +33,17 @@ async function fetchImageData() {
       };
     });
 
-    const outputPath = path.resolve(process.cwd(), 'public/image-data.json');
-    fs.writeFileSync(outputPath, JSON.stringify(imageParameters, null, 2));
-    console.log(`Pomyślnie zapisano dane obrazów w ${outputPath}`);
+    // const outputPath = path.resolve(process.cwd(), 'public/image-data.json');
+    const filePath = path.join(__dirname, '..', 'image-data.json');
+
+    fs.writeFileSync(filePath, JSON.stringify(imageParameters, null, 2), 'utf-8');
+    console.log('✅ image-data.json został wygenerowany!');
+    console.log('Ścieżka do pliku:', filePath);
+    console.log('\n--- Zawartość image-data.json ---\n');
+    console.log(fs.readFileSync(filePath, 'utf8'));
   } catch (error) {
     console.error("Błąd podczas pobierania wersji obrazów:", error);
-    process.exit(1); // Zakończ z błędem, aby zatrzymać proces budowania
+    process.exit(1);
   }
 }
 
