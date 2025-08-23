@@ -11,10 +11,10 @@ const getImageUrl = ({ src, width, version }) => getCldImageUrl({
 }).split('?')[0];
 
 const src = "Serwis/naprawa-zmywarek";
-const widths = [190, 284, 380, 425, 480, 520, 1040];
+const widths = [190, 284, 380, 425, 480, 520];
 const getSrcSet = ({ version }) => widths.map(width => `${getImageUrl({ src, width, version })} ${width}w`).join(', ');
 
-export const imagesParameters = {
+export const imageParameters = {
   zmywarka: {
     url: getImageUrl({ src: "Serwis/naprawa-zmywarek", width: 1024, version: 'v1755867034' }),
     srcSet: getSrcSet({ version: 'v1755867034' }),

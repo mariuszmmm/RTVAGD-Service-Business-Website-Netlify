@@ -1,4 +1,4 @@
-import { imagesParameters } from "./imagesParametrs";
+import { imageParameters } from "./imagesParametrs";
 import { serwis } from "./serwis";
 import { appUrls, imageUrls } from './urls';
 
@@ -786,7 +786,7 @@ export const dataForMetaTags = {
       ogDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       twitterDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
       imageType: "image/webp",
-      image: imagesParameters.zmywarka.url,
+      image: imageParameters.zmywarka.url,
       imageAlt: "Technik serwisu AGD naprawiający zmywarkę w Przemyślu",
       imageTitle: "Serwis Zmywarek Przemyśl",
       imageWidth: 1024,
@@ -887,9 +887,9 @@ export const dataForMetaTags = {
       imageObject: {
         "@type": "ImageObject",
         "@id": appUrls.naprawa_zmywarek + "#primaryimage",
-        "url": imagesParameters.zmywarka.url,
+        "url": imageParameters.zmywarka.url,
         "inLanguage": "pl-PL",
-        "contentUrl": imagesParameters.zmywarka.url,
+        "contentUrl": imageParameters.zmywarka.url,
         "width": 1024,
         "height": 1024,
         "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
@@ -907,7 +907,7 @@ export const dataForMetaTags = {
         "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
         "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
         // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-        "thumbnailUrl": imagesParameters.zmywarka.url,
+        "thumbnailUrl": imageParameters.zmywarka.url,
         "datePublished": datePublished,
         "dateModified": dateModified,
         "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",

@@ -13,7 +13,7 @@ import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
-import { imagesParameters } from '../../utils/imagesParametrs';
+import { imageParameters } from '../../utils/imagesParametrs';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
   const path = appUrls.naprawa_zmywarek;
@@ -52,11 +52,11 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 
         <Section>
           <Photo
-            src={imagesParameters.zmywarka.url}
-            srcSet={imagesParameters.zmywarka.srcSet}
+            src={imageParameters.zmywarka.url}
+            srcSet={imageParameters.zmywarka.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
-            width={imagesParameters.zmywarka.width}
-            height={imagesParameters.zmywarka.height}
+            width={imageParameters.zmywarka.width}
+            height={imageParameters.zmywarka.height}
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
