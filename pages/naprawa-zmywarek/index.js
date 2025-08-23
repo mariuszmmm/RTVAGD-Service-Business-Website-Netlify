@@ -159,10 +159,10 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) =
 export const getStaticProps = async () => {
   const imageParameters = await getImageData();
   const data = await getData();
-  console.log("{ ...data, ...imageParameters }", { data, imageParameters })
+  // console.log("{data, imageParameters }", { data, imageParameters })
 
   return {
-    props: { data, imageParameters }
+    props: { data, ...imageParameters }
   };
 };
 
