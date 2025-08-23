@@ -15,7 +15,7 @@ export const getImageParameters = async () => {
       src,
       width,
       crop: 'limit',
-      quality: 'auto',
+      quality: '70',
       fetchFormat: 'auto',
       version,
     }).split('?')[0];
