@@ -5,7 +5,7 @@ import { SubTitle } from '../../components/common/SubTitle';
 import { Photo } from '../../components/common/Photo';
 import { appUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
-import { dataForMetaTags } from '../../utils/dataForMetaTags';
+// import { dataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
 import { HeroText } from '../../components/common/Hero/HeroText';
@@ -14,8 +14,10 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
 import { getImageData } from '../../utils/getImageData';
+import { getDataForMetaTags } from '../../utils/dataForMetaTags';
+import { getImageParameters } from '../../utils/imagesParametrs';
 
-const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) => {
+const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dataForMetaTags }) => {
   const path = appUrls.naprawa_zmywarek;
 
   // console.log("imageParameters", imageParameters)
@@ -157,12 +159,13 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) =
 };
 
 export const getStaticProps = async () => {
-  const imageParameters = await getImageData();
+  const dataForMetaTags = await getDataForMetaTags();
+  const imageParameters = await getImageParameters();
   const data = await getData();
-  // console.log("{data, imageParameters }", { data, imageParameters })
+  console.log("dataForMetaTags", { dataForMetaTags })
 
   return {
-    props: { data, ...imageParameters }
+    props: { data, imageParameters, dataForMetaTags }
   };
 };
 
