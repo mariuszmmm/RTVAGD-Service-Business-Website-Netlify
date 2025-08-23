@@ -54,7 +54,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) =
         <Title>Naprawa Zmywarek w&nbsp;Przemyślu</Title>
 
         <Section>
-          {/* <Photo
+          <Photo
             src={imageParameters.zmywarka.url}
             srcSet={imageParameters.zmywarka.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
@@ -63,7 +63,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) =
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
-          /> */}
+          />
         </Section>
         <Section>
           <SubTitle>Naprawa Zmywarek Przemyśl – Dokładna Diagnostyka i Usuwanie Usterek</SubTitle>

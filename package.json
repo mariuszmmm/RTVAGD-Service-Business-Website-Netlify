@@ -25,11 +25,11 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "prebuild": "npm run fetch-versions && npm run generate-sitemap",
+    "prebuild": "npm run fetch-image-data && npm run generate-sitemap",
     "build": "next build",
-    "update-data": "node public/scripts/update-data.js",
-    "fetch-versions": "node public/scripts/fetch-image-versions.js",
-    "generate-sitemap": "node public/scripts/generate-sitemap.js"
+    "update-data": "node public/scripts/update_data.js",
+    "fetch-image-data": "node public/scripts/fetch_image_data.js",
+    "generate-sitemap": "node public/scripts/generate_sitemap.js"
   },
   "eslintConfig": {
     "extends": [
