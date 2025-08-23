@@ -4,7 +4,7 @@ import { getCldImageUrl } from "next-cloudinary";
 
 export const getImageData = async () => {
   try {
-    const response = await axios(imageDataUrl).data
+    const response = await axios(imageDataUrl);
     const data = response.data || {};
 
     console.log("DATA !!!!!!", data)
