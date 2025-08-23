@@ -160,8 +160,9 @@ export const getStaticProps = async () => {
   const imageParameters = await getImageData();
   const data = await getData();
 
+
   return {
-    props: { data, ...imageParameters }
+    props: { data }
   };
 };
 
