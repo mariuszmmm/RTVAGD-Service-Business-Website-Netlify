@@ -5,7 +5,6 @@ import { appUrls, imageUrls } from './urls';
 
 const datePublished = new Date("2024-07-03").toISOString();
 const date = new Date().toISOString();
-// const dateModified = process.env.NEXT_PUBLIC_BUILD_DATE || new Date(date).toISOString();
 const dateModified = new Date(date).toISOString();
 const shortName = serwis.shortName;
 const name = serwis.name;

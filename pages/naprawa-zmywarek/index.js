@@ -14,6 +14,7 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
 import { getImageData } from '../../utils/getImageData';
+import { imageParameters } from '../../utils/imagesParametrs';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) => {
   const path = appUrls.naprawa_zmywarek;
@@ -157,10 +158,12 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters }) =
 };
 
 export const getStaticProps = async () => {
-  const imageParameters = await getImageData();
+  // const imageParameters = await getImageData();
   const data = await getData();
 
-  return { props: { ...data, ...imageParameters } };
+  return {
+    props: { ...data, ...imageParameters }
+  };
 };
 
 export default DishwasherService;

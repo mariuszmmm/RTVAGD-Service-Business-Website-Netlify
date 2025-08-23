@@ -23,7 +23,4 @@ export const imageParameters = {
     width: naprawa_zmywarek.width,
     height: naprawa_zmywarek.height,
   },
-  // getImageUrl,
-  // widths,
-  // getSrcSet,
 };
