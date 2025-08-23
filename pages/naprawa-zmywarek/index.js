@@ -14,9 +14,12 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
 import { getData } from '../../utils/getData';
 import { imageParameters } from '../../utils/imagesParametrs';
+import { getImageData } from '../../utils/getImageData';
 
-const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
+const DishwasherService = ({ rating, ratingsTotal, reviews, imageData }) => {
   const path = appUrls.naprawa_zmywarek;
+
+  console.log("imageData", imageData)
 
   // const getImageUrl = ({ src, width, height }) => getCldImageUrl({
   //   src,
@@ -51,7 +54,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
         <Title>Naprawa Zmywarek w&nbsp;Przemyślu</Title>
 
         <Section>
-          <Photo
+          {/* <Photo
             src={imageParameters.zmywarka.url}
             srcSet={imageParameters.zmywarka.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
@@ -60,7 +63,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
             alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
             title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
             loading="eager"
-          />
+          /> */}
         </Section>
         <Section>
           <SubTitle>Naprawa Zmywarek Przemyśl – Dokładna Diagnostyka i Usuwanie Usterek</SubTitle>
@@ -155,9 +158,10 @@ const DishwasherService = ({ rating, ratingsTotal, reviews }) => {
 };
 
 export const getStaticProps = async () => {
+  const imageData = await getImageData();
   const data = await getData();
 
-  return { props: data };
+  return { props: { ...data, imageData } };
 };
 
 export default DishwasherService;

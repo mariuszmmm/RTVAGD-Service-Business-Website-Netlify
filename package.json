@@ -9,6 +9,7 @@
     "@netlify/plugin-nextjs": "^5.12.0",
     "@next/third-parties": "^15.0.3",
     "axios": "^1.7.8",
+    "cloudinary": "^2.7.0",
     "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "next": "^15.0.3",
@@ -24,9 +25,10 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "prebuild": "npm run generate-sitemap",
+    "prebuild": "npm run fetch-versions && npm run generate-sitemap",
     "build": "next build",
     "update-data": "node public/scripts/update-data.js",
+    "fetch-versions": "node public/scripts/fetch-image-versions.js",
     "generate-sitemap": "node public/scripts/generate-sitemap.js"
   },
   "eslintConfig": {

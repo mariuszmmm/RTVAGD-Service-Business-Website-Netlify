@@ -133,3 +133,5 @@ export const appUrls = {
 
 // export const dataUrl = baseUrl ? `${baseUrl}/data.json` : "http://localhost:3000/data.json";
 export const dataUrl = "https://naprawaprzemysl.pl/data.json";
+
+export const imageDataUrl = "https://naprawaprzemysl.pl/image-data.json";

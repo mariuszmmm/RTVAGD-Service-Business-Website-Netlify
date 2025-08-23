@@ -9,15 +9,16 @@ const getImageUrl = ({ src, width, version }) => getCldImageUrl({
   version,
 }).split('?')[0];
 
-const src = "Serwis/naprawa-zmywarek";
 const widths = [190, 284, 380, 425, 480, 520, 568, 760, 850, 1024];
-const getSrcSet = ({ version }) => widths.map(width => `${getImageUrl({ src, width, version })} ${width}w`).join(', ');
+const getSrcSet = ({ src, version }) => widths.map(width => `${getImageUrl({ src, width, version })} ${width}w`).join(', ');
+
+// const zmywarkaData = imageData['naprawa-zmywarek'];
 
 export const imageParameters = {
   zmywarka: {
-    url: getImageUrl({ src: "Serwis/naprawa-zmywarek", width: 1024, version: 'v1755867034' }),
-    srcSet: getSrcSet({ version: 'v1755867034' }),
-    width: 1024,
-    height: 1024,
+    url: "getImageUrl({ src: zmywarkaData.public_id, width: zmywarkaData.width, version: zmywarkaData.version })",
+    srcSet: "getSrcSet({ src: zmywarkaData.public_id, version: zmywarkaData.version })",
+    width: "zmywarkaData.width",
+    height: "zmywarkaData.height",
   },
 };
