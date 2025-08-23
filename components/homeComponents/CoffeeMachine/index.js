@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
-import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../components/common/Hero/HeroImage";
+import { ImageWrapper } from "../../common/ImageWrapper";
+import { HeroImage } from "../../common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
-const Television = ({ show, left, setHold }) => {
+const CoffeeMachine = ({ show, setHold }) => {
 
   const getUrl = (width) => getCldImageUrl({
-    src: 'Serwis/telewizor',
+    src: 'Serwis/ekspres',
     width,
     quality: 'auto',
     fetchFormat: 'auto',
@@ -19,15 +19,14 @@ const Television = ({ show, left, setHold }) => {
       $show={show}
       onMouseEnter={() => setHold(true)}
       onMouseLeave={() => setHold(false)}
-      $left={left}
     >
       <Link
-        href={appUrls.naprawa_telewizorow}
-        title="Serwis telewizorów w Przemyślu"
+        href={appUrls.naprawa_ekspresow}
+        title="Naprawa ekspresów do kawy w Przemyślu"
       >
         <HeroImage
           src={getUrl(700)}
-          alt="Telewizory"
+          alt="Ekspresy"
           width={700}
           height={700}
           srcSet={`
@@ -47,4 +46,4 @@ const Television = ({ show, left, setHold }) => {
   )
 };
 
-export default Television;
+export default CoffeeMachine;

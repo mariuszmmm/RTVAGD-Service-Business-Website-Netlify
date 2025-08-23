@@ -18,38 +18,21 @@ const Background = ({ dataForMetaTags }) => {
     dpr: 'auto'
   });
 
-  // console.log("dataForMetaTags in Background", dataForMetaTags)
-  // console.log("dataForMetaTags.home", dataForMetaTags.home)
-
   return (
     <BackgroundWrapper>
       {
         !isServicesPath &&
-        // <BackgroundImage
-        //   src={imageUrls.serwis}
-        //   title={dataForMetaTags.home.metaTags.imageTitle}
-        //   alt={dataForMetaTags.home.metaTags.imageAlt}
-        //   srcSet={`${getUrl(320)} 320w, ${getUrl(480)} 480w, ${getUrl(768)} 768w, ${getUrl(931)} 931w`}
-        //   width={931}
-        //   height={497}
-        //   loading="eager"
-        // />
         <div style={{
           position: "absolute",
           width: "100vw",
-          // height: "auto",
           aspectRatio: "931/497",
           opacity: 0.0001,
           marginTop: "20px"
         }}>
           <Image
-
             src={imageUrls.serwis}
-            title={dataForMetaTags.home.metaTags.imageTitle}
-            alt={dataForMetaTags.home.metaTags.imageAlt}
-            // srcSet={`${getUrl(320)} 320w, ${getUrl(480)} 480w, ${getUrl(768)} 768w, ${getUrl(931)} 931w`}
-            // width={931}
-            // height={497}
+            title={dataForMetaTags?.home?.metaTags?.imageTitle || 'Tło strony serwisu RTV i AGD'}
+            alt={dataForMetaTags?.home?.metaTags?.imageAlt || 'Tło strony serwisu RTV i AGD'}
             fill
             loading="eager"
           />

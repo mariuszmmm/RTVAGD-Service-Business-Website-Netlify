@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Form, Label, Input, Textarea } from "../../../styles/kontakt/ContactForm/ContactFormStyled";
+import { Form, Label, Input, Textarea } from "./ContactFormStyled";
 import emailjs from "@emailjs/browser";
 import SendInfo from "./SendInfo";
-import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../../utils/emailjs";
-import { Button } from "../../../components/common/Button";
+import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../utils/emailjs";
+import { Button } from "../common/Button";
 
 const ContactForm = () => {
   const [name, setName] = useState("");

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
-import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../components/common/Hero/HeroImage";
+import { ImageWrapper } from "../../common/ImageWrapper";
+import { HeroImage } from "../../common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
-const WashingMachine = ({ show, left, setHold }) => {
+const CoffeeMachine_2 = ({ show, setHold }) => {
 
   const getUrl = (width) => getCldImageUrl({
-    src: 'Serwis/pralka',
+    src: 'Serwis/ekspres_2',
     width,
     quality: 'auto',
     fetchFormat: 'auto',
@@ -19,15 +19,14 @@ const WashingMachine = ({ show, left, setHold }) => {
       $show={show}
       onMouseEnter={() => setHold(true)}
       onMouseLeave={() => setHold(false)}
-      $left={left}
     >
       <Link
-        href={appUrls.naprawa_pralek}
-        title="Serwis pralek w Przemyślu"
+        href={appUrls.naprawa_ekspresow}
+        title="Naprawa ekspresów do kawy w Przemyślu"
       >
         <HeroImage
           src={getUrl(700)}
-          alt="Pralki"
+          alt="Ekspresy"
           width={700}
           height={700}
           srcSet={`
@@ -47,4 +46,4 @@ const WashingMachine = ({ show, left, setHold }) => {
   )
 };
 
-export default WashingMachine
+export default CoffeeMachine_2;

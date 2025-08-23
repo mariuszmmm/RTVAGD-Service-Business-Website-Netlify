@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { appUrls, imageUrls } from "../../../utils/urls";
-import { ImageWrapper } from "../../../components/common/ImageWrapper";
-import { HeroImage } from "../../../components/common/Hero/HeroImage";
+import { ImageWrapper } from "../../common/ImageWrapper";
+import { HeroImage } from "../../common/Hero/HeroImage";
 import { getCldImageUrl } from "next-cloudinary";
 
 const Dishwasher = ({ show, setHold }) => {

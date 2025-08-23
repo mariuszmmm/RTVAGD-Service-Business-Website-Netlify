@@ -1,10 +1,10 @@
 import { ContactSection, ContactContainer, ContactInfo, ContactText } from "../../styles/kontakt/KontaktStyled";
-import ContactForm from "./ContactForm";
+import ContactForm from "../../components/ContactForm";
 import { StyledLink } from "../../components/common/StyledLink";
 import { SubTitle } from "../../components/common/SubTitle";
 import { Title } from "../../components/common/Title";
 import { serwis } from "../../utils/serwis";
-import Iframe from "./Iframe";
+import Iframe from "../../components/Iframe";
 import MetaTags from "../../components/common/MetaTags";
 import { getDataForMetaTags } from "../../utils/dataForMetaTags";
 import { ImageContainer } from "../../styles/kontakt/KontaktStyled";

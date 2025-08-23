@@ -9,7 +9,7 @@ import dynamic from 'next/dynamic';
 import Background from '../components/Background';
 // const Background = dynamic(() => import('../components/Background'), { ssr: false, loading: () => null });
 
-function App({ Component, pageProps, dataForMetaTags }) {
+function App({ Component, pageProps }) {
 
   // console.log("dataForMetaTags in Background", dataForMetaTags)
 
@@ -19,8 +19,10 @@ function App({ Component, pageProps, dataForMetaTags }) {
       <ThemeProvider theme={theme}>
         <Normalize />
         <GlobalStyle />
-        <Background dataForMetaTags={pageProps.dataForMetaTags} />
-        <Header {...pageProps} />
+        <Background dataForMetaTags={pageProps.dataForMetaTags || {}} />
+        {/* <Header {...pageProps} /> */}
+        <Header dataForMetaTags={pageProps.dataForMetaTags || {}} />
+
         <Component {...pageProps} />
         <Footer />
       </ThemeProvider>

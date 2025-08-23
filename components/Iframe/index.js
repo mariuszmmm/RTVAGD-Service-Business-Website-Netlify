@@ -1,4 +1,4 @@
-import { StyledIframe } from "../../../styles/kontakt/Iframe/IframeStyled";
+import { StyledIframe } from "./IframeStyled";
 
 const Iframe = () => {
   const iframeSrc =

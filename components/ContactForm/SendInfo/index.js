@@ -1,4 +1,4 @@
-import { Info, SendInfoWrapper } from "../../../../styles/kontakt/ContactForm/SendInfo/SendInfoStyled";
+import { Info, SendInfoWrapper } from "./SendInfoStyled";
 
 const SendInfo = ({ show, success }) => (
   <SendInfoWrapper $show={show}>
