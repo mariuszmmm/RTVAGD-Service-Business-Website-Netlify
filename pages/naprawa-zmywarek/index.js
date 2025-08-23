@@ -165,7 +165,11 @@ export const getStaticProps = async () => {
   // console.log("dataForMetaTags", { dataForMetaTags })
 
   return {
-    props: { data, imageParameters, dataForMetaTags }
+    props: {
+      ...(data || null),
+      imageParameters: imageParameters || null,
+      dataForMetaTags: dataForMetaTags || null,
+    },
   };
 };
 

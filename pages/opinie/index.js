@@ -62,7 +62,7 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
 export const getStaticProps = async () => {
   const data = await getData();
 
-  return { props: data };
+  return { props: { ...data || null } };
 };
 
 export default Reviews;
