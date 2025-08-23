@@ -4,13 +4,14 @@ import ReviewsItem from "../../components/ReviewsItem";
 import { serwis } from "../../utils/serwis";
 import { ButtonLink } from "../../components/common/ButtonLink";
 import MetaTags from "../../components/common/MetaTags";
-import { dataForMetaTags } from "../../utils/dataForMetaTags";
+import { getDataForMetaTags } from "../../utils/dataForMetaTags";
 import { getData } from "../../utils/getData";
 import { Section } from "../../components/common/Section";
 import { HeroText } from "../../components/common/Hero/HeroText";
 import { appUrls } from "../../utils/urls";
+import { getImageParameters } from "../../utils/imagesParametrs";
 
-const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
+const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => {
   const path = appUrls.opinie;
 
   return (
@@ -59,10 +60,25 @@ const Reviews = ({ status, reviews, rating, ratingsTotal }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const data = await getData();
+// export const getStaticProps = async () => {
+//   const data = await getData();
 
-  return { props: { ...data || null } };
+//   return { props: { ...data || null } };
+// };
+
+export const getStaticProps = async () => {
+  const dataForMetaTags = await getDataForMetaTags();
+  const imageParameters = await getImageParameters();
+  const data = await getData();
+  // console.log("dataForMetaTags", { dataForMetaTags })
+
+  return {
+    props: {
+      ...(data || null),
+      imageParameters: imageParameters || null,
+      dataForMetaTags: dataForMetaTags || null,
+    },
+  };
 };
 
 export default Reviews;

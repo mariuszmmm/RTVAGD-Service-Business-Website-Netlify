@@ -4,7 +4,7 @@ import { Title } from '../../components/common/Title';
 import { SubTitle } from '../../components/common/SubTitle';
 import { appUrls, imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
-import { dataForMetaTags } from '../../utils/dataForMetaTags';
+import { getDataForMetaTags } from '../../utils/dataForMetaTags';
 import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
 import Image from 'next/image';
@@ -14,8 +14,9 @@ import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledLink } from '../../components/common/StyledLink';
 import { getData } from '../../utils/getData';
 import { Break } from '../../components/Break';
+import { getImageParameters } from '../../utils/imagesParametrs';
 
-const DryerService = ({ rating, ratingsTotal, reviews }) => {
+const DryerService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
   const path = appUrls.naprawa_suszarek;
 
   return (
@@ -142,10 +143,25 @@ const DryerService = ({ rating, ratingsTotal, reviews }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const data = await getData();
+// export const getStaticProps = async () => {
+//   const data = await getData();
 
-  return { props: { ...data || null } };
+//   return { props: { ...data || null } };
+// };
+
+export const getStaticProps = async () => {
+  const dataForMetaTags = await getDataForMetaTags();
+  const imageParameters = await getImageParameters();
+  const data = await getData();
+  // console.log("dataForMetaTags", { dataForMetaTags })
+
+  return {
+    props: {
+      ...(data || null),
+      imageParameters: imageParameters || null,
+      dataForMetaTags: dataForMetaTags || null,
+    },
+  };
 };
 
 export default DryerService;
