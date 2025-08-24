@@ -1,6 +1,8 @@
 const fs = require('fs');
 require('dotenv').config({ path: '.env' });
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+// const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const BASE_URL = process.env.BASE_URL;
+
 const path = require('path');
 const imageParameters = require('../../public/imageParameters.json');
 
