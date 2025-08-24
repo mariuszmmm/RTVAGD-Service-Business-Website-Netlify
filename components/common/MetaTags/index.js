@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { formattedDate } from '../../../utils/formattedDate';
-import { appUrls } from '../../../utils/urls';
+import { appUrls, baseUrl } from '../../../utils/urls';
 import { serwis } from '../../../utils/serwis';
 
 const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imageSizes, href }) => {
@@ -153,7 +153,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
       {/* <meta name="apple-mobile-web-app-title" content={appleMobileWebAppTitle} /> */}
 
       {/* Structured Data */}
-      {(path === "/naprawa-zmywarek/" || path === "/naprawa-pralek/" || path === "/naprawa-suszarek/" || path === "/naprawa-ekspresow/" || path === "/naprawa-telewizorow/") && (
+      {(path === `${baseUrl}/naprawa-zmywarek/` || path === `${baseUrl}/naprawa-pralek/` || path === `${baseUrl}/naprawa-suszarek/` || path === `${baseUrl}/naprawa-ekspresow/` || path === `${baseUrl}/naprawa-telewizorow/`) && (
         <>
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -170,7 +170,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
         </>
       )}
 
-      {path === "/" && (
+      {path === `${baseUrl}/` && (
         <>
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -183,7 +183,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
         </>
       )}
 
-      {path === "/kontakt/" && (
+      {path === `${baseUrl}/kontakt/` && (
         <>
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -196,7 +196,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
         </>
       )}
 
-      {path === "/o-mnie/" && (
+      {path === `${baseUrl}/o-mnie/` && (
         <>
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -209,7 +209,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
         </>
       )}
 
-      {path === "/opinie/" && (
+      {path === `${baseUrl}/opinie/` && (
         <>
           <script type="application/ld+json"
             dangerouslySetInnerHTML={{
