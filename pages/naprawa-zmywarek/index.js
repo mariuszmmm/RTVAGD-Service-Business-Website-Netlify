@@ -173,7 +173,6 @@ export const getStaticProps = async () => {
       imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
-revalidate: 180,
   };
 };
 
