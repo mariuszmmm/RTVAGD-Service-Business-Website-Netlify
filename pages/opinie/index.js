@@ -5,11 +5,11 @@ import { serwis } from "../../utils/serwis";
 import { ButtonLink } from "../../components/common/ButtonLink";
 import MetaTags from "../../components/common/MetaTags";
 import { getDataForMetaTags } from "../../utils/dataForMetaTags";
-import { getData } from "../../utils/getData";
+import { getGoogleData } from "../../utils/getGoogleData";
 import { Section } from "../../components/common/Section";
 import { HeroText } from "../../components/common/Hero/HeroText";
 import { appUrls } from "../../utils/urls";
-import { getImageParameters } from "../../utils/imagesParametrs";
+import { getImageParameters } from "../../utils/getImageParameters";
 
 const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => {
   const path = appUrls.opinie;
@@ -18,7 +18,7 @@ const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => 
     <>
       <MetaTags
         path={path}
-        page={dataForMetaTags.opinie}
+        page={dataForMetaTags}
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
@@ -26,15 +26,15 @@ const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => 
       <Container>
         <Section>
           <Title>Opinie Klientów</Title>
-          {status === "loading" && <p>Ładowanie opinii z google...</p>}
-          {status === "success" && reviews.map((item, index) => (
-            <ReviewsItem
-              item={item}
-              key={item.time}
-              reviewIndex={index + 1}
-            />
-          ))}
-          {status === "error" &&
+          {reviews ?
+            reviews.map((item, index) => (
+              <ReviewsItem
+                item={item}
+                key={item.time}
+                reviewIndex={index + 1}
+              />
+            ))
+            :
             <>
               <p>Wystąpił błąd podczas ładowania opinii.</p>
               <p> Proszę spróbować ponownie później.</p>
@@ -42,7 +42,7 @@ const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => 
           }
         </Section>
 
-        {status === "success" &&
+        {reviews &&
           <Section>
             <HeroText>
               <strong>Czy jesteś zadowolony z usług? Podziel się swoim doświadczeniem i pomóż innym klientom w podejmowaniu najlepszych decyzji!</strong>
@@ -61,21 +61,23 @@ const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => 
 };
 
 // export const getStaticProps = async () => {
-//   const data = await getData();
+//   const data = await getGoogleData();
 
 //   return { props: { ...data || null } };
 // };
 
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("opinie"),
+    getDataForMetaTags("opinie")
+  ]);
 
   return {
     props: {
-      ...(data || null),
-      imageParameters: imageParameters || null,
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

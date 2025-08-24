@@ -1,4 +1,4 @@
-import { imageParameters } from './imagesParametrs';
+import { imageParameters } from './getImageParameters';
 
 export const getImageData = async () => {
   try {

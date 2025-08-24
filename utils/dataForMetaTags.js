@@ -1,11 +1,14 @@
 
-// import { imageParameters } from "./imagesParametrs";
-import { getImageParameters } from "./imagesParametrs";
+// import { imageParameters } from "./getImageParameters";
+import { getImageParameters } from "./getImageParameters";
 import { serwis } from "./serwis";
 import { appUrls, imageUrls } from './urls';
+import imageParameters from "../public/imageParameters.json" with { type: "json" };
 
-export const getDataForMetaTags = async () => {
-  const imageParameters = await getImageParameters();
+export const getDataForMetaTags = async (key) => {
+  // const imageParameters = await getImageParameters();
+
+  // console.log("imageParameters", imageParameters)
 
 
   const datePublished = new Date("2024-07-03").toISOString();
@@ -791,7 +794,7 @@ export const getDataForMetaTags = async () => {
         ogDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         twitterDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         imageType: "image/webp",
-        image: imageParameters.zmywarka.url,
+        image: imageParameters.naprawa_zmywarek.url,
         imageAlt: "Technik serwisu AGD naprawiający zmywarkę w Przemyślu",
         imageTitle: "Serwis Zmywarek Przemyśl",
         imageWidth: 1024,
@@ -892,9 +895,9 @@ export const getDataForMetaTags = async () => {
         imageObject: {
           "@type": "ImageObject",
           "@id": appUrls.naprawa_zmywarek + "#primaryimage",
-          "url": imageParameters.zmywarka.url,
+          "url": imageParameters.naprawa_zmywarek.url,
           "inLanguage": "pl-PL",
-          "contentUrl": imageParameters.zmywarka.url,
+          "contentUrl": imageParameters.naprawa_zmywarek.url,
           "width": 1024,
           "height": 1024,
           "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
@@ -912,7 +915,7 @@ export const getDataForMetaTags = async () => {
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-          "thumbnailUrl": imageParameters.zmywarka.url,
+          "thumbnailUrl": imageParameters.naprawa_zmywarek.url,
           "datePublished": datePublished,
           "dateModified": dateModified,
           "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",
@@ -1288,6 +1291,5 @@ export const getDataForMetaTags = async () => {
 
   // logMetaTagLengths(["home", "naprawa_pralek", "naprawa_suszarek", "naprawa_zmywarek", "naprawa_telewizorow", "naprawa_ekspresow"]);
 
-  return dataForMetaTags;
-
+  return dataForMetaTags[key];
 }

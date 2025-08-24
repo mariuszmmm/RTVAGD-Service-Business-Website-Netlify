@@ -1,10 +1,10 @@
 import Home from './home';
-import { getData } from '../utils/getData';
+import { getGoogleData } from '../utils/getGoogleData';
 import { getDataForMetaTags } from '../utils/dataForMetaTags';
-import { getImageParameters } from '../utils/imagesParametrs';
+import { getImageParameters } from '../utils/getImageParameters';
 
 // export const getStaticProps = async () => {
-//   const data = await getData();
+//   const data = await getGoogleData();
 
 //   console.log("TEST", data)
 
@@ -12,15 +12,17 @@ import { getImageParameters } from '../utils/imagesParametrs';
 // };
 
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags in Background", dataForMetaTags)
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("home"),
+    getDataForMetaTags("home")
+  ]);
 
   return {
     props: {
-      ...(data || null),
-      imageParameters: imageParameters || null,
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

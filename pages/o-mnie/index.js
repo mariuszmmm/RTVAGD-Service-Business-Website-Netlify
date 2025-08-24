@@ -7,9 +7,9 @@ import { appUrls, imageUrls } from '../../utils/urls';
 import MetaTags from '../../components/common/MetaTags';
 import { getDataForMetaTags } from '../../utils/dataForMetaTags';
 import Image from 'next/image';
-import { getData } from '../../utils/getData';
+import { getGoogleData } from '../../utils/getGoogleData';
 import { serwis } from '../../utils/serwis';
-import { getImageParameters } from '../../utils/imagesParametrs';
+import { getImageParameters } from '../../utils/getImageParameters';
 
 const About = ({ rating, ratingsTotal, dataForMetaTags }) => {
   const path = appUrls.o_mnie;
@@ -18,7 +18,7 @@ const About = ({ rating, ratingsTotal, dataForMetaTags }) => {
     <>
       <MetaTags
         path={path}
-        page={dataForMetaTags.o_mnie}
+        page={dataForMetaTags}
         rating={rating}
         ratingsTotal={ratingsTotal}
       />
@@ -58,21 +58,23 @@ const About = ({ rating, ratingsTotal, dataForMetaTags }) => {
 };
 
 // export const getStaticProps = async () => {
-//   const data = await getData();
+//   const data = await getGoogleData();
 
 //   return { props: { ...data || null } };
 // };
 
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("o_mnie"),
+    getDataForMetaTags("o_mnie")
+  ]);
 
   return {
     props: {
-      ...(data || null),
-      imageParameters: imageParameters || null,
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

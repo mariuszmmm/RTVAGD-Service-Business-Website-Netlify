@@ -4,7 +4,6 @@ const path = require('path');
 const axios = require('axios');
 const KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 const PLACE_ID = process.env.NEXT_PUBLIC_PLACE_ID;
-let test = null;
 
 if (!KEY) {
   console.error('Brakuje KEY w zmiennych środowiskowych.');
@@ -72,18 +71,17 @@ async function fetchData() {
     rating,
     user_ratings_total,
     update_time,
-    test,
   };
 }
 
 (async () => {
   try {
     const data = await fetchData();
-    const filePath = path.join(__dirname, '..', 'data.json');
+    const filePath = path.join(__dirname, '..', 'googleData.json');
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
-    console.log('✅ data.json został wygenerowany!');
+    console.log('✅ googleData.json został wygenerowany!');
     console.log('Ścieżka do pliku:', filePath);
-    console.log('\n--- Zawartość data.json ---\n');
+    console.log('\n--- Zawartość googleData.json ---\n');
     console.log(fs.readFileSync(filePath, 'utf8'));
   } catch (err) {
     console.error('Błąd podczas pobierania danych:', err);

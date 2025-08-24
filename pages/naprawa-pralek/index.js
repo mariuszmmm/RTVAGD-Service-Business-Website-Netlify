@@ -12,8 +12,8 @@ import { StyledText } from '../../components/common/Text/styled';
 import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
-import { getData } from '../../utils/getData';
-import { getImageParameters } from '../../utils/imagesParametrs';
+import { getGoogleData } from '../../utils/getGoogleData';
+import { getImageParameters } from '../../utils/getImageParameters';
 
 const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
   const path = appUrls.naprawa_pralek;
@@ -22,7 +22,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags 
     <>
       <MetaTags
         path={path}
-        page={dataForMetaTags.naprawa_pralek}
+        page={dataForMetaTags}
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
@@ -41,8 +41,8 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags 
             sizes="59vw"
             width={700}
             height={700}
-            alt={dataForMetaTags.naprawa_pralek.metaTags.imageAlt}
-            title={dataForMetaTags.naprawa_pralek.metaTags.imageTitle}
+            alt={dataForMetaTags.metaTags.imageAlt}
+            title={dataForMetaTags.metaTags.imageTitle}
             loading="eager"
           />
         </Section>
@@ -91,7 +91,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags 
         <Section>
           <SubTitle>FAQ – najczęściej zadawane pytania</SubTitle>
           <StyledText as="ul" $list>
-            {dataForMetaTags.naprawa_pralek.schema.faqPage.mainEntity.map((item, index) => (
+            {dataForMetaTags.schema.faqPage.mainEntity.map((item, index) => (
               <li key={index}>
                 <h3>{item.name}</h3>
                 <StyledText>{item.acceptedAnswer.text}</StyledText>
@@ -144,22 +144,24 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags 
 };
 
 // export const getStaticProps = async () => {
-//   const data = await getData();
+//   const data = await getGoogleData();
 
 //   return { props: { ...data || null } };
 // };
 
 
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("naprawa_pralek"),
+    getDataForMetaTags("naprawa_pralek")
+  ]);
 
   return {
     props: {
-      ...(data || null),
-      imageParameters: imageParameters || null,
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

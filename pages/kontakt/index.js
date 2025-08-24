@@ -8,9 +8,9 @@ import Iframe from "../../components/Iframe";
 import MetaTags from "../../components/common/MetaTags";
 import { getDataForMetaTags } from "../../utils/dataForMetaTags";
 import { ImageContainer } from "../../styles/kontakt/KontaktStyled";
-import { getData } from "../../utils/getData";
+import { getGoogleData } from "../../utils/getGoogleData";
 import { appUrls } from "../../utils/urls";
-import { getImageParameters } from "../../utils/imagesParametrs";
+import { getImageParameters } from "../../utils/getImageParameters";
 
 const Contact = ({ rating, ratingsTotal, dataForMetaTags }) => {
   const path = appUrls.kontakt;
@@ -19,7 +19,7 @@ const Contact = ({ rating, ratingsTotal, dataForMetaTags }) => {
     <>
       <MetaTags
         path={path}
-        page={dataForMetaTags.kontakt}
+        page={dataForMetaTags}
         rating={rating}
         ratingsTotal={ratingsTotal}
       />
@@ -89,21 +89,23 @@ const Contact = ({ rating, ratingsTotal, dataForMetaTags }) => {
 };
 
 // export const getStaticProps = async () => {
-//   const data = await getData();
+//   const data = await getGoogleData();
 
 //   return { props: { ...data || null } };
 // };
 
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("kontakt"),
+    getDataForMetaTags("kontakt")
+  ]);
 
   return {
     props: {
-      ...(data || null),
-      imageParameters: imageParameters || null,
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

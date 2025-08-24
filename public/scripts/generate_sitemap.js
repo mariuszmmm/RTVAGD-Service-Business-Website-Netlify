@@ -2,13 +2,9 @@ const fs = require('fs');
 require('dotenv').config({ path: '.env' });
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const path = require('path');
-// const { imageParameters } = require("../../utils/imagesParametrs.js");
-
+const imageParameters = require('../../public/imageParameters.json');
 
 const generateSitemap = async () => {
-  const { getImageParameters } = await import("../../utils/imagesParametrs.js");
-  const imageParameters = await getImageParameters();
-
   const routes = {
     '/': {
       changefreq: 'daily',
@@ -34,7 +30,7 @@ const generateSitemap = async () => {
     '/naprawa-zmywarek/': {
       changefreq: 'daily',
       priority: '0.9',
-      image: imageParameters.zmywarka.url,
+      image: imageParameters.naprawa_zmywarek.url,
       caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
       title: 'Serwis Zmywarek Przemyśl'
     },

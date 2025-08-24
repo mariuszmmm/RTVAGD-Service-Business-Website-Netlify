@@ -9,12 +9,12 @@ import { ButtonLink } from '../../components/common/ButtonLink';
 import { serwis } from '../../utils/serwis';
 import Image from 'next/image';
 import { StyledPhoto } from '../../components/common/StyledPhoto';
-import { getData } from '../../utils/getData';
+import { getGoogleData } from '../../utils/getGoogleData';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { HeroText } from '../../components/common/Hero/HeroText';
 import { Break } from '../../components/Break';
-import { getImageParameters } from '../../utils/imagesParametrs';
+import { getImageParameters } from '../../utils/getImageParameters';
 
 const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
   const path = appUrls.naprawa_telewizorow;
@@ -23,7 +23,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) =
     <>
       <MetaTags
         path={path}
-        page={dataForMetaTags.naprawa_telewizorow}
+        page={dataForMetaTags}
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
@@ -35,9 +35,9 @@ const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) =
         <Section>
           <StyledPhoto>
             <Image
-              title={dataForMetaTags.naprawa_telewizorow.metaTags.imageTitle}
+              title={dataForMetaTags.metaTags.imageTitle}
               src={imageUrls.telewizor}
-              alt={dataForMetaTags.naprawa_telewizorow.metaTags.imageAlt}
+              alt={dataForMetaTags.metaTags.imageAlt}
               priority
               fill
               // srcSet={`${imageUrls.telewizor_300} 500w,
@@ -93,7 +93,7 @@ const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) =
         <Section>
           <SubTitle>FAQ – najczęściej zadawane pytania</SubTitle>
           <StyledText as="ul" $list>
-            {dataForMetaTags.naprawa_telewizorow.schema.faqPage.mainEntity.map((item, index) => (
+            {dataForMetaTags.schema.faqPage.mainEntity.map((item, index) => (
               <li key={index}>
                 <h3>{item.name}</h3>
                 <StyledText>{item.acceptedAnswer.text}</StyledText>
@@ -146,20 +146,22 @@ const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) =
 };
 
 // export const getStaticProps = async () => {
-//   const data = await getData();
+//   const data = await getGoogleData();
 
 //   return { props: { ...data || null } };
 // };
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("naprawa_telewizorow"),
+    getDataForMetaTags("naprawa_telewizorow")
+  ]);
 
   return {
     props: {
-      ...(data || null),
-      imageParameters: imageParameters || null,
+      // ...(googleData || {}),
+      ...googleData,
+      // imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

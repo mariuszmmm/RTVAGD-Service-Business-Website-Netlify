@@ -12,10 +12,10 @@ import { HeroText } from '../../components/common/Hero/HeroText';
 import { StyledText } from '../../components/common/Text/styled';
 import { StyledLink } from '../../components/common/StyledLink';
 import { Break } from '../../components/Break';
-import { getData } from '../../utils/getData';
-import { getImageData } from '../../utils/getImageData';
+import { getGoogleData } from '../../utils/getGoogleData';
+// import { getImageData } from '../../utils/getImageData';
 import { getDataForMetaTags } from '../../utils/dataForMetaTags';
-import { getImageParameters } from '../../utils/imagesParametrs';
+import { getImageParameters } from '../../utils/getImageParameters';
 
 const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dataForMetaTags }) => {
   const path = appUrls.naprawa_zmywarek;
@@ -38,12 +38,12 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dat
 
   // console.log("getImageUrl({ src, width: 520 })", getImageUrl({ src, width: 520 }))
 
-  console.log("dataForMetaTags", dataForMetaTags)
+  // console.log("all", rating, ratingsTotal, reviews, imageParameters, dataForMetaTags)
   return (
     <>
       <MetaTags
         path={path}
-        page={dataForMetaTags.naprawa_zmywarek}
+        page={dataForMetaTags}
         rating={rating}
         ratingsTotal={ratingsTotal}
         reviews={reviews}
@@ -57,13 +57,13 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dat
 
         <Section>
           <Photo
-            src={imageParameters.zmywarka.url}
-            srcSet={imageParameters.zmywarka.srcSet}
+            src={imageParameters.url}
+            srcSet={imageParameters.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
-            width={imageParameters.zmywarka.width}
-            height={imageParameters.zmywarka.height}
-            alt={dataForMetaTags.naprawa_zmywarek.metaTags.imageAlt}
-            title={dataForMetaTags.naprawa_zmywarek.metaTags.imageTitle}
+            width={imageParameters.width}
+            height={imageParameters.height}
+            alt={dataForMetaTags.metaTags.imageAlt}
+            title={dataForMetaTags.metaTags.imageTitle}
             loading="eager"
           />
         </Section>
@@ -111,7 +111,7 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dat
         <Section>
           <SubTitle>FAQ – najczęściej zadawane pytania</SubTitle>
           <StyledText as="ul" $list>
-            {dataForMetaTags.naprawa_zmywarek.schema.faqPage.mainEntity.map((item, index) => (
+            {dataForMetaTags.schema.faqPage.mainEntity.map((item, index) => (
               <li key={index}>
                 <h3>{item.name}</h3>
                 <StyledText>{item.acceptedAnswer.text}</StyledText>
@@ -160,14 +160,16 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dat
 };
 
 export const getStaticProps = async () => {
-  const dataForMetaTags = await getDataForMetaTags();
-  const imageParameters = await getImageParameters();
-  const data = await getData();
-  // console.log("dataForMetaTags", { dataForMetaTags })
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
+    getGoogleData(),
+    getImageParameters("naprawa_zmywarek"),
+    getDataForMetaTags("naprawa_zmywarek"),
+  ]);
 
   return {
     props: {
-      ...(data || null),
+      // ...(googleData || {}),
+      ...googleData,
       imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
