@@ -23,13 +23,13 @@ async function fetchImageData() {
       imagePublicIds.map(id => cloudinary.api.resource(id))
     );
 
-    const getImageUrl = ({ src, width, height, version }) => {
+    const getImageUrl = ({ src, width, height, quality, version }) => {
       return getCldImageUrl({
         src,
         width,
         height,
         crop: 'limit',
-        quality: '70',
+        quality: quality || 'auto',
         fetchFormat: 'auto',
         version,
       }).split('?')[0];
@@ -48,6 +48,14 @@ async function fetchImageData() {
           src: detail.public_id,
           width: detail.width,
           height: detail.height,
+          quality: '70',
+          version: `v${detail.version}`,
+        }),
+        thumbnail: getImageUrl({
+          src: detail.public_id,
+          width: 150,
+          height: 150,
+          quality: '60',
           version: `v${detail.version}`,
         }),
         srcSet: widths.map(w => `${getImageUrl({ src: detail.public_id, width: w, version: `v${detail.version}` })} ${w}w`)
