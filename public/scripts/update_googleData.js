@@ -19,11 +19,11 @@ async function fetchData() {
   //   axios.get(aditionalUrl)
   // ]);
 
-  const res = await axios.get(url);
-  const aditionalRes = await axios.get(aditionalUrl);
+  const res = (await axios.get(url)).data;
+  const aditionalRes = (await axios.get(aditionalUrl)).data;
 
-  const json = res.data;
-  const aditionalJson = aditionalRes.data;
+  // const json = res.data;
+  // const aditionalJson = aditionalRes.data;
 
   console.log('Odpowiedź z Google API:', JSON.stringify(json, null, 2));
   console.log('Odpowiedź z Google API:', JSON.stringify(aditionalJson, null, 2));
