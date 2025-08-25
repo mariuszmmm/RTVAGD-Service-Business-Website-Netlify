@@ -40,7 +40,7 @@ jobs:
 
       # 5. Uruchomienie skryptu Node.js (aktualizacja googleData.json)
       - name: Uruchom update-googleData.js
-        run: npm run update-google-data
+        run: npm run update-googleData
 
       - name: Debug – sprawdź czy plik googleData.json istnieje
         run: |
