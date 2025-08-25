@@ -34,6 +34,8 @@ jobs:
         run: npm run update-imageParameters
 
       - name: Update sitemap.xml
+        env:
+          NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
         run: npm run update-sitemap
 
       - name: Commit and push changes
