@@ -915,7 +915,7 @@ export const getDataForMetaTags = async (key) => {
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-          "thumbnailUrl": imageParameters.naprawa_zmywarek.thumbnail,
+          "thumbnailUrl": imageParameters.naprawa_zmywarek.thumbnailUrl,
           "datePublished": datePublished,
           "dateModified": dateModified,
           "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",
