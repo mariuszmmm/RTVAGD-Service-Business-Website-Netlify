@@ -1,7 +1,7 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
-const fetch = require('node-fetch');
+const axios = require('axios');
 const KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 const PLACE_ID = process.env.NEXT_PUBLIC_PLACE_ID;
 
@@ -14,15 +14,18 @@ async function fetchData() {
   const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews,rating,user_ratings_total&language=pl&key=${KEY}`;
   const aditionalUrl = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews&language=pl&reviews_sort=newest&key=${KEY}`;
 
-  const res = await fetch(url);
-  const aditionalRes = await fetch(aditionalUrl);
+  const [res, aditionalRes] = await Promise.all([
+    axios.get(url),
+    axios.get(aditionalUrl)
+  ]);
 
-  if (!res.ok || !aditionalRes.ok) {
-    throw new Error(`HTTP error! status: ${res.status}, ${aditionalRes.status}`);
+  const json = res.data;
+  const aditionalJson = aditionalRes.data;
+
+  if (json.status !== 'OK' || aditionalJson.status !== 'OK') {
+    throw new Error(`HTTP error! status: ${json.status}, ${aditionalJson.status}`);
   }
 
-  const json = await res.json();
-  const aditionalJson = await aditionalRes.json();
   if (!json.result || !aditionalJson.result || !Array.isArray(aditionalJson.result.reviews) || !Array.isArray(json.result.reviews)) {
     console.error('Nieprawidłowa odpowiedź Google API:', JSON.stringify(json, null, 2));
     console.error('Nieprawidłowa odpowiedź Google API:', JSON.stringify(aditionalJson, null, 2));
