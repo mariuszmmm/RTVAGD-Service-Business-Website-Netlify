@@ -37,6 +37,7 @@ jobs:
       - name: Ustaw zmienną NEXT_PUBLIC_GOOGLE_API_KEY
         run: |
           echo "NEXT_PUBLIC_GOOGLE_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_API_KEY }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_PLACE_ID=${{ secrets.NEXT_PUBLIC_PLACE_ID }}" >> $GITHUB_ENV
 
       # 5. Uruchomienie skryptu Node.js (aktualizacja googleData.json)
       - name: Uruchom update-googleData.js
