@@ -25,11 +25,10 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "prebuild": "npm run fetch-image-data && npm run generate-sitemap",
     "build": "next build",
     "update-googleData": "node public/scripts/update_googleData.js",
-    "fetch-image-data": "node public/scripts/fetch_image_data.js",
-    "generate-sitemap": "node public/scripts/generate_sitemap.js"
+    "update-imageParameters": "node public/scripts/update_imageParameters.js",
+    "update-sitemap": "node public/scripts/update_sitemap.js"
   },
   "eslintConfig": {
     "extends": [

@@ -468,7 +468,7 @@ export const getDataForMetaTags = async (key) => {
         imageTitle: "Serwis Pralek Przemyśl",
         imageWidth: "700",
         imageHeight: "700",
-         type: "website",
+        type: "website",
         siteName: shortName,
         canonical: appUrls.naprawa_pralek,
 
@@ -799,7 +799,7 @@ export const getDataForMetaTags = async (key) => {
         imageTitle: "Serwis Zmywarek Przemyśl",
         imageWidth: 1024,
         imageHeight: 1024,
-         type: "website",
+        type: "website",
         siteName: shortName,
         canonical: appUrls.naprawa_zmywarek,
 
@@ -915,7 +915,7 @@ export const getDataForMetaTags = async (key) => {
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
-          "thumbnailUrl": imageParameters.naprawa_zmywarek.url,
+          "thumbnailUrl": imageParameters.naprawa_zmywarek.thumbnail,
           "datePublished": datePublished,
           "dateModified": dateModified,
           "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",

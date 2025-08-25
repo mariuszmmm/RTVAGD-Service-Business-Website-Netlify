@@ -1,10 +1,8 @@
 const fs = require('fs');
 require('dotenv').config({ path: '.env' });
-// const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
-const BASE_URL = "https://naprawaprzemysl.pl";
-
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const path = require('path');
-const imageParameters = require('../../public/imageParameters.json');
+const imageParameters = require('../imageParameters.json');
 
 const generateSitemap = async () => {
   const routes = {
@@ -96,6 +94,10 @@ const generateSitemap = async () => {
     `</urlset>`;
 
   try {
+    if (!BASE_URL) {
+      throw new Error('❌ Błąd: NEXT_PUBLIC_BASE_URL nie jest ustawiony w zmiennych środowiskowych.');
+    }
+
     const filePath = path.join(__dirname, '..', 'sitemap.xml');
     fs.writeFileSync(filePath, sitemap.trim());
     console.log('✅ sitemap.xml został wygenerowany!');
