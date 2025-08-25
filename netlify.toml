@@ -1,7 +1,5 @@
 [build]
-  # Twój domyślny katalog budowania
   publish = ".next"
-  # Polecenie budowania
   command = "next build"
 
 [[plugins]]
