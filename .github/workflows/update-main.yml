@@ -1,4 +1,4 @@
-name: Generate sitemap.xml
+name: Update imageParameters.json and sitemap.xml
 
 on:
   push:
@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,6 +25,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Fetch image data
+        env:
+          NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME }}
+          NEXT_PUBLIC_CLOUDINARY_API_KEY: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_API_KEY }}
+          NEXT_PUBLIC_CLOUDINARY_API_SECRET: ${{ secrets.NEXT_PUBLIC_CLOUDINARY_API_SECRET }}
+        run: npm run fetch-image-data
 
       - name: Generate sitemap.xml
         run: npm run generate-sitemap
