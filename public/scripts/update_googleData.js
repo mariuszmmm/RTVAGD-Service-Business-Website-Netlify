@@ -19,8 +19,8 @@ async function fetchData() {
   //   axios.get(aditionalUrl)
   // ]);
 
-  const res = (await axios.get(url)).data;
-  const aditionalRes = (await axios.get(aditionalUrl)).data;
+  const json = (await axios.get(url)).data;
+  const aditionalJson = (await axios.get(aditionalUrl)).data;
 
   // const json = res.data;
   // const aditionalJson = aditionalRes.data;
