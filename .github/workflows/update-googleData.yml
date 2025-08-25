@@ -54,7 +54,7 @@ jobs:
       - name: Commit i Push zmian w googleData.json
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "actions@github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           echo "=== 🧾 Obecna wersja googleData.json z repo ==="
           git show HEAD:public/googleData.json || echo "Plik nie istnieje w repozytorium."
