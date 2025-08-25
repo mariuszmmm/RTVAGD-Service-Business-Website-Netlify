@@ -46,8 +46,8 @@ async function fetchImageData() {
         height: detail.height,
         url: getImageUrl({
           src: detail.public_id,
-          width: detail.width,
-          height: detail.height,
+          width: 520,
+          height: 520,
           quality: '70',
           version: `v${detail.version}`,
         }),
