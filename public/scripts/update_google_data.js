@@ -24,6 +24,8 @@ async function fetchData() {
 
   console.log('Odpowiedź z Google API:', JSON.stringify(json, null, 2));
   console.log('Odpowiedź z Google API:', JSON.stringify(aditionalJson, null, 2));
+  console.log("raw", json, aditionalJson);
+
 
   if (json.status !== 'OK' || aditionalJson.status !== 'OK') {
     throw new Error(`HTTP error! status: ${json.status}, ${aditionalJson.status}`);
