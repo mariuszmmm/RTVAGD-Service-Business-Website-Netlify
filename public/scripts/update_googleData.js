@@ -14,10 +14,13 @@ async function fetchData() {
   const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews,rating,user_ratings_total&language=pl&key=${KEY}`;
   const aditionalUrl = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews&language=pl&reviews_sort=newest&key=${KEY}`;
 
-  const [res, aditionalRes] = await Promise.all([
-    axios.get(url),
-    axios.get(aditionalUrl)
-  ]);
+  // const [res, aditionalRes] = await Promise.all([
+  //   axios.get(url),
+  //   axios.get(aditionalUrl)
+  // ]);
+
+  const res = await axios.get(url);
+  const aditionalRes = await axios.get(aditionalUrl);
 
   const json = res.data;
   const aditionalJson = aditionalRes.data;
