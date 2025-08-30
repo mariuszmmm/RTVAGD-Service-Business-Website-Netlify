@@ -67,14 +67,16 @@ const Reviews = ({ status, reviews, rating, ratingsTotal, dataForMetaTags }) => 
 // };
 
 export const getStaticProps = async () => {
-  const [googleData, dataForMetaTags] = await Promise.all([
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
     getGoogleData(),
+    getImageParameters(["serwis_rtv_agd"]),
     getDataForMetaTags("opinie")
   ]);
 
   return {
     props: {
       ...googleData,
+      imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

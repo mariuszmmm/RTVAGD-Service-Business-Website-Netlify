@@ -128,7 +128,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
       {/* test */}
       {image?.includes('https://res.cloudinary.com') &&
         <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />}
-      {image && imageSrcSet && imageSizes && href &&
+      {/* {image && imageSrcSet && imageSizes && href &&
         <link
           rel="preload"
           as="image"
@@ -136,7 +136,7 @@ const MetaTags = ({ path, page, rating, ratingsTotal, reviews, imageSrcSet, imag
           imageSrcSet={imageSrcSet}
           imageSizes={imageSizes}
         // crossOrigin={image?.includes('https://res.cloudinary.com') ? 'anonymous' : undefined}
-        />}
+        />} */}
 
       {/* Twitter Cards */}
       <meta key="twitter:card" name="twitter:card" content="summary_large_image" />

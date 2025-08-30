@@ -18,8 +18,6 @@ import { getImageParameters } from '../../utils/getImageParameters';
 const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dataForMetaTags }) => {
   const path = appUrls.naprawa_zmywarek;
 
-  // test dddd
-
   return (
     <>
       <MetaTags

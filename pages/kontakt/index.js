@@ -88,21 +88,17 @@ const Contact = ({ rating, ratingsTotal, dataForMetaTags }) => {
   );
 };
 
-// export const getStaticProps = async () => {
-//   const data = await getGoogleData();
-
-//   return { props: { ...data || null } };
-// };
-
 export const getStaticProps = async () => {
-  const [googleData, dataForMetaTags] = await Promise.all([
+  const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
     getGoogleData(),
+    getImageParameters(["serwis_rtv_agd"]),
     getDataForMetaTags("kontakt")
   ]);
 
   return {
     props: {
       ...googleData,
+      imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

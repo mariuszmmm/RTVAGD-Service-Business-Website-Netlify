@@ -22,7 +22,6 @@ import { getGoogleData } from '../utils/getGoogleData';
 import { getDataForMetaTags } from '../utils/dataForMetaTags';
 import { getImageParameters } from '../utils/getImageParameters';
 
-// test
 const Home = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
   const path = appUrls.home;
   const [isPortrait, setIsPortrait] = useState(
@@ -217,7 +216,7 @@ const Home = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
 export const getStaticProps = async () => {
   const [googleData, imageParameters, dataForMetaTags] = await Promise.all([
     getGoogleData(),
-    getImageParameters(["serwis_rtv-agd"]),
+    getImageParameters(["serwis_rtv_agd"]),
     getDataForMetaTags("home")
   ]);
 

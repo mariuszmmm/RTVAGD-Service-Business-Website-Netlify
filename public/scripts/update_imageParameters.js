@@ -36,14 +36,14 @@ async function fetchImageData() {
         quality: quality || 'auto',
         fetchFormat: 'auto',
         version,
-      }).split('?')[0];
+      });
     };
 
     const imageParameters = {};
-    const widths = [190, 284, 380, 425, 480, 520, 568, 760, 850, 1024];
+    const widths = [190, 284, 380, 425, 460, 480, 520, 568, 760, 850, 1024];
 
     imageDetails.forEach(detail => {
-      const key = detail.public_id.split('/').pop().replace("-", "_");
+      const key = detail.public_id.split('/').pop().replace(/-/g, "_");
       imageParameters[key] = {
         public_id: detail.public_id,
         version: `v${detail.version}`,
