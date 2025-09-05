@@ -222,7 +222,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      ...googleData || null,
+      ...googleData,
       imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
