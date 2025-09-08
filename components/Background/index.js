@@ -8,7 +8,7 @@ const Background = ({ dataForMetaTags, imageParameters }) => {
   return (
     <BackgroundWrapper>
       {
-        !isServicesPath &&
+        !isServicesPath && imageParameters && dataForMetaTags &&
         <img
           style={{
             width: "100vw",
@@ -16,12 +16,12 @@ const Background = ({ dataForMetaTags, imageParameters }) => {
             marginTop: "26px",
             opacity: 0.0001,
           }}
-          src={imageParameters.serwis_rtv_agd.imageUrl}
-          srcSet={imageParameters.serwis_rtv_agd.srcSet}
-          width={dataForMetaTags.metaTags.imageWidth}
-          height={dataForMetaTags.metaTags.imageHeight}
-          title={dataForMetaTags?.metaTags?.imageTitle}
-          alt={dataForMetaTags?.metaTags?.imageAlt}
+          src={imageParameters.serwis_rtv_agd?.imageUrl}
+          srcSet={imageParameters.serwis_rtv_agd?.srcSet}
+          width={dataForMetaTags.metaTags?.imageWidth}
+          height={dataForMetaTags.metaTags?.imageHeight}
+          title={dataForMetaTags.metaTags?.imageTitle}
+          alt={dataForMetaTags.metaTags?.imageAlt}
           loading="eager"
         />
       }

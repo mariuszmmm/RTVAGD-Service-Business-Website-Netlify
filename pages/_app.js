@@ -16,7 +16,7 @@ function App({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <Normalize />
         <GlobalStyle />
-        <Background dataForMetaTags={pageProps.dataForMetaTags || {}} imageParameters={pageProps.imageParameters || {}} />
+        <Background {...pageProps} />
         <Header {...pageProps} />
         <Component {...pageProps} />
         <Footer />

@@ -18,7 +18,7 @@ import Image from "next/image";
 const GoogleRating = dynamic(() => import('../GoogleRating').then(mod => mod.GoogleRating), { ssr: false });
 const QrCode = dynamic(() => import('../QrCode').then(mod => mod.QrCode), { ssr: false });
 
-const Header = ({ rating }) => {
+const Header = (props) => {
   const [scrolled, setScrolled] = useState(false);
   const [showSubNav, setShowSubNav] = useState(false);
   const pathname = usePathname()
@@ -112,17 +112,19 @@ const Header = ({ rating }) => {
             </ListItem>
           </NavList>
         </nav>
-        <ButtonLink
-          href={serwis.url.addTestimonial}
-          rel="noopener noreferrer"
-          $opinia
-          $hidden={scrolled}
-          title="Wystaw opinię"
-        >
-          Wystaw opinię
-        </ButtonLink>
-        <QrCode hidden={scrolled} />
-        {rating && <GoogleRating rating={rating} hidden={scrolled} />}
+        {props && <>
+          <ButtonLink
+            href={serwis.url.addTestimonial}
+            rel="noopener noreferrer"
+            $opinia
+            $hidden={scrolled}
+            title="Wystaw opinię"
+          >
+            Wystaw opinię
+          </ButtonLink>
+          <QrCode hidden={scrolled} />
+          <GoogleRating rating={props.rating} hidden={scrolled} />
+        </>}
       </HeaderContainer>
     </HeaderWrapper>
   );
