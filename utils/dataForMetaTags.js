@@ -1,4 +1,3 @@
-
 // import { imageParameters } from "./getImageParameters";
 import { getImageParameters } from "./getImageParameters";
 import { serwis } from "./serwis";
@@ -177,9 +176,9 @@ export const getDataForMetaTags = async (key) => {
         // title: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów" + ` | ${shortName}`,
         // ogTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
         // twitterTitle: "Naprawa RTV i AGD Przemyśl - Pralek, TV, Zmywarek, Ekspresów",
-        title: `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-        ogTitle: `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
-        twitterTitle: `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        title: `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
+        ogTitle: `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
+        twitterTitle: `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
         description: `Profesjonalny Serwis RTV i AGD w Przemyślu. Naprawa: ✔️ Suszarek do prania ✔️ Pralek ✔️ Zmywarek ✔️ Telewizorów ✔️ Ekspresów do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
         ogDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. Naprawa: ✔️ Suszarek do prania ✔️ Pralek ✔️ Zmywarek ✔️ Telewizorów ✔️ Ekspresów do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
         twitterDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. Naprawa: ✔️ Suszarek do prania ✔️ Pralek ✔️ Zmywarek ✔️ Telewizorów ✔️ Ekspresów do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
@@ -217,7 +216,7 @@ export const getDataForMetaTags = async (key) => {
           "@id": appUrls.home + "#webpage",
           "url": appUrls.home,
           "inLanguage": "pl-PL",
-          "name": `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+          "name": `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.home + "#primaryimage" },
@@ -235,7 +234,7 @@ export const getDataForMetaTags = async (key) => {
           "contentUrl": imageUrls.serwis,
           "width": 931,
           "height": 497,
-          "name": `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+          "name": `Naprawa RTV i AGD ✔️ Serwis Przemyśl ☎️ ${formattedPhoneNumber}`,
           "description": "Doświadczony technik serwisu RTV i AGD w trakcie naprawy urządzenia w Przemyślu.",
           "caption": "Twój zaufany serwis RTV i AGD w Przemyślu – szybkie i skuteczne naprawy.",
           "representativeOfPage": true
@@ -637,9 +636,9 @@ export const getDataForMetaTags = async (key) => {
     },
     naprawa_suszarek: {
       metaTags: {
-        title: `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612 | ${shortName}`,
-        ogTitle: `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612 | ${shortName}`,
-        twitterTitle: `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612 | ${shortName}`,
+        title: `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612`,
+        ogTitle: `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612`,
+        twitterTitle: `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612`,
         description: `Naprawa suszarek do prania w Przemyślu. ☝ Potrzebujesz naprawić suszarkę ❓ Profesjonalny serwis suszarek do ubrań ❗ Z dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         ogDescription: `Naprawa suszarek do prania w Przemyślu. ☝ Potrzebujesz naprawić suszarkę ❓ Profesjonalny serwis suszarek do ubrań ❗ Z dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         twitterDescription: `Naprawa suszarek do prania w Przemyślu. ☝ Potrzebujesz naprawić suszarkę ❓ Profesjonalny serwis suszarek do ubrań ❗ Z dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -749,7 +748,7 @@ export const getDataForMetaTags = async (key) => {
           "contentUrl": imageUrls.suszarka,
           "width": 700,
           "height": 700,
-          "name": `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612 | ${shortName}`,
+          "name": `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612`,
           "description": "Profesjonalna naprawa suszarek kondensacyjnych i z pompą ciepła w Przemyślu.",
           "caption": "Serwisant szybko naprawi Twoją suszarkę do prania.",
           "representativeOfPage": true,
@@ -760,7 +759,7 @@ export const getDataForMetaTags = async (key) => {
           "@id": appUrls.naprawa_suszarek + "#webpage",
           "url": appUrls.naprawa_suszarek,
           "inLanguage": "pl-PL",
-          "name": `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612 | ${shortName}`,
+          "name": `Naprawa Suszarek do prania Przemyśl ☎️ 790 258 612`,
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_suszarek + "#primaryimage" },
