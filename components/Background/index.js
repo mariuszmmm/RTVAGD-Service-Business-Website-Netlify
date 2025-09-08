@@ -15,7 +15,7 @@ const Background = ({ dataForMetaTags, imageParameters }) => {
             height: "auto",
             marginTop: "26px",
             opacity: 0.0001,
-            position: absolute,
+            position: "absolute",
           }}
           src={imageParameters.serwis_rtv_agd?.imageUrl}
           srcSet={imageParameters.serwis_rtv_agd?.srcSet}
