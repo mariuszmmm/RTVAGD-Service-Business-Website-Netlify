@@ -27,14 +27,14 @@ async function fetchImageData() {
       imagePublicIds.map(id => cloudinary.api.resource(id))
     );
 
-    const getImageUrl = ({ src, width, height, quality, fetchFormat, version }) => {
+    const getImageUrl = ({ src, width, height, quality, format, version }) => {
       return getCldImageUrl({
         src,
         width,
         height,
         crop: 'limit',
         quality: quality || 'auto',
-        fetchFormat: fetchFormat || 'auto',
+        format: format || 'auto',
         version,
       });
     };
@@ -53,7 +53,7 @@ async function fetchImageData() {
           src: detail.public_id,
           width: detail.width,
           height: detail.height,
-          fetchFormat: "png",
+          format: "png",
           version: `v${detail.version}`,
         }),
         imageUrl_520: getImageUrl({
@@ -67,7 +67,7 @@ async function fetchImageData() {
           width: 150,
           height: 150,
           quality: '60',
-          fetchFormat: "jpeg",
+          format: "jpeg",
           version: `v${detail.version}`,
         }),
         srcSet: widths.map(w => `${getImageUrl({ src: detail.public_id, width: w, version: `v${detail.version}` })} ${w}w`)
