@@ -53,14 +53,13 @@ async function fetchImageData() {
           src: detail.public_id,
           width: detail.width,
           height: detail.height,
-          fetchFormat: "webp",
+          fetchFormat: "png",
           version: `v${detail.version}`,
         }),
         imageUrl_520: getImageUrl({
           src: detail.public_id,
           width: 520,
           height: 520,
-          fetchFormat: "webp",
           version: `v${detail.version}`,
         }),
         thumbnailUrl: getImageUrl({
@@ -68,6 +67,7 @@ async function fetchImageData() {
           width: 150,
           height: 150,
           quality: '60',
+          fetchFormat: "jpeg",
           version: `v${detail.version}`,
         }),
         srcSet: widths.map(w => `${getImageUrl({ src: detail.public_id, width: w, version: `v${detail.version}` })} ${w}w`)
