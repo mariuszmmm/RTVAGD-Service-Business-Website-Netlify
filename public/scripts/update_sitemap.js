@@ -9,7 +9,7 @@ const generateSitemap = async () => {
     '/': {
       changefreq: 'daily',
       priority: '1.0',
-      image: `${BASE_URL}/images/serwis-rtv-agd.webp`,
+      image: imageParameters.serwis_rtv_agd.imageUrl,
       caption: 'Profesjonalna naprawa sprzętu RTV i AGD w Przemyślu.',
       title: 'Serwis RTV i AGD Przemyśl'
     },
