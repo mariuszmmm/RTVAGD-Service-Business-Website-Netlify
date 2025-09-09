@@ -187,7 +187,7 @@ export const getDataForMetaTags = async (key) => {
         imageWidth: "931",
         imageHeight: "497",
         imageType: "image/webp",
-        image: imageUrls.serwis,
+        image: imageParameters.serwis_rtv_agd.imageUrl,
         type: "website",
         siteName: shortName,
         canonical: appUrls.home,
