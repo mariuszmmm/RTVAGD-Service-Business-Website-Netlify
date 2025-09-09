@@ -53,6 +53,7 @@ async function fetchImageData() {
           src: detail.public_id,
           width: detail.width,
           height: detail.height,
+          fetchFormat: "webp",
           version: `v${detail.version}`,
         }),
         imageUrl_520: getImageUrl({
