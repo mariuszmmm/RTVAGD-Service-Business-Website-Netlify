@@ -470,9 +470,9 @@ export const getDataForMetaTags = async (key) => {
     },
     naprawa_pralek: {
       metaTags: {
-        title: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
-        ogTitle: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
-        twitterTitle: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
+        title: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        ogTitle: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        twitterTitle: `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         description: `Naprawa pralek w Przemyślu. ☝ Zepsuta pralka ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         ogDescription: `Naprawa pralek w Przemyślu. ☝ Zepsuta pralka ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         twitterDescription: `Naprawa pralek w Przemyślu. ☝ Zepsuta pralka ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -583,7 +583,7 @@ export const getDataForMetaTags = async (key) => {
           "contentUrl": imageUrls.pralka,
           "width": 700,
           "height": 700,
-          "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
+          "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "description": "Profesjonalna naprawa pralek w Przemyślu, szybka diagnoza i usunięcie usterki.",
           "caption": "Serwisant naprawia pralkę – szybko i skutecznie.",
           "representativeOfPage": true
@@ -594,7 +594,7 @@ export const getDataForMetaTags = async (key) => {
           "@id": appUrls.naprawa_pralek + "#webpage",
           "url": appUrls.naprawa_pralek,
           "inLanguage": "pl-PL",
-          "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
+          "name": `Naprawa Pralek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_pralek + "#primaryimage" },
@@ -801,9 +801,9 @@ export const getDataForMetaTags = async (key) => {
     },
     naprawa_zmywarek: {
       metaTags: {
-        title: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
-        ogTitle: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
-        twitterTitle: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
+        title: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        ogTitle: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        twitterTitle: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         description: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         ogDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         twitterDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -914,7 +914,7 @@ export const getDataForMetaTags = async (key) => {
           "contentUrl": imageParameters.naprawa_zmywarek.imageUrl_520,
           "width": "520",
           "height": "520",
-          "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
+          "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",
           "caption": "Serwisant szybko i skutecznie naprawi Twoją zmywarkę.",
           "representativeOfPage": true
@@ -925,7 +925,7 @@ export const getDataForMetaTags = async (key) => {
           "@id": appUrls.naprawa_zmywarek + "#webpage",
           "url": appUrls.naprawa_zmywarek,
           "inLanguage": "pl-PL",
-          "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | .${shortName}`,
+          "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
