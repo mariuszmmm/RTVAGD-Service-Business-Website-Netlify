@@ -22,13 +22,6 @@
       "time": 1754055301
     },
     {
-      "author_name": "Barbara Dorosz",
-      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLX7Y_eHOvrx2DdLyEn31Vo5HWI4FmqUsivWadBWZ_MxdKo3w=s128-c0x00000000-cc-rp-mo",
-      "text": "Sprwnie, solidnie i skutecznie. Polecam",
-      "rating": 5,
-      "time": 1750939726
-    },
-    {
       "author_name": "Mariusz Cieśla",
       "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKfwSGWEC62zGRP-GUu_ecDVZB-Yxra6UWt-izLuOx0j2sxLw=s128-c0x00000000-cc-rp-mo-ba4",
       "text": "Płyta indukcyjna naprawiona w szybkim czasie. Trafna diagnoza i niski koszt. Jeśli coś nam się zepsuje na pewno wrócę.",
@@ -51,6 +44,6 @@
     }
   ],
   "rating": 4.7,
-  "user_ratings_total": 78,
-  "update_time": "2025-09-20 00:01:26"
+  "user_ratings_total": 79,
+  "update_time": "2025-09-20 12:01:27"
 }
