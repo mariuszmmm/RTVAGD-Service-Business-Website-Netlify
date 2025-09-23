@@ -801,9 +801,9 @@ export const getDataForMetaTags = async (key) => {
     },
     naprawa_zmywarek: {
       metaTags: {
-        title: `Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD`,
-        ogTitle: `Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD`,
-        twitterTitle: `Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD`,
+        title: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        ogTitle: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        twitterTitle: `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         description: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         ogDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         twitterDescription: `Naprawa zmywarek w Przemyślu. ☝ Awaria zmywarki ❓ Skuteczne usunięcie usterek ❗ Fachowa pomoc z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -914,7 +914,7 @@ export const getDataForMetaTags = async (key) => {
           "contentUrl": imageParameters.naprawa_zmywarek.imageUrl_520,
           "width": "520",
           "height": "520",
-          "name": `Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD`,
+          "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "description": "Profesjonalna naprawa zmywarek wolnostojących i do zabudowy w Przemyślu.",
           "caption": "Serwisant szybko i skutecznie naprawi Twoją zmywarkę.",
           "representativeOfPage": true
@@ -925,7 +925,7 @@ export const getDataForMetaTags = async (key) => {
           "@id": appUrls.naprawa_zmywarek + "#webpage",
           "url": appUrls.naprawa_zmywarek,
           "inLanguage": "pl-PL",
-          "name": `Naprawa Zmywarek Przemyśl ✔️ Serwis RTV i AGD`,
+          "name": `Naprawa Zmywarek Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_zmywarek + "#primaryimage" },
@@ -1125,9 +1125,9 @@ export const getDataForMetaTags = async (key) => {
     },
     naprawa_telewizorow: {
       metaTags: {
-        title: `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
-        ogTitle: `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
-        twitterTitle: `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
+        title: `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        ogTitle: `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
+        twitterTitle: `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
         description: `Naprawa telewizorów LED, LCD, OLED w Przemyślu. ☝ Twój telewizor nie działa ❓ Profesjonalny serwis RTV ❗ Z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         ogDescription: `Naprawa telewizorów LED, LCD, OLED w Przemyślu. ☝ Twój telewizor nie działa ❓ Profesjonalny serwis RTV ❗ Z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
         twitterDescription: `Naprawa telewizorów LED, LCD, OLED w Przemyślu. ☝ Twój telewizor nie działa ❓ Profesjonalny serwis RTV ❗ Z gwarancją i dojazdem. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
@@ -1229,7 +1229,7 @@ export const getDataForMetaTags = async (key) => {
           "contentUrl": imageUrls.telewizor,
           "width": 700,
           "height": 700,
-          "name": `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
+          "name": `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "description": "Profesjonalna naprawa telewizorów LCD, LED, OLED i Smart TV w Przemyślu.",
           "caption": "Serwisant przywróci Twój telewizor do życia.",
           "representativeOfPage": true
@@ -1240,7 +1240,7 @@ export const getDataForMetaTags = async (key) => {
           "@id": appUrls.naprawa_telewizorow + "#webpage",
           "url": appUrls.naprawa_telewizorow,
           "inLanguage": "pl-PL",
-          "name": `Naprawa Telewizorów Przemyśl ✔️ Serwis RTV i AGD`,
+          "name": `Naprawa Telewizorów Przemyśl ☎️ ${formattedPhoneNumber} | ${shortName}`,
           "isPartOf": { "@type": "WebSite", "@id": appUrls.home + "#website" },
           "primaryImageOfPage": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
           // "image": { "@type": "ImageObject", "@id": appUrls.naprawa_telewizorow + "#primaryimage" },
