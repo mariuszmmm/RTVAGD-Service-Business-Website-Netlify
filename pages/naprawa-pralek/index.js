@@ -154,6 +154,11 @@ export const getStaticProps = async () => {
     getDataForMetaTags("naprawa_pralek")
   ]);
 
+  console.log('googleData:', googleData);
+  console.log('imageParameters:', imageParameters);
+  console.log('dataForMetaTags:', dataForMetaTags);
+
+
   return {
     props: {
       ...(googleData || {}),
