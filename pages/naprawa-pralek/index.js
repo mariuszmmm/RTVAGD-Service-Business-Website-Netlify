@@ -32,8 +32,8 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, imageParameters,
 
         <Section>
           <Photo
-            src={imageParameters.naprawa_pralek.imageUrl}
-            srcSet={imageParameters.naprawa_pralek.srcSet}
+            src={imageParameters?.naprawa_pralek?.imageUrl}
+            srcSet={imageParameters?.naprawa_pralek?.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
             $maxWidth="520px"
             width={dataForMetaTags.metaTags.imageWidth}
