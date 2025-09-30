@@ -1,3 +1,4 @@
+import { BackgroundImage } from "../common/BackgroundImage";
 import { BackgroundWrapper, Circle, Rotating } from "./styled";
 import { usePathname } from "next/navigation";
 
@@ -9,14 +10,7 @@ const Background = ({ dataForMetaTags, imageParameters }) => {
     <BackgroundWrapper>
       {
         !isServicesPath && imageParameters && dataForMetaTags &&
-        <img
-          style={{
-            width: "100vw",
-            height: "auto",
-            marginTop: "26px",
-            opacity: 0.0001,
-            position: "absolute",
-          }}
+        <BackgroundImage
           src={imageParameters.serwis_rtv_agd?.imageUrl}
           srcSet={imageParameters.serwis_rtv_agd?.srcSet}
           width={dataForMetaTags.metaTags?.imageWidth}
