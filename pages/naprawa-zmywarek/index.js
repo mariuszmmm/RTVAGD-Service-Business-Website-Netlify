@@ -35,9 +35,10 @@ const DishwasherService = ({ rating, ratingsTotal, reviews, imageParameters, dat
 
         <Section>
           <Photo
-            src={imageParameters.naprawa_zmywarek.imageUrl_520}
+            src={imageParameters.naprawa_zmywarek.imageUrl}
             srcSet={imageParameters.naprawa_zmywarek.srcSet}
             sizes="(max-width: 880px) 59vw, 520px"
+            maxWidth="520px"
             width={dataForMetaTags.metaTags.imageWidth}
             height={dataForMetaTags.metaTags.imageHeight}
             alt={dataForMetaTags.metaTags.imageAlt}

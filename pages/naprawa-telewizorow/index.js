@@ -15,8 +15,9 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { HeroText } from '../../components/common/Hero/HeroText';
 import { Break } from '../../components/Break';
 import { getImageParameters } from '../../utils/getImageParameters';
+import { Photo } from '../../components/common/Photo';
 
-const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
+const TelevisionService = ({ rating, ratingsTotal, reviews, imageParameters, dataForMetaTags }) => {
   const path = appUrls.naprawa_telewizorow;
 
   return (
@@ -33,20 +34,17 @@ const TelevisionService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) =
         <Title>Naprawa Telewizorów w&nbsp;Przemyślu</Title>
 
         <Section>
-          <StyledPhoto>
-            <Image
-              title={dataForMetaTags.metaTags.imageTitle}
-              src={imageUrls.telewizor}
-              alt={dataForMetaTags.metaTags.imageAlt}
-              priority
-              fill
-              // srcSet={`${imageUrls.telewizor_300} 500w,
-              // ${imageUrls.telewizor} 1000w`}
-
-              // sizes="(max-width: 500px) 500px, 1000px"
-              sizes="(max-width: 768px) 59vw, 30vw"
-            />
-          </StyledPhoto>
+          <Photo
+            src={imageParameters.naprawa_telewizorow.imageUrl}
+            srcSet={imageParameters.naprawa_telewizorow.srcSet}
+            sizes="(max-width: 880px) 59vw, 520px"
+            maxWidth="520px"
+            width={dataForMetaTags.metaTags.imageWidth}
+            height={dataForMetaTags.metaTags.imageHeight}
+            alt={dataForMetaTags.metaTags.imageAlt}
+            title={dataForMetaTags.metaTags.imageTitle}
+            loading="eager"
+          />
         </Section>
 
         <Section>
@@ -161,7 +159,7 @@ export const getStaticProps = async () => {
     props: {
       // ...(googleData || {}),
       ...googleData,
-      // imageParameters: imageParameters || null,
+      imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

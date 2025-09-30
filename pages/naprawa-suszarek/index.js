@@ -15,11 +15,10 @@ import { StyledLink } from '../../components/common/StyledLink';
 import { getGoogleData } from '../../utils/getGoogleData';
 import { Break } from '../../components/Break';
 import { getImageParameters } from '../../utils/getImageParameters';
+import { Photo } from '../../components/common/Photo';
 
-const DryerService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
+const DryerService = ({ rating, ratingsTotal, reviews, imageParameters, dataForMetaTags }) => {
   const path = appUrls.naprawa_suszarek;
-
-  // console.log("dataForMetaTags", dataForMetaTags)
 
   return (
     <>
@@ -35,23 +34,17 @@ const DryerService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
         <Title>Naprawa Suszarek w&nbsp;Przemyślu</Title>
 
         <Section>
-          <StyledPhoto
-            $width={dataForMetaTags.metaTags.imageWidth}
-            $height={dataForMetaTags.metaTags.imageHeight}>
-            <Image
-              src={imageUrls.suszarka}
-              title={dataForMetaTags.metaTags.imageTitle}
-              alt={dataForMetaTags.metaTags.imageAlt}
-              priority
-              fill
-              // srcSet={`${imageUrls.suszarka_300} 500w,
-              // ${imageUrls.suszarka} 1000w`}
-
-              // sizes="(max-width: 500px) 500px, 1000px"
-              sizes="(max-width: 768px) 59vw, 30vw"
-
-            />
-          </StyledPhoto>
+          <Photo
+            src={imageParameters.naprawa_suszarek.imageUrl}
+            srcSet={imageParameters.naprawa_suszarek.srcSet}
+            sizes="(max-width: 1094px) 59vw, 645px"
+            maxWidth="645px"
+            width={dataForMetaTags.metaTags.imageWidth}
+            height={dataForMetaTags.metaTags.imageHeight}
+            alt={dataForMetaTags.metaTags.imageAlt}
+            title={dataForMetaTags.metaTags.imageTitle}
+            loading="eager"
+          />
         </Section>
 
         <Section>
@@ -162,7 +155,7 @@ export const getStaticProps = async () => {
     props: {
       // ...(googleData || {}),
       ...googleData,
-      // imageParameters: imageParameters || null,
+      imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

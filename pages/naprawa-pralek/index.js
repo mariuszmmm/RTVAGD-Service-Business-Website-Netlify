@@ -15,7 +15,7 @@ import { Break } from '../../components/Break';
 import { getGoogleData } from '../../utils/getGoogleData';
 import { getImageParameters } from '../../utils/getImageParameters';
 
-const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags }) => {
+const WashingMachineService = ({ rating, ratingsTotal, reviews, imageParameters, dataForMetaTags }) => {
   const path = appUrls.naprawa_pralek;
 
   return (
@@ -32,15 +32,12 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, dataForMetaTags 
 
         <Section>
           <Photo
-            src={imageUrls.pralka}
-            srcSet={`
-              ${imageUrls.pralka_284} 284w,
-              ${imageUrls.pralka_520} 520w,
-              ${imageUrls.pralka} 700w
-            `}
-            sizes="59vw"
-            width={700}
-            height={700}
+            src={imageParameters.naprawa_pralek.imageUrl}
+            srcSet={imageParameters.naprawa_pralek.srcSet}
+            sizes="(max-width: 880px) 59vw, 520px"
+            maxWidth="520px"
+            width={dataForMetaTags.metaTags.imageWidth}
+            height={dataForMetaTags.metaTags.imageHeight}
             alt={dataForMetaTags.metaTags.imageAlt}
             title={dataForMetaTags.metaTags.imageTitle}
             loading="eager"
@@ -161,7 +158,7 @@ export const getStaticProps = async () => {
     props: {
       // ...(googleData || {}),
       ...googleData,
-      // imageParameters: imageParameters || null,
+      imageParameters: imageParameters || null,
       dataForMetaTags: dataForMetaTags || null,
     },
   };

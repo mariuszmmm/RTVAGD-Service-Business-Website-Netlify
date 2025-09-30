@@ -16,35 +16,35 @@ const generateSitemap = async () => {
     '/naprawa-pralek/': {
       changefreq: 'daily',
       priority: '0.9',
-      image: `${BASE_URL}/images/naprawa-pralek-700.webp`,
+      image: imageParameters.naprawa_pralek.imageUrl,
       caption: 'Profesjonalna naprawa pralek w Przemyślu.',
       title: 'Serwis Pralek Przemyśl'
     },
     '/naprawa-suszarek/': {
       changefreq: 'daily',
       priority: '0.9',
-      image: `${BASE_URL}/images/naprawa-suszarek-2.webp`,
+      image: imageParameters.naprawa_suszarek.imageUrl,
       caption: 'Profesjonalna naprawa suszarek do prania w Przemyślu.',
       title: 'Serwis Suszarek Przemyśl'
     },
     '/naprawa-zmywarek/': {
       changefreq: 'daily',
       priority: '0.9',
-      image: imageParameters.naprawa_zmywarek.imageUrl_520,
+      image: imageParameters.naprawa_zmywarek.imageUrl,
       caption: 'Profesjonalna naprawa zmywarek w Przemyślu.',
       title: 'Serwis Zmywarek Przemyśl'
     },
     '/naprawa-ekspresow/': {
       changefreq: 'daily',
       priority: '0.9',
-      image: `${BASE_URL}/images/naprawa-ekspresow-2.webp`,
+      image: imageParameters.naprawa_ekspresow.imageUrl,
       caption: 'Profesjonalna naprawa ekspresów do kawy w Przemyślu.',
       title: 'Serwis Ekspresów do Kawy Przemyśl'
     },
     '/naprawa-telewizorow/': {
       changefreq: 'daily',
       priority: '0.9',
-      image: `${BASE_URL}/images/naprawa-telewizorow-2.webp`,
+      image: imageParameters.naprawa_telewizorow.imageUrl,
       caption: 'Profesjonalna naprawa telewizorów w Przemyślu.',
       title: 'Serwis Telewizorów Przemyśl'
     },

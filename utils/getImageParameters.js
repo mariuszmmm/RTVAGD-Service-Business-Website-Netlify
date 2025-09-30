@@ -1,4 +1,4 @@
-import { getCldImageUrl } from "next-cloudinary";
+// import { getCldImageUrl } from "next-cloudinary";
 import imageParameters from "../public/imageParameters.json";
 
 export const getImageParameters = (pageKeys) => {
@@ -13,7 +13,7 @@ export const getImageParameters = (pageKeys) => {
 
     parameters[key] = {
       imageUrl: img.imageUrl,
-      imageUrl_520: img.imageUrl_520,
+      // imageUrl_520: img.imageUrl_520,
       srcSet: img.srcSet,
     };
   });
