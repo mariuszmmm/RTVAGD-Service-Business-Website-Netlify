@@ -16,7 +16,7 @@ export const getGoogleData = async () => {
   const rating = data.rating || null;
 
   // console.log("response.data", response.data)
-  console.log("data", data)
+  // console.log("data", data)
 
 
   if (!Array.isArray(reviews) || !ratingsTotal || !rating) {
