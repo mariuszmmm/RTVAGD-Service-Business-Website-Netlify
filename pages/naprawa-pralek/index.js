@@ -157,8 +157,8 @@ export const getStaticProps = async () => {
   return {
     props: {
       ...(googleData || {}),
-      imageParameters: imageParameters ? imageParameters : {},
-      dataForMetaTags: dataForMetaTags ? dataForMetaTags : {},
+      imageParameters: imageParameters || {},
+      dataForMetaTags: dataForMetaTags || {},
     },
   };
 };
