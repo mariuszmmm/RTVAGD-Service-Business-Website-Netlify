@@ -14,7 +14,7 @@ export const serwis = {
   // name: "Piotr Matusiewicz Sklep-Komis Serwis RTV i AGD",
   person: "Piotr Matusiewicz",
   // name: "Serwis RTV i AGD w Przemyślu",
-name: "NaprawaPrzemysl",
+name: "Serwis RTV-AGD",
   subName: "Naprawa pralek i sprzętu RTV - naprawa ekspresów do kawy, naprawa telewizorów, naprawa zmywarki, serwis agd,",
   shortName: "Serwis RTV i AGD",
   email: "piotrek_serwis@wp.pl",
