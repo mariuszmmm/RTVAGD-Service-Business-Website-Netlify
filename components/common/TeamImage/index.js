@@ -5,7 +5,7 @@ export const Team = styled.div`
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
-  aspect-ratio: 255/170;
-  border-radius: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
   margin-top: 80px;
 `;
