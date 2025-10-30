@@ -48,7 +48,7 @@ const About = ({ rating, ratingsTotal, dataForMetaTags }) => {
                 alt="serwis"
                 loading='lazy'
                 fill
-                style="object-fit: cover"
+                style={{ objectFit: "cover" }}
               />
             </Team>
           </div>
