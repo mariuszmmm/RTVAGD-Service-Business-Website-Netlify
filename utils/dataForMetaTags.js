@@ -473,7 +473,7 @@ export const getDataForMetaTags = async (key) => {
     },
     naprawa_pralek: {
       metaTags: {
-        title: `Naprawa Pralek w Przemyślu ☎️ ${formattedPhoneNumber} | Serwis RTV-AGD,
+        title: `Naprawa Pralek w Przemyślu ☎️ ${formattedPhoneNumber} | Serwis RTV-AGD`,
         ogTitle: `Naprawa Pralek w Przemyślu ☎️ ${formattedPhoneNumber} | Serwis RTV-AGD`,
         twitterTitle: `Naprawa Pralek w Przemyślu ☎️ ${formattedPhoneNumber} | Serwis RTV-AGD`,
         description: `Naprawa pralek w Przemyślu. ☝ Zepsuta pralka ❓ Szybka i skuteczna naprawa ❗ Z gwarancją i w konkurencyjnej cenie. ⚡ Zadzwoń! ☎️ ${formattedPhoneNumber}`,
