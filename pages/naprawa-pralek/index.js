@@ -45,7 +45,7 @@ const WashingMachineService = ({ rating, ratingsTotal, reviews, imageParameters,
         </Section>
 
         <Section>
-          <SubTitle>Naprawa Pralek Przemyśl – Kompleksowa Diagnostyka i Usunięcie Awarii</SubTitle>
+          <SubTitle>Naprawa pralek Przemyśl – Kompleksowa Diagnostyka i Usunięcie Awarii</SubTitle>
           <StyledText>
             Zepsuta pralka to nie koniec świata, ale na pewno spore zamieszanie w codziennym życiu. Doskonale to rozumiem, dlatego oferuję szybką i skuteczną naprawę pralek na terenie Przemyśla i okolic. Niezależnie od tego, czy Twoja pralka hałasuje, cieknie, czy po prostu odmówiła posłuszeństwa – jestem tu, by pomóc. Podchodzę do każdej naprawy indywidualnie, używając profesjonalnego sprzętu i sprawdzonych części. Moim celem jest nie tylko usunięcie usterki, ale zapewnienie, że Twoja pralka będzie działać jak nowa. Jeśli szukasz fachowca, dla którego naprawa pralek w Przemyślu to chleb powszedni, dobrze trafiłeś!
           </StyledText>
