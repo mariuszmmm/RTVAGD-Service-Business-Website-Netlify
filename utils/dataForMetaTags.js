@@ -180,7 +180,7 @@ export const getDataForMetaTags = async (key) => {
         //    ogTitle: `${shortName} ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${serwis.name}`,
         //   twitterTitle: `${shortName} ✔️ 🔧 Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | ${serwis.name}`,
         title: `Serwis RTV i AGD ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | Serwis RTV i AGD`,
-        ogTitle: Serwis RTV i AGD ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | Serwis RTV i AGD`,
+        ogTitle: `Serwis RTV i AGD ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | Serwis RTV i AGD`,
         twitterTitle: `Serwis RTV i AGD ✔️ Naprawa Przemyśl ☎️ ${formattedPhoneNumber} | Serwis RTV i AGD`,
         description: `Profesjonalny Serwis RTV i AGD w Przemyślu. Naprawa: ✔️ Suszarek do prania ✔️ Pralek ✔️ Zmywarek ✔️ Telewizorów ✔️ Ekspresów do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
         ogDescription: `Profesjonalny Serwis RTV i AGD w Przemyślu. Naprawa: ✔️ Suszarek do prania ✔️ Pralek ✔️ Zmywarek ✔️ Telewizorów ✔️ Ekspresów do kawy ⚡ Zadzwoń! ☎️ ${shortPhoneNumber}`,
